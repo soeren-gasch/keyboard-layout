@@ -59,7 +59,7 @@ Aus der ersten Einschätzung vom 13.11.2026:
 | Quelle | Inhalt | Status |
 | --- | --- | --- |
 | [`soeren-gasch/keyboard_corpus`](https://github.com/soeren-gasch/keyboard_corpus) | Text-Korpora, auf denen das Layout beruht | offen: noch nicht gesichtet |
-| [`soeren-gasch/keyboard_layout_optimizer`](https://github.com/soeren-gasch/keyboard_layout_optimizer) | Fork des [Optimizers von Dario Götz](https://github.com/dariogoetz/keyboard_layout_optimizer) (Rust), bewertet Layouts anhand von Uni-, Bi- und Trigrammen | gesichtet: Fork liegt 11 Commits hinter dem Original; der eigene Beitrag (N-Gramme für ActionScript) ist upstream gemergt |
+| [`dariogoetz/keyboard_layout_optimizer`](https://github.com/dariogoetz/keyboard_layout_optimizer) | Optimizer von Dario Götz (Rust), bewertet Layouts anhand von Uni-, Bi- und Trigrammen; enthält Sörens N-Gramme für ActionScript (`ngrams/code_actionScript`, PR #74) | gesichtet; der frühere Fork wird nicht mehr gebraucht |
 
 Offen ist noch, wie die Korpora gewichtet werden (Anteil Deutsch, Englisch, Code) und welche Kriterien beim Entwurf zählten.
 
