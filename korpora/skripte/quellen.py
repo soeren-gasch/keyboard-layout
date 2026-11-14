@@ -202,12 +202,13 @@ QUELLEN = {
     "de-dortmunder-chatkorpus": (dortmunder_chatkorpus, {}),
 }
 
-EINGABEN = {
-    "de-leipzig-news-2024": ["leipzig/deu_news_2024_1M.tar.gz"],
-    "de-leipzig-web-2021": ["leipzig/deu-de_web_2021_1M.tar.gz"],
-    "de-leipzig-wikipedia-2021": ["leipzig/deu_wikipedia_2021_1M.tar.gz"],
-    "de-opensubtitles-2024": ["opensubtitles/de.txt.gz"],
-    "de-gc4-middle-2020": ["gc4/de_middle_0000_2020-10.tar.gz"],
-    "de-one-million-posts": ["one-million-posts/million_post_corpus.tar.bz2"],
-    "de-dortmunder-chatkorpus": ["dortmunder-chatkorpus/chatkorpus-release.zip"],
-}
+
+def eingaben():
+    """Welche Original-Dateien (Pfad im Manifest) je Quelle gelesen werden."""
+    import herunterladen
+
+    erg = {}
+    for e in herunterladen.lade_manifeste():
+        for quelle in e["genutzt_von"]:
+            erg.setdefault(quelle, []).append(e)
+    return erg

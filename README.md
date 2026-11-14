@@ -60,7 +60,7 @@ Aus der ersten Einschätzung vom 13.11.2026:
 | --- | --- | --- |
 | [`soeren-gasch/keyboard_corpus`](https://github.com/soeren-gasch/keyboard_corpus) | Übungs-Wortlisten zum Erlernen des Layouts (`customLayout-soeren/words-german/`, nur Deutsch): 18 Stufen, die Buchstaben in der Reihenfolge der Tastenpositionen freischalten, plus eine Gesamtliste mit rund 510.000 Wörtern; eindeutige Wörter ohne Häufigkeiten, Stand 12.09.2024 | gesichtet; eignet sich zum Üben, nicht zum Vermessen |
 | Korpora, aus denen das Layout entworfen wurde | Häufigkeiten bzw. N-Gramme für Deutsch, Englisch und Code | offen: Quelle und Gewichtung unbekannt |
-| [`korpora/deutsch/`](korpora/deutsch/README.md) | neu zusammengestellte deutsche Korpora: förmlich (Leipzig), gesprochen (OpenSubtitles), informell (GC4, One Million Posts, Dortmunder Chat-Korpus) | Originale geladen (lokal, 4,6 GB); N-Gramme je Quelle unter [`korpora/ngramme/`](korpora/ngramme/README.md), Mischung `de-standard` unter `korpora/mischungen/` |
+| [`korpora/deutsch/`](korpora/deutsch/README.md) | neu zusammengestellte deutsche Korpora: förmlich (Leipzig), gesprochen (OpenSubtitles), informell (GC4, One Million Posts, Dortmunder Chat-Korpus) | Originale per Skript ladbar (4,6 GB, nicht im Repo); N-Gramme je Quelle unter [`korpora/ngramme/`](korpora/ngramme/README.md), Mischung `de-standard` unter `korpora/mischungen/` |
 | Englisch, Code | – | offen |
 | [`dariogoetz/keyboard_layout_optimizer`](https://github.com/dariogoetz/keyboard_layout_optimizer) | Optimizer von Dario Götz (Rust), bewertet Layouts anhand von Uni-, Bi- und Trigrammen; enthält Sörens N-Gramme für ActionScript (`ngrams/code_actionScript`, PR #74) | gesichtet; der frühere Fork wird nicht mehr gebraucht |
 
@@ -75,13 +75,28 @@ keyboard-layout/
   README.md            Einstieg und Index (diese Datei)
   AGENTS.md            Regeln für Agenten
   .claude/             Einstellungen für Claude Code
-  korpora/             Korpora: Recherche je Sprache,
-                       skripte/ (Aufbereitung), ngramme/ (je Quelle), mischungen/ (gewichtet)
+  korpora/             Korpora je Sprache: Recherche, Manifest (quellen.json), Dummy-Dateien;
+                       skripte/ (Download, Aufbereitung), ngramme/ (je Quelle), mischungen/ (gewichtet)
   oryx/                Schnappschüsse der Oryx-Revisionen (JSON und QMK-Quellcode)
   optimizer/           Tastatur- und Bewertungs-Konfigurationen für den Optimizer
   analyse/             Skripte und Ergebnisse der Messungen
   entscheidungen/      Entscheidungslog, eine Datei je Entscheidung
 ```
+
+## Original-Korpora (nicht im Repository)
+
+Die großen Original-Korpora (Deutsch zusammen 4,6 GB) liegen **nicht** im Repository. Stattdessen gibt es:
+
+- ein **Manifest** je Sprache (`korpora/<sprache>/quellen.json`) mit URL, SHA-256 und Größe jeder Datei,
+- **Dummy-Dateien** an den Pfaden der Originale (`korpora/<sprache>/original/...`): gleiches Format, aber nur 5 bis 10 erfundene Beispiel-Einträge. Damit laufen alle Skripte nach einem frischen Klon, nur eben auf Beispieldaten,
+- das Skript `korpora/skripte/herunterladen.py`, das die Dummys lokal durch die vollen Originale ersetzt. Die Ersetzung führt git nicht als Änderung (`skip-worktree`).
+
+```sh
+python3 korpora/skripte/herunterladen.py --status   # was ist Dummy, was ist das Original?
+python3 korpora/skripte/herunterladen.py            # alle Originale laden und prüfen
+```
+
+Einzelheiten und Fallstricke: [`korpora/skripte/README.md`](korpora/skripte/README.md).
 
 ## Oryx-Layout abrufen
 

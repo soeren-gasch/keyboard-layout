@@ -14,7 +14,7 @@ Stand: 14.11.2026
 
 ## Ausgewählt
 
-Die Original-Dateien werden lokal unter `original/` abgelegt und nicht ins Repository aufgenommen. Prüfsummen stehen in [`original.sha256`](original.sha256).
+Die Originale liegen **nicht im Repository**. Quelle, SHA-256 und Größe jeder Datei stehen in [`quellen.json`](quellen.json). Unter `original/` liegen Dummy-Dateien mit erfundenen Beispielen; die vollen Originale lädt `python3 korpora/skripte/herunterladen.py` an dieselben Pfade (siehe [`../skripte/README.md`](../skripte/README.md)).
 
 | Teil | Korpus | Datei | Größe | Inhalt | Lizenz |
 | --- | --- | --- | --- | --- | --- |
@@ -26,7 +26,7 @@ Die Original-Dateien werden lokal unter `original/` abgelegt und nicht ins Repos
 | informell | One Million Posts Corpus (derStandard.at, 2015–2016) | `one-million-posts/million_post_corpus.tar.bz2` | 106 MB | rund 1 Mio. Leserkommentare als SQLite-Datenbank | CC BY-NC-SA 4.0 (`LICENSE.txt` im Archiv) |
 | informell | Dortmunder Chat-Korpus | `dortmunder-chatkorpus/chatkorpus-release.zip`, `chatkorpus-web.zip` | 4 MB, 17 MB | 381 Chat-Mitschnitte als XML (ISO-8859-1), rund 1 Mio. Tokens, 2002–2008 | keine Lizenzdatei im Archiv; in CLARIN offen oder akademisch-nichtkommerziell, **offen** |
 
-Download-Quellen:
+Download-Quellen (alle auch in `quellen.json`):
 
 - Leipzig: `https://downloads.wortschatz-leipzig.de/corpora/<name>.tar.gz`, Übersicht unter https://wortschatz.uni-leipzig.de/en/download
 - OpenSubtitles: https://object.pouta.csc.fi/OPUS-OpenSubtitles/v2024/mono/de.txt.gz, gefunden über `https://opus.nlpl.eu/opusapi/?corpus=OpenSubtitles&source=de&preprocessing=mono&version=latest`

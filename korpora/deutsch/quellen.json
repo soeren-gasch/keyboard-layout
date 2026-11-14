@@ -1,0 +1,84 @@
+{
+  "sprache": "deutsch",
+  "verzeichnis": "korpora/deutsch/original",
+  "dateien": [
+    {
+      "pfad": "leipzig/deu_news_2024_1M.tar.gz",
+      "url": "https://downloads.wortschatz-leipzig.de/corpora/deu_news_2024_1M.tar.gz",
+      "sha256": "203d98de187f6d87e7f97c1f516a64a9d19016d0dc81c935a72e769ef184fa64",
+      "bytes": 228813522,
+      "beschreibung": "Leipzig Corpora Collection, News 2024, 1 Mio. Sätze",
+      "genutzt_von": [
+        "de-leipzig-news-2024"
+      ]
+    },
+    {
+      "pfad": "leipzig/deu-de_web_2021_1M.tar.gz",
+      "url": "https://downloads.wortschatz-leipzig.de/corpora/deu-de_web_2021_1M.tar.gz",
+      "sha256": "d04ad49440131fa9b8cf96d097513142f44f3cc3c4b4fef5b69841827bb63324",
+      "bytes": 198261152,
+      "beschreibung": "Leipzig Corpora Collection, Web 2021 (.de), 1 Mio. Sätze",
+      "genutzt_von": [
+        "de-leipzig-web-2021"
+      ]
+    },
+    {
+      "pfad": "leipzig/deu_wikipedia_2021_1M.tar.gz",
+      "url": "https://downloads.wortschatz-leipzig.de/corpora/deu_wikipedia_2021_1M.tar.gz",
+      "sha256": "d5eb95fe71010a88d69ba408a4016f67a3a219e1a63cade652593abf33010aba",
+      "bytes": 206734187,
+      "beschreibung": "Leipzig Corpora Collection, Wikipedia 2021, 1 Mio. Sätze",
+      "genutzt_von": [
+        "de-leipzig-wikipedia-2021"
+      ]
+    },
+    {
+      "pfad": "opensubtitles/de.txt.gz",
+      "url": "https://object.pouta.csc.fi/OPUS-OpenSubtitles/v2024/mono/de.txt.gz",
+      "sha256": "61e902908635dd2793b93cbc30108580bff819dccc23d08e0d1cca4d9e3ad9a8",
+      "bytes": 1572111961,
+      "beschreibung": "OPUS OpenSubtitles v2024, Deutsch, ein Satz je Zeile",
+      "genutzt_von": [
+        "de-opensubtitles-2024"
+      ]
+    },
+    {
+      "pfad": "gc4/de_middle_0000_2020-10.tar.gz",
+      "url": "https://opendata.iisys.de/opendata/Datasets/CommonCrawl/middle/de_middle_0000_2020-10.tar.gz",
+      "sha256": "b86e96b5796ccd5e975e1b3f07f69ae7895a832d4b4e3dc9c1485e38048b4b82",
+      "bytes": 2259569411,
+      "beschreibung": "GC4, Teil Middle, Datei 0000 von Snapshot 2020-10",
+      "genutzt_von": [
+        "de-gc4-middle-2020"
+      ]
+    },
+    {
+      "pfad": "one-million-posts/million_post_corpus.tar.bz2",
+      "url": "https://github.com/OFAI/million-post-corpus/releases/download/v1.0.0/million_post_corpus.tar.bz2",
+      "sha256": "d09e8a7504e2512836f6113cf9e36bf5c4928fd0a75e2d65af701357485ab6d8",
+      "bytes": 105587534,
+      "beschreibung": "One Million Posts Corpus v1.0.0 (derStandard.at), SQLite",
+      "genutzt_von": [
+        "de-one-million-posts"
+      ]
+    },
+    {
+      "pfad": "dortmunder-chatkorpus/chatkorpus-release.zip",
+      "url": "https://www.uni-due.de/imperia/md/images/germanistik/beisswenger/chatkorpus-release.zip",
+      "sha256": "c555a7a46f31805fffdabdab207dfb921cce31d1c12b33b832add1ffab22856b",
+      "bytes": 3827398,
+      "beschreibung": "Dortmunder Chat-Korpus, Releasekorpus (XML)",
+      "genutzt_von": [
+        "de-dortmunder-chatkorpus"
+      ]
+    },
+    {
+      "pfad": "dortmunder-chatkorpus/chatkorpus-web.zip",
+      "url": "https://www.uni-due.de/imperia/md/images/germanistik/beisswenger/chatkorpus-web.zip",
+      "sha256": "ad8c2964db66afc3fa262e9018faefbfc5cd13aa9f47f065a7d2920cec6f6406",
+      "bytes": 17093343,
+      "beschreibung": "Dortmunder Chat-Korpus, Webarchiv mit Dokumentation (wird nicht gezählt)",
+      "genutzt_von": []
+    }
+  ]
+}

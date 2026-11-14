@@ -4,6 +4,7 @@ Aufruf (aus dem Repo-Wurzelverzeichnis):
     python3 korpora/skripte/zaehlen.py                    # alle Quellen
     python3 korpora/skripte/zaehlen.py de-leipzig-news-2024 --prozesse 6
     python3 korpora/skripte/zaehlen.py --text-aus ~/keyboard/aufbereitet
+    python3 korpora/skripte/zaehlen.py --ausgabe /tmp/probe        # Probelauf, z. B. auf den Dummy-Dateien
 
 Ausgabe je Quelle unter korpora/ngramme/<quelle>/:
     1-grams.txt, 2-grams.txt, 3-grams.txt   Format "Anzahl N-Gramm", absteigend sortiert
@@ -117,7 +118,13 @@ def _schreibe_ngramme(pfad, zaehler):
             f.write(f"{anzahl} {maskiere(ngramm)}\n")
 
 
-def zaehle(name, prozesse, text_aus):
+def pruefe_eingaben(name):
+    """Gibt die Dateien zurück, die nicht der Original-Größe laut Manifest entsprechen (fehlend oder Dummy)."""
+    return [e["name"] for e in quellen.eingaben()[name]
+            if not e["ziel"].exists() or e["ziel"].stat().st_size != e["bytes"]]
+
+
+def zaehle(name, prozesse, text_aus, ziel_wurzel):
     leser, parameter = quellen.QUELLEN[name]
     start = time.time()
     lese_stat = Counter()
@@ -136,16 +143,15 @@ def zaehle(name, prozesse, text_aus):
             stat.update(s)
     stat.update(lese_stat)
 
-    ziel = ZIEL / name
+    ziel = ziel_wurzel / name
     ziel.mkdir(parents=True, exist_ok=True)
     for n, c in ((1, c1), (2, c2), (3, c3)):
         _schreibe_ngramme(ziel / f"{n}-grams.txt", c)
 
-    pruefsummen = {}
-    for zeile in (KORPORA / "deutsch" / "original.sha256").read_text().splitlines():
-        teile = zeile.split()
-        if len(teile) >= 2:
-            pruefsummen[teile[1].removeprefix("./")] = teile[0]
+    dateien = quellen.eingaben()[name]
+    eingaben = {}
+    for e in dateien:
+        eingaben[e["pfad"]] = {"sha256": e["sha256"], "bytes": e["bytes"], "url": e["url"]}
 
     meta = {
         "quelle": name,
@@ -158,9 +164,7 @@ def zaehle(name, prozesse, text_aus):
         },
         "datum": datetime.date.today().isoformat(),
         "dauer_sekunden": round(time.time() - start),
-        "eingaben": {
-            p: pruefsummen.get(p, "unbekannt") for p in quellen.EINGABEN[name]
-        },
+        "eingaben": eingaben,
         "parameter": {k: v for k, v in parameter.items()},
         "summen": {
             "zeichen": sum(c1.values()),
@@ -176,7 +180,7 @@ def zaehle(name, prozesse, text_aus):
     print(f"{name}: {meta['summen']['zeichen']:,} Zeichen in {meta['dauer_sekunden']} s", flush=True)
 
 
-def uebersicht():
+def uebersicht(ziel_wurzel):
     """Schreibt korpora/ngramme/README.md aus allen meta.json."""
     zeilen = [
         "# N-Gramme je Quelle",
@@ -187,7 +191,7 @@ def uebersicht():
         "| Quelle | Datum | Zeichen | Zeilen verwendet | Zeilen verworfen | ersetzt | transliteriert | Grenzen |",
         "| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |",
     ]
-    for meta_pfad in sorted(ZIEL.glob("*/meta.json")):
+    for meta_pfad in sorted(ziel_wurzel.glob("*/meta.json")):
         m = json.loads(meta_pfad.read_text(encoding="utf-8"))
         s = m["pruefbericht"]["summen"]
         verworfen = sum(v for k, v in s.items() if "verworfen" in k)
@@ -195,7 +199,7 @@ def uebersicht():
             f"| `{m['quelle']}` | {m['datum']} | {m['summen']['zeichen']:,} | {s.get('zeilen_verwendet', 0):,} "
             f"| {verworfen:,} | {s.get('ersetzt', 0):,} | {s.get('transliteriert', 0):,} | {s.get('grenze', 0):,} |"
         )
-    (ZIEL / "README.md").write_text("\n".join(zeilen) + "\n", encoding="utf-8")
+    (ziel_wurzel / "README.md").write_text("\n".join(zeilen) + "\n", encoding="utf-8")
 
 
 def main():
@@ -203,13 +207,25 @@ def main():
     parser.add_argument("quellen", nargs="*", help="Quellen (Standard: alle): " + ", ".join(quellen.QUELLEN))
     parser.add_argument("--prozesse", type=int, default=4)
     parser.add_argument("--text-aus", help="Verzeichnis für den bereinigten Text (außerhalb von Git)")
+    parser.add_argument("--ausgabe", help="anderes Ausgabeverzeichnis statt korpora/ngramme (nötig für Läufe auf Dummy-Dateien)")
     args = parser.parse_args()
     unbekannt = set(args.quellen) - set(quellen.QUELLEN)
     if unbekannt:
         parser.error(f"unbekannte Quelle(n): {', '.join(sorted(unbekannt))}")
-    for name in args.quellen or list(quellen.QUELLEN):
-        zaehle(name, args.prozesse, args.text_aus)
-    uebersicht()
+    ziel_wurzel = Path(args.ausgabe).expanduser().resolve() if args.ausgabe else ZIEL
+    auswahl = args.quellen or list(quellen.QUELLEN)
+    if ziel_wurzel == ZIEL:
+        # Schutz: Die Ergebnisse im Repo dürfen nur aus den echten Originalen entstehen.
+        for name in auswahl:
+            abweichend = pruefe_eingaben(name)
+            if abweichend:
+                parser.error(
+                    f"{name}: Eingabe ist nicht das Original (fehlt oder Dummy): {', '.join(abweichend)}.\n"
+                    "Originale laden: python3 korpora/skripte/herunterladen.py\n"
+                    "Zum Ausprobieren mit Dummies: --ausgabe <Verzeichnis außerhalb von korpora/ngramme>")
+    for name in auswahl:
+        zaehle(name, args.prozesse, args.text_aus, ziel_wurzel)
+    uebersicht(ziel_wurzel)
 
 
 if __name__ == "__main__":
