@@ -60,7 +60,7 @@ Aus der ersten Einschätzung vom 13.11.2026:
 | --- | --- | --- |
 | [`soeren-gasch/keyboard_corpus`](https://github.com/soeren-gasch/keyboard_corpus) | Übungs-Wortlisten zum Erlernen des Layouts (`customLayout-soeren/words-german/`, nur Deutsch): 18 Stufen, die Buchstaben in der Reihenfolge der Tastenpositionen freischalten, plus eine Gesamtliste mit rund 510.000 Wörtern; eindeutige Wörter ohne Häufigkeiten, Stand 12.09.2024 | gesichtet; eignet sich zum Üben, nicht zum Vermessen |
 | Korpora, aus denen das Layout entworfen wurde | Häufigkeiten bzw. N-Gramme für Deutsch, Englisch und Code | offen: Quelle und Gewichtung unbekannt |
-| [`korpora/deutsch/`](korpora/deutsch/README.md) | neu zusammengestellte deutsche Korpora: förmlich (Leipzig), gesprochen (OpenSubtitles), informell (GC4, One Million Posts, Dortmunder Chat-Korpus) | Originale geladen (lokal, 4,6 GB); Aufbereitung offen |
+| [`korpora/deutsch/`](korpora/deutsch/README.md) | neu zusammengestellte deutsche Korpora: förmlich (Leipzig), gesprochen (OpenSubtitles), informell (GC4, One Million Posts, Dortmunder Chat-Korpus) | Originale geladen (lokal, 4,6 GB); N-Gramme je Quelle unter [`korpora/ngramme/`](korpora/ngramme/README.md), Mischung `de-standard` unter `korpora/mischungen/` |
 | Englisch, Code | – | offen |
 | [`dariogoetz/keyboard_layout_optimizer`](https://github.com/dariogoetz/keyboard_layout_optimizer) | Optimizer von Dario Götz (Rust), bewertet Layouts anhand von Uni-, Bi- und Trigrammen; enthält Sörens N-Gramme für ActionScript (`ngrams/code_actionScript`, PR #74) | gesichtet; der frühere Fork wird nicht mehr gebraucht |
 
@@ -75,7 +75,8 @@ keyboard-layout/
   README.md            Einstieg und Index (diese Datei)
   AGENTS.md            Regeln für Agenten
   .claude/             Einstellungen für Claude Code
-  korpora/             Korpora je Sprache: Recherche, Prüfsummen
+  korpora/             Korpora: Recherche je Sprache,
+                       skripte/ (Aufbereitung), ngramme/ (je Quelle), mischungen/ (gewichtet)
   oryx/                Schnappschüsse der Oryx-Revisionen (JSON und QMK-Quellcode)
   optimizer/           Tastatur- und Bewertungs-Konfigurationen für den Optimizer
   analyse/             Skripte und Ergebnisse der Messungen

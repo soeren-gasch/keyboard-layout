@@ -1,0 +1,234 @@
+{
+  "quelle": "de-opensubtitles-2024",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "skripte_sha256": {
+      "mischen.py": "8cbda3e637b9e5fb39015e3a3f736ee1d389c6d55a099445c3c5e195c3b86469",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "quellen.py": "eb36ec337b126e3a6efc392a49119abe290276ee02bb0e97780451a7567e12ff",
+      "zaehlen.py": "a16646f1929c2eab8937bcf1c9c605317f27092e9ec485787a9e79e311bfaf42"
+    }
+  },
+  "datum": "2026-11-14",
+  "dauer_sekunden": 62,
+  "eingaben": {
+    "opensubtitles/de.txt.gz": "61e902908635dd2793b93cbc30108580bff819dccc23d08e0d1cca4d9e3ad9a8"
+  },
+  "parameter": {
+    "schritt": 50,
+    "blockgroesse": 1000
+  },
+  "summen": {
+    "zeichen": 87271051,
+    "bigramme": 87268870,
+    "trigramme": 87266689,
+    "verschiedene_unigramme": 105,
+    "verschiedene_bigramme": 5246,
+    "verschiedene_trigramme": 57966
+  },
+  "pruefbericht": {
+    "summen": {
+      "c1_als_cp1252_gelesen": 354,
+      "einheiten_gelesen": 2832000,
+      "entfernt_kombinierend": 6,
+      "ersetzt": 2999,
+      "grenze": 6836,
+      "grenzen_gesetzt": 509,
+      "mojibake_nicht_reparierbar": 106,
+      "mojibake_repariert": 10845,
+      "transliteriert": 8342,
+      "umlaut_kodierung_repariert": 7582,
+      "zeile_verworfen:einblendung_grossbuchstaben": 24387,
+      "zeile_verworfen:fremde_schrift": 63,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 79,
+      "zeile_verworfen:zu_wenig_buchstaben": 7542,
+      "zeile_verworfen:zu_wenig_buchstabenanteil": 5202,
+      "zeilen_verwendet": 2794727
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "–",
+          1014
+        ],
+        [
+          "﻿",
+          733
+        ],
+        [
+          "—",
+          583
+        ],
+        [
+          "´",
+          392
+        ],
+        [
+          "‚",
+          120
+        ],
+        [
+          "’",
+          34
+        ],
+        [
+          "​",
+          28
+        ],
+        [
+          "“",
+          23
+        ],
+        [
+          "‘",
+          19
+        ],
+        [
+          "„",
+          12
+        ],
+        [
+          " ",
+          12
+        ],
+        [
+          "―",
+          11
+        ],
+        [
+          "­",
+          10
+        ],
+        [
+          "”",
+          8
+        ]
+      ],
+      "grenze": [
+        [
+          "♪",
+          5628
+        ],
+        [
+          "♫",
+          693
+        ],
+        [
+          "½",
+          122
+        ],
+        [
+          "£",
+          50
+        ],
+        [
+          "♬",
+          48
+        ],
+        [
+          "🎵",
+          48
+        ],
+        [
+          "©",
+          42
+        ],
+        [
+          "♥",
+          39
+        ],
+        [
+          "─",
+          37
+        ],
+        [
+          "¬",
+          27
+        ],
+        [
+          "¡",
+          19
+        ],
+        [
+          "™",
+          14
+        ],
+        [
+          "ﬁ",
+          12
+        ],
+        [
+          "ﬂ",
+          10
+        ],
+        [
+          "¿",
+          10
+        ]
+      ],
+      "transliteriert": [
+        [
+          "é",
+          2358
+        ],
+        [
+          "û",
+          1569
+        ],
+        [
+          "í",
+          524
+        ],
+        [
+          "è",
+          461
+        ],
+        [
+          "ñ",
+          446
+        ],
+        [
+          "á",
+          370
+        ],
+        [
+          "ô",
+          273
+        ],
+        [
+          "ó",
+          266
+        ],
+        [
+          "à",
+          221
+        ],
+        [
+          "ç",
+          163
+        ],
+        [
+          "Ã",
+          133
+        ],
+        [
+          "ë",
+          105
+        ],
+        [
+          "É",
+          103
+        ],
+        [
+          "ã",
+          89
+        ],
+        [
+          "ê",
+          80
+        ]
+      ]
+    }
+  }
+}

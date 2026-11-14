@@ -1,0 +1,231 @@
+{
+  "quelle": "de-leipzig-news-2024",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "skripte_sha256": {
+      "mischen.py": "8cbda3e637b9e5fb39015e3a3f736ee1d389c6d55a099445c3c5e195c3b86469",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "quellen.py": "eb36ec337b126e3a6efc392a49119abe290276ee02bb0e97780451a7567e12ff",
+      "zaehlen.py": "a16646f1929c2eab8937bcf1c9c605317f27092e9ec485787a9e79e311bfaf42"
+    }
+  },
+  "datum": "2026-11-14",
+  "dauer_sekunden": 13,
+  "eingaben": {
+    "leipzig/deu_news_2024_1M.tar.gz": "203d98de187f6d87e7f97c1f516a64a9d19016d0dc81c935a72e769ef184fa64"
+  },
+  "parameter": {
+    "name": "deu_news_2024_1M"
+  },
+  "summen": {
+    "zeichen": 108057777,
+    "bigramme": 108055227,
+    "trigramme": 108052679,
+    "verschiedene_unigramme": 97,
+    "verschiedene_bigramme": 6033,
+    "verschiedene_trigramme": 82620
+  },
+  "pruefbericht": {
+    "summen": {
+      "einheiten_gelesen": 1000000,
+      "entfernt_kombinierend": 77,
+      "ersetzt": 260455,
+      "grenze": 1180,
+      "grenzen_gesetzt": 650,
+      "transliteriert": 14395,
+      "zeile_verworfen:fremde_schrift": 25,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 156,
+      "zeile_verworfen:zu_wenig_buchstabenanteil": 6,
+      "zeilen_verwendet": 999813
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "“",
+          87587
+        ],
+        [
+          "„",
+          75689
+        ],
+        [
+          "–",
+          44592
+        ],
+        [
+          "«",
+          21005
+        ],
+        [
+          "»",
+          20974
+        ],
+        [
+          "’",
+          2854
+        ],
+        [
+          "‘",
+          1720
+        ],
+        [
+          "…",
+          1253
+        ],
+        [
+          "”",
+          1042
+        ],
+        [
+          " ",
+          900
+        ],
+        [
+          " ",
+          695
+        ],
+        [
+          "‚",
+          653
+        ],
+        [
+          " ",
+          454
+        ],
+        [
+          "—",
+          158
+        ],
+        [
+          "›",
+          157
+        ]
+      ],
+      "grenze": [
+        [
+          "═",
+          296
+        ],
+        [
+          "₂",
+          226
+        ],
+        [
+          "×",
+          101
+        ],
+        [
+          "▶",
+          90
+        ],
+        [
+          "†",
+          85
+        ],
+        [
+          "•",
+          79
+        ],
+        [
+          "®",
+          71
+        ],
+        [
+          "™",
+          28
+        ],
+        [
+          "·",
+          26
+        ],
+        [
+          "✝",
+          24
+        ],
+        [
+          "¦",
+          21
+        ],
+        [
+          "㈠",
+          17
+        ],
+        [
+          "¤",
+          12
+        ],
+        [
+          "˜",
+          8
+        ],
+        [
+          "→",
+          7
+        ]
+      ],
+      "transliteriert": [
+        [
+          "é",
+          5789
+        ],
+        [
+          "á",
+          1563
+        ],
+        [
+          "ë",
+          703
+        ],
+        [
+          "ó",
+          649
+        ],
+        [
+          "í",
+          593
+        ],
+        [
+          "â",
+          456
+        ],
+        [
+          "è",
+          416
+        ],
+        [
+          "ć",
+          367
+        ],
+        [
+          "ž",
+          228
+        ],
+        [
+          "à",
+          224
+        ],
+        [
+          "ç",
+          220
+        ],
+        [
+          "č",
+          208
+        ],
+        [
+          "ğ",
+          206
+        ],
+        [
+          "š",
+          192
+        ],
+        [
+          "ñ",
+          171
+        ]
+      ]
+    }
+  }
+}

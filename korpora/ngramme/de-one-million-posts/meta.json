@@ -1,0 +1,230 @@
+{
+  "quelle": "de-one-million-posts",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "skripte_sha256": {
+      "mischen.py": "8cbda3e637b9e5fb39015e3a3f736ee1d389c6d55a099445c3c5e195c3b86469",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "quellen.py": "eb36ec337b126e3a6efc392a49119abe290276ee02bb0e97780451a7567e12ff",
+      "zaehlen.py": "a16646f1929c2eab8937bcf1c9c605317f27092e9ec485787a9e79e311bfaf42"
+    }
+  },
+  "datum": "2026-11-14",
+  "dauer_sekunden": 50,
+  "eingaben": {
+    "one-million-posts/million_post_corpus.tar.bz2": "d09e8a7504e2512836f6113cf9e36bf5c4928fd0a75e2d65af701357485ab6d8"
+  },
+  "parameter": {},
+  "summen": {
+    "zeichen": 215413806,
+    "bigramme": 213421051,
+    "trigramme": 211428328,
+    "verschiedene_unigramme": 108,
+    "verschiedene_bigramme": 9160,
+    "verschiedene_trigramme": 219039
+  },
+  "pruefbericht": {
+    "summen": {
+      "beitraege_gelesen": 1011773,
+      "einheiten_gelesen": 2012474,
+      "ersetzt": 34399,
+      "grenze": 831,
+      "grenzen_gesetzt": 310,
+      "transliteriert": 5067,
+      "zeile_verworfen:fremde_schrift": 7,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 39,
+      "zeile_verworfen:zu_wenig_buchstaben": 14738,
+      "zeile_verworfen:zu_wenig_buchstabenanteil": 5245,
+      "zeilen_verwendet": 1992445
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "“",
+          7581
+        ],
+        [
+          "´",
+          5849
+        ],
+        [
+          "…",
+          5360
+        ],
+        [
+          "„",
+          5008
+        ],
+        [
+          "–",
+          4374
+        ],
+        [
+          "­",
+          1595
+        ],
+        [
+          "’",
+          1234
+        ],
+        [
+          "”",
+          1132
+        ],
+        [
+          "»",
+          763
+        ],
+        [
+          "«",
+          761
+        ],
+        [
+          "—",
+          364
+        ],
+        [
+          "‘",
+          221
+        ],
+        [
+          "‚",
+          87
+        ],
+        [
+          "›",
+          49
+        ],
+        [
+          "‹",
+          21
+        ]
+      ],
+      "grenze": [
+        [
+          "•",
+          282
+        ],
+        [
+          "¯",
+          94
+        ],
+        [
+          "©",
+          84
+        ],
+        [
+          "£",
+          63
+        ],
+        [
+          "·",
+          42
+        ],
+        [
+          "¿",
+          42
+        ],
+        [
+          "¡",
+          39
+        ],
+        [
+          "×",
+          35
+        ],
+        [
+          "®",
+          33
+        ],
+        [
+          "¨",
+          25
+        ],
+        [
+          "¹",
+          15
+        ],
+        [
+          "†",
+          14
+        ],
+        [
+          "‰",
+          11
+        ],
+        [
+          "½",
+          8
+        ],
+        [
+          "¥",
+          8
+        ]
+      ],
+      "transliteriert": [
+        [
+          "é",
+          1518
+        ],
+        [
+          "á",
+          802
+        ],
+        [
+          "à",
+          485
+        ],
+        [
+          "í",
+          280
+        ],
+        [
+          "è",
+          253
+        ],
+        [
+          "ó",
+          230
+        ],
+        [
+          "ç",
+          220
+        ],
+        [
+          "æ",
+          118
+        ],
+        [
+          "å",
+          102
+        ],
+        [
+          "š",
+          94
+        ],
+        [
+          "ú",
+          76
+        ],
+        [
+          "ã",
+          74
+        ],
+        [
+          "ñ",
+          68
+        ],
+        [
+          "û",
+          56
+        ],
+        [
+          "ë",
+          55
+        ]
+      ]
+    }
+  }
+}

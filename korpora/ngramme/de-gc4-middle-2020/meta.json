@@ -1,0 +1,236 @@
+{
+  "quelle": "de-gc4-middle-2020",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "skripte_sha256": {
+      "mischen.py": "8cbda3e637b9e5fb39015e3a3f736ee1d389c6d55a099445c3c5e195c3b86469",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "quellen.py": "eb36ec337b126e3a6efc392a49119abe290276ee02bb0e97780451a7567e12ff",
+      "zaehlen.py": "a16646f1929c2eab8937bcf1c9c605317f27092e9ec485787a9e79e311bfaf42"
+    }
+  },
+  "datum": "2026-11-14",
+  "dauer_sekunden": 52,
+  "eingaben": {
+    "gc4/de_middle_0000_2020-10.tar.gz": "b86e96b5796ccd5e975e1b3f07f69ae7895a832d4b4e3dc9c1485e38048b4b82"
+  },
+  "parameter": {
+    "schritt": 40,
+    "min_sprachwert": 0.98
+  },
+  "summen": {
+    "zeichen": 107753139,
+    "bigramme": 107743624,
+    "trigramme": 107734125,
+    "verschiedene_unigramme": 108,
+    "verschiedene_bigramme": 8981,
+    "verschiedene_trigramme": 149515
+  },
+  "pruefbericht": {
+    "summen": {
+      "c1_als_cp1252_gelesen": 627,
+      "dokument_verworfen:sprachwert": 11312,
+      "dokumente_gelesen": 42090,
+      "einheiten_gelesen": 620999,
+      "entfernt_kombinierend": 137,
+      "ersetzt": 220965,
+      "grenze": 16911,
+      "grenzen_gesetzt": 8490,
+      "transliteriert": 11604,
+      "zeile_verworfen:fremde_schrift": 913,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 111,
+      "zeile_verworfen:zu_wenig_buchstaben": 354,
+      "zeile_verworfen:zu_wenig_buchstabenanteil": 5732,
+      "zeilen_verwendet": 613889
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "“",
+          57498
+        ],
+        [
+          "„",
+          53345
+        ],
+        [
+          "–",
+          43854
+        ],
+        [
+          "…",
+          13636
+        ],
+        [
+          "»",
+          13498
+        ],
+        [
+          "«",
+          9030
+        ],
+        [
+          "­",
+          6257
+        ],
+        [
+          "”",
+          5996
+        ],
+        [
+          "’",
+          4584
+        ],
+        [
+          "\t",
+          3921
+        ],
+        [
+          "‘",
+          2265
+        ],
+        [
+          "—",
+          1422
+        ],
+        [
+          "‚",
+          1079
+        ],
+        [
+          "›",
+          1049
+        ],
+        [
+          "´",
+          1002
+        ]
+      ],
+      "grenze": [
+        [
+          "•",
+          3572
+        ],
+        [
+          "©",
+          2290
+        ],
+        [
+          "®",
+          1494
+        ],
+        [
+          "·",
+          1319
+        ],
+        [
+          "→",
+          1303
+        ],
+        [
+          "←",
+          439
+        ],
+        [
+          "😉",
+          390
+        ],
+        [
+          "🙂",
+          381
+        ],
+        [
+          "†",
+          331
+        ],
+        [
+          "↑",
+          295
+        ],
+        [
+          "�",
+          282
+        ],
+        [
+          "™",
+          273
+        ],
+        [
+          "×",
+          248
+        ],
+        [
+          "ﬁ",
+          173
+        ],
+        [
+          "◗",
+          167
+        ]
+      ],
+      "transliteriert": [
+        [
+          "é",
+          4832
+        ],
+        [
+          "á",
+          810
+        ],
+        [
+          "è",
+          636
+        ],
+        [
+          "í",
+          399
+        ],
+        [
+          "à",
+          381
+        ],
+        [
+          "ó",
+          357
+        ],
+        [
+          "â",
+          296
+        ],
+        [
+          "ç",
+          223
+        ],
+        [
+          "ô",
+          210
+        ],
+        [
+          "ë",
+          187
+        ],
+        [
+          "ø",
+          182
+        ],
+        [
+          "ã",
+          181
+        ],
+        [
+          "ñ",
+          170
+        ],
+        [
+          "ć",
+          162
+        ],
+        [
+          "Ã",
+          156
+        ]
+      ]
+    }
+  }
+}

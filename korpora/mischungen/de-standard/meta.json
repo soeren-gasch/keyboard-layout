@@ -1,0 +1,43 @@
+{
+  "mischung": "de-standard",
+  "beschreibung": "Deutsch, Startgewichtung vom 14.11.2026: förmlich 40 %, gesprochen 20 %, informell 40 %. Gewichte sind Anteile an allen Zeichen.",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/mischen.py",
+    "sha256": "8cbda3e637b9e5fb39015e3a3f736ee1d389c6d55a099445c3c5e195c3b86469"
+  },
+  "datum": "2026-11-14",
+  "rezept": "korpora/mischungen/de-standard.json",
+  "gewichte_normiert": {
+    "de-leipzig-news-2024": 0.15,
+    "de-leipzig-web-2021": 0.15,
+    "de-leipzig-wikipedia-2021": 0.1,
+    "de-opensubtitles-2024": 0.2,
+    "de-gc4-middle-2020": 0.15,
+    "de-one-million-posts": 0.15,
+    "de-dortmunder-chatkorpus": 0.1
+  },
+  "skala": 10000000000,
+  "eingaben_sha256": {
+    "de-leipzig-news-2024/1-grams.txt": "3696090654ee85e9f019e727505d280e1feb10f7442f6b14fbda2d3dee4605d2",
+    "de-leipzig-web-2021/1-grams.txt": "8772f5a8445bf661158476e281e8e90daddcfc7ffc34e84f3955f9a4cdb0e476",
+    "de-leipzig-wikipedia-2021/1-grams.txt": "f087645fae987180415897f6bd7c942d61ee07f7d694ce8f91ed024661a69f26",
+    "de-opensubtitles-2024/1-grams.txt": "3b0df4b55edb25d9ab67be13d31d9463d4c6f055463ab9fa6fea8c10b0d2cdbc",
+    "de-gc4-middle-2020/1-grams.txt": "1f46fb4da668cd2bf8ff62aabd4df23828c421c3e2b8e0dfdacaaae04c927a09",
+    "de-one-million-posts/1-grams.txt": "d82ba7b4ae134d962e5965d68ac77a250e488fa4e5e3e910b9d9f29a8925292a",
+    "de-dortmunder-chatkorpus/1-grams.txt": "528e1dd9170d964176b2ac3c2d05781bfdcd73232b6c864bee8a937669a961ea",
+    "de-leipzig-news-2024/2-grams.txt": "69143bb929aa1def710d619329d047e76d31f78aefec324704f5432ab833c152",
+    "de-leipzig-web-2021/2-grams.txt": "aa9411246d912c3a2d2df85b58f58fc577075beeb79992d3e70817a0b21dae66",
+    "de-leipzig-wikipedia-2021/2-grams.txt": "7a66b6a145f56a6e53bb6cbadf1bf84e82635ef5adaf773d83b64a6e2da906a4",
+    "de-opensubtitles-2024/2-grams.txt": "ab53f99b8b38d12622d837dcc0317e5a381db0a25ebcdd201e443187f1fb5167",
+    "de-gc4-middle-2020/2-grams.txt": "8608eed0b37a20a204f755ea7c256d10f6e7739254e08739e39408b1f6bac5c3",
+    "de-one-million-posts/2-grams.txt": "92fa82695befa2a9847e83c3f78a19e1fef338f005571f3463dae89dd590740e",
+    "de-dortmunder-chatkorpus/2-grams.txt": "6203a48369812d09d1734f57e74e983a493be04851a882c6669b8de088cc60a6",
+    "de-leipzig-news-2024/3-grams.txt": "a47d0041ad721497d86b124c079a8b1b94f946156f12952ea1611e2f522229e7",
+    "de-leipzig-web-2021/3-grams.txt": "38f5b6bfac15ce4e8e042aa8c73bea90a5c466be0e9553ee3ee1a53fb76d58cb",
+    "de-leipzig-wikipedia-2021/3-grams.txt": "0aa54f2f16cf0fe61ce86e87e77d6f0fa4ba70b3b6141e24be2ca7749dd1574f",
+    "de-opensubtitles-2024/3-grams.txt": "43f02cbbc3526a790ca3aae031d06543c84b73aa880a587aae65a1d5a8246e5c",
+    "de-gc4-middle-2020/3-grams.txt": "7f9b816dc048c11099d66dbddb034a034005728f55eaba0e82ac2f994b9b8236",
+    "de-one-million-posts/3-grams.txt": "ee7cb3f55ed5e1f0124096648ab38fd18d3f548e1c65d4dee38ecdb99ed4b077",
+    "de-dortmunder-chatkorpus/3-grams.txt": "83771cb858640388fe68cb92726caffd34c862a95bb6915ebd9701f7753166aa"
+  }
+}

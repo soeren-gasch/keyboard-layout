@@ -1,0 +1,156 @@
+{
+  "quelle": "de-dortmunder-chatkorpus",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "skripte_sha256": {
+      "mischen.py": "8cbda3e637b9e5fb39015e3a3f736ee1d389c6d55a099445c3c5e195c3b86469",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "quellen.py": "eb36ec337b126e3a6efc392a49119abe290276ee02bb0e97780451a7567e12ff",
+      "zaehlen.py": "a16646f1929c2eab8937bcf1c9c605317f27092e9ec485787a9e79e311bfaf42"
+    }
+  },
+  "datum": "2026-11-14",
+  "dauer_sekunden": 2,
+  "eingaben": {
+    "dortmunder-chatkorpus/chatkorpus-release.zip": "c555a7a46f31805fffdabdab207dfb921cce31d1c12b33b832add1ffab22856b"
+  },
+  "parameter": {},
+  "summen": {
+    "zeichen": 3019947,
+    "bigramme": 2970082,
+    "trigramme": 2920220,
+    "verschiedene_unigramme": 104,
+    "verschiedene_bigramme": 4855,
+    "verschiedene_trigramme": 38647
+  },
+  "pruefbericht": {
+    "summen": {
+      "c1_als_cp1252_gelesen": 82,
+      "datei_repariert": 10,
+      "datei_unlesbar": 3,
+      "dateien_gelesen": 378,
+      "einheiten_gelesen": 51934,
+      "ersetzt": 221,
+      "grenze": 17,
+      "grenzen_gesetzt": 14,
+      "transliteriert": 148,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 3,
+      "zeile_verworfen:zu_wenig_buchstaben": 1886,
+      "zeile_verworfen:zu_wenig_buchstabenanteil": 194,
+      "zeilen_verwendet": 49851
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "´",
+          150
+        ],
+        [
+          "«",
+          29
+        ],
+        [
+          "»",
+          29
+        ],
+        [
+          "–",
+          4
+        ],
+        [
+          "„",
+          3
+        ],
+        [
+          "’",
+          3
+        ],
+        [
+          "“",
+          2
+        ],
+        [
+          "‘",
+          1
+        ]
+      ],
+      "grenze": [
+        [
+          "¤",
+          7
+        ],
+        [
+          "¨",
+          6
+        ],
+        [
+          "·",
+          4
+        ]
+      ],
+      "transliteriert": [
+        [
+          "é",
+          74
+        ],
+        [
+          "è",
+          15
+        ],
+        [
+          "à",
+          13
+        ],
+        [
+          "í",
+          9
+        ],
+        [
+          "ê",
+          6
+        ],
+        [
+          "Š",
+          6
+        ],
+        [
+          "Ž",
+          5
+        ],
+        [
+          "ç",
+          4
+        ],
+        [
+          "š",
+          4
+        ],
+        [
+          "ë",
+          2
+        ],
+        [
+          "ø",
+          2
+        ],
+        [
+          "á",
+          1
+        ],
+        [
+          "ý",
+          1
+        ],
+        [
+          "Î",
+          1
+        ],
+        [
+          "â",
+          1
+        ]
+      ]
+    }
+  }
+}

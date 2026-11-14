@@ -1,0 +1,12 @@
+{
+  "beschreibung": "Deutsch, Startgewichtung vom 14.11.2026: förmlich 40 %, gesprochen 20 %, informell 40 %. Gewichte sind Anteile an allen Zeichen.",
+  "bestandteile": {
+    "de-leipzig-news-2024": 0.15,
+    "de-leipzig-web-2021": 0.15,
+    "de-leipzig-wikipedia-2021": 0.10,
+    "de-opensubtitles-2024": 0.20,
+    "de-gc4-middle-2020": 0.15,
+    "de-one-million-posts": 0.15,
+    "de-dortmunder-chatkorpus": 0.10
+  }
+}

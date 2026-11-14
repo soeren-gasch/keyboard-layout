@@ -1,0 +1,231 @@
+{
+  "quelle": "de-leipzig-wikipedia-2021",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "skripte_sha256": {
+      "mischen.py": "8cbda3e637b9e5fb39015e3a3f736ee1d389c6d55a099445c3c5e195c3b86469",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "quellen.py": "eb36ec337b126e3a6efc392a49119abe290276ee02bb0e97780451a7567e12ff",
+      "zaehlen.py": "a16646f1929c2eab8937bcf1c9c605317f27092e9ec485787a9e79e311bfaf42"
+    }
+  },
+  "datum": "2026-11-14",
+  "dauer_sekunden": 13,
+  "eingaben": {
+    "leipzig/deu_wikipedia_2021_1M.tar.gz": "d5eb95fe71010a88d69ba408a4016f67a3a219e1a63cade652593abf33010aba"
+  },
+  "parameter": {
+    "name": "deu_wikipedia_2021_1M"
+  },
+  "summen": {
+    "zeichen": 108509665,
+    "bigramme": 108504997,
+    "trigramme": 108500348,
+    "verschiedene_unigramme": 97,
+    "verschiedene_bigramme": 6346,
+    "verschiedene_trigramme": 93892
+  },
+  "pruefbericht": {
+    "summen": {
+      "einheiten_gelesen": 1000000,
+      "entfernt_kombinierend": 25,
+      "ersetzt": 169957,
+      "grenze": 3526,
+      "grenzen_gesetzt": 3405,
+      "transliteriert": 42056,
+      "zeile_verworfen:fremde_schrift": 1676,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 762,
+      "zeile_verworfen:zu_wenig_buchstabenanteil": 146,
+      "zeilen_verwendet": 997416
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "“",
+          61677
+        ],
+        [
+          "„",
+          60632
+        ],
+        [
+          "–",
+          32926
+        ],
+        [
+          "’",
+          5680
+        ],
+        [
+          "«",
+          1623
+        ],
+        [
+          "»",
+          1611
+        ],
+        [
+          "‘",
+          1471
+        ],
+        [
+          "‚",
+          1225
+        ],
+        [
+          "…",
+          1064
+        ],
+        [
+          "−",
+          454
+        ],
+        [
+          "”",
+          449
+        ],
+        [
+          "′",
+          324
+        ],
+        [
+          "″",
+          218
+        ],
+        [
+          "´",
+          184
+        ],
+        [
+          " ",
+          105
+        ]
+      ],
+      "grenze": [
+        [
+          "×",
+          1240
+        ],
+        [
+          "†",
+          1037
+        ],
+        [
+          "£",
+          207
+        ],
+        [
+          "½",
+          181
+        ],
+        [
+          "·",
+          130
+        ],
+        [
+          "±",
+          92
+        ],
+        [
+          "‰",
+          81
+        ],
+        [
+          "ə",
+          78
+        ],
+        [
+          "→",
+          72
+        ],
+        [
+          "•",
+          32
+        ],
+        [
+          "≈",
+          27
+        ],
+        [
+          "¼",
+          25
+        ],
+        [
+          "®",
+          24
+        ],
+        [
+          "¾",
+          18
+        ],
+        [
+          "⚭",
+          15
+        ]
+      ],
+      "transliteriert": [
+        [
+          "é",
+          9066
+        ],
+        [
+          "á",
+          3745
+        ],
+        [
+          "í",
+          2675
+        ],
+        [
+          "ó",
+          2160
+        ],
+        [
+          "è",
+          1360
+        ],
+        [
+          "ō",
+          1315
+        ],
+        [
+          "š",
+          1163
+        ],
+        [
+          "č",
+          962
+        ],
+        [
+          "ç",
+          921
+        ],
+        [
+          "ø",
+          784
+        ],
+        [
+          "ā",
+          768
+        ],
+        [
+          "ı",
+          741
+        ],
+        [
+          "ł",
+          700
+        ],
+        [
+          "ć",
+          643
+        ],
+        [
+          "ý",
+          618
+        ]
+      ]
+    }
+  }
+}

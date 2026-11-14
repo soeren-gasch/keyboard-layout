@@ -65,4 +65,5 @@ Download-Quellen:
 ## Offen
 
 - Lizenzen von Leipzig, OpenSubtitles und Dortmunder Chat-Korpus verbindlich prüfen, bevor abgeleitete N-Gramme veröffentlicht werden.
+- Aufbereitung siehe [`../skripte/README.md`](../skripte/README.md); Ergebnisse unter [`../ngramme/`](../ngramme/README.md).
 - Eigene Texte von Sören als zusätzliche Quelle: Daraus kommen nur aggregierte N-Gramme ins Repo, nie Rohtexte.
