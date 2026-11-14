@@ -4,16 +4,22 @@
     "skript": "korpora/skripte/zaehlen.py",
     "normalisierung_version": "2",
     "skripte_sha256": {
+      "beispieldaten.py": "5237e9d7e213d5a75bd80beb735f17733118f8f22ec9ea326513860f647c2c84",
+      "herunterladen.py": "b45816e876684d236feb738ef0269b6d9198de25cfe9cc9df96fa811fc769769",
       "mischen.py": "8cbda3e637b9e5fb39015e3a3f736ee1d389c6d55a099445c3c5e195c3b86469",
       "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
-      "quellen.py": "eb36ec337b126e3a6efc392a49119abe290276ee02bb0e97780451a7567e12ff",
-      "zaehlen.py": "a16646f1929c2eab8937bcf1c9c605317f27092e9ec485787a9e79e311bfaf42"
+      "quellen.py": "3c9b4131699e84ff7943ba119ccb503e4c63a1c11f2dbe4814a407b2bcd6b831",
+      "zaehlen.py": "96cbc12cb7da5f0a19e2f1d0b6a7ef2d7def33b2942edf2887782f63cf559ffb"
     }
   },
   "datum": "2026-11-14",
-  "dauer_sekunden": 52,
+  "dauer_sekunden": 47,
   "eingaben": {
-    "gc4/de_middle_0000_2020-10.tar.gz": "b86e96b5796ccd5e975e1b3f07f69ae7895a832d4b4e3dc9c1485e38048b4b82"
+    "gc4/de_middle_0000_2020-10.tar.gz": {
+      "sha256": "b86e96b5796ccd5e975e1b3f07f69ae7895a832d4b4e3dc9c1485e38048b4b82",
+      "bytes": 2259569411,
+      "url": "https://opendata.iisys.de/opendata/Datasets/CommonCrawl/middle/de_middle_0000_2020-10.tar.gz"
+    }
   },
   "parameter": {
     "schritt": 40,
