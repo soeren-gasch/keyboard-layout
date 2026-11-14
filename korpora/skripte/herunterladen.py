@@ -8,7 +8,8 @@ Aufruf (aus dem Repo-Wurzelverzeichnis):
     python3 korpora/skripte/herunterladen.py --status
     python3 korpora/skripte/herunterladen.py                       # alles herunterladen
     python3 korpora/skripte/herunterladen.py deutsch/leipzig       # nur Pfade, die so beginnen
-    python3 korpora/skripte/herunterladen.py --pruefen             # Prüfsummen der vorhandenen Dateien
+    python3 korpora/skripte/herunterladen.py --status --pruefen    # Prüfsummen der vorhandenen Dateien
+    python3 korpora/skripte/herunterladen.py --urls-pruefen        # URLs erreichbar, Größe wie im Manifest?
     python3 korpora/skripte/herunterladen.py --aus ~/keyboard/original-voll   # schon vorhandene Dateien einbinden
 
 Manifeste: korpora/<sprache>/quellen.json mit Pfad, URL, SHA-256 und Größe je Datei.
@@ -147,11 +148,26 @@ def bearbeite(e, args):
     return f"heruntergeladen und geprüft: {e['name']}"
 
 
+def url_pruefen(e):
+    """HEAD-Anfrage: Ist die URL erreichbar und stimmt die Größe mit dem Manifest überein?"""
+    anfrage = urllib.request.Request(e["url"], method="HEAD", headers={"User-Agent": KENNUNG})
+    try:
+        with urllib.request.urlopen(anfrage, timeout=60) as antwort:
+            laenge = antwort.headers.get("Content-Length")
+            if laenge is None:
+                return f"unklar (keine Größenangabe): {e['name']}"
+            return (f"ok {int(laenge):>13,} Bytes: {e['name']}" if int(laenge) == e["bytes"]
+                    else f"GRÖSSE ABWEICHEND (Server {int(laenge):,}, Manifest {e['bytes']:,}): {e['name']}")
+    except (urllib.error.URLError, TimeoutError) as fehler:
+        return f"NICHT ERREICHBAR ({fehler}): {e['name']}"
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("auswahl", nargs="*", help="Nur Dateien, deren Name (sprache/pfad) so beginnt")
     parser.add_argument("--status", action="store_true", help="Zustand anzeigen, nichts ändern")
     parser.add_argument("--pruefen", action="store_true", help="Mit --status: SHA-256 der vorhandenen Dateien prüfen")
+    parser.add_argument("--urls-pruefen", action="store_true", help="nur prüfen, ob alle URLs erreichbar sind und die Größe stimmt")
     parser.add_argument("--aus", help="Verzeichnis mit bereits vorhandenen Originalen (gleiche Struktur <sprache>/<pfad>)")
     parser.add_argument("--verschieben", action="store_true", help="Mit --aus: Dateien verschieben statt kopieren")
     parser.add_argument("--neu", action="store_true", help="Auch vorhandene Dateien erneut laden")
@@ -162,6 +178,11 @@ def main():
                  if not args.auswahl or any(e["name"].startswith(a) for a in args.auswahl)]
     if not eintraege:
         sys.exit("Keine passende Datei im Manifest.")
+
+    if args.urls_pruefen:
+        for e in eintraege:
+            print(url_pruefen(e), flush=True)
+        return
 
     if args.status:
         for e in eintraege:

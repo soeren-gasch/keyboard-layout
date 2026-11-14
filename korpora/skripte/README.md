@@ -36,6 +36,7 @@ python3 korpora/skripte/herunterladen.py                      # alle Originale l
 python3 korpora/skripte/herunterladen.py deutsch/leipzig      # nur Dateien, deren Name so beginnt
 python3 korpora/skripte/herunterladen.py --status --pruefen   # SHA-256 aller vorhandenen Dateien prüfen
 python3 korpora/skripte/herunterladen.py --aus ~/ordner       # schon vorhandene Originale einbinden (Struktur <sprache>/<pfad>)
+python3 korpora/skripte/herunterladen.py --urls-pruefen       # nur testen, ob alle Quellen noch erreichbar sind und die Größe stimmt
 ```
 
 **So funktioniert die lokale Ersetzung:**
