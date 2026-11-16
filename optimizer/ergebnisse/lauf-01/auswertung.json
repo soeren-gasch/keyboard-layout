@@ -1,0 +1,974 @@
+[
+ {
+  "konfiguration": "voyager32-A-soeren",
+  "layout": "-vhzxöügkjiunrm,etscbpyl.äowfda ",
+  "gefunden": 1,
+  "kosten": 189.03841518690044,
+  "metriken": {
+   "Balance": 8.06231399519147,
+   "Mod": 8.914558762408454,
+   "Tasten": 99.43099204550738,
+   "SFB": 30.588726079860727,
+   "Bewegung": 26.922625005168168,
+   "Trigr.": 28.405028830899997
+  },
+  "quer": {
+   "voyager32-A-soeren": 189.03841518690044,
+   "voyager32-A-standard": 190.0235829916812,
+   "voyager32-B-soeren": 196.25388748286997,
+   "voyager32-B-standard": 196.25755295523126,
+   "voyager32-C-soeren": 195.58366295165413,
+   "voyager32-C-standard": 196.7053548527692
+  },
+  "sprachen": {
+   "de": 165.82407823820066,
+   "en": 191.68336311681327,
+   "code": 381.55147034428177
+  }
+ },
+ {
+  "konfiguration": "voyager32-A-soeren",
+  "layout": "-ä,pyvbmxjaieugfhtnroöüc.kdwzls ",
+  "gefunden": 1,
+  "kosten": 167.50160117163333,
+  "metriken": {
+   "Balance": 5.3313631418867615,
+   "Mod": 8.914558762408454,
+   "Tasten": 102.22274839460323,
+   "SFB": 26.359016809406082,
+   "Bewegung": 22.42941941062843,
+   "Trigr.": 13.772639340553276
+  },
+  "quer": {
+   "voyager32-A-soeren": 167.50160117163333,
+   "voyager32-A-standard": 175.03524473517672,
+   "voyager32-B-soeren": 166.02118940276108,
+   "voyager32-B-standard": 173.20284526042232,
+   "voyager32-C-soeren": 166.97472220320225,
+   "voyager32-C-standard": 175.51482664621892
+  },
+  "sprachen": {
+   "de": 147.05620868840072,
+   "en": 171.19821071129576,
+   "code": 356.1889961505106
+  }
+ },
+ {
+  "konfiguration": "voyager32-A-soeren",
+  "layout": "jvmgpöü.kxnrstc,eahifzwdbäo-yu l",
+  "gefunden": 1,
+  "kosten": 167.37685980699905,
+  "metriken": {
+   "Balance": 10.10999744431538,
+   "Mod": 8.8029509986329,
+   "Tasten": 100.90520284406497,
+   "SFB": 25.828823548039487,
+   "Bewegung": 24.007734588189134,
+   "Trigr.": 12.077960444611769
+  },
+  "quer": {
+   "voyager32-A-soeren": 167.37685980699905,
+   "voyager32-A-standard": 173.15074818627383,
+   "voyager32-B-soeren": 182.20194137070968,
+   "voyager32-B-standard": 185.55591856619904,
+   "voyager32-C-soeren": 180.17616347395355,
+   "voyager32-C-standard": 185.46097685494044
+  },
+  "sprachen": {
+   "de": 151.5792447956191,
+   "en": 154.18297133144404,
+   "code": 333.29973606971816
+  }
+ },
+ {
+  "konfiguration": "voyager32-A-soeren",
+  "layout": "ä.uz-vpmgjaoinybstld,öürxfhwkce ",
+  "gefunden": 1,
+  "kosten": 179.12933330010537,
+  "metriken": {
+   "Balance": 5.9768938541571695,
+   "Mod": 8.914558762408454,
+   "Tasten": 101.07553344020599,
+   "SFB": 30.695243520372355,
+   "Bewegung": 21.814257991556676,
+   "Trigr.": 19.570826638852846
+  },
+  "quer": {
+   "voyager32-A-soeren": 179.12933330010537,
+   "voyager32-A-standard": 180.9448691787286,
+   "voyager32-B-soeren": 183.69666368263083,
+   "voyager32-B-standard": 184.3091174311228,
+   "voyager32-C-soeren": 183.62244862574263,
+   "voyager32-C-standard": 185.43154800398096
+  },
+  "sprachen": {
+   "de": 172.01782576623637,
+   "en": 156.7227617348241,
+   "code": 343.4744746504914
+  }
+ },
+ {
+  "konfiguration": "voyager32-A-soeren",
+  "layout": "äz.gövkhwxioatdmsurnyü,cpfl-jb e",
+  "gefunden": 1,
+  "kosten": 186.08009276616724,
+  "metriken": {
+   "Balance": 8.96519086731414,
+   "Mod": 8.8029509986329,
+   "Tasten": 101.40824146395171,
+   "SFB": 28.37156631110793,
+   "Bewegung": 22.24258014243695,
+   "Trigr.": 17.859873773955975
+  },
+  "quer": {
+   "voyager32-A-soeren": 186.08009276616724,
+   "voyager32-A-standard": 190.13943788608077,
+   "voyager32-B-soeren": 195.58526378904466,
+   "voyager32-B-standard": 198.54325403764858,
+   "voyager32-C-soeren": 193.77668634581445,
+   "voyager32-C-standard": 198.1982469104613
+  },
+  "sprachen": {
+   "de": 174.15343196780745,
+   "en": 162.6794511461629,
+   "code": 374.02672273446456
+  }
+ },
+ {
+  "konfiguration": "voyager32-A-soeren",
+  "layout": "äüuyzkpmwjaoircgtsnh,öx.vbdf-le ",
+  "gefunden": 1,
+  "kosten": 177.10578340497642,
+  "metriken": {
+   "Balance": 8.328969085063274,
+   "Mod": 8.85995109217597,
+   "Tasten": 99.7205644862149,
+   "SFB": 29.888083033508536,
+   "Bewegung": 21.3968492683258,
+   "Trigr.": 14.5072953603773
+  },
+  "quer": {
+   "voyager32-A-soeren": 177.10578340497642,
+   "voyager32-A-standard": 179.30559283523564,
+   "voyager32-B-soeren": 183.46218223567834,
+   "voyager32-B-standard": 185.016780124841,
+   "voyager32-C-soeren": 179.33914213334143,
+   "voyager32-C-standard": 182.00151048472327
+  },
+  "sprachen": {
+   "de": 165.0778832331274,
+   "en": 158.10979669446073,
+   "code": 350.14563665232487
+  }
+ },
+ {
+  "konfiguration": "voyager32-A-standard",
+  "layout": "-x.yökbscjoaieuphrnlgzä,üfdvwm t",
+  "gefunden": 1,
+  "kosten": 179.95302942558646,
+  "metriken": {
+   "Balance": 8.09750829179887,
+   "Mod": 8.914558762408454,
+   "Tasten": 99.12154693764943,
+   "SFB": 29.78056759412907,
+   "Bewegung": 25.051018325428842,
+   "Trigr.": 14.862841726273118
+  },
+  "quer": {
+   "voyager32-A-soeren": 187.54683782968578,
+   "voyager32-A-standard": 179.95302942558646,
+   "voyager32-B-soeren": 196.38016006462732,
+   "voyager32-B-standard": 191.18237284847007,
+   "voyager32-C-soeren": 190.99583049125096,
+   "voyager32-C-standard": 186.68260156380072
+  },
+  "sprachen": {
+   "de": 163.33964643110414,
+   "en": 168.16731026416576,
+   "code": 364.9183883976467
+  }
+ },
+ {
+  "konfiguration": "voyager32-A-standard",
+  "layout": "jmcfpxyoäörlntgkiaehzwvdb,u-ü. s",
+  "gefunden": 1,
+  "kosten": 167.14741906367354,
+  "metriken": {
+   "Balance": 7.808495116487908,
+   "Mod": 8.8029509986329,
+   "Tasten": 98.11066203977101,
+   "SFB": 32.6396517338146,
+   "Bewegung": 20.077813030891885,
+   "Trigr.": 9.862153335440961
+  },
+  "quer": {
+   "voyager32-A-soeren": 178.01469344430498,
+   "voyager32-A-standard": 167.14741906367354,
+   "voyager32-B-soeren": 174.69290454181765,
+   "voyager32-B-standard": 169.1833072211292,
+   "voyager32-C-soeren": 173.6387844941803,
+   "voyager32-C-standard": 167.06414885910414
+  },
+  "sprachen": {
+   "de": 152.37545420466012,
+   "en": 152.9463722048253,
+   "code": 339.29342743850816
+  }
+ },
+ {
+  "konfiguration": "voyager32-A-standard",
+  "layout": "jmfpxy,üäörlntgvheiazcwdbku-o. s",
+  "gefunden": 1,
+  "kosten": 170.4394129395269,
+  "metriken": {
+   "Balance": 5.874105888593987,
+   "Mod": 8.8029509986329,
+   "Tasten": 102.67184617068654,
+   "SFB": 27.308268658137234,
+   "Bewegung": 23.53484150315019,
+   "Trigr.": 10.735577345479875
+  },
+  "quer": {
+   "voyager32-A-soeren": 182.7805469067543,
+   "voyager32-A-standard": 170.4394129395269,
+   "voyager32-B-soeren": 179.7360836432951,
+   "voyager32-B-standard": 174.14677887961386,
+   "voyager32-C-soeren": 177.80206376754458,
+   "voyager32-C-standard": 170.37807765085856
+  },
+  "sprachen": {
+   "de": 148.33908744439833,
+   "en": 170.54146665147653,
+   "code": 360.0474705840866
+  }
+ },
+ {
+  "konfiguration": "voyager32-A-standard",
+  "layout": "xkdwvj,äüöhstnm.reaigfblpzc-oy u",
+  "gefunden": 1,
+  "kosten": 168.1033466143699,
+  "metriken": {
+   "Balance": 5.908776785134744,
+   "Mod": 8.8029509986329,
+   "Tasten": 100.59269547864916,
+   "SFB": 25.77748025134622,
+   "Bewegung": 26.744688155375446,
+   "Trigr.": 16.939759110712213
+  },
+  "quer": {
+   "voyager32-A-soeren": 177.58821046215405,
+   "voyager32-A-standard": 168.1033466143699,
+   "voyager32-B-soeren": 175.22883967373747,
+   "voyager32-B-standard": 172.09342302282363,
+   "voyager32-C-soeren": 173.87449160564094,
+   "voyager32-C-standard": 168.9490972569445
+  },
+  "sprachen": {
+   "de": 146.921559954628,
+   "en": 169.00738660685036,
+   "code": 354.7609504759331
+  }
+ },
+ {
+  "konfiguration": "voyager32-A-standard",
+  "layout": "xwlpvz,uäöhrntbgoieafmjdk.c-üy s",
+  "gefunden": 1,
+  "kosten": 166.07514245147368,
+  "metriken": {
+   "Balance": 6.348000751971311,
+   "Mod": 8.8029509986329,
+   "Tasten": 98.19891278376775,
+   "SFB": 29.733881977013326,
+   "Bewegung": 23.37938451328516,
+   "Trigr.": 11.677140103449805
+  },
+  "quer": {
+   "voyager32-A-soeren": 180.16081448446775,
+   "voyager32-A-standard": 166.07514245147368,
+   "voyager32-B-soeren": 176.99181927349693,
+   "voyager32-B-standard": 169.91454478885032,
+   "voyager32-C-soeren": 175.77530736046992,
+   "voyager32-C-standard": 166.32825022168848
+  },
+  "sprachen": {
+   "de": 150.06265575131613,
+   "en": 156.41702472550125,
+   "code": 338.23933541237375
+  }
+ },
+ {
+  "konfiguration": "voyager32-A-standard",
+  "layout": "öü.bxjmdk-oainflrtsu,zähpwcvyg e",
+  "gefunden": 1,
+  "kosten": 182.3175566589596,
+  "metriken": {
+   "Balance": 8.816490172842611,
+   "Mod": 8.914558762408454,
+   "Tasten": 97.40363593559006,
+   "SFB": 27.666049460696943,
+   "Bewegung": 20.22545369587322,
+   "Trigr.": 21.466011288797286
+  },
+  "quer": {
+   "voyager32-A-soeren": 186.86983726964078,
+   "voyager32-A-standard": 182.3175566589596,
+   "voyager32-B-soeren": 197.43066144545176,
+   "voyager32-B-standard": 194.6867059320153,
+   "voyager32-C-soeren": 193.25973849599833,
+   "voyager32-C-standard": 191.56833867296015
+  },
+  "sprachen": {
+   "de": 169.8779641019356,
+   "en": 168.87002524989478,
+   "code": 344.95032844594743
+  }
+ },
+ {
+  "konfiguration": "voyager32-B-soeren",
+  "layout": "-ü.yxfplbjaieuwghnsroäöc,kdvzmt ",
+  "gefunden": 1,
+  "kosten": 164.2941815573624,
+  "metriken": {
+   "Balance": 5.77998043940279,
+   "Mod": 8.914558762408454,
+   "Tasten": 101.18031824345823,
+   "SFB": 28.574719626435655,
+   "Bewegung": 18.97988814718365,
+   "Trigr.": 11.368654846843242
+  },
+  "quer": {
+   "voyager32-A-soeren": 174.35215724180634,
+   "voyager32-A-standard": 178.76631247255415,
+   "voyager32-B-soeren": 164.2941815573624,
+   "voyager32-B-standard": 172.350905118315,
+   "voyager32-C-soeren": 167.03698946884407,
+   "voyager32-C-standard": 174.728482112755
+  },
+  "sprachen": {
+   "de": 141.04242906285387,
+   "en": 166.53981616963475,
+   "code": 352.50954023627935
+  }
+ },
+ {
+  "konfiguration": "voyager32-B-soeren",
+  "layout": "fblpj-yoüähsntgzreaimkvdwxcö,.u ",
+  "gefunden": 1,
+  "kosten": 158.30704181178277,
+  "metriken": {
+   "Balance": 8.382575584401454,
+   "Mod": 8.914558762408454,
+   "Tasten": 99.32268050498071,
+   "SFB": 23.296132738173043,
+   "Bewegung": 21.11967055543783,
+   "Trigr.": 17.165542511460202
+  },
+  "quer": {
+   "voyager32-A-soeren": 179.15869366433745,
+   "voyager32-A-standard": 182.4292449648858,
+   "voyager32-B-soeren": 158.30704181178277,
+   "voyager32-B-standard": 162.65337753701303,
+   "voyager32-C-soeren": 164.48436833374396,
+   "voyager32-C-standard": 168.18795975628942
+  },
+  "sprachen": {
+   "de": 137.57414591814876,
+   "en": 153.11285502959817,
+   "code": 325.56817243747037
+  }
+ },
+ {
+  "konfiguration": "voyager32-B-soeren",
+  "layout": "äzoyövplbjiaehkgdnsr.,üuxfcw-mt ",
+  "gefunden": 1,
+  "kosten": 162.62706844661497,
+  "metriken": {
+   "Balance": 5.732194638533876,
+   "Mod": 8.85995109217597,
+   "Tasten": 98.67788794235811,
+   "SFB": 25.725332950069284,
+   "Bewegung": 20.650539035298383,
+   "Trigr.": 12.073440527594471
+  },
+  "quer": {
+   "voyager32-A-soeren": 182.70842135300808,
+   "voyager32-A-standard": 183.7244294349687,
+   "voyager32-B-soeren": 162.62706844661497,
+   "voyager32-B-standard": 168.5245054486521,
+   "voyager32-C-soeren": 173.73852939987637,
+   "voyager32-C-standard": 176.7228144449619
+  },
+  "sprachen": {
+   "de": 145.37715891882792,
+   "en": 154.61185010933667,
+   "code": 325.6169733576712
+  }
+ },
+ {
+  "konfiguration": "voyager32-B-soeren",
+  "layout": "äüuz-jfmkpaier.wnthco,öyxvlbgds ",
+  "gefunden": 1,
+  "kosten": 169.9502949191875,
+  "metriken": {
+   "Balance": 8.442315647686094,
+   "Mod": 8.914558762408454,
+   "Tasten": 101.77270996430863,
+   "SFB": 26.559558820971738,
+   "Bewegung": 22.83185456823837,
+   "Trigr.": 16.858482039225727
+  },
+  "quer": {
+   "voyager32-A-soeren": 187.21282421906798,
+   "voyager32-A-standard": 189.40879687800478,
+   "voyager32-B-soeren": 169.9502949191875,
+   "voyager32-B-standard": 175.24563291530757,
+   "voyager32-C-soeren": 177.24529592486653,
+   "voyager32-C-standard": 181.19723279287217
+  },
+  "sprachen": {
+   "de": 151.8445114280437,
+   "en": 166.81208347956056,
+   "code": 340.8592764173334
+  }
+ },
+ {
+  "konfiguration": "voyager32-B-soeren",
+  "layout": "ü,ovxjfdz-uianbgtsrh.öäcpwmkyle ",
+  "gefunden": 1,
+  "kosten": 175.47530000898203,
+  "metriken": {
+   "Balance": 14.231575808908811,
+   "Mod": 8.914558762408454,
+   "Tasten": 97.9635336582008,
+   "SFB": 25.391802095531858,
+   "Bewegung": 20.309726090256817,
+   "Trigr.": 17.358137336417464
+  },
+  "quer": {
+   "voyager32-A-soeren": 180.18224105965183,
+   "voyager32-A-standard": 176.72081317330802,
+   "voyager32-B-soeren": 175.47530000898203,
+   "voyager32-B-standard": 175.34101572348493,
+   "voyager32-C-soeren": 177.50459174963564,
+   "voyager32-C-standard": 177.05441637767285
+  },
+  "sprachen": {
+   "de": 155.27303894007048,
+   "en": 168.35169731887706,
+   "code": 347.43970447956787
+  }
+ },
+ {
+  "konfiguration": "voyager32-B-soeren",
+  "layout": "üpbfxöägcjuinsk.atdrhy,lvzow-me ",
+  "gefunden": 1,
+  "kosten": 191.71102968122523,
+  "metriken": {
+   "Balance": 9.233303926648826,
+   "Mod": 8.85995109217597,
+   "Tasten": 100.30931633265372,
+   "SFB": 31.7909690597999,
+   "Bewegung": 20.975625443110147,
+   "Trigr.": 25.765387784209675
+  },
+  "quer": {
+   "voyager32-A-soeren": 196.37326633019853,
+   "voyager32-A-standard": 198.24786229981697,
+   "voyager32-B-soeren": 191.71102968122523,
+   "voyager32-B-standard": 195.9027000768341,
+   "voyager32-C-soeren": 194.33316214085377,
+   "voyager32-C-standard": 200.05388459954415
+  },
+  "sprachen": {
+   "de": 175.6482775361136,
+   "en": 180.47287435897132,
+   "code": 354.1996928172289
+  }
+ },
+ {
+  "konfiguration": "voyager32-B-standard",
+  "layout": "-y,äözblmjhiea.gsnrdupüoxkfvwct ",
+  "gefunden": 1,
+  "kosten": 168.58672065180107,
+  "metriken": {
+   "Balance": 6.111375642425139,
+   "Mod": 8.914558762408454,
+   "Tasten": 98.5170227164951,
+   "SFB": 31.603424589173578,
+   "Bewegung": 18.49410685008258,
+   "Trigr.": 12.59307471867132
+  },
+  "quer": {
+   "voyager32-A-soeren": 178.58046088046603,
+   "voyager32-A-standard": 172.2515473641732,
+   "voyager32-B-soeren": 173.41993232767297,
+   "voyager32-B-standard": 168.58672065180107,
+   "voyager32-C-soeren": 174.67581891704577,
+   "voyager32-C-standard": 171.67112522125058
+  },
+  "sprachen": {
+   "de": 150.52516174980389,
+   "en": 158.84157628222727,
+   "code": 347.2738916506634
+  }
+ },
+ {
+  "konfiguration": "voyager32-B-standard",
+  "layout": "vmdkxöäuoücstrzpniahgfwljyb-,.e ",
+  "gefunden": 1,
+  "kosten": 170.9386472985594,
+  "metriken": {
+   "Balance": 7.431489981038084,
+   "Mod": 8.8029509986329,
+   "Tasten": 98.79521996599716,
+   "SFB": 26.397887759814804,
+   "Bewegung": 21.697285491561463,
+   "Trigr.": 15.16438171626907
+  },
+  "quer": {
+   "voyager32-A-soeren": 194.45867844711987,
+   "voyager32-A-standard": 186.4227216808106,
+   "voyager32-B-soeren": 178.28137405891098,
+   "voyager32-B-standard": 170.9386472985594,
+   "voyager32-C-soeren": 180.29999649506792,
+   "voyager32-C-standard": 174.44566679556127
+  },
+  "sprachen": {
+   "de": 156.69593237010542,
+   "en": 162.02719152051142,
+   "code": 323.67477039079154
+  }
+ },
+ {
+  "konfiguration": "voyager32-B-standard",
+  "layout": "xblpj,zuoöcnrtgkheaimfwdvy.-üäs ",
+  "gefunden": 1,
+  "kosten": 160.8979147221328,
+  "metriken": {
+   "Balance": 8.724613399251943,
+   "Mod": 8.8029509986329,
+   "Tasten": 98.85113352914222,
+   "SFB": 25.039864288497288,
+   "Bewegung": 19.284071612464082,
+   "Trigr.": 10.270743438664258
+  },
+  "quer": {
+   "voyager32-A-soeren": 191.2817879838913,
+   "voyager32-A-standard": 184.52150791481134,
+   "voyager32-B-soeren": 172.09282798527298,
+   "voyager32-B-standard": 160.8979147221328,
+   "voyager32-C-soeren": 169.97674178020173,
+   "voyager32-C-standard": 165.17629425129215
+  },
+  "sprachen": {
+   "de": 145.62543833141598,
+   "en": 155.16552914839804,
+   "code": 314.25000192259847
+  }
+ },
+ {
+  "konfiguration": "voyager32-B-standard",
+  "layout": "xldfk,poyöhnstb.ueiamzvgwjc-üär ",
+  "gefunden": 1,
+  "kosten": 162.9267968688484,
+  "metriken": {
+   "Balance": 9.105206960510245,
+   "Mod": 8.8029509986329,
+   "Tasten": 99.21210117624344,
+   "SFB": 29.223222209608032,
+   "Bewegung": 18.26254566944771,
+   "Trigr.": 11.809738826306377
+  },
+  "quer": {
+   "voyager32-A-soeren": 189.06131425446972,
+   "voyager32-A-standard": 183.53530690826503,
+   "voyager32-B-soeren": 173.86423766767626,
+   "voyager32-B-standard": 162.9267968688484,
+   "voyager32-C-soeren": 173.2541062983403,
+   "voyager32-C-standard": 170.02965349828924
+  },
+  "sprachen": {
+   "de": 143.96007269480708,
+   "en": 158.97850992421013,
+   "code": 325.6548290577247
+  }
+ },
+ {
+  "konfiguration": "voyager32-B-standard",
+  "layout": "öäopyjflbxaieugktnrh,.üc-wdvzms ",
+  "gefunden": 1,
+  "kosten": 162.62888211436075,
+  "metriken": {
+   "Balance": 8.738179153135949,
+   "Mod": 8.914558762408454,
+   "Tasten": 97.83304864369613,
+   "SFB": 28.680233977023505,
+   "Bewegung": 18.744517273235807,
+   "Trigr.": 13.049987298428288
+  },
+  "quer": {
+   "voyager32-A-soeren": 182.24352477157257,
+   "voyager32-A-standard": 178.75931894392374,
+   "voyager32-B-soeren": 166.2298288615776,
+   "voyager32-B-standard": 162.62888211436075,
+   "voyager32-C-soeren": 170.32553230538238,
+   "voyager32-C-standard": 168.82006793418228
+  },
+  "sprachen": {
+   "de": 139.29269231082517,
+   "en": 163.56108636902724,
+   "code": 335.66108705116807
+  }
+ },
+ {
+  "konfiguration": "voyager32-B-standard",
+  "layout": "üo.yöjwlb-haeikftrnd,zäuxvgcpms ",
+  "gefunden": 1,
+  "kosten": 165.76211150182232,
+  "metriken": {
+   "Balance": 7.181498685937428,
+   "Mod": 8.914558762408454,
+   "Tasten": 97.75624352295827,
+   "SFB": 31.119411780124594,
+   "Bewegung": 20.93478647597633,
+   "Trigr.": 11.598225533637365
+  },
+  "quer": {
+   "voyager32-A-soeren": 192.06747892167226,
+   "voyager32-A-standard": 181.482182675635,
+   "voyager32-B-soeren": 174.59333702321328,
+   "voyager32-B-standard": 165.76211150182232,
+   "voyager32-C-soeren": 175.53732512889718,
+   "voyager32-C-standard": 167.4219395453643
+  },
+  "sprachen": {
+   "de": 148.81419136687978,
+   "en": 156.03837632651945,
+   "code": 334.06230921686074
+  }
+ },
+ {
+  "konfiguration": "voyager32-C-soeren",
+  "layout": "-blkjxzeiünhrtgfcouampvdwy,öä.s ",
+  "gefunden": 1,
+  "kosten": 179.29827113874458,
+  "metriken": {
+   "Balance": 10.536145624380781,
+   "Mod": 8.914558762408454,
+   "Tasten": 109.1302216271794,
+   "SFB": 23.915302621394066,
+   "Bewegung": 26.947182584154817,
+   "Trigr.": 11.763762644813783
+  },
+  "quer": {
+   "voyager32-A-soeren": 209.17539167610207,
+   "voyager32-A-standard": 209.03172840751677,
+   "voyager32-B-soeren": 179.6720870905888,
+   "voyager32-B-standard": 180.1830154619345,
+   "voyager32-C-soeren": 179.29827113874458,
+   "voyager32-C-standard": 181.33150631903936
+  },
+  "sprachen": {
+   "de": 158.39061660238013,
+   "en": 174.33944915743635,
+   "code": 357.254283286372
+  }
+ },
+ {
+  "konfiguration": "voyager32-C-soeren",
+  "layout": "jmcbzypoüärntdfkheialxvgw,u-ö. s",
+  "gefunden": 1,
+  "kosten": 163.23508045323902,
+  "metriken": {
+   "Balance": 6.406277473885585,
+   "Mod": 8.8029509986329,
+   "Tasten": 98.58818455637484,
+   "SFB": 28.02270130063974,
+   "Bewegung": 19.257857969943124,
+   "Trigr.": 11.358359500387943
+  },
+  "quer": {
+   "voyager32-A-soeren": 178.08336114909292,
+   "voyager32-A-standard": 177.1800665046743,
+   "voyager32-B-soeren": 163.5176852808682,
+   "voyager32-B-standard": 167.557205166191,
+   "voyager32-C-soeren": 163.23508045323902,
+   "voyager32-C-standard": 167.8708758139095
+  },
+  "sprachen": {
+   "de": 140.90213665487306,
+   "en": 160.30401769550068,
+   "code": 363.63157302004385
+  }
+ },
+ {
+  "konfiguration": "voyager32-C-soeren",
+  "layout": "vbdkyjpuäölntsmgceiahxwfz.,-üo r",
+  "gefunden": 1,
+  "kosten": 169.14360974398704,
+  "metriken": {
+   "Balance": 4.80311020529667,
+   "Mod": 8.8029509986329,
+   "Tasten": 99.34498839449773,
+   "SFB": 26.6555036935875,
+   "Bewegung": 26.22371128223103,
+   "Trigr.": 13.928451391784458
+  },
+  "quer": {
+   "voyager32-A-soeren": 181.84269707216572,
+   "voyager32-A-standard": 185.13047662261957,
+   "voyager32-B-soeren": 170.94963988826896,
+   "voyager32-B-standard": 176.47736706040172,
+   "voyager32-C-soeren": 169.14360974398704,
+   "voyager32-C-standard": 176.9108160456134
+  },
+  "sprachen": {
+   "de": 146.41868813955742,
+   "en": 179.64103352773793,
+   "code": 349.92559323519623
+  }
+ },
+ {
+  "konfiguration": "voyager32-C-soeren",
+  "layout": "vblpkjy.üöstnhg,reiamfwdzxc-äo u",
+  "gefunden": 1,
+  "kosten": 161.04829654598288,
+  "metriken": {
+   "Balance": 2.8560562026555476,
+   "Mod": 8.8029509986329,
+   "Tasten": 100.24078900741515,
+   "SFB": 27.20383885313217,
+   "Bewegung": 23.063721186565296,
+   "Trigr.": 17.61207238567454
+  },
+  "quer": {
+   "voyager32-A-soeren": 173.65247561100668,
+   "voyager32-A-standard": 176.8672957864737,
+   "voyager32-B-soeren": 162.36547638563155,
+   "voyager32-B-standard": 167.500732929378,
+   "voyager32-C-soeren": 161.04829654598288,
+   "voyager32-C-standard": 169.5891334210891
+  },
+  "sprachen": {
+   "de": 139.55498416584646,
+   "en": 161.8467442647046,
+   "code": 349.3713782323911
+  }
+ },
+ {
+  "konfiguration": "voyager32-C-soeren",
+  "layout": "xmdkjyfoüärstnbgceialvwhpz,-ö.u ",
+  "gefunden": 1,
+  "kosten": 168.90271305121848,
+  "metriken": {
+   "Balance": 7.568374772653831,
+   "Mod": 8.8029509986329,
+   "Tasten": 99.11935166810154,
+   "SFB": 25.898171737365967,
+   "Bewegung": 22.967502472152475,
+   "Trigr.": 14.819437516235913
+  },
+  "quer": {
+   "voyager32-A-soeren": 180.01651940067057,
+   "voyager32-A-standard": 180.90119040210175,
+   "voyager32-B-soeren": 168.85059588407967,
+   "voyager32-B-standard": 170.54416994027443,
+   "voyager32-C-soeren": 168.90271305121848,
+   "voyager32-C-standard": 172.64144123392805
+  },
+  "sprachen": {
+   "de": 149.83051735368926,
+   "en": 157.42312338230718,
+   "code": 345.8011864171574
+  }
+ },
+ {
+  "konfiguration": "voyager32-C-soeren",
+  "layout": "öü,yxvblcjaieh.fdtrnozäukwgm-ps ",
+  "gefunden": 1,
+  "kosten": 168.96992070874893,
+  "metriken": {
+   "Balance": 4.1407927383112755,
+   "Mod": 8.85995109217597,
+   "Tasten": 100.62978915445068,
+   "SFB": 28.892524382905705,
+   "Bewegung": 22.36607652824821,
+   "Trigr.": 12.165377377921528
+  },
+  "quer": {
+   "voyager32-A-soeren": 178.74989092845706,
+   "voyager32-A-standard": 184.05332965395297,
+   "voyager32-B-soeren": 165.45162076387427,
+   "voyager32-B-standard": 173.33352295086627,
+   "voyager32-C-soeren": 168.96992070874893,
+   "voyager32-C-standard": 177.67218301697687
+  },
+  "sprachen": {
+   "de": 147.4899622005162,
+   "en": 167.52002667591503,
+   "code": 374.41175040560023
+  }
+ },
+ {
+  "konfiguration": "voyager32-C-standard",
+  "layout": "-äouxjmngbaeiskwrhcd,öü.yzlvpft ",
+  "gefunden": 1,
+  "kosten": 184.93291735029527,
+  "metriken": {
+   "Balance": 9.033044603827825,
+   "Mod": 8.914558762408454,
+   "Tasten": 102.68983865662844,
+   "SFB": 33.46669731114182,
+   "Bewegung": 22.180968014151443,
+   "Trigr.": 14.891095538033975
+  },
+  "quer": {
+   "voyager32-A-soeren": 201.77618129909644,
+   "voyager32-A-standard": 196.0100537680723,
+   "voyager32-B-soeren": 191.28402101766662,
+   "voyager32-B-standard": 187.4002758707592,
+   "voyager32-C-soeren": 187.88683078204195,
+   "voyager32-C-standard": 184.93291735029527
+  },
+  "sprachen": {
+   "de": 166.20132807954107,
+   "en": 180.0028702667291,
+   "code": 352.98405284385314
+  }
+ },
+ {
+  "konfiguration": "voyager32-C-standard",
+  "layout": "xclbjyp.oörntsfgheaiwmvdzk,-üä u",
+  "gefunden": 1,
+  "kosten": 168.35550728892025,
+  "metriken": {
+   "Balance": 4.833697016028637,
+   "Mod": 8.8029509986329,
+   "Tasten": 99.81648373992074,
+   "SFB": 28.56464526352877,
+   "Bewegung": 20.42854148329122,
+   "Trigr.": 14.859729147973262
+  },
+  "quer": {
+   "voyager32-A-soeren": 194.5206044310436,
+   "voyager32-A-standard": 184.2346856569824,
+   "voyager32-B-soeren": 180.8739539567456,
+   "voyager32-B-standard": 170.85237236465127,
+   "voyager32-C-soeren": 176.39174051336525,
+   "voyager32-C-standard": 168.35550728892025
+  },
+  "sprachen": {
+   "de": 148.63930765905917,
+   "en": 165.9026775779249,
+   "code": 357.06261348755396
+  }
+ },
+ {
+  "konfiguration": "voyager32-C-standard",
+  "layout": "xclkjzpoyösnrtgbheiafmwdv.,-üä u",
+  "gefunden": 1,
+  "kosten": 167.27367333716037,
+  "metriken": {
+   "Balance": 7.714906399836896,
+   "Mod": 8.8029509986329,
+   "Tasten": 97.88378441594253,
+   "SFB": 24.01372302170918,
+   "Bewegung": 24.431493541987354,
+   "Trigr.": 15.178677143218085
+  },
+  "quer": {
+   "voyager32-A-soeren": 190.96189680004593,
+   "voyager32-A-standard": 182.36358825323038,
+   "voyager32-B-soeren": 177.9853175300053,
+   "voyager32-B-standard": 169.93658459015847,
+   "voyager32-C-soeren": 173.9962548365941,
+   "voyager32-C-standard": 167.27367333716037
+  },
+  "sprachen": {
+   "de": 150.1005215366491,
+   "en": 154.29504745231296,
+   "code": 338.40962737760657
+  }
+ },
+ {
+  "konfiguration": "voyager32-C-standard",
+  "layout": "xmlbköpoyärtnhg,ueiavwjdf.c-üz s",
+  "gefunden": 1,
+  "kosten": 162.32551474121726,
+  "metriken": {
+   "Balance": 7.509073357582237,
+   "Mod": 8.8029509986329,
+   "Tasten": 98.06875652922587,
+   "SFB": 26.067654906891008,
+   "Bewegung": 21.534914845584705,
+   "Trigr.": 11.795204337941215
+  },
+  "quer": {
+   "voyager32-A-soeren": 178.11707607175495,
+   "voyager32-A-standard": 172.05443428250732,
+   "voyager32-B-soeren": 167.72020179998174,
+   "voyager32-B-standard": 162.3418629562491,
+   "voyager32-C-soeren": 166.03336735031894,
+   "voyager32-C-standard": 162.32551474121726
+  },
+  "sprachen": {
+   "de": 141.59105689418848,
+   "en": 156.46757766943875,
+   "code": 340.0533219239183
+  }
+ },
+ {
+  "konfiguration": "voyager32-C-standard",
+  "layout": "öuäpxjkdv-aiecgfstnr,yüb.zhmlw o",
+  "gefunden": 1,
+  "kosten": 173.7304354650937,
+  "metriken": {
+   "Balance": 3.9066948582533763,
+   "Mod": 8.914558762408454,
+   "Tasten": 101.09311445455397,
+   "SFB": 24.077048829831963,
+   "Bewegung": 29.690356609036996,
+   "Trigr.": 17.616938135929942
+  },
+  "quer": {
+   "voyager32-A-soeren": 196.35076326840678,
+   "voyager32-A-standard": 185.4378218124167,
+   "voyager32-B-soeren": 186.50872101139146,
+   "voyager32-B-standard": 175.4086296980787,
+   "voyager32-C-soeren": 183.45668498038413,
+   "voyager32-C-standard": 173.7304354650937
+  },
+  "sprachen": {
+   "de": 155.94944628148193,
+   "en": 166.95920167290387,
+   "code": 350.5507909537497
+  }
+ },
+ {
+  "konfiguration": "voyager32-C-standard",
+  "layout": "üzoyxkblcjheai.pdtnr,-öuäfgvmws ",
+  "gefunden": 1,
+  "kosten": 168.01968723267404,
+  "metriken": {
+   "Balance": 7.6516125259109735,
+   "Mod": 8.914558762408454,
+   "Tasten": 98.6372898783794,
+   "SFB": 30.154358168283654,
+   "Bewegung": 21.354873025252406,
+   "Trigr.": 11.623649526263138
+  },
+  "quer": {
+   "voyager32-A-soeren": 192.22437451199661,
+   "voyager32-A-standard": 179.57417862754363,
+   "voyager32-B-soeren": 180.10537920706585,
+   "voyager32-B-standard": 169.48210209073966,
+   "voyager32-C-soeren": 178.80378962231683,
+   "voyager32-C-standard": 168.01968723267404
+  },
+  "sprachen": {
+   "de": 155.50488235261778,
+   "en": 149.79627359327668,
+   "code": 340.87024473707305
+  }
+ }
+]
