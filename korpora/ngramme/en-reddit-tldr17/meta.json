@@ -1,0 +1,317 @@
+{
+  "quelle": "en-reddit-tldr17",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "skripte_sha256": {
+      "beispieldaten.py": "298e5902d809f106e239c57e79775858ff836663f4f2dfa1d257688280793abe",
+      "herunterladen.py": "5b631be9df1f89eb22fc2463f53215f784d087bc8cc78acf303447335abd7907",
+      "manifest_eintragen.py": "5b2cd633ebe5c133fc1835d6694dd68df17a75ec8fc7782ebf126c77f8eb7c0d",
+      "mischen.py": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "quellen.py": "3c9b4131699e84ff7943ba119ccb503e4c63a1c11f2dbe4814a407b2bcd6b831",
+      "quellen_en.py": "8826da9bc68eddc8ce48949659f227f01fc64fcbf1d21d58c8cd426cf47bb232",
+      "schreibweise.py": "bdf824bc5ca7361893f8abfade397d302a8e9db3e07c532a18bfe98e3039a206",
+      "zaehlen.py": "02766d7d99663d46841ea625be3cf638cf46799ded6d48349ea443b65248d2ca"
+    }
+  },
+  "datum": "2026-11-16",
+  "dauer_sekunden": 98,
+  "eingaben": {
+    "reddit-tldr17/corpus-webis-tldr-17.zip": {
+      "sha256": "c1a0f8c4374c7314d3c9ec50dd505303c536062d87037d4dca7035b89b36938a",
+      "bytes": 3141854161,
+      "url": "https://huggingface.co/datasets/webis/tldr-17/resolve/fa7f50e62d35aff41aa165ddbe6c10dfa01ff49c/data/corpus-webis-tldr-17.zip"
+    }
+  },
+  "parameter": {
+    "schritt": 60
+  },
+  "summen": {
+    "zeichen": 101396250,
+    "bigramme": 100997824,
+    "trigramme": 100599418,
+    "verschiedene_unigramme": 108,
+    "verschiedene_bigramme": 8203,
+    "verschiedene_trigramme": 114440
+  },
+  "pruefbericht": {
+    "summen": {
+      "beitraege_gelesen": 64139,
+      "c1_als_cp1252_gelesen": 1,
+      "einheiten_gelesen": 754442,
+      "entfernt_kombinierend": 290,
+      "ersetzt": 28011,
+      "grenze": 1571,
+      "grenzen_gesetzt": 946,
+      "transliteriert": 4219,
+      "zeile_verworfen:fremde_schrift": 174,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 59,
+      "zeile_verworfen:zu_wenig_buchstaben": 354397,
+      "zeile_verworfen:zu_wenig_buchstabenanteil": 2332,
+      "zeilen_verwendet": 397480,
+      "zitat_verworfen": 9693
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "’",
+          17445
+        ],
+        [
+          "”",
+          2988
+        ],
+        [
+          "“",
+          2959
+        ],
+        [
+          "…",
+          1085
+        ],
+        [
+          "–",
+          991
+        ],
+        [
+          "\t",
+          863
+        ],
+        [
+          "—",
+          610
+        ],
+        [
+          "‘",
+          428
+        ],
+        [
+          "´",
+          150
+        ],
+        [
+          " ",
+          132
+        ],
+        [
+          "​",
+          119
+        ],
+        [
+          "﻿",
+          104
+        ],
+        [
+          "­",
+          37
+        ],
+        [
+          "»",
+          24
+        ],
+        [
+          "«",
+          22
+        ]
+      ],
+      "grenze": [
+        [
+          "£",
+          430
+        ],
+        [
+          "•",
+          306
+        ],
+        [
+          "─",
+          113
+        ],
+        [
+          "★",
+          107
+        ],
+        [
+          "ʖ",
+          95
+        ],
+        [
+          "→",
+          38
+        ],
+        [
+          "½",
+          36
+        ],
+        [
+          "≈",
+          35
+        ],
+        [
+          "·",
+          32
+        ],
+        [
+          "™",
+          28
+        ],
+        [
+          "×",
+          21
+        ],
+        [
+          "¿",
+          21
+        ],
+        [
+          "✞",
+          18
+        ],
+        [
+          "▆",
+          14
+        ],
+        [
+          "®",
+          11
+        ]
+      ],
+      "transliteriert": [
+        [
+          "é",
+          1246
+        ],
+        [
+          "å",
+          601
+        ],
+        [
+          "í",
+          247
+        ],
+        [
+          "á",
+          240
+        ],
+        [
+          "ã",
+          240
+        ],
+        [
+          "ó",
+          211
+        ],
+        [
+          "à",
+          161
+        ],
+        [
+          "è",
+          141
+        ],
+        [
+          "ç",
+          139
+        ],
+        [
+          "ă",
+          123
+        ],
+        [
+          "ñ",
+          75
+        ],
+        [
+          "ø",
+          67
+        ],
+        [
+          "ê",
+          65
+        ],
+        [
+          "č",
+          49
+        ],
+        [
+          "ú",
+          48
+        ]
+      ]
+    }
+  },
+  "schreibweise": {
+    "britisch": 7160,
+    "amerikanisch": 42340,
+    "anteil_britisch": 0.1446,
+    "haeufigste_britisch": [
+      [
+        "mum",
+        716
+      ],
+      [
+        "realise",
+        466
+      ],
+      [
+        "realised",
+        433
+      ],
+      [
+        "behaviour",
+        396
+      ],
+      [
+        "favourite",
+        300
+      ],
+      [
+        "grey",
+        283
+      ],
+      [
+        "cancelled",
+        241
+      ],
+      [
+        "colour",
+        224
+      ]
+    ],
+    "haeufigste_amerikanisch": [
+      [
+        "mom",
+        7083
+      ],
+      [
+        "realize",
+        3240
+      ],
+      [
+        "realized",
+        3018
+      ],
+      [
+        "favorite",
+        1598
+      ],
+      [
+        "behavior",
+        1470
+      ],
+      [
+        "armor",
+        1156
+      ],
+      [
+        "apologize",
+        1061
+      ],
+      [
+        "color",
+        974
+      ]
+    ]
+  }
+}

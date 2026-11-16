@@ -1,0 +1,707 @@
+{
+  "sprache": "englisch",
+  "verzeichnis": "korpora/englisch/original",
+  "dateien": [
+    {
+      "pfad": "leipzig/eng_news_2024_1M.tar.gz",
+      "url": "https://downloads.wortschatz-leipzig.de/corpora/eng_news_2024_1M.tar.gz",
+      "sha256": "8f1d4d07b9771f8a7fc219ad587d5382eabf5009ef563f1bc4c12a467a8e3a97",
+      "bytes": 288362970,
+      "beschreibung": "Leipzig Corpora Collection, News 2024, 1 Mio. Sätze",
+      "genutzt_von": [
+        "en-leipzig-news-2024"
+      ]
+    },
+    {
+      "pfad": "leipzig/eng-com_web-public_2018_1M.tar.gz",
+      "url": "https://downloads.wortschatz-leipzig.de/corpora/eng-com_web-public_2018_1M.tar.gz",
+      "sha256": "de8849fe30c7d5bf3502f620093232f4dceca10a6ac19a9ad49f474b62df0a5f",
+      "bytes": 228887647,
+      "beschreibung": "Leipzig Corpora Collection, Web 2018 (.com, public), 1 Mio. Sätze",
+      "genutzt_von": [
+        "en-leipzig-web-2018"
+      ]
+    },
+    {
+      "pfad": "leipzig/eng-uk_web_2002_1M.tar.gz",
+      "url": "https://downloads.wortschatz-leipzig.de/corpora/eng-uk_web_2002_1M.tar.gz",
+      "sha256": "d1e809df33b8f3044bf861b42814722fc9a9a3baa0e3cbe71f62d31e630f4b54",
+      "bytes": 225606037,
+      "beschreibung": "Leipzig Corpora Collection, Web 2002 (.uk), 1 Mio. Sätze",
+      "genutzt_von": [
+        "en-leipzig-uk-web-2002"
+      ]
+    },
+    {
+      "pfad": "leipzig/eng_wikipedia_2016_1M.tar.gz",
+      "url": "https://downloads.wortschatz-leipzig.de/corpora/eng_wikipedia_2016_1M.tar.gz",
+      "sha256": "42cc4e689b93a320151fa4378572db9d6c5a5eee6e13c966fdefe77954d6596d",
+      "bytes": 267337192,
+      "beschreibung": "Leipzig Corpora Collection, Wikipedia 2016, 1 Mio. Sätze",
+      "genutzt_von": [
+        "en-leipzig-wikipedia-2016"
+      ]
+    },
+    {
+      "pfad": "ubuntu-irc/00000_ubuntu.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00000_ubuntu.jsonl.gz",
+      "sha256": "c96843cf1bc6015d4edbd159749172c8dec3b5c7950cbca040ec7bdc2c2f1d8b",
+      "bytes": 327435921,
+      "beschreibung": "Common Pile, Ubuntu IRC (roh), Teil 0, Revision 35a9ef5",
+      "genutzt_von": [
+        "en-ubuntu-irc"
+      ]
+    },
+    {
+      "pfad": "ubuntu-irc/00001_ubuntu.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00001_ubuntu.jsonl.gz",
+      "sha256": "0b1d2a2ded42f83231ece3776c137958fe38ec8068c4748fa67717e4416139d7",
+      "bytes": 319585860,
+      "beschreibung": "Common Pile, Ubuntu IRC (roh), Teil 1, Revision 35a9ef5",
+      "genutzt_von": [
+        "en-ubuntu-irc"
+      ]
+    },
+    {
+      "pfad": "ubuntu-irc/00002_ubuntu.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00002_ubuntu.jsonl.gz",
+      "sha256": "bb460bcac01f87b3256ea1538f56629645acf4d8b9cebfb2a8635c003114655c",
+      "bytes": 324569370,
+      "beschreibung": "Common Pile, Ubuntu IRC (roh), Teil 2, Revision 35a9ef5",
+      "genutzt_von": [
+        "en-ubuntu-irc"
+      ]
+    },
+    {
+      "pfad": "ubuntu-irc/00003_ubuntu.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00003_ubuntu.jsonl.gz",
+      "sha256": "8c82162e9f4e7a1bc15525f8792595df6658cf9804ce65d99bdec77045c4e157",
+      "bytes": 312143988,
+      "beschreibung": "Common Pile, Ubuntu IRC (roh), Teil 3, Revision 35a9ef5",
+      "genutzt_von": [
+        "en-ubuntu-irc"
+      ]
+    },
+    {
+      "pfad": "ubuntu-irc/00004_ubuntu.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00004_ubuntu.jsonl.gz",
+      "sha256": "0d945501eef5cefb37bc4d1114e08abcba17002eb5d44d9ec006a23a31bc4dec",
+      "bytes": 325149855,
+      "beschreibung": "Common Pile, Ubuntu IRC (roh), Teil 4, Revision 35a9ef5",
+      "genutzt_von": [
+        "en-ubuntu-irc"
+      ]
+    },
+    {
+      "pfad": "ubuntu-irc/00005_ubuntu.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00005_ubuntu.jsonl.gz",
+      "sha256": "6c726c9db580049e7a28bd5dfa6a13168581c21735e079856cdc4e1b35115a88",
+      "bytes": 321235880,
+      "beschreibung": "Common Pile, Ubuntu IRC (roh), Teil 5, Revision 35a9ef5",
+      "genutzt_von": [
+        "en-ubuntu-irc"
+      ]
+    },
+    {
+      "pfad": "ubuntu-irc/00007_ubuntu.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00007_ubuntu.jsonl.gz",
+      "sha256": "918c68acbfd8a0ce3d950f7a6bfed01a38b55433f08305a5e3146d82e172fca6",
+      "bytes": 189668340,
+      "beschreibung": "Common Pile, Ubuntu IRC (roh), Teil 7, Revision 35a9ef5",
+      "genutzt_von": [
+        "en-ubuntu-irc"
+      ]
+    },
+    {
+      "pfad": "ubuntu-irc/00006_ubuntu.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00006_ubuntu.jsonl.gz",
+      "sha256": "a59757f81f37489ad089262b55f390b038fb8b30ac71f458354158b1e14f106d",
+      "bytes": 318491656,
+      "beschreibung": "Common Pile, Ubuntu IRC (roh), Teil 6, Revision 35a9ef5",
+      "genutzt_von": [
+        "en-ubuntu-irc"
+      ]
+    },
+    {
+      "pfad": "oanc/OANC-1.0.1-UTF8.zip",
+      "url": "https://www.anc.org/OANC/OANC-1.0.1-UTF8.zip",
+      "sha256": "1a5c37b0227c176d2c5a00f23721e70e7489782e31ba14e58e47f56eff04d24f",
+      "bytes": 334161342,
+      "beschreibung": "Open American National Corpus 1.0.1 (UTF-8)",
+      "genutzt_von": [
+        "en-oanc-gesprochen",
+        "en-oanc-geschrieben"
+      ]
+    },
+    {
+      "pfad": "enronsent/enronsentv1.tar.gz",
+      "url": "https://wstyler.ucsd.edu/files/enronsentv1.tar.gz",
+      "sha256": "02c888023f695049e7f3fcdbb5a992c434f66e5cb887e17ea9f1ab5a60b77e9c",
+      "bytes": 26406491,
+      "beschreibung": "EnronSent v1.0 (Will Styler, UC San Diego), bereinigte gesendete E-Mails",
+      "genutzt_von": [
+        "en-enronsent"
+      ]
+    },
+    {
+      "pfad": "uk-hansard/00000_ukhansard.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00000_ukhansard.jsonl.gz",
+      "sha256": "2cd15633a90fe2338caae24a07f9c59c5166dbdf152444ef564d69cfefa04097",
+      "bytes": 314246970,
+      "beschreibung": "Common Pile, UK Hansard (roh), Teil 0, Revision 05eeb43",
+      "genutzt_von": [
+        "en-uk-hansard"
+      ]
+    },
+    {
+      "pfad": "uk-hansard/00001_ukhansard.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00001_ukhansard.jsonl.gz",
+      "sha256": "94d93c2323944b5abb170570541dd0a6956a46c8d59cdf1b51becd4083afae48",
+      "bytes": 319508543,
+      "beschreibung": "Common Pile, UK Hansard (roh), Teil 1, Revision 05eeb43",
+      "genutzt_von": [
+        "en-uk-hansard"
+      ]
+    },
+    {
+      "pfad": "uk-hansard/00002_ukhansard.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00002_ukhansard.jsonl.gz",
+      "sha256": "eeca9ac16ec1ae4bf63dbffc7faf7919d1521a16239d91515fef2a46cce52dfa",
+      "bytes": 321622887,
+      "beschreibung": "Common Pile, UK Hansard (roh), Teil 2, Revision 05eeb43",
+      "genutzt_von": [
+        "en-uk-hansard"
+      ]
+    },
+    {
+      "pfad": "uk-hansard/00003_ukhansard.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00003_ukhansard.jsonl.gz",
+      "sha256": "e81e605803cc6ce75f8a453a476e5a3d02cc2c410c39d547f661d6aefa5afd59",
+      "bytes": 322480896,
+      "beschreibung": "Common Pile, UK Hansard (roh), Teil 3, Revision 05eeb43",
+      "genutzt_von": [
+        "en-uk-hansard"
+      ]
+    },
+    {
+      "pfad": "uk-hansard/00004_ukhansard.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00004_ukhansard.jsonl.gz",
+      "sha256": "100051a51abf820bc5da985c05c7208b9f5fdec09b5545fc66c923b4656a0ad4",
+      "bytes": 322453469,
+      "beschreibung": "Common Pile, UK Hansard (roh), Teil 4, Revision 05eeb43",
+      "genutzt_von": [
+        "en-uk-hansard"
+      ]
+    },
+    {
+      "pfad": "uk-hansard/00005_ukhansard.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00005_ukhansard.jsonl.gz",
+      "sha256": "ccb7a3db905187a74f17adff403381a3786db012c8558176dbd6707c2f939971",
+      "bytes": 322413630,
+      "beschreibung": "Common Pile, UK Hansard (roh), Teil 5, Revision 05eeb43",
+      "genutzt_von": [
+        "en-uk-hansard"
+      ]
+    },
+    {
+      "pfad": "uk-hansard/00006_ukhansard.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00006_ukhansard.jsonl.gz",
+      "sha256": "d4fce8d8847f6d129a27021ff952f8ea0deb0c643408458b75e7456f51f7e0a9",
+      "bytes": 322555449,
+      "beschreibung": "Common Pile, UK Hansard (roh), Teil 6, Revision 05eeb43",
+      "genutzt_von": [
+        "en-uk-hansard"
+      ]
+    },
+    {
+      "pfad": "uk-hansard/00007_ukhansard.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00007_ukhansard.jsonl.gz",
+      "sha256": "3dd81b5bdc3bf5695a9abbc66c2ee50b0bd292dc9c6157d3b13ecab094bd6245",
+      "bytes": 322224527,
+      "beschreibung": "Common Pile, UK Hansard (roh), Teil 7, Revision 05eeb43",
+      "genutzt_von": [
+        "en-uk-hansard"
+      ]
+    },
+    {
+      "pfad": "uk-hansard/00008_ukhansard.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00008_ukhansard.jsonl.gz",
+      "sha256": "4b3ab854346ec3e15e6d3509ce32ae5984d40f31eae35b1b607b46abe9d31781",
+      "bytes": 298128640,
+      "beschreibung": "Common Pile, UK Hansard (roh), Teil 8, Revision 05eeb43",
+      "genutzt_von": [
+        "en-uk-hansard"
+      ]
+    },
+    {
+      "pfad": "uk-hansard/00010_ukhansard.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00010_ukhansard.jsonl.gz",
+      "sha256": "b4b438f730cd2bcb195c82eefc326d3f9df26c0a478c51919b87341e62ecd269",
+      "bytes": 42821007,
+      "beschreibung": "Common Pile, UK Hansard (roh), Teil 10, Revision 05eeb43",
+      "genutzt_von": [
+        "en-uk-hansard"
+      ]
+    },
+    {
+      "pfad": "uk-hansard/00009_ukhansard.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00009_ukhansard.jsonl.gz",
+      "sha256": "c8de3424075a88c2e60dc4a5d7d160ba938a8e62f5d9c1c54a153c34fc5399ca",
+      "bytes": 295001533,
+      "beschreibung": "Common Pile, UK Hansard (roh), Teil 9, Revision 05eeb43",
+      "genutzt_von": [
+        "en-uk-hansard"
+      ]
+    },
+    {
+      "pfad": "stackexchange/english.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/english.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "ee20b5167d8b92e1c41d54271d3f1d4227b02dd1af7f78a392acdfe9b7eadbc3",
+      "bytes": 7584738,
+      "beschreibung": "Common Pile, StackExchange english.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/ell.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/ell.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "d2d3b43a667bf1677477ba784e55796eb12f53acda28f5a79e1e05e33d2fd219",
+      "bytes": 97780698,
+      "beschreibung": "Common Pile, StackExchange ell.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/ell.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/ell.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "2296683542f97051b7a1fb35c8bbf59ddd6661f5e9059c61c6f9f19561634c48",
+      "bytes": 7309449,
+      "beschreibung": "Common Pile, StackExchange ell.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/english.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/english.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "bf7cac167b80640cd9d994b19aadb3eb89f2b4aca0f89ebd7a12c1d1eb075aca",
+      "bytes": 177101638,
+      "beschreibung": "Common Pile, StackExchange english.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/scifi.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/scifi.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "0020beb61e35df7a89e825da5a1300ce8a0a4973daca822bdf7bbf2dbbf67225",
+      "bytes": 4396921,
+      "beschreibung": "Common Pile, StackExchange scifi.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/scifi.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/scifi.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "ac5afd6c7d8134ccab7343b9c3997bc35149f64349d308550bb0ae9bcee589d2",
+      "bytes": 129872159,
+      "beschreibung": "Common Pile, StackExchange scifi.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/rpg.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/rpg.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "b3fcef320fdd0a3b031f1c8f647b934e9527d1b441dd297a8e50ad58e29df377",
+      "bytes": 110544372,
+      "beschreibung": "Common Pile, StackExchange rpg.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/rpg.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/rpg.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "5dd6b151baeccdb7b71fc96fe595e43a24036d66c52503532add33ef7e07ed8e",
+      "bytes": 2115074,
+      "beschreibung": "Common Pile, StackExchange rpg.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/diy.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/diy.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "55f4d395bac93c849062bbf5d6ea67728195329d457624b261fffe1c7d421dab",
+      "bytes": 1378986,
+      "beschreibung": "Common Pile, StackExchange diy.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/diy.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/diy.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "22a7b411642e943f4a1f102cbaf6919151f229e5f58e02f47ec48bed7709d986",
+      "bytes": 117423563,
+      "beschreibung": "Common Pile, StackExchange diy.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/workplace.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/workplace.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "f7f5cbb7f7eb3e173680e5fa1d2ba14957d9a8cc643f18888c940b918050d97c",
+      "bytes": 90168778,
+      "beschreibung": "Common Pile, StackExchange workplace.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/workplace.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/workplace.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "e439eb59a7dd5e9a7f8cf19bf2d1e3e9bd9f3c6f2e8cb4b03dc9f20018bdb0b3",
+      "bytes": 5683001,
+      "beschreibung": "Common Pile, StackExchange workplace.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/academia.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/academia.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "f805770c0b93dbb7d5414d11a0f528f1ef62ed253d54a6193622b694a20bb9e8",
+      "bytes": 5673376,
+      "beschreibung": "Common Pile, StackExchange academia.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/academia.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/academia.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "20de5f527e9b92957d7534747f203dab4ced1ab943e9d5f18f9f5d2426028068",
+      "bytes": 90494560,
+      "beschreibung": "Common Pile, StackExchange academia.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/gaming.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/gaming.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "0bdd3dbdda1b0232a289c08da30b40708726bf892d26a466c809316a1b787f2c",
+      "bytes": 2603048,
+      "beschreibung": "Common Pile, StackExchange gaming.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/travel.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/travel.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "0bfdf4cfd4cc4f22532571ee3b4fad3cd59a61fbd3954a15db43ed81fb66bac3",
+      "bytes": 65220741,
+      "beschreibung": "Common Pile, StackExchange travel.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/travel.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/travel.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "01d85bee50c65a213a0a8de05efbeb64ec55349d9460ed08782a205df4e01e36",
+      "bytes": 2261326,
+      "beschreibung": "Common Pile, StackExchange travel.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/gaming.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/gaming.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "ea99676ae3f643f8392b6027e320092d347c0e36fe4256db96807afd40d1a12f",
+      "bytes": 86135352,
+      "beschreibung": "Common Pile, StackExchange gaming.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/philosophy.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/philosophy.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "e6a98b018a3a5c14bee14c632ff2ee4fc8fe185dae4812731f37c6fd2b155b83",
+      "bytes": 8635869,
+      "beschreibung": "Common Pile, StackExchange philosophy.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/philosophy.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/philosophy.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "75ffadfd4af99cc286523827cc03d98c1337f27fb75cc2fd52ed84522d38c35a",
+      "bytes": 56888552,
+      "beschreibung": "Common Pile, StackExchange philosophy.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/money.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/money.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "0d1f522c344c9982f85bd7efc0f9a988cee4f208ae343e425b35f5cbe228e362",
+      "bytes": 2160802,
+      "beschreibung": "Common Pile, StackExchange money.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/money.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/money.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "baca5b07c822fd610aedf4532a1a0ff08812be8b68c3427f7abf85cef9d7f774",
+      "bytes": 60504464,
+      "beschreibung": "Common Pile, StackExchange money.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/politics.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/politics.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "087e3800c68a11c9d0b906f082427b17f6848c92c36db7cfe24a65c40fa29e42",
+      "bytes": 4466785,
+      "beschreibung": "Common Pile, StackExchange politics.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/politics.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/politics.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "b707f553fa5e40bcda8f001d44e4a44bad2213395107453a7574dcd793442871",
+      "bytes": 49472795,
+      "beschreibung": "Common Pile, StackExchange politics.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/law.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/law.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "b9169d9c5ee958baef89d08d77adbb2cd51e57555c412bb9383d04fdbf4d3983",
+      "bytes": 48766389,
+      "beschreibung": "Common Pile, StackExchange law.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/law.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/law.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "722f3c538c78a3837d1cc91548b4c7c2c0293976b325f819fa015b01f1347a0b",
+      "bytes": 2579282,
+      "beschreibung": "Common Pile, StackExchange law.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/history.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/history.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "868e080f66d487552d95d9babb1d80c98de033932291a1cc2ecb6c6de5efcfac",
+      "bytes": 2756178,
+      "beschreibung": "Common Pile, StackExchange history.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/cooking.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/cooking.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "0ecaed02d30c45e0df08120a2080087c3527d8982e60cc877769f0d6264048b7",
+      "bytes": 37744179,
+      "beschreibung": "Common Pile, StackExchange cooking.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/history.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/history.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "6530c26339d35c9c6e659188e81209e50fcd11de31df637aeb91fe02dbd44953",
+      "bytes": 35856122,
+      "beschreibung": "Common Pile, StackExchange history.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/cooking.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/cooking.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "dca165c0d858e8b7f630dd98a42ec5a90d6cdf756df14d0b70857af19f06d3b2",
+      "bytes": 1037107,
+      "beschreibung": "Common Pile, StackExchange cooking.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/movies.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/movies.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "843a05c738f665ddd89123687d9b64fdd2d9bdf3f42052f5feb439d08c02cc6f",
+      "bytes": 1108162,
+      "beschreibung": "Common Pile, StackExchange movies.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/movies.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/movies.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "b63c5c983e6450c7b86113d03ae690196e52277ed316ab87b4ca8d4f52a94345",
+      "bytes": 33396644,
+      "beschreibung": "Common Pile, StackExchange movies.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/skeptics.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/skeptics.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "c1a650cdee940dc7752cbc5115ae7e27cedbcd46626281c28782ca8c326d390b",
+      "bytes": 1673473,
+      "beschreibung": "Common Pile, StackExchange skeptics.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/skeptics.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/skeptics.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "82084b781eccfe12ac2b5e723b4775354b7dff52548093df14a4c7102c562bd6",
+      "bytes": 27316258,
+      "beschreibung": "Common Pile, StackExchange skeptics.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/parenting.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/parenting.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "e3e4f040a540dcc335604ad07524e146a656ba4aecab35b8aff07c88d57dbefe",
+      "bytes": 1321601,
+      "beschreibung": "Common Pile, StackExchange parenting.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/parenting.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/parenting.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "4854b4af4b6fbed55897232e38d9279e23f8b5264553b48cbf5c0449890674fd",
+      "bytes": 18506516,
+      "beschreibung": "Common Pile, StackExchange parenting.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/pets.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/pets.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "a5199338072d185e2fbb14fd7b386fa05a3889bae689be625a552bb53292126f",
+      "bytes": 515491,
+      "beschreibung": "Common Pile, StackExchange pets.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/pets.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/pets.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "45bccce8a01531992dbcee0ea1bbca5976c6a9b1e1f528bc53bf5288ded37036",
+      "bytes": 10632481,
+      "beschreibung": "Common Pile, StackExchange pets.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/music.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/music.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "5c22f2071e1eae4e65a2ce790f28e37ddf72db60cf5f9149df0a60a5d5e78b6a",
+      "bytes": 3024153,
+      "beschreibung": "Common Pile, StackExchange music.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/music.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/music.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "ba587d8df90cdbfd2b92dd167a632733ebbeab2ad3864613bd26428380746cd7",
+      "bytes": 44604224,
+      "beschreibung": "Common Pile, StackExchange music.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-prosa"
+      ]
+    },
+    {
+      "pfad": "stackexchange/softwareengineering.stackexchange.com/00001_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/softwareengineering.stackexchange.com/documents/00001_se.jsonl.gz",
+      "sha256": "a61c253ab41799f5ec86bd01c9549bac096d7cc95fb7c4dd65a2298db2974276",
+      "bytes": 4555791,
+      "beschreibung": "Common Pile, StackExchange softwareengineering.stackexchange.com (roh), Teil 1, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-softwareengineering"
+      ]
+    },
+    {
+      "pfad": "stackexchange/softwareengineering.stackexchange.com/00000_se.jsonl.gz",
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/softwareengineering.stackexchange.com/documents/00000_se.jsonl.gz",
+      "sha256": "39add97772d3e7699a41bbf083415610da34154388fc5acfe7be16ef572e9a34",
+      "bytes": 147171279,
+      "beschreibung": "Common Pile, StackExchange softwareengineering.stackexchange.com (roh), Teil 0, Revision 5ec3aa2",
+      "genutzt_von": [
+        "en-stackexchange-softwareengineering"
+      ]
+    },
+    {
+      "pfad": "reddit-tldr17/corpus-webis-tldr-17.zip",
+      "url": "https://huggingface.co/datasets/webis/tldr-17/resolve/fa7f50e62d35aff41aa165ddbe6c10dfa01ff49c/data/corpus-webis-tldr-17.zip",
+      "sha256": "c1a0f8c4374c7314d3c9ec50dd505303c536062d87037d4dca7035b89b36938a",
+      "bytes": 3141854161,
+      "beschreibung": "Webis TL;DR-17 (Reddit 2006-2016), Revision fa7f50e",
+      "genutzt_von": [
+        "en-reddit-tldr17"
+      ]
+    },
+    {
+      "pfad": "cabnc/CABNC-0a28a11.zip",
+      "url": "https://github.com/saulalbert/CABNC/archive/0a28a11e168e312d1b9ad406a3352f31c13b86a2.zip",
+      "sha256": "d366ef7bb49035ee5ff7c64000eca963255f53249fcf00c072f58cd1a11ded7d",
+      "bytes": 76559789,
+      "beschreibung": "CABNC (Jeffersonian-Transkription des gesprächsorientierten Teils des BNC), Commit 0a28a11",
+      "genutzt_von": [
+        "en-cabnc"
+      ]
+    },
+    {
+      "pfad": "opensubtitles/en.txt.gz",
+      "url": "https://object.pouta.csc.fi/OPUS-OpenSubtitles/v2024/mono/en.txt.gz",
+      "sha256": "59d4d4e8ba57bed7e9012092cbba758818ac05f2092d8b5854e92a88317d8486",
+      "bytes": 9508584209,
+      "beschreibung": "OPUS OpenSubtitles v2024, Englisch, ein Satz je Zeile",
+      "genutzt_von": [
+        "en-opensubtitles-2024"
+      ]
+    }
+  ]
+}

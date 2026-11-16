@@ -1,0 +1,19 @@
+{
+  "beschreibung": "Englisch, Startgewichtung vom 16.11.2026, britisch bevorzugt, US-Englisch enthalten. Gewichte sind Anteile an allen Zeichen. Aufteilung: förmlich 42 % (Leipzig, UK Hansard, OANC geschrieben), gesprochen 25 % (OpenSubtitles, CABNC, OANC gesprochen), informell und technisch 33 % (Ubuntu IRC, Reddit, StackExchange, EnronSent). Britische Schreibung geschätzt rund 56 % (Wert aus mischen.py, siehe meta.json der Mischung). Deutlich mehr wäre nur über noch höhere Anteile förmlicher Parlamentssprache, Gesprochenem der 1990er und Webtexten von 2002 zu erreichen; britisches getipptes Informelles gibt es offen praktisch nicht.",
+  "bestandteile": {
+    "en-leipzig-news-2024": 12,
+    "en-leipzig-web-2018": 2,
+    "en-leipzig-wikipedia-2016": 3,
+    "en-leipzig-uk-web-2002": 10,
+    "en-uk-hansard": 12,
+    "en-opensubtitles-2024": 8,
+    "en-cabnc": 16,
+    "en-oanc-gesprochen": 1,
+    "en-ubuntu-irc": 12,
+    "en-reddit-tldr17": 6,
+    "en-stackexchange-prosa": 8,
+    "en-stackexchange-softwareengineering": 4,
+    "en-enronsent": 3,
+    "en-oanc-geschrieben": 3
+  }
+}

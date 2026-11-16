@@ -3,9 +3,9 @@
   "beschreibung": "Deutsch, Startgewichtung vom 14.11.2026: förmlich 40 %, gesprochen 20 %, informell 40 %. Gewichte sind Anteile an allen Zeichen.",
   "erzeugt_von": {
     "skript": "korpora/skripte/mischen.py",
-    "sha256": "8cbda3e637b9e5fb39015e3a3f736ee1d389c6d55a099445c3c5e195c3b86469"
+    "sha256": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033"
   },
-  "datum": "2026-11-14",
+  "datum": "2026-11-16",
   "rezept": "korpora/mischungen/de-standard.json",
   "gewichte_normiert": {
     "de-leipzig-news-2024": 0.15,
@@ -15,6 +15,10 @@
     "de-gc4-middle-2020": 0.15,
     "de-one-million-posts": 0.15,
     "de-dortmunder-chatkorpus": 0.1
+  },
+  "schreibweise": {
+    "anteil_britisch_geschaetzt": null,
+    "gewicht_mit_messung": 0.0
   },
   "skala": 10000000000,
   "eingaben_sha256": {

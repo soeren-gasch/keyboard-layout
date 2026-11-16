@@ -70,6 +70,21 @@ def main():
                 if anzahl:
                     f.write(f"{anzahl} {maskiere(ngramm)}\n")
 
+    # Geschätzter Anteil britischer Schreibung in der Mischung: Wortpaar-Treffer je Zeichen und Quelle,
+    # gewichtet mit dem Anteil der Quelle (nur Quellen mit Messung, siehe schreibweise.py).
+    brit = amer = abgedeckt = 0.0
+    for quelle, gewicht in gewichte.items():
+        quell_meta = json.loads((KORPORA / "ngramme" / quelle / "meta.json").read_text(encoding="utf-8"))
+        sw = quell_meta.get("schreibweise")
+        if sw and (sw["britisch"] + sw["amerikanisch"]):
+            zeichen = quell_meta["summen"]["zeichen"]
+            brit += gewicht * sw["britisch"] / zeichen
+            amer += gewicht * sw["amerikanisch"] / zeichen
+            abgedeckt += gewicht
+    schreibweise = {
+        "anteil_britisch_geschaetzt": round(brit / (brit + amer), 4) if brit + amer else None,
+        "gewicht_mit_messung": round(abgedeckt, 4),
+    }
     meta = {
         "mischung": ziel.name,
         "beschreibung": rezept.get("beschreibung", ""),
@@ -77,11 +92,14 @@ def main():
         "datum": datetime.date.today().isoformat(),
         "rezept": str(rezept_pfad),
         "gewichte_normiert": gewichte,
+        "schreibweise": schreibweise,
         "skala": SKALA,
         "eingaben_sha256": eingaben,
     }
     (ziel / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"{ziel}: {len(gewichte)} Quellen gemischt")
+    anteil = schreibweise["anteil_britisch_geschaetzt"]
+    zusatz = "" if anteil is None else f"; britische Schreibung geschätzt {100 * anteil:.0f} % (Gewicht mit Messung {100 * schreibweise['gewicht_mit_messung']:.0f} %)"
+    print(f"{ziel}: {len(gewichte)} Quellen gemischt{zusatz}")
 
 
 if __name__ == "__main__":

@@ -1,0 +1,314 @@
+{
+  "quelle": "en-oanc-geschrieben",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "skripte_sha256": {
+      "beispieldaten.py": "298e5902d809f106e239c57e79775858ff836663f4f2dfa1d257688280793abe",
+      "herunterladen.py": "5b631be9df1f89eb22fc2463f53215f784d087bc8cc78acf303447335abd7907",
+      "manifest_eintragen.py": "5b2cd633ebe5c133fc1835d6694dd68df17a75ec8fc7782ebf126c77f8eb7c0d",
+      "mischen.py": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "quellen.py": "3c9b4131699e84ff7943ba119ccb503e4c63a1c11f2dbe4814a407b2bcd6b831",
+      "quellen_en.py": "8826da9bc68eddc8ce48949659f227f01fc64fcbf1d21d58c8cd426cf47bb232",
+      "schreibweise.py": "bdf824bc5ca7361893f8abfade397d302a8e9db3e07c532a18bfe98e3039a206",
+      "zaehlen.py": "02766d7d99663d46841ea625be3cf638cf46799ded6d48349ea443b65248d2ca"
+    }
+  },
+  "datum": "2026-11-16",
+  "dauer_sekunden": 7,
+  "eingaben": {
+    "oanc/OANC-1.0.1-UTF8.zip": {
+      "sha256": "1a5c37b0227c176d2c5a00f23721e70e7489782e31ba14e58e47f56eff04d24f",
+      "bytes": 334161342,
+      "url": "https://www.anc.org/OANC/OANC-1.0.1-UTF8.zip"
+    }
+  },
+  "parameter": {
+    "bereich": "geschrieben"
+  },
+  "summen": {
+    "zeichen": 63226234,
+    "bigramme": 63116081,
+    "trigramme": 63005971,
+    "verschiedene_unigramme": 108,
+    "verschiedene_bigramme": 7001,
+    "verschiedene_trigramme": 86980
+  },
+  "pruefbericht": {
+    "summen": {
+      "dateien_gelesen": 6424,
+      "einheiten_gelesen": 156438,
+      "ersetzt": 43095,
+      "grenze": 7831,
+      "grenzen_gesetzt": 5156,
+      "transliteriert": 16423,
+      "zeile_verworfen:fremde_schrift": 3938,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 71,
+      "zeile_verworfen:zu_wenig_buchstaben": 46827,
+      "zeile_verworfen:zu_wenig_buchstabenanteil": 605,
+      "zeilen_verwendet": 104997
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "’",
+          15136
+        ],
+        [
+          "“",
+          9139
+        ],
+        [
+          "”",
+          8908
+        ],
+        [
+          "—",
+          6510
+        ],
+        [
+          "–",
+          1514
+        ],
+        [
+          "­",
+          691
+        ],
+        [
+          "‘",
+          448
+        ],
+        [
+          "…",
+          365
+        ],
+        [
+          "«",
+          223
+        ],
+        [
+          "′",
+          86
+        ],
+        [
+          "−",
+          49
+        ],
+        [
+          "»",
+          15
+        ],
+        [
+          "´",
+          6
+        ],
+        [
+          "‚",
+          3
+        ],
+        [
+          "﻿",
+          1
+        ]
+      ],
+      "grenze": [
+        [
+          "•",
+          2305
+        ],
+        [
+          "±",
+          1074
+        ],
+        [
+          "×",
+          942
+        ],
+        [
+          "ﬁ",
+          504
+        ],
+        [
+          "❁",
+          497
+        ],
+        [
+          "®",
+          301
+        ],
+        [
+          "≥",
+          209
+        ],
+        [
+          "≤",
+          186
+        ],
+        [
+          "™",
+          179
+        ],
+        [
+          "→",
+          159
+        ],
+        [
+          "⁄",
+          140
+        ],
+        [
+          "�",
+          137
+        ],
+        [
+          "ﬂ",
+          126
+        ],
+        [
+          "¢",
+          122
+        ],
+        [
+          "≈",
+          93
+        ]
+      ],
+      "transliteriert": [
+        [
+          "é",
+          3818
+        ],
+        [
+          "í",
+          1687
+        ],
+        [
+          "á",
+          1597
+        ],
+        [
+          "ç",
+          1321
+        ],
+        [
+          "ó",
+          1062
+        ],
+        [
+          "É",
+          991
+        ],
+        [
+          "ê",
+          699
+        ],
+        [
+          "å",
+          535
+        ],
+        [
+          "ã",
+          487
+        ],
+        [
+          "ë",
+          478
+        ],
+        [
+          "è",
+          360
+        ],
+        [
+          "ñ",
+          351
+        ],
+        [
+          "Å",
+          336
+        ],
+        [
+          "à",
+          318
+        ],
+        [
+          "â",
+          310
+        ]
+      ]
+    }
+  },
+  "schreibweise": {
+    "britisch": 2492,
+    "amerikanisch": 43100,
+    "anteil_britisch": 0.0547,
+    "haeufigste_britisch": [
+      [
+        "centre",
+        288
+      ],
+      [
+        "theatre",
+        277
+      ],
+      [
+        "behaviour",
+        95
+      ],
+      [
+        "grey",
+        87
+      ],
+      [
+        "harbour",
+        85
+      ],
+      [
+        "tumour",
+        71
+      ],
+      [
+        "catalogue",
+        61
+      ],
+      [
+        "colour",
+        54
+      ]
+    ],
+    "haeufigste_amerikanisch": [
+      [
+        "center",
+        3133
+      ],
+      [
+        "organization",
+        1840
+      ],
+      [
+        "organizations",
+        1540
+      ],
+      [
+        "defense",
+        1360
+      ],
+      [
+        "labor",
+        1254
+      ],
+      [
+        "behavior",
+        1223
+      ],
+      [
+        "analyzed",
+        989
+      ],
+      [
+        "tumor",
+        915
+      ]
+    ]
+  }
+}

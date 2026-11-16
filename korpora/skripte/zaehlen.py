@@ -27,6 +27,10 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import normalisierung  # noqa: E402
 import quellen  # noqa: E402
+import quellen_en  # noqa: E402
+import schreibweise  # noqa: E402
+
+ALLE_QUELLEN = {**quellen.QUELLEN, **quellen_en.QUELLEN}
 
 SKRIPTE = Path(__file__).resolve().parent
 KORPORA = SKRIPTE.parent
@@ -63,31 +67,33 @@ def _segmente(einheiten, stat):
 
 
 def _verarbeite(auftrag):
-    nummer, einheiten, text_aus = auftrag
+    nummer, einheiten, text_aus, mit_schreibweise = auftrag
     stat = Counter()
-    c1, c2, c3 = Counter(), Counter(), Counter()
+    c1, c2, c3, sw = Counter(), Counter(), Counter(), Counter()
     ausgabe = gzip.open(text_aus / f"teil-{nummer:05d}.txt.gz", "wt", encoding="utf-8") if text_aus else None
     for s in _segmente(einheiten, stat):
         c1.update(s)
         c2.update(s[i : i + 2] for i in range(len(s) - 1))
         c3.update(s[i : i + 3] for i in range(len(s) - 2))
+        if mit_schreibweise:
+            schreibweise.zaehle(s, sw)
         if ausgabe:
             ausgabe.write(s + "\n")
     if ausgabe:
         ausgabe.close()
-    return c1, c2, c3, stat
+    return c1, c2, c3, stat, sw
 
 
-def _stapel(einheiten, text_aus):
+def _stapel(einheiten, text_aus, mit_schreibweise):
     stapel, groesse, nummer = [], 0, 0
     for e in einheiten:
         stapel.append(e)
         groesse += len(e[0])
         if groesse >= STAPEL_ZEICHEN:
-            yield nummer, stapel, text_aus
+            yield nummer, stapel, text_aus, mit_schreibweise
             stapel, groesse, nummer = [], 0, nummer + 1
     if stapel:
-        yield nummer, stapel, text_aus
+        yield nummer, stapel, text_aus, mit_schreibweise
 
 
 def _sha256(pfad):
@@ -125,7 +131,8 @@ def pruefe_eingaben(name):
 
 
 def zaehle(name, prozesse, text_aus, ziel_wurzel):
-    leser, parameter = quellen.QUELLEN[name]
+    leser, parameter = ALLE_QUELLEN[name]
+    mit_schreibweise = name.startswith("en-")
     start = time.time()
     lese_stat = Counter()
     if text_aus:
@@ -133,14 +140,15 @@ def zaehle(name, prozesse, text_aus, ziel_wurzel):
         text_aus.mkdir(parents=True, exist_ok=True)
         for alt in text_aus.glob("teil-*.txt.gz"):
             alt.unlink()
-    c1, c2, c3, stat = Counter(), Counter(), Counter(), Counter()
+    c1, c2, c3, stat, sw = Counter(), Counter(), Counter(), Counter(), Counter()
     with Pool(prozesse) as pool:
-        auftraege = _stapel(leser(stat=lese_stat, **parameter), text_aus)
-        for t1, t2, t3, s in pool.imap_unordered(_verarbeite, auftraege):
+        auftraege = _stapel(leser(stat=lese_stat, **parameter), text_aus, mit_schreibweise)
+        for t1, t2, t3, s, w in pool.imap_unordered(_verarbeite, auftraege):
             c1.update(t1)
             c2.update(t2)
             c3.update(t3)
             stat.update(s)
+            sw.update(w)
     stat.update(lese_stat)
 
     ziel = ziel_wurzel / name
@@ -176,6 +184,8 @@ def zaehle(name, prozesse, text_aus, ziel_wurzel):
         },
         "pruefbericht": normalisierung.zusammenfassen(stat),
     }
+    if mit_schreibweise:
+        meta["schreibweise"] = schreibweise.zusammenfassen(sw)
     (ziel / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"{name}: {meta['summen']['zeichen']:,} Zeichen in {meta['dauer_sekunden']} s", flush=True)
 
@@ -187,33 +197,36 @@ def uebersicht(ziel_wurzel):
         "",
         "Erzeugt von `korpora/skripte/zaehlen.py`; Details und Prüfbericht in `meta.json` je Ordner.",
         "Format der N-Gramm-Dateien: `Anzahl N-Gramm`, kompatibel mit dem keyboard_layout_optimizer.",
+        "Spalte „britisch“: Anteil britischer Schreibung unter den messbaren Wortpaaren (in Klammern die Zahl der Treffer), nur für englische Quellen.",
         "",
-        "| Quelle | Datum | Zeichen | Zeilen verwendet | Zeilen verworfen | ersetzt | transliteriert | Grenzen |",
-        "| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: |",
+        "| Quelle | Datum | Zeichen | Zeilen verwendet | Zeilen verworfen | ersetzt | transliteriert | Grenzen | britisch |",
+        "| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
     ]
     for meta_pfad in sorted(ziel_wurzel.glob("*/meta.json")):
         m = json.loads(meta_pfad.read_text(encoding="utf-8"))
         s = m["pruefbericht"]["summen"]
         verworfen = sum(v for k, v in s.items() if "verworfen" in k)
+        sw = m.get("schreibweise")
+        britisch = "–" if not sw or sw["anteil_britisch"] is None else f"{100 * sw['anteil_britisch']:.0f} % ({sw['britisch'] + sw['amerikanisch']:,})"
         zeilen.append(
             f"| `{m['quelle']}` | {m['datum']} | {m['summen']['zeichen']:,} | {s.get('zeilen_verwendet', 0):,} "
-            f"| {verworfen:,} | {s.get('ersetzt', 0):,} | {s.get('transliteriert', 0):,} | {s.get('grenze', 0):,} |"
+            f"| {verworfen:,} | {s.get('ersetzt', 0):,} | {s.get('transliteriert', 0):,} | {s.get('grenze', 0):,} | {britisch} |"
         )
     (ziel_wurzel / "README.md").write_text("\n".join(zeilen) + "\n", encoding="utf-8")
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("quellen", nargs="*", help="Quellen (Standard: alle): " + ", ".join(quellen.QUELLEN))
+    parser.add_argument("quellen", nargs="*", help="Quellen (Standard: alle): " + ", ".join(ALLE_QUELLEN))
     parser.add_argument("--prozesse", type=int, default=4)
     parser.add_argument("--text-aus", help="Verzeichnis für den bereinigten Text (außerhalb von Git)")
     parser.add_argument("--ausgabe", help="anderes Ausgabeverzeichnis statt korpora/ngramme (nötig für Läufe auf Dummy-Dateien)")
     args = parser.parse_args()
-    unbekannt = set(args.quellen) - set(quellen.QUELLEN)
+    unbekannt = set(args.quellen) - set(ALLE_QUELLEN)
     if unbekannt:
         parser.error(f"unbekannte Quelle(n): {', '.join(sorted(unbekannt))}")
     ziel_wurzel = Path(args.ausgabe).expanduser().resolve() if args.ausgabe else ZIEL
-    auswahl = args.quellen or list(quellen.QUELLEN)
+    auswahl = args.quellen or list(ALLE_QUELLEN)
     if ziel_wurzel == ZIEL:
         # Schutz: Die Ergebnisse im Repo dürfen nur aus den echten Originalen entstehen.
         for name in auswahl:

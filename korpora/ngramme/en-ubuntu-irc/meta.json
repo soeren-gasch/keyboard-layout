@@ -1,0 +1,353 @@
+{
+  "quelle": "en-ubuntu-irc",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "skripte_sha256": {
+      "beispieldaten.py": "298e5902d809f106e239c57e79775858ff836663f4f2dfa1d257688280793abe",
+      "herunterladen.py": "5b631be9df1f89eb22fc2463f53215f784d087bc8cc78acf303447335abd7907",
+      "manifest_eintragen.py": "5b2cd633ebe5c133fc1835d6694dd68df17a75ec8fc7782ebf126c77f8eb7c0d",
+      "mischen.py": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "quellen.py": "3c9b4131699e84ff7943ba119ccb503e4c63a1c11f2dbe4814a407b2bcd6b831",
+      "quellen_en.py": "8826da9bc68eddc8ce48949659f227f01fc64fcbf1d21d58c8cd426cf47bb232",
+      "schreibweise.py": "bdf824bc5ca7361893f8abfade397d302a8e9db3e07c532a18bfe98e3039a206",
+      "zaehlen.py": "02766d7d99663d46841ea625be3cf638cf46799ded6d48349ea443b65248d2ca"
+    }
+  },
+  "datum": "2026-11-16",
+  "dauer_sekunden": 47,
+  "eingaben": {
+    "ubuntu-irc/00000_ubuntu.jsonl.gz": {
+      "sha256": "c96843cf1bc6015d4edbd159749172c8dec3b5c7950cbca040ec7bdc2c2f1d8b",
+      "bytes": 327435921,
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00000_ubuntu.jsonl.gz"
+    },
+    "ubuntu-irc/00001_ubuntu.jsonl.gz": {
+      "sha256": "0b1d2a2ded42f83231ece3776c137958fe38ec8068c4748fa67717e4416139d7",
+      "bytes": 319585860,
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00001_ubuntu.jsonl.gz"
+    },
+    "ubuntu-irc/00002_ubuntu.jsonl.gz": {
+      "sha256": "bb460bcac01f87b3256ea1538f56629645acf4d8b9cebfb2a8635c003114655c",
+      "bytes": 324569370,
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00002_ubuntu.jsonl.gz"
+    },
+    "ubuntu-irc/00003_ubuntu.jsonl.gz": {
+      "sha256": "8c82162e9f4e7a1bc15525f8792595df6658cf9804ce65d99bdec77045c4e157",
+      "bytes": 312143988,
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00003_ubuntu.jsonl.gz"
+    },
+    "ubuntu-irc/00004_ubuntu.jsonl.gz": {
+      "sha256": "0d945501eef5cefb37bc4d1114e08abcba17002eb5d44d9ec006a23a31bc4dec",
+      "bytes": 325149855,
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00004_ubuntu.jsonl.gz"
+    },
+    "ubuntu-irc/00005_ubuntu.jsonl.gz": {
+      "sha256": "6c726c9db580049e7a28bd5dfa6a13168581c21735e079856cdc4e1b35115a88",
+      "bytes": 321235880,
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00005_ubuntu.jsonl.gz"
+    },
+    "ubuntu-irc/00007_ubuntu.jsonl.gz": {
+      "sha256": "918c68acbfd8a0ce3d950f7a6bfed01a38b55433f08305a5e3146d82e172fca6",
+      "bytes": 189668340,
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00007_ubuntu.jsonl.gz"
+    },
+    "ubuntu-irc/00006_ubuntu.jsonl.gz": {
+      "sha256": "a59757f81f37489ad089262b55f390b038fb8b30ac71f458354158b1e14f106d",
+      "bytes": 318491656,
+      "url": "https://huggingface.co/datasets/common-pile/ubuntu_irc/resolve/35a9ef530c682965b53d4167e37b32f6a85aa87c/raw/documents/00006_ubuntu.jsonl.gz"
+    }
+  },
+  "parameter": {
+    "schritt": 40
+  },
+  "summen": {
+    "zeichen": 98207585,
+    "bigramme": 96265970,
+    "trigramme": 94324645,
+    "verschiedene_unigramme": 108,
+    "verschiedene_bigramme": 9224,
+    "verschiedene_trigramme": 186164
+  },
+  "pruefbericht": {
+    "summen": {
+      "c1_als_cp1252_gelesen": 63,
+      "dokumente_gelesen": 18329,
+      "einheiten_gelesen": 2118594,
+      "entfernt_kombinierend": 198,
+      "ersetzt": 12088,
+      "grenze": 10546,
+      "grenzen_gesetzt": 2239,
+      "irc_anrede_entfernt": 691363,
+      "irc_keine_nachricht": 266108,
+      "transliteriert": 113405,
+      "zeile_verworfen:fremde_schrift": 91424,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 9164,
+      "zeile_verworfen:zu_wenig_buchstaben": 69877,
+      "zeile_verworfen:zu_wenig_buchstabenanteil": 8753,
+      "zeilen_verwendet": 1939376
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "\t",
+          2005
+        ],
+        [
+          "…",
+          1783
+        ],
+        [
+          "»",
+          1489
+        ],
+        [
+          "«",
+          1393
+        ],
+        [
+          " ",
+          1321
+        ],
+        [
+          "’",
+          1039
+        ],
+        [
+          "﻿",
+          717
+        ],
+        [
+          "›",
+          453
+        ],
+        [
+          "“",
+          376
+        ],
+        [
+          "”",
+          365
+        ],
+        [
+          "–",
+          250
+        ],
+        [
+          "´",
+          186
+        ],
+        [
+          "—",
+          182
+        ],
+        [
+          "‘",
+          154
+        ],
+        [
+          "„",
+          109
+        ]
+      ],
+      "grenze": [
+        [
+          "。",
+          2120
+        ],
+        [
+          "¿",
+          661
+        ],
+        [
+          "⇪",
+          602
+        ],
+        [
+          "█",
+          395
+        ],
+        [
+          "─",
+          311
+        ],
+        [
+          "？",
+          281
+        ],
+        [
+          "：",
+          216
+        ],
+        [
+          "£",
+          214
+        ],
+        [
+          "→",
+          202
+        ],
+        [
+          "•",
+          201
+        ],
+        [
+          "�",
+          201
+        ],
+        [
+          "▄",
+          195
+        ],
+        [
+          "，",
+          178
+        ],
+        [
+          "╗",
+          165
+        ],
+        [
+          "➜",
+          154
+        ]
+      ],
+      "transliteriert": [
+        [
+          "å",
+          13565
+        ],
+        [
+          "è",
+          7225
+        ],
+        [
+          "é",
+          6708
+        ],
+        [
+          "ł",
+          6038
+        ],
+        [
+          "ó",
+          5560
+        ],
+        [
+          "á",
+          4654
+        ],
+        [
+          "š",
+          4341
+        ],
+        [
+          "ę",
+          4291
+        ],
+        [
+          "à",
+          4290
+        ],
+        [
+          "č",
+          3955
+        ],
+        [
+          "ã",
+          3752
+        ],
+        [
+          "ż",
+          3533
+        ],
+        [
+          "ı",
+          3532
+        ],
+        [
+          "ś",
+          3096
+        ],
+        [
+          "ç",
+          2965
+        ]
+      ]
+    }
+  },
+  "schreibweise": {
+    "britisch": 4819,
+    "amerikanisch": 12575,
+    "anteil_britisch": 0.277,
+    "haeufigste_britisch": [
+      [
+        "behaviour",
+        661
+      ],
+      [
+        "centre",
+        274
+      ],
+      [
+        "realise",
+        270
+      ],
+      [
+        "colour",
+        265
+      ],
+      [
+        "grey",
+        258
+      ],
+      [
+        "greyed",
+        191
+      ],
+      [
+        "recognise",
+        150
+      ],
+      [
+        "colours",
+        150
+      ]
+    ],
+    "haeufigste_amerikanisch": [
+      [
+        "center",
+        1743
+      ],
+      [
+        "color",
+        960
+      ],
+      [
+        "favor",
+        744
+      ],
+      [
+        "recognize",
+        659
+      ],
+      [
+        "behavior",
+        616
+      ],
+      [
+        "realize",
+        540
+      ],
+      [
+        "recognized",
+        446
+      ],
+      [
+        "colors",
+        435
+      ]
+    ]
+  }
+}

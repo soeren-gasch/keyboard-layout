@@ -83,13 +83,12 @@ def vor_git_verbergen(ziel):
                 f.write("/" + rel + "\n")
 
 
-def herunterladen(e, versuche=5):
-    ziel = e["ziel"]
-    teil = ziel.with_name(ziel.name + ".teil")
-    ziel.parent.mkdir(parents=True, exist_ok=True)
+def lade_teil(name, url, teil, groesse=None, versuche=5):
+    """Lädt url nach `teil` (Abbruch wird fortgesetzt). Prüft nichts; die Datei ist danach vollständig."""
+    teil.parent.mkdir(parents=True, exist_ok=True)
     for versuch in range(1, versuche + 1):
         bereits = teil.stat().st_size if teil.exists() else 0
-        anfrage = urllib.request.Request(e["url"], headers={"User-Agent": KENNUNG})
+        anfrage = urllib.request.Request(url, headers={"User-Agent": KENNUNG})
         if bereits:
             anfrage.add_header("Range", f"bytes={bereits}-")
         try:
@@ -105,17 +104,23 @@ def herunterladen(e, versuche=5):
                             break
                         f.write(block)
                         bereits += len(block)
-                        if time.time() - letzte > 20:
-                            print(f"  {e['name']}: {bereits / 1e6:,.0f} von {e['bytes'] / 1e6:,.0f} MB", flush=True)
+                        if time.time() - letzte > 30:
+                            von = f" von {groesse / 1e6:,.0f}" if groesse else ""
+                            print(f"  {name}: {bereits / 1e6:,.0f}{von} MB", flush=True)
                             letzte = time.time()
-            break
+            return
         except (urllib.error.URLError, TimeoutError, ConnectionError) as fehler:
             if isinstance(fehler, urllib.error.HTTPError) and fehler.code == 416:
-                break  # Datei ist schon vollständig
-            print(f"  {e['name']}: Versuch {versuch} fehlgeschlagen ({fehler}); neuer Versuch", flush=True)
+                return  # Datei ist schon vollständig
+            print(f"  {name}: Versuch {versuch} fehlgeschlagen ({fehler}); neuer Versuch", flush=True)
             time.sleep(5 * versuch)
-    else:
-        raise RuntimeError(f"{e['name']}: Download nach {versuche} Versuchen nicht möglich")
+    raise RuntimeError(f"{name}: Download nach {versuche} Versuchen nicht möglich")
+
+
+def herunterladen(e, versuche=5):
+    ziel = e["ziel"]
+    teil = ziel.with_name(ziel.name + ".teil")
+    lade_teil(e["name"], e["url"], teil, e["bytes"], versuche)
     if teil.stat().st_size != e["bytes"] or sha256_von(teil) != e["sha256"]:
         teil.unlink()
         raise RuntimeError(f"{e['name']}: Größe oder Prüfsumme stimmt nicht mit dem Manifest überein "

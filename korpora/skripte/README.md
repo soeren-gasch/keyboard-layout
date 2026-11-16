@@ -28,7 +28,8 @@ Die Originale sind zu groß für das Repository und teils lizenzrechtlich heikel
 | Manifest | `korpora/<sprache>/quellen.json` | je Datei Pfad, URL, SHA-256, Größe, Beschreibung und die Quellen, die sie nutzen |
 | Dummy-Dateien | `korpora/<sprache>/original/<pfad>` | gleiches Format wie das Original, 5 bis 10 **erfundene** Einträge (keine Auszüge, weil Lizenzen das teils nicht erlauben) |
 | Download-Skript | `herunterladen.py` | lädt die Originale, prüft SHA-256 und Größe und ersetzt die Dummys lokal |
-| Dummy-Generator | `beispieldaten.py` | erzeugt die Dummys deterministisch; fasst vorhandene Originale nie an |
+| Dummy-Generator | `beispieldaten.py` | erzeugt die Dummys deterministisch; fasst vorhandene Originale nie an; mit `--in-index` schreibt er sie nur in den Git-Index |
+| Manifest-Helfer | `manifest_eintragen.py` | lädt neue Dateien einmalig und trägt URL, SHA-256 und Größe ins Manifest ein (siehe „Neue Quelle aufnehmen“) |
 
 ```sh
 python3 korpora/skripte/herunterladen.py --status             # fehlt / dummy / ok je Datei
@@ -51,7 +52,15 @@ python3 korpora/skripte/herunterladen.py --urls-pruefen       # nur testen, ob a
 - Ändert sich eine Quelle im Netz, schlägt die Prüfsumme fehl. Das Skript verwirft die Datei und meldet es. Das Manifest wird dann bewusst aktualisiert und in einer Entscheidung begründet.
 - `zaehlen.py` **verweigert** Läufe nach `korpora/ngramme/`, wenn eine Eingabedatei nicht die Größe des Originals hat. So können Dummys die echten N-Gramme nicht überschreiben. Zum Ausprobieren: `--ausgabe <Verzeichnis außerhalb von korpora/ngramme>`.
 
-**Neue Quelle hinzufügen:** Eintrag in `quellen.json` (URL, SHA-256 und Größe aus einem einmaligen Download), Leser in `quellen.py`, Dummy-Generator in `beispieldaten.py`, dann `beispieldaten.py` und `herunterladen.py` ausführen.
+## Neue Quelle aufnehmen
+
+1. **Antrag schreiben:** JSON-Liste mit je `pfad`, `url`, `beschreibung` und `genutzt_von` (Namen der Quellen, die die Datei lesen). Bei Hugging Face die Revision in die URL festschreiben (`.../resolve/<commit>/...` statt `main`), bei GitHub den Commit (`archive/<commit>.zip`), damit der Download später dieselbe Datei liefert.
+2. **Einmalig laden und eintragen:** `python3 korpora/skripte/manifest_eintragen.py <sprache> antrag.json`. Das Skript lädt (parallel, fortsetzbar), berechnet SHA-256 und Größe und ergänzt `korpora/<sprache>/quellen.json`. Währenddessen sollte der Ordner `korpora/<sprache>/original/` lokal vor git geschützt sein (`echo /korpora/<sprache>/original/ >> .git/info/exclude`).
+3. **Leser** in `quellen.py` (Deutsch) bzw. `quellen_en.py` (Englisch) schreiben und in `QUELLEN` eintragen. Er liefert `(text, modus)`; Stichproben deterministisch über einen festen Schritt.
+4. **Dummy-Generator** in `beispieldaten.py` ergänzen (erfundene Einträge im Format des Originals) und die Dummys in den Index schreiben, ohne die Originale im Arbeitsordner anzufassen: `python3 korpora/skripte/beispieldaten.py --in-index <sprache>/`. Danach den Ausschluss aus Schritt 2 wieder aus `.git/info/exclude` entfernen.
+5. **Zählen** (`zaehlen.py <quelle>`), Prüfbericht ansehen, Mischrezept anpassen, committen.
+
+Jede Änderung an einem Skript macht die `skripte_sha256` in älteren `meta.json` zu einer Momentaufnahme. Vor einem Commit nach Skriptänderungen deshalb alle Quellen neu zählen; weil die Zählung deterministisch ist, ändern sich dabei nur die `meta.json`.
 
 ## Probelauf auf den Dummys
 
@@ -108,3 +117,27 @@ Quellenspezifisch:
 - **Dortmunder Chat-Korpus:** nur getippte Nachrichten (`utterance`, `action`), keine Systemmeldungen. Nicht wohlgeformte XML-Dateien werden repariert oder übersprungen (siehe Prüfbericht).
 
 Stichproben sind deterministisch: Gleiche Eingabe und gleiche Parameter ergeben dieselben Zählungen.
+
+## Englische Quellen (`quellen_en.py`)
+
+Eine Datei je Quelle wie beim Deutschen; die Auswahl und die Gründe stehen in [`../englisch/README.md`](../englisch/README.md). Die Normalisierung ist dieselbe (tippbar = deutsche QWERTZ-Tastatur, auch für englischen Text). Das heißt: `£` ist nicht direkt tippbar und wird zur harten Grenze, `é` wird zu `e`.
+
+| Quelle | Einheit | Zeilenende | Stichprobe und Bereinigung |
+| --- | --- | --- | --- |
+| Leipzig (4 Archive) | Satz | Leerzeichen | alle 1 Mio. Sätze; eines der Archive hat kein Oberverzeichnis |
+| OpenSubtitles | Untertitelzeile | Leerzeichen | jeder 500. Block aus 1.000 Zeilen; `''` → `'` (die Quelle maskiert Apostrophe doppelt), `[…]` und `(…)` entfernt, Sprecherangaben in Großbuchstaben (`MAN:`) entfernt, Liedtexte (`♪`) und Einblendungen in Großbuchstaben verworfen |
+| Ubuntu IRC | Chat-Nachricht | harte Grenze | jedes 40. Tagesprotokoll; nur `[Zeit] <Nick> Text`; Systemzeilen und Aktionen (`* nick …`) verworfen, Anrede (`nick: `) entfernt, wenn der Nick im Protokoll vorkommt; Links entfernt. Shell-Befehle bleiben, weil sie in dieser Quelle getippter Text sind |
+| Reddit TL;DR-17 | Absatz | harte Grenze | jeder 60. Beitrag; Zitate (`>`) verworfen, Markdown-Links auf den Linktext gekürzt, Links entfernt |
+| EnronSent | Absatz | harte Grenze | alle; harte Zeilenumbrüche innerhalb eines Absatzes zu Leerzeichen, Weiterleitungs- und Trennzeilen verworfen |
+| OANC (gesprochen, geschrieben) | Absatz bzw. Äußerung | harte Grenze | alle Textdateien; `spoken/` gegen `written_1/`, `written_2/` getrennt. Die Switchboard-Transkripte sind kleingeschrieben und ohne Satzzeichen |
+| UK Hansard | Absatz | harte Grenze | nur Dokumente ab 2010 (Jahr aus den Metadaten), jedes 30. davon; Sprecherangaben (`The Secretary of State (Mr. X): `) und Überschriften (kurze Zeilen ohne Satzende) entfernt |
+| StackExchange (Prosa, Softwareengineering) | Absatz | harte Grenze | jedes 30. bzw. 6. Dokument; Links, `@Name`-Erwähnungen und **Code-Zeilen** entfernt (siehe unten) |
+| CABNC | Äußerung | harte Grenze | alle; die BNC-Tokenisierung wird zurückgebaut (`do n't` → `don't`, `it 's` → `it's`, `ca n't` → `can't`), Zeitmarken, Überlappungszeichen und Stille (`0 .`) entfernt |
+
+**Code in StackExchange:** Im Format der Quelle gibt es keine Codeblock-Markierung mehr, deshalb erkennt eine Regel Code-Zeilen (Shell-Prompt und Befehle am Zeilenanfang, Zeilen mit vielen Sonderzeichen, Zeilen mit `{`, `}` oder `;` am Ende, sehr kurze Zeilen mit Sonderzeichen). Auf reinen Prosa-Seiten trifft das 0,3 bis 1,2 % der Zeilen, bei Softwareengineering rund 15 %. Zeilen mit Code mitten im Satz kommen durch. Der Prüfbericht zählt die entfernten Zeilen (`zeile_verworfen:code`).
+
+## Schreibweise: britisch oder amerikanisch (`schreibweise.py`)
+
+Beim Zählen englischer Quellen werden Wörter aus rund 1.600 Wortpaaren gezählt, die nur in einer Variante vorkommen (colour/color, organise/organize, centre/center, travelled/traveled, grey/gray, mum/mom …). Mehrdeutige Paare (licence/license, programme/program, practise/practice) fehlen bewusst. Je Quelle steht in der `meta.json` unter `schreibweise` der Anteil britisch mit Trefferzahl und den häufigsten Wörtern. `mischen.py` schätzt daraus den britischen Anteil der Mischung (Treffer je Zeichen und Quelle, gewichtet mit dem Mischungsanteil). Grenzen der Messung: Eigennamen (Labor Party, Gray) zählen mit, und die Zahl ist nur bei vielen Treffern belastbar.
+
+Die Gewichte einer Mischung lassen sich damit ändern, ohne neu zu zählen: Rezept ändern, `mischen.py` ausführen, geschätzten britischen Anteil in der Ausgabe ablesen.

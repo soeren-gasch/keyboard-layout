@@ -1,0 +1,325 @@
+{
+  "quelle": "en-stackexchange-softwareengineering",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "skripte_sha256": {
+      "beispieldaten.py": "298e5902d809f106e239c57e79775858ff836663f4f2dfa1d257688280793abe",
+      "herunterladen.py": "5b631be9df1f89eb22fc2463f53215f784d087bc8cc78acf303447335abd7907",
+      "manifest_eintragen.py": "5b2cd633ebe5c133fc1835d6694dd68df17a75ec8fc7782ebf126c77f8eb7c0d",
+      "mischen.py": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "quellen.py": "3c9b4131699e84ff7943ba119ccb503e4c63a1c11f2dbe4814a407b2bcd6b831",
+      "quellen_en.py": "8826da9bc68eddc8ce48949659f227f01fc64fcbf1d21d58c8cd426cf47bb232",
+      "schreibweise.py": "bdf824bc5ca7361893f8abfade397d302a8e9db3e07c532a18bfe98e3039a206",
+      "zaehlen.py": "02766d7d99663d46841ea625be3cf638cf46799ded6d48349ea443b65248d2ca"
+    }
+  },
+  "datum": "2026-11-16",
+  "dauer_sekunden": 11,
+  "eingaben": {
+    "stackexchange/softwareengineering.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "a61c253ab41799f5ec86bd01c9549bac096d7cc95fb7c4dd65a2298db2974276",
+      "bytes": 4555791,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/softwareengineering.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/softwareengineering.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "39add97772d3e7699a41bbf083415610da34154388fc5acfe7be16ef572e9a34",
+      "bytes": 147171279,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/softwareengineering.stackexchange.com/documents/00000_se.jsonl.gz"
+    }
+  },
+  "parameter": {
+    "sites": [
+      "softwareengineering"
+    ],
+    "schritt": 6
+  },
+  "summen": {
+    "zeichen": 60906157,
+    "bigramme": 60518390,
+    "trigramme": 60130648,
+    "verschiedene_unigramme": 108,
+    "verschiedene_bigramme": 7626,
+    "verschiedene_trigramme": 98188
+  },
+  "pruefbericht": {
+    "summen": {
+      "c1_als_cp1252_gelesen": 1,
+      "dokumente_gelesen": 10686,
+      "einheiten_gelesen": 595608,
+      "entfernt_kombinierend": 2,
+      "ersetzt": 9704,
+      "grenze": 800,
+      "grenzen_gesetzt": 598,
+      "transliteriert": 360,
+      "zeile_verworfen:code": 69609,
+      "zeile_verworfen:fremde_schrift": 137,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 2,
+      "zeile_verworfen:zu_wenig_buchstaben": 206833,
+      "zeile_verworfen:zu_wenig_buchstabenanteil": 1467,
+      "zeilen_verwendet": 387169
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "’",
+          3583
+        ],
+        [
+          "“",
+          1647
+        ],
+        [
+          "”",
+          1623
+        ],
+        [
+          "—",
+          760
+        ],
+        [
+          "–",
+          620
+        ],
+        [
+          " ",
+          463
+        ],
+        [
+          "…",
+          424
+        ],
+        [
+          "‘",
+          156
+        ],
+        [
+          "»",
+          79
+        ],
+        [
+          "«",
+          77
+        ],
+        [
+          "´",
+          76
+        ],
+        [
+          " ",
+          36
+        ],
+        [
+          "‑",
+          29
+        ],
+        [
+          "−",
+          21
+        ],
+        [
+          " ",
+          21
+        ]
+      ],
+      "grenze": [
+        [
+          "→",
+          94
+        ],
+        [
+          "¹",
+          53
+        ],
+        [
+          "™",
+          41
+        ],
+        [
+          "♯",
+          36
+        ],
+        [
+          "·",
+          35
+        ],
+        [
+          "•",
+          34
+        ],
+        [
+          "×",
+          33
+        ],
+        [
+          "£",
+          33
+        ],
+        [
+          "∈",
+          22
+        ],
+        [
+          "≤",
+          22
+        ],
+        [
+          "←",
+          19
+        ],
+        [
+          "─",
+          19
+        ],
+        [
+          "∞",
+          18
+        ],
+        [
+          "®",
+          15
+        ],
+        [
+          "ﬁ",
+          13
+        ]
+      ],
+      "transliteriert": [
+        [
+          "é",
+          92
+        ],
+        [
+          "ï",
+          32
+        ],
+        [
+          "à",
+          29
+        ],
+        [
+          "ç",
+          26
+        ],
+        [
+          "í",
+          14
+        ],
+        [
+          "ệ",
+          10
+        ],
+        [
+          "ó",
+          8
+        ],
+        [
+          "â",
+          8
+        ],
+        [
+          "á",
+          8
+        ],
+        [
+          "š",
+          7
+        ],
+        [
+          "ø",
+          6
+        ],
+        [
+          "è",
+          5
+        ],
+        [
+          "ñ",
+          5
+        ],
+        [
+          "æ",
+          5
+        ],
+        [
+          "ư",
+          5
+        ]
+      ]
+    }
+  },
+  "schreibweise": {
+    "britisch": 4913,
+    "amerikanisch": 19815,
+    "anteil_britisch": 0.1987,
+    "haeufigste_britisch": [
+      [
+        "behaviour",
+        1226
+      ],
+      [
+        "optimisation",
+        221
+      ],
+      [
+        "modelling",
+        212
+      ],
+      [
+        "organisation",
+        210
+      ],
+      [
+        "realise",
+        150
+      ],
+      [
+        "behaviours",
+        122
+      ],
+      [
+        "favour",
+        112
+      ],
+      [
+        "analyse",
+        104
+      ]
+    ],
+    "haeufigste_amerikanisch": [
+      [
+        "behavior",
+        2549
+      ],
+      [
+        "optimization",
+        1092
+      ],
+      [
+        "organization",
+        939
+      ],
+      [
+        "realize",
+        697
+      ],
+      [
+        "color",
+        610
+      ],
+      [
+        "optimize",
+        542
+      ],
+      [
+        "authorization",
+        461
+      ],
+      [
+        "optimized",
+        446
+      ]
+    ]
+  }
+}

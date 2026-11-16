@@ -1,0 +1,368 @@
+{
+  "quelle": "en-uk-hansard",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "skripte_sha256": {
+      "beispieldaten.py": "298e5902d809f106e239c57e79775858ff836663f4f2dfa1d257688280793abe",
+      "herunterladen.py": "5b631be9df1f89eb22fc2463f53215f784d087bc8cc78acf303447335abd7907",
+      "manifest_eintragen.py": "5b2cd633ebe5c133fc1835d6694dd68df17a75ec8fc7782ebf126c77f8eb7c0d",
+      "mischen.py": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "quellen.py": "3c9b4131699e84ff7943ba119ccb503e4c63a1c11f2dbe4814a407b2bcd6b831",
+      "quellen_en.py": "8826da9bc68eddc8ce48949659f227f01fc64fcbf1d21d58c8cd426cf47bb232",
+      "schreibweise.py": "bdf824bc5ca7361893f8abfade397d302a8e9db3e07c532a18bfe98e3039a206",
+      "zaehlen.py": "02766d7d99663d46841ea625be3cf638cf46799ded6d48349ea443b65248d2ca"
+    }
+  },
+  "datum": "2026-11-16",
+  "dauer_sekunden": 63,
+  "eingaben": {
+    "uk-hansard/00000_ukhansard.jsonl.gz": {
+      "sha256": "2cd15633a90fe2338caae24a07f9c59c5166dbdf152444ef564d69cfefa04097",
+      "bytes": 314246970,
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00000_ukhansard.jsonl.gz"
+    },
+    "uk-hansard/00001_ukhansard.jsonl.gz": {
+      "sha256": "94d93c2323944b5abb170570541dd0a6956a46c8d59cdf1b51becd4083afae48",
+      "bytes": 319508543,
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00001_ukhansard.jsonl.gz"
+    },
+    "uk-hansard/00002_ukhansard.jsonl.gz": {
+      "sha256": "eeca9ac16ec1ae4bf63dbffc7faf7919d1521a16239d91515fef2a46cce52dfa",
+      "bytes": 321622887,
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00002_ukhansard.jsonl.gz"
+    },
+    "uk-hansard/00003_ukhansard.jsonl.gz": {
+      "sha256": "e81e605803cc6ce75f8a453a476e5a3d02cc2c410c39d547f661d6aefa5afd59",
+      "bytes": 322480896,
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00003_ukhansard.jsonl.gz"
+    },
+    "uk-hansard/00004_ukhansard.jsonl.gz": {
+      "sha256": "100051a51abf820bc5da985c05c7208b9f5fdec09b5545fc66c923b4656a0ad4",
+      "bytes": 322453469,
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00004_ukhansard.jsonl.gz"
+    },
+    "uk-hansard/00005_ukhansard.jsonl.gz": {
+      "sha256": "ccb7a3db905187a74f17adff403381a3786db012c8558176dbd6707c2f939971",
+      "bytes": 322413630,
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00005_ukhansard.jsonl.gz"
+    },
+    "uk-hansard/00006_ukhansard.jsonl.gz": {
+      "sha256": "d4fce8d8847f6d129a27021ff952f8ea0deb0c643408458b75e7456f51f7e0a9",
+      "bytes": 322555449,
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00006_ukhansard.jsonl.gz"
+    },
+    "uk-hansard/00007_ukhansard.jsonl.gz": {
+      "sha256": "3dd81b5bdc3bf5695a9abbc66c2ee50b0bd292dc9c6157d3b13ecab094bd6245",
+      "bytes": 322224527,
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00007_ukhansard.jsonl.gz"
+    },
+    "uk-hansard/00008_ukhansard.jsonl.gz": {
+      "sha256": "4b3ab854346ec3e15e6d3509ce32ae5984d40f31eae35b1b607b46abe9d31781",
+      "bytes": 298128640,
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00008_ukhansard.jsonl.gz"
+    },
+    "uk-hansard/00010_ukhansard.jsonl.gz": {
+      "sha256": "b4b438f730cd2bcb195c82eefc326d3f9df26c0a478c51919b87341e62ecd269",
+      "bytes": 42821007,
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00010_ukhansard.jsonl.gz"
+    },
+    "uk-hansard/00009_ukhansard.jsonl.gz": {
+      "sha256": "c8de3424075a88c2e60dc4a5d7d160ba938a8e62f5d9c1c54a153c34fc5399ca",
+      "bytes": 295001533,
+      "url": "https://huggingface.co/datasets/common-pile/uk_hansard/resolve/05eeb43c6518f0eedbe1594d9683a100aedbce89/uk_hansard/00009_ukhansard.jsonl.gz"
+    }
+  },
+  "parameter": {
+    "ab_jahr": 2010,
+    "schritt": 30
+  },
+  "summen": {
+    "zeichen": 99332601,
+    "bigramme": 99069440,
+    "trigramme": 98807010,
+    "verschiedene_unigramme": 102,
+    "verschiedene_bigramme": 5667,
+    "verschiedene_trigramme": 66757
+  },
+  "pruefbericht": {
+    "summen": {
+      "absatz_verworfen:ueberschrift": 246380,
+      "c1_als_cp1252_gelesen": 1,
+      "dokument_verworfen:vor_ab_jahr": 29153,
+      "dokumente_gelesen": 747,
+      "einheiten_gelesen": 239519,
+      "ersetzt": 163406,
+      "grenze": 24859,
+      "grenzen_gesetzt": 24588,
+      "transliteriert": 17298,
+      "zeile_verworfen:fremde_schrift": 3,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 10,
+      "zeile_verworfen:zu_wenig_buchstaben": 200,
+      "zeile_verworfen:zu_wenig_buchstabenanteil": 733,
+      "zeilen_verwendet": 238573
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "’",
+          66999
+        ],
+        [
+          "—",
+          50992
+        ],
+        [
+          "”",
+          19032
+        ],
+        [
+          "“",
+          18711
+        ],
+        [
+          "‘",
+          3306
+        ],
+        [
+          "–",
+          1782
+        ],
+        [
+          "…",
+          1158
+        ],
+        [
+          " ",
+          631
+        ],
+        [
+          "\t",
+          537
+        ],
+        [
+          "​",
+          202
+        ],
+        [
+          "­",
+          26
+        ],
+        [
+          "　",
+          11
+        ],
+        [
+          "―",
+          5
+        ],
+        [
+          " ",
+          5
+        ],
+        [
+          "‐",
+          5
+        ]
+      ],
+      "grenze": [
+        [
+          "£",
+          24082
+        ],
+        [
+          "·",
+          458
+        ],
+        [
+          "•",
+          235
+        ],
+        [
+          "‎",
+          14
+        ],
+        [
+          "‣",
+          13
+        ],
+        [
+          "≤",
+          12
+        ],
+        [
+          "½",
+          9
+        ],
+        [
+          "®",
+          8
+        ],
+        [
+          "",
+          6
+        ],
+        [
+          "○",
+          5
+        ],
+        [
+          "∙",
+          4
+        ],
+        [
+          "≥",
+          3
+        ],
+        [
+          "¸",
+          3
+        ],
+        [
+          "†",
+          2
+        ],
+        [
+          "ɪ",
+          1
+        ]
+      ],
+      "transliteriert": [
+        [
+          "â",
+          7683
+        ],
+        [
+          "ô",
+          2757
+        ],
+        [
+          "ŵ",
+          1748
+        ],
+        [
+          "ŷ",
+          1315
+        ],
+        [
+          "é",
+          955
+        ],
+        [
+          "á",
+          692
+        ],
+        [
+          "í",
+          620
+        ],
+        [
+          "ï",
+          545
+        ],
+        [
+          "ê",
+          223
+        ],
+        [
+          "î",
+          186
+        ],
+        [
+          "ú",
+          106
+        ],
+        [
+          "û",
+          83
+        ],
+        [
+          "Ó",
+          74
+        ],
+        [
+          "à",
+          69
+        ],
+        [
+          "ó",
+          65
+        ]
+      ]
+    }
+  },
+  "schreibweise": {
+    "britisch": 59993,
+    "amerikanisch": 423,
+    "anteil_britisch": 0.993,
+    "haeufigste_britisch": [
+      [
+        "labour",
+        5541
+      ],
+      [
+        "defence",
+        5193
+      ],
+      [
+        "organisations",
+        4803
+      ],
+      [
+        "recognise",
+        3710
+      ],
+      [
+        "centre",
+        2646
+      ],
+      [
+        "offence",
+        2607
+      ],
+      [
+        "offences",
+        2397
+      ],
+      [
+        "organisation",
+        2139
+      ]
+    ],
+    "haeufigste_amerikanisch": [
+      [
+        "organization",
+        207
+      ],
+      [
+        "gray",
+        91
+      ],
+      [
+        "defense",
+        18
+      ],
+      [
+        "center",
+        13
+      ],
+      [
+        "mold",
+        6
+      ],
+      [
+        "recognize",
+        5
+      ],
+      [
+        "mom",
+        5
+      ],
+      [
+        "behavior",
+        4
+      ]
+    ]
+  }
+}

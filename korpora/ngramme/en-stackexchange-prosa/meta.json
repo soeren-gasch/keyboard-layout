@@ -1,0 +1,533 @@
+{
+  "quelle": "en-stackexchange-prosa",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "skripte_sha256": {
+      "beispieldaten.py": "298e5902d809f106e239c57e79775858ff836663f4f2dfa1d257688280793abe",
+      "herunterladen.py": "5b631be9df1f89eb22fc2463f53215f784d087bc8cc78acf303447335abd7907",
+      "manifest_eintragen.py": "5b2cd633ebe5c133fc1835d6694dd68df17a75ec8fc7782ebf126c77f8eb7c0d",
+      "mischen.py": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "quellen.py": "3c9b4131699e84ff7943ba119ccb503e4c63a1c11f2dbe4814a407b2bcd6b831",
+      "quellen_en.py": "8826da9bc68eddc8ce48949659f227f01fc64fcbf1d21d58c8cd426cf47bb232",
+      "schreibweise.py": "bdf824bc5ca7361893f8abfade397d302a8e9db3e07c532a18bfe98e3039a206",
+      "zaehlen.py": "02766d7d99663d46841ea625be3cf638cf46799ded6d48349ea443b65248d2ca"
+    }
+  },
+  "datum": "2026-11-16",
+  "dauer_sekunden": 38,
+  "eingaben": {
+    "stackexchange/english.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "ee20b5167d8b92e1c41d54271d3f1d4227b02dd1af7f78a392acdfe9b7eadbc3",
+      "bytes": 7584738,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/english.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/ell.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "d2d3b43a667bf1677477ba784e55796eb12f53acda28f5a79e1e05e33d2fd219",
+      "bytes": 97780698,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/ell.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/ell.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "2296683542f97051b7a1fb35c8bbf59ddd6661f5e9059c61c6f9f19561634c48",
+      "bytes": 7309449,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/ell.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/english.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "bf7cac167b80640cd9d994b19aadb3eb89f2b4aca0f89ebd7a12c1d1eb075aca",
+      "bytes": 177101638,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/english.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/scifi.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "0020beb61e35df7a89e825da5a1300ce8a0a4973daca822bdf7bbf2dbbf67225",
+      "bytes": 4396921,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/scifi.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/scifi.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "ac5afd6c7d8134ccab7343b9c3997bc35149f64349d308550bb0ae9bcee589d2",
+      "bytes": 129872159,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/scifi.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/rpg.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "b3fcef320fdd0a3b031f1c8f647b934e9527d1b441dd297a8e50ad58e29df377",
+      "bytes": 110544372,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/rpg.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/rpg.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "5dd6b151baeccdb7b71fc96fe595e43a24036d66c52503532add33ef7e07ed8e",
+      "bytes": 2115074,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/rpg.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/diy.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "55f4d395bac93c849062bbf5d6ea67728195329d457624b261fffe1c7d421dab",
+      "bytes": 1378986,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/diy.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/diy.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "22a7b411642e943f4a1f102cbaf6919151f229e5f58e02f47ec48bed7709d986",
+      "bytes": 117423563,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/diy.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/workplace.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "f7f5cbb7f7eb3e173680e5fa1d2ba14957d9a8cc643f18888c940b918050d97c",
+      "bytes": 90168778,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/workplace.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/workplace.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "e439eb59a7dd5e9a7f8cf19bf2d1e3e9bd9f3c6f2e8cb4b03dc9f20018bdb0b3",
+      "bytes": 5683001,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/workplace.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/academia.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "f805770c0b93dbb7d5414d11a0f528f1ef62ed253d54a6193622b694a20bb9e8",
+      "bytes": 5673376,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/academia.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/academia.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "20de5f527e9b92957d7534747f203dab4ced1ab943e9d5f18f9f5d2426028068",
+      "bytes": 90494560,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/academia.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/gaming.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "0bdd3dbdda1b0232a289c08da30b40708726bf892d26a466c809316a1b787f2c",
+      "bytes": 2603048,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/gaming.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/travel.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "0bfdf4cfd4cc4f22532571ee3b4fad3cd59a61fbd3954a15db43ed81fb66bac3",
+      "bytes": 65220741,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/travel.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/travel.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "01d85bee50c65a213a0a8de05efbeb64ec55349d9460ed08782a205df4e01e36",
+      "bytes": 2261326,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/travel.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/gaming.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "ea99676ae3f643f8392b6027e320092d347c0e36fe4256db96807afd40d1a12f",
+      "bytes": 86135352,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/gaming.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/philosophy.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "e6a98b018a3a5c14bee14c632ff2ee4fc8fe185dae4812731f37c6fd2b155b83",
+      "bytes": 8635869,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/philosophy.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/philosophy.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "75ffadfd4af99cc286523827cc03d98c1337f27fb75cc2fd52ed84522d38c35a",
+      "bytes": 56888552,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/philosophy.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/money.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "0d1f522c344c9982f85bd7efc0f9a988cee4f208ae343e425b35f5cbe228e362",
+      "bytes": 2160802,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/money.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/money.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "baca5b07c822fd610aedf4532a1a0ff08812be8b68c3427f7abf85cef9d7f774",
+      "bytes": 60504464,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/money.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/politics.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "087e3800c68a11c9d0b906f082427b17f6848c92c36db7cfe24a65c40fa29e42",
+      "bytes": 4466785,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/politics.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/politics.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "b707f553fa5e40bcda8f001d44e4a44bad2213395107453a7574dcd793442871",
+      "bytes": 49472795,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/politics.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/law.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "b9169d9c5ee958baef89d08d77adbb2cd51e57555c412bb9383d04fdbf4d3983",
+      "bytes": 48766389,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/law.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/law.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "722f3c538c78a3837d1cc91548b4c7c2c0293976b325f819fa015b01f1347a0b",
+      "bytes": 2579282,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/law.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/history.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "868e080f66d487552d95d9babb1d80c98de033932291a1cc2ecb6c6de5efcfac",
+      "bytes": 2756178,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/history.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/cooking.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "0ecaed02d30c45e0df08120a2080087c3527d8982e60cc877769f0d6264048b7",
+      "bytes": 37744179,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/cooking.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/history.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "6530c26339d35c9c6e659188e81209e50fcd11de31df637aeb91fe02dbd44953",
+      "bytes": 35856122,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/history.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/cooking.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "dca165c0d858e8b7f630dd98a42ec5a90d6cdf756df14d0b70857af19f06d3b2",
+      "bytes": 1037107,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/cooking.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/movies.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "843a05c738f665ddd89123687d9b64fdd2d9bdf3f42052f5feb439d08c02cc6f",
+      "bytes": 1108162,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/movies.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/movies.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "b63c5c983e6450c7b86113d03ae690196e52277ed316ab87b4ca8d4f52a94345",
+      "bytes": 33396644,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/movies.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/skeptics.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "c1a650cdee940dc7752cbc5115ae7e27cedbcd46626281c28782ca8c326d390b",
+      "bytes": 1673473,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/skeptics.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/skeptics.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "82084b781eccfe12ac2b5e723b4775354b7dff52548093df14a4c7102c562bd6",
+      "bytes": 27316258,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/skeptics.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/parenting.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "e3e4f040a540dcc335604ad07524e146a656ba4aecab35b8aff07c88d57dbefe",
+      "bytes": 1321601,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/parenting.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/parenting.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "4854b4af4b6fbed55897232e38d9279e23f8b5264553b48cbf5c0449890674fd",
+      "bytes": 18506516,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/parenting.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/pets.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "a5199338072d185e2fbb14fd7b386fa05a3889bae689be625a552bb53292126f",
+      "bytes": 515491,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/pets.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/pets.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "45bccce8a01531992dbcee0ea1bbca5976c6a9b1e1f528bc53bf5288ded37036",
+      "bytes": 10632481,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/pets.stackexchange.com/documents/00000_se.jsonl.gz"
+    },
+    "stackexchange/music.stackexchange.com/00001_se.jsonl.gz": {
+      "sha256": "5c22f2071e1eae4e65a2ce790f28e37ddf72db60cf5f9149df0a60a5d5e78b6a",
+      "bytes": 3024153,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/music.stackexchange.com/documents/00001_se.jsonl.gz"
+    },
+    "stackexchange/music.stackexchange.com/00000_se.jsonl.gz": {
+      "sha256": "ba587d8df90cdbfd2b92dd167a632733ebbeab2ad3864613bd26428380746cd7",
+      "bytes": 44604224,
+      "url": "https://huggingface.co/datasets/common-pile/stackexchange/resolve/5ec3aa2e65b7c61b7c18f1ff18ccbc4d3279a23c/music.stackexchange.com/documents/00000_se.jsonl.gz"
+    }
+  },
+  "parameter": {
+    "sites": [
+      "english",
+      "ell",
+      "scifi",
+      "rpg",
+      "diy",
+      "workplace",
+      "academia",
+      "gaming",
+      "travel",
+      "philosophy",
+      "money",
+      "politics",
+      "law",
+      "history",
+      "cooking",
+      "movies",
+      "skeptics",
+      "parenting",
+      "pets",
+      "music"
+    ],
+    "schritt": 30
+  },
+  "summen": {
+    "zeichen": 115465673,
+    "bigramme": 114767214,
+    "trigramme": 114069026,
+    "verschiedene_unigramme": 108,
+    "verschiedene_bigramme": 8039,
+    "verschiedene_trigramme": 110363
+  },
+  "pruefbericht": {
+    "summen": {
+      "dokumente_gelesen": 30925,
+      "einheiten_gelesen": 1113655,
+      "entfernt_kombinierend": 117,
+      "ersetzt": 70211,
+      "grenze": 6583,
+      "grenzen_gesetzt": 5053,
+      "transliteriert": 5143,
+      "zeile_verworfen:code": 8241,
+      "zeile_verworfen:fremde_schrift": 1212,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 58,
+      "zeile_verworfen:zu_wenig_buchstaben": 417341,
+      "zeile_verworfen:zu_wenig_buchstabenanteil": 1638,
+      "zeilen_verwendet": 693406
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "’",
+          26786
+        ],
+        [
+          "”",
+          12304
+        ],
+        [
+          "“",
+          12232
+        ],
+        [
+          "—",
+          6815
+        ],
+        [
+          "–",
+          3231
+        ],
+        [
+          "‘",
+          3034
+        ],
+        [
+          "…",
+          2014
+        ],
+        [
+          " ",
+          2004
+        ],
+        [
+          "­",
+          415
+        ],
+        [
+          "​",
+          212
+        ],
+        [
+          "´",
+          157
+        ],
+        [
+          "―",
+          107
+        ],
+        [
+          "«",
+          105
+        ],
+        [
+          "»",
+          104
+        ],
+        [
+          " ",
+          90
+        ]
+      ],
+      "grenze": [
+        [
+          "£",
+          767
+        ],
+        [
+          "→",
+          560
+        ],
+        [
+          "•",
+          380
+        ],
+        [
+          "♭",
+          301
+        ],
+        [
+          "ɪ",
+          258
+        ],
+        [
+          "·",
+          224
+        ],
+        [
+          "¬",
+          217
+        ],
+        [
+          "♯",
+          215
+        ],
+        [
+          "ə",
+          172
+        ],
+        [
+          "×",
+          138
+        ],
+        [
+          "∃",
+          130
+        ],
+        [
+          "†",
+          119
+        ],
+        [
+          "∀",
+          117
+        ],
+        [
+          "¹",
+          106
+        ],
+        [
+          "∧",
+          104
+        ]
+      ],
+      "transliteriert": [
+        [
+          "é",
+          1749
+        ],
+        [
+          "ó",
+          254
+        ],
+        [
+          "á",
+          236
+        ],
+        [
+          "è",
+          207
+        ],
+        [
+          "ú",
+          178
+        ],
+        [
+          "à",
+          172
+        ],
+        [
+          "æ",
+          165
+        ],
+        [
+          "ë",
+          163
+        ],
+        [
+          "ā",
+          157
+        ],
+        [
+          "í",
+          153
+        ],
+        [
+          "û",
+          143
+        ],
+        [
+          "þ",
+          108
+        ],
+        [
+          "ð",
+          90
+        ],
+        [
+          "ç",
+          80
+        ],
+        [
+          "ê",
+          71
+        ]
+      ]
+    }
+  },
+  "schreibweise": {
+    "britisch": 12562,
+    "amerikanisch": 38697,
+    "anteil_britisch": 0.2451,
+    "haeufigste_britisch": [
+      [
+        "behaviour",
+        779
+      ],
+      [
+        "travelling",
+        658
+      ],
+      [
+        "colour",
+        484
+      ],
+      [
+        "grey",
+        436
+      ],
+      [
+        "centre",
+        375
+      ],
+      [
+        "realise",
+        340
+      ],
+      [
+        "favour",
+        322
+      ],
+      [
+        "cancelled",
+        316
+      ]
+    ],
+    "haeufigste_amerikanisch": [
+      [
+        "armor",
+        1864
+      ],
+      [
+        "behavior",
+        1684
+      ],
+      [
+        "color",
+        1556
+      ],
+      [
+        "center",
+        1540
+      ],
+      [
+        "realize",
+        1299
+      ],
+      [
+        "defense",
+        1194
+      ],
+      [
+        "organization",
+        919
+      ],
+      [
+        "flavor",
+        848
+      ]
+    ]
+  }
+}

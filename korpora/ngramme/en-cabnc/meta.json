@@ -1,0 +1,132 @@
+{
+  "quelle": "en-cabnc",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "skripte_sha256": {
+      "beispieldaten.py": "298e5902d809f106e239c57e79775858ff836663f4f2dfa1d257688280793abe",
+      "herunterladen.py": "5b631be9df1f89eb22fc2463f53215f784d087bc8cc78acf303447335abd7907",
+      "manifest_eintragen.py": "5b2cd633ebe5c133fc1835d6694dd68df17a75ec8fc7782ebf126c77f8eb7c0d",
+      "mischen.py": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "quellen.py": "3c9b4131699e84ff7943ba119ccb503e4c63a1c11f2dbe4814a407b2bcd6b831",
+      "quellen_en.py": "8826da9bc68eddc8ce48949659f227f01fc64fcbf1d21d58c8cd426cf47bb232",
+      "schreibweise.py": "bdf824bc5ca7361893f8abfade397d302a8e9db3e07c532a18bfe98e3039a206",
+      "zaehlen.py": "02766d7d99663d46841ea625be3cf638cf46799ded6d48349ea443b65248d2ca"
+    }
+  },
+  "datum": "2026-11-16",
+  "dauer_sekunden": 5,
+  "eingaben": {
+    "cabnc/CABNC-0a28a11.zip": {
+      "sha256": "d366ef7bb49035ee5ff7c64000eca963255f53249fcf00c072f58cd1a11ded7d",
+      "bytes": 76559789,
+      "url": "https://github.com/saulalbert/CABNC/archive/0a28a11e168e312d1b9ad406a3352f31c13b86a2.zip"
+    }
+  },
+  "parameter": {},
+  "summen": {
+    "zeichen": 9260039,
+    "bigramme": 9034581,
+    "trigramme": 8809123,
+    "verschiedene_unigramme": 62,
+    "verschiedene_bigramme": 1128,
+    "verschiedene_trigramme": 11531
+  },
+  "pruefbericht": {
+    "summen": {
+      "aeusserung_verworfen:stille": 21134,
+      "dateien_gelesen": 1860,
+      "einheiten_gelesen": 246783,
+      "grenzen_gesetzt": 0,
+      "transliteriert": 2,
+      "zeile_verworfen:zu_wenig_buchstaben": 191,
+      "zeilen_verwendet": 225458
+    },
+    "haeufigste_zeichen": {
+      "transliteriert": [
+        [
+          "â",
+          1
+        ],
+        [
+          "é",
+          1
+        ]
+      ]
+    }
+  },
+  "schreibweise": {
+    "britisch": 4516,
+    "amerikanisch": 365,
+    "anteil_britisch": 0.9252,
+    "haeufigste_britisch": [
+      [
+        "mum",
+        1769
+      ],
+      [
+        "mummy",
+        918
+      ],
+      [
+        "colour",
+        297
+      ],
+      [
+        "colours",
+        106
+      ],
+      [
+        "centre",
+        103
+      ],
+      [
+        "grey",
+        100
+      ],
+      [
+        "favourite",
+        95
+      ],
+      [
+        "labour",
+        93
+      ]
+    ],
+    "haeufigste_amerikanisch": [
+      [
+        "realize",
+        116
+      ],
+      [
+        "realized",
+        48
+      ],
+      [
+        "organized",
+        24
+      ],
+      [
+        "recognize",
+        17
+      ],
+      [
+        "organization",
+        15
+      ],
+      [
+        "apologize",
+        14
+      ],
+      [
+        "recognized",
+        11
+      ],
+      [
+        "organize",
+        10
+      ]
+    ]
+  }
+}

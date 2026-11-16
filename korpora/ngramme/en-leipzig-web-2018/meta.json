@@ -1,0 +1,313 @@
+{
+  "quelle": "en-leipzig-web-2018",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "skripte_sha256": {
+      "beispieldaten.py": "298e5902d809f106e239c57e79775858ff836663f4f2dfa1d257688280793abe",
+      "herunterladen.py": "5b631be9df1f89eb22fc2463f53215f784d087bc8cc78acf303447335abd7907",
+      "manifest_eintragen.py": "5b2cd633ebe5c133fc1835d6694dd68df17a75ec8fc7782ebf126c77f8eb7c0d",
+      "mischen.py": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "quellen.py": "3c9b4131699e84ff7943ba119ccb503e4c63a1c11f2dbe4814a407b2bcd6b831",
+      "quellen_en.py": "8826da9bc68eddc8ce48949659f227f01fc64fcbf1d21d58c8cd426cf47bb232",
+      "schreibweise.py": "bdf824bc5ca7361893f8abfade397d302a8e9db3e07c532a18bfe98e3039a206",
+      "zaehlen.py": "02766d7d99663d46841ea625be3cf638cf46799ded6d48349ea443b65248d2ca"
+    }
+  },
+  "datum": "2026-11-16",
+  "dauer_sekunden": 12,
+  "eingaben": {
+    "leipzig/eng-com_web-public_2018_1M.tar.gz": {
+      "sha256": "de8849fe30c7d5bf3502f620093232f4dceca10a6ac19a9ad49f474b62df0a5f",
+      "bytes": 228887647,
+      "url": "https://downloads.wortschatz-leipzig.de/corpora/eng-com_web-public_2018_1M.tar.gz"
+    }
+  },
+  "parameter": {
+    "name": "eng-com_web-public_2018_1M"
+  },
+  "summen": {
+    "zeichen": 102994461,
+    "bigramme": 102988525,
+    "trigramme": 102982590,
+    "verschiedene_unigramme": 97,
+    "verschiedene_bigramme": 6528,
+    "verschiedene_trigramme": 99170
+  },
+  "pruefbericht": {
+    "summen": {
+      "einheiten_gelesen": 1000000,
+      "entfernt_kombinierend": 37,
+      "ersetzt": 380437,
+      "grenze": 6052,
+      "grenzen_gesetzt": 5054,
+      "transliteriert": 6517,
+      "zeile_verworfen:fremde_schrift": 332,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 27,
+      "zeile_verworfen:zu_wenig_buchstabenanteil": 24,
+      "zeilen_verwendet": 999617
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "’",
+          202908
+        ],
+        [
+          "“",
+          58613
+        ],
+        [
+          "”",
+          58450
+        ],
+        [
+          "—",
+          25044
+        ],
+        [
+          "–",
+          13828
+        ],
+        [
+          "…",
+          10946
+        ],
+        [
+          "‘",
+          8257
+        ],
+        [
+          "»",
+          556
+        ],
+        [
+          "​",
+          320
+        ],
+        [
+          "«",
+          266
+        ],
+        [
+          " ",
+          239
+        ],
+        [
+          "´",
+          194
+        ],
+        [
+          "‚",
+          187
+        ],
+        [
+          " ",
+          124
+        ],
+        [
+          "″",
+          120
+        ]
+      ],
+      "grenze": [
+        [
+          "™",
+          1762
+        ],
+        [
+          "®",
+          1606
+        ],
+        [
+          "•",
+          712
+        ],
+        [
+          "£",
+          665
+        ],
+        [
+          "·",
+          294
+        ],
+        [
+          "½",
+          104
+        ],
+        [
+          "×",
+          96
+        ],
+        [
+          "˜",
+          71
+        ],
+        [
+          "ﬁ",
+          67
+        ],
+        [
+          "¼",
+          47
+        ],
+        [
+          "¦",
+          40
+        ],
+        [
+          "±",
+          39
+        ],
+        [
+          "†",
+          33
+        ],
+        [
+          "ﬂ",
+          30
+        ],
+        [
+          "→",
+          27
+        ]
+      ],
+      "transliteriert": [
+        [
+          "é",
+          2464
+        ],
+        [
+          "â",
+          1405
+        ],
+        [
+          "ð",
+          225
+        ],
+        [
+          "á",
+          224
+        ],
+        [
+          "Ÿ",
+          222
+        ],
+        [
+          "è",
+          216
+        ],
+        [
+          "í",
+          202
+        ],
+        [
+          "ñ",
+          179
+        ],
+        [
+          "ó",
+          165
+        ],
+        [
+          "ç",
+          112
+        ],
+        [
+          "à",
+          107
+        ],
+        [
+          "ë",
+          91
+        ],
+        [
+          "ï",
+          76
+        ],
+        [
+          "ú",
+          70
+        ],
+        [
+          "ô",
+          60
+        ]
+      ]
+    }
+  },
+  "schreibweise": {
+    "britisch": 7998,
+    "amerikanisch": 60927,
+    "anteil_britisch": 0.116,
+    "haeufigste_britisch": [
+      [
+        "centre",
+        588
+      ],
+      [
+        "favourite",
+        427
+      ],
+      [
+        "colour",
+        396
+      ],
+      [
+        "grey",
+        358
+      ],
+      [
+        "theatre",
+        349
+      ],
+      [
+        "behaviour",
+        220
+      ],
+      [
+        "organisation",
+        214
+      ],
+      [
+        "organisations",
+        204
+      ]
+    ],
+    "haeufigste_amerikanisch": [
+      [
+        "favorite",
+        4254
+      ],
+      [
+        "center",
+        3902
+      ],
+      [
+        "color",
+        3112
+      ],
+      [
+        "organization",
+        2502
+      ],
+      [
+        "organizations",
+        1937
+      ],
+      [
+        "mom",
+        1708
+      ],
+      [
+        "behavior",
+        1481
+      ],
+      [
+        "realize",
+        1327
+      ]
+    ]
+  }
+}

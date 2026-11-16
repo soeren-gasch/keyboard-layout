@@ -1,0 +1,319 @@
+{
+  "quelle": "en-opensubtitles-2024",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "skripte_sha256": {
+      "beispieldaten.py": "298e5902d809f106e239c57e79775858ff836663f4f2dfa1d257688280793abe",
+      "herunterladen.py": "5b631be9df1f89eb22fc2463f53215f784d087bc8cc78acf303447335abd7907",
+      "manifest_eintragen.py": "5b2cd633ebe5c133fc1835d6694dd68df17a75ec8fc7782ebf126c77f8eb7c0d",
+      "mischen.py": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "quellen.py": "3c9b4131699e84ff7943ba119ccb503e4c63a1c11f2dbe4814a407b2bcd6b831",
+      "quellen_en.py": "8826da9bc68eddc8ce48949659f227f01fc64fcbf1d21d58c8cd426cf47bb232",
+      "schreibweise.py": "bdf824bc5ca7361893f8abfade397d302a8e9db3e07c532a18bfe98e3039a206",
+      "zaehlen.py": "02766d7d99663d46841ea625be3cf638cf46799ded6d48349ea443b65248d2ca"
+    }
+  },
+  "datum": "2026-11-16",
+  "dauer_sekunden": 179,
+  "eingaben": {
+    "opensubtitles/en.txt.gz": {
+      "sha256": "59d4d4e8ba57bed7e9012092cbba758818ac05f2092d8b5854e92a88317d8486",
+      "bytes": 9508584209,
+      "url": "https://object.pouta.csc.fi/OPUS-OpenSubtitles/v2024/mono/en.txt.gz"
+    }
+  },
+  "parameter": {
+    "schritt": 500,
+    "blockgroesse": 1000
+  },
+  "summen": {
+    "zeichen": 63022121,
+    "bigramme": 63019201,
+    "trigramme": 63016281,
+    "verschiedene_unigramme": 104,
+    "verschiedene_bigramme": 4900,
+    "verschiedene_trigramme": 49912
+  },
+  "pruefbericht": {
+    "summen": {
+      "c1_als_cp1252_gelesen": 3131,
+      "einheiten_gelesen": 2273000,
+      "ersetzt": 5183,
+      "grenze": 5864,
+      "grenzen_gesetzt": 1751,
+      "mojibake_nicht_reparierbar": 352,
+      "mojibake_repariert": 893,
+      "transliteriert": 8546,
+      "zeile_verworfen:einblendung_grossbuchstaben": 85456,
+      "zeile_verworfen:fremde_schrift": 2385,
+      "zeile_verworfen:liedtext": 27059,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 128,
+      "zeile_verworfen:zu_wenig_buchstaben": 12846,
+      "zeile_verworfen:zu_wenig_buchstabenanteil": 7298,
+      "zeilen_verwendet": 2068954
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "‐",
+          2220
+        ],
+        [
+          "´",
+          1501
+        ],
+        [
+          "–",
+          500
+        ],
+        [
+          "—",
+          484
+        ],
+        [
+          "”",
+          170
+        ],
+        [
+          "‚",
+          116
+        ],
+        [
+          "﻿",
+          82
+        ],
+        [
+          "′",
+          74
+        ],
+        [
+          "―",
+          10
+        ],
+        [
+          "­",
+          8
+        ],
+        [
+          "‹",
+          7
+        ],
+        [
+          "“",
+          4
+        ],
+        [
+          "​",
+          4
+        ],
+        [
+          "‘",
+          1
+        ],
+        [
+          "’",
+          1
+        ]
+      ],
+      "grenze": [
+        [
+          "™",
+          2645
+        ],
+        [
+          "¶",
+          1066
+        ],
+        [
+          "�",
+          610
+        ],
+        [
+          "¦",
+          217
+        ],
+        [
+          "¿",
+          158
+        ],
+        [
+          "£",
+          153
+        ],
+        [
+          "¬",
+          145
+        ],
+        [
+          "¤",
+          138
+        ],
+        [
+          "─",
+          128
+        ],
+        [
+          "¡",
+          127
+        ],
+        [
+          "©",
+          70
+        ],
+        [
+          "±",
+          44
+        ],
+        [
+          "¨",
+          38
+        ],
+        [
+          "˜",
+          32
+        ],
+        [
+          "➡",
+          31
+        ]
+      ],
+      "transliteriert": [
+        [
+          "â",
+          3471
+        ],
+        [
+          "é",
+          1687
+        ],
+        [
+          "á",
+          483
+        ],
+        [
+          "í",
+          385
+        ],
+        [
+          "ñ",
+          319
+        ],
+        [
+          "Â",
+          287
+        ],
+        [
+          "ó",
+          259
+        ],
+        [
+          "è",
+          158
+        ],
+        [
+          "à",
+          116
+        ],
+        [
+          "ı",
+          109
+        ],
+        [
+          "ç",
+          107
+        ],
+        [
+          "ï",
+          84
+        ],
+        [
+          "ø",
+          67
+        ],
+        [
+          "ú",
+          61
+        ],
+        [
+          "ž",
+          60
+        ]
+      ]
+    }
+  },
+  "schreibweise": {
+    "britisch": 4683,
+    "amerikanisch": 23404,
+    "anteil_britisch": 0.1667,
+    "haeufigste_britisch": [
+      [
+        "mum",
+        899
+      ],
+      [
+        "mummy",
+        258
+      ],
+      [
+        "honour",
+        244
+      ],
+      [
+        "grey",
+        180
+      ],
+      [
+        "favour",
+        174
+      ],
+      [
+        "favourite",
+        164
+      ],
+      [
+        "realise",
+        159
+      ],
+      [
+        "centre",
+        151
+      ]
+    ],
+    "haeufigste_amerikanisch": [
+      [
+        "mom",
+        6668
+      ],
+      [
+        "honor",
+        1058
+      ],
+      [
+        "realize",
+        1005
+      ],
+      [
+        "favor",
+        898
+      ],
+      [
+        "favorite",
+        875
+      ],
+      [
+        "apologize",
+        673
+      ],
+      [
+        "color",
+        630
+      ],
+      [
+        "mommy",
+        627
+      ]
+    ]
+  }
+}
