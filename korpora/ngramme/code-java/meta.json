@@ -1,0 +1,418 @@
+{
+  "quelle": "code-java",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "normalisierung_code_version": "1",
+    "skripte_sha256": {
+      "beispieldaten.py": "9039abfddf55f77eef747b94d63b3d144770663ce2459905c0e506fc74f08c99",
+      "herunterladen.py": "347e1c121d93c1ee580cacb5ec6ec4ee2bbb7b96f56cba2b293508bde50cb6d6",
+      "manifest_eintragen.py": "34a465e7d13bf88688f3b1064652ff972c2eb81acfc6ab0ac70c35cdfe7c75dd",
+      "mischen.py": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "normalisierung_code.py": "80a37bcb9687c38cb63f7911dd1ed15541c60eee7f25fe94077ee86cc00f0014",
+      "quellen.py": "3c9b4131699e84ff7943ba119ccb503e4c63a1c11f2dbe4814a407b2bcd6b831",
+      "quellen_code.py": "349b03059e162fb623009b6194ddb393b3e927f94b5e4b601a717028a183d240",
+      "quellen_en.py": "8826da9bc68eddc8ce48949659f227f01fc64fcbf1d21d58c8cd426cf47bb232",
+      "schreibweise.py": "bdf824bc5ca7361893f8abfade397d302a8e9db3e07c532a18bfe98e3039a206",
+      "zaehlen.py": "04f0bf937eace26788f24b94f9279fa1ff09edf4c82f2a75d499c9d3aeec3ef4"
+    }
+  },
+  "datum": "2026-11-16",
+  "dauer_sekunden": 9,
+  "eingaben": {
+    "repos/spring-projects__spring-boot-3d8ad8e.tar.gz": {
+      "sha256": "20b48f87f927b97029b1020e1639a3612f59a746e1ce08ec98c214d8bc8e102d",
+      "bytes": 6472551,
+      "url": "https://github.com/spring-projects/spring-boot/archive/3d8ad8ecf3899381514e413877a90e16e6a52b00.tar.gz"
+    },
+    "repos/google__guava-fce80fd.tar.gz": {
+      "sha256": "61c473b0baedd6b365928703371d8f177bc20fea0832657dd6f7903f31c4b1c7",
+      "bytes": 6040748,
+      "url": "https://github.com/google/guava/archive/fce80fd984c8227262a63972ccc68ae6f2ad0519.tar.gz"
+    },
+    "repos/spring-projects__spring-framework-4cb62d8.tar.gz": {
+      "sha256": "ec3a49bf25c2019b7a218504ad5c3d6dff8c80cd61dfeb6b2cf95dee09adca1b",
+      "bytes": 11029150,
+      "url": "https://github.com/spring-projects/spring-framework/archive/4cb62d893e09e23791d661e8d9b35aedee7006d0.tar.gz"
+    },
+    "repos/mockito__mockito-10b31ba.tar.gz": {
+      "sha256": "542d8532297771633b61fe097822eb536b1dc1af39ced854f0b0dd04d20667e3",
+      "bytes": 933716,
+      "url": "https://github.com/mockito/mockito/archive/10b31ba2a8252cf340bc154c9e05224802a84691.tar.gz"
+    },
+    "repos/apache__commons-lang-e2a0789.tar.gz": {
+      "sha256": "e7dd80577bd266085ee3a5e996d095e8e69cb3d318689191ee83717304dfb2a1",
+      "bytes": 1577991,
+      "url": "https://github.com/apache/commons-lang/archive/e2a0789bc936783fa2a75263412e3359d4c0f97b.tar.gz"
+    },
+    "repos/elunez__eladmin-646c58c.tar.gz": {
+      "sha256": "a1f8882c4327757215463eaeb4b78705b1cdea459ad0abdf50f75bb485e8aa69",
+      "bytes": 163418,
+      "url": "https://github.com/elunez/eladmin/archive/646c58c30f2e9aecf998b054f05f4d9ba0008995.tar.gz"
+    },
+    "repos/apache__calcite-7d72586.tar.gz": {
+      "sha256": "dfc878d3f86a67b5afbe3b0c0c2025ba1935e4a32f802fd0db7cdd6148f24351",
+      "bytes": 7170506,
+      "url": "https://github.com/apache/calcite/archive/7d72586c79c2288ee6ddb09f94e11ca8124d6bac.tar.gz"
+    },
+    "repos/macrozheng__mall-dcaa93b.tar.gz": {
+      "sha256": "7d75244cc8a657f730f7fee7a28107fc7c5a08f85d25837d52bc83aad3ec68a7",
+      "bytes": 11101096,
+      "url": "https://github.com/macrozheng/mall/archive/dcaa93b3150352e5044708d7211b5bed0af4509f.tar.gz"
+    },
+    "repos/codecentric__spring-boot-admin-4501683.tar.gz": {
+      "sha256": "0166bd63cbadbe056fce58e561e3b725189fc9504cb61b8162dde9eaf9a145b8",
+      "bytes": 14861578,
+      "url": "https://github.com/codecentric/spring-boot-admin/archive/4501683b4093ff5d98442c4d2fb10062381a1b88.tar.gz"
+    },
+    "repos/apolloconfig__apollo-504e5cd.tar.gz": {
+      "sha256": "46a89c0edae5db7d656fda6b54c209a9ac48f199ccc6beb2b2899863b86ee6cc",
+      "bytes": 15295534,
+      "url": "https://github.com/apolloconfig/apollo/archive/504e5cd7d49bde328e9bc558688828159ed55aeb.tar.gz"
+    },
+    "repos/hs-web__hsweb-framework-f2617a5.tar.gz": {
+      "sha256": "8c879f8f8f7a8cfe62e7fb0670f1d5939d8b3200320e7db6f78b7c64f8e1fa53",
+      "bytes": 845071,
+      "url": "https://github.com/hs-web/hsweb-framework/archive/f2617a56d8b1d5b11e2bb504b8d419406eba7116.tar.gz"
+    },
+    "repos/conductor-oss__conductor-1d268e4.tar.gz": {
+      "sha256": "25ba8bc90a81716836b292370d3a0ee633ad850d03719e475965b505e58421f1",
+      "bytes": 16012300,
+      "url": "https://github.com/conductor-oss/conductor/archive/1d268e4c9b0fe77c7122200dad5c60c61e94aa89.tar.gz"
+    },
+    "repos/pig-mesh__pig-1939970.tar.gz": {
+      "sha256": "909d2aa8160cb80d872d2567bd15a062b08d57c01ff47f21ec0756cf9b7dd50f",
+      "bytes": 591045,
+      "url": "https://github.com/pig-mesh/pig/archive/193997016e39c2158a11c6da3ec1fc9fa3162a9d.tar.gz"
+    },
+    "repos/apereo__cas-45d89dd.tar.gz": {
+      "sha256": "25c368beb852e6c62c0a4f2db0492e961f4b18020a7a12d5ecb9a39b6ac12ff2",
+      "bytes": 22846469,
+      "url": "https://github.com/apereo/cas/archive/45d89dd1db14795198f0a690ea50842a3bd896c3.tar.gz"
+    },
+    "repos/square__okhttp-1bd972a.tar.gz": {
+      "sha256": "94a5c35511f074e33d1a866da8b2468564057f30a2c278926d5911fe003aa9e5",
+      "bytes": 2201153,
+      "url": "https://github.com/square/okhttp/archive/1bd972a016c1a9c0c9921185412963ce4248a123.tar.gz"
+    },
+    "repos/iluwatar__java-design-patterns-4cabb20.tar.gz": {
+      "sha256": "83df712274e122ec9688ce6940fce18d32dd6087698607e5343dd9f9c5196f91",
+      "bytes": 37104272,
+      "url": "https://github.com/iluwatar/java-design-patterns/archive/4cabb204f240240bea319605a5ffa46ded728001.tar.gz"
+    }
+  },
+  "parameter": {
+    "quelle": "code-java",
+    "cap_je_repo": 10000000
+  },
+  "summen": {
+    "zeichen": 71972980,
+    "bigramme": 71954315,
+    "trigramme": 71935670,
+    "verschiedene_unigramme": 106,
+    "verschiedene_bigramme": 8434,
+    "verschiedene_trigramme": 130817
+  },
+  "pruefbericht": {
+    "summen": {
+      "datei_verworfen:datentabelle_mit_sonderzeichen": 26,
+      "datei_verworfen:generiert": 11,
+      "datei_verworfen:minifiziert": 1,
+      "dateien_verwendet": 18062,
+      "einheiten_gelesen": 18088,
+      "entfernt_kombinierend": 28,
+      "ersetzt": 969,
+      "grenze": 1564,
+      "grenzen_gesetzt": 1526,
+      "leerzeile_gekuerzt": 73,
+      "lizenzkopf_entfernt": 13785,
+      "transliteriert": 432,
+      "zeile_verworfen:fremde_schrift": 13861,
+      "zeile_verworfen:zu_lang": 16,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 3
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "—",
+          801
+        ],
+        [
+          "’",
+          36
+        ],
+        [
+          "…",
+          35
+        ],
+        [
+          "‍",
+          30
+        ],
+        [
+          "–",
+          28
+        ],
+        [
+          " ",
+          12
+        ],
+        [
+          " ",
+          6
+        ],
+        [
+          "“",
+          5
+        ],
+        [
+          "”",
+          5
+        ],
+        [
+          "‑",
+          4
+        ],
+        [
+          "´",
+          3
+        ],
+        [
+          "‐",
+          2
+        ],
+        [
+          "−",
+          1
+        ],
+        [
+          "‘",
+          1
+        ]
+      ],
+      "grenze": [
+        [
+          "─",
+          867
+        ],
+        [
+          "→",
+          172
+        ],
+        [
+          "±",
+          118
+        ],
+        [
+          "、",
+          27
+        ],
+        [
+          "×",
+          25
+        ],
+        [
+          "１",
+          22
+        ],
+        [
+          "👦",
+          20
+        ],
+        [
+          "：",
+          17
+        ],
+        [
+          "✓",
+          17
+        ],
+        [
+          "≤",
+          15
+        ],
+        [
+          "🦊",
+          14
+        ],
+        [
+          "２",
+          14
+        ],
+        [
+          "，",
+          13
+        ],
+        [
+          "👩",
+          10
+        ],
+        [
+          "👨",
+          10
+        ]
+      ],
+      "transliteriert": [
+        [
+          "é",
+          176
+        ],
+        [
+          "ú",
+          130
+        ],
+        [
+          "á",
+          19
+        ],
+        [
+          "ø",
+          13
+        ],
+        [
+          "ò",
+          9
+        ],
+        [
+          "İ",
+          8
+        ],
+        [
+          "À",
+          5
+        ],
+        [
+          "ã",
+          5
+        ],
+        [
+          "å",
+          4
+        ],
+        [
+          "ç",
+          3
+        ],
+        [
+          "ë",
+          3
+        ],
+        [
+          "ó",
+          3
+        ],
+        [
+          "č",
+          3
+        ],
+        [
+          "Á",
+          2
+        ],
+        [
+          "è",
+          2
+        ]
+      ]
+    }
+  },
+  "repos": {
+    "apache/calcite": {
+      "geeignet_bytes": 24492712,
+      "anteil_promille": 408,
+      "dateien": 1048,
+      "zeichen_roh": 9770819
+    },
+    "apache/commons-lang": {
+      "geeignet_bytes": 7895113,
+      "anteil_promille": 1000,
+      "dateien": 642,
+      "zeichen_roh": 7875850
+    },
+    "apereo/cas": {
+      "geeignet_bytes": 28874625,
+      "anteil_promille": 346,
+      "dateien": 2685,
+      "zeichen_roh": 10119538
+    },
+    "apolloconfig/apollo": {
+      "geeignet_bytes": 3834266,
+      "anteil_promille": 1000,
+      "dateien": 761,
+      "zeichen_roh": 3833289
+    },
+    "codecentric/spring-boot-admin": {
+      "geeignet_bytes": 1614112,
+      "anteil_promille": 1000,
+      "dateien": 418,
+      "zeichen_roh": 1614001
+    },
+    "conductor-oss/conductor": {
+      "geeignet_bytes": 12831109,
+      "anteil_promille": 779,
+      "dateien": 1182,
+      "zeichen_roh": 9526085
+    },
+    "elunez/eladmin": {
+      "geeignet_bytes": 781902,
+      "anteil_promille": 1000,
+      "dateien": 274,
+      "zeichen_roh": 753144
+    },
+    "google/guava": {
+      "geeignet_bytes": 27407552,
+      "anteil_promille": 365,
+      "dateien": 1144,
+      "zeichen_roh": 10883110
+    },
+    "hs-web/hsweb-framework": {
+      "geeignet_bytes": 2463401,
+      "anteil_promille": 1000,
+      "dateien": 723,
+      "zeichen_roh": 2394736
+    },
+    "iluwatar/java-design-patterns": {
+      "geeignet_bytes": 5238320,
+      "anteil_promille": 1000,
+      "dateien": 2042,
+      "zeichen_roh": 5232127
+    },
+    "macrozheng/mall": {
+      "geeignet_bytes": 2742757,
+      "anteil_promille": 1000,
+      "dateien": 524,
+      "zeichen_roh": 2708807
+    },
+    "mockito/mockito": {
+      "geeignet_bytes": 3648723,
+      "anteil_promille": 1000,
+      "dateien": 1013,
+      "zeichen_roh": 3646048
+    },
+    "pig-mesh/pig": {
+      "geeignet_bytes": 1526057,
+      "anteil_promille": 1000,
+      "dateien": 554,
+      "zeichen_roh": 1433940
+    },
+    "spring-projects/spring-boot": {
+      "geeignet_bytes": 25360897,
+      "anteil_promille": 394,
+      "dateien": 3321,
+      "zeichen_roh": 10701013
+    },
+    "spring-projects/spring-framework": {
+      "geeignet_bytes": 52012810,
+      "anteil_promille": 192,
+      "dateien": 1686,
+      "zeichen_roh": 10083836
+    },
+    "square/okhttp": {
+      "geeignet_bytes": 150979,
+      "anteil_promille": 1000,
+      "dateien": 71,
+      "zeichen_roh": 150975
+    }
+  }
+}

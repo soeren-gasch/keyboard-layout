@@ -1,0 +1,39 @@
+{
+  "mischung": "code-standard",
+  "beschreibung": "Code, Startgewichtung vom 16.11.2026 nach Sörens Angabe: PHP/Laravel 35 %, Vue 20 %, JavaScript 15 %, Java 15 %, SQL 15 %. Gewichte sind Anteile an allen Zeichen (Tastenanschlägen). Quelltext aus freien Repositories, Einrückung nicht gezählt, jedes Zeilenende zählt als Enter.",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/mischen.py",
+    "sha256": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033"
+  },
+  "datum": "2026-11-16",
+  "rezept": "korpora/mischungen/code-standard.json",
+  "gewichte_normiert": {
+    "code-php": 0.35,
+    "code-vue": 0.2,
+    "code-javascript": 0.15,
+    "code-java": 0.15,
+    "code-sql": 0.15
+  },
+  "schreibweise": {
+    "anteil_britisch_geschaetzt": null,
+    "gewicht_mit_messung": 0.0
+  },
+  "skala": 10000000000,
+  "eingaben_sha256": {
+    "code-php/1-grams.txt": "967bd1070e4873e95e959b122b66f4213f20fd76dc9aea1e3ac00bac8459a6f7",
+    "code-vue/1-grams.txt": "f56cf23826c58c4495c926749f29f30fa8a42435571945cdb9ff5ffdeda55e39",
+    "code-javascript/1-grams.txt": "aaa49f0b76e2e6ecb365820943694f9ea0e357188587cb772e81e51726607535",
+    "code-java/1-grams.txt": "749e5d31f1156811de26a670583211385f48feff3485e1adad03cf3ef51bb49f",
+    "code-sql/1-grams.txt": "9527b9d2fc857ae54030b170d157f816e70d02571b38f28f358ee1300f7d293f",
+    "code-php/2-grams.txt": "894c89a110a3e5fc3e1cc64350842614ebd3e96886a98104892a7a0a9459c099",
+    "code-vue/2-grams.txt": "0174bd300219231508feb3e24ad892fc4fd0705c08e48aa366a22e8738a01122",
+    "code-javascript/2-grams.txt": "e6eea291fdb3de4ccef91cb8ef50d5106733dd928e1ae810236fcb339cf8356a",
+    "code-java/2-grams.txt": "d7d1edeb19c80351b9129179f0f2fbe6c8e1f0e62cf0a9ac5d9184aaaf07747b",
+    "code-sql/2-grams.txt": "48c87d51c9abd6eacaeeeb5cbd83bd17fa06f7e2d2e0774aba2d85bc3c094070",
+    "code-php/3-grams.txt": "928c947503540db566c22298d7d5ee6e443419c4f75ca4ee8d87072f3d2c733b",
+    "code-vue/3-grams.txt": "e76b8969286550acdf08eddc449b58a56d3c7b9fa6654d25b92387c980de21c6",
+    "code-javascript/3-grams.txt": "1735db3e3be9b21d7edbdaa07a142840ac4bb29fbcf381dc641801778882901e",
+    "code-java/3-grams.txt": "f1e67c2ffafa788206373ff7c91e357539c2fdc339b346ce8dd78140db3c69de",
+    "code-sql/3-grams.txt": "2e54675d2134ec19d6b3758b3434d8a733509c62a1e0af19adc442fadb61c4dd"
+  }
+}

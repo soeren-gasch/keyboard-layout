@@ -415,6 +415,92 @@ def cabnc():
                  (f"{wurzel}/data/cabnc_talkbank_chat/KB0_1.cha", inhalt.encode("utf-8")),
                  (f"{wurzel}/data/cabnc_txt/KB0_1.txt", b"ignored dummy file\n")])
 
+
+# ============================================================================= Code
+
+_KOPF = "/*\n * Copyright (c) Example Project\n * Licensed under the MIT License. See LICENSE for details.\n */\n"
+
+CODE_DATEIEN = {
+    "code-php": [
+        ("app/Http/Controllers/UserController.php",
+         "<?php\n" + _KOPF + "\nnamespace App\\Http\\Controllers;\n\nuse App\\Models\\User;\nuse Illuminate\\Http\\Request;\n\n"
+         "class UserController extends Controller\n{\n\tpublic function index(Request $request)\n\t{\n\t\t$users = User::query()\n\t\t\t->where('active', true)\n"
+         "\t\t\t->orderBy('name')\n\t\t\t->paginate(15);\n\n\t\treturn view('users.index', compact('users'));\n\t}\n}\n"),
+        ("app/Models/Post.php",
+         "<?php\r\n\r\nnamespace App\\Models;\r\n\r\nuse Illuminate\\Database\\Eloquent\\Model;\r\n\r\nclass Post extends Model\r\n{\r\n"
+         "    protected $fillable = ['title', 'body', 'user_id'];\r\n\r\n    // 这是一个中文注释\r\n    public function author()\r\n    {\r\n"
+         "        return $this->belongsTo(User::class, 'user_id');\r\n    }\r\n}\r\n"),
+        ("resources/views/welcome.blade.php",
+         "@extends('layouts.app')\n\n@section('content')\n    <h1>{{ $title }}</h1>\n    @foreach ($posts as $post)\n        <p>{{ $post->title }}</p>\n    @endforeach\n@endsection\n"),
+        ("database/migrations/2024_01_01_000000_create_posts_table.php",
+         "<?php\n\nuse Illuminate\\Database\\Migrations\\Migration;\nuse Illuminate\\Database\\Schema\\Blueprint;\nuse Illuminate\\Support\\Facades\\Schema;\n\n"
+         "return new class extends Migration\n{\n    public function up(): void\n    {\n        Schema::create('posts', function (Blueprint $table) {\n"
+         "            $table->id();\n            $table->string('title');\n            $table->text('body');\n            $table->timestamps();\n        });\n    }\n};\n"),
+        ("lang/de/messages.php", "<?php\n\nreturn [\n    'welcome' => 'Willkommen auf unserer Seite',\n];\n"),
+        ("lang/en/messages.php", "<?php\n\nreturn [\n    'welcome' => 'Welcome to our site',\n];\n"),
+        ("vendor/example/autoload.php", "<?php\n// wird nicht gezählt: vendor-Verzeichnis\nrequire __DIR__ . '/x.php';\n"),
+    ],
+    "code-vue": [
+        ("src/components/UserCard.vue",
+         "<template>\n\t<div class=\"user-card\" @click=\"select\">\n\t\t<h3>{{ user.name }}</h3>\n\t\t<p v-if=\"user.email\">{{ user.email }}</p>\n\t</div>\n</template>\n\n"
+         "<script setup>\nimport { computed } from 'vue'\n\nconst props = defineProps({ user: { type: Object, required: true } })\nconst emit = defineEmits(['select'])\n\n"
+         "const initials = computed(() => props.user.name.slice(0, 2).toUpperCase())\n\nfunction select() {\n\temit('select', props.user)\n}\n</script>\n\n"
+         "<style scoped>\n.user-card {\n\tpadding: 8px 12px;\n}\n</style>\n"),
+        ("src/views/Home.vue",
+         "<template>\n  <main>\n    <UserCard v-for=\"u in users\" :key=\"u.id\" :user=\"u\" @select=\"open\" />\n  </main>\n</template>\n\n"
+         "<script>\nimport UserCard from '../components/UserCard.vue'\n\nexport default {\n  components: { UserCard },\n  data() {\n    return { users: [] }\n  },\n"
+         "  async mounted() {\n    const response = await fetch('/api/users')\n    this.users = await response.json()\n  },\n}\n</script>\n"),
+    ],
+    "code-javascript": [
+        ("lib/example.js",
+         "'use strict';\n" + _KOPF + "\nconst fs = require('fs');\n\nfunction readJson(path, callback) {\n  fs.readFile(path, 'utf8', (err, data) => {\n"
+         "    if (err) return callback(err);\n    try {\n      callback(null, JSON.parse(data));\n    } catch (e) {\n      callback(e);\n    }\n  });\n}\n\nmodule.exports = { readJson };\n"),
+        ("test/example.test.js",
+         "const assert = require('assert');\nconst { readJson } = require('../lib/example');\n\ndescribe('readJson', () => {\n  it('parses a file', (done) => {\n"
+         "    readJson(__dirname + '/data.json', (err, value) => {\n      assert.ifError(err);\n      assert.strictEqual(value.name, 'example');\n      done();\n    });\n  });\n});\n"),
+        ("dist/example.min.js", "!function(e){var t={};function n(r){}}([]);" * 80),
+    ],
+    "code-java": [
+        ("src/main/java/org/example/UserService.java",
+         _KOPF + "package org.example;\n\nimport java.util.List;\nimport java.util.Optional;\n\npublic class UserService {\n\n\tprivate final UserRepository repository;\n\n"
+         "\tpublic UserService(UserRepository repository) {\n\t\tthis.repository = repository;\n\t}\n\n\tpublic Optional<User> findByEmail(String email) {\n"
+         "\t\treturn repository.findAll().stream()\n\t\t\t\t.filter(u -> u.getEmail().equalsIgnoreCase(email))\n\t\t\t\t.findFirst();\n\t}\n}\n"),
+        ("src/test/java/org/example/UserServiceTest.java",
+         "package org.example;\n\nimport static org.junit.jupiter.api.Assertions.assertTrue;\n\nimport org.junit.jupiter.api.Test;\n\nclass UserServiceTest {\n\n\t@Test\n"
+         "\tvoid findsUserByEmail() {\n\t\tUserService service = new UserService(new InMemoryUserRepository());\n\t\tassertTrue(service.findByEmail(\"a@example.org\").isPresent());\n\t}\n}\n"),
+    ],
+    "code-sql": [
+        ("sql/schema.sql",
+         "-- Example schema\n-- Licensed under the MIT License\n\nCREATE TABLE users (\n    id SERIAL PRIMARY KEY,\n    name VARCHAR(100) NOT NULL,\n    email VARCHAR(255) UNIQUE,\n    created_at TIMESTAMP DEFAULT now()\n);\n\n"
+         "CREATE INDEX idx_users_email ON users (email);\n"),
+        ("sql/queries.sql",
+         "SELECT u.id, u.name, COUNT(p.id) AS posts\nFROM users u\nLEFT JOIN posts p ON p.user_id = u.id\nWHERE u.created_at > '2024-01-01'\nGROUP BY u.id, u.name\nHAVING COUNT(p.id) > 3\nORDER BY posts DESC\nLIMIT 10;\n\n"
+         "UPDATE users SET name = 'Anna' WHERE id = 1;\n"),
+    ],
+}
+
+
+def code_dummy(e):
+    """Dummy-Archiv eines Repositories: je Sprache der Quelle ein paar erfundene Dateien, im Format eines GitHub-Archivs."""
+    wurzel = "example-0000000"
+    mitglieder = [(wurzel, None)]
+    for quelle in e["genutzt_von"]:
+        for pfad, inhalt in CODE_DATEIEN.get(quelle, []):
+            mitglieder.append((f"{wurzel}/{pfad}", inhalt.encode("utf-8")))
+    return _tar_gz(mitglieder)
+
+
+def sql_create_context():
+    paare = [
+        ("CREATE TABLE head (age INTEGER)", "SELECT COUNT(*) FROM head WHERE age > 56"),
+        ("CREATE TABLE department (name VARCHAR, budget INTEGER)", "SELECT name FROM department ORDER BY budget DESC LIMIT 1"),
+        ("CREATE TABLE singer (name VARCHAR, age INTEGER)", "SELECT AVG(age) FROM singer"),
+        ("CREATE TABLE city (name VARCHAR, population INTEGER)", "SELECT name FROM city WHERE population > 1000000"),
+        ("CREATE TABLE head (age INTEGER)", "SELECT COUNT(*) FROM head WHERE age > 56"),
+        ("CREATE TABLE book (title VARCHAR, year INTEGER)", "SELECT title FROM book WHERE year = 1999"),
+    ]
+    return json.dumps([{"question": "Example question?", "context": c, "answer": a} for c, a in paare], indent=2).encode("utf-8")
+
 # ----------------------------------------------------------------------------- Zuordnung
 
 ERZEUGER = {
@@ -436,6 +522,7 @@ ERZEUGER = {
     "englisch/enronsent/enronsentv1.tar.gz": enronsent,
     "englisch/oanc/OANC-1.0.1-UTF8.zip": oanc,
     "englisch/cabnc/CABNC-0a28a11.zip": cabnc,
+    "code/sql/sql_create_context_v4.json": sql_create_context,
 }
 for _i in range(8):
     ERZEUGER[f"englisch/ubuntu-irc/{_i:05d}_ubuntu.jsonl.gz"] = (lambda i=_i: irc(i))
@@ -466,6 +553,8 @@ def main():
     args = parser.parse_args()
     for e in herunterladen.lade_manifeste():
         erzeuger = ERZEUGER.get(e["name"])
+        if erzeuger is None and e["sprache"] == "code" and e["pfad"].endswith(".tar.gz"):
+            erzeuger = (lambda e=e: code_dummy(e))
         if erzeuger is None:
             print(f"übersprungen (kein Generator): {e['name']}")
             continue

@@ -1,0 +1,1390 @@
+{
+  "sprache": "code",
+  "verzeichnis": "korpora/code/original",
+  "dateien": [
+    {
+      "pfad": "repos/laravel__framework-06d1eab.tar.gz",
+      "url": "https://github.com/laravel/framework/archive/06d1eabb93edf34f5b0702cd4f7e332ac3520e18.tar.gz",
+      "sha256": "be3c3ecdd821d3d33bfd24ff5ab34d334bbf4f7aebad8fb98d619eef190b6c6d",
+      "bytes": 1539342,
+      "beschreibung": "laravel/framework @ 06d1eab (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "7ce447ba3f4acd86517112dcbf6c1ac307c29ee9845107a1c570ca1a9922f344",
+      "lizenz": "MIT",
+      "commit": "06d1eabb93edf34f5b0702cd4f7e332ac3520e18",
+      "repo": "laravel/framework"
+    },
+    {
+      "pfad": "repos/BookStackApp__BookStack-0b6b667.tar.gz",
+      "url": "https://github.com/BookStackApp/BookStack/archive/0b6b667e0d84ebb3406de6de9fadbf4230c29c0b.tar.gz",
+      "sha256": "2fdaa8bad235e2fa2e25625cad7b9dc0fc441a317766b45b400044693dd24c3f",
+      "bytes": 4136068,
+      "beschreibung": "BookStackApp/BookStack @ 0b6b667 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "3b999469db38fecc806aff3d94c2a0c0bed3130782b80651b6a52e9a5e49146e",
+      "lizenz": "MIT",
+      "commit": "0b6b667e0d84ebb3406de6de9fadbf4230c29c0b",
+      "repo": "BookStackApp/BookStack"
+    },
+    {
+      "pfad": "repos/fruitcake__laravel-debugbar-033b34a.tar.gz",
+      "url": "https://github.com/fruitcake/laravel-debugbar/archive/033b34a6448990decb74c8689f4c9be750ea0957.tar.gz",
+      "sha256": "f00dbe8ab56521c9ef887708cabb197200b48096539b8b34fc67b37013e19e86",
+      "bytes": 68942,
+      "beschreibung": "fruitcake/laravel-debugbar @ 033b34a (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "4715bd6de65c19b35bad0ce3060c14b0624015523858d84a699de027106fc6f2",
+      "lizenz": "MIT",
+      "commit": "033b34a6448990decb74c8689f4c9be750ea0957",
+      "repo": "fruitcake/laravel-debugbar"
+    },
+    {
+      "pfad": "repos/koel__koel-9ec40db.tar.gz",
+      "url": "https://github.com/koel/koel/archive/9ec40db3ca9b01a0822d11ad24591b70cc6aca63.tar.gz",
+      "sha256": "b026a511582db9112eb3b4e08a64562f0d9d4a139e3a175edc84027d525af682",
+      "bytes": 11693675,
+      "beschreibung": "koel/koel @ 9ec40db (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "dded4eadc178b80257f8d33ac698257bc91eb60981f0f36794436f37951a8c0b",
+      "lizenz": "MIT",
+      "commit": "9ec40db3ca9b01a0822d11ad24591b70cc6aca63",
+      "repo": "koel/koel"
+    },
+    {
+      "pfad": "repos/barryvdh__laravel-ide-helper-66f7ec1.tar.gz",
+      "url": "https://github.com/barryvdh/laravel-ide-helper/archive/66f7ec11122bcb009aba7c2fea31faf5cee46634.tar.gz",
+      "sha256": "abbcdf38be0fc4f0e3ef036136bd0ba0eea4666f80485b13c3cbfc0b0a02f814",
+      "bytes": 54684,
+      "beschreibung": "barryvdh/laravel-ide-helper @ 66f7ec1 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "1cc1bcda41bdefb4e9d32a8204c399bd2e1dc4e9eff73223fefe3185d9aa563a",
+      "lizenz": "MIT",
+      "commit": "66f7ec11122bcb009aba7c2fea31faf5cee46634",
+      "repo": "barryvdh/laravel-ide-helper"
+    },
+    {
+      "pfad": "repos/krayin__laravel-crm-ed6deeb.tar.gz",
+      "url": "https://github.com/krayin/laravel-crm/archive/ed6deebfcb8c616eaf352c893a10a6d8e666fc6e.tar.gz",
+      "sha256": "8fc5cdc0ee63941f030599689b03b20e201385148963efe898c05633c6f3d6a6",
+      "bytes": 23146522,
+      "beschreibung": "krayin/laravel-crm @ ed6deeb (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "e8570903cbaf50b739a3b163637846d4106a2139e8652f434e2fa1d72960842d",
+      "lizenz": "MIT",
+      "commit": "ed6deebfcb8c616eaf352c893a10a6d8e666fc6e",
+      "repo": "krayin/laravel-crm"
+    },
+    {
+      "pfad": "repos/SpartnerNL__Laravel-Excel-49d7521.tar.gz",
+      "url": "https://github.com/SpartnerNL/Laravel-Excel/archive/49d752119a1dd2a0266909fca7bd6aa24e024b70.tar.gz",
+      "sha256": "3a6bba312bed4190eca257d54ce8c8bdf77691d95dcb48d85f37456b9456cbf7",
+      "bytes": 77483,
+      "beschreibung": "SpartnerNL/Laravel-Excel @ 49d7521 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "d623942ba1deb79c35f95966f6556655856304b2b4629ea7629c759ed4441742",
+      "lizenz": "MIT",
+      "commit": "49d752119a1dd2a0266909fca7bd6aa24e024b70",
+      "repo": "SpartnerNL/Laravel-Excel"
+    },
+    {
+      "pfad": "repos/spatie__laravel-permission-799e1ae.tar.gz",
+      "url": "https://github.com/spatie/laravel-permission/archive/799e1aec09997b006fbd5087d61c7b4bfeb8ab30.tar.gz",
+      "sha256": "088c7d9971786f6b4209dc50654321f613c83d367ec3dd2a5247142321b9f068",
+      "bytes": 31826,
+      "beschreibung": "spatie/laravel-permission @ 799e1ae (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "624b794127ba46ccc1a50365b184c08dccf9efae89889a42f3d7e14971a38083",
+      "lizenz": "MIT",
+      "commit": "799e1aec09997b006fbd5087d61c7b4bfeb8ab30",
+      "repo": "spatie/laravel-permission"
+    },
+    {
+      "pfad": "repos/stefanzweifel__screeenly-0c04289.tar.gz",
+      "url": "https://github.com/stefanzweifel/screeenly/archive/0c042898d3d724c8e61b93457010fc4b08728af5.tar.gz",
+      "sha256": "387233dcfcfe7a2b1298b1ba50f5c5c350f8ae802939289682203fd98bf54e43",
+      "bytes": 443387,
+      "beschreibung": "stefanzweifel/screeenly @ 0c04289 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "aaee2decb2a84938ac5515bffe11fbeaf50ade15aaa2cc62ff1660b1b5fd60e4",
+      "lizenz": "MIT",
+      "commit": "0c042898d3d724c8e61b93457010fc4b08728af5",
+      "repo": "stefanzweifel/screeenly"
+    },
+    {
+      "pfad": "repos/livewire__livewire-e03c29c.tar.gz",
+      "url": "https://github.com/livewire/livewire/archive/e03c29c8181804cdafe9d5819b7ab5cc93adbf12.tar.gz",
+      "sha256": "0f70fa606c42b70a1ed196a8341b24422fd833f476acb86be0fba6e05d707a95",
+      "bytes": 1234609,
+      "beschreibung": "livewire/livewire @ e03c29c (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "4a4938d31ee6921b7ed7f376dc8b8b99cb7b7e04ed10b08f27a4502a34c80bba",
+      "lizenz": "MIT",
+      "commit": "e03c29c8181804cdafe9d5819b7ab5cc93adbf12",
+      "repo": "livewire/livewire"
+    },
+    {
+      "pfad": "repos/webreinvent__vaahcms-8d7898f.tar.gz",
+      "url": "https://github.com/webreinvent/vaahcms/archive/8d7898f7a385a5fade1180a9b664ff158d873129.tar.gz",
+      "sha256": "d71b0e17ae708ce09eb627fc5356fb661415512323d60edb15b55874f1059402",
+      "bytes": 8932990,
+      "beschreibung": "webreinvent/vaahcms @ 8d7898f (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "4206802767213147b470616b11704b31ecb71f5d503cb85d98cb231b76b79a28",
+      "lizenz": "MIT",
+      "commit": "8d7898f7a385a5fade1180a9b664ff158d873129",
+      "repo": "webreinvent/vaahcms"
+    },
+    {
+      "pfad": "repos/filamentphp__filament-531b069.tar.gz",
+      "url": "https://github.com/filamentphp/filament/archive/531b0690c1c11009a24a59a916327c6207434474.tar.gz",
+      "sha256": "5a1b0cea5373d41d95f53fa66c73aa20f74a0fa844b191b88b27c7aa705f1281",
+      "bytes": 77673389,
+      "beschreibung": "filamentphp/filament @ 531b069 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "0b0dec70bfeed92d78c235e898eccaa0b48e0edcdd4d89d9e9a961e5fa07806d",
+      "lizenz": "MIT",
+      "commit": "531b0690c1c11009a24a59a916327c6207434474",
+      "repo": "filamentphp/filament"
+    },
+    {
+      "pfad": "repos/pterodactyl__panel-90b2aa8.tar.gz",
+      "url": "https://github.com/pterodactyl/panel/archive/90b2aa87469da4fffd941b3c99f3c1ca48a01b78.tar.gz",
+      "sha256": "3c0c880dd523433a1d0d6cb6b0d348e297b6cd5155d6d4c4fa456a532df442b3",
+      "bytes": 2624467,
+      "beschreibung": "pterodactyl/panel @ 90b2aa8 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "539c2f970301c7e8e7b0acdd4a93c59aa296e769843aa8757df1f861d052e95d",
+      "lizenz": "MIT",
+      "commit": "90b2aa87469da4fffd941b3c99f3c1ca48a01b78",
+      "repo": "pterodactyl/panel"
+    },
+    {
+      "pfad": "repos/bagisto__bagisto-ed8dcf2.tar.gz",
+      "url": "https://github.com/bagisto/bagisto/archive/ed8dcf2aebae70e13e5fa68a66490f3bf8332bf2.tar.gz",
+      "sha256": "deec29faec04aaaf60c50bb3964fc2c65f3b4637b0372dc959d2aa72ea9f6283",
+      "bytes": 59981254,
+      "beschreibung": "bagisto/bagisto @ ed8dcf2 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "65a7469ef4f418ca538d7b151d09640b85ee8984051327f6e3ee8a727ec9e258",
+      "lizenz": "MIT",
+      "commit": "ed8dcf2aebae70e13e5fa68a66490f3bf8332bf2",
+      "repo": "bagisto/bagisto"
+    },
+    {
+      "pfad": "repos/composer__composer-5147ea1.tar.gz",
+      "url": "https://github.com/composer/composer/archive/5147ea1a01c124f461090a72bee6ea6de02a67a6.tar.gz",
+      "sha256": "ea02d92c7c173809bfd3ccaa4778ee05dc4042f93eab8de2cdcf086e2371f529",
+      "bytes": 615873,
+      "beschreibung": "composer/composer @ 5147ea1 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "0215dda4e7ecc970a3ec4cdb661c5e6a956bed02d2db120ce42798e4d219ab17",
+      "lizenz": "MIT",
+      "commit": "5147ea1a01c124f461090a72bee6ea6de02a67a6",
+      "repo": "composer/composer"
+    },
+    {
+      "pfad": "repos/laravel__sanctum-a8f7ef1.tar.gz",
+      "url": "https://github.com/laravel/sanctum/archive/a8f7ef1bd5f8b78159effa1ffae851b0dc72cd8b.tar.gz",
+      "sha256": "7e4f9c84cd5666ec8faaff332f317a334e15960d405ee227f31a571a6d8cb5ce",
+      "bytes": 11497,
+      "beschreibung": "laravel/sanctum @ a8f7ef1 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "8c89b340859bebf10700d35d96d7f642462c5274b9b0384ee71c201318d9af56",
+      "lizenz": "MIT",
+      "commit": "a8f7ef1bd5f8b78159effa1ffae851b0dc72cd8b",
+      "repo": "laravel/sanctum"
+    },
+    {
+      "pfad": "repos/laravel__horizon-0aaa5ec.tar.gz",
+      "url": "https://github.com/laravel/horizon/archive/0aaa5ec90d5712381a9da48661a935f81fa9327a.tar.gz",
+      "sha256": "62069b183e9c9f8d3328223c8838ab33bfed90f34a46f573d131cfe2c952d166",
+      "bytes": 397103,
+      "beschreibung": "laravel/horizon @ 0aaa5ec (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "2d3377ba490fd3ebac49dafce689e39bab5fcc079bdced86ffb2aba214ec7bc9",
+      "lizenz": "MIT",
+      "commit": "0aaa5ec90d5712381a9da48661a935f81fa9327a",
+      "repo": "laravel/horizon"
+    },
+    {
+      "pfad": "repos/laravel__cashier-stripe-7064e18.tar.gz",
+      "url": "https://github.com/laravel/cashier-stripe/archive/7064e18d443fdea5abc2bcf42aa21ecdc79c094d.tar.gz",
+      "sha256": "1082c2c1f0332b65aaa5ea49b53d511380124f28968acb24092c0ef9f956fd4a",
+      "bytes": 61779,
+      "beschreibung": "laravel/cashier-stripe @ 7064e18 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "4720e00b0c3421be13ab710c3f4a89bc7ee70b2c25a117e10558f7c61d872245",
+      "lizenz": "MIT",
+      "commit": "7064e18d443fdea5abc2bcf42aa21ecdc79c094d",
+      "repo": "laravel/cashier-stripe"
+    },
+    {
+      "pfad": "repos/laravel__socialite-8032bb1.tar.gz",
+      "url": "https://github.com/laravel/socialite/archive/8032bb1fa9d74aae54438f216e4d45db90d27ea9.tar.gz",
+      "sha256": "fa408d28086f06a8fb5a38b49ae951ea2cebf7aac51e0f61d1353e0e9e5d5630",
+      "bytes": 17776,
+      "beschreibung": "laravel/socialite @ 8032bb1 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "24632956ceb2c0f8d71f472a7854a04a0c12ea05cf95c4d4616b2613057445a9",
+      "lizenz": "MIT",
+      "commit": "8032bb1fa9d74aae54438f216e4d45db90d27ea9",
+      "repo": "laravel/socialite"
+    },
+    {
+      "pfad": "repos/laravel__jetstream-10046c0.tar.gz",
+      "url": "https://github.com/laravel/jetstream/archive/10046c0d253b8350e335f29a980e91b7d1719c4d.tar.gz",
+      "sha256": "1fbef2babf664a39ec40da423821c0bc058492da7c06a59f584ae85c36291ef0",
+      "bytes": 99413,
+      "beschreibung": "laravel/jetstream @ 10046c0 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "a01a00f8439d678d84636871b6c2a13614b709566bcef2b98d673b7d5de68944",
+      "lizenz": "MIT",
+      "commit": "10046c0d253b8350e335f29a980e91b7d1719c4d",
+      "repo": "laravel/jetstream"
+    },
+    {
+      "pfad": "repos/laravel__telescope-ccd60c1.tar.gz",
+      "url": "https://github.com/laravel/telescope/archive/ccd60c1bca4fd7d125234f2bf8d572229ff3c44a.tar.gz",
+      "sha256": "a051824ba8f2f8cbf7306b2743abf5e27b9f1d45f854900dc6c5ab6843ad8aec",
+      "bytes": 487161,
+      "beschreibung": "laravel/telescope @ ccd60c1 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "ece8d36837533acef165a767a9212b52037f900770e21beed441bf1e6143f14b",
+      "lizenz": "MIT",
+      "commit": "ccd60c1bca4fd7d125234f2bf8d572229ff3c44a",
+      "repo": "laravel/telescope"
+    },
+    {
+      "pfad": "repos/laravel__fortify-3db382a.tar.gz",
+      "url": "https://github.com/laravel/fortify/archive/3db382a3d5d6a0d537de32a190ce3b945e621713.tar.gz",
+      "sha256": "c62a546327f73cc3f0e69d72fff9571d49b28de063d4633f62f0ef937ecc982b",
+      "bytes": 29103,
+      "beschreibung": "laravel/fortify @ 3db382a (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "e020c7c7a89ba737c2fb6c1e2d08a562dde66ae1085ff50437a66eb543da953a",
+      "lizenz": "MIT",
+      "commit": "3db382a3d5d6a0d537de32a190ce3b945e621713",
+      "repo": "laravel/fortify"
+    },
+    {
+      "pfad": "repos/laravel__breeze-a282521.tar.gz",
+      "url": "https://github.com/laravel/breeze/archive/a2825219f294ffaa57506dd8b30483bfcb1ad642.tar.gz",
+      "sha256": "782a48ddd7c3e946ae7300c26e71d538f177cd885f2501131d64de245a2ef1dd",
+      "bytes": 130109,
+      "beschreibung": "laravel/breeze @ a282521 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "3c5dfec3095743e77d1f7fd69453f200345c8e90a81fa5f763ad5f0f7741c5f5",
+      "lizenz": "MIT",
+      "commit": "a2825219f294ffaa57506dd8b30483bfcb1ad642",
+      "repo": "laravel/breeze"
+    },
+    {
+      "pfad": "repos/laravel__passport-aa6d837.tar.gz",
+      "url": "https://github.com/laravel/passport/archive/aa6d8376c1565e38bfeee0bdba671f5363b5eae6.tar.gz",
+      "sha256": "6388eef5ab82d6095435c62a6e8ed8d6fc21ea0a5ef804d3b5f5e7b481332c6a",
+      "bytes": 43719,
+      "beschreibung": "laravel/passport @ aa6d837 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "41a0c501071c5877eed513b255e00824f1f9bb91f0b5f3c915fe900179f7b28a",
+      "lizenz": "MIT",
+      "commit": "aa6d8376c1565e38bfeee0bdba671f5363b5eae6",
+      "repo": "laravel/passport"
+    },
+    {
+      "pfad": "repos/laravel__scout-bb583fe.tar.gz",
+      "url": "https://github.com/laravel/scout/archive/bb583fec9c17f142b192c4a96f574989c771d641.tar.gz",
+      "sha256": "93156f7dfb484ca9bd80e6490af46f18a4ad8fc05bc09ddee6c3a4ca5de2d72a",
+      "bytes": 48804,
+      "beschreibung": "laravel/scout @ bb583fe (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "6b0a8b9e9bee6da091e3f280a7e11e8306c45ca8bf208a829cb114849fe14962",
+      "lizenz": "MIT",
+      "commit": "bb583fec9c17f142b192c4a96f574989c771d641",
+      "repo": "laravel/scout"
+    },
+    {
+      "pfad": "repos/symfony__symfony-a9bd44f.tar.gz",
+      "url": "https://github.com/symfony/symfony/archive/a9bd44fa9c1aec723ae497a41ead077c1986b4f4.tar.gz",
+      "sha256": "68d496ceaf7900f1c8c0aa30174cac606ab2dd850bc9aa86f9fd168bbcc3bced",
+      "bytes": 11954043,
+      "beschreibung": "symfony/symfony @ a9bd44f (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "97f427fb42c2b61a064fe15ff21e673d23c93ba3cad3e84dc7a2e5188c2f0e56",
+      "lizenz": "MIT",
+      "commit": "a9bd44fa9c1aec723ae497a41ead077c1986b4f4",
+      "repo": "symfony/symfony"
+    },
+    {
+      "pfad": "repos/laravelio__laravel.io-b9d33e2.tar.gz",
+      "url": "https://github.com/laravelio/laravel.io/archive/b9d33e281c25c8f764ae144d95eb736e01c8fa0e.tar.gz",
+      "sha256": "f08551fe9c72ab3fec671470a81782f29423eee7e18a71a83f1da6b2253231ef",
+      "bytes": 2001022,
+      "beschreibung": "laravelio/laravel.io @ b9d33e2 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "cd3265c4fa844799a47bf9aedf1eb3ba980076b7ad33eb3eb0a72c644e2ef6c3",
+      "lizenz": "MIT",
+      "commit": "b9d33e281c25c8f764ae144d95eb736e01c8fa0e",
+      "repo": "laravelio/laravel.io"
+    },
+    {
+      "pfad": "repos/spatie__laravel-medialibrary-7d8c78f.tar.gz",
+      "url": "https://github.com/spatie/laravel-medialibrary/archive/7d8c78fcc148c7f8cdc181ffc646bf01f77d4281.tar.gz",
+      "sha256": "70e69333d32aaca9d104ec7e81202791db5b176f6daf07ed7104eec0b71c0518",
+      "bytes": 54020,
+      "beschreibung": "spatie/laravel-medialibrary @ 7d8c78f (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "0b636e508305c7971cf69fd3a98eefe9a892b2f7ab8e53eb9d9cad2d5e721aad",
+      "lizenz": "MIT",
+      "commit": "7d8c78fcc148c7f8cdc181ffc646bf01f77d4281",
+      "repo": "spatie/laravel-medialibrary"
+    },
+    {
+      "pfad": "repos/spatie__laravel-activitylog-fdcc5ee.tar.gz",
+      "url": "https://github.com/spatie/laravel-activitylog/archive/fdcc5ee063cbf91114679336c4fbf92837196419.tar.gz",
+      "sha256": "6c52b302745d707711342db7ba95a251c126ecbb09aa7ee01b4d499df83e7e13",
+      "bytes": 490316,
+      "beschreibung": "spatie/laravel-activitylog @ fdcc5ee (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "0607286bdb73f6cee7cd7459ce69eace000932b72c7c71557121d5988abe9d1b",
+      "lizenz": "MIT",
+      "commit": "fdcc5ee063cbf91114679336c4fbf92837196419",
+      "repo": "spatie/laravel-activitylog"
+    },
+    {
+      "pfad": "repos/spatie__freek.dev-f786cbb.tar.gz",
+      "url": "https://github.com/spatie/freek.dev/archive/f786cbbec3f28a052c712d30ea2dcf7314ab0038.tar.gz",
+      "sha256": "afb2d829726e043a012d3c475e936da587ecc66a19bcd497d60166387c27acc1",
+      "bytes": 14434726,
+      "beschreibung": "spatie/freek.dev @ f786cbb (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "3ae181b88449ac23b91c7617bb542c8f30ba0c8bfa34a0c56f4a49b7b6290668",
+      "lizenz": "MIT",
+      "commit": "f786cbbec3f28a052c712d30ea2dcf7314ab0038",
+      "repo": "spatie/freek.dev"
+    },
+    {
+      "pfad": "repos/spatie__laravel-backup-9a5597f.tar.gz",
+      "url": "https://github.com/spatie/laravel-backup/archive/9a5597f73120d614e8cac11a4e70b199d79f2f0c.tar.gz",
+      "sha256": "63e731d843e5587c9223386493f6cf734d4565b13a8ae9e6e21253eb255d188e",
+      "bytes": 57607,
+      "beschreibung": "spatie/laravel-backup @ 9a5597f (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "32a3a5b93b83a30ef9d0018faa30f73eda472eb80d59698e31463cae04ce1a10",
+      "lizenz": "MIT",
+      "commit": "9a5597f73120d614e8cac11a4e70b199d79f2f0c",
+      "repo": "spatie/laravel-backup"
+    },
+    {
+      "pfad": "repos/spatie__laravel-query-builder-3070dfc.tar.gz",
+      "url": "https://github.com/spatie/laravel-query-builder/archive/3070dfc320803281131fc2b0684c195f3ac4dd02.tar.gz",
+      "sha256": "da337e988add7563fa2ac8aaa47831d27cab1217176acae1bfff66c46fab4690",
+      "bytes": 45847,
+      "beschreibung": "spatie/laravel-query-builder @ 3070dfc (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "e1db19bdefe589d861361d265da8f8d1416bbc66a71cb6a3af273ebea16e5ff9",
+      "lizenz": "MIT",
+      "commit": "3070dfc320803281131fc2b0684c195f3ac4dd02",
+      "repo": "spatie/laravel-query-builder"
+    },
+    {
+      "pfad": "repos/spatie__laravel-data-7bda01d.tar.gz",
+      "url": "https://github.com/spatie/laravel-data/archive/7bda01d61486cf438d6745ec8a1acc4af71ac1a6.tar.gz",
+      "sha256": "2159f07bdba98fc5f4a1ad9fd16ed5df3d3f3d4cd56449fa3ca86e1d9908ac80",
+      "bytes": 171618,
+      "beschreibung": "spatie/laravel-data @ 7bda01d (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "c2ef039fce1fde16f039b958d8248fcc74460404be42d306afc8ea84da0403d9",
+      "lizenz": "MIT",
+      "commit": "7bda01d61486cf438d6745ec8a1acc4af71ac1a6",
+      "repo": "spatie/laravel-data"
+    },
+    {
+      "pfad": "repos/flarum__framework-b77f310.tar.gz",
+      "url": "https://github.com/flarum/framework/archive/b77f310e8460d85a3c0d06782a008bb179fa9c36.tar.gz",
+      "sha256": "68c889adba44b39e45b6c10aef8e99bce702c44b6b617e58abbeae4ef1fa1af2",
+      "bytes": 5967100,
+      "beschreibung": "flarum/framework @ b77f310 (MIT)",
+      "genutzt_von": [
+        "code-php"
+      ],
+      "sha256_inhalt": "949b6bf8b954c4892277de6b2a212fa80d5ab4fa0b70113120642943bb676758",
+      "lizenz": "MIT",
+      "commit": "b77f310e8460d85a3c0d06782a008bb179fa9c36",
+      "repo": "flarum/framework"
+    },
+    {
+      "pfad": "repos/vuetifyjs__vuetify-d6eda7e.tar.gz",
+      "url": "https://github.com/vuetifyjs/vuetify/archive/d6eda7e126252b7b579cd78a333f1c39f0dc5332.tar.gz",
+      "sha256": "cab827c866c293382ad7068f4cf81a65f345ae2a0368b0cc7a67497893ab766e",
+      "bytes": 2761159,
+      "beschreibung": "vuetifyjs/vuetify @ d6eda7e (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "a6c98e06b9bd03e31998e798e8171ce74b0e8849e6110ca96f839008b85ff459",
+      "lizenz": "MIT",
+      "commit": "d6eda7e126252b7b579cd78a333f1c39f0dc5332",
+      "repo": "vuetifyjs/vuetify"
+    },
+    {
+      "pfad": "repos/primefaces__primevue-36965f1.tar.gz",
+      "url": "https://github.com/primefaces/primevue/archive/36965f13dc40597deeb16192a8568308cbeb70d9.tar.gz",
+      "sha256": "3907f0a7cfdd265dc6a667f16a0e471be7e9d46a91ebff3bf2faa673914eb478",
+      "bytes": 4425449,
+      "beschreibung": "primefaces/primevue @ 36965f1 (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "38bab6bc140094f4e7c7995045f8470f9398a182cd3b10750ff51b9d298f2623",
+      "lizenz": "MIT",
+      "commit": "36965f13dc40597deeb16192a8568308cbeb70d9",
+      "repo": "primefaces/primevue"
+    },
+    {
+      "pfad": "repos/vueComponent__ant-design-vue-7483836.tar.gz",
+      "url": "https://github.com/vueComponent/ant-design-vue/archive/7483836f0adac76516e527df893c3d84a7cd4005.tar.gz",
+      "sha256": "e32c98ba1538eec938d836e5b150a5f6d6fff984a7bafbaa63c8ea18444da479",
+      "bytes": 4702355,
+      "beschreibung": "vueComponent/ant-design-vue @ 7483836 (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "e2b1bfb38deaa998174144340323e0b9c3033eae6463f51ac60058c7ba5683a2",
+      "lizenz": "MIT",
+      "commit": "7483836f0adac76516e527df893c3d84a7cd4005",
+      "repo": "vueComponent/ant-design-vue"
+    },
+    {
+      "pfad": "repos/vbenjs__vue-vben-admin-53b47f8.tar.gz",
+      "url": "https://github.com/vbenjs/vue-vben-admin/archive/53b47f8ce99ecea11aa04c9c876a2f18c479838f.tar.gz",
+      "sha256": "9fe0fbab8195ef99b94d5f06e322b3681f0a1c7e034d28291a64938b89a94920",
+      "bytes": 5968124,
+      "beschreibung": "vbenjs/vue-vben-admin @ 53b47f8 (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "de0fa3e65adfeec6ad3bf31bc39f7767fc6e89f75832f535ae7e7fcb662f6b4e",
+      "lizenz": "MIT",
+      "commit": "53b47f8ce99ecea11aa04c9c876a2f18c479838f",
+      "repo": "vbenjs/vue-vben-admin"
+    },
+    {
+      "pfad": "repos/vuejs__router-4b89de6.tar.gz",
+      "url": "https://github.com/vuejs/router/archive/4b89de605bf0a54d56459999ae0e5a9cbf69a1aa.tar.gz",
+      "sha256": "f9821482d240a192eb5566b2996182c3dd0d677b6fcbfda4e2f00214e7b2422f",
+      "bytes": 1804253,
+      "beschreibung": "vuejs/router @ 4b89de6 (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "586943dfba13190934ec48faa24ca88f07b556e9d2b3575c1543f0952c53e1b2",
+      "lizenz": "MIT",
+      "commit": "4b89de605bf0a54d56459999ae0e5a9cbf69a1aa",
+      "repo": "vuejs/router"
+    },
+    {
+      "pfad": "repos/PanJiaChen__vue-element-admin-6858a9a.tar.gz",
+      "url": "https://github.com/PanJiaChen/vue-element-admin/archive/6858a9ad67483025f6a9432a926beb9327037be3.tar.gz",
+      "sha256": "eccacfefb007827d34f813986a739f65f6ad2f2d1548f1c29500fb6a6da1d885",
+      "bytes": 468218,
+      "beschreibung": "PanJiaChen/vue-element-admin @ 6858a9a (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "1317e4f87e83bc2a52648c7db0ff5c0fd4aa21f3d9daee308a260354bfd5dd27",
+      "lizenz": "MIT",
+      "commit": "6858a9ad67483025f6a9432a926beb9327037be3",
+      "repo": "PanJiaChen/vue-element-admin"
+    },
+    {
+      "pfad": "repos/vueuse__vueuse-bed1dce.tar.gz",
+      "url": "https://github.com/vueuse/vueuse/archive/bed1dce149ce6760fec13d4798c047f51a563180.tar.gz",
+      "sha256": "30ec4eea5eda8ab64a608246589816f68bc98453c811df5771b6b452b88e6a04",
+      "bytes": 1212761,
+      "beschreibung": "vueuse/vueuse @ bed1dce (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "1df4434c4b6cff2a36124e4d9eae62ad2088015e54e95541148e13cb347adaf2",
+      "lizenz": "MIT",
+      "commit": "bed1dce149ce6760fec13d4798c047f51a563180",
+      "repo": "vueuse/vueuse"
+    },
+    {
+      "pfad": "repos/vuejs__pinia-4817135.tar.gz",
+      "url": "https://github.com/vuejs/pinia/archive/4817135a25431172d363bd928476db7cdbf875c4.tar.gz",
+      "sha256": "46dc4739874c21dea613585c90accbe47b0ea20fec72a96fca2568cc0b335f8a",
+      "bytes": 1126000,
+      "beschreibung": "vuejs/pinia @ 4817135 (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "9a03d9a773d4f46a8100a342f79286ece63019be1953c35f9f42db2fcf620e10",
+      "lizenz": "MIT",
+      "commit": "4817135a25431172d363bd928476db7cdbf875c4",
+      "repo": "vuejs/pinia"
+    },
+    {
+      "pfad": "repos/vuejs__vitepress-40b2e09.tar.gz",
+      "url": "https://github.com/vuejs/vitepress/archive/40b2e090772ac11eac358d25ec92ee435fc2adbd.tar.gz",
+      "sha256": "6244e6e1d15b8ccaffd673593d10b3b9cc4b23aa22918a85e81d8b18d079abf9",
+      "bytes": 2587816,
+      "beschreibung": "vuejs/vitepress @ 40b2e09 (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "59fda09742b0e5712d9b973c18db03f16fd3e3e9a3b077d3467938b6795ac3b4",
+      "lizenz": "MIT",
+      "commit": "40b2e090772ac11eac358d25ec92ee435fc2adbd",
+      "repo": "vuejs/vitepress"
+    },
+    {
+      "pfad": "repos/zxwk1998__vue-admin-better-b02834b.tar.gz",
+      "url": "https://github.com/zxwk1998/vue-admin-better/archive/b02834b2dd9148bca55fdb168347890eb1a35e88.tar.gz",
+      "sha256": "5158eabd972dcc6ac5f3df7b0c590b8dcec6d83aebc584e03c4a108e25bf597e",
+      "bytes": 1036558,
+      "beschreibung": "zxwk1998/vue-admin-better @ b02834b (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "9bb600ce7d12a6ec5e0007f740ffaf4aee8827dfe5d2a9375aeb62c706a502ad",
+      "lizenz": "MIT",
+      "commit": "b02834b2dd9148bca55fdb168347890eb1a35e88",
+      "repo": "zxwk1998/vue-admin-better"
+    },
+    {
+      "pfad": "repos/quasarframework__quasar-8424c2b.tar.gz",
+      "url": "https://github.com/quasarframework/quasar/archive/8424c2b0dd2618c81ee401e355e790a23966ffc5.tar.gz",
+      "sha256": "90c493df30cb15267f7e030b8521b9ce2216f4255f1c475cebfd5e311a26956f",
+      "bytes": 29424420,
+      "beschreibung": "quasarframework/quasar @ 8424c2b (MIT)",
+      "genutzt_von": [
+        "code-vue",
+        "code-javascript"
+      ],
+      "sha256_inhalt": "7c1dde41b75b6a3948cd6d8d9e2fed3595e323b84810280fa84376294d70fdc9",
+      "lizenz": "MIT",
+      "commit": "8424c2b0dd2618c81ee401e355e790a23966ffc5",
+      "repo": "quasarframework/quasar"
+    },
+    {
+      "pfad": "repos/lin-xin__vue-manage-system-6a7019e.tar.gz",
+      "url": "https://github.com/lin-xin/vue-manage-system/archive/6a7019ec1a74cc05297d18647a5f944c242d468a.tar.gz",
+      "sha256": "f6a66bff610c99248f31afe10fd38d90ff6c68032420411b0b05f6d0d9279ba7",
+      "bytes": 801866,
+      "beschreibung": "lin-xin/vue-manage-system @ 6a7019e (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "c56d30406b146c1f606d05e6e13df4a2aecd766589d32c5592b67e57f61de5eb",
+      "lizenz": "MIT",
+      "commit": "6a7019ec1a74cc05297d18647a5f944c242d468a",
+      "repo": "lin-xin/vue-manage-system"
+    },
+    {
+      "pfad": "repos/qier222__YesPlayMusic-5d5fa23.tar.gz",
+      "url": "https://github.com/qier222/YesPlayMusic/archive/5d5fa23b7429c82a9932bbc2c9f6036403c5757b.tar.gz",
+      "sha256": "51731cccc2609f8b5edc633cc7748d8c648cb5a9855aab2cad97e3bad2f775d9",
+      "bytes": 7169171,
+      "beschreibung": "qier222/YesPlayMusic @ 5d5fa23 (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "ca988e7ce89e028485bfbcf9abec2effd85b564c3707e195bd7fabbecb55895f",
+      "lizenz": "MIT",
+      "commit": "5d5fa23b7429c82a9932bbc2c9f6036403c5757b",
+      "repo": "qier222/YesPlayMusic"
+    },
+    {
+      "pfad": "repos/ElemeFE__element-c345bb4.tar.gz",
+      "url": "https://github.com/ElemeFE/element/archive/c345bb453bf11badb4831a6a3f600c9372b3a336.tar.gz",
+      "sha256": "0150c024c499a02e70dcb8eb99e2286e7e9ae7d5c119eed09e788954c5b02ee0",
+      "bytes": 2527872,
+      "beschreibung": "ElemeFE/element @ c345bb4 (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "4430c64c23fef4c3ef97c473bc09bdb8351c3258c6236276e8648ede54fa792a",
+      "lizenz": "MIT",
+      "commit": "c345bb453bf11badb4831a6a3f600c9372b3a336",
+      "repo": "ElemeFE/element"
+    },
+    {
+      "pfad": "repos/youzan__vant-7cc4992.tar.gz",
+      "url": "https://github.com/youzan/vant/archive/7cc499279866e74b117593abf612567d5a2eb28d.tar.gz",
+      "sha256": "0808c2e125b88dd3b5031a176f2e515e738907a08eb048bc60f2007dfa8dab93",
+      "bytes": 9937163,
+      "beschreibung": "youzan/vant @ 7cc4992 (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "1f7c56f26fd25263413831d2fa2740248549df8ae1bd8417b3e869dadcf69499",
+      "lizenz": "MIT",
+      "commit": "7cc499279866e74b117593abf612567d5a2eb28d",
+      "repo": "youzan/vant"
+    },
+    {
+      "pfad": "repos/epicmaxco__vuestic-ui-c5337ed.tar.gz",
+      "url": "https://github.com/epicmaxco/vuestic-ui/archive/c5337ed8e7e24ea294221326fe2ca6af8d3b8e1b.tar.gz",
+      "sha256": "326b8b1bcd4d2fb5d996183c39a222bd83e0fd0e2a61076b450cf02ff9951120",
+      "bytes": 12246538,
+      "beschreibung": "epicmaxco/vuestic-ui @ c5337ed (MIT (package.json))",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "088d9da14a13386c3cd78cd2098c2c0c6fde6f065e99e9b232ac5e716ecba77d",
+      "lizenz": "MIT (package.json)",
+      "commit": "c5337ed8e7e24ea294221326fe2ca6af8d3b8e1b",
+      "repo": "epicmaxco/vuestic-ui"
+    },
+    {
+      "pfad": "repos/elk-zone__elk-6b956a6.tar.gz",
+      "url": "https://github.com/elk-zone/elk/archive/6b956a6d4a89a676059d83a0b0e59d7165d5f266.tar.gz",
+      "sha256": "a640510942938f4492534e1a8a39fb5674cc08efab0954fab1ed05024267b2eb",
+      "bytes": 4279180,
+      "beschreibung": "elk-zone/elk @ 6b956a6 (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "424075f30d44fdd6cb081c17b2cad20b79d3d0d3991372e1ec2ef7b537998540",
+      "lizenz": "MIT",
+      "commit": "6b956a6d4a89a676059d83a0b0e59d7165d5f266",
+      "repo": "elk-zone/elk"
+    },
+    {
+      "pfad": "repos/lissy93__dashy-cb56d1d.tar.gz",
+      "url": "https://github.com/lissy93/dashy/archive/cb56d1d2fe72c7d72b3b21963ee197bee735335f.tar.gz",
+      "sha256": "f1e056b8ff9f3880ad07a65248e5d021ab3b06f529ee68f125a74d5d42cb509e",
+      "bytes": 70230052,
+      "beschreibung": "lissy93/dashy @ cb56d1d (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "dcea4408b16cfeb6ee706348010b221412b4005fd343d99dc3ea5b8eb6a00ca1",
+      "lizenz": "MIT",
+      "commit": "cb56d1d2fe72c7d72b3b21963ee197bee735335f",
+      "repo": "lissy93/dashy"
+    },
+    {
+      "pfad": "repos/nuxt__ui-aa54cd8.tar.gz",
+      "url": "https://github.com/nuxt/ui/archive/aa54cd89ae4ffd89949af774936af4c1df91ee5d.tar.gz",
+      "sha256": "dafce6af5f403c08303df2dd115dec2818ea2dd89bb0072cef67fb11bc6b9a84",
+      "bytes": 63263795,
+      "beschreibung": "nuxt/ui @ aa54cd8 (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "e7be71418d15b5acd55bdf7c13e82fa091b3d86b6cc1eafab76625393b8827d7",
+      "lizenz": "MIT",
+      "commit": "aa54cd89ae4ffd89949af774936af4c1df91ee5d",
+      "repo": "nuxt/ui"
+    },
+    {
+      "pfad": "repos/vuejs__core-cbd9595.tar.gz",
+      "url": "https://github.com/vuejs/core/archive/cbd95955a5362b44060908f6e28ad447c3031b8a.tar.gz",
+      "sha256": "d11c4aada8ce1cea1a29900782be4370653b59b390098ee4a17b8ac171edcbee",
+      "bytes": 1668503,
+      "beschreibung": "vuejs/core @ cbd9595 (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "11e141d9315849aa012ffebbd68c917b43b52a1cebc668eac96b1b5bfde2987d",
+      "lizenz": "MIT",
+      "commit": "cbd95955a5362b44060908f6e28ad447c3031b8a",
+      "repo": "vuejs/core"
+    },
+    {
+      "pfad": "repos/salomonelli__best-resume-ever-29e753c.tar.gz",
+      "url": "https://github.com/salomonelli/best-resume-ever/archive/29e753cd842585b4a2e9dbbb5e1ef3a0f5e66767.tar.gz",
+      "sha256": "64752adef0a267bb87fcfe80da10e77c9baa493dc4da86e7d50b03dbba67138f",
+      "bytes": 110716622,
+      "beschreibung": "salomonelli/best-resume-ever @ 29e753c (MIT (package.json))",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "bf4e0ffdf48106d4beed33a81adf52e3805d797a4b7fdfee5e4b4d91fb0d0631",
+      "lizenz": "MIT (package.json)",
+      "commit": "29e753cd842585b4a2e9dbbb5e1ef3a0f5e66767",
+      "repo": "salomonelli/best-resume-ever"
+    },
+    {
+      "pfad": "repos/buefy__buefy-469dadd.tar.gz",
+      "url": "https://github.com/buefy/buefy/archive/469dadd7913387d72410824428be3a720318f8b3.tar.gz",
+      "sha256": "597d3a98cb33e438263ae4528d2bf38ed15f45b81f70080f51e39e164cb4e227",
+      "bytes": 16351089,
+      "beschreibung": "buefy/buefy @ 469dadd (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "02a57ebad74abe30bda675f54828f5f78efed457528745cf87b252c03bace782",
+      "lizenz": "MIT",
+      "commit": "469dadd7913387d72410824428be3a720318f8b3",
+      "repo": "buefy/buefy"
+    },
+    {
+      "pfad": "repos/bootstrap-vue__bootstrap-vue-9a246f4.tar.gz",
+      "url": "https://github.com/bootstrap-vue/bootstrap-vue/archive/9a246f45fc813f161df291fc7d6197febf8afaf4.tar.gz",
+      "sha256": "7058f302b15233160086472802db7f4c454138be4d609bd8b823315a26d237d6",
+      "bytes": 1591302,
+      "beschreibung": "bootstrap-vue/bootstrap-vue @ 9a246f4 (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "5ad65fbb90ef8048b01d3ee7c119005fcc14eced33838c965b6d5323669e6779",
+      "lizenz": "MIT",
+      "commit": "9a246f45fc813f161df291fc7d6197febf8afaf4",
+      "repo": "bootstrap-vue/bootstrap-vue"
+    },
+    {
+      "pfad": "repos/eslint__eslint-97efadd.tar.gz",
+      "url": "https://github.com/eslint/eslint/archive/97efadd5eff8e3eb673f8746f7bb3ba2f3941251.tar.gz",
+      "sha256": "3a727a48abf192d0e78b8bca18c75747c376b397929ec2e3c5f1f32148d3269c",
+      "bytes": 6350462,
+      "beschreibung": "eslint/eslint @ 97efadd (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "94ebb68a38725e0b98d32d91b139f4ef97a60405714c2d593522eff799b7ea34",
+      "lizenz": "MIT",
+      "commit": "97efadd5eff8e3eb673f8746f7bb3ba2f3941251",
+      "repo": "eslint/eslint"
+    },
+    {
+      "pfad": "repos/lodash__lodash-2b5e6f7.tar.gz",
+      "url": "https://github.com/lodash/lodash/archive/2b5e6f7399a7b48005140b5d5c6bc6c0e62919a8.tar.gz",
+      "sha256": "9acd2d5769bc7f0e1b0c77abe2ec446c8df54ef3d4d909238994ee7c103fb08b",
+      "bytes": 896368,
+      "beschreibung": "lodash/lodash @ 2b5e6f7 (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "866819cdd48d9b2a89445cba843fc9f85eab51e2aa01f3f893a453da095fc286",
+      "lizenz": "MIT",
+      "commit": "2b5e6f7399a7b48005140b5d5c6bc6c0e62919a8",
+      "repo": "lodash/lodash"
+    },
+    {
+      "pfad": "repos/axios__axios-85ffbaf.tar.gz",
+      "url": "https://github.com/axios/axios/archive/85ffbafab1a3f4385b6a4118692a6995ce71d9d8.tar.gz",
+      "sha256": "32e7b34cc963d8f9ca18eaceacaa047ae352ef3726e47ba7b80e432e3e46a2d9",
+      "bytes": 1721488,
+      "beschreibung": "axios/axios @ 85ffbaf (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "6291c63830403bb90ada618f3a47424d01095bb108424802e0507d1e59cbcb00",
+      "lizenz": "MIT",
+      "commit": "85ffbafab1a3f4385b6a4118692a6995ce71d9d8",
+      "repo": "axios/axios"
+    },
+    {
+      "pfad": "repos/element-plus__element-plus-3b5d0ad.tar.gz",
+      "url": "https://github.com/element-plus/element-plus/archive/3b5d0ad35b1d309a3430b49db9be1369f0966321.tar.gz",
+      "sha256": "946adc87a41cf862339013b43dfd3b1c90795f77b0308c4a0ae8383e796f10cb",
+      "bytes": 3157860,
+      "beschreibung": "element-plus/element-plus @ 3b5d0ad (MIT)",
+      "genutzt_von": [
+        "code-vue"
+      ],
+      "sha256_inhalt": "f4f47178dfe3526733469eaf957c7886d603452db57b6e1c4b380b42b15a9470",
+      "lizenz": "MIT",
+      "commit": "3b5d0ad35b1d309a3430b49db9be1369f0966321",
+      "repo": "element-plus/element-plus"
+    },
+    {
+      "pfad": "repos/prettier__prettier-2cc4f0f.tar.gz",
+      "url": "https://github.com/prettier/prettier/archive/2cc4f0fd2cc44a970229a5cb025cd47c63f31b04.tar.gz",
+      "sha256": "dd5386f81fc480d4b4a0432508f3e9110a77d24d41e18bbd8e4e7c2bcc0c4f4e",
+      "bytes": 6008694,
+      "beschreibung": "prettier/prettier @ 2cc4f0f (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "3514a962ea6f2e903d9deb9628d9a3a857e659146785ecf3bb6703512cf37dc8",
+      "lizenz": "MIT",
+      "commit": "2cc4f0fd2cc44a970229a5cb025cd47c63f31b04",
+      "repo": "prettier/prettier"
+    },
+    {
+      "pfad": "repos/jquery__jquery-feaa9fc.tar.gz",
+      "url": "https://github.com/jquery/jquery/archive/feaa9fcdb68cdeadf013d97d8fd40848d4618578.tar.gz",
+      "sha256": "80f270af61e789bc1348d5ad91f5f3014f746003ead9d3dd3351caa648f00a75",
+      "bytes": 570931,
+      "beschreibung": "jquery/jquery @ feaa9fc (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "c2a9e9738b8a622e3206d24810c887c2daf41b646786ad9ba8b91be08c0b24c3",
+      "lizenz": "MIT",
+      "commit": "feaa9fcdb68cdeadf013d97d8fd40848d4618578",
+      "repo": "jquery/jquery"
+    },
+    {
+      "pfad": "repos/expressjs__express-43fca52.tar.gz",
+      "url": "https://github.com/expressjs/express/archive/43fca52d28a422c8be48fd489cbd4f2d6152bab6.tar.gz",
+      "sha256": "0907a1731d24be4424787c250d90b9178a60bacc9e4cf331e56ba0e84a032a76",
+      "bytes": 136171,
+      "beschreibung": "expressjs/express @ 43fca52 (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "24ac57d772573ab9a7de0148beb9e3d3cdcd85cf9a373530e86e6dd986476bc3",
+      "lizenz": "MIT",
+      "commit": "43fca52d28a422c8be48fd489cbd4f2d6152bab6",
+      "repo": "expressjs/express"
+    },
+    {
+      "pfad": "repos/mochajs__mocha-5b5afa7.tar.gz",
+      "url": "https://github.com/mochajs/mocha/archive/5b5afa7b12e3f76f4e0c6afa12e960c0b378358c.tar.gz",
+      "sha256": "3bc20e5425f113c763c38ba257b526a35a18b5f7e2ba668f19eefde4e20d1203",
+      "bytes": 1273134,
+      "beschreibung": "mochajs/mocha @ 5b5afa7 (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "dec119ac09dddd0e849ef8ae32b3bb0ff88a5f4f3871ae2da0846872129aca33",
+      "lizenz": "MIT",
+      "commit": "5b5afa7b12e3f76f4e0c6afa12e960c0b378358c",
+      "repo": "mochajs/mocha"
+    },
+    {
+      "pfad": "repos/webpack__webpack-8466aab.tar.gz",
+      "url": "https://github.com/webpack/webpack/archive/8466aab382c2d38e7e3e6f91eb10f03647b64ba7.tar.gz",
+      "sha256": "160ea4b7d2a61f826cb714d5afecc7efb979d2a33007ac9057ba737c432ee7d6",
+      "bytes": 21843373,
+      "beschreibung": "webpack/webpack @ 8466aab (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "08c1002ee8739fbd22d2f0a93ae318a48080ece3339ac3a92615819f6156e3c7",
+      "lizenz": "MIT",
+      "commit": "8466aab382c2d38e7e3e6f91eb10f03647b64ba7",
+      "repo": "webpack/webpack"
+    },
+    {
+      "pfad": "repos/fastify__fastify-4679723.tar.gz",
+      "url": "https://github.com/fastify/fastify/archive/467972380963813755ac99f68fae228e30ac748f.tar.gz",
+      "sha256": "be896094b64aee248ace9b59ae2198acad5e12b42830f9f37727c4190fb204e2",
+      "bytes": 553225,
+      "beschreibung": "fastify/fastify @ 4679723 (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "51ef4c12fb0c8fc1bf9335904543c69706179d74e20b314202403996280b8fac",
+      "lizenz": "MIT",
+      "commit": "467972380963813755ac99f68fae228e30ac748f",
+      "repo": "fastify/fastify"
+    },
+    {
+      "pfad": "repos/socketio__socket.io-f8e8746.tar.gz",
+      "url": "https://github.com/socketio/socket.io/archive/f8e8746492f4118c7ef6a40e51f9c26fdc3ecc31.tar.gz",
+      "sha256": "e654f213b3c3efd53adb542a44ce7e8231e6119db5c6bf0785ae3448dc46be0f",
+      "bytes": 8404214,
+      "beschreibung": "socketio/socket.io @ f8e8746 (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "6ea64d756d5497f2bb3e9d1de8fef16350d5bd5dc0a404f3d4bde8ae818f160c",
+      "lizenz": "MIT",
+      "commit": "f8e8746492f4118c7ef6a40e51f9c26fdc3ecc31",
+      "repo": "socketio/socket.io"
+    },
+    {
+      "pfad": "repos/sahat__hackathon-starter-532a217.tar.gz",
+      "url": "https://github.com/sahat/hackathon-starter/archive/532a21727e6a3c363dd85fd9db5cafb26e633428.tar.gz",
+      "sha256": "a3b0bbeeb995bd19f8d28e8792899b13ce69400a0b0f8caad01e485c9faa98bb",
+      "bytes": 456869,
+      "beschreibung": "sahat/hackathon-starter @ 532a217 (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "5895e89ce35435c4826307b49a4659d992908013e277c63e0b83221dffe5b2eb",
+      "lizenz": "MIT",
+      "commit": "532a21727e6a3c363dd85fd9db5cafb26e633428",
+      "repo": "sahat/hackathon-starter"
+    },
+    {
+      "pfad": "repos/chartjs__Chart.js-71d4421.tar.gz",
+      "url": "https://github.com/chartjs/Chart.js/archive/71d44219e79e3ac41e6f9dc907022eebf574868d.tar.gz",
+      "sha256": "193fdad14d459e83238b2a6c4060c01178283eac8eae4a933829c8c9a19a9bb4",
+      "bytes": 12631485,
+      "beschreibung": "chartjs/Chart.js @ 71d4421 (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "455dd30d9325483f5bdb0c566bfc064773d87130a3807ce173b06eaf2417278d",
+      "lizenz": "MIT",
+      "commit": "71d44219e79e3ac41e6f9dc907022eebf574868d",
+      "repo": "chartjs/Chart.js"
+    },
+    {
+      "pfad": "repos/standard__standard-753309b.tar.gz",
+      "url": "https://github.com/standard/standard/archive/753309b21bfd7c98e208e3fb45910ffd1bb95409.tar.gz",
+      "sha256": "0ee2af43f933e99d8eb7e58f3c0275cfd07b52ba4c2602bc8328f1e5520afc15",
+      "bytes": 953847,
+      "beschreibung": "standard/standard @ 753309b (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "175c9c3842020b47c19b379346cb142b53825480aa757e9a7abc3ff076c6b315",
+      "lizenz": "MIT",
+      "commit": "753309b21bfd7c98e208e3fb45910ffd1bb95409",
+      "repo": "standard/standard"
+    },
+    {
+      "pfad": "repos/moment__moment-c2a703a.tar.gz",
+      "url": "https://github.com/moment/moment/archive/c2a703a4d84aa57ee2722ff8fb4a8016279fb3c4.tar.gz",
+      "sha256": "894abf992e3f50be103c6ed2aaf3445ef37ce2018edee7c5d76324fd020ae9aa",
+      "bytes": 1188766,
+      "beschreibung": "moment/moment @ c2a703a (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "52e2f810233d548a431397c06f2db10169aaaa68afcc370b2f4e4cad1974ad0a",
+      "lizenz": "MIT",
+      "commit": "c2a703a4d84aa57ee2722ff8fb4a8016279fb3c4",
+      "repo": "moment/moment"
+    },
+    {
+      "pfad": "repos/webtorrent__webtorrent-2ea1ded.tar.gz",
+      "url": "https://github.com/webtorrent/webtorrent/archive/2ea1dedaeef29a033209138ca0970e1e6c78f88f.tar.gz",
+      "sha256": "75ead86ddbce185687d949f5c090a4e38562abdc4de045a7de6074f6dd4f2a22",
+      "bytes": 1699369,
+      "beschreibung": "webtorrent/webtorrent @ 2ea1ded (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "8bdcf66f58a26c95ec9b81495307cd2c774cbc55a5a5b790c180c1aff37d2ec1",
+      "lizenz": "MIT",
+      "commit": "2ea1dedaeef29a033209138ca0970e1e6c78f88f",
+      "repo": "webtorrent/webtorrent"
+    },
+    {
+      "pfad": "repos/Automattic__mongoose-ab4e363.tar.gz",
+      "url": "https://github.com/Automattic/mongoose/archive/ab4e3637a5a65f875e385abd4f3b77f457e66d78.tar.gz",
+      "sha256": "b3b1334cdcc578a0c5b6b761c9f0f6d15e525f0834b6c6fd669feec0835a6a38",
+      "bytes": 1998782,
+      "beschreibung": "Automattic/mongoose @ ab4e363 (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "c9f4bf9a57474fbe0477c1eb1264f0b9ef69b8d19640a6b7232889f3f6fe4dd6",
+      "lizenz": "MIT",
+      "commit": "ab4e3637a5a65f875e385abd4f3b77f457e66d78",
+      "repo": "Automattic/mongoose"
+    },
+    {
+      "pfad": "repos/typicode__json-server-89a34a4.tar.gz",
+      "url": "https://github.com/typicode/json-server/archive/89a34a44b7a6a5311dc84f3b8a1b8b45c0905aea.tar.gz",
+      "sha256": "a318787b10ffda614c946f4d97d5f2a1c1c19e5da1b350ee4317f34d89b2ef52",
+      "bytes": 28476,
+      "beschreibung": "typicode/json-server @ 89a34a4 (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "f80179c7607e88698732f2b3957df1a43d3e1fbd5ee819cd10d973cdd3d0e2dd",
+      "lizenz": "MIT",
+      "commit": "89a34a44b7a6a5311dc84f3b8a1b8b45c0905aea",
+      "repo": "typicode/json-server"
+    },
+    {
+      "pfad": "repos/spring-projects__spring-boot-3d8ad8e.tar.gz",
+      "url": "https://github.com/spring-projects/spring-boot/archive/3d8ad8ecf3899381514e413877a90e16e6a52b00.tar.gz",
+      "sha256": "20b48f87f927b97029b1020e1639a3612f59a746e1ce08ec98c214d8bc8e102d",
+      "bytes": 6472551,
+      "beschreibung": "spring-projects/spring-boot @ 3d8ad8e (Apache-2.0)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "4ce67c457b5f2155c6223b2a7b17ac354afcb687cab6715b8ea1eeabce024800",
+      "lizenz": "Apache-2.0",
+      "commit": "3d8ad8ecf3899381514e413877a90e16e6a52b00",
+      "repo": "spring-projects/spring-boot"
+    },
+    {
+      "pfad": "repos/google__guava-fce80fd.tar.gz",
+      "url": "https://github.com/google/guava/archive/fce80fd984c8227262a63972ccc68ae6f2ad0519.tar.gz",
+      "sha256": "61c473b0baedd6b365928703371d8f177bc20fea0832657dd6f7903f31c4b1c7",
+      "bytes": 6040748,
+      "beschreibung": "google/guava @ fce80fd (Apache-2.0)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "1359bff87250f8cdf50c971f1d3e46562dea68abd4b40f840fe69fb71f1c9967",
+      "lizenz": "Apache-2.0",
+      "commit": "fce80fd984c8227262a63972ccc68ae6f2ad0519",
+      "repo": "google/guava"
+    },
+    {
+      "pfad": "repos/jestjs__jest-aa88f7c.tar.gz",
+      "url": "https://github.com/jestjs/jest/archive/aa88f7cf0bfc7a3a2efbfcab97914886b22d4454.tar.gz",
+      "sha256": "1e89fbcecf0e979de8472a01fe12b2ab4f90a5bb42fea199690cd613d99db51d",
+      "bytes": 24636725,
+      "beschreibung": "jestjs/jest @ aa88f7c (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "30177aef930ca8ba46d7356ac011f81b7b92f637e0b15dbac01c88ef48adae22",
+      "lizenz": "MIT",
+      "commit": "aa88f7cf0bfc7a3a2efbfcab97914886b22d4454",
+      "repo": "jestjs/jest"
+    },
+    {
+      "pfad": "repos/spring-projects__spring-framework-4cb62d8.tar.gz",
+      "url": "https://github.com/spring-projects/spring-framework/archive/4cb62d893e09e23791d661e8d9b35aedee7006d0.tar.gz",
+      "sha256": "ec3a49bf25c2019b7a218504ad5c3d6dff8c80cd61dfeb6b2cf95dee09adca1b",
+      "bytes": 11029150,
+      "beschreibung": "spring-projects/spring-framework @ 4cb62d8 (Apache-2.0)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "618274a5b9e693dc8cf00108f68dd6348a1d0e94a49e5d03c993aa467bf08b27",
+      "lizenz": "Apache-2.0",
+      "commit": "4cb62d893e09e23791d661e8d9b35aedee7006d0",
+      "repo": "spring-projects/spring-framework"
+    },
+    {
+      "pfad": "repos/mockito__mockito-10b31ba.tar.gz",
+      "url": "https://github.com/mockito/mockito/archive/10b31ba2a8252cf340bc154c9e05224802a84691.tar.gz",
+      "sha256": "542d8532297771633b61fe097822eb536b1dc1af39ced854f0b0dd04d20667e3",
+      "bytes": 933716,
+      "beschreibung": "mockito/mockito @ 10b31ba (MIT)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "aab9ff5e32d00e8e427191b7dce1b938d808708a391bb771b907a98526a29637",
+      "lizenz": "MIT",
+      "commit": "10b31ba2a8252cf340bc154c9e05224802a84691",
+      "repo": "mockito/mockito"
+    },
+    {
+      "pfad": "repos/apache__commons-lang-e2a0789.tar.gz",
+      "url": "https://github.com/apache/commons-lang/archive/e2a0789bc936783fa2a75263412e3359d4c0f97b.tar.gz",
+      "sha256": "e7dd80577bd266085ee3a5e996d095e8e69cb3d318689191ee83717304dfb2a1",
+      "bytes": 1577991,
+      "beschreibung": "apache/commons-lang @ e2a0789 (Apache-2.0)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "c96f5eaaca74c985cc2f3b338e40e2ccfc3cf3f54109534fb6de168dba388f7d",
+      "lizenz": "Apache-2.0",
+      "commit": "e2a0789bc936783fa2a75263412e3359d4c0f97b",
+      "repo": "apache/commons-lang"
+    },
+    {
+      "pfad": "repos/elunez__eladmin-646c58c.tar.gz",
+      "url": "https://github.com/elunez/eladmin/archive/646c58c30f2e9aecf998b054f05f4d9ba0008995.tar.gz",
+      "sha256": "a1f8882c4327757215463eaeb4b78705b1cdea459ad0abdf50f75bb485e8aa69",
+      "bytes": 163418,
+      "beschreibung": "elunez/eladmin @ 646c58c (Apache-2.0)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "8512f5d4739103244aafd27132dda108a34d8970177f9080a6a86af62e6b5a2e",
+      "lizenz": "Apache-2.0",
+      "commit": "646c58c30f2e9aecf998b054f05f4d9ba0008995",
+      "repo": "elunez/eladmin"
+    },
+    {
+      "pfad": "repos/apache__calcite-7d72586.tar.gz",
+      "url": "https://github.com/apache/calcite/archive/7d72586c79c2288ee6ddb09f94e11ca8124d6bac.tar.gz",
+      "sha256": "dfc878d3f86a67b5afbe3b0c0c2025ba1935e4a32f802fd0db7cdd6148f24351",
+      "bytes": 7170506,
+      "beschreibung": "apache/calcite @ 7d72586 (Apache-2.0)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "0d0042b3fdae6d649b1eb79558ad30a94baca5b800f61aa65fe2d1ce3eaa1e41",
+      "lizenz": "Apache-2.0",
+      "commit": "7d72586c79c2288ee6ddb09f94e11ca8124d6bac",
+      "repo": "apache/calcite"
+    },
+    {
+      "pfad": "repos/macrozheng__mall-dcaa93b.tar.gz",
+      "url": "https://github.com/macrozheng/mall/archive/dcaa93b3150352e5044708d7211b5bed0af4509f.tar.gz",
+      "sha256": "7d75244cc8a657f730f7fee7a28107fc7c5a08f85d25837d52bc83aad3ec68a7",
+      "bytes": 11101096,
+      "beschreibung": "macrozheng/mall @ dcaa93b (Apache-2.0)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "c28ebf2505621c128623fbd936e981133ac5dc6fb8b59d6f099dff083acc6934",
+      "lizenz": "Apache-2.0",
+      "commit": "dcaa93b3150352e5044708d7211b5bed0af4509f",
+      "repo": "macrozheng/mall"
+    },
+    {
+      "pfad": "repos/codecentric__spring-boot-admin-4501683.tar.gz",
+      "url": "https://github.com/codecentric/spring-boot-admin/archive/4501683b4093ff5d98442c4d2fb10062381a1b88.tar.gz",
+      "sha256": "0166bd63cbadbe056fce58e561e3b725189fc9504cb61b8162dde9eaf9a145b8",
+      "bytes": 14861578,
+      "beschreibung": "codecentric/spring-boot-admin @ 4501683 (Apache-2.0)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "62fc98709a11b0494bcc4450e68bc641e86fc9be999bab17ad0d585d3c1d3def",
+      "lizenz": "Apache-2.0",
+      "commit": "4501683b4093ff5d98442c4d2fb10062381a1b88",
+      "repo": "codecentric/spring-boot-admin"
+    },
+    {
+      "pfad": "repos/apolloconfig__apollo-504e5cd.tar.gz",
+      "url": "https://github.com/apolloconfig/apollo/archive/504e5cd7d49bde328e9bc558688828159ed55aeb.tar.gz",
+      "sha256": "46a89c0edae5db7d656fda6b54c209a9ac48f199ccc6beb2b2899863b86ee6cc",
+      "bytes": 15295534,
+      "beschreibung": "apolloconfig/apollo @ 504e5cd (Apache-2.0)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "20662ccf622aa66f1a6731836c30109ac20899a02e4cedc1337f586409be0eda",
+      "lizenz": "Apache-2.0",
+      "commit": "504e5cd7d49bde328e9bc558688828159ed55aeb",
+      "repo": "apolloconfig/apollo"
+    },
+    {
+      "pfad": "repos/hs-web__hsweb-framework-f2617a5.tar.gz",
+      "url": "https://github.com/hs-web/hsweb-framework/archive/f2617a56d8b1d5b11e2bb504b8d419406eba7116.tar.gz",
+      "sha256": "8c879f8f8f7a8cfe62e7fb0670f1d5939d8b3200320e7db6f78b7c64f8e1fa53",
+      "bytes": 845071,
+      "beschreibung": "hs-web/hsweb-framework @ f2617a5 (Apache-2.0)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "3bbae1e77df9a672950284301600ae5aca738028e0fac7133b5d84e31437c211",
+      "lizenz": "Apache-2.0",
+      "commit": "f2617a56d8b1d5b11e2bb504b8d419406eba7116",
+      "repo": "hs-web/hsweb-framework"
+    },
+    {
+      "pfad": "repos/conductor-oss__conductor-1d268e4.tar.gz",
+      "url": "https://github.com/conductor-oss/conductor/archive/1d268e4c9b0fe77c7122200dad5c60c61e94aa89.tar.gz",
+      "sha256": "25ba8bc90a81716836b292370d3a0ee633ad850d03719e475965b505e58421f1",
+      "bytes": 16012300,
+      "beschreibung": "conductor-oss/conductor @ 1d268e4 (Apache-2.0)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "88fb3b8283549424a11bf1ec3c77d84f18cf88f746361a6ed66aa88b493947f2",
+      "lizenz": "Apache-2.0",
+      "commit": "1d268e4c9b0fe77c7122200dad5c60c61e94aa89",
+      "repo": "conductor-oss/conductor"
+    },
+    {
+      "pfad": "repos/pig-mesh__pig-1939970.tar.gz",
+      "url": "https://github.com/pig-mesh/pig/archive/193997016e39c2158a11c6da3ec1fc9fa3162a9d.tar.gz",
+      "sha256": "909d2aa8160cb80d872d2567bd15a062b08d57c01ff47f21ec0756cf9b7dd50f",
+      "bytes": 591045,
+      "beschreibung": "pig-mesh/pig @ 1939970 (Apache-2.0)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "163cf2f93f0a9e6d4ababbb59a33f11002d1858bb6d63d2938c4fe306db8ea63",
+      "lizenz": "Apache-2.0",
+      "commit": "193997016e39c2158a11c6da3ec1fc9fa3162a9d",
+      "repo": "pig-mesh/pig"
+    },
+    {
+      "pfad": "repos/apereo__cas-45d89dd.tar.gz",
+      "url": "https://github.com/apereo/cas/archive/45d89dd1db14795198f0a690ea50842a3bd896c3.tar.gz",
+      "sha256": "25c368beb852e6c62c0a4f2db0492e961f4b18020a7a12d5ecb9a39b6ac12ff2",
+      "bytes": 22846469,
+      "beschreibung": "apereo/cas @ 45d89dd (Apache-2.0)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "634d0dc8606f7318f7b44703d144897c1507c1a5f2e645be4275e97049007fca",
+      "lizenz": "Apache-2.0",
+      "commit": "45d89dd1db14795198f0a690ea50842a3bd896c3",
+      "repo": "apereo/cas"
+    },
+    {
+      "pfad": "repos/square__okhttp-1bd972a.tar.gz",
+      "url": "https://github.com/square/okhttp/archive/1bd972a016c1a9c0c9921185412963ce4248a123.tar.gz",
+      "sha256": "94a5c35511f074e33d1a866da8b2468564057f30a2c278926d5911fe003aa9e5",
+      "bytes": 2201153,
+      "beschreibung": "square/okhttp @ 1bd972a (Apache-2.0)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "0a17cb69fd9283137c5034ec2984d4538d52e28207d5871ef6e72085a96aee68",
+      "lizenz": "Apache-2.0",
+      "commit": "1bd972a016c1a9c0c9921185412963ce4248a123",
+      "repo": "square/okhttp"
+    },
+    {
+      "pfad": "repos/sqlfluff__sqlfluff-5f5205f.tar.gz",
+      "url": "https://github.com/sqlfluff/sqlfluff/archive/5f5205fc61cbda1d929169f99b896b9a95fae727.tar.gz",
+      "sha256": "c7e25fcddc9387175d30f1506466c5fbfefd8217e3413e3b47099e93161467ca",
+      "bytes": 4426482,
+      "beschreibung": "sqlfluff/sqlfluff @ 5f5205f (MIT)",
+      "genutzt_von": [
+        "code-sql"
+      ],
+      "sha256_inhalt": "5b07b1d257df04377de7f8d6b0129fa0f69177e5f10e7403a01f05d62ead9b8f",
+      "lizenz": "MIT",
+      "commit": "5f5205fc61cbda1d929169f99b896b9a95fae727",
+      "repo": "sqlfluff/sqlfluff"
+    },
+    {
+      "pfad": "repos/ben-nour__SQL-tips-and-tricks-c5f547f.tar.gz",
+      "url": "https://github.com/ben-nour/SQL-tips-and-tricks/archive/c5f547f7bd644f694814fc52dc6af6e680611182.tar.gz",
+      "sha256": "fe50d7dc0cc4f58e946a0a6d0aa9c357dde05d464a9557591fee5626c2aed1fa",
+      "bytes": 8031,
+      "beschreibung": "ben-nour/SQL-tips-and-tricks @ c5f547f (MIT)",
+      "genutzt_von": [
+        "code-sql"
+      ],
+      "sha256_inhalt": "ecbb7de863850736562b4d2db7bdd5ccec204d0df521a4a290024e38cf6ca78b",
+      "lizenz": "MIT",
+      "commit": "c5f547f7bd644f694814fc52dc6af6e680611182",
+      "repo": "ben-nour/SQL-tips-and-tricks"
+    },
+    {
+      "pfad": "repos/iluwatar__java-design-patterns-4cabb20.tar.gz",
+      "url": "https://github.com/iluwatar/java-design-patterns/archive/4cabb204f240240bea319605a5ffa46ded728001.tar.gz",
+      "sha256": "83df712274e122ec9688ce6940fce18d32dd6087698607e5343dd9f9c5196f91",
+      "bytes": 37104272,
+      "beschreibung": "iluwatar/java-design-patterns @ 4cabb20 (MIT)",
+      "genutzt_von": [
+        "code-java"
+      ],
+      "sha256_inhalt": "ba0a6c73e3accff32cb65c31a737c2af77275552bbd6f7ab51d67bbdea2274d0",
+      "lizenz": "MIT",
+      "commit": "4cabb204f240240bea319605a5ffa46ded728001",
+      "repo": "iluwatar/java-design-patterns"
+    },
+    {
+      "pfad": "repos/Thomas-George-T__HackerRank-SQL-Challenges-Solutions-41e1fa6.tar.gz",
+      "url": "https://github.com/Thomas-George-T/HackerRank-SQL-Challenges-Solutions/archive/41e1fa6081f8578d81a4c3a7e125c5f5a9e77889.tar.gz",
+      "sha256": "c2286a0fbe49872cffadab032e41dc05c4c65973be1558ecbc9c1116697b9991",
+      "bytes": 7446,
+      "beschreibung": "Thomas-George-T/HackerRank-SQL-Challenges-Solutions @ 41e1fa6 (MIT)",
+      "genutzt_von": [
+        "code-sql"
+      ],
+      "sha256_inhalt": "b3290aae8419b5fa9a73818953dc1e5fca1165dfa63d5d3ddbb123942f21a3eb",
+      "lizenz": "MIT",
+      "commit": "41e1fa6081f8578d81a4c3a7e125c5f5a9e77889",
+      "repo": "Thomas-George-T/HackerRank-SQL-Challenges-Solutions"
+    },
+    {
+      "pfad": "sql/sql_create_context_v4.json",
+      "url": "https://huggingface.co/datasets/b-mc2/sql-create-context/resolve/9d80a6a118b838d9defc3798d659a54a2ac2ff37/sql_create_context_v4.json",
+      "sha256": "280961458ccb74731104ae9af715797a0332327a33a210120a6884085a5c03f0",
+      "bytes": 21752418,
+      "beschreibung": "b-mc2/sql-create-context, Revision 9d80a6a (CC BY 4.0); genutzt werden nur die SQL-Felder context und answer",
+      "genutzt_von": [
+        "code-sql"
+      ],
+      "lizenz": "CC BY 4.0"
+    },
+    {
+      "pfad": "repos/postgres__postgres-7fc2f04.tar.gz",
+      "url": "https://github.com/postgres/postgres/archive/7fc2f0423320e02beb8c44b863f1827604c47c75.tar.gz",
+      "sha256": "07d4c7b67c00277ba7a1d54ee95c0b3a012739f922795b3d356fdf368a263f02",
+      "bytes": 31335718,
+      "beschreibung": "postgres/postgres @ 7fc2f04 (PostgreSQL)",
+      "genutzt_von": [
+        "code-sql"
+      ],
+      "sha256_inhalt": "cfde213c439c1e5d6f99058c489b9bcad93d77b77ff5ee10fa2026a6aa03ff9b",
+      "lizenz": "PostgreSQL",
+      "commit": "7fc2f0423320e02beb8c44b863f1827604c47c75",
+      "repo": "postgres/postgres"
+    },
+    {
+      "pfad": "repos/apache__spark-63c95a0.tar.gz",
+      "url": "https://github.com/apache/spark/archive/63c95a05ab75080d720cf5d229f261c0b863fc5c.tar.gz",
+      "sha256": "4df41595aac3c26d016fa0390f27abf1fd9550896539ec8921ddd89f32ac16bd",
+      "bytes": 55943762,
+      "beschreibung": "apache/spark @ 63c95a0 (Apache-2.0)",
+      "genutzt_von": [
+        "code-sql"
+      ],
+      "sha256_inhalt": "f85bb7d155c8aca7c3473acac27dc2f23bd7cd57a55320d1d8e5ada23fc012bd",
+      "lizenz": "Apache-2.0",
+      "commit": "63c95a05ab75080d720cf5d229f261c0b863fc5c",
+      "repo": "apache/spark"
+    },
+    {
+      "pfad": "repos/mrdoob__three.js-f9bb9a4.tar.gz",
+      "url": "https://github.com/mrdoob/three.js/archive/f9bb9a426b906dac0d96221faa1d64dd4bbd8090.tar.gz",
+      "sha256": "12ae3327838b492d6aa2f2bd49162cdda5bfa6c6e0fbdc9c74a9b6c69f02817f",
+      "bytes": 374971450,
+      "beschreibung": "mrdoob/three.js @ f9bb9a4 (MIT)",
+      "genutzt_von": [
+        "code-javascript"
+      ],
+      "sha256_inhalt": "032f1c6eb5890da9003e6c707d07c2981c0ee796175dec51da9f2c4d26bb4e82",
+      "lizenz": "MIT",
+      "commit": "f9bb9a426b906dac0d96221faa1d64dd4bbd8090",
+      "repo": "mrdoob/three.js"
+    }
+  ]
+}

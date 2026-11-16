@@ -1,0 +1,621 @@
+{
+  "quelle": "code-php",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "normalisierung_code_version": "1",
+    "skripte_sha256": {
+      "beispieldaten.py": "9039abfddf55f77eef747b94d63b3d144770663ce2459905c0e506fc74f08c99",
+      "herunterladen.py": "347e1c121d93c1ee580cacb5ec6ec4ee2bbb7b96f56cba2b293508bde50cb6d6",
+      "manifest_eintragen.py": "34a465e7d13bf88688f3b1064652ff972c2eb81acfc6ab0ac70c35cdfe7c75dd",
+      "mischen.py": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "normalisierung_code.py": "80a37bcb9687c38cb63f7911dd1ed15541c60eee7f25fe94077ee86cc00f0014",
+      "quellen.py": "3c9b4131699e84ff7943ba119ccb503e4c63a1c11f2dbe4814a407b2bcd6b831",
+      "quellen_code.py": "349b03059e162fb623009b6194ddb393b3e927f94b5e4b601a717028a183d240",
+      "quellen_en.py": "8826da9bc68eddc8ce48949659f227f01fc64fcbf1d21d58c8cd426cf47bb232",
+      "schreibweise.py": "bdf824bc5ca7361893f8abfade397d302a8e9db3e07c532a18bfe98e3039a206",
+      "zaehlen.py": "04f0bf937eace26788f24b94f9279fa1ff09edf4c82f2a75d499c9d3aeec3ef4"
+    }
+  },
+  "datum": "2026-11-16",
+  "dauer_sekunden": 9,
+  "eingaben": {
+    "repos/laravel__framework-06d1eab.tar.gz": {
+      "sha256": "be3c3ecdd821d3d33bfd24ff5ab34d334bbf4f7aebad8fb98d619eef190b6c6d",
+      "bytes": 1539342,
+      "url": "https://github.com/laravel/framework/archive/06d1eabb93edf34f5b0702cd4f7e332ac3520e18.tar.gz"
+    },
+    "repos/BookStackApp__BookStack-0b6b667.tar.gz": {
+      "sha256": "2fdaa8bad235e2fa2e25625cad7b9dc0fc441a317766b45b400044693dd24c3f",
+      "bytes": 4136068,
+      "url": "https://github.com/BookStackApp/BookStack/archive/0b6b667e0d84ebb3406de6de9fadbf4230c29c0b.tar.gz"
+    },
+    "repos/fruitcake__laravel-debugbar-033b34a.tar.gz": {
+      "sha256": "f00dbe8ab56521c9ef887708cabb197200b48096539b8b34fc67b37013e19e86",
+      "bytes": 68942,
+      "url": "https://github.com/fruitcake/laravel-debugbar/archive/033b34a6448990decb74c8689f4c9be750ea0957.tar.gz"
+    },
+    "repos/koel__koel-9ec40db.tar.gz": {
+      "sha256": "b026a511582db9112eb3b4e08a64562f0d9d4a139e3a175edc84027d525af682",
+      "bytes": 11693675,
+      "url": "https://github.com/koel/koel/archive/9ec40db3ca9b01a0822d11ad24591b70cc6aca63.tar.gz"
+    },
+    "repos/barryvdh__laravel-ide-helper-66f7ec1.tar.gz": {
+      "sha256": "abbcdf38be0fc4f0e3ef036136bd0ba0eea4666f80485b13c3cbfc0b0a02f814",
+      "bytes": 54684,
+      "url": "https://github.com/barryvdh/laravel-ide-helper/archive/66f7ec11122bcb009aba7c2fea31faf5cee46634.tar.gz"
+    },
+    "repos/krayin__laravel-crm-ed6deeb.tar.gz": {
+      "sha256": "8fc5cdc0ee63941f030599689b03b20e201385148963efe898c05633c6f3d6a6",
+      "bytes": 23146522,
+      "url": "https://github.com/krayin/laravel-crm/archive/ed6deebfcb8c616eaf352c893a10a6d8e666fc6e.tar.gz"
+    },
+    "repos/SpartnerNL__Laravel-Excel-49d7521.tar.gz": {
+      "sha256": "3a6bba312bed4190eca257d54ce8c8bdf77691d95dcb48d85f37456b9456cbf7",
+      "bytes": 77483,
+      "url": "https://github.com/SpartnerNL/Laravel-Excel/archive/49d752119a1dd2a0266909fca7bd6aa24e024b70.tar.gz"
+    },
+    "repos/spatie__laravel-permission-799e1ae.tar.gz": {
+      "sha256": "088c7d9971786f6b4209dc50654321f613c83d367ec3dd2a5247142321b9f068",
+      "bytes": 31826,
+      "url": "https://github.com/spatie/laravel-permission/archive/799e1aec09997b006fbd5087d61c7b4bfeb8ab30.tar.gz"
+    },
+    "repos/stefanzweifel__screeenly-0c04289.tar.gz": {
+      "sha256": "387233dcfcfe7a2b1298b1ba50f5c5c350f8ae802939289682203fd98bf54e43",
+      "bytes": 443387,
+      "url": "https://github.com/stefanzweifel/screeenly/archive/0c042898d3d724c8e61b93457010fc4b08728af5.tar.gz"
+    },
+    "repos/livewire__livewire-e03c29c.tar.gz": {
+      "sha256": "0f70fa606c42b70a1ed196a8341b24422fd833f476acb86be0fba6e05d707a95",
+      "bytes": 1234609,
+      "url": "https://github.com/livewire/livewire/archive/e03c29c8181804cdafe9d5819b7ab5cc93adbf12.tar.gz"
+    },
+    "repos/webreinvent__vaahcms-8d7898f.tar.gz": {
+      "sha256": "d71b0e17ae708ce09eb627fc5356fb661415512323d60edb15b55874f1059402",
+      "bytes": 8932990,
+      "url": "https://github.com/webreinvent/vaahcms/archive/8d7898f7a385a5fade1180a9b664ff158d873129.tar.gz"
+    },
+    "repos/filamentphp__filament-531b069.tar.gz": {
+      "sha256": "5a1b0cea5373d41d95f53fa66c73aa20f74a0fa844b191b88b27c7aa705f1281",
+      "bytes": 77673389,
+      "url": "https://github.com/filamentphp/filament/archive/531b0690c1c11009a24a59a916327c6207434474.tar.gz"
+    },
+    "repos/pterodactyl__panel-90b2aa8.tar.gz": {
+      "sha256": "3c0c880dd523433a1d0d6cb6b0d348e297b6cd5155d6d4c4fa456a532df442b3",
+      "bytes": 2624467,
+      "url": "https://github.com/pterodactyl/panel/archive/90b2aa87469da4fffd941b3c99f3c1ca48a01b78.tar.gz"
+    },
+    "repos/bagisto__bagisto-ed8dcf2.tar.gz": {
+      "sha256": "deec29faec04aaaf60c50bb3964fc2c65f3b4637b0372dc959d2aa72ea9f6283",
+      "bytes": 59981254,
+      "url": "https://github.com/bagisto/bagisto/archive/ed8dcf2aebae70e13e5fa68a66490f3bf8332bf2.tar.gz"
+    },
+    "repos/composer__composer-5147ea1.tar.gz": {
+      "sha256": "ea02d92c7c173809bfd3ccaa4778ee05dc4042f93eab8de2cdcf086e2371f529",
+      "bytes": 615873,
+      "url": "https://github.com/composer/composer/archive/5147ea1a01c124f461090a72bee6ea6de02a67a6.tar.gz"
+    },
+    "repos/laravel__sanctum-a8f7ef1.tar.gz": {
+      "sha256": "7e4f9c84cd5666ec8faaff332f317a334e15960d405ee227f31a571a6d8cb5ce",
+      "bytes": 11497,
+      "url": "https://github.com/laravel/sanctum/archive/a8f7ef1bd5f8b78159effa1ffae851b0dc72cd8b.tar.gz"
+    },
+    "repos/laravel__horizon-0aaa5ec.tar.gz": {
+      "sha256": "62069b183e9c9f8d3328223c8838ab33bfed90f34a46f573d131cfe2c952d166",
+      "bytes": 397103,
+      "url": "https://github.com/laravel/horizon/archive/0aaa5ec90d5712381a9da48661a935f81fa9327a.tar.gz"
+    },
+    "repos/laravel__cashier-stripe-7064e18.tar.gz": {
+      "sha256": "1082c2c1f0332b65aaa5ea49b53d511380124f28968acb24092c0ef9f956fd4a",
+      "bytes": 61779,
+      "url": "https://github.com/laravel/cashier-stripe/archive/7064e18d443fdea5abc2bcf42aa21ecdc79c094d.tar.gz"
+    },
+    "repos/laravel__socialite-8032bb1.tar.gz": {
+      "sha256": "fa408d28086f06a8fb5a38b49ae951ea2cebf7aac51e0f61d1353e0e9e5d5630",
+      "bytes": 17776,
+      "url": "https://github.com/laravel/socialite/archive/8032bb1fa9d74aae54438f216e4d45db90d27ea9.tar.gz"
+    },
+    "repos/laravel__jetstream-10046c0.tar.gz": {
+      "sha256": "1fbef2babf664a39ec40da423821c0bc058492da7c06a59f584ae85c36291ef0",
+      "bytes": 99413,
+      "url": "https://github.com/laravel/jetstream/archive/10046c0d253b8350e335f29a980e91b7d1719c4d.tar.gz"
+    },
+    "repos/laravel__telescope-ccd60c1.tar.gz": {
+      "sha256": "a051824ba8f2f8cbf7306b2743abf5e27b9f1d45f854900dc6c5ab6843ad8aec",
+      "bytes": 487161,
+      "url": "https://github.com/laravel/telescope/archive/ccd60c1bca4fd7d125234f2bf8d572229ff3c44a.tar.gz"
+    },
+    "repos/laravel__fortify-3db382a.tar.gz": {
+      "sha256": "c62a546327f73cc3f0e69d72fff9571d49b28de063d4633f62f0ef937ecc982b",
+      "bytes": 29103,
+      "url": "https://github.com/laravel/fortify/archive/3db382a3d5d6a0d537de32a190ce3b945e621713.tar.gz"
+    },
+    "repos/laravel__breeze-a282521.tar.gz": {
+      "sha256": "782a48ddd7c3e946ae7300c26e71d538f177cd885f2501131d64de245a2ef1dd",
+      "bytes": 130109,
+      "url": "https://github.com/laravel/breeze/archive/a2825219f294ffaa57506dd8b30483bfcb1ad642.tar.gz"
+    },
+    "repos/laravel__passport-aa6d837.tar.gz": {
+      "sha256": "6388eef5ab82d6095435c62a6e8ed8d6fc21ea0a5ef804d3b5f5e7b481332c6a",
+      "bytes": 43719,
+      "url": "https://github.com/laravel/passport/archive/aa6d8376c1565e38bfeee0bdba671f5363b5eae6.tar.gz"
+    },
+    "repos/laravel__scout-bb583fe.tar.gz": {
+      "sha256": "93156f7dfb484ca9bd80e6490af46f18a4ad8fc05bc09ddee6c3a4ca5de2d72a",
+      "bytes": 48804,
+      "url": "https://github.com/laravel/scout/archive/bb583fec9c17f142b192c4a96f574989c771d641.tar.gz"
+    },
+    "repos/symfony__symfony-a9bd44f.tar.gz": {
+      "sha256": "68d496ceaf7900f1c8c0aa30174cac606ab2dd850bc9aa86f9fd168bbcc3bced",
+      "bytes": 11954043,
+      "url": "https://github.com/symfony/symfony/archive/a9bd44fa9c1aec723ae497a41ead077c1986b4f4.tar.gz"
+    },
+    "repos/laravelio__laravel.io-b9d33e2.tar.gz": {
+      "sha256": "f08551fe9c72ab3fec671470a81782f29423eee7e18a71a83f1da6b2253231ef",
+      "bytes": 2001022,
+      "url": "https://github.com/laravelio/laravel.io/archive/b9d33e281c25c8f764ae144d95eb736e01c8fa0e.tar.gz"
+    },
+    "repos/spatie__laravel-medialibrary-7d8c78f.tar.gz": {
+      "sha256": "70e69333d32aaca9d104ec7e81202791db5b176f6daf07ed7104eec0b71c0518",
+      "bytes": 54020,
+      "url": "https://github.com/spatie/laravel-medialibrary/archive/7d8c78fcc148c7f8cdc181ffc646bf01f77d4281.tar.gz"
+    },
+    "repos/spatie__laravel-activitylog-fdcc5ee.tar.gz": {
+      "sha256": "6c52b302745d707711342db7ba95a251c126ecbb09aa7ee01b4d499df83e7e13",
+      "bytes": 490316,
+      "url": "https://github.com/spatie/laravel-activitylog/archive/fdcc5ee063cbf91114679336c4fbf92837196419.tar.gz"
+    },
+    "repos/spatie__freek.dev-f786cbb.tar.gz": {
+      "sha256": "afb2d829726e043a012d3c475e936da587ecc66a19bcd497d60166387c27acc1",
+      "bytes": 14434726,
+      "url": "https://github.com/spatie/freek.dev/archive/f786cbbec3f28a052c712d30ea2dcf7314ab0038.tar.gz"
+    },
+    "repos/spatie__laravel-backup-9a5597f.tar.gz": {
+      "sha256": "63e731d843e5587c9223386493f6cf734d4565b13a8ae9e6e21253eb255d188e",
+      "bytes": 57607,
+      "url": "https://github.com/spatie/laravel-backup/archive/9a5597f73120d614e8cac11a4e70b199d79f2f0c.tar.gz"
+    },
+    "repos/spatie__laravel-query-builder-3070dfc.tar.gz": {
+      "sha256": "da337e988add7563fa2ac8aaa47831d27cab1217176acae1bfff66c46fab4690",
+      "bytes": 45847,
+      "url": "https://github.com/spatie/laravel-query-builder/archive/3070dfc320803281131fc2b0684c195f3ac4dd02.tar.gz"
+    },
+    "repos/spatie__laravel-data-7bda01d.tar.gz": {
+      "sha256": "2159f07bdba98fc5f4a1ad9fd16ed5df3d3f3d4cd56449fa3ca86e1d9908ac80",
+      "bytes": 171618,
+      "url": "https://github.com/spatie/laravel-data/archive/7bda01d61486cf438d6745ec8a1acc4af71ac1a6.tar.gz"
+    },
+    "repos/flarum__framework-b77f310.tar.gz": {
+      "sha256": "68c889adba44b39e45b6c10aef8e99bce702c44b6b617e58abbeae4ef1fa1af2",
+      "bytes": 5967100,
+      "url": "https://github.com/flarum/framework/archive/b77f310e8460d85a3c0d06782a008bb179fa9c36.tar.gz"
+    }
+  },
+  "parameter": {
+    "quelle": "code-php",
+    "cap_je_repo": 10000000
+  },
+  "summen": {
+    "zeichen": 42339711,
+    "bigramme": 42322072,
+    "trigramme": 42304438,
+    "verschiedene_unigramme": 106,
+    "verschiedene_bigramme": 8206,
+    "verschiedene_trigramme": 104350
+  },
+  "pruefbericht": {
+    "summen": {
+      "datei_verworfen:datentabelle_mit_sonderzeichen": 27,
+      "datei_verworfen:generiert": 27,
+      "datei_verworfen:minifiziert": 96,
+      "datei_verworfen:ohne_verwertbare_zeile": 1,
+      "dateien_verwendet": 17097,
+      "einheiten_gelesen": 17125,
+      "entfernt_kombinierend": 198,
+      "ersetzt": 8267,
+      "grenze": 27724,
+      "grenzen_gesetzt": 573,
+      "leerzeile_gekuerzt": 2696,
+      "lizenzkopf_entfernt": 2525,
+      "transliteriert": 2326,
+      "zeile_verworfen:fremde_schrift": 12135,
+      "zeile_verworfen:zu_lang": 194,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 114
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "‍",
+          6713
+        ],
+        [
+          "—",
+          1187
+        ],
+        [
+          "’",
+          146
+        ],
+        [
+          "–",
+          63
+        ],
+        [
+          "…",
+          48
+        ],
+        [
+          "“",
+          33
+        ],
+        [
+          "”",
+          31
+        ],
+        [
+          " ",
+          17
+        ],
+        [
+          "«",
+          9
+        ],
+        [
+          "›",
+          7
+        ],
+        [
+          "»",
+          4
+        ],
+        [
+          "‘",
+          3
+        ],
+        [
+          "‑",
+          3
+        ],
+        [
+          " ",
+          1
+        ],
+        [
+          "​",
+          1
+        ]
+      ],
+      "grenze": [
+        [
+          "🏻",
+          1470
+        ],
+        [
+          "🏼",
+          1470
+        ],
+        [
+          "🏽",
+          1470
+        ],
+        [
+          "🏾",
+          1470
+        ],
+        [
+          "🏿",
+          1470
+        ],
+        [
+          "👨",
+          1452
+        ],
+        [
+          "👩",
+          1452
+        ],
+        [
+          "🧑",
+          1195
+        ],
+        [
+          "♀",
+          945
+        ],
+        [
+          "♂",
+          945
+        ],
+        [
+          "❤",
+          597
+        ],
+        [
+          "➡",
+          328
+        ],
+        [
+          "💋",
+          297
+        ],
+        [
+          "🤝",
+          276
+        ],
+        [
+          "🫯",
+          183
+        ]
+      ],
+      "transliteriert": [
+        [
+          "á",
+          390
+        ],
+        [
+          "í",
+          372
+        ],
+        [
+          "é",
+          264
+        ],
+        [
+          "ŋ",
+          118
+        ],
+        [
+          "ă",
+          105
+        ],
+        [
+          "ó",
+          102
+        ],
+        [
+          "ú",
+          97
+        ],
+        [
+          "ā",
+          74
+        ],
+        [
+          "ẹ",
+          73
+        ],
+        [
+          "ų",
+          67
+        ],
+        [
+          "ọ",
+          63
+        ],
+        [
+          "š",
+          56
+        ],
+        [
+          "č",
+          45
+        ],
+        [
+          "ç",
+          39
+        ],
+        [
+          "ı",
+          39
+        ]
+      ]
+    }
+  },
+  "repos": {
+    "BookStackApp/BookStack": {
+      "geeignet_bytes": 3550401,
+      "anteil_promille": 1000,
+      "dateien": 1151,
+      "zeichen_roh": 3488078
+    },
+    "SpartnerNL/Laravel-Excel": {
+      "geeignet_bytes": 323456,
+      "anteil_promille": 1000,
+      "dateien": 215,
+      "zeichen_roh": 323444
+    },
+    "bagisto/bagisto": {
+      "geeignet_bytes": 11660804,
+      "anteil_promille": 858,
+      "dateien": 2321,
+      "zeichen_roh": 9662322
+    },
+    "barryvdh/laravel-ide-helper": {
+      "geeignet_bytes": 190010,
+      "anteil_promille": 1000,
+      "dateien": 22,
+      "zeichen_roh": 190006
+    },
+    "composer/composer": {
+      "geeignet_bytes": 2931010,
+      "anteil_promille": 1000,
+      "dateien": 321,
+      "zeichen_roh": 2930871
+    },
+    "filamentphp/filament": {
+      "geeignet_bytes": 6173291,
+      "anteil_promille": 1000,
+      "dateien": 1608,
+      "zeichen_roh": 6102822
+    },
+    "flarum/framework": {
+      "geeignet_bytes": 4158548,
+      "anteil_promille": 1000,
+      "dateien": 1669,
+      "zeichen_roh": 4157099
+    },
+    "fruitcake/laravel-debugbar": {
+      "geeignet_bytes": 247126,
+      "anteil_promille": 1000,
+      "dateien": 77,
+      "zeichen_roh": 247122
+    },
+    "koel/koel": {
+      "geeignet_bytes": 3204039,
+      "anteil_promille": 1000,
+      "dateien": 1759,
+      "zeichen_roh": 3202743
+    },
+    "krayin/laravel-crm": {
+      "geeignet_bytes": 4326078,
+      "anteil_promille": 1000,
+      "dateien": 971,
+      "zeichen_roh": 4325678
+    },
+    "laravel/breeze": {
+      "geeignet_bytes": 292455,
+      "anteil_promille": 1000,
+      "dateien": 159,
+      "zeichen_roh": 289410
+    },
+    "laravel/cashier-stripe": {
+      "geeignet_bytes": 321498,
+      "anteil_promille": 1000,
+      "dateien": 64,
+      "zeichen_roh": 321497
+    },
+    "laravel/fortify": {
+      "geeignet_bytes": 148975,
+      "anteil_promille": 1000,
+      "dateien": 120,
+      "zeichen_roh": 148975
+    },
+    "laravel/framework": {
+      "geeignet_bytes": 7722471,
+      "anteil_promille": 1000,
+      "dateien": 1765,
+      "zeichen_roh": 7704066
+    },
+    "laravel/horizon": {
+      "geeignet_bytes": 321979,
+      "anteil_promille": 1000,
+      "dateien": 145,
+      "zeichen_roh": 321979
+    },
+    "laravel/jetstream": {
+      "geeignet_bytes": 382500,
+      "anteil_promille": 1000,
+      "dateien": 231,
+      "zeichen_roh": 379102
+    },
+    "laravel/passport": {
+      "geeignet_bytes": 187669,
+      "anteil_promille": 1000,
+      "dateien": 93,
+      "zeichen_roh": 185150
+    },
+    "laravel/sanctum": {
+      "geeignet_bytes": 38826,
+      "anteil_promille": 1000,
+      "dateien": 22,
+      "zeichen_roh": 38826
+    },
+    "laravel/scout": {
+      "geeignet_bytes": 261573,
+      "anteil_promille": 1000,
+      "dateien": 50,
+      "zeichen_roh": 261525
+    },
+    "laravel/socialite": {
+      "geeignet_bytes": 83296,
+      "anteil_promille": 1000,
+      "dateien": 33,
+      "zeichen_roh": 83296
+    },
+    "laravel/telescope": {
+      "geeignet_bytes": 262640,
+      "anteil_promille": 1000,
+      "dateien": 89,
+      "zeichen_roh": 261469
+    },
+    "laravelio/laravel.io": {
+      "geeignet_bytes": 790668,
+      "anteil_promille": 1000,
+      "dateien": 463,
+      "zeichen_roh": 790526
+    },
+    "livewire/livewire": {
+      "geeignet_bytes": 754726,
+      "anteil_promille": 1000,
+      "dateien": 306,
+      "zeichen_roh": 754613
+    },
+    "pterodactyl/panel": {
+      "geeignet_bytes": 2080616,
+      "anteil_promille": 1000,
+      "dateien": 973,
+      "zeichen_roh": 2074663
+    },
+    "spatie/freek.dev": {
+      "geeignet_bytes": 675879,
+      "anteil_promille": 1000,
+      "dateien": 406,
+      "zeichen_roh": 675786
+    },
+    "spatie/laravel-activitylog": {
+      "geeignet_bytes": 52770,
+      "anteil_promille": 1000,
+      "dateien": 24,
+      "zeichen_roh": 52770
+    },
+    "spatie/laravel-backup": {
+      "geeignet_bytes": 153791,
+      "anteil_promille": 1000,
+      "dateien": 86,
+      "zeichen_roh": 153785
+    },
+    "spatie/laravel-data": {
+      "geeignet_bytes": 509812,
+      "anteil_promille": 1000,
+      "dateien": 353,
+      "zeichen_roh": 509812
+    },
+    "spatie/laravel-medialibrary": {
+      "geeignet_bytes": 231190,
+      "anteil_promille": 1000,
+      "dateien": 99,
+      "zeichen_roh": 231188
+    },
+    "spatie/laravel-permission": {
+      "geeignet_bytes": 130703,
+      "anteil_promille": 1000,
+      "dateien": 42,
+      "zeichen_roh": 130700
+    },
+    "spatie/laravel-query-builder": {
+      "geeignet_bytes": 76184,
+      "anteil_promille": 1000,
+      "dateien": 49,
+      "zeichen_roh": 76184
+    },
+    "stefanzweifel/screeenly": {
+      "geeignet_bytes": 179798,
+      "anteil_promille": 1000,
+      "dateien": 112,
+      "zeichen_roh": 179761
+    },
+    "symfony/symfony": {
+      "geeignet_bytes": 51403758,
+      "anteil_promille": 195,
+      "dateien": 1088,
+      "zeichen_roh": 8077188
+    },
+    "webreinvent/vaahcms": {
+      "geeignet_bytes": 1278234,
+      "anteil_promille": 1000,
+      "dateien": 239,
+      "zeichen_roh": 1278221
+    }
+  }
+}

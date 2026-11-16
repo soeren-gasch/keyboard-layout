@@ -8,6 +8,8 @@ Aufruf (aus dem Repo-Wurzelverzeichnis):
 
 antrag.json ist eine Liste von Einträgen:
     {"pfad": "leipzig/x.tar.gz", "url": "https://...", "beschreibung": "...", "genutzt_von": ["en-quelle"]}
+Optional: "lizenz", "commit", "repo" (werden ins Manifest übernommen). Bei .tar.gz wird zusätzlich die Prüfsumme
+des entpackten Inhalts als "sha256_inhalt" gespeichert.
 
 Bereits eingetragene Pfade werden übersprungen. Quellen-Versionen sollten in der URL festgenagelt sein
 (z. B. Commit-Hash statt "main"), damit der Download später dieselbe Datei liefert.
@@ -54,6 +56,11 @@ def main():
         os.replace(teil, ziel)
         eintrag = {"pfad": a["pfad"], "url": a["url"], "sha256": sha, "bytes": ziel.stat().st_size,
                    "beschreibung": a["beschreibung"], "genutzt_von": a["genutzt_von"]}
+        if ziel.name.endswith(".tar.gz"):
+            eintrag["sha256_inhalt"] = herunterladen.sha256_entpackt(ziel)
+        for zusatz in ("lizenz", "commit", "repo"):
+            if zusatz in a:
+                eintrag[zusatz] = a[zusatz]
         with sperre:
             manifest["dateien"].append(eintrag)
             manifest_pfad.write_text(json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

@@ -141,3 +141,32 @@ Eine Datei je Quelle wie beim Deutschen; die Auswahl und die Gründe stehen in [
 Beim Zählen englischer Quellen werden Wörter aus rund 1.600 Wortpaaren gezählt, die nur in einer Variante vorkommen (colour/color, organise/organize, centre/center, travelled/traveled, grey/gray, mum/mom …). Mehrdeutige Paare (licence/license, programme/program, practise/practice) fehlen bewusst. Je Quelle steht in der `meta.json` unter `schreibweise` der Anteil britisch mit Trefferzahl und den häufigsten Wörtern. `mischen.py` schätzt daraus den britischen Anteil der Mischung (Treffer je Zeichen und Quelle, gewichtet mit dem Mischungsanteil). Grenzen der Messung: Eigennamen (Labor Party, Gray) zählen mit, und die Zahl ist nur bei vielen Treffern belastbar.
 
 Die Gewichte einer Mischung lassen sich damit ändern, ohne neu zu zählen: Rezept ändern, `mischen.py` ausführen, geschätzten britischen Anteil in der Ausgabe ablesen.
+
+## Code-Quellen (`quellen_code.py`, `normalisierung_code.py`)
+
+Eine Quelle je Sprache (`code-php`, `code-vue`, `code-javascript`, `code-java`, `code-sql`); Auswahl und Gründe in [`../code/README.md`](../code/README.md). Die Archive einer Quelle ergeben sich aus dem Manifest (`genutzt_von`), nicht aus einer Liste im Leser.
+
+**Normalisierung (Entscheidungen vom 16.11.2026):**
+
+| Fall | Behandlung |
+| --- | --- |
+| Führende Leerzeichen und Tabs einer Zeile | ignoriert (der Editor rückt ein) |
+| Jedes Zeilenende (LF, CRLF, CR, Seitenvorschub, Unicode-Zeilentrenner) | zählt als **ein Enter** (`\n` im N-Gramm) |
+| Zeichen, Typografie, Akzente | wie bei Text (`normalisierung.py`), tippbar = deutsche QWERTZ-Tastatur |
+| Zeile mit fremder Schrift (z. B. chinesischer Kommentar) oder überwiegend fremdsprachigem Text | **diese Zeile** verworfen, nicht die Datei |
+| Zeile über 400 Zeichen oder über 200 Zeichen ohne Leerzeichen | verworfen (Daten, Minifizierung) |
+| Mehrfache Leerzeichen innerhalb einer Zeile (Ausrichtung) | zu einem |
+| Mehr als zwei Leerzeilen in Folge | auf zwei gekürzt; Leerzeilen am Dateianfang und -ende entfallen |
+| Übrige nicht tippbare Zeichen | harte Grenze |
+
+Die Datei wird als Ganzes bearbeitet, damit N-Gramme über Zeilenenden hinweg entstehen. Wer Zeilenwechsel nicht bewerten will, kann das beim Bewerten tun (der Optimizer hat dafür `exclude_line_breaks`).
+
+**Auswahl der Dateien** je Archiv: nur die Endungen der Sprache (`.php` einschließlich Blade, `.vue`, `.js/.mjs/.cjs`, `.java`, `.sql`); keine Verzeichnisse `vendor`, `node_modules`, `dist`, `build`, `target`, `cache`, `generated`, versteckte Ordner und (bei JavaScript und Vue) `fixtures`; keine Übersetzungsordner (`lang`, `locales`, `i18n` …) außer dem englischen; keine Dateien über 300 KB, keine minifizierten (`.min.`, mittlere Zeilenlänge über 160) oder generierten Dateien (`@generated`, „DO NOT EDIT“ …); der **Lizenzkopf** am Dateianfang wird entfernt.
+
+**Obergrenze je Repository:** Hat ein Archiv mehr geeignete Bytes als `cap_je_repo` (Standard 10 MB), wird ein fester Teil der Dateien gewählt (über die CRC32-Prüfsumme des Pfads, also deterministisch und gleichmäßig verteilt). Kein einzelnes Framework dominiert damit eine Sprache. In `meta.json` stehen je Repository `geeignet_bytes`, `anteil_promille`, `dateien` und `zeichen_roh`.
+
+**SQL:** zusätzlich zu den Repositories die Felder `context` und `answer` aus `sql-create-context` (jeweils als eigene kleine „Datei“, doppelte Paare entfernt).
+
+**Archive ohne Tests:** GitHub-Archive lassen Verzeichnisse aus, die ein Repository per `export-ignore` markiert hat (bei Laravel `tests/`). Die Mengen sind deshalb kleiner als die Sprachanteile, die GitHub für das Repository anzeigt.
+
+**Reproduzierbarkeit der Archive:** GitHub garantiert nicht, dass seine Archive bit-genau gleich bleiben. Für `.tar.gz` steht deshalb zusätzlich `sha256_inhalt` (Prüfsumme des entpackten Inhalts) im Manifest. Weichen bei einem Download die Bytes ab, der Inhalt aber nicht, behält `herunterladen.py` die Datei und weist darauf hin; dann `bytes` und `sha256` im Manifest bewusst anpassen.

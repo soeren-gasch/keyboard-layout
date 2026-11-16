@@ -3,16 +3,19 @@
   "erzeugt_von": {
     "skript": "korpora/skripte/zaehlen.py",
     "normalisierung_version": "2",
+    "normalisierung_code_version": "1",
     "skripte_sha256": {
-      "beispieldaten.py": "298e5902d809f106e239c57e79775858ff836663f4f2dfa1d257688280793abe",
-      "herunterladen.py": "5b631be9df1f89eb22fc2463f53215f784d087bc8cc78acf303447335abd7907",
-      "manifest_eintragen.py": "5b2cd633ebe5c133fc1835d6694dd68df17a75ec8fc7782ebf126c77f8eb7c0d",
+      "beispieldaten.py": "9039abfddf55f77eef747b94d63b3d144770663ce2459905c0e506fc74f08c99",
+      "herunterladen.py": "347e1c121d93c1ee580cacb5ec6ec4ee2bbb7b96f56cba2b293508bde50cb6d6",
+      "manifest_eintragen.py": "34a465e7d13bf88688f3b1064652ff972c2eb81acfc6ab0ac70c35cdfe7c75dd",
       "mischen.py": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033",
       "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "normalisierung_code.py": "80a37bcb9687c38cb63f7911dd1ed15541c60eee7f25fe94077ee86cc00f0014",
       "quellen.py": "3c9b4131699e84ff7943ba119ccb503e4c63a1c11f2dbe4814a407b2bcd6b831",
+      "quellen_code.py": "349b03059e162fb623009b6194ddb393b3e927f94b5e4b601a717028a183d240",
       "quellen_en.py": "8826da9bc68eddc8ce48949659f227f01fc64fcbf1d21d58c8cd426cf47bb232",
       "schreibweise.py": "bdf824bc5ca7361893f8abfade397d302a8e9db3e07c532a18bfe98e3039a206",
-      "zaehlen.py": "02766d7d99663d46841ea625be3cf638cf46799ded6d48349ea443b65248d2ca"
+      "zaehlen.py": "04f0bf937eace26788f24b94f9279fa1ff09edf4c82f2a75d499c9d3aeec3ef4"
     }
   },
   "datum": "2026-11-16",

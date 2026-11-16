@@ -54,6 +54,17 @@ def sha256_von(pfad):
     return h.hexdigest()
 
 
+def sha256_entpackt(pfad):
+    """SHA-256 des entpackten Inhalts einer .gz-Datei (robust gegen andere Kompression desselben Inhalts)."""
+    import gzip
+
+    h = hashlib.sha256()
+    with gzip.open(pfad, "rb") as f:
+        for block in iter(lambda: f.read(1 << 22), b""):
+            h.update(block)
+    return h.hexdigest()
+
+
 def zustand(e, pruefen=False):
     """'fehlt', 'dummy' (Größe weicht ab), 'ok' (Größe passt), 'ok-geprueft' oder 'defekt'."""
     ziel = e["ziel"]
@@ -122,9 +133,15 @@ def herunterladen(e, versuche=5):
     teil = ziel.with_name(ziel.name + ".teil")
     lade_teil(e["name"], e["url"], teil, e["bytes"], versuche)
     if teil.stat().st_size != e["bytes"] or sha256_von(teil) != e["sha256"]:
-        teil.unlink()
-        raise RuntimeError(f"{e['name']}: Größe oder Prüfsumme stimmt nicht mit dem Manifest überein "
-                           f"(Quelle geändert?). Die Datei wurde verworfen.")
+        # GitHub garantiert nicht, dass seine Archive bit-genau gleich bleiben. Ist wenigstens der entpackte
+        # Inhalt unverändert, behalten wir die Datei und weisen auf die Abweichung hin.
+        if e.get("sha256_inhalt") and sha256_entpackt(teil) == e["sha256_inhalt"]:
+            print(f"  HINWEIS {e['name']}: Archiv-Bytes weichen vom Manifest ab, der Inhalt ist identisch. "
+                  f"Für zaehlen.py bytes und sha256 im Manifest bewusst auf die neue Datei setzen.", flush=True)
+        else:
+            teil.unlink()
+            raise RuntimeError(f"{e['name']}: Größe oder Prüfsumme stimmt nicht mit dem Manifest überein "
+                               f"(Quelle geändert?). Die Datei wurde verworfen.")
     os.replace(teil, ziel)
 
 

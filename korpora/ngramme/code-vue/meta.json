@@ -1,0 +1,498 @@
+{
+  "quelle": "code-vue",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "normalisierung_code_version": "1",
+    "skripte_sha256": {
+      "beispieldaten.py": "9039abfddf55f77eef747b94d63b3d144770663ce2459905c0e506fc74f08c99",
+      "herunterladen.py": "347e1c121d93c1ee580cacb5ec6ec4ee2bbb7b96f56cba2b293508bde50cb6d6",
+      "manifest_eintragen.py": "34a465e7d13bf88688f3b1064652ff972c2eb81acfc6ab0ac70c35cdfe7c75dd",
+      "mischen.py": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "normalisierung_code.py": "80a37bcb9687c38cb63f7911dd1ed15541c60eee7f25fe94077ee86cc00f0014",
+      "quellen.py": "3c9b4131699e84ff7943ba119ccb503e4c63a1c11f2dbe4814a407b2bcd6b831",
+      "quellen_code.py": "349b03059e162fb623009b6194ddb393b3e927f94b5e4b601a717028a183d240",
+      "quellen_en.py": "8826da9bc68eddc8ce48949659f227f01fc64fcbf1d21d58c8cd426cf47bb232",
+      "schreibweise.py": "bdf824bc5ca7361893f8abfade397d302a8e9db3e07c532a18bfe98e3039a206",
+      "zaehlen.py": "04f0bf937eace26788f24b94f9279fa1ff09edf4c82f2a75d499c9d3aeec3ef4"
+    }
+  },
+  "datum": "2026-11-16",
+  "dauer_sekunden": 7,
+  "eingaben": {
+    "repos/vuetifyjs__vuetify-d6eda7e.tar.gz": {
+      "sha256": "cab827c866c293382ad7068f4cf81a65f345ae2a0368b0cc7a67497893ab766e",
+      "bytes": 2761159,
+      "url": "https://github.com/vuetifyjs/vuetify/archive/d6eda7e126252b7b579cd78a333f1c39f0dc5332.tar.gz"
+    },
+    "repos/primefaces__primevue-36965f1.tar.gz": {
+      "sha256": "3907f0a7cfdd265dc6a667f16a0e471be7e9d46a91ebff3bf2faa673914eb478",
+      "bytes": 4425449,
+      "url": "https://github.com/primefaces/primevue/archive/36965f13dc40597deeb16192a8568308cbeb70d9.tar.gz"
+    },
+    "repos/vueComponent__ant-design-vue-7483836.tar.gz": {
+      "sha256": "e32c98ba1538eec938d836e5b150a5f6d6fff984a7bafbaa63c8ea18444da479",
+      "bytes": 4702355,
+      "url": "https://github.com/vueComponent/ant-design-vue/archive/7483836f0adac76516e527df893c3d84a7cd4005.tar.gz"
+    },
+    "repos/vbenjs__vue-vben-admin-53b47f8.tar.gz": {
+      "sha256": "9fe0fbab8195ef99b94d5f06e322b3681f0a1c7e034d28291a64938b89a94920",
+      "bytes": 5968124,
+      "url": "https://github.com/vbenjs/vue-vben-admin/archive/53b47f8ce99ecea11aa04c9c876a2f18c479838f.tar.gz"
+    },
+    "repos/vuejs__router-4b89de6.tar.gz": {
+      "sha256": "f9821482d240a192eb5566b2996182c3dd0d677b6fcbfda4e2f00214e7b2422f",
+      "bytes": 1804253,
+      "url": "https://github.com/vuejs/router/archive/4b89de605bf0a54d56459999ae0e5a9cbf69a1aa.tar.gz"
+    },
+    "repos/PanJiaChen__vue-element-admin-6858a9a.tar.gz": {
+      "sha256": "eccacfefb007827d34f813986a739f65f6ad2f2d1548f1c29500fb6a6da1d885",
+      "bytes": 468218,
+      "url": "https://github.com/PanJiaChen/vue-element-admin/archive/6858a9ad67483025f6a9432a926beb9327037be3.tar.gz"
+    },
+    "repos/vueuse__vueuse-bed1dce.tar.gz": {
+      "sha256": "30ec4eea5eda8ab64a608246589816f68bc98453c811df5771b6b452b88e6a04",
+      "bytes": 1212761,
+      "url": "https://github.com/vueuse/vueuse/archive/bed1dce149ce6760fec13d4798c047f51a563180.tar.gz"
+    },
+    "repos/vuejs__pinia-4817135.tar.gz": {
+      "sha256": "46dc4739874c21dea613585c90accbe47b0ea20fec72a96fca2568cc0b335f8a",
+      "bytes": 1126000,
+      "url": "https://github.com/vuejs/pinia/archive/4817135a25431172d363bd928476db7cdbf875c4.tar.gz"
+    },
+    "repos/vuejs__vitepress-40b2e09.tar.gz": {
+      "sha256": "6244e6e1d15b8ccaffd673593d10b3b9cc4b23aa22918a85e81d8b18d079abf9",
+      "bytes": 2587816,
+      "url": "https://github.com/vuejs/vitepress/archive/40b2e090772ac11eac358d25ec92ee435fc2adbd.tar.gz"
+    },
+    "repos/zxwk1998__vue-admin-better-b02834b.tar.gz": {
+      "sha256": "5158eabd972dcc6ac5f3df7b0c590b8dcec6d83aebc584e03c4a108e25bf597e",
+      "bytes": 1036558,
+      "url": "https://github.com/zxwk1998/vue-admin-better/archive/b02834b2dd9148bca55fdb168347890eb1a35e88.tar.gz"
+    },
+    "repos/quasarframework__quasar-8424c2b.tar.gz": {
+      "sha256": "90c493df30cb15267f7e030b8521b9ce2216f4255f1c475cebfd5e311a26956f",
+      "bytes": 29424420,
+      "url": "https://github.com/quasarframework/quasar/archive/8424c2b0dd2618c81ee401e355e790a23966ffc5.tar.gz"
+    },
+    "repos/lin-xin__vue-manage-system-6a7019e.tar.gz": {
+      "sha256": "f6a66bff610c99248f31afe10fd38d90ff6c68032420411b0b05f6d0d9279ba7",
+      "bytes": 801866,
+      "url": "https://github.com/lin-xin/vue-manage-system/archive/6a7019ec1a74cc05297d18647a5f944c242d468a.tar.gz"
+    },
+    "repos/qier222__YesPlayMusic-5d5fa23.tar.gz": {
+      "sha256": "51731cccc2609f8b5edc633cc7748d8c648cb5a9855aab2cad97e3bad2f775d9",
+      "bytes": 7169171,
+      "url": "https://github.com/qier222/YesPlayMusic/archive/5d5fa23b7429c82a9932bbc2c9f6036403c5757b.tar.gz"
+    },
+    "repos/ElemeFE__element-c345bb4.tar.gz": {
+      "sha256": "0150c024c499a02e70dcb8eb99e2286e7e9ae7d5c119eed09e788954c5b02ee0",
+      "bytes": 2527872,
+      "url": "https://github.com/ElemeFE/element/archive/c345bb453bf11badb4831a6a3f600c9372b3a336.tar.gz"
+    },
+    "repos/youzan__vant-7cc4992.tar.gz": {
+      "sha256": "0808c2e125b88dd3b5031a176f2e515e738907a08eb048bc60f2007dfa8dab93",
+      "bytes": 9937163,
+      "url": "https://github.com/youzan/vant/archive/7cc499279866e74b117593abf612567d5a2eb28d.tar.gz"
+    },
+    "repos/epicmaxco__vuestic-ui-c5337ed.tar.gz": {
+      "sha256": "326b8b1bcd4d2fb5d996183c39a222bd83e0fd0e2a61076b450cf02ff9951120",
+      "bytes": 12246538,
+      "url": "https://github.com/epicmaxco/vuestic-ui/archive/c5337ed8e7e24ea294221326fe2ca6af8d3b8e1b.tar.gz"
+    },
+    "repos/elk-zone__elk-6b956a6.tar.gz": {
+      "sha256": "a640510942938f4492534e1a8a39fb5674cc08efab0954fab1ed05024267b2eb",
+      "bytes": 4279180,
+      "url": "https://github.com/elk-zone/elk/archive/6b956a6d4a89a676059d83a0b0e59d7165d5f266.tar.gz"
+    },
+    "repos/lissy93__dashy-cb56d1d.tar.gz": {
+      "sha256": "f1e056b8ff9f3880ad07a65248e5d021ab3b06f529ee68f125a74d5d42cb509e",
+      "bytes": 70230052,
+      "url": "https://github.com/lissy93/dashy/archive/cb56d1d2fe72c7d72b3b21963ee197bee735335f.tar.gz"
+    },
+    "repos/nuxt__ui-aa54cd8.tar.gz": {
+      "sha256": "dafce6af5f403c08303df2dd115dec2818ea2dd89bb0072cef67fb11bc6b9a84",
+      "bytes": 63263795,
+      "url": "https://github.com/nuxt/ui/archive/aa54cd89ae4ffd89949af774936af4c1df91ee5d.tar.gz"
+    },
+    "repos/vuejs__core-cbd9595.tar.gz": {
+      "sha256": "d11c4aada8ce1cea1a29900782be4370653b59b390098ee4a17b8ac171edcbee",
+      "bytes": 1668503,
+      "url": "https://github.com/vuejs/core/archive/cbd95955a5362b44060908f6e28ad447c3031b8a.tar.gz"
+    },
+    "repos/salomonelli__best-resume-ever-29e753c.tar.gz": {
+      "sha256": "64752adef0a267bb87fcfe80da10e77c9baa493dc4da86e7d50b03dbba67138f",
+      "bytes": 110716622,
+      "url": "https://github.com/salomonelli/best-resume-ever/archive/29e753cd842585b4a2e9dbbb5e1ef3a0f5e66767.tar.gz"
+    },
+    "repos/buefy__buefy-469dadd.tar.gz": {
+      "sha256": "597d3a98cb33e438263ae4528d2bf38ed15f45b81f70080f51e39e164cb4e227",
+      "bytes": 16351089,
+      "url": "https://github.com/buefy/buefy/archive/469dadd7913387d72410824428be3a720318f8b3.tar.gz"
+    },
+    "repos/element-plus__element-plus-3b5d0ad.tar.gz": {
+      "sha256": "946adc87a41cf862339013b43dfd3b1c90795f77b0308c4a0ae8383e796f10cb",
+      "bytes": 3157860,
+      "url": "https://github.com/element-plus/element-plus/archive/3b5d0ad35b1d309a3430b49db9be1369f0966321.tar.gz"
+    }
+  },
+  "parameter": {
+    "quelle": "code-vue",
+    "cap_je_repo": 10000000
+  },
+  "summen": {
+    "zeichen": 22347991,
+    "bigramme": 22335480,
+    "trigramme": 22322971,
+    "verschiedene_unigramme": 102,
+    "verschiedene_bigramme": 7135,
+    "verschiedene_trigramme": 82089
+  },
+  "pruefbericht": {
+    "summen": {
+      "datei_verworfen:datentabelle_mit_sonderzeichen": 3,
+      "datei_verworfen:generiert": 1,
+      "datei_verworfen:minifiziert": 23,
+      "dateien_verwendet": 11531,
+      "einheiten_gelesen": 11534,
+      "entfernt_kombinierend": 36,
+      "ersetzt": 326,
+      "grenze": 1101,
+      "grenzen_gesetzt": 1038,
+      "leerzeile_gekuerzt": 35,
+      "transliteriert": 94,
+      "zeile_verworfen:fremde_schrift": 7798,
+      "zeile_verworfen:zu_lang": 556,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 3
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "—",
+          168
+        ],
+        [
+          "’",
+          30
+        ],
+        [
+          "“",
+          27
+        ],
+        [
+          "”",
+          24
+        ],
+        [
+          "…",
+          21
+        ],
+        [
+          "–",
+          19
+        ],
+        [
+          "　",
+          14
+        ],
+        [
+          "»",
+          5
+        ],
+        [
+          "‍",
+          4
+        ],
+        [
+          "«",
+          2
+        ],
+        [
+          "⁠",
+          2
+        ],
+        [
+          "−",
+          2
+        ],
+        [
+          "​",
+          2
+        ],
+        [
+          "‘",
+          2
+        ],
+        [
+          "„",
+          1
+        ]
+      ],
+      "grenze": [
+        [
+          "·",
+          229
+        ],
+        [
+          "⌘",
+          118
+        ],
+        [
+          "：",
+          39
+        ],
+        [
+          "→",
+          34
+        ],
+        [
+          "•",
+          33
+        ],
+        [
+          "￥",
+          18
+        ],
+        [
+          "©",
+          18
+        ],
+        [
+          "・",
+          16
+        ],
+        [
+          "🚀",
+          13
+        ],
+        [
+          "✔",
+          12
+        ],
+        [
+          "🔥",
+          12
+        ],
+        [
+          "¥",
+          11
+        ],
+        [
+          "↑",
+          11
+        ],
+        [
+          "×",
+          11
+        ],
+        [
+          "，",
+          10
+        ]
+      ],
+      "transliteriert": [
+        [
+          "é",
+          33
+        ],
+        [
+          "á",
+          14
+        ],
+        [
+          "Ç",
+          10
+        ],
+        [
+          "ğ",
+          8
+        ],
+        [
+          "ç",
+          6
+        ],
+        [
+          "ı",
+          4
+        ],
+        [
+          "ø",
+          4
+        ],
+        [
+          "ñ",
+          3
+        ],
+        [
+          "Í",
+          2
+        ],
+        [
+          "ã",
+          2
+        ],
+        [
+          "ó",
+          2
+        ],
+        [
+          "í",
+          2
+        ],
+        [
+          "ē",
+          2
+        ],
+        [
+          "å",
+          1
+        ],
+        [
+          "ş",
+          1
+        ]
+      ]
+    }
+  },
+  "repos": {
+    "ElemeFE/element": {
+      "geeignet_bytes": 747027,
+      "anteil_promille": 1000,
+      "dateien": 155,
+      "zeichen_roh": 745888
+    },
+    "PanJiaChen/vue-element-admin": {
+      "geeignet_bytes": 352527,
+      "anteil_promille": 1000,
+      "dateien": 131,
+      "zeichen_roh": 350057
+    },
+    "buefy/buefy": {
+      "geeignet_bytes": 1431171,
+      "anteil_promille": 1000,
+      "dateien": 439,
+      "zeichen_roh": 1428285
+    },
+    "element-plus/element-plus": {
+      "geeignet_bytes": 1572277,
+      "anteil_promille": 1000,
+      "dateien": 832,
+      "zeichen_roh": 1572086
+    },
+    "elk-zone/elk": {
+      "geeignet_bytes": 513536,
+      "anteil_promille": 1000,
+      "dateien": 261,
+      "zeichen_roh": 503237
+    },
+    "epicmaxco/vuestic-ui": {
+      "geeignet_bytes": 2074011,
+      "anteil_promille": 1000,
+      "dateien": 1002,
+      "zeichen_roh": 1858354
+    },
+    "lin-xin/vue-manage-system": {
+      "geeignet_bytes": 144527,
+      "anteil_promille": 1000,
+      "dateien": 40,
+      "zeichen_roh": 139981
+    },
+    "lissy93/dashy": {
+      "geeignet_bytes": 914689,
+      "anteil_promille": 1000,
+      "dateien": 174,
+      "zeichen_roh": 914515
+    },
+    "nuxt/ui": {
+      "geeignet_bytes": 2427690,
+      "anteil_promille": 1000,
+      "dateien": 805,
+      "zeichen_roh": 2421114
+    },
+    "primefaces/primevue": {
+      "geeignet_bytes": 8681855,
+      "anteil_promille": 1000,
+      "dateien": 2605,
+      "zeichen_roh": 8653167
+    },
+    "qier222/YesPlayMusic": {
+      "geeignet_bytes": 308657,
+      "anteil_promille": 1000,
+      "dateien": 42,
+      "zeichen_roh": 306429
+    },
+    "quasarframework/quasar": {
+      "geeignet_bytes": 3413800,
+      "anteil_promille": 1000,
+      "dateien": 1463,
+      "zeichen_roh": 3413673
+    },
+    "salomonelli/best-resume-ever": {
+      "geeignet_bytes": 144251,
+      "anteil_promille": 1000,
+      "dateien": 21,
+      "zeichen_roh": 144251
+    },
+    "vbenjs/vue-vben-admin": {
+      "geeignet_bytes": 1717810,
+      "anteil_promille": 1000,
+      "dateien": 693,
+      "zeichen_roh": 1657298
+    },
+    "vueComponent/ant-design-vue": {
+      "geeignet_bytes": 1017097,
+      "anteil_promille": 1000,
+      "dateien": 731,
+      "zeichen_roh": 984006
+    },
+    "vuejs/core": {
+      "geeignet_bytes": 20432,
+      "anteil_promille": 1000,
+      "dateien": 11,
+      "zeichen_roh": 20432
+    },
+    "vuejs/pinia": {
+      "geeignet_bytes": 38698,
+      "anteil_promille": 1000,
+      "dateien": 25,
+      "zeichen_roh": 38687
+    },
+    "vuejs/router": {
+      "geeignet_bytes": 889709,
+      "anteil_promille": 1000,
+      "dateien": 324,
+      "zeichen_roh": 889471
+    },
+    "vuejs/vitepress": {
+      "geeignet_bytes": 177176,
+      "anteil_promille": 1000,
+      "dateien": 71,
+      "zeichen_roh": 177076
+    },
+    "vuetifyjs/vuetify": {
+      "geeignet_bytes": 2212472,
+      "anteil_promille": 1000,
+      "dateien": 1310,
+      "zeichen_roh": 2208063
+    },
+    "vueuse/vueuse": {
+      "geeignet_bytes": 215897,
+      "anteil_promille": 1000,
+      "dateien": 195,
+      "zeichen_roh": 215848
+    },
+    "youzan/vant": {
+      "geeignet_bytes": 341511,
+      "anteil_promille": 1000,
+      "dateien": 129,
+      "zeichen_roh": 332975
+    },
+    "zxwk1998/vue-admin-better": {
+      "geeignet_bytes": 390652,
+      "anteil_promille": 1000,
+      "dateien": 75,
+      "zeichen_roh": 378603
+    }
+  }
+}

@@ -26,11 +26,13 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 import normalisierung  # noqa: E402
+import normalisierung_code  # noqa: E402
 import quellen  # noqa: E402
+import quellen_code  # noqa: E402
 import quellen_en  # noqa: E402
 import schreibweise  # noqa: E402
 
-ALLE_QUELLEN = {**quellen.QUELLEN, **quellen_en.QUELLEN}
+ALLE_QUELLEN = {**quellen.QUELLEN, **quellen_en.QUELLEN, **quellen_code.QUELLEN}
 
 SKRIPTE = Path(__file__).resolve().parent
 KORPORA = SKRIPTE.parent
@@ -43,6 +45,17 @@ def _segmente(einheiten, stat):
     """Normalisiert Einheiten und verbindet Fließtext-Zeilen; liefert zählbare Strings."""
     offen = ""
     for text, modus in einheiten:
+        if modus == "datei":
+            # Quelltext: ganze Datei, Zeilenenden bleiben als Enter erhalten (normalisierung_code.py)
+            segmente = normalisierung_code.normalisiere_datei(text, stat)
+            if segmente is None:
+                continue
+            stat["dateien_verwendet"] += 1
+            if offen:
+                yield offen
+                offen = ""
+            yield from segmente
+            continue
         segmente = normalisierung.normalisiere(text, stat)
         if segmente is None:
             continue
@@ -150,6 +163,11 @@ def zaehle(name, prozesse, text_aus, ziel_wurzel):
             stat.update(s)
             sw.update(w)
     stat.update(lese_stat)
+    # Einzelheiten je Repository (Schlüssel "detail:<repo>:<feld>") gehören in meta.json, nicht in den Prüfbericht
+    details = {}
+    for k in [k for k in stat if k.startswith("detail:")]:
+        _, repo, feld = k.split(":", 2)
+        details.setdefault(repo, {})[feld] = stat.pop(k)
 
     ziel = ziel_wurzel / name
     ziel.mkdir(parents=True, exist_ok=True)
@@ -166,6 +184,7 @@ def zaehle(name, prozesse, text_aus, ziel_wurzel):
         "erzeugt_von": {
             "skript": "korpora/skripte/zaehlen.py",
             "normalisierung_version": normalisierung.VERSION,
+            "normalisierung_code_version": normalisierung_code.VERSION,
             "skripte_sha256": {
                 p.name: _sha256(p) for p in sorted(SKRIPTE.glob("*.py"))
             },
@@ -186,6 +205,8 @@ def zaehle(name, prozesse, text_aus, ziel_wurzel):
     }
     if mit_schreibweise:
         meta["schreibweise"] = schreibweise.zusammenfassen(sw)
+    if details:
+        meta["repos"] = dict(sorted(details.items()))
     (ziel / "meta.json").write_text(json.dumps(meta, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(f"{name}: {meta['summen']['zeichen']:,} Zeichen in {meta['dauer_sekunden']} s", flush=True)
 
@@ -199,7 +220,7 @@ def uebersicht(ziel_wurzel):
         "Format der N-Gramm-Dateien: `Anzahl N-Gramm`, kompatibel mit dem keyboard_layout_optimizer.",
         "Spalte „britisch“: Anteil britischer Schreibung unter den messbaren Wortpaaren (in Klammern die Zahl der Treffer), nur für englische Quellen.",
         "",
-        "| Quelle | Datum | Zeichen | Zeilen verwendet | Zeilen verworfen | ersetzt | transliteriert | Grenzen | britisch |",
+        "| Quelle | Datum | Zeichen | Zeilen bzw. Dateien verwendet | Zeilen verworfen | ersetzt | transliteriert | Grenzen | britisch |",
         "| --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |",
     ]
     for meta_pfad in sorted(ziel_wurzel.glob("*/meta.json")):
@@ -209,7 +230,7 @@ def uebersicht(ziel_wurzel):
         sw = m.get("schreibweise")
         britisch = "–" if not sw or sw["anteil_britisch"] is None else f"{100 * sw['anteil_britisch']:.0f} % ({sw['britisch'] + sw['amerikanisch']:,})"
         zeilen.append(
-            f"| `{m['quelle']}` | {m['datum']} | {m['summen']['zeichen']:,} | {s.get('zeilen_verwendet', 0):,} "
+            f"| `{m['quelle']}` | {m['datum']} | {m['summen']['zeichen']:,} | {s.get('zeilen_verwendet', 0) or s.get('dateien_verwendet', 0):,} "
             f"| {verworfen:,} | {s.get('ersetzt', 0):,} | {s.get('transliteriert', 0):,} | {s.get('grenze', 0):,} | {britisch} |"
         )
     (ziel_wurzel / "README.md").write_text("\n".join(zeilen) + "\n", encoding="utf-8")

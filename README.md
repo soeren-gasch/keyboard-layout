@@ -62,10 +62,10 @@ Aus der ersten Einschätzung vom 13.11.2026:
 | Korpora, aus denen das Layout entworfen wurde | Häufigkeiten bzw. N-Gramme für Deutsch, Englisch und Code | offen: Quelle und Gewichtung unbekannt |
 | [`korpora/deutsch/`](korpora/deutsch/README.md) | neu zusammengestellte deutsche Korpora: förmlich (Leipzig), gesprochen (OpenSubtitles), informell (GC4, One Million Posts, Dortmunder Chat-Korpus) | Originale per Skript ladbar (4,6 GB, nicht im Repo); N-Gramme je Quelle unter [`korpora/ngramme/`](korpora/ngramme/README.md), Mischung `de-standard` unter `korpora/mischungen/` |
 | [`korpora/englisch/`](korpora/englisch/README.md) | englische Korpora, britisches Englisch bevorzugt, US-Englisch enthalten: förmlich (Leipzig, UK Hansard), gesprochen (OpenSubtitles, CABNC, OANC), informell und technisch (Ubuntu IRC, Reddit, E-Mails, StackExchange ohne Code) | 14 Quellen einzeln gezählt (N-Gramme unter `korpora/ngramme/en-*`), Mischung `en-standard`; Originale (21 GB) per Skript ladbar, nicht im Repo |
-| Code | – | offen |
+| [`korpora/code/`](korpora/code/README.md) | Quelltext aus 98 freien Repositories für PHP/Laravel, Vue, JavaScript, Java und SQL (Sörens Stack) | 5 Quellen einzeln gezählt (`korpora/ngramme/code-*`), Mischung `code-standard`; Originale (1,3 GB) per Skript ladbar, nicht im Repo; eigener Code von Sören steht noch aus |
 | [`dariogoetz/keyboard_layout_optimizer`](https://github.com/dariogoetz/keyboard_layout_optimizer) | Optimizer von Dario Götz (Rust), bewertet Layouts anhand von Uni-, Bi- und Trigrammen; enthält Sörens N-Gramme für ActionScript (`ngrams/code_actionScript`, PR #74) | gesichtet; der frühere Fork wird nicht mehr gebraucht |
 
-Offen ist noch, wie Deutsch, Englisch und Code untereinander gewichtet werden und welche Kriterien beim Entwurf zählten. Innerhalb einer Sprache legt ein Rezept unter `korpora/mischungen/` die Gewichte fest (`de-standard`, `en-standard`); sie lassen sich ändern, ohne neu zu zählen.
+Offen ist noch, wie Deutsch, Englisch und Code untereinander gewichtet werden und welche Kriterien beim Entwurf zählten. Innerhalb einer Sprache legt ein Rezept unter `korpora/mischungen/` die Gewichte fest (`de-standard`, `en-standard`, `code-standard`); sie lassen sich ändern, ohne neu zu zählen.
 
 ## Struktur
 
@@ -86,7 +86,7 @@ keyboard-layout/
 
 ## Original-Korpora (nicht im Repository)
 
-Die großen Original-Korpora (Deutsch zusammen 4,6 GB, Englisch 21 GB) liegen **nicht** im Repository. Stattdessen gibt es:
+Die großen Original-Korpora (Deutsch zusammen 4,6 GB, Englisch 21 GB, Code 1,3 GB) liegen **nicht** im Repository. Stattdessen gibt es:
 
 - ein **Manifest** je Sprache (`korpora/<sprache>/quellen.json`) mit URL, SHA-256 und Größe jeder Datei,
 - **Dummy-Dateien** an den Pfaden der Originale (`korpora/<sprache>/original/...`): gleiches Format, aber nur 5 bis 10 erfundene Beispiel-Einträge. Damit laufen alle Skripte nach einem frischen Klon, nur eben auf Beispieldaten,

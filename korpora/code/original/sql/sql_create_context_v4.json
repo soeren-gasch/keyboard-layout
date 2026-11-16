@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Example question?",
+    "context": "CREATE TABLE head (age INTEGER)",
+    "answer": "SELECT COUNT(*) FROM head WHERE age > 56"
+  },
+  {
+    "question": "Example question?",
+    "context": "CREATE TABLE department (name VARCHAR, budget INTEGER)",
+    "answer": "SELECT name FROM department ORDER BY budget DESC LIMIT 1"
+  },
+  {
+    "question": "Example question?",
+    "context": "CREATE TABLE singer (name VARCHAR, age INTEGER)",
+    "answer": "SELECT AVG(age) FROM singer"
+  },
+  {
+    "question": "Example question?",
+    "context": "CREATE TABLE city (name VARCHAR, population INTEGER)",
+    "answer": "SELECT name FROM city WHERE population > 1000000"
+  },
+  {
+    "question": "Example question?",
+    "context": "CREATE TABLE head (age INTEGER)",
+    "answer": "SELECT COUNT(*) FROM head WHERE age > 56"
+  },
+  {
+    "question": "Example question?",
+    "context": "CREATE TABLE book (title VARCHAR, year INTEGER)",
+    "answer": "SELECT title FROM book WHERE year = 1999"
+  }
+]

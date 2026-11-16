@@ -1,0 +1,477 @@
+{
+  "quelle": "code-javascript",
+  "erzeugt_von": {
+    "skript": "korpora/skripte/zaehlen.py",
+    "normalisierung_version": "2",
+    "normalisierung_code_version": "1",
+    "skripte_sha256": {
+      "beispieldaten.py": "9039abfddf55f77eef747b94d63b3d144770663ce2459905c0e506fc74f08c99",
+      "herunterladen.py": "347e1c121d93c1ee580cacb5ec6ec4ee2bbb7b96f56cba2b293508bde50cb6d6",
+      "manifest_eintragen.py": "34a465e7d13bf88688f3b1064652ff972c2eb81acfc6ab0ac70c35cdfe7c75dd",
+      "mischen.py": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033",
+      "normalisierung.py": "946ab4424e94b05524bb145dd341f2fcaa11f19dbdd5a2339bd2c8d0f1ed907a",
+      "normalisierung_code.py": "80a37bcb9687c38cb63f7911dd1ed15541c60eee7f25fe94077ee86cc00f0014",
+      "quellen.py": "3c9b4131699e84ff7943ba119ccb503e4c63a1c11f2dbe4814a407b2bcd6b831",
+      "quellen_code.py": "349b03059e162fb623009b6194ddb393b3e927f94b5e4b601a717028a183d240",
+      "quellen_en.py": "8826da9bc68eddc8ce48949659f227f01fc64fcbf1d21d58c8cd426cf47bb232",
+      "schreibweise.py": "bdf824bc5ca7361893f8abfade397d302a8e9db3e07c532a18bfe98e3039a206",
+      "zaehlen.py": "04f0bf937eace26788f24b94f9279fa1ff09edf4c82f2a75d499c9d3aeec3ef4"
+    }
+  },
+  "datum": "2026-11-16",
+  "dauer_sekunden": 14,
+  "eingaben": {
+    "repos/quasarframework__quasar-8424c2b.tar.gz": {
+      "sha256": "90c493df30cb15267f7e030b8521b9ce2216f4255f1c475cebfd5e311a26956f",
+      "bytes": 29424420,
+      "url": "https://github.com/quasarframework/quasar/archive/8424c2b0dd2618c81ee401e355e790a23966ffc5.tar.gz"
+    },
+    "repos/bootstrap-vue__bootstrap-vue-9a246f4.tar.gz": {
+      "sha256": "7058f302b15233160086472802db7f4c454138be4d609bd8b823315a26d237d6",
+      "bytes": 1591302,
+      "url": "https://github.com/bootstrap-vue/bootstrap-vue/archive/9a246f45fc813f161df291fc7d6197febf8afaf4.tar.gz"
+    },
+    "repos/eslint__eslint-97efadd.tar.gz": {
+      "sha256": "3a727a48abf192d0e78b8bca18c75747c376b397929ec2e3c5f1f32148d3269c",
+      "bytes": 6350462,
+      "url": "https://github.com/eslint/eslint/archive/97efadd5eff8e3eb673f8746f7bb3ba2f3941251.tar.gz"
+    },
+    "repos/lodash__lodash-2b5e6f7.tar.gz": {
+      "sha256": "9acd2d5769bc7f0e1b0c77abe2ec446c8df54ef3d4d909238994ee7c103fb08b",
+      "bytes": 896368,
+      "url": "https://github.com/lodash/lodash/archive/2b5e6f7399a7b48005140b5d5c6bc6c0e62919a8.tar.gz"
+    },
+    "repos/axios__axios-85ffbaf.tar.gz": {
+      "sha256": "32e7b34cc963d8f9ca18eaceacaa047ae352ef3726e47ba7b80e432e3e46a2d9",
+      "bytes": 1721488,
+      "url": "https://github.com/axios/axios/archive/85ffbafab1a3f4385b6a4118692a6995ce71d9d8.tar.gz"
+    },
+    "repos/prettier__prettier-2cc4f0f.tar.gz": {
+      "sha256": "dd5386f81fc480d4b4a0432508f3e9110a77d24d41e18bbd8e4e7c2bcc0c4f4e",
+      "bytes": 6008694,
+      "url": "https://github.com/prettier/prettier/archive/2cc4f0fd2cc44a970229a5cb025cd47c63f31b04.tar.gz"
+    },
+    "repos/jquery__jquery-feaa9fc.tar.gz": {
+      "sha256": "80f270af61e789bc1348d5ad91f5f3014f746003ead9d3dd3351caa648f00a75",
+      "bytes": 570931,
+      "url": "https://github.com/jquery/jquery/archive/feaa9fcdb68cdeadf013d97d8fd40848d4618578.tar.gz"
+    },
+    "repos/expressjs__express-43fca52.tar.gz": {
+      "sha256": "0907a1731d24be4424787c250d90b9178a60bacc9e4cf331e56ba0e84a032a76",
+      "bytes": 136171,
+      "url": "https://github.com/expressjs/express/archive/43fca52d28a422c8be48fd489cbd4f2d6152bab6.tar.gz"
+    },
+    "repos/mochajs__mocha-5b5afa7.tar.gz": {
+      "sha256": "3bc20e5425f113c763c38ba257b526a35a18b5f7e2ba668f19eefde4e20d1203",
+      "bytes": 1273134,
+      "url": "https://github.com/mochajs/mocha/archive/5b5afa7b12e3f76f4e0c6afa12e960c0b378358c.tar.gz"
+    },
+    "repos/webpack__webpack-8466aab.tar.gz": {
+      "sha256": "160ea4b7d2a61f826cb714d5afecc7efb979d2a33007ac9057ba737c432ee7d6",
+      "bytes": 21843373,
+      "url": "https://github.com/webpack/webpack/archive/8466aab382c2d38e7e3e6f91eb10f03647b64ba7.tar.gz"
+    },
+    "repos/fastify__fastify-4679723.tar.gz": {
+      "sha256": "be896094b64aee248ace9b59ae2198acad5e12b42830f9f37727c4190fb204e2",
+      "bytes": 553225,
+      "url": "https://github.com/fastify/fastify/archive/467972380963813755ac99f68fae228e30ac748f.tar.gz"
+    },
+    "repos/socketio__socket.io-f8e8746.tar.gz": {
+      "sha256": "e654f213b3c3efd53adb542a44ce7e8231e6119db5c6bf0785ae3448dc46be0f",
+      "bytes": 8404214,
+      "url": "https://github.com/socketio/socket.io/archive/f8e8746492f4118c7ef6a40e51f9c26fdc3ecc31.tar.gz"
+    },
+    "repos/sahat__hackathon-starter-532a217.tar.gz": {
+      "sha256": "a3b0bbeeb995bd19f8d28e8792899b13ce69400a0b0f8caad01e485c9faa98bb",
+      "bytes": 456869,
+      "url": "https://github.com/sahat/hackathon-starter/archive/532a21727e6a3c363dd85fd9db5cafb26e633428.tar.gz"
+    },
+    "repos/chartjs__Chart.js-71d4421.tar.gz": {
+      "sha256": "193fdad14d459e83238b2a6c4060c01178283eac8eae4a933829c8c9a19a9bb4",
+      "bytes": 12631485,
+      "url": "https://github.com/chartjs/Chart.js/archive/71d44219e79e3ac41e6f9dc907022eebf574868d.tar.gz"
+    },
+    "repos/standard__standard-753309b.tar.gz": {
+      "sha256": "0ee2af43f933e99d8eb7e58f3c0275cfd07b52ba4c2602bc8328f1e5520afc15",
+      "bytes": 953847,
+      "url": "https://github.com/standard/standard/archive/753309b21bfd7c98e208e3fb45910ffd1bb95409.tar.gz"
+    },
+    "repos/moment__moment-c2a703a.tar.gz": {
+      "sha256": "894abf992e3f50be103c6ed2aaf3445ef37ce2018edee7c5d76324fd020ae9aa",
+      "bytes": 1188766,
+      "url": "https://github.com/moment/moment/archive/c2a703a4d84aa57ee2722ff8fb4a8016279fb3c4.tar.gz"
+    },
+    "repos/webtorrent__webtorrent-2ea1ded.tar.gz": {
+      "sha256": "75ead86ddbce185687d949f5c090a4e38562abdc4de045a7de6074f6dd4f2a22",
+      "bytes": 1699369,
+      "url": "https://github.com/webtorrent/webtorrent/archive/2ea1dedaeef29a033209138ca0970e1e6c78f88f.tar.gz"
+    },
+    "repos/Automattic__mongoose-ab4e363.tar.gz": {
+      "sha256": "b3b1334cdcc578a0c5b6b761c9f0f6d15e525f0834b6c6fd669feec0835a6a38",
+      "bytes": 1998782,
+      "url": "https://github.com/Automattic/mongoose/archive/ab4e3637a5a65f875e385abd4f3b77f457e66d78.tar.gz"
+    },
+    "repos/typicode__json-server-89a34a4.tar.gz": {
+      "sha256": "a318787b10ffda614c946f4d97d5f2a1c1c19e5da1b350ee4317f34d89b2ef52",
+      "bytes": 28476,
+      "url": "https://github.com/typicode/json-server/archive/89a34a44b7a6a5311dc84f3b8a1b8b45c0905aea.tar.gz"
+    },
+    "repos/jestjs__jest-aa88f7c.tar.gz": {
+      "sha256": "1e89fbcecf0e979de8472a01fe12b2ab4f90a5bb42fea199690cd613d99db51d",
+      "bytes": 24636725,
+      "url": "https://github.com/jestjs/jest/archive/aa88f7cf0bfc7a3a2efbfcab97914886b22d4454.tar.gz"
+    },
+    "repos/mrdoob__three.js-f9bb9a4.tar.gz": {
+      "sha256": "12ae3327838b492d6aa2f2bd49162cdda5bfa6c6e0fbdc9c74a9b6c69f02817f",
+      "bytes": 374971450,
+      "url": "https://github.com/mrdoob/three.js/archive/f9bb9a426b906dac0d96221faa1d64dd4bbd8090.tar.gz"
+    }
+  },
+  "parameter": {
+    "quelle": "code-javascript",
+    "cap_je_repo": 10000000
+  },
+  "summen": {
+    "zeichen": 50224230,
+    "bigramme": 50204779,
+    "trigramme": 50185332,
+    "verschiedene_unigramme": 108,
+    "verschiedene_bigramme": 8602,
+    "verschiedene_trigramme": 145951
+  },
+  "pruefbericht": {
+    "summen": {
+      "c1_als_cp1252_gelesen": 1,
+      "datei_verworfen:datentabelle_mit_sonderzeichen": 4,
+      "datei_verworfen:generiert": 69,
+      "datei_verworfen:minifiziert": 14,
+      "datei_verworfen:ohne_verwertbare_zeile": 7,
+      "dateien_verwendet": 18725,
+      "einheiten_gelesen": 18736,
+      "entfernt_kombinierend": 163,
+      "ersetzt": 1413,
+      "grenze": 978,
+      "grenzen_gesetzt": 964,
+      "leerzeile_gekuerzt": 378,
+      "lizenzkopf_entfernt": 1686,
+      "transliteriert": 507,
+      "zeile_verworfen:fremde_schrift": 1813,
+      "zeile_verworfen:zu_lang": 202,
+      "zeile_verworfen:zu_viele_fremde_buchstaben": 11
+    },
+    "haeufigste_zeichen": {
+      "ersetzt": [
+        [
+          "—",
+          976
+        ],
+        [
+          "…",
+          158
+        ],
+        [
+          "–",
+          53
+        ],
+        [
+          "’",
+          48
+        ],
+        [
+          "‍",
+          32
+        ],
+        [
+          "›",
+          24
+        ],
+        [
+          "‹",
+          22
+        ],
+        [
+          " ",
+          19
+        ],
+        [
+          "“",
+          18
+        ],
+        [
+          "”",
+          18
+        ],
+        [
+          "´",
+          10
+        ],
+        [
+          "−",
+          9
+        ],
+        [
+          "«",
+          8
+        ],
+        [
+          "»",
+          8
+        ],
+        [
+          "﻿",
+          5
+        ]
+      ],
+      "grenze": [
+        [
+          "─",
+          117
+        ],
+        [
+          "→",
+          116
+        ],
+        [
+          "⚠",
+          55
+        ],
+        [
+          "✖",
+          47
+        ],
+        [
+          "×",
+          44
+        ],
+        [
+          "👍",
+          32
+        ],
+        [
+          "│",
+          22
+        ],
+        [
+          "✔",
+          21
+        ],
+        [
+          "•",
+          20
+        ],
+        [
+          "❌",
+          19
+        ],
+        [
+          "😄",
+          18
+        ],
+        [
+          "└",
+          18
+        ],
+        [
+          "━",
+          18
+        ],
+        [
+          "·",
+          17
+        ],
+        [
+          "😀",
+          14
+        ]
+      ],
+      "transliteriert": [
+        [
+          "é",
+          162
+        ],
+        [
+          "è",
+          43
+        ],
+        [
+          "À",
+          28
+        ],
+        [
+          "á",
+          25
+        ],
+        [
+          "í",
+          21
+        ],
+        [
+          "à",
+          15
+        ],
+        [
+          "É",
+          14
+        ],
+        [
+          "ï",
+          13
+        ],
+        [
+          "ê",
+          13
+        ],
+        [
+          "ç",
+          11
+        ],
+        [
+          "ọ",
+          9
+        ],
+        [
+          "ı",
+          8
+        ],
+        [
+          "ó",
+          8
+        ],
+        [
+          "î",
+          5
+        ],
+        [
+          "ì",
+          4
+        ]
+      ]
+    }
+  },
+  "repos": {
+    "Automattic/mongoose": {
+      "geeignet_bytes": 4155291,
+      "anteil_promille": 1000,
+      "dateien": 478,
+      "zeichen_roh": 4155210
+    },
+    "axios/axios": {
+      "geeignet_bytes": 1415347,
+      "anteil_promille": 1000,
+      "dateien": 249,
+      "zeichen_roh": 1414085
+    },
+    "bootstrap-vue/bootstrap-vue": {
+      "geeignet_bytes": 2594631,
+      "anteil_promille": 1000,
+      "dateien": 524,
+      "zeichen_roh": 2460156
+    },
+    "chartjs/Chart.js": {
+      "geeignet_bytes": 1232958,
+      "anteil_promille": 1000,
+      "dateien": 131,
+      "zeichen_roh": 1232958
+    },
+    "eslint/eslint": {
+      "geeignet_bytes": 9091345,
+      "anteil_promille": 1000,
+      "dateien": 818,
+      "zeichen_roh": 9079106
+    },
+    "expressjs/express": {
+      "geeignet_bytes": 564477,
+      "anteil_promille": 1000,
+      "dateien": 141,
+      "zeichen_roh": 564358
+    },
+    "fastify/fastify": {
+      "geeignet_bytes": 1940339,
+      "anteil_promille": 1000,
+      "dateien": 262,
+      "zeichen_roh": 1903626
+    },
+    "jestjs/jest": {
+      "geeignet_bytes": 1073725,
+      "anteil_promille": 1000,
+      "dateien": 1224,
+      "zeichen_roh": 1073049
+    },
+    "jquery/jquery": {
+      "geeignet_bytes": 1675884,
+      "anteil_promille": 1000,
+      "dateien": 211,
+      "zeichen_roh": 1675745
+    },
+    "lodash/lodash": {
+      "geeignet_bytes": 183031,
+      "anteil_promille": 1000,
+      "dateien": 24,
+      "zeichen_roh": 183027
+    },
+    "mochajs/mocha": {
+      "geeignet_bytes": 1197814,
+      "anteil_promille": 1000,
+      "dateien": 235,
+      "zeichen_roh": 1196448
+    },
+    "moment/moment": {
+      "geeignet_bytes": 1142608,
+      "anteil_promille": 1000,
+      "dateien": 202,
+      "zeichen_roh": 1142523
+    },
+    "mrdoob/three.js": {
+      "geeignet_bytes": 15047933,
+      "anteil_promille": 665,
+      "dateien": 1194,
+      "zeichen_roh": 10319584
+    },
+    "prettier/prettier": {
+      "geeignet_bytes": 3400849,
+      "anteil_promille": 1000,
+      "dateien": 4058,
+      "zeichen_roh": 3389562
+    },
+    "quasarframework/quasar": {
+      "geeignet_bytes": 7548214,
+      "anteil_promille": 1000,
+      "dateien": 1388,
+      "zeichen_roh": 7077007
+    },
+    "sahat/hackathon-starter": {
+      "geeignet_bytes": 587357,
+      "anteil_promille": 1000,
+      "dateien": 56,
+      "zeichen_roh": 587316
+    },
+    "socketio/socket.io": {
+      "geeignet_bytes": 654128,
+      "anteil_promille": 1000,
+      "dateien": 177,
+      "zeichen_roh": 653555
+    },
+    "standard/standard": {
+      "geeignet_bytes": 8495,
+      "anteil_promille": 1000,
+      "dateien": 9,
+      "zeichen_roh": 8495
+    },
+    "typicode/json-server": {
+      "geeignet_bytes": 0,
+      "anteil_promille": 0
+    },
+    "webpack/webpack": {
+      "geeignet_bytes": 20214502,
+      "anteil_promille": 495,
+      "dateien": 7290,
+      "zeichen_roh": 9291140
+    },
+    "webtorrent/webtorrent": {
+      "geeignet_bytes": 291922,
+      "anteil_promille": 1000,
+      "dateien": 65,
+      "zeichen_roh": 291922
+    }
+  }
+}

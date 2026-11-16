@@ -4,8 +4,13 @@ Erzeugt von `korpora/skripte/zaehlen.py`; Details und Prüfbericht in `meta.json
 Format der N-Gramm-Dateien: `Anzahl N-Gramm`, kompatibel mit dem keyboard_layout_optimizer.
 Spalte „britisch“: Anteil britischer Schreibung unter den messbaren Wortpaaren (in Klammern die Zahl der Treffer), nur für englische Quellen.
 
-| Quelle | Datum | Zeichen | Zeilen verwendet | Zeilen verworfen | ersetzt | transliteriert | Grenzen | britisch |
+| Quelle | Datum | Zeichen | Zeilen bzw. Dateien verwendet | Zeilen verworfen | ersetzt | transliteriert | Grenzen | britisch |
 | --- | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
+| `code-java` | 2026-11-16 | 71,972,980 | 18,062 | 13,918 | 969 | 432 | 1,564 | – |
+| `code-javascript` | 2026-11-16 | 50,224,230 | 18,725 | 2,120 | 1,413 | 507 | 978 | – |
+| `code-php` | 2026-11-16 | 42,339,711 | 17,097 | 12,594 | 8,267 | 2,326 | 27,724 | – |
+| `code-sql` | 2026-11-16 | 22,826,976 | 82,613 | 748 | 3,244 | 1,762 | 1,133 | – |
+| `code-vue` | 2026-11-16 | 22,347,991 | 11,531 | 8,384 | 326 | 94 | 1,101 | – |
 | `de-dortmunder-chatkorpus` | 2026-11-16 | 3,019,947 | 49,851 | 2,083 | 221 | 148 | 17 | – |
 | `de-gc4-middle-2020` | 2026-11-16 | 107,753,139 | 613,889 | 18,422 | 220,965 | 11,604 | 16,911 | – |
 | `de-leipzig-news-2024` | 2026-11-16 | 108,057,777 | 999,813 | 187 | 260,455 | 14,395 | 1,180 | – |

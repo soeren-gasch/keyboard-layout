@@ -1,0 +1,10 @@
+{
+  "beschreibung": "Code, Startgewichtung vom 16.11.2026 nach Sörens Angabe: PHP/Laravel 35 %, Vue 20 %, JavaScript 15 %, Java 15 %, SQL 15 %. Gewichte sind Anteile an allen Zeichen (Tastenanschlägen). Quelltext aus freien Repositories, Einrückung nicht gezählt, jedes Zeilenende zählt als Enter.",
+  "bestandteile": {
+    "code-php": 35,
+    "code-vue": 20,
+    "code-javascript": 15,
+    "code-java": 15,
+    "code-sql": 15
+  }
+}
