@@ -60,7 +60,7 @@ python3 korpora/skripte/herunterladen.py --urls-pruefen       # nur testen, ob a
 4. **Dummy-Generator** in `beispieldaten.py` ergänzen (erfundene Einträge im Format des Originals) und die Dummys in den Index schreiben, ohne die Originale im Arbeitsordner anzufassen: `python3 korpora/skripte/beispieldaten.py --in-index <sprache>/`. Danach den Ausschluss aus Schritt 2 wieder aus `.git/info/exclude` entfernen.
 5. **Zählen** (`zaehlen.py <quelle>`), Prüfbericht ansehen, Mischrezept anpassen, committen.
 
-Jede Änderung an einem Skript macht die `skripte_sha256` in älteren `meta.json` zu einer Momentaufnahme. Vor einem Commit nach Skriptänderungen deshalb alle Quellen neu zählen; weil die Zählung deterministisch ist, ändern sich dabei nur die `meta.json`.
+In die `skripte_sha256` der `meta.json` gehen nur die Skripte ein, die das Ergebnis bestimmen (`zaehlen.py`, `normalisierung*.py`, `quellen*.py`, `schreibweise.py`). Ändert sich eines davon, sind die Prüfsummen in älteren `meta.json` eine Momentaufnahme; vor dem Commit dann alle Quellen neu zählen. Weil die Zählung deterministisch ist, ändern sich dabei nur die `meta.json`. Änderungen an Download- und Hilfsskripten machen keinen Neulauf nötig.
 
 ## Probelauf auf den Dummys
 

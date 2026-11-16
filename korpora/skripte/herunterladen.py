@@ -24,6 +24,7 @@ import os
 import shutil
 import subprocess
 import sys
+import threading
 import time
 import urllib.error
 import urllib.request
@@ -81,17 +82,35 @@ def git(*argumente):
     return subprocess.run(["git", "-C", str(REPO), *argumente], capture_output=True, text=True)
 
 
+_git_sperre = threading.Lock()
+
+
+def _git_mit_wiederholung(*argumente, versuche=8):
+    """git-Aufruf, der bei gesperrtem Index (index.lock durch einen gleichzeitigen Aufruf) wiederholt wird."""
+    for versuch in range(versuche):
+        erg = git(*argumente)
+        if erg.returncode == 0:
+            return erg
+        time.sleep(0.3 * (versuch + 1))
+    return erg
+
+
 def vor_git_verbergen(ziel):
-    """Lokale Ersetzung der Dummy-Datei nicht als Änderung führen."""
+    """Lokale Ersetzung der Dummy-Datei nicht als Änderung führen (skip-worktree bzw. .git/info/exclude).
+
+    Läuft unter einer Sperre, weil parallele Downloads sonst den Git-Index gegenseitig blockieren."""
     rel = str(ziel.relative_to(REPO))
-    if git("ls-files", "--error-unmatch", rel).returncode == 0:
-        git("update-index", "--skip-worktree", rel)
-    elif (REPO / ".git" / "info").is_dir():
-        ausschluss = REPO / ".git" / "info" / "exclude"
-        vorhanden = ausschluss.read_text().splitlines() if ausschluss.exists() else []
-        if "/" + rel not in vorhanden:
-            with open(ausschluss, "a") as f:
-                f.write("/" + rel + "\n")
+    with _git_sperre:
+        if git("ls-files", "--error-unmatch", rel).returncode == 0:
+            erg = _git_mit_wiederholung("update-index", "--skip-worktree", rel)
+            if erg.returncode != 0:
+                print(f"  WARNUNG: skip-worktree für {rel} nicht gesetzt: {erg.stderr.strip()}", flush=True)
+        elif (REPO / ".git" / "info").is_dir():
+            ausschluss = REPO / ".git" / "info" / "exclude"
+            vorhanden = ausschluss.read_text().splitlines() if ausschluss.exists() else []
+            if "/" + rel not in vorhanden:
+                with open(ausschluss, "a") as f:
+                    f.write("/" + rel + "\n")
 
 
 def lade_teil(name, url, teil, groesse=None, versuche=5):
@@ -176,8 +195,8 @@ def url_pruefen(e):
     try:
         with urllib.request.urlopen(anfrage, timeout=60) as antwort:
             laenge = antwort.headers.get("Content-Length")
-            if laenge is None:
-                return f"unklar (keine Größenangabe): {e['name']}"
+            if laenge is None:  # z. B. GitHub-Archive: werden erst beim Abruf erzeugt
+                return f"ok (erreichbar, ohne Größenangabe): {e['name']}"
             return (f"ok {int(laenge):>13,} Bytes: {e['name']}" if int(laenge) == e["bytes"]
                     else f"GRÖSSE ABWEICHEND (Server {int(laenge):,}, Manifest {e['bytes']:,}): {e['name']}")
     except (urllib.error.URLError, TimeoutError) as fehler:

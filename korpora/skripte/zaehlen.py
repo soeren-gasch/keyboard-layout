@@ -38,6 +38,9 @@ SKRIPTE = Path(__file__).resolve().parent
 KORPORA = SKRIPTE.parent
 ZIEL = KORPORA / "ngramme"
 STAPEL_ZEICHEN = 4_000_000
+# Skripte, die das Ergebnis der Zählung bestimmen (Download- und Hilfsskripte gehören nicht dazu)
+ZAEHL_SKRIPTE = ["zaehlen.py", "normalisierung.py", "normalisierung_code.py", "quellen.py", "quellen_en.py",
+                 "quellen_code.py", "schreibweise.py"]
 MAX_OFFEN = 50_000
 
 
@@ -185,9 +188,7 @@ def zaehle(name, prozesse, text_aus, ziel_wurzel):
             "skript": "korpora/skripte/zaehlen.py",
             "normalisierung_version": normalisierung.VERSION,
             "normalisierung_code_version": normalisierung_code.VERSION,
-            "skripte_sha256": {
-                p.name: _sha256(p) for p in sorted(SKRIPTE.glob("*.py"))
-            },
+            "skripte_sha256": {name: _sha256(SKRIPTE / name) for name in ZAEHL_SKRIPTE},
         },
         "datum": datetime.date.today().isoformat(),
         "dauer_sekunden": round(time.time() - start),
