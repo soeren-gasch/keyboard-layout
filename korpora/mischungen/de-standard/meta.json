@@ -3,7 +3,7 @@
   "beschreibung": "Deutsch, Startgewichtung vom 14.11.2026: förmlich 40 %, gesprochen 20 %, informell 40 %. Gewichte sind Anteile an allen Zeichen.",
   "erzeugt_von": {
     "skript": "korpora/skripte/mischen.py",
-    "sha256": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033"
+    "sha256": "afd25623f3b189b65bac2a69769eb3deddb3fe075028a88d4d75ebe6e98c7c3f"
   },
   "datum": "2026-11-16",
   "rezept": "korpora/mischungen/de-standard.json",

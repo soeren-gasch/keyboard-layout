@@ -3,7 +3,8 @@
 Aufruf (aus dem Repo-Wurzelverzeichnis):
     python3 korpora/skripte/mischen.py korpora/mischungen/de-standard.json
 
-Die Rezeptdatei nennt Quellen aus korpora/ngramme/ mit Gewichten. Jede Quelle wird je
+Die Rezeptdatei nennt Quellen aus korpora/ngramme/ mit Gewichten; ein Bestandteil "mischung:<name>" bindet
+ein anderes Rezept ein (etwa Deutsch, Englisch und Code als Bausteine einer Gesamtmischung). Jede Quelle wird je
 N-Gramm-Ordnung auf relative Häufigkeiten gebracht und dann gewichtet summiert. Ein Gewicht
 ist damit der Anteil an allen Zeichen (Tastenanschlägen) der Mischung. Gewichte werden auf
 die Summe 1 normiert.
@@ -41,6 +42,25 @@ def _sha256(pfad):
     return hashlib.sha256(Path(pfad).read_bytes()).hexdigest()
 
 
+def gewichte_aufloesen(rezept_pfad, faktor=1.0, kette=()):
+    """Normierte Gewichte je Quelle. Ein Bestandteil "mischung:<name>" verweist auf das Rezept
+    korpora/mischungen/<name>.json; dessen Quellen gehen mit dem Produkt der Gewichte ein."""
+    rezept_pfad = Path(rezept_pfad).resolve()
+    if rezept_pfad in kette:
+        raise SystemExit(f"Rezepte verweisen im Kreis: {' -> '.join(p.name for p in kette + (rezept_pfad,))}")
+    bestandteile = json.loads(rezept_pfad.read_text(encoding="utf-8"))["bestandteile"]
+    summe = sum(bestandteile.values())
+    erg = Counter()
+    for name, gewicht in bestandteile.items():
+        anteil = faktor * gewicht / summe
+        if name.startswith("mischung:"):
+            unter = KORPORA / "mischungen" / f"{name.split(':', 1)[1]}.json"
+            erg.update(gewichte_aufloesen(unter, anteil, kette + (rezept_pfad,)))
+        else:
+            erg[name] += anteil
+    return dict(erg)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("rezept", help="JSON-Datei mit {'beschreibung': ..., 'bestandteile': {quelle: gewicht}}")
@@ -48,9 +68,7 @@ def main():
 
     rezept_pfad = Path(args.rezept)
     rezept = json.loads(rezept_pfad.read_text(encoding="utf-8"))
-    bestandteile = rezept["bestandteile"]
-    summe = sum(bestandteile.values())
-    gewichte = {q: g / summe for q, g in bestandteile.items()}
+    gewichte = gewichte_aufloesen(rezept_pfad)
 
     ziel = rezept_pfad.with_suffix("")
     ziel.mkdir(parents=True, exist_ok=True)

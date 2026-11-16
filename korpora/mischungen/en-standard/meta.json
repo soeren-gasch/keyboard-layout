@@ -3,7 +3,7 @@
   "beschreibung": "Englisch, Startgewichtung vom 16.11.2026, britisch bevorzugt, US-Englisch enthalten. Gewichte sind Anteile an allen Zeichen. Aufteilung: förmlich 42 % (Leipzig, UK Hansard, OANC geschrieben), gesprochen 25 % (OpenSubtitles, CABNC, OANC gesprochen), informell und technisch 33 % (Ubuntu IRC, Reddit, StackExchange, EnronSent). Britische Schreibung geschätzt rund 56 % (Wert aus mischen.py, siehe meta.json der Mischung). Deutlich mehr wäre nur über noch höhere Anteile förmlicher Parlamentssprache, Gesprochenem der 1990er und Webtexten von 2002 zu erreichen; britisches getipptes Informelles gibt es offen praktisch nicht.",
   "erzeugt_von": {
     "skript": "korpora/skripte/mischen.py",
-    "sha256": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033"
+    "sha256": "afd25623f3b189b65bac2a69769eb3deddb3fe075028a88d4d75ebe6e98c7c3f"
   },
   "datum": "2026-11-16",
   "rezept": "korpora/mischungen/en-standard.json",

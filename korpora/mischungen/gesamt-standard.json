@@ -1,0 +1,8 @@
+{
+  "beschreibung": "Gesamtmischung nach Sörens Angabe vom 16.11.2026: 65 % Deutsch, 25 % Englisch, 10 % Code (Anteile an allen Tastenanschlägen). Die drei Bausteine sind eigene Rezepte und lassen sich unabhängig ändern.",
+  "bestandteile": {
+    "mischung:de-standard": 65,
+    "mischung:en-standard": 25,
+    "mischung:code-standard": 10
+  }
+}

@@ -3,7 +3,7 @@
   "beschreibung": "Code, Startgewichtung vom 16.11.2026 nach Sörens Angabe: PHP/Laravel 35 %, Vue 20 %, JavaScript 15 %, Java 15 %, SQL 15 %. Gewichte sind Anteile an allen Zeichen (Tastenanschlägen). Quelltext aus freien Repositories, Einrückung nicht gezählt, jedes Zeilenende zählt als Enter.",
   "erzeugt_von": {
     "skript": "korpora/skripte/mischen.py",
-    "sha256": "a1e9319893e7a9f29e347126d6c7d0d614b182d80277a4acd01c28608f606033"
+    "sha256": "afd25623f3b189b65bac2a69769eb3deddb3fe075028a88d4d75ebe6e98c7c3f"
   },
   "datum": "2026-11-16",
   "rezept": "korpora/mischungen/code-standard.json",

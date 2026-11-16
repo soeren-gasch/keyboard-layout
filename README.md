@@ -79,7 +79,7 @@ keyboard-layout/
   korpora/             Korpora je Sprache: Recherche, Manifest (quellen.json), Dummy-Dateien;
                        skripte/ (Download, Aufbereitung), ngramme/ (je Quelle), mischungen/ (gewichtet)
   oryx/                Schnappschüsse der Oryx-Revisionen (JSON und QMK-Quellcode)
-  optimizer/           Tastatur- und Bewertungs-Konfigurationen für den Optimizer
+  optimizer/           Build-Anleitung, Tastatur- und Bewertungs-Konfigurationen, Ergebnisse
   analyse/             Skripte und Ergebnisse der Messungen
   entscheidungen/      Entscheidungslog, eine Datei je Entscheidung
 ```
