@@ -70,6 +70,20 @@ Für den Programmcode der Seite und der Skripte: MIT oder Apache-2.0. Code und D
 | golem.hu und KBD.news | erst nach Zustimmung von Tamás Dövényi |
 | Deskthority | bis zur Klärung nur Link und wenige Fakten |
 
+## Eine Gesamtlizenz für alles?
+
+Eine Lizenz für die ganze Datenbank muss mit **jeder** Quelle verträglich sein, deren Material wir weitergeben.
+
+| Gesamtlizenz | Möglich? | Bedingung |
+| --- | --- | --- |
+| **GPL-3.0-or-later** | **ja, als einzige mit allen Bestandteilen** | QMK (GPL-2.0-or-later) darf unter GPL-3.0 weiter; VIA und KeymapDB sind GPL-3.0; MIT (ZMK, splitKbCompare), CC BY 4.0 (YAL) und CC BY-SA 4.0 (Deskthority, neue Texte) dürfen in GPL-3.0 eingehen. Ausgeschlossen bleiben CC-BY-NC-Daten (z. B. Battoota-Geometrie) und Quellen ohne Lizenz ohne Zustimmung (golem.hu, KBD.news, Shops: dort nur Fakten und Links). Nachteil: Die GPL ist für Software geschrieben; Pflichten wie „vollständiger Quelltext“ passen schlecht zu Daten, und viele Datennutzer meiden sie. |
+| CC BY-SA 4.0 | nur ohne GPL-Bestandteile | Positionen aus QMK, Vial und VIA müssten wegfallen oder nur als Link auf die Quelldatei erscheinen; GPL-Material darf nicht in CC BY-SA. |
+| ODbL 1.0 | nur ohne GPL-Bestandteile | wie CC BY-SA |
+| CC BY 4.0 | nur ohne GPL- und ohne CC-BY-SA-Bestandteile | Positionen aus QMK/Vial/VIA weg; Deskthority nur Fakten (das tun wir ohnehin) |
+| CC0 | nur ohne GPL-, CC-BY(-SA)- und MIT-Bestandteile, deren Hinweise wir weitergeben müssen | praktisch nur Fakten und eigene Arbeit |
+
+**Ergebnis:** Soll es genau eine Lizenz sein, ist das GPL-3.0-or-later (mit NC-Daten ausgenommen). Wenn die Layout-Vorschau statt eigener Positionsdaten auf die Quelldateien verweist, ginge auch CC BY-SA 4.0 oder ODbL für alles. Modell B (Schichten) bleibt die sauberste Lösung, wenn mehrere Lizenzen akzeptabel sind.
+
 ## Offene Entscheidungen
 
 1. Lizenz für Fakten und eigene Arbeit: CC BY 4.0 (Vorschlag), CC BY-SA 4.0 oder ODbL?
