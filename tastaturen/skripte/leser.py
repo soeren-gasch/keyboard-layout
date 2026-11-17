@@ -436,7 +436,7 @@ def lies_github(s):
             continue
         lizenz = (r.get("license") or {}).get("spdx_id")
         ds = s.datensatz("github", name, r["html_url"], lizenz if lizenz and lizenz != "NOASSERTION" else
-                         "unbekannt (keine Lizenz im Repository erkannt)", abruf, r.get("name"),
+                         "unknown (no license detected by GitHub)", abruf, r.get("name"),
                          (r.get("owner") or {}).get("login"), r["html_url"],
                          [u for u in [r.get("homepage")] if u],
                          {"beschreibung": r.get("description"), "topics": sorted(topics),
@@ -583,4 +583,317 @@ def lies_yal(s):
                     daten.get("switchProfile"):
                 a("profil", "flach", "switchProfile")
             anzahl += 1
+    return anzahl, []
+
+
+# ----------------------------------------------------------------------------- Ergogen
+KEIN_SCHALTER = re.compile(r"mcu|controller|promicro|pro_micro|nice|xiao|pico|battery|batt|jumper|power|reset|outline|"
+                           r"hole|screw|logo|trrs|jst|oled|display|view|encoder|switch_?on|slider|led|magnet|foot|"
+                           r"mount|standoff|label|text|cutout|usb|connector|diode", re.I)
+MM_JE_U = 19.05
+
+
+def lies_ergogen(s):
+    manifest = json.loads((ORDNER / "ergogen.json").read_text(encoding="utf-8"))["repositories"]
+    punkte_ordner = QUELLEN / "ergogen-punkte"
+    github_lizenz = {}
+    for f in (QUELLEN / "github").glob("*.json"):
+        for it in json.loads(f.read_text(encoding="utf-8"))["items"]:
+            github_lizenz[it["full_name"].lower()] = (it.get("license") or {}).get("spdx_id")
+    q = quelle_anlegen(s, "ergogen", "Ergogen-Konfigurationen aus Projekt-Repositories, berechnet mit Ergogen 4.2.1 "
+                                     "bzw. 3.1.2", None)
+    anzahl, fehler = 0, []
+    for repo, eintrag in sorted(manifest.items()):
+        dateien = eintrag.get("ergogen") or []
+        for pfad in dateien:
+            ergebnis_datei = punkte_ordner / repo.replace("/", "__") / (pfad + ".json")
+            if not ergebnis_datei.exists():
+                continue
+            erg = json.loads(ergebnis_datei.read_text(encoding="utf-8"))
+            if not erg.get("punkte"):
+                fehler.append((f"{repo}/{pfad}", "; ".join(erg.get("fehler", []))[:120]))
+                continue
+            tasten = []
+            for name, p in erg["punkte"].items():
+                meta = p.get("meta") or {}
+                w, h = float(meta.get("width") or 0), float(meta.get("height") or 0)
+                if meta.get("skip") or KEIN_SCHALTER.search(name):
+                    continue
+                if 0.5 <= w <= 3 and 0.5 <= h <= 3:        # Ergogen 3: Größe in Tasten-Einheiten
+                    wu, hu = w, h
+                elif 12 <= w <= 40 and 12 <= h <= 40:      # Größe in Millimetern
+                    wu, hu = w / MM_JE_U, h / MM_JE_U
+                else:
+                    continue
+                cx, cy = float(p["x"]) / MM_JE_U, -float(p["y"]) / MM_JE_U
+                tasten.append({"x": cx - wu / 2, "y": cy - hu / 2, "w": wu, "h": hu, "r": -float(p.get("r") or 0),
+                               "rx": cx, "ry": cy, "label": name})
+            if len(tasten) < 4:
+                fehler.append((f"{repo}/{pfad}", f"nur {len(tasten)} Tasten erkannt"))
+                continue
+            lizenz = github_lizenz.get(repo.lower())
+            if not lizenz or lizenz == "NOASSERTION":
+                lizdat = eintrag.get("lizenzdateien") or []
+                lizenz = (f"see {github_blob('https://github.com/' + repo, eintrag['commit'], lizdat[0])}"
+                          if lizdat else "no license found in repository")
+            stamm = pfad.rsplit("/", 1)[-1].rsplit(".", 1)[0]
+            generisch = re.fullmatch(r"(config|ergogen|keyboard|main|points|board|layout|default|input|index|"
+                                     r"config[_-]?\w{0,6}|ergogen[_-]?\w{0,6})", stamm, re.I)
+            name = stamm
+            if generisch:   # nächster aussagekräftiger Ordnername, sonst der Repository-Name
+                ordner = [t for t in pfad.split("/")[:-1] if not re.fullmatch(
+                    r"(ergogen|boards?|files|src|pcbs?|configs?|hardware|kicad|v\d[\w.]*|\d+keys?|keyboards?|docs?|"
+                    r"documentation|design|cad)", t, re.I)]
+                name = ordner[-1] if ordner else repo.split("/")[1]
+            ds = s.datensatz("ergogen", f"{repo}/{pfad}",
+                             github_blob(f"https://github.com/{repo}", eintrag["commit"], pfad), lizenz, None, name,
+                             repo.split("/")[0], f"https://github.com/{repo}", [],
+                             {"ergogen_version": erg["version"], "punkte": len(erg["punkte"]),
+                              "tasten_erkannt": len(tasten)})
+            s.angabe(ds, "verfuegbarkeit", "selbstbau", "abgeleitet", "öffentliche Ergogen-Konfiguration")
+            gespiegelt = any(t["label"].startswith("mirror_") for t in tasten)
+            _, a = s.layout(ds, stamm, tasten)
+            if gespiegelt or a.get("geteilt_geometrisch"):
+                s.angabe(ds, "tasten", len(tasten), "abgeleitet", "Ergogen-Punkte, beide Hälften")
+                if a.get("geteilt_geometrisch"):
+                    s.angabe(ds, "tasten_je_haelfte", max(a["tasten_links"], a["tasten_rechts"]), "abgeleitet",
+                             "Ergogen-Punkte")
+            else:
+                s.angabe(ds, "tasten_je_haelfte", len(tasten), "abgeleitet",
+                         "Ergogen-Punkte einer Hälfte (Konfiguration ohne Spiegelung)")
+            if a.get("versatz") in ("spalten", "ortho", "reihen"):
+                s.angabe(ds, "versatz", a["versatz"], "abgeleitet", "Ergogen-Punkte")
+            winkel = {round(t["r"]) for t in tasten}
+            if len(winkel) > 2:
+                s.angabe(ds, "spreizung", "ja", "abgeleitet", f"Drehwinkel der Tasten: {sorted(winkel)[:6]}")
+            anzahl += 1
+    return anzahl, fehler
+
+
+# ----------------------------------------------------------------------------- VIA (the-via/keyboards)
+def kle_tasten(zeilen):
+    """KLE-Layout (Keyboard Layout Editor) in Tasten; Logik wie kle-serial. Bei VIA-Layout-Optionen (4. Zeile der
+    Beschriftung "gruppe,wahl") zählt nur Wahl 0."""
+    akt = {"x": 0.0, "y": 0.0, "w": 1.0, "h": 1.0, "r": 0.0, "rx": 0.0, "ry": 0.0}
+    tasten = []
+    for zeile in zeilen:
+        if not isinstance(zeile, list):
+            continue
+        dekor = False
+        for el in zeile:
+            if isinstance(el, dict):
+                if "r" in el:
+                    akt["r"] = float(el["r"])
+                if "rx" in el:
+                    akt["rx"] = float(el["rx"])
+                    akt["x"], akt["y"] = akt["rx"], akt["ry"]
+                if "ry" in el:
+                    akt["ry"] = float(el["ry"])
+                    akt["x"], akt["y"] = akt["rx"], akt["ry"]
+                akt["x"] += float(el.get("x", 0))
+                akt["y"] += float(el.get("y", 0))
+                if "w" in el:
+                    akt["w"] = float(el["w"])
+                if "h" in el:
+                    akt["h"] = float(el["h"])
+                dekor = bool(el.get("d", dekor))
+            else:
+                teile = str(el).split("\n")
+                option = teile[3] if len(teile) > 3 else ""
+                m = re.match(r"\s*(\d+)\s*,\s*(\d+)", teile[0])
+                wahl = re.match(r"\s*\d+\s*,\s*(\d+)", option)
+                if not dekor and not (wahl and wahl.group(1) != "0"):
+                    tasten.append({"x": akt["x"], "y": akt["y"], "w": akt["w"], "h": akt["h"], "r": akt["r"],
+                                   "rx": akt["rx"], "ry": akt["ry"], "mz": int(m.group(1)) if m else None,
+                                   "ms": int(m.group(2)) if m else None})
+                akt["x"] += akt["w"]
+                akt["w"] = akt["h"] = 1.0
+                dekor = False
+        akt["y"] += 1
+        akt["x"] = akt["rx"]
+    return tasten
+
+
+def lies_via(s):
+    wurzel = QUELLEN / "via"
+    commit, datum = git_stand(wurzel)
+    q = quelle_anlegen(s, "via", "VIA-Tastaturdefinitionen (v3) mit Layout im KLE-Format", f"{commit} {datum}",
+                       commit)
+    anzahl, fehler = 0, []
+    for f in sorted((wurzel / "v3").glob("**/*.json")):
+        try:
+            d = json.loads(f.read_text(encoding="utf-8-sig"))
+        except ValueError as e:
+            fehler.append((f.name, str(e)[:60]))
+            continue
+        km = ((d.get("layouts") or {}).get("keymap"))
+        if not isinstance(d.get("name"), str) or not d["name"].strip() or not isinstance(km, list):
+            continue
+        rel = f.relative_to(wurzel).as_posix()
+        ds = s.datensatz("via", rel, github_blob(q["url"], commit, rel), q["lizenz"], datum, d["name"], rel.split("/")[1],
+                         None, [], {"vendorId": d.get("vendorId"), "productId": d.get("productId"),
+                                    "matrix": d.get("matrix")})
+        s.angabe(ds, "firmware", "via", "quelle", "VIA-Definition")
+        tasten = kle_tasten(km)
+        if tasten:
+            _layout_angaben(s, ds, "VIA keymap", tasten)
+        anzahl += 1
+    return anzahl, fehler
+
+
+# ----------------------------------------------------------------------------- Deskthority-Wiki
+SCHALTER_DT = [(r"topre|capacitive|electrostatic", "topre"), (r"cherry mx|\bmx\b|gateron|kailh(?! choc)|outemu",
+                                                               "mx"),
+               (r"\balps\b|matias|simplified alps|complicated alps", "alps"), (r"buckling spring", "knickfeder"),
+               (r"rubber dome|membrane|dome", "membran"), (r"scissor", "schere"), (r"optical", "optisch"),
+               (r"hall effect|magnetic|hall-effect", "magnetisch"), (r"choc", "choc-v1")]
+
+
+def _wiki_text(v):
+    v = re.sub(r"\[\[(?:[^|\]]*\|)?([^\]]*)\]\]", r"\1", v)
+    v = re.sub(r"\{\{(?:bulleted list|plainlist|ubl)\|", "", v, flags=re.I)
+    v = re.sub(r"\{\{[^{}]*\}\}", " ", v)
+    v = re.sub(r"<[^>]+>", " ", v)
+    return re.sub(r"\s+", " ", v.replace("}}", " ").replace("|", "; ")).strip()
+
+
+def _infobox(text):
+    i = text.lower().find("{{infobox d")
+    if i < 0:
+        return {}
+    tiefe, j = 0, i
+    while j < len(text):
+        if text.startswith("{{", j):
+            tiefe, j = tiefe + 1, j + 2
+            continue
+        if text.startswith("}}", j):
+            tiefe, j = tiefe - 1, j + 2
+            if tiefe == 0:
+                break
+            continue
+        j += 1
+    rumpf = text[i + 2:j - 2]
+    felder, tiefe, stueck = {}, 0, ""
+    teile = []
+    for c in rumpf:          # an "|" auf oberster Ebene trennen
+        if c in "{[":
+            tiefe += 1
+        elif c in "}]":
+            tiefe -= 1
+        if c == "|" and tiefe == 0:
+            teile.append(stueck)
+            stueck = ""
+        else:
+            stueck += c
+    teile.append(stueck)
+    for t in teile[1:]:
+        if "=" in t:
+            k, v = t.split("=", 1)
+            felder[k.strip().lower()] = v.strip()
+    return felder
+
+
+def lies_deskthority(s):
+    daten = json.loads((QUELLEN / "deskthority" / "seiten.json").read_text(encoding="utf-8"))
+    q = quelle_anlegen(s, "deskthority", "Deskthority-Wiki: Tastaturseiten mit Infobox", f"abgerufen {daten['abgerufen']}")
+    anzahl = 0
+    for titel, seite in sorted(daten["seiten"].items()):
+        f = _infobox(seite.get("text") or "")
+        if not f:
+            continue
+        url = f"https://deskthority.net/wiki/{titel.replace(' ', '_')}"
+        hersteller = _wiki_text(f.get("manufacturer", "")) or None
+        ds = s.datensatz("deskthority", titel, f"{url}?oldid={seite.get('revid')}" if seite.get("revid") else url,
+                         q["lizenz"], (seite.get("zeitstempel") or "")[:10] or daten["abgerufen"],
+                         _wiki_text(f.get("name", "")) or titel, hersteller, url, [],
+                         {k: _wiki_text(v) for k, v in f.items() if k in ("switch", "layouts", "interface",
+                                                                          "introduced", "price", "pn")})
+        schalter = _wiki_text(f.get("switch", "")).lower()
+        for muster, wert in SCHALTER_DT:
+            if re.search(muster, schalter):
+                s.angabe(ds, "schalter", wert, "quelle", f"switch: {schalter[:80]}")
+        layouts = _wiki_text(f.get("layouts", ""))
+        for gruppe in re.findall(r"((?:\d{2,3}\s*/\s*)*\d{2,3})\s*(?:-key|keys?)?\s*(?:ANSI|ISO|JIS|key)", layouts,
+                                 re.I):
+            for n in re.findall(r"\d{2,3}", gruppe):
+                if 20 <= int(n) <= 160:
+                    s.angabe(ds, "tasten", int(n), "quelle", f"layouts: {layouts[:80]}")
+        schnitt = _wiki_text(f.get("interface", "")).lower()
+        if re.search(r"bluetooth", schnitt):
+            s.angabe(ds, "drahtlos", "ja", "quelle", f"interface: {schnitt[:60]}")
+            s.angabe(ds, "drahtlos_technik", "bluetooth", "quelle", f"interface: {schnitt[:60]}")
+        elif re.search(r"wireless|2\.4|rf\b|infrared|ir\b", schnitt):
+            s.angabe(ds, "drahtlos", "ja", "quelle", f"interface: {schnitt[:60]}")
+        elif re.search(r"usb|ps/2|at\b|xt\b|adb|serial|din", schnitt):
+            s.angabe(ds, "drahtlos", "nein", "quelle", f"interface: {schnitt[:60]}")
+            s.angabe(ds, "energie", "kabel", "quelle", f"interface: {schnitt[:60]}")
+        jahr = re.search(r"\b(19[5-9]\d|20[0-2]\d)\b", _wiki_text(f.get("introduced", "")))
+        if jahr:
+            s.angabe(ds, "jahr", int(jahr.group(1)), "quelle", f"introduced: {f.get('introduced', '')[:40]}")
+        if f.get("price"):
+            s.angabe(ds, "preis", _wiki_text(f["price"])[:40], "quelle", "price")
+        anzahl += 1
+    return anzahl, []
+
+
+# ----------------------------------------------------------------------------- Reddit (über Arctic Shift)
+SW_REPO = re.compile(r"(zmk|qmk|kmk)[-_]?(config|keymap|userspace|module|studio)|keymap|dotfiles|^miryoku|kanata|keyd|"
+                     r"karabiner|layout[s]?$|^zmk$|^qmk_firmware$|^vial|firmware$|^ergogen$|footprints?$|kle|"
+                     r"keyboard-layout-editor|typing|trainer|config$", re.I)
+TITEL_FAKTEN = [(r"\bsplit\b", "geteilt", "ja"), (r"wireless|bluetooth|\bble\b", "drahtlos", "ja"),
+                (r"low[- ]?profile|\bchoc\b", "profil", "flach"), (r"\bchoc v?2\b", "schalter", "choc-v2"),
+                (r"\bchoc(?! v?2)\b", "schalter", "choc-v1"), (r"trackball", "maus_art", "trackball"),
+                (r"trackpad|touchpad", "maus_art", "trackpad"), (r"trackpoint", "maus_art", "trackpoint"),
+                (r"trackball|trackpad|touchpad|trackpoint", "maus", "ja"), (r"ortholinear|\bortho\b", "versatz", "ortho"),
+                (r"column[- ]?stagger|columnar", "versatz", "spalten"), (r"hand-?wired", "schalter_montage", "geloetet"),
+                (r"hot-?swap", "schalter_montage", "hotswap"), (r"\bsplay", "spreizung", "ja"),
+                (r"\bzmk\b", "firmware", "zmk"), (r"\bqmk\b", "firmware", "qmk"), (r"\bkmk\b", "firmware", "kmk"),
+                (r"\bunibody\b|\bmonoblock\b", "geteilt", "einteilig-geteilt"), (r"tent", "zelt", "ja")]
+
+
+def lies_reddit(s):
+    q = quelle_anlegen(s, "reddit", "Reddit-Posts, die auf Tastatur-Hardware-Repositories verlinken", None)
+    nach_repo = {}
+    for datei in sorted((QUELLEN / "reddit").glob("*.jsonl")):
+        sub = datei.stem
+        for zeile in datei.read_text(encoding="utf-8").splitlines():
+            if not zeile:
+                continue
+            p = json.loads(zeile)
+            text = f"{p.get('url') or ''} {p.get('selftext') or ''}"
+            for besitzer, name in re.findall(r"github\.com/([A-Za-z0-9_.-]+)/([A-Za-z0-9_.-]+)", text):
+                name = name.removesuffix(".git").rstrip(".")
+                repo = f"{besitzer}/{name}"
+                if SW_REPO.search(name) or besitzer.lower() in ("qmk", "zmkfirmware", "vial-kb", "ergogen"):
+                    continue
+                nach_repo.setdefault(repo.lower(), {"repo": repo, "posts": []})["posts"].append({
+                    "url": f"https://www.reddit.com/r/{sub}/comments/{p['id']}/", "titel": p.get("title") or "",
+                    "flair": p.get("link_flair_text"), "zeit": int(p.get("created_utc") or 0),
+                    "punkte": p.get("score")})
+    anzahl = 0
+    for eintrag in sorted(nach_repo.values(), key=lambda e: e["repo"].lower()):
+        posts = sorted(eintrag["posts"], key=lambda p: p["zeit"])
+        # nur Projekt-Vorstellungen: mindestens ein Post ohne Hilfe-/Diskussions-Flair
+        if all((p["flair"] or "").lower() in ("[help]", "[discussion]", "[request]") for p in posts):
+            continue
+        repo = eintrag["repo"]
+        erster = posts[0]
+        jahr = datetime.datetime.fromtimestamp(erster["zeit"], datetime.UTC).year if erster["zeit"] else None
+        ds = s.datensatz("reddit", repo, erster["url"], q["lizenz"],
+                         datetime.datetime.fromtimestamp(erster["zeit"], datetime.UTC).date().isoformat()
+                         if erster["zeit"] else None, repo.split("/")[1], repo.split("/")[0],
+                         f"https://github.com/{repo}", [p["url"] for p in posts[1:6]],
+                         {"posts": len(posts), "titel": [p["titel"] for p in posts[:5]],
+                          "flairs": sorted({p["flair"] for p in posts if p["flair"]})})
+        if jahr:
+            s.angabe(ds, "jahr", jahr, "abgeleitet", "erster Reddit-Post (frühestens)", erster["url"])
+        for p in posts:
+            t = p["titel"].lower()
+            for muster, facette, wert in TITEL_FAKTEN:
+                if re.search(muster, t):
+                    s.angabe(ds, facette, wert, "quelle", f"Titel: {p['titel'][:100]}", p["url"])
+            for n in re.findall(r"\b(\d{2,3})[- ]?keys?\b", t):
+                if 10 <= int(n) <= 130:
+                    s.angabe(ds, "tasten", int(n), "quelle", f"Titel: {p['titel'][:100]}", p["url"])
+        anzahl += 1
     return anzahl, []

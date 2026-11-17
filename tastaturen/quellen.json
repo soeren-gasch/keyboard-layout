@@ -15,7 +15,9 @@
       "name": "QMK Firmware",
       "lizenz_datei": "LICENSE",
       "nutzung": "Fakten aus den Tastatur-Definitionen (Name, Hersteller, URL, Tastenpositionen, Funktionen); keine Code-Übernahme",
-      "nennung": "QMK Firmware contributors, https://github.com/qmk/qmk_firmware (Commit siehe stand)"
+      "nennung": "QMK Firmware contributors, https://github.com/qmk/qmk_firmware (Commit siehe stand)",
+      "beschreibung_en": "QMK Firmware keyboard definitions (keyboard.json and inherited info.json) with key positions per layout macro",
+      "nutzung_en": "Facts from the keyboard definitions (name, maker, URL, key positions, features); no code"
     },
     "vial": {
       "art": "git",
@@ -30,7 +32,9 @@
       "name": "Vial (vial-qmk)",
       "lizenz_datei": "LICENSE",
       "nutzung": "wie QMK, nur Tastaturen ohne QMK-Gegenstück",
-      "nennung": "Vial contributors, https://github.com/vial-kb/vial-qmk"
+      "nennung": "Vial contributors, https://github.com/vial-kb/vial-qmk",
+      "beschreibung_en": "Vial (QMK fork): only keyboards without a QMK counterpart",
+      "nutzung_en": "Same as QMK"
     },
     "zmk": {
       "art": "git",
@@ -45,7 +49,9 @@
       "name": "ZMK Firmware",
       "lizenz_datei": "LICENSE",
       "nutzung": "Fakten aus Board- und Shield-Metadaten und physischen Layouts",
-      "nennung": "The ZMK Contributors, https://github.com/zmkfirmware/zmk"
+      "nennung": "The ZMK Contributors, https://github.com/zmkfirmware/zmk",
+      "beschreibung_en": "ZMK Firmware boards and shields (*.zmk.yml) with physical layouts",
+      "nutzung_en": "Facts from board/shield metadata and physical layouts"
     },
     "splitkbcompare": {
       "art": "git",
@@ -60,7 +66,9 @@
       "name": "splitKbCompare",
       "lizenz_datei": "LICENSE.md",
       "nutzung": "Zeilen der Tabelle keyboards.csv",
-      "nennung": "John Paul Helveston, splitKbCompare, https://github.com/jhelvy/splitKbCompare"
+      "nennung": "John Paul Helveston, splitKbCompare, https://github.com/jhelvy/splitKbCompare",
+      "beschreibung_en": "splitKbCompare: curated table of split keyboards",
+      "nutzung_en": "Rows of keyboards.csv"
     },
     "keymapdb": {
       "art": "git",
@@ -75,29 +83,35 @@
       "name": "KeymapDB",
       "lizenz_datei": "LICENSE",
       "nutzung": "Fakten aus den Keymap-Einträgen (Tastatur, genutzte Tastenzahl, Merkmale) und Links",
-      "nennung": "precondition and contributors, KeymapDB, https://keymapdb.com/"
+      "nennung": "precondition and contributors, KeymapDB, https://keymapdb.com/",
+      "beschreibung_en": "KeymapDB: documented personal keymaps",
+      "nutzung_en": "Facts (keyboard, keys used, keymap features) and links"
     },
     "golem": {
       "art": "web",
       "url": "https://golem.hu/boards/",
       "abgerufen": "2026-11-17",
       "hinweis": "Übersichtsseite plus je Tastatur eine Detailseite (board/<name>-<id>.html), höchstens eine Anfrage je Sekunde. Die Sammlung wächst seit etwa 2021 kaum noch; neuere Tastaturen erscheinen auf kbd.news.",
-      "lizenz": "unbekannt (keine Angabe auf der Seite)",
+      "lizenz": "unknown (no license stated)",
       "name": "golem.hu Split keyboard database",
       "lizenz_url": null,
       "nutzung": "nur Fakten (Tastenzahl, Bauart, Tags, Jahr) und Links; keine Texte, keine Bilder",
-      "nennung": "dovenyi, golem.hu – Split keyboard database, https://golem.hu/boards/"
+      "nennung": "dovenyi, golem.hu – Split keyboard database, https://golem.hu/boards/",
+      "beschreibung_en": "golem.hu split keyboard database (collection until about 2021)",
+      "nutzung_en": "Facts only (key count, form factor, tags, year) and links; no text, no images"
     },
     "kbdnews": {
       "art": "kbdnews",
       "url": "https://kbd.news/",
       "abgerufen": "2026-11-17",
       "hinweis": "Keyboard Builders' Digest (dovenyi). Alle Artikel über ihre Nummer (https://kbd.news/x-<id>.html), höchstens eine Anfrage je Sekunde. Übernommen werden Titel, Datum, Rubrik, Tags, Specs-Fakten und Links, keine Texte oder Bilder.",
-      "lizenz": "unbekannt (keine Angabe; Rechte beim Betreiber)",
+      "lizenz": "unknown (no license stated)",
       "name": "KBD.news – Keyboard Builders' Digest",
       "lizenz_url": null,
       "nutzung": "nur Fakten (Tastenzahl, Bauart, Tags, Specs) und Links; keine Texte, keine Bilder",
-      "nennung": "dovenyi, KBD.news – Keyboard Builders' Digest, https://kbd.news/"
+      "nennung": "dovenyi, KBD.news – Keyboard Builders' Digest, https://kbd.news/",
+      "beschreibung_en": "KBD.news – Keyboard Builders' Digest articles since 2020",
+      "nutzung_en": "Facts only (tags, specs) and links; no text, no images"
     },
     "manuell": {
       "art": "datei",
@@ -105,7 +119,9 @@
       "name": "Eigene Recherche",
       "lizenz": "CC-BY-4.0",
       "nutzung": "eigene Zusammenstellung belegter Fakten; jede Angabe mit Beleg-URL der Herstellerseite",
-      "nennung": "Projekt keyboard-layout und Mitwirkende (Nennung vor Veröffentlichung festlegen)"
+      "nennung": "Projekt keyboard-layout und Mitwirkende (Nennung vor Veröffentlichung festlegen)",
+      "beschreibung_en": "Own research: manufacturer and project pages, every value with a source URL",
+      "nutzung_en": "Own compilation of sourced facts"
     },
     "github": {
       "art": "github",
@@ -120,11 +136,33 @@
         "qmk-keyboard",
         "zmk-keyboard",
         "ortholinear-keyboard",
-        "column-staggered"
+        "column-staggered",
+        "handwired-keyboard",
+        "zmk-shield",
+        "dactyl",
+        "dactyl-manuform",
+        "split-keyboards",
+        "ergonomic-keyboards",
+        "custom-keyboards",
+        "diy-keyboard",
+        "open-source-keyboard",
+        "keyboard-hardware",
+        "low-profile-keyboard",
+        "wireless-keyboard",
+        "ergo-keyboard",
+        "choc-switches",
+        "mechanical-keyboard",
+        "ortholinear",
+        "kicad-keyboard",
+        "keyboard-case",
+        "ergomechkeyboards",
+        "40-percent-keyboard"
       ],
-      "lizenz": "je Repository (SPDX laut GitHub-API); Metadaten der Suche ohne eigene Lizenz",
+      "lizenz": "per repository (SPDX as reported by GitHub)",
       "nutzung": "Repository-Metadaten (Name, Beschreibung, Topics, Lizenz, Homepage, Datum) als Fakten; keine Dateien außer Ergogen-Konfigurationen",
-      "nennung": "GitHub-Repository des jeweiligen Projekts"
+      "nennung": "GitHub-Repository des jeweiligen Projekts",
+      "beschreibung_en": "GitHub repository search by topic (hardware projects only)",
+      "nutzung_en": "Repository metadata (name, topics, license, homepage, date)"
     },
     "yal": {
       "art": "git",
@@ -140,7 +178,72 @@
       "lizenz": "CC-BY-4.0",
       "lizenz_url": "https://github.com/YAL-Tools/ergo-keyboards/blob/1020b3b77455e2d41794bd4aa5948b2b6d91a00d/README.md#license",
       "nutzung": "Einträge aus docs/keyboards.js und docs/rowstag.js (Fakten und Links, keine Bilder, keine Notizen)",
-      "nennung": "YellowAfterlife and contributors, YAL's ergo keyboard list, https://yal-tools.github.io/ergo-keyboards/ (CC BY 4.0)"
+      "nennung": "YellowAfterlife and contributors, YAL's ergo keyboard list, https://yal-tools.github.io/ergo-keyboards/ (CC BY 4.0)",
+      "beschreibung_en": "YAL's ergo keyboard list: column-staggered, ortholinear and row-staggered ergonomic keyboards",
+      "nutzung_en": "Entries of docs/keyboards.js and docs/rowstag.js (facts and links; no images, no notes)"
+    },
+    "ergogen": {
+      "art": "abgeleitet",
+      "url": "https://github.com/ergogen/ergogen",
+      "name": "Ergogen-Konfigurationen (berechnet)",
+      "manifest": "tastaturen/ergogen.json",
+      "werkzeuge": {
+        "ergogen4": "ergogen@4.2.1 (npm)",
+        "ergogen3": "ergogen@3.1.2 (npm)",
+        "node": "v26.13.1 über nvm v0.40.8"
+      },
+      "lizenz": "per repository (SPDX as reported by GitHub, or license file)",
+      "nutzung": "aus den Konfigurationen berechnete Tastenpositionen; die Konfigurationsdateien selbst werden nicht veröffentlicht",
+      "nennung": "das jeweilige Projekt-Repository; berechnet mit Ergogen (ergogen/ergogen, MIT)",
+      "beschreibung_en": "Ergogen configurations from project repositories, evaluated with Ergogen 4.2.1 or 3.1.2",
+      "nutzung_en": "Key positions computed from the configurations; the configuration files themselves are not published"
+    },
+    "via": {
+      "art": "git",
+      "url": "https://github.com/the-via/keyboards",
+      "commit": "9e3e9f4aa9f50f9439fdebc747560f51aaf109a0",
+      "sparse": [
+        "/v3/**",
+        "/LICENSE",
+        "/README.md"
+      ],
+      "name": "VIA keyboard definitions",
+      "lizenz": "GPL-3.0-only",
+      "lizenz_datei": "LICENSE",
+      "nutzung": "Fakten aus den Definitionen (Name, Layout, Matrix)",
+      "nennung": "The VIA Project contributors, https://github.com/the-via/keyboards",
+      "beschreibung_en": "VIA keyboard definitions (v3) with layouts in KLE format",
+      "nutzung_en": "Facts from the definitions (name, layout, matrix)"
+    },
+    "deskthority": {
+      "art": "mediawiki",
+      "url": "https://deskthority.net/wiki/",
+      "api": "https://deskthority.net/wiki/api.php",
+      "vorlagen": [
+        "Template:Infobox dkeyboard",
+        "Template:Infobox dcustkeyboard"
+      ],
+      "name": "Deskthority wiki",
+      "lizenz": "unknown (no license stated)",
+      "nutzung": "nur Fakten aus der Infobox (Hersteller, Schalter, Layouts/Tastenzahlen, Schnittstelle, Jahr) und Links; keine Texte, keine Bilder",
+      "nennung": "Deskthority wiki contributors, https://deskthority.net/wiki/",
+      "beschreibung_en": "Deskthority wiki keyboard pages (infobox data), mostly classic and commercial keyboards",
+      "nutzung_en": "Facts from the infobox only (maker, switch, layouts/key counts, interface, year) and links; no text, no images"
+    },
+    "reddit": {
+      "art": "arcticshift",
+      "url": "https://www.reddit.com/r/ErgoMechKeyboards/",
+      "api": "https://arctic-shift.photon-reddit.com/api/posts/search",
+      "subreddits": [
+        "ErgoMechKeyboards"
+      ],
+      "felder": "id,title,url,created_utc,link_flair_text,score,selftext",
+      "name": "Reddit r/ErgoMechKeyboards (über das Archiv Arctic Shift)",
+      "lizenz": "unknown (Reddit user content; no license stated)",
+      "nutzung": "Fundquelle: Posts, die auf Hardware-Repositories verlinken; übernommen werden nur Fakten aus Titel bzw. Repository und der Link zum Post; keine Texte",
+      "nennung": "Reddit r/ErgoMechKeyboards, abgerufen über Arctic Shift (https://arctic-shift.photon-reddit.com/)",
+      "beschreibung_en": "Reddit r/ErgoMechKeyboards posts (via the Arctic Shift archive) that link to keyboard hardware repositories",
+      "nutzung_en": "Discovery only: facts from post titles and linked repositories plus the post link; no post text"
     }
   }
 }

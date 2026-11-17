@@ -47,7 +47,7 @@ def git(*args, cwd=None):
 
 
 def ist_ergogen(text):
-    return bool(re.search(r"(?m)^points\s*:", text) and re.search(r"(?m)^\s+zones\s*:", text))
+    return bool(re.search(r"(?m)^points\s*:", text) and re.search(r"(?m)^\s+zones\s*[.:]", text))
 
 
 def pruefe(repo):

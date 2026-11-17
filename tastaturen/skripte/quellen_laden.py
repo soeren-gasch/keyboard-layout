@@ -99,12 +99,24 @@ def lade_github(name, q):
     1000 Treffer je Topic). Ergebnis je Topic als JSON."""
     ordner = ZIEL / name
     ordner.mkdir(parents=True, exist_ok=True)
+    import urllib.error
     for thema in q["topics"]:
+        if (ordner / f"{thema}.json").exists() and "--neu" not in sys.argv:
+            continue
         treffer, seite = [], 1
         while True:
             url = (f"https://api.github.com/search/repositories?q=topic:{thema}&per_page=100&page={seite}"
                    "&sort=updated")
-            daten = json.loads(hole(url))
+            for versuch in range(5):
+                try:
+                    daten = json.loads(hole(url))
+                    break
+                except urllib.error.HTTPError as e:
+                    if e.code not in (403, 429):
+                        raise
+                    time.sleep(65)     # Rate-Limit der Suche ohne Anmeldung
+            else:
+                raise SystemExit(f"{thema}: Rate-Limit hält an")
             treffer += daten.get("items", [])
             time.sleep(7)
             if len(daten.get("items", [])) < 100 or seite >= 10:
@@ -116,13 +128,90 @@ def lade_github(name, q):
         print(f"{name}: topic {thema}: {len(treffer)} Repositories")
 
 
+def lade_mediawiki(name, q):
+    """Alle Seiten, die eine der Vorlagen einbinden, mit Wikitext (je Anfrage 50 Seiten, eine Anfrage je Sekunde)."""
+    import urllib.parse
+    ordner = ZIEL / name
+    ordner.mkdir(parents=True, exist_ok=True)
+    titel = []
+    for vorlage in q["vorlagen"]:
+        weiter = {}
+        while True:
+            parameter = {"action": "query", "list": "embeddedin", "eititle": vorlage, "eilimit": "500",
+                         "einamespace": "0", "format": "json", **weiter}
+            d = json.loads(hole(q["api"] + "?" + urllib.parse.urlencode(parameter)))
+            titel += [e["title"] for e in d["query"]["embeddedin"]]
+            time.sleep(1)
+            if "continue" not in d:
+                break
+            weiter = d["continue"]
+    seiten = {}
+    for i in range(0, len(titel), 50):
+        parameter = {"action": "query", "prop": "revisions", "rvprop": "content|ids|timestamp", "rvslots": "main",
+                     "titles": "|".join(titel[i:i + 50]), "format": "json"}
+        d = json.loads(hole(q["api"] + "?" + urllib.parse.urlencode(parameter)))
+        for p in d["query"]["pages"].values():
+            rev = (p.get("revisions") or [{}])[0]
+            seiten[p["title"]] = {"pageid": p.get("pageid"), "revid": rev.get("revid"),
+                                  "zeitstempel": rev.get("timestamp"),
+                                  "text": ((rev.get("slots") or {}).get("main") or {}).get("*", "")}
+        time.sleep(1)
+    (ordner / "seiten.json").write_text(json.dumps({"abgerufen": time.strftime("%Y-%m-%d"), "seiten": seiten},
+                                                  ensure_ascii=False), encoding="utf-8")
+    print(f"{name}: {len(seiten)} Seiten")
+
+
+def lade_arcticshift(name, q):
+    """Alle Posts eines Subreddits aus dem Reddit-Archiv Arctic Shift, rückwärts nach Zeit, 100 je Anfrage, eine Anfrage
+    je Sekunde. Ergebnis als JSON Lines; vorhandene Posts bleiben, neuere werden ergänzt."""
+    import urllib.parse
+    ordner = ZIEL / name
+    ordner.mkdir(parents=True, exist_ok=True)
+    for sub in q["subreddits"]:
+        datei = ordner / f"{sub}.jsonl"
+        bekannt, vor = set(), None
+        if datei.exists():
+            alt = [json.loads(z) for z in datei.read_text(encoding="utf-8").splitlines() if z]
+            bekannt = {p["id"] for p in alt}
+            if alt and "--neueste" not in sys.argv:
+                vor = min(int(p["created_utc"]) for p in alt)   # dort weitermachen, wo der letzte Abruf endete
+        neu = 0
+        with open(datei, "a", encoding="utf-8") as aus:
+            while True:
+                parameter = {"subreddit": sub, "limit": "100", "sort": "desc", "fields": q["felder"]}
+                if vor:
+                    parameter["before"] = str(vor)
+                import urllib.error
+                for versuch in range(6):
+                    try:
+                        d = json.loads(hole(q["api"] + "?" + urllib.parse.urlencode(parameter)))
+                        break
+                    except urllib.error.HTTPError as e:
+                        if e.code not in (422, 429, 500, 502, 503, 504):
+                            raise
+                        time.sleep(10 * (versuch + 1))   # Zeitüberschreitung beim Archiv: langsamer werden
+                else:
+                    raise SystemExit(f"{sub}: Archiv antwortet nicht, Abbruch bei {vor}")
+                posts = d.get("data") or []
+                if not posts:
+                    break
+                for p in posts:
+                    if p["id"] not in bekannt:
+                        aus.write(json.dumps(p, ensure_ascii=False) + "\n")
+                        bekannt.add(p["id"])
+                        neu += 1
+                vor = min(int(p["created_utc"]) for p in posts)
+                time.sleep(2)
+        print(f"{name}: r/{sub}: {len(bekannt)} Posts, {neu} neu")
+
+
 def main():
     quellen = json.loads((REPO / "tastaturen" / "quellen.json").read_text(encoding="utf-8"))["quellen"]
-    auswahl = sys.argv[1:] or list(quellen)
+    auswahl = [a for a in sys.argv[1:] if not a.startswith("--")] or list(quellen)
     ZIEL.mkdir(parents=True, exist_ok=True)
     for name in auswahl:
         q = quellen[name]
-        {"git": lade_git, "web": lade_golem, "kbdnews": lade_kbdnews, "github": lade_github,
+        {"git": lade_git, "web": lade_golem, "kbdnews": lade_kbdnews, "github": lade_github, "mediawiki": lade_mediawiki, "arcticshift": lade_arcticshift,
          "datei": lambda *a: None}[q["art"]](name, q)
 
 

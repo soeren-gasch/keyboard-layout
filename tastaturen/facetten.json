@@ -1,102 +1,716 @@
 {
-  "beschreibung": "Vokabular der Filter (Facetten) für die Tastatur-Datenbank und die geplante Online-Seite. Jede Facette hat eine feste ID, Bezeichnungen auf Deutsch und Englisch, einen Typ und bei Auswahl-Facetten feste Werte. Fehlt eine Angabe, gilt sie als unbekannt; 'nein' wird nur gesetzt, wenn eine Quelle es ausdrücklich sagt oder es sicher abgeleitet ist.",
-  "lizenz": "CC BY 4.0",
-  "typen": {
-    "auswahl": "genau ein Wert",
-    "mehrfach": "beliebig viele Werte",
-    "ganzzahl": "Zahl; bei Varianten als Bereich min bis max",
-    "jahr": "Jahreszahl",
-    "text": "freier Text, nicht filterbar"
+ "beschreibung": "Vokabular der Filter (Facetten) für die Tastatur-Datenbank und die geplante Online-Seite. Jede Facette hat eine feste ID, Bezeichnungen auf Deutsch und Englisch, einen Typ und bei Auswahl-Facetten feste Werte. Fehlt eine Angabe, gilt sie als unbekannt; 'nein' wird nur gesetzt, wenn eine Quelle es ausdrücklich sagt oder es sicher abgeleitet ist.",
+ "lizenz": "CC BY 4.0",
+ "typen": {
+  "auswahl": "genau ein Wert",
+  "mehrfach": "beliebig viele Werte",
+  "ganzzahl": "Zahl; bei Varianten als Bereich min bis max",
+  "jahr": "Jahreszahl",
+  "text": "freier Text, nicht filterbar"
+ },
+ "facetten": [
+  {
+   "id": "geteilt",
+   "de": "Split-Tastatur",
+   "en": "Split keyboard",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "ja",
+     "de": "ja, zwei getrennte Hälften",
+     "en": "yes, two separate halves",
+     "key": "yes"
+    },
+    {
+     "id": "zusammensteckbar",
+     "de": "zusammensteckbar (Hälften greifen ineinander und bilden einen Block)",
+     "en": "snap-together (halves interlock into one body)",
+     "key": "snap-together"
+    },
+    {
+     "id": "einteilig-geteilt",
+     "de": "einteilig mit geteiltem Tastenfeld",
+     "en": "unibody with split key area",
+     "key": "unibody-split"
+    },
+    {
+     "id": "nein",
+     "de": "nein",
+     "en": "no",
+     "key": "no"
+    }
+   ],
+   "key": "split"
   },
-  "facetten": [
-    {"id": "geteilt", "de": "Split-Tastatur", "en": "Split keyboard", "typ": "auswahl", "werte": [
-      {"id": "ja", "de": "ja, zwei getrennte Hälften", "en": "yes, two separate halves"},
-      {"id": "abbrechbar", "de": "abbrechbar (Snap-bar)", "en": "snappable"},
-      {"id": "einteilig-geteilt", "de": "einteilig mit geteiltem Tastenfeld", "en": "one piece, split key area"},
-      {"id": "nein", "de": "nein", "en": "no"}]},
-    {"id": "tasten", "de": "Anzahl physischer Tasten", "en": "Number of physical keys", "typ": "ganzzahl"},
-    {"id": "tasten_je_haelfte", "de": "Tasten je Hälfte", "en": "Keys per half", "typ": "ganzzahl"},
-    {"id": "raster", "de": "Raster je Hand (Reihen × Spalten)", "en": "Grid per hand (rows × columns)", "typ": "auswahl", "werte": "offen, z. B. 3x5, 3x6, 4x6"},
-    {"id": "daumentasten", "de": "Daumentasten je Hand", "en": "Thumb keys per hand", "typ": "ganzzahl"},
-    {"id": "versatz", "de": "Tastenanordnung", "en": "Key arrangement", "typ": "mehrfach", "werte": [
-      {"id": "spalten", "de": "Spaltenversatz (columnar)", "en": "column stagger"},
-      {"id": "ortho", "de": "ortholinear", "en": "ortholinear"},
-      {"id": "reihen", "de": "Reihenversatz (klassisch)", "en": "row stagger"},
-      {"id": "mulde", "de": "Mulde (keywell)", "en": "keywell"},
-      {"id": "radial", "de": "radial / fächerförmig", "en": "radial / fanned"},
-      {"id": "alice", "de": "Alice-Form", "en": "Alice"},
-      {"id": "sonstige", "de": "sonstige", "en": "other"}]},
-    {"id": "spreizung", "de": "Gespreizte Spalten (Splay)", "en": "Splayed columns", "typ": "auswahl", "werte": [
-      {"id": "ja", "de": "ja", "en": "yes"}, {"id": "nein", "de": "nein", "en": "no"}]},
-    {"id": "maus", "de": "Maus integriert", "en": "Integrated pointing device", "typ": "auswahl", "werte": [
-      {"id": "ja", "de": "ja", "en": "yes"}, {"id": "optional", "de": "optional", "en": "optional"}, {"id": "nein", "de": "nein", "en": "no"}]},
-    {"id": "maus_art", "de": "Art der Maus", "en": "Pointing device type", "typ": "mehrfach", "werte": [
-      {"id": "trackball", "de": "Trackball", "en": "trackball"},
-      {"id": "trackpad", "de": "Trackpad", "en": "trackpad"},
-      {"id": "trackpoint", "de": "Trackpoint", "en": "trackpoint"},
-      {"id": "joystick", "de": "Joystick", "en": "joystick"}]},
-    {"id": "schalter", "de": "Tasten-Interface (Schalter)", "en": "Switch interface", "typ": "mehrfach", "werte": [
-      {"id": "mx", "de": "Cherry MX und kompatible", "en": "Cherry MX compatible"},
-      {"id": "choc-v1", "de": "Kailh Choc v1", "en": "Kailh Choc v1"},
-      {"id": "choc-v2", "de": "Kailh Choc v2", "en": "Kailh Choc v2"},
-      {"id": "gateron-lp", "de": "Gateron Low Profile", "en": "Gateron low profile"},
-      {"id": "alps", "de": "Alps und kompatible", "en": "Alps compatible"},
-      {"id": "topre", "de": "Topre / EC", "en": "Topre / EC"},
-      {"id": "magnetisch", "de": "magnetisch / Hall-Effekt", "en": "magnetic / Hall effect"},
-      {"id": "optisch", "de": "optisch", "en": "optical"},
-      {"id": "schere", "de": "Scherenmechanik", "en": "scissor"},
-      {"id": "membran", "de": "Membran / Rubberdome", "en": "membrane / rubber dome"},
-      {"id": "knickfeder", "de": "Knickfeder (Buckling Spring)", "en": "buckling spring"},
-      {"id": "proprietaer", "de": "proprietär", "en": "proprietary"}]},
-    {"id": "schalter_montage", "de": "Schalter-Montage", "en": "Switch mounting", "typ": "mehrfach", "werte": [
-      {"id": "hotswap", "de": "Hotswap (steckbar)", "en": "hot-swap"},
-      {"id": "geloetet", "de": "eingelötet", "en": "soldered"},
-      {"id": "fest", "de": "fest verbaut, nicht tauschbar", "en": "fixed"}]},
-    {"id": "profil", "de": "Bauhöhe", "en": "Profile", "typ": "auswahl", "werte": [
-      {"id": "flach", "de": "flach (Low Profile)", "en": "low profile"}, {"id": "normal", "de": "normal", "en": "standard"}]},
-    {"id": "drahtlos", "de": "Wireless", "en": "Wireless", "typ": "auswahl", "werte": [
-      {"id": "ja", "de": "ja", "en": "yes"}, {"id": "optional", "de": "optional", "en": "optional"}, {"id": "nein", "de": "nein", "en": "no"}]},
-    {"id": "drahtlos_technik", "de": "Wireless-Technik", "en": "Wireless technology", "typ": "mehrfach", "werte": [
-      {"id": "bluetooth", "de": "Bluetooth", "en": "Bluetooth"},
-      {"id": "funk-2-4", "de": "Funk 2,4 GHz mit Empfänger", "en": "2.4 GHz with receiver"},
-      {"id": "wifi", "de": "WLAN", "en": "Wi-Fi"},
-      {"id": "funk-proprietaer", "de": "sonstiger Funk", "en": "other radio"}]},
-    {"id": "energie", "de": "Energieversorgung", "en": "Power", "typ": "mehrfach", "werte": [
-      {"id": "kabel", "de": "kabelgebunden (USB)", "en": "wired (USB)"},
-      {"id": "akku-fest", "de": "Akku fest verbaut", "en": "built-in battery"},
-      {"id": "akku-wechselbar", "de": "Akku wechselbar", "en": "replaceable battery"},
-      {"id": "aa", "de": "AA-Batterien", "en": "AA batteries"},
-      {"id": "aaa", "de": "AAA-Batterien", "en": "AAA batteries"},
-      {"id": "knopfzelle", "de": "Knopfzelle", "en": "coin cell"},
-      {"id": "solar", "de": "Solar", "en": "solar"}]},
-    {"id": "firmware", "de": "Firmware", "en": "Firmware", "typ": "mehrfach", "werte": [
-      {"id": "qmk", "de": "QMK", "en": "QMK"}, {"id": "zmk", "de": "ZMK", "en": "ZMK"},
-      {"id": "kmk", "de": "KMK", "en": "KMK"}, {"id": "rmk", "de": "RMK", "en": "RMK"},
-      {"id": "vial", "de": "Vial", "en": "Vial"}, {"id": "via", "de": "VIA", "en": "VIA"},
-      {"id": "kaleidoscope", "de": "Kaleidoscope", "en": "Kaleidoscope"},
-      {"id": "uhk", "de": "UHK-Firmware", "en": "UHK firmware"},
-      {"id": "proprietaer", "de": "proprietär", "en": "proprietary"}]},
-    {"id": "open_source_hardware", "de": "Offene Hardware", "en": "Open-source hardware", "typ": "auswahl", "werte": [
-      {"id": "ja", "de": "ja", "en": "yes"}, {"id": "nein", "de": "nein", "en": "no"}]},
-    {"id": "hardware_lizenz", "de": "Hardware-Lizenz", "en": "Hardware license", "typ": "auswahl", "werte": "offen, SPDX-Kennung wo möglich"},
-    {"id": "verfuegbarkeit", "de": "Bezug", "en": "Availability", "typ": "mehrfach", "werte": [
-      {"id": "selbstbau", "de": "Selbstbau (Dateien frei)", "en": "DIY (open files)"},
-      {"id": "kit", "de": "Bausatz", "en": "kit"},
-      {"id": "fertig", "de": "fertig aufgebaut", "en": "prebuilt"},
-      {"id": "gruppenbestellung", "de": "Gruppenbestellung", "en": "group buy"},
-      {"id": "prototyp", "de": "Prototyp / Einzelstück", "en": "prototype / one-off"},
-      {"id": "eingestellt", "de": "eingestellt", "en": "discontinued"}]},
-    {"id": "zahlenreihe", "de": "Zahlenreihe", "en": "Number row", "typ": "auswahl", "werte": [
-      {"id": "ja", "de": "ja", "en": "yes"}, {"id": "nein", "de": "nein", "en": "no"}]},
-    {"id": "drehgeber", "de": "Drehregler (Encoder)", "en": "Rotary encoder", "typ": "auswahl", "werte": [
-      {"id": "ja", "de": "ja", "en": "yes"}, {"id": "optional", "de": "optional", "en": "optional"}, {"id": "nein", "de": "nein", "en": "no"}]},
-    {"id": "display", "de": "Display", "en": "Display", "typ": "auswahl", "werte": [
-      {"id": "ja", "de": "ja", "en": "yes"}, {"id": "optional", "de": "optional", "en": "optional"}, {"id": "nein", "de": "nein", "en": "no"}]},
-    {"id": "zelt", "de": "Aufstellbar (Tenting)", "en": "Tenting", "typ": "auswahl", "werte": [
-      {"id": "ja", "de": "ja", "en": "yes"}, {"id": "optional", "de": "optional", "en": "optional"}, {"id": "nein", "de": "nein", "en": "no"}]},
-    {"id": "jahr", "de": "Erscheinungsjahr", "en": "Year", "typ": "jahr"},
-    {"id": "preis", "de": "Preis (Basismodell, laut Quelle)", "en": "Price (base model, per source)", "typ": "text"},
-    {"id": "hersteller", "de": "Hersteller / Entwickler", "en": "Maker / designer", "typ": "auswahl", "werte": "offen"},
-    {"id": "tasten_genutzt", "de": "In Keymaps genutzte Tasten (KeymapDB)", "en": "Keys used in keymaps (KeymapDB)", "typ": "ganzzahl"}
-  ]
+  {
+   "id": "tasten",
+   "de": "Anzahl physischer Tasten",
+   "en": "Number of physical keys",
+   "typ": "ganzzahl",
+   "key": "keys"
+  },
+  {
+   "id": "tasten_je_haelfte",
+   "de": "Tasten je Hälfte",
+   "en": "Keys per half",
+   "typ": "ganzzahl",
+   "key": "keys_per_half"
+  },
+  {
+   "id": "raster",
+   "de": "Raster je Hand (Reihen × Spalten)",
+   "en": "Grid per hand (rows × columns)",
+   "typ": "auswahl",
+   "werte": "offen, z. B. 3x5, 3x6, 4x6",
+   "key": "grid"
+  },
+  {
+   "id": "daumentasten",
+   "de": "Daumentasten je Hand",
+   "en": "Thumb keys per hand",
+   "typ": "ganzzahl",
+   "key": "thumb_keys"
+  },
+  {
+   "id": "versatz",
+   "de": "Tastenanordnung",
+   "en": "Key arrangement",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "spalten",
+     "de": "Spaltenversatz (columnar)",
+     "en": "column stagger",
+     "key": "column"
+    },
+    {
+     "id": "ortho",
+     "de": "ortholinear",
+     "en": "ortholinear",
+     "key": "ortholinear"
+    },
+    {
+     "id": "reihen",
+     "de": "Reihenversatz (klassisch)",
+     "en": "row stagger",
+     "key": "row"
+    },
+    {
+     "id": "mulde",
+     "de": "Mulde (keywell)",
+     "en": "keywell",
+     "key": "keywell"
+    },
+    {
+     "id": "radial",
+     "de": "radial / fächerförmig",
+     "en": "radial / fanned",
+     "key": "radial"
+    },
+    {
+     "id": "alice",
+     "de": "Alice-Form",
+     "en": "Alice",
+     "key": "alice"
+    },
+    {
+     "id": "sonstige",
+     "de": "sonstige",
+     "en": "other",
+     "key": "other"
+    }
+   ],
+   "key": "stagger"
+  },
+  {
+   "id": "spreizung",
+   "de": "Gespreizte Spalten (Splay)",
+   "en": "Splayed columns",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "ja",
+     "de": "ja",
+     "en": "yes",
+     "key": "yes"
+    },
+    {
+     "id": "nein",
+     "de": "nein",
+     "en": "no",
+     "key": "no"
+    }
+   ],
+   "key": "splay"
+  },
+  {
+   "id": "maus",
+   "de": "Maus integriert",
+   "en": "Integrated pointing device",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "ja",
+     "de": "ja",
+     "en": "yes",
+     "key": "yes"
+    },
+    {
+     "id": "optional",
+     "de": "optional",
+     "en": "optional",
+     "key": "optional"
+    },
+    {
+     "id": "nein",
+     "de": "nein",
+     "en": "no",
+     "key": "no"
+    }
+   ],
+   "key": "pointing_device"
+  },
+  {
+   "id": "maus_art",
+   "de": "Art der Maus",
+   "en": "Pointing device type",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "trackball",
+     "de": "Trackball",
+     "en": "trackball",
+     "key": "trackball"
+    },
+    {
+     "id": "trackpad",
+     "de": "Trackpad",
+     "en": "trackpad",
+     "key": "trackpad"
+    },
+    {
+     "id": "trackpoint",
+     "de": "Trackpoint",
+     "en": "trackpoint",
+     "key": "trackpoint"
+    },
+    {
+     "id": "joystick",
+     "de": "Joystick",
+     "en": "joystick",
+     "key": "joystick"
+    }
+   ],
+   "key": "pointing_device_type"
+  },
+  {
+   "id": "schalter",
+   "de": "Tasten-Interface (Schalter)",
+   "en": "Switch interface",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "mx",
+     "de": "Cherry MX und kompatible",
+     "en": "Cherry MX compatible",
+     "key": "mx"
+    },
+    {
+     "id": "choc-v1",
+     "de": "Kailh Choc v1",
+     "en": "Kailh Choc v1",
+     "key": "choc-v1"
+    },
+    {
+     "id": "choc-v2",
+     "de": "Kailh Choc v2",
+     "en": "Kailh Choc v2",
+     "key": "choc-v2"
+    },
+    {
+     "id": "gateron-lp",
+     "de": "Gateron Low Profile",
+     "en": "Gateron low profile",
+     "key": "gateron-lp"
+    },
+    {
+     "id": "alps",
+     "de": "Alps und kompatible",
+     "en": "Alps compatible",
+     "key": "alps"
+    },
+    {
+     "id": "topre",
+     "de": "Topre / EC",
+     "en": "Topre / EC",
+     "key": "topre"
+    },
+    {
+     "id": "magnetisch",
+     "de": "magnetisch / Hall-Effekt",
+     "en": "magnetic / Hall effect",
+     "key": "hall-effect"
+    },
+    {
+     "id": "optisch",
+     "de": "optisch",
+     "en": "optical",
+     "key": "optical"
+    },
+    {
+     "id": "schere",
+     "de": "Scherenmechanik",
+     "en": "scissor",
+     "key": "scissor"
+    },
+    {
+     "id": "membran",
+     "de": "Membran / Rubberdome",
+     "en": "membrane / rubber dome",
+     "key": "membrane"
+    },
+    {
+     "id": "knickfeder",
+     "de": "Knickfeder (Buckling Spring)",
+     "en": "buckling spring",
+     "key": "buckling-spring"
+    },
+    {
+     "id": "proprietaer",
+     "de": "proprietär",
+     "en": "proprietary",
+     "key": "proprietary"
+    }
+   ],
+   "key": "switch_interface"
+  },
+  {
+   "id": "schalter_montage",
+   "de": "Schalter-Montage",
+   "en": "Switch mounting",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "hotswap",
+     "de": "Hotswap (steckbar)",
+     "en": "hot-swap",
+     "key": "hot-swap"
+    },
+    {
+     "id": "geloetet",
+     "de": "eingelötet",
+     "en": "soldered",
+     "key": "soldered"
+    },
+    {
+     "id": "fest",
+     "de": "fest verbaut, nicht tauschbar",
+     "en": "fixed",
+     "key": "fixed"
+    }
+   ],
+   "key": "switch_mounting"
+  },
+  {
+   "id": "profil",
+   "de": "Bauhöhe",
+   "en": "Profile",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "flach",
+     "de": "flach (Low Profile)",
+     "en": "low profile",
+     "key": "low-profile"
+    },
+    {
+     "id": "normal",
+     "de": "normal",
+     "en": "standard",
+     "key": "standard"
+    }
+   ],
+   "key": "profile"
+  },
+  {
+   "id": "drahtlos",
+   "de": "Wireless",
+   "en": "Wireless",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "ja",
+     "de": "ja",
+     "en": "yes",
+     "key": "yes"
+    },
+    {
+     "id": "optional",
+     "de": "optional",
+     "en": "optional",
+     "key": "optional"
+    },
+    {
+     "id": "nein",
+     "de": "nein",
+     "en": "no",
+     "key": "no"
+    }
+   ],
+   "key": "wireless"
+  },
+  {
+   "id": "drahtlos_technik",
+   "de": "Wireless-Technik",
+   "en": "Wireless technology",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "bluetooth",
+     "de": "Bluetooth",
+     "en": "Bluetooth",
+     "key": "bluetooth"
+    },
+    {
+     "id": "funk-2-4",
+     "de": "Funk 2,4 GHz mit Empfänger",
+     "en": "2.4 GHz with receiver",
+     "key": "2.4ghz"
+    },
+    {
+     "id": "wifi",
+     "de": "WLAN",
+     "en": "Wi-Fi",
+     "key": "wifi"
+    },
+    {
+     "id": "funk-proprietaer",
+     "de": "sonstiger Funk",
+     "en": "other radio",
+     "key": "other-radio"
+    }
+   ],
+   "key": "wireless_technology"
+  },
+  {
+   "id": "energie",
+   "de": "Energieversorgung",
+   "en": "Power",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "kabel",
+     "de": "kabelgebunden (USB)",
+     "en": "wired (USB)",
+     "key": "wired"
+    },
+    {
+     "id": "akku-fest",
+     "de": "Akku fest verbaut",
+     "en": "built-in battery",
+     "key": "built-in-battery"
+    },
+    {
+     "id": "akku-wechselbar",
+     "de": "Akku wechselbar",
+     "en": "replaceable battery",
+     "key": "replaceable-battery"
+    },
+    {
+     "id": "aa",
+     "de": "AA-Batterien",
+     "en": "AA batteries",
+     "key": "aa"
+    },
+    {
+     "id": "aaa",
+     "de": "AAA-Batterien",
+     "en": "AAA batteries",
+     "key": "aaa"
+    },
+    {
+     "id": "knopfzelle",
+     "de": "Knopfzelle",
+     "en": "coin cell",
+     "key": "coin-cell"
+    },
+    {
+     "id": "solar",
+     "de": "Solar",
+     "en": "solar",
+     "key": "solar"
+    }
+   ],
+   "key": "power"
+  },
+  {
+   "id": "firmware",
+   "de": "Firmware",
+   "en": "Firmware",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "qmk",
+     "de": "QMK",
+     "en": "QMK",
+     "key": "qmk"
+    },
+    {
+     "id": "zmk",
+     "de": "ZMK",
+     "en": "ZMK",
+     "key": "zmk"
+    },
+    {
+     "id": "kmk",
+     "de": "KMK",
+     "en": "KMK",
+     "key": "kmk"
+    },
+    {
+     "id": "rmk",
+     "de": "RMK",
+     "en": "RMK",
+     "key": "rmk"
+    },
+    {
+     "id": "vial",
+     "de": "Vial",
+     "en": "Vial",
+     "key": "vial"
+    },
+    {
+     "id": "via",
+     "de": "VIA",
+     "en": "VIA",
+     "key": "via"
+    },
+    {
+     "id": "kaleidoscope",
+     "de": "Kaleidoscope",
+     "en": "Kaleidoscope",
+     "key": "kaleidoscope"
+    },
+    {
+     "id": "uhk",
+     "de": "UHK-Firmware",
+     "en": "UHK firmware",
+     "key": "uhk"
+    },
+    {
+     "id": "proprietaer",
+     "de": "proprietär",
+     "en": "proprietary",
+     "key": "proprietary"
+    }
+   ],
+   "key": "firmware"
+  },
+  {
+   "id": "open_source_hardware",
+   "de": "Offene Hardware",
+   "en": "Open-source hardware",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "ja",
+     "de": "ja",
+     "en": "yes",
+     "key": "yes"
+    },
+    {
+     "id": "nein",
+     "de": "nein",
+     "en": "no",
+     "key": "no"
+    }
+   ],
+   "key": "open_source_hardware"
+  },
+  {
+   "id": "hardware_lizenz",
+   "de": "Hardware-Lizenz",
+   "en": "Hardware license",
+   "typ": "auswahl",
+   "werte": "offen, SPDX-Kennung wo möglich",
+   "key": "hardware_license"
+  },
+  {
+   "id": "verfuegbarkeit",
+   "de": "Bezug",
+   "en": "Availability",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "selbstbau",
+     "de": "Selbstbau (Dateien frei)",
+     "en": "DIY (open files)",
+     "key": "diy"
+    },
+    {
+     "id": "kit",
+     "de": "Bausatz",
+     "en": "kit",
+     "key": "kit"
+    },
+    {
+     "id": "fertig",
+     "de": "fertig aufgebaut",
+     "en": "prebuilt",
+     "key": "prebuilt"
+    },
+    {
+     "id": "gruppenbestellung",
+     "de": "Gruppenbestellung",
+     "en": "group buy",
+     "key": "group-buy"
+    },
+    {
+     "id": "prototyp",
+     "de": "Prototyp / Einzelstück",
+     "en": "prototype / one-off",
+     "key": "prototype"
+    },
+    {
+     "id": "eingestellt",
+     "de": "eingestellt",
+     "en": "discontinued",
+     "key": "discontinued"
+    }
+   ],
+   "key": "availability"
+  },
+  {
+   "id": "zahlenreihe",
+   "de": "Zahlenreihe",
+   "en": "Number row",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "ja",
+     "de": "ja",
+     "en": "yes",
+     "key": "yes"
+    },
+    {
+     "id": "nein",
+     "de": "nein",
+     "en": "no",
+     "key": "no"
+    }
+   ],
+   "key": "number_row"
+  },
+  {
+   "id": "drehgeber",
+   "de": "Drehregler (Encoder)",
+   "en": "Rotary encoder",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "ja",
+     "de": "ja",
+     "en": "yes",
+     "key": "yes"
+    },
+    {
+     "id": "optional",
+     "de": "optional",
+     "en": "optional",
+     "key": "optional"
+    },
+    {
+     "id": "nein",
+     "de": "nein",
+     "en": "no",
+     "key": "no"
+    }
+   ],
+   "key": "rotary_encoder"
+  },
+  {
+   "id": "display",
+   "de": "Display",
+   "en": "Display",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "ja",
+     "de": "ja",
+     "en": "yes",
+     "key": "yes"
+    },
+    {
+     "id": "optional",
+     "de": "optional",
+     "en": "optional",
+     "key": "optional"
+    },
+    {
+     "id": "nein",
+     "de": "nein",
+     "en": "no",
+     "key": "no"
+    }
+   ],
+   "key": "display"
+  },
+  {
+   "id": "zelt",
+   "de": "Aufstellbar (Tenting)",
+   "en": "Tenting",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "ja",
+     "de": "ja",
+     "en": "yes",
+     "key": "yes"
+    },
+    {
+     "id": "optional",
+     "de": "optional",
+     "en": "optional",
+     "key": "optional"
+    },
+    {
+     "id": "nein",
+     "de": "nein",
+     "en": "no",
+     "key": "no"
+    }
+   ],
+   "key": "tenting"
+  },
+  {
+   "id": "jahr",
+   "de": "Erscheinungsjahr",
+   "en": "Year",
+   "typ": "jahr",
+   "key": "year"
+  },
+  {
+   "id": "preis",
+   "de": "Preis (Basismodell, laut Quelle)",
+   "en": "Price (base model, per source)",
+   "typ": "text",
+   "key": "price"
+  },
+  {
+   "id": "hersteller",
+   "de": "Hersteller / Entwickler",
+   "en": "Maker / designer",
+   "typ": "auswahl",
+   "werte": "offen",
+   "key": "maker"
+  },
+  {
+   "id": "tasten_genutzt",
+   "de": "In Keymaps genutzte Tasten (KeymapDB)",
+   "en": "Keys used in keymaps (KeymapDB)",
+   "typ": "ganzzahl",
+   "key": "keys_used_in_keymaps"
+  }
+ ],
+ "hinweis_ids": "'id' sind die internen (deutschen) IDs der Datenbank und der manuellen Recherche; 'key' sind die englischen Schlüssel des Exports für die Online-Seite."
 }

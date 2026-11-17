@@ -1,9 +1,10 @@
 """Exportiert die Datenbank für die geplante Online-Seite (Facettensuche) und als CSV-Übersichten.
 
-export/web/geraete.json     ein Eintrag je Gerät: Name, Hersteller, Facetten, Konflikte, Fundstellen mit Lizenz, Links
+export/web/devices.json     (englisch) ein Eintrag je Gerät: Name, Hersteller, Facetten, Konflikte, Fundstellen mit
+                            Lizenz, Links
 export/web/layouts.json     Hauptlayout je Gerät: Tasten als [x, y, w, h, r, rx, ry] (KLE-Konvention, Tasten-Einheiten)
-export/web/facetten.json    Vokabular aus tastaturen/facetten.json mit Anzahl Geräte je Wert
-export/web/quellen.json     alle Quellen mit Stand, Lizenz, Lizenztext, Nutzung und Nennung
+export/web/facets.json      Filter-Vokabular (englisch) mit Anzahl Geräte je Wert
+export/web/sources.json     alle Quellen mit Stand, Lizenz, Lizenztext, Nutzung und Nennung (englisch)
 export/geraete.csv          Übersicht je Gerät (diff-bar)
 export/datensaetze.csv      Übersicht je Datensatz mit Fundstelle und Lizenz
 export/layouts.csv          Übersicht je Layout
@@ -23,11 +24,41 @@ def schreibe_json(pfad, daten):
     pfad.write_text(json.dumps(daten, ensure_ascii=False, separators=(",", ":")) + "\n", encoding="utf-8")
 
 
+REGELN_EN = {"anker": "anchor", "familie": "qmk-family", "manuell": "manual"}
+
+
+def regel_en(r):
+    if r in REGELN_EN:
+        return REGELN_EN[r]
+    art, _, rest = r.partition(" ")
+    return {"repo": "repository", "name": "name"}.get(art, art) + (f" {rest}" if rest else "")
+
+
 def exportieren(db, erzeugt_am):
+    """Web-Export auf Englisch: Schlüssel und Werte aus facetten.json ('key'), Quellenbeschreibungen aus quellen.json
+    ('*_en'). Die interne Datenbank bleibt deutsch."""
     web = EXPORT / "web"
-    quellen = [dict(zip(["id", "name", "url", "stand", "lizenz", "lizenz_url", "nutzung", "nennung", "beschreibung"],
-                        z)) for z in db.execute("SELECT id, name, url, stand, lizenz, lizenz_url, nutzung, nennung, "
-                                                "beschreibung FROM quelle")]
+    vokabular = json.loads((ORDNER / "facetten.json").read_text(encoding="utf-8"))
+    fkey = {f["id"]: f["key"] for f in vokabular["facetten"]}
+    vkey = {f["id"]: {w["id"]: w["key"] for w in f["werte"]} if isinstance(f.get("werte"), list) else {}
+            for f in vokabular["facetten"]}
+    manifest = json.loads((ORDNER / "quellen.json").read_text(encoding="utf-8"))["quellen"]
+
+    def wert_en(f, w):
+        if isinstance(w, list):
+            return [vkey[f].get(x, x) for x in w]
+        if isinstance(w, dict):
+            return w
+        return vkey[f].get(w, w)
+
+    def facetten_en(fac):
+        return {fkey.get(f, f): wert_en(f, w) for f, w in fac.items()}
+
+    quellen = []
+    for z in db.execute("SELECT id, name, url, stand, lizenz, lizenz_url, nennung FROM quelle"):
+        q = manifest.get(z[0], {})
+        quellen.append({"id": z[0], "name": z[1], "url": z[2], "version": z[3], "license": z[4], "license_url": z[5],
+                        "attribution": z[6], "description": q.get("beschreibung_en"), "usage": q.get("nutzung_en")})
     ds_info = {}
     for z in db.execute("SELECT id, quelle, quell_id, quell_url, lizenz, abgerufen, name, url FROM datensatz"):
         ds_info[z[0]] = {"quelle": z[1], "quell_id": z[2], "fundstelle": z[3], "lizenz": z[4], "abgerufen": z[5],
@@ -36,17 +67,20 @@ def exportieren(db, erzeugt_am):
     for gid, ds, regel in db.execute("SELECT geraet_id, datensatz_id, regel FROM geraet_datensatz"):
         zuordnung[gid].append((ds, regel))
 
-    geraete, layout_ids = [], set()
+    geraete, layout_ids, geraete_intern = [], set(), []
     for gid, slug, name, hersteller, fac, konf, lid in db.execute(
             "SELECT id, slug, name, hersteller, facetten, konflikte, haupt_layout FROM geraet ORDER BY slug"):
         eintraege = []
         for ds, regel in zuordnung[gid]:
             i = ds_info[ds]
-            eintraege.append({"quelle": i["quelle"], "name": i["name"], "fundstelle": i["fundstelle"],
-                              "lizenz": i["lizenz"], "abgerufen": i["abgerufen"], "zuordnung": regel})
+            eintraege.append({"source": i["quelle"], "name": i["name"], "location": i["fundstelle"],
+                              "license": i["lizenz"], "retrieved": i["abgerufen"], "matched_by": regel_en(regel)})
         links = sorted({ds_info[ds]["url"] for ds, _ in zuordnung[gid] if ds_info[ds]["url"]})
-        geraete.append({"id": slug, "name": name, "hersteller": hersteller, "facetten": json.loads(fac),
-                        "konflikte": json.loads(konf), "quellen": eintraege, "links": links, "layout": lid})
+        fac, konf = json.loads(fac), json.loads(konf)
+        geraete_intern.append({"id": slug, "name": name, "hersteller": hersteller, "facetten": fac,
+                               "konflikte": konf, "quellen": [{"quelle": e["source"]} for e in eintraege]})
+        geraete.append({"id": slug, "name": name, "maker": hersteller, "facets": facetten_en(fac),
+                        "conflicts": facetten_en(konf), "sources": eintraege, "links": links, "layout": lid})
         if lid:
             layout_ids.add(lid)
 
@@ -55,11 +89,10 @@ def exportieren(db, erzeugt_am):
         name, = db.execute("SELECT name FROM layout WHERE id = ?", (lid,)).fetchone()
         tasten = [[round(v, 4) for v in z] for z in
                   db.execute("SELECT x, y, w, h, r, rx, ry FROM taste WHERE layout_id = ? ORDER BY idx", (lid,))]
-        layouts[str(lid)] = {"name": name, "tasten": tasten}
+        layouts[str(lid)] = {"name": name, "keys": tasten}
 
-    vokabular = json.loads((ORDNER / "facetten.json").read_text(encoding="utf-8"))
     zaehler = defaultdict(Counter)
-    for g in geraete:
+    for g in geraete_intern:
         for f, w in g["facetten"].items():
             if isinstance(w, list):
                 zaehler[f].update(w)
@@ -67,16 +100,27 @@ def exportieren(db, erzeugt_am):
                 zaehler[f].update(range(w["min"], w["max"] + 1))
             else:
                 zaehler[f][w] += 1
+    typen = {"auswahl": "single", "mehrfach": "multi", "ganzzahl": "range", "jahr": "year", "text": "text"}
+    facetten_web = []
     for f in vokabular["facetten"]:
-        f["anzahl_geraete"] = sum(1 for g in geraete if f["id"] in g["facetten"])
-        f["haeufigkeit"] = {str(k): v for k, v in sorted(zaehler[f["id"]].items(), key=lambda kv: str(kv[0]))}
+        eintrag = {"key": f["key"], "label": f["en"], "type": typen[f["typ"]],
+                   "devices": sum(1 for g in geraete_intern if f["id"] in g["facetten"])}
+        if isinstance(f.get("werte"), list):
+            eintrag["values"] = [{"key": w["key"], "label": w["en"], "devices": zaehler[f["id"]].get(w["id"], 0)}
+                                 for w in f["werte"]]
+        else:
+            eintrag["counts"] = {str(k): v for k, v in sorted(zaehler[f["id"]].items(), key=lambda kv: str(kv[0]))}
+        facetten_web.append(eintrag)
 
-    kopf = {"erzeugt_von": "tastaturen/skripte/datenbank_bauen.py", "erzeugt_am": erzeugt_am,
-            "hinweis": "Jede Angabe stammt aus den unter 'quellen' genannten Fundstellen; Lizenz je Fundstelle."}
-    schreibe_json(web / "geraete.json", {"kopf": kopf, "geraete": geraete})
-    schreibe_json(web / "layouts.json", {"kopf": kopf, "einheit": "Tasten-Einheit (1u)", "layouts": layouts})
-    schreibe_json(web / "facetten.json", {"kopf": kopf, **vokabular})
-    schreibe_json(web / "quellen.json", {"kopf": kopf, "quellen": quellen})
+    kopf = {"generator": "tastaturen/skripte/datenbank_bauen.py", "generated": erzeugt_am,
+            "note": "Every value comes from the locations listed under 'sources'; license per location. "
+                    "A missing facet means unknown, not 'no'."}
+    schreibe_json(web / "devices.json", {"meta": kopf, "devices": geraete})
+    schreibe_json(web / "layouts.json", {"meta": kopf, "unit": "key unit (1u = 19.05 mm)",
+                                         "key_format": ["x", "y", "w", "h", "r", "rx", "ry"], "layouts": layouts})
+    schreibe_json(web / "facets.json", {"meta": kopf, "facets": facetten_web})
+    schreibe_json(web / "sources.json", {"meta": kopf, "sources": quellen})
+    geraete = geraete_intern
 
     # CSV-Übersichten
     with open(EXPORT / "geraete.csv", "w", encoding="utf-8", newline="") as f:

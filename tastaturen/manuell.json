@@ -63,7 +63,7 @@
     "https://dygma.com/pages/dygma-raise-2"
    ],
    "facetten": {
-    "geteilt": "ja",
+    "geteilt": "zusammensteckbar",
     "drahtlos": "ja",
     "tasten": [
      68,
@@ -83,7 +83,8 @@
    },
    "hinweise": {
     "daumentasten_gesamt": 8,
-    "varianten": "ANSI 68, ISO 69"
+    "varianten": "ANSI 68, ISO 69",
+    "geteilt": "Hälften lassen sich ineinandergreifend zu einem Block zusammenstellen (Angabe Sören, 17.11.2026; Beleg auf der Herstellerseite ausstehend)"
    }
   },
   {
@@ -603,7 +604,7 @@
     "https://www.r-go-tools.com/r-go-split-break-version-2/"
    ],
    "facetten": {
-    "geteilt": "ja",
+    "geteilt": "zusammensteckbar",
     "versatz": [
      "reihen"
     ],
@@ -615,7 +616,8 @@
     ]
    },
    "hinweise": {
-    "hinweis": "Hälften magnetisch verbunden; QWERTZ verfügbar"
+    "hinweis": "Hälften magnetisch verbunden; QWERTZ verfügbar",
+    "geteilt": "zwei Teile, durch eingebauten Magneten verbunden (Herstellerseite)"
    }
   },
   {

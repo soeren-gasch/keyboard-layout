@@ -15,7 +15,7 @@ belege:                                               # jede Seite, aus der eine
   - https://svalboard.com/pages/specs
 gelesen_am: 2026-11-17
 facetten:                                             # IDs und Werte aus tastaturen/facetten.json
-  geteilt: ja                                         # ja | abbrechbar | einteilig-geteilt | nein
+  geteilt: ja                                         # ja | zusammensteckbar | einteilig-geteilt | nein
   tasten: [60]                                        # eine Zahl oder [min, max] bei Varianten
   tasten_je_haelfte: 30
   raster: 3x5                                         # Reihen x Spalten je Hand, ohne Daumen
@@ -52,6 +52,6 @@ Wenn Dir Felder fehlen, die Du für die Auswahl einer Tastatur brauchst, schreib
 
 1. **Energieversorgung und Funktechnik:** Akku fest, wechselbar oder AA/AAA; Bluetooth oder 2,4-GHz-Empfänger. Steht fast nur auf Herstellerseiten.
 2. **Maus integriert:** Trackball, Trackpad, Trackpoint, vor allem bei kommerziellen Tastaturen.
-3. **Abbrechbar (Snap-bar):** Einteilige Platinen, die sich in zwei Hälften brechen lassen; steht meist nur im Fließtext.
+3. **Zusammensteckbar:** Split-Tastaturen, deren Hälften ineinandergreifen und dann einen Block bilden (z. B. Dygma Raise 2); steht meist nur auf Herstellerseiten oder in Reviews.
 4. **Kommerzielle Tastaturen mit eigener Firmware:** Diese Herstellerseiten haben unseren automatischen Abruf gedrosselt; siehe `offen` in `manuell.json`.
 5. **Neue Tastaturen 2024–2026**, die noch in keiner Sammlung stehen: Kickstarter, Gruppenbestellungen, asiatische Anbieter.

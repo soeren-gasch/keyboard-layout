@@ -19,7 +19,7 @@ from collections import Counter, defaultdict
 
 from basis import ORDNER
 
-VORRANG = ["manuell", "yal", "splitkbcompare", "golem", "kbdnews", "zmk", "qmk", "vial", "github", "keymapdb"]
+VORRANG = ["manuell", "yal", "splitkbcompare", "golem", "deskthority", "kbdnews", "zmk", "qmk", "vial", "via", "ergogen", "github", "reddit", "keymapdb"]
 ZAHLEN = {"tasten", "tasten_je_haelfte", "daumentasten", "tasten_genutzt", "jahr"}
 MEHRFACH = {"versatz", "maus_art", "schalter", "schalter_montage", "drahtlos_technik", "energie", "firmware",
             "verfuegbarkeit", "raster"}
@@ -40,13 +40,13 @@ def normname(name, hersteller=None):
             if len(w) >= 3:
                 n = re.sub(rf"^\s*{re.escape(w)}\b", "", n)
     n = re.sub(r"\b(keyboard|wireless|split|ergonomic|mechanical|rev\s*\d+\w*|v\d+(\.\d+)*|mk\s*\w+|mark\s*\w+|pro|kit|"
-               r"review|build|the)\b", " ", n)
+               r"review|build|the|ansi|iso|jis|rgb|knob|encoder|white|backlit|backlight|hot-?swap|wired)\b", " ", n)
     return re.sub(r"[^a-z0-9]", "", n)
 
 
 def repos(ds):
     urls = [ds["url"] or ""] + (json.loads(ds["weitere_urls"] or "[]") if ds["quelle"] != "keymapdb" else [])
-    if ds["quelle"] in ("manuell", "github"):
+    if ds["quelle"] in ("manuell", "github", "ergogen"):
         urls.append(ds["quell_url"] or "")
     erg = set()
     for u in urls:
@@ -141,6 +141,9 @@ def zusammenfuehren(db):
         nb = {normname(nach_id[b]["name"]), normname(nach_id[b]["name"], nach_id[b]["hersteller"])} - {""}
         if any(x == y or (len(x) >= 4 and len(y) >= 4 and (x in y or y in x)) for x in na for y in nb):
             return True
+        # Ergogen-Repositories enthalten oft mehrere Tastaturen: dort zählt nur der Name
+        if "ergogen" in (nach_id[a]["quelle"], nach_id[b]["quelle"]):
+            return False
         return bool(tasten[a] & tasten[b])
 
     for r, ids in nach_repo.items():
