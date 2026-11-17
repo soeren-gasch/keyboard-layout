@@ -63,6 +63,7 @@ Aus der ersten Einschätzung vom 13.11.2026:
 | [`korpora/deutsch/`](korpora/deutsch/README.md) | neu zusammengestellte deutsche Korpora: förmlich (Leipzig), gesprochen (OpenSubtitles), informell (GC4, One Million Posts, Dortmunder Chat-Korpus) | Originale per Skript ladbar (4,6 GB, nicht im Repo); N-Gramme je Quelle unter [`korpora/ngramme/`](korpora/ngramme/README.md), Mischung `de-standard` unter `korpora/mischungen/` |
 | [`korpora/englisch/`](korpora/englisch/README.md) | englische Korpora, britisches Englisch bevorzugt, US-Englisch enthalten: förmlich (Leipzig, UK Hansard), gesprochen (OpenSubtitles, CABNC, OANC), informell und technisch (Ubuntu IRC, Reddit, E-Mails, StackExchange ohne Code) | 14 Quellen einzeln gezählt (N-Gramme unter `korpora/ngramme/en-*`), Mischung `en-standard`; Originale (21 GB) per Skript ladbar, nicht im Repo |
 | [`korpora/code/`](korpora/code/README.md) | Quelltext aus 98 freien Repositories für PHP/Laravel, Vue, JavaScript, Java und SQL (Sörens Stack) | 5 Quellen einzeln gezählt (`korpora/ngramme/code-*`), Mischung `code-standard`; Originale (1,3 GB) per Skript ladbar, nicht im Repo; eigener Code von Sören steht noch aus |
+| [`tastaturen/`](tastaturen/README.md) | Datenbank physischer Tastaturen: 4.724 Einträge aus QMK, Vial, ZMK, splitKbCompare, golem.hu, KeymapDB und eigener Recherche; 9.339 Layouts mit 602.829 Tastenpositionen | aufgebaut 17.11.2026; Datenbank lokal, im Repo Skripte, Manifest und CSV-Übersichten |
 | [`dariogoetz/keyboard_layout_optimizer`](https://github.com/dariogoetz/keyboard_layout_optimizer) | Optimizer von Dario Götz (Rust), bewertet Layouts anhand von Uni-, Bi- und Trigrammen; enthält Sörens N-Gramme für ActionScript (`ngrams/code_actionScript`, PR #74) | gesichtet; der frühere Fork wird nicht mehr gebraucht |
 
 Offen ist noch, wie Deutsch, Englisch und Code untereinander gewichtet werden und welche Kriterien beim Entwurf zählten. Innerhalb einer Sprache legt ein Rezept unter `korpora/mischungen/` die Gewichte fest (`de-standard`, `en-standard`, `code-standard`); sie lassen sich ändern, ohne neu zu zählen.
@@ -80,6 +81,7 @@ keyboard-layout/
                        skripte/ (Download, Aufbereitung), ngramme/ (je Quelle), mischungen/ (gewichtet)
   oryx/                Schnappschüsse der Oryx-Revisionen (JSON und QMK-Quellcode)
   optimizer/           Build-Anleitung, Tastatur- und Bewertungs-Konfigurationen, Ergebnisse
+  tastaturen/          Datenbank physischer Tastaturen: Manifest, Skripte, CSV-Übersichten
   analyse/             Skripte und Ergebnisse der Messungen
   entscheidungen/      Entscheidungslog, eine Datei je Entscheidung
 ```

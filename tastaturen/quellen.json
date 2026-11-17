@@ -1,0 +1,47 @@
+{
+  "beschreibung": "Quellen der Tastatur-Datenbank mit festem Stand. Geladen von tastaturen/skripte/quellen_laden.py nach ~/keyboard/tastatur-quellen/<id>/.",
+  "quellen": {
+    "qmk": {
+      "art": "git",
+      "url": "https://github.com/qmk/qmk_firmware",
+      "commit": "8252b6309752f0be6882c387e15989ba51323d8f",
+      "sparse": ["/keyboards/**/keyboard.json", "/keyboards/**/info.json", "/keyboards/**/readme.md", "/LICENSE*"],
+      "lizenz": "GPL-2.0-or-later"
+    },
+    "vial": {
+      "art": "git",
+      "url": "https://github.com/vial-kb/vial-qmk",
+      "commit": "dd43959ae5c08d8a28d38a1acf7b04e86b14a344",
+      "sparse": ["/keyboards/**/keyboard.json", "/keyboards/**/info.json", "/LICENSE*"],
+      "lizenz": "GPL-2.0-or-later"
+    },
+    "zmk": {
+      "art": "git",
+      "url": "https://github.com/zmkfirmware/zmk",
+      "commit": "4de313367288aad5aeaa1243890e40dc813f7008",
+      "sparse": ["/app/boards/**", "/app/dts/layouts/**", "/LICENSE"],
+      "lizenz": "MIT"
+    },
+    "splitkbcompare": {
+      "art": "git",
+      "url": "https://github.com/jhelvy/splitKbCompare",
+      "commit": "03382445fc54d248b9c252c45a4af65275945b74",
+      "sparse": ["/keyboards.csv", "/LICENSE.md", "/README.md"],
+      "lizenz": "MIT"
+    },
+    "keymapdb": {
+      "art": "git",
+      "url": "https://github.com/precondition/keymapdb",
+      "commit": "914e4837cabdcae5eb3e39467a7fb0236880b69a",
+      "sparse": ["/src/posts/keymaps/*", "/db_fields_reference.md", "/LICENSE"],
+      "lizenz": "GPL-3.0"
+    },
+    "golem": {
+      "art": "web",
+      "url": "https://golem.hu/boards/",
+      "abgerufen": "2026-11-17",
+      "hinweis": "Übersichtsseite plus je Tastatur eine Detailseite (board/<name>-<id>.html), höchstens eine Anfrage je Sekunde. Die Sammlung wächst seit etwa 2021 kaum noch; neuere Tastaturen erscheinen auf kbd.news.",
+      "lizenz": "keine Angabe; übernommen werden nur Fakten und Links"
+    }
+  }
+}

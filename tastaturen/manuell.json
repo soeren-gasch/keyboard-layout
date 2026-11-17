@@ -1,0 +1,655 @@
+{
+ "beschreibung": "Von Hand bzw. per Abruf der Herstellerseiten recherchierte Tastaturen, die in keiner maschinenlesbaren Quelle vollständig stehen. Nur Angaben, die auf den Belegseiten stehen; null = nicht belegt.",
+ "stand": "2026-11-17",
+ "offen": [
+  "Keyboardio Model 100",
+  "Keyboardio Atreus",
+  "Rommana",
+  "Cyboard Imprint",
+  "Ergohaven K:03",
+  "Microsoft Sculpt Ergonomic",
+  "Microsoft Surface Ergonomic",
+  "Keychron K15 Max, Q8, Q10, Q11 Ultra 8K",
+  "Matias Ergo Pro",
+  "Goldtouch Go!2",
+  "Cherry KC 4500 Ergo",
+  "Epomaker Split70",
+  "Vortex M50",
+  "Keychron Orca echo"
+ ],
+ "tastaturen": [
+  {
+   "name": "Dygma Defy",
+   "hersteller": "Dygma Lab S.L.",
+   "url": "https://dygma.com/pages/defy",
+   "belege": [
+    "https://dygma.com/pages/defy"
+   ],
+   "merkmale": {
+    "daumentasten_gesamt": 16,
+    "preis_usd": 369,
+    "hinweis": "Funk als Zusatzoption; Zelt bis 60°"
+   },
+   "geteilt": 1,
+   "drahtlos": 1,
+   "tasten_min": 70,
+   "tasten_max": 70,
+   "versatz": "columnar",
+   "schalter": "mx hotswap (62) + kailh choc hotswap (8)",
+   "verfuegbarkeit": "prebuilt",
+   "firmware": "proprietär (Bazecor)"
+  },
+  {
+   "name": "Dygma Raise 2",
+   "hersteller": "Dygma Lab S.L.",
+   "url": "https://dygma.com/pages/dygma-raise-2",
+   "belege": [
+    "https://dygma.com/pages/dygma-raise-2"
+   ],
+   "merkmale": {
+    "daumentasten_gesamt": 8,
+    "preis_usd": 369,
+    "varianten": "ANSI 68, ISO 69"
+   },
+   "geteilt": 1,
+   "drahtlos": 1,
+   "tasten_min": 68,
+   "tasten_max": 69,
+   "schalter": "mx hotswap + kailh choc hotswap (4)",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "UHK 80",
+   "hersteller": "Ultimate Gadget Laboratories Kft.",
+   "url": "https://uhk.io/uhk80",
+   "belege": [
+    "https://uhk.io/uhk80",
+    "https://uhk.io/product/uhk80"
+   ],
+   "merkmale": {
+    "preis_eur": 458.05,
+    "hinweis": "BLE und USB-Dongle, OLED, Handballenauflage"
+   },
+   "geteilt": 1,
+   "drahtlos": 1,
+   "schalter": "mx hotswap + kailh choc v2 (untere Daumenreihe)",
+   "firmware": "UHK-Firmware (open source)",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "UHK 60 v2",
+   "hersteller": "Ultimate Gadget Laboratories Kft.",
+   "url": "https://uhk.io/product/uhk60v2",
+   "belege": [
+    "https://uhk.io/product/uhk60v2",
+    "https://uhk.io/uhk60v2"
+   ],
+   "merkmale": {
+    "preis_eur": 377.17,
+    "groesse": "60 %, Reihenversatz"
+   },
+   "geteilt": 1,
+   "schalter": "mx hotswap",
+   "firmware": "UHK-Firmware (open source)",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "MoErgo Glove80",
+   "hersteller": "MoErgo",
+   "url": "https://www.moergo.com/pages/glove80",
+   "belege": [
+    "https://www.moergo.com/pages/glove80",
+    "https://www.moergo.com/pages/glove80-technical-specification"
+   ],
+   "merkmale": {
+    "daumentasten_je_hand": 6
+   },
+   "geteilt": 1,
+   "drahtlos": 1,
+   "tasten_min": 80,
+   "tasten_max": 80,
+   "versatz": "columnar, konkave Mulde",
+   "schalter": "kailh choc v1",
+   "firmware": "zmk",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "MoErgo Go60",
+   "hersteller": "MoErgo",
+   "url": "https://www.moergo.com/pages/go60",
+   "belege": [
+    "https://www.moergo.com/pages/go60",
+    "https://www.moergo.com/pages/go60-technical-specification"
+   ],
+   "merkmale": {
+    "daumentasten_je_hand": 3,
+    "hinweis": "zwei integrierte Trackpads, Zelt in 6 Stufen"
+   },
+   "geteilt": 1,
+   "drahtlos": 1,
+   "tasten_min": 60,
+   "tasten_max": 60,
+   "versatz": "columnar",
+   "schalter": "kailh choc v1 hotswap",
+   "firmware": "zmk",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "Svalboard Lightly",
+   "hersteller": "Svalboard",
+   "url": "https://svalboard.com/",
+   "belege": [
+    "https://svalboard.com/"
+   ],
+   "merkmale": {
+    "preis_usd": 800,
+    "preis_kit_usd": 330,
+    "hinweis": "Nachfolger-Konzept der DataHand; Tastenzahl auf der gelesenen Seite nicht genannt"
+   },
+   "geteilt": 1,
+   "versatz": "Fingerkappen-Cluster (Tasten rund um jede Fingerspitze)",
+   "schalter": "magnetisch",
+   "verfuegbarkeit": "prebuilt; Selbstdruck-Kit"
+  },
+  {
+   "name": "Kinesis Advantage360",
+   "hersteller": "Kinesis",
+   "url": "https://kinesis-ergo.com/keyboards/advantage360/",
+   "belege": [
+    "https://kinesis-ergo.com/keyboards/advantage360/"
+   ],
+   "merkmale": {
+    "preis_usd": 499,
+    "hinweis": "Funk nur bei Professional"
+   },
+   "geteilt": 1,
+   "drahtlos": 1,
+   "tasten_min": 76,
+   "tasten_max": 76,
+   "versatz": "Mulde, Spalten (Herstellerangabe: ortho)",
+   "schalter": "gateron ks-9 / kailh box silent, nicht hotswap",
+   "firmware": "SmartSet (Kabelvariante); Professional: ZMK",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "Kinesis Advantage2",
+   "hersteller": "Kinesis",
+   "url": "https://kinesis-ergo.com/shop/advantage2/",
+   "belege": [
+    "https://kinesis-ergo.com/shop/advantage2/"
+   ],
+   "merkmale": {},
+   "geteilt": 0,
+   "drahtlos": 0,
+   "versatz": "columnar, zwei Mulden in einem Gehäuse",
+   "schalter": "cherry mx brown / quiet red",
+   "firmware": "proprietär (SmartSet)",
+   "verfuegbarkeit": "prebuilt, Auslauf (angekündigt Januar 2026)"
+  },
+  {
+   "name": "ZSA Moonlander",
+   "hersteller": "ZSA Technology Labs",
+   "url": "https://www.zsa.io/moonlander",
+   "belege": [
+    "https://www.zsa.io/moonlander"
+   ],
+   "merkmale": {
+    "preis_usd": 365
+   },
+   "geteilt": 1,
+   "drahtlos": 0,
+   "versatz": "columnar",
+   "schalter": "mx hotswap",
+   "firmware": "qmk (Oryx)",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "ZSA Voyager",
+   "hersteller": "ZSA Technology Labs",
+   "url": "https://www.zsa.io/voyager",
+   "belege": [
+    "https://www.zsa.io/voyager"
+   ],
+   "merkmale": {
+    "preis_usd": 365
+   },
+   "geteilt": 1,
+   "drahtlos": 0,
+   "tasten_min": 52,
+   "tasten_max": 52,
+   "versatz": "columnar",
+   "schalter": "kailh choc hotswap",
+   "firmware": "qmk (Oryx)",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "ZSA ErgoDox EZ",
+   "hersteller": "ZSA Technology Labs",
+   "url": "https://ergodox-ez.com/",
+   "belege": [
+    "https://ergodox-ez.com/"
+   ],
+   "merkmale": {},
+   "geteilt": 1,
+   "drahtlos": 0,
+   "versatz": "columnar",
+   "schalter": "mx hotswap",
+   "firmware": "qmk",
+   "verfuegbarkeit": "prebuilt",
+   "jahr": 2015
+  },
+  {
+   "name": "Naya Create",
+   "hersteller": "Naya B.V.",
+   "url": "https://naya.tech/",
+   "belege": [
+    "https://naya.tech/"
+   ],
+   "merkmale": {
+    "hinweis": "Domain heute beim UHK-Hersteller; keine technischen Angaben mehr auf der Seite"
+   },
+   "geteilt": 1,
+   "verfuegbarkeit": "eingestellt (Naya B.V. am 18.08.2026 insolvent)"
+  },
+  {
+   "name": "CharaChorder Two",
+   "hersteller": "CharaChorder",
+   "url": "https://www.charachorder.com/",
+   "belege": [
+    "https://www.charachorder.com/"
+   ],
+   "merkmale": {
+    "art": "Akkord-Eingabegerät mit Schwenktasten",
+    "preis_usd": 199.99
+   },
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "CharaChorder X",
+   "hersteller": "CharaChorder",
+   "url": "https://www.charachorder.com/",
+   "belege": [
+    "https://www.charachorder.com/"
+   ],
+   "merkmale": {
+    "art": "Akkord-Adapter für normale Tastaturen",
+    "preis_usd": 99.99
+   },
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "Logitech Ergo K860",
+   "hersteller": "Logitech",
+   "url": "https://www.logitech.com/de-de/shop/p/k860-split-ergonomic.920-009167",
+   "belege": [
+    "https://www.logitech.com/de-de/shop/p/k860-split-ergonomic.920-009167"
+   ],
+   "merkmale": {
+    "preis_eur": 119.99,
+    "hinweis": "Einteiler mit geteiltem, gewölbtem Tastenfeld und Ziffernblock"
+   },
+   "geteilt": 0,
+   "drahtlos": 1,
+   "versatz": "row",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "Logitech Wave Keys",
+   "hersteller": "Logitech",
+   "url": "https://www.logitech.com/de-de/shop/p/wave-keys-ergonomic-wireless.920-012284",
+   "belege": [
+    "https://www.logitech.com/de-de/shop/p/wave-keys-ergonomic-wireless.920-012284"
+   ],
+   "merkmale": {
+    "preis_eur": 69.99,
+    "hinweis": "Wellenform"
+   },
+   "geteilt": 0,
+   "drahtlos": 1,
+   "versatz": "row",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "Razer Pro Type Ergo",
+   "hersteller": "Razer",
+   "url": "https://www.razer.com/productivity/razer-pro-type-ergo",
+   "belege": [
+    "https://www.razer.com/productivity/razer-pro-type-ergo"
+   ],
+   "merkmale": {
+    "preis_usd": 189.99,
+    "hinweis": "geteiltes Tastenfeld; ob zwei Hälften, auf der Seite nicht eindeutig"
+   },
+   "geteilt": 0,
+   "drahtlos": 1,
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "X-Bows Nature",
+   "hersteller": "X-Bows",
+   "url": "https://www.x-bows.com",
+   "belege": [
+    "https://www.x-bows.com"
+   ],
+   "merkmale": {
+    "preis_usd": 149
+   },
+   "geteilt": 0,
+   "versatz": "radial-spaltig",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "X-Bows Lite",
+   "hersteller": "X-Bows",
+   "url": "https://www.x-bows.com",
+   "belege": [
+    "https://www.x-bows.com"
+   ],
+   "merkmale": {
+    "preis_usd": 99
+   },
+   "geteilt": 0,
+   "versatz": "radial-spaltig",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "Mistel Barocco MD770",
+   "hersteller": "Mistel",
+   "url": "https://www.mistelkeyboard.com/products/d11cf7a73da49468e2a530b4cf18e76c",
+   "belege": [
+    "https://www.mistelkeyboard.com/products/d11cf7a73da49468e2a530b4cf18e76c"
+   ],
+   "merkmale": {
+    "groesse": "75 % mit Pfeiltasten und F-Reihe",
+    "hinweis": "auch BT- und ISO-DE-Varianten"
+   },
+   "geteilt": 1,
+   "drahtlos": 0,
+   "tasten_min": 85,
+   "versatz": "row",
+   "schalter": "cherry mx",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "R-Go Split Break V2",
+   "hersteller": "R-Go Tools",
+   "url": "https://www.r-go-tools.com/r-go-split-break-version-2/",
+   "belege": [
+    "https://www.r-go-tools.com/r-go-split-break-version-2/"
+   ],
+   "merkmale": {
+    "hinweis": "Hälften magnetisch verbunden; QWERTZ verfügbar"
+   },
+   "geteilt": 1,
+   "versatz": "row",
+   "schalter": "Scherenmechanik",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "Perixx Periboard-512",
+   "hersteller": "Perixx",
+   "url": "https://www.perixx.com",
+   "belege": [
+    "https://www.perixx.com"
+   ],
+   "merkmale": {
+    "preis_usd": 49.9,
+    "groesse": "100 %, Natural-Split-Form"
+   },
+   "geteilt": 0,
+   "drahtlos": 0,
+   "versatz": "row",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "Kinesis Freestyle Pro",
+   "hersteller": "Kinesis",
+   "url": "https://kinesis-ergo.com/products/",
+   "belege": [
+    "https://kinesis-ergo.com/products/"
+   ],
+   "merkmale": {
+    "preis_usd": 149.99
+   },
+   "geteilt": 1,
+   "drahtlos": 0,
+   "versatz": "row",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "Kinesis Freestyle Edge RGB+",
+   "hersteller": "Kinesis",
+   "url": "https://kinesis-ergo.com/keyboards/freestyle-edge-rgb/",
+   "belege": [
+    "https://kinesis-ergo.com/keyboards/freestyle-edge-rgb/"
+   ],
+   "merkmale": {
+    "preis_usd": 219,
+    "groesse": "TKL"
+   },
+   "geteilt": 1,
+   "drahtlos": 0,
+   "versatz": "row",
+   "schalter": "gateron pro hotswap",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "TOTEM",
+   "hersteller": "GEIGEIGEIST",
+   "url": "https://github.com/GEIGEIGEIST/TOTEM",
+   "belege": [
+    "https://github.com/GEIGEIGEIST/TOTEM"
+   ],
+   "merkmale": {
+    "hinweis": "zusätzliche äußere Taste für den kleinen Finger; XIAO RP2040 oder XIAO BLE"
+   },
+   "geteilt": 1,
+   "drahtlos": 1,
+   "tasten_min": 38,
+   "tasten_max": 38,
+   "versatz": "columnar",
+   "schalter": "choc",
+   "firmware": "qmk (vial), zmk",
+   "verfuegbarkeit": "open source DIY; Kits und fertige Builds (keeb.supply)"
+  },
+  {
+   "name": "Hillside (Familie)",
+   "hersteller": "mmccoyd",
+   "url": "https://github.com/mmccoyd/hillside",
+   "belege": [
+    "https://github.com/mmccoyd/hillside"
+   ],
+   "merkmale": {
+    "daumentasten_je_hand": 5,
+    "lizenz": "MIT",
+    "varianten": "46, 48, 52, 56, Dactyl 50"
+   },
+   "geteilt": 1,
+   "drahtlos": 1,
+   "tasten_min": 46,
+   "tasten_max": 56,
+   "versatz": "columnar",
+   "schalter": "choc v1",
+   "firmware": "qmk, zmk",
+   "verfuegbarkeit": "open source DIY; fertig über BeeKeeb",
+   "open_source": 1
+  },
+  {
+   "name": "Cheapino",
+   "hersteller": "tompi",
+   "url": "https://github.com/tompi/cheapino",
+   "belege": [
+    "https://github.com/tompi/cheapino"
+   ],
+   "merkmale": {
+    "lizenz": "CC-BY-4.0",
+    "hinweis": "Hälften per RJ45, ein Controller (Duplex-Matrix)"
+   },
+   "geteilt": 1,
+   "drahtlos": 0,
+   "tasten_min": 36,
+   "tasten_max": 36,
+   "firmware": "qmk, vial",
+   "verfuegbarkeit": "open source DIY",
+   "open_source": 1
+  },
+  {
+   "name": "Beekeeb Toucan",
+   "hersteller": "beekeeb",
+   "url": "https://beekeeb.com/toucan-keyboard/",
+   "belege": [
+    "https://beekeeb.com/toucan-keyboard/"
+   ],
+   "merkmale": {
+    "hinweis": "Piantor-Layout mit 40-mm-Trackpad"
+   },
+   "geteilt": 1,
+   "drahtlos": 1,
+   "versatz": "columnar",
+   "schalter": "choc v1 oder v2",
+   "firmware": "zmk",
+   "verfuegbarkeit": "Kit und vorgelötet (Vorbestellung)",
+   "jahr": 2025
+  },
+  {
+   "name": "Chocofi",
+   "hersteller": "pashutk",
+   "url": "https://github.com/pashutk/chocofi",
+   "belege": [
+    "https://github.com/pashutk/chocofi"
+   ],
+   "merkmale": {
+    "raster_je_hand": "3x5+3"
+   },
+   "geteilt": 1,
+   "tasten_min": 36,
+   "tasten_max": 36,
+   "versatz": "columnar",
+   "schalter": "choc",
+   "firmware": "qmk, zmk",
+   "verfuegbarkeit": "open source DIY"
+  },
+  {
+   "name": "Temper",
+   "hersteller": "raeedcho",
+   "url": "https://github.com/raeedcho/temper",
+   "belege": [
+    "https://github.com/raeedcho/temper"
+   ],
+   "merkmale": {
+    "raster_je_hand": "3x5+3",
+    "lizenz": "CERN-OHL-P-2.0"
+   },
+   "geteilt": 1,
+   "drahtlos": 1,
+   "tasten_min": 36,
+   "tasten_max": 36,
+   "versatz": "columnar",
+   "schalter": "choc v1",
+   "firmware": "zmk",
+   "verfuegbarkeit": "open source DIY",
+   "open_source": 1
+  },
+  {
+   "name": "Battoota",
+   "hersteller": "Alaa Saad Abdo",
+   "url": "https://github.com/AlaaSaadAbdo/battoota",
+   "belege": [
+    "https://github.com/AlaaSaadAbdo/battoota",
+    "https://github.com/AlaaSaadAbdo/battoota/blob/main/ergogen/battoota_min.yml",
+    "https://keymapdb.com/keymaps/AlaaSaadAbdo/"
+   ],
+   "merkmale": {
+    "raster_je_hand": "3x5 ohne untere Taste von kleinem Finger und innerer Spalte, +2 Daumen",
+    "lizenz": "CC BY-NC 4.0",
+    "quelle_geometrie": "ergogen/battoota_min.yml"
+   },
+   "geteilt": 1,
+   "drahtlos": 1,
+   "tasten_min": 30,
+   "tasten_max": 30,
+   "versatz": "columnar, gespreizt",
+   "schalter": "choc",
+   "firmware": "zmk",
+   "verfuegbarkeit": "open source DIY (Prototypen)"
+  },
+  {
+   "name": "Cornix",
+   "hersteller": "Jezail Funder Studio (Vertrieb u. a. OZO Keyboards)",
+   "url": "https://kbd.news/Cornix-review-2715.html",
+   "belege": [
+    "https://kbd.news/Cornix-review-2715.html"
+   ],
+   "merkmale": {
+    "daumentasten_je_hand": 3
+   },
+   "geteilt": 1,
+   "drahtlos": 1,
+   "tasten_min": 48,
+   "tasten_max": 48,
+   "versatz": "columnar",
+   "schalter": "choc v2 hotswap",
+   "firmware": "RMK, Vial",
+   "verfuegbarkeit": "prebuilt"
+  },
+  {
+   "name": "Elytra",
+   "hersteller": "ElimKeys",
+   "url": "https://kbd.news/Elytra-review-2785.html",
+   "belege": [
+    "https://kbd.news/Elytra-review-2785.html"
+   ],
+   "merkmale": {},
+   "geteilt": 1,
+   "drahtlos": 1,
+   "tasten_min": 63,
+   "tasten_max": 63,
+   "versatz": "row",
+   "schalter": "choc v2 hotswap",
+   "firmware": "RMK, Vial",
+   "verfuegbarkeit": "prebuilt",
+   "jahr": 2026
+  },
+  {
+   "name": "Temporal",
+   "hersteller": "curbol",
+   "url": "https://kbd.news/Temporal-2872.html",
+   "belege": [
+    "https://kbd.news/Temporal-2872.html"
+   ],
+   "merkmale": {
+    "hinweis": "mit Ergogen erzeugt; Spalten des kleinen Fingers abbrechbar"
+   },
+   "geteilt": 1,
+   "drahtlos": 1,
+   "tasten_min": 36,
+   "tasten_max": 42,
+   "versatz": "columnar, gespreizt",
+   "schalter": "choc v1",
+   "firmware": "zmk",
+   "verfuegbarkeit": "open source DIY",
+   "open_source": 1,
+   "jahr": 2026
+  },
+  {
+   "name": "Mantaray Pro Wireless",
+   "hersteller": "TuxedoMakes / Tuxedo Devices",
+   "url": "https://kbd.news/Mantaray-Pro-Wireless-2736.html",
+   "belege": [
+    "https://kbd.news/Mantaray-Pro-Wireless-2736.html"
+   ],
+   "merkmale": {
+    "hinweis": "an das Voyager angelehnt"
+   },
+   "geteilt": 1,
+   "drahtlos": 1,
+   "tasten_min": 52,
+   "tasten_max": 52,
+   "versatz": "columnar",
+   "schalter": "choc v1",
+   "firmware": "zmk",
+   "verfuegbarkeit": "Kit und prebuilt",
+   "jahr": 2025
+  }
+ ]
+}
