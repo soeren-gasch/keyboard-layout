@@ -9,7 +9,8 @@ Ziele: mobile first, auch über ein 56k-Modem schnell.
   Die Liste öffnet sie als Dialog, ohne JavaScript als normale Seite.
 - Alle Dateien liegen zusätzlich vorkomprimiert als .gz daneben.
 
-Aufruf: python3 tastaturen/skripte/seite_bauen.py  (danach: python3 tastaturen/web/vorschau.py)
+Aufruf: python3 tastaturen/skripte/seite_bauen.py [--noindex]  (danach: python3 tastaturen/web/vorschau.py)
+--noindex setzt auf jeder Seite <meta name=robots content="noindex,nofollow"> (Testauftritt).
 """
 
 import gzip
@@ -21,6 +22,7 @@ import re
 import shutil
 import sqlite3
 import subprocess
+import sys
 from collections import Counter
 from datetime import date
 from pathlib import Path
@@ -444,6 +446,10 @@ def detailseite(g, voc, layouts, lay_info, n_quellen):
 
 
 def main():
+    global THEME_JS
+    if "--noindex" in sys.argv:
+        # Testauftritt: Suchmaschinen sollen nichts aufnehmen
+        THEME_JS = '<meta name=robots content="noindex,nofollow">' + THEME_JS
     voc, geraete, layouts, quellen = laden()
     for q in quellen:
         QUELLE_NAME[q["id"]] = q["name"]
