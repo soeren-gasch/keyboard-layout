@@ -1,0 +1,13 @@
+{
+ "beschreibung": "Manuelle Korrekturen für tastaturen/skripte/zusammenfuehren.py. Datensätze als \"<quelle>:<quell_id>\" wie in export/datensaetze.csv.",
+ "verbinden": [
+  [
+   "qmk:ferris/sweep",
+   "zmk:boards/shields/cradio/cradio.zmk.yml"
+  ]
+ ],
+ "trennen": [],
+ "begruendung": {
+  "qmk:ferris/sweep + zmk:boards/shields/cradio/cradio.zmk.yml": "Ferris Sweep heißt im ZMK-Repository cradio; beide 34 Tasten, 3x5+2"
+ }
+}

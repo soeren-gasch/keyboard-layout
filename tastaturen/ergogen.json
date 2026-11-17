@@ -1,0 +1,5981 @@
+{
+ "beschreibung": "Ergogen-Konfigurationen in Repositories aus der Tastatur-Datenbank, mit Commit. Erzeugt von tastaturen/skripte/ergogen_suchen.py.",
+ "repositories": {
+  "0x220E/SynapseKB": {
+   "commit": "4eb336d84fb0b821845646777cfbf60f9d8afe73",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "0x8b/keyboard": {
+   "commit": "ab98c1e20f9411e515d7b3fc7aa38042d94bc09d",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "10bn/My-Keyboard-Journey": {
+   "commit": "dda446f0084d6c4097c292eb8cecce75611bdb83",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "3araht/chromatonemini": {
+   "commit": "55ebdf39a3b01d41b9ac88e23beab85517e3bd7f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "4itor/moai": {
+   "commit": "3e8c26f6729d4bc83cf105f75cfb4b1646b089ff",
+   "ergogen": [
+    "ergogen/moai.yaml",
+    "ergogen/moai_choc.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "4pplet/Unextended": {
+   "commit": "b707a9e6cc39a4744782a9544033879e7b85506f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENCE.md"
+   ]
+  },
+  "4pplet/bootlegs": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "4pplet/eagle_viper_rep": {
+   "commit": "c498bf48f7131e9eaf03cc3eff269f65ee03ad08",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENCE.md"
+   ]
+  },
+  "4pplet/steezy60": {
+   "commit": "d2973cf2d511b0e797dec3839671c9110a32a695",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENCE.md"
+   ]
+  },
+  "4pplet/waffling60": {
+   "commit": "ec121bc1f0e6923d7fe5340f9a964578cb2b356c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENCE.md"
+   ]
+  },
+  "4pplet/yakiimo-PCB": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "74th/sparrow62-buildguide": {
+   "commit": "3b444a0bb6224b1278ac74f300601fccfbef127a",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "94k/stroem_hardware": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "9R/replicazeron": {
+   "commit": "dbe3962add08167c914e7b6d9ef4e1588cdf4bef",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "ADPenrose/kintsugi_keeb": {
+   "commit": "748ad45d2b63801252dddb98dc38137e76a407fa",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ADPenrose/shisaku_keeb": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "AJGamma/sheriff-keyboard": {
+   "commit": "b5be6578e6658e3963b7ad857a2cd1bd98a173bb",
+   "ergogen": [
+    "v1/ergogen/config.yaml",
+    "v2/ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ASHIJANKEN/Slimorta": {
+   "commit": "e0d27b830a44c2ae5bc7f6adace0f6a26bca7bd1",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Aeonstrife/potato65": {
+   "commit": "2631eae6183650f2ae50ef8200002e08739c086b",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Aeonstrife/potato65hotswap": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "Aeonstrife/potato65solderable": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "Akash-Sharma-1/neural_flex_split": {
+   "commit": "a9b2c4f9b2fde6075d774d79343d126bd9f7274f",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "AlaaSaadAbdo/battoota": {
+   "commit": "52cb3ba485f21f8ba4fd051ad626414394725156",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "Albert-IV/archimedes-tux": {
+   "commit": "f2c5ef5ae2dafac7951fcc8d304f530ff64c44e2",
+   "ergogen": [
+    "src/a-tux.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "Albert-IV/om-keyboard": {
+   "commit": "19abf2b2ef780dbf318326a23289a107dd273ef0",
+   "ergogen": [
+    "output/source/canonical.yaml",
+    "rev0/cockamamie.yaml",
+    "rev1/om.yaml",
+    "src/om.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Aleblazer/Zodiark-Case": {
+   "commit": "1b0d663c1d31aaa51597db7acd06f25511edf45d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENCE.txt"
+   ]
+  },
+  "AlexSutila/ergogen-footprints": {
+   "commit": "eaf27a762721f650575860a2370b6637b1e994d3",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "AnaviTechnology/anavi-arrows": {
+   "commit": "f5be25f5aeea564eab919693cd514179cecfba01",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "AnaviTechnology/anavi-knob-1": {
+   "commit": "880868622aab6a15ea53ce4be52c05d395a962e4",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "AnaviTechnology/anavi-knobs-3": {
+   "commit": "241fcf9e77fe9be122585ad2370fc894b3ee1228",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "AnaviTechnology/anavi-macro-pad-10": {
+   "commit": "963c760925c522455c110571db0a8de5b867bc19",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "AnaviTechnology/anavi-macro-pad-12": {
+   "commit": "0d3e1be82352e1ebd58966d3fda7a9cdf9e1d509",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "AndreCusimano/CMK": {
+   "commit": "5bc7f66ff1b9fef04e7edfc3608af072e0b4c063",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "AndrophageKB/androphage": {
+   "commit": "241234f5f0eab55402413d4ee4b110058ee13e51",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "AnthonyAmanse/untitled-keyboard": {
+   "commit": "042f9a2b69acbb75796dee81b623a375aad06984",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ArchUsr64/egboard": {
+   "commit": "a9eddab1aae71641ed4ddb93d215f7081d1e5062",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "AtomicJon/jonkey": {
+   "commit": "e81d159705349e12359dd371ceb93a7bb1d2d6ea",
+   "ergogen": [
+    "jonkey-v2.yml",
+    "v1/jonkey.yml"
+   ],
+   "lizenzdateien": []
+  },
+  "Bastardkb/Charybdis": {
+   "commit": "47af70b9cd9b8d1d3a055ea88ab95c724bd3c02a",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Bastardkb/Scylla": {
+   "commit": "0bc5333d8edd1e5622fcc2fae4a4d59a3c7af07e",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Bastardkb/Skeletyl": {
+   "commit": "3ff75ae091a98fabfaf6aa0783631f71f65d13f0",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Bastardkb/TBK-Mini": {
+   "commit": "317416f9b250b7e2b2b16c11e0b1dd5b7f6e97ab",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Bemeier/bmek": {
+   "commit": "eeaed147999dadfbec356d2d8bf4c78915c798b0",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Biacco42/Ergo42": {
+   "commit": "67ac0713f393d0132a38d407fa92c72b0767262f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "BlueDrink9/ergodox_EZ_accessories": {
+   "commit": "8ee7a6b4038a7cdf09f1a8a58868f78e9ef4913f",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "BlueDrink9/keeb_snakeskin": {
+   "commit": "1cd5e800803769d5715f064a9b6d716fa35b4a42",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Bonnee/aim-65_keyboard": {
+   "commit": "e7d85ca47c54bcfc56e168469e4ce23943faa654",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Bpendragon/Selene-Keyboard": {
+   "commit": "10d99c1d3ffee8e7f71ef07142ad0ed9350c61b3",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Bratzworth/6key": {
+   "commit": "401df5fb4288853181abae5e8f1685891ec23f31",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "CardboardMechanic/ergogen_footprints": {
+   "commit": "36ad629b3bc4595cfb34bc5cc74787305ec58e2d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "ChrisChrisLoLo/babbit36": {
+   "commit": "5cefebb09c5713bead130a08c7fe3ecaa1fbc190",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ChrisChrisLoLo/bancouver40": {
+   "commit": "ff316e6f3eb91371fda0ae5a82a827710402f296",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ChrisChrisLoLo/banime40": {
+   "commit": "f447898e94577a8444246a8539a5e17d64ea6388",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ChrisChrisLoLo/beyblock20": {
+   "commit": "35ec340c98c467d73c1c24d0e067f0043cbcc20d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "ChrisChrisLoLo/idawgz32": {
+   "commit": "9a4667b6a62ef34243853924a4599f4e2509f517",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ChrisChrisLoLo/loongcat40": {
+   "commit": "6743b568de3bde1e57653c039e094765f6d76285",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ChrisChrisLoLo/modkipz40": {
+   "commit": "80e8b1d145d7e2c75f52f78c014c7ae3b63755db",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ChrisChrisLoLo/pusheenz40": {
+   "commit": "da693c6834d700beb093a96330b840f39565b9c9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Cipulot/EC-Pro-X": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "Cipulot/EC23U": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "Cipulot/EC60": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "Cipulot/RF_R1_8-9Xu": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "Cl4ryty/dragonwings": {
+   "commit": "ccf5dc9b81e1b30318dc10971ace6f2f359354de",
+   "ergogen": [
+    "dragonwings.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "Clein-KR/CL70": {
+   "commit": "70a27b90a32946f5837d25484d05acb07700ef5a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENCE"
+   ]
+  },
+  "Creepy-yoke/Rookie-V1-": {
+   "commit": "ff7561f91449c762c69083ce14d34ba013512d84",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "Crem2y/super-custom-keyboard": {
+   "commit": "7d86829bfd8f726a7dfed56cfb8aaec61bec08a3",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "CyberGear/mk-macro-01": {
+   "commit": "d4844425a6429df20dc1d7bd82d51f119a3f6f62",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "D-Hemanth/Lotus58": {
+   "commit": "0fdb799536b98979fd74bb21764762169b7be613",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "DKSadx/dactyl-manuform-blog": {
+   "commit": "0309779077ddf46ac5d75fb3d5e279285d970ff8",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "DanNixon/aya": {
+   "commit": "ece0cd174d5e5c270c9225958019a9bba4b2ece7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "license.txt"
+   ]
+  },
+  "Daneski13/Junco": {
+   "commit": "c68394ccee7ded60ace0b9c5d51e27eb902a2379",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Didgy74/didgy-kb": {
+   "commit": "18da9a845dd6fac9e84edb726a3641f3dc9be0bc",
+   "ergogen": [
+    "Mitten - Copy.yaml",
+    "Mitten.yaml",
+    "Unnamed gaming keyboard.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "DionisiuBrovka/kb_01": {
+   "commit": "076c1cd62317892f10d7dcbbae6c28deeedabfd3",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "DmNep/SofleChoc-Wireless": {
+   "commit": "17ab23b6d093de73290e45a0cf58a5039c936d4d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "DmNosachev/kinesis80": {
+   "commit": "2ed1416c6c7f465dd9dfe7213f0736aa9c53f924",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "DuBento/puffer": {
+   "commit": "e288155c1c43fd52f8dade53253e152bc546906e",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Ducksss/stardusts": {
+   "commit": "4b8aa87064b4d4a4b6c3910c1245fae5fbb4a502",
+   "ergogen": [
+    "hardware/hackpad/ergogen.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Durburz/interphase": {
+   "commit": "112a1c44b9a8e5c5d298e1f39321c2272380ad86",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Dwctor/Kaly": {
+   "commit": "125add8da1050b8a660a39b3761b20304b42fd19",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "EMajesty/eiri": {
+   "commit": "6f4aa3b5078cad65ec3a1575178633627a206217",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Ealdin/keyboards": {
+   "commit": "6e0fef567f85bd17b7aa0354aab87aafc5d78a86",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ElsassKabel/EK_Split_3x5": {
+   "commit": "ee0dda4dd1d31bf7aa6e6b9763d3fb5f7a2223de",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "EpicPantalones/Str8-Key": {
+   "commit": "448ce85046ab80969c71c6e8b937233949901684",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "Ergodox-io/ErgoDox": {
+   "commit": "15dacd626e3c59efe92c2c48d5d85edbce308b1c",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "EriicLii/Keybored65": {
+   "commit": "b15be245d5f5daf67a00dd83599187263fe6e3f0",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "ErkHal/prkl30": {
+   "commit": "66a322723aa5b58453de9fe15bed08e51122fadb",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "FFS2309/alpha_fs_keyboard": {
+   "commit": "c858e62bff3cb70aa7a356cbeac786d8b72d4e26",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "FSund/pteron-keyboard": {
+   "commit": "f89f207e0c58a1c0975aae33f042d84e285a3423",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "FabioCanavarro/MochaDeck": {
+   "commit": "243fa28f93c338b6048aaf4ff0e3f34621a626e6",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "FateNozomi/arisu-pcb": {
+   "commit": "a3de4b1ffed770742a836ba31b5983367ae50e68",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "FearlessSpiff/raveniung": {
+   "commit": "543afdb8fd916b1d6921e28978152093fb09c480",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "GEIGEIGEIST/KLOR": {
+   "commit": "e2f9c2cde5200189e57c4f89eeff90686cc359fe",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "GEIGEIGEIST/KLOTZ": {
+   "commit": "b431d4ea56123881287fb714b6876fbde540256f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "GEIGEIGEIST/TOTEM": {
+   "commit": "410e566dd47466c0b69279f0d4b3646998c663d4",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "GLozares/millipad": {
+   "commit": "671dc8ced3668ffe90f94d8a324891df42437f7a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "GabiBrawl/Nibunkatsu": {
+   "commit": "82846ed356f30b339945cfeaccb4c3d21c462622",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE-assets",
+    "LICENSE-firmware",
+    "LICENSE-hardware",
+    "LICENSE.md"
+   ]
+  },
+  "GayatriTejwani/Apollo58": {
+   "commit": "e57004e218468a7ff2d0a26e968d8ea062cff2dd",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "GlenPickle/Chimera": {
+   "commit": "3e9c30110d42140e5e9fe96103f744b6bcf136e3",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Grokepeer/Gemelli": {
+   "commit": "8b518f383e3a2528f6b63b16539375cde09e39e9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "GustawXYZ/dactyl_manuform_pi_pico": {
+   "commit": "3c3c4295919d470723c1654f7663e6e3705c2d92",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "H3lli0n/CantorMx-3DP-case": {
+   "commit": "f82c0f9813c471c4271603cc89325f3437defca9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Haadi-Khan/Split-Ortho-Keyboard": {
+   "commit": "a9331a94b3726bcfa417949cf031785cddd6698f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "HannesHasselbring/keebs": {
+   "commit": "e11ddbd82f5a71a9fab1d18eab53d1b1a7d56d0f",
+   "ergogen": [
+    "s1/ergogen.yaml",
+    "uni1/ergogen.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "Hardware7253/Koca58": {
+   "commit": "16ce75643e2b541fa7abca2b17ac05d17d1ef06f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "HarryCutts/twentypad": {
+   "commit": "1af47ff29ef6092eee98c518d28a3a4acc8e9221",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Hayato-Itoh/ergodashmini-tilting-tenting-case": {
+   "commit": "01854d2f04bb159fa67a404b13ea6ae8854f591b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "HellSingCoder/LimeKeyboard": {
+   "commit": "f091b1409fd6c1a32a5ee3a29e75da7c79681083",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "HolySwitch/lotus58-stacked-case": {
+   "commit": "d22f517894246b9f722299ed2aba301a2666debd",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "HorrorTroll/KeebProj": {
+   "commit": "3f9899eda0490436bebe38e1c5a99bd241c804e0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Hyphen-ated/large-lad-keyboard": {
+   "commit": "100a0de39524afe9f0961ebd1b36094603eda79c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "IdleBuilds/Dinkey": {
+   "commit": "d136250756f0a29d8e788f4cf7e599b0fbd40650",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "IktaS/Pill60": {
+   "commit": "c43945fe6283e5e8df5838444dabff30c8071812",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "ImStuBTW/chonkv": {
+   "commit": "6275b887b7ee14e2a7bf796a8b07978e6f35ebe4",
+   "ergogen": [
+    "chonkv.yaml",
+    "chonkv_backplate.yaml",
+    "chonkv_case.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ImStuBTW/ergogen-tutorial": {
+   "commit": "90fb383f32962c50d240f94eff00dab4a32997d7",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "ImStuBTW/typeboy_and_typepak": {
+   "commit": "398abc3426c24ff29f365c1d966b9f1d33ac5007",
+   "ergogen": [
+    "typeboy/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "JPricey/dactyl-high-profile": {
+   "commit": "c29f2b30d610ebe55b297244c40735cd84301ba1",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "JQ-C/DOOOPE": {
+   "commit": "88048c863721b360224930cb34434588e562cdd4",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "JW2586/SeveredDuck36": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "JaninaWibker/jdkbd": {
+   "commit": "3145d737d7a7636b7109cef00afed19d83b5464a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "JannikB5825/Shoc": {
+   "commit": "a3117ca8850b6f7a9d2c7abbf1019eab5c292fd4",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Jeansidharta/qmk-void-ergo-RP2040": {
+   "commit": "46e4996c11a75ea7e82b27a971eef51280ac6f4f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "JellyTitan/Sofle-Pico": {
+   "commit": "ffdb34f079e1cf8959b8aaeabda9741af713cefa",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "JeremySCook/JC-Pro-Macro-2": {
+   "commit": "6aff99a3a78d3c59652679e53fa64b51ad417219",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "JesusFreke/lalboard": {
+   "commit": "eddf521062c8e6eb5e67b05d071c60f093652c0a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "JhonatanFerrer/JK206_kmk_legacy": {
+   "commit": "aa335a0f3eb9885a51aaf9492c02249c665ba1e5",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "JoshwJB/MutePad": {
+   "commit": "1e3045d0fc2726259c3d82ea00d8d6cccc8295f9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Jpe230/big_knob": {
+   "commit": "50587a2adafb9a819574ce43a1f52d5a16a47b99",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Jrodna/OrthoCode": {
+   "commit": "3bd2890fc10d90f3f359b2c5469c1f8ecf982e1f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "KGOH/Jian-Info": {
+   "commit": "85501fa055366a5e55e68f9f70ef4e377e5739c7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "KarlK90/yaemk-split-kb": {
+   "commit": "9c79318048eae97b3967eda0b46c6a20c043c5c4",
+   "ergogen": [],
+   "lizenzdateien": [
+    "COPYING",
+    "LICENSES"
+   ]
+  },
+  "KeyDapt-LLC/BANANA-Lite": {
+   "commit": "dcc83d55a4677d6d090956024501fdd2a54b0bdb",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Keycapsss/Kimiko": {
+   "commit": "dce874112048bc532e3ed75bdb34a1dd08b425a1",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Keycapsss/forager-build-guide": {
+   "commit": "f29b03577a5cd63b7b30c1ca37f66408998e136b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Klackygears/eek_doc": {
+   "commit": "afa9705c6f5c60cabc45ed79ed67e4b91c155297",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Kraken-Jokes/pteron-pcb": {
+   "commit": "c4a04e6aef60032f1b01922f8750529dd2ad96b0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Kravchenko32/dactyl-manu-tide": {
+   "commit": "a94e582c378df888e3dda60887e846a137965b35",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE-models"
+   ]
+  },
+  "Kyrremann/bartlesplit": {
+   "commit": "44a61990fc8de7c71dbc78f3da779c0c599f523c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Kyrremann/index-tab": {
+   "commit": "484bc0eb5da8189082bb710db9a71d93bf7a5abb",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Ladniy/jiran": {
+   "commit": "7950f55d9d43d870337e98904e96cddf050760e6",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "LazulDev/corne": {
+   "commit": "b17030dddef271e730b6e9ad6565d554ffc49937",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "MATTMCCA/Heliotrope": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "MATTMCCA/The-Black-Hellebore": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "MWWorks/mw_split_75": {
+   "commit": "db1e2d212b7184cfd974b4e7b934e09976d48117",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "MakotoKurauchi/helix": {
+   "commit": "05d74806fa54524be6131f66a37a12a9488024b0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Malevolti/Lyra": {
+   "commit": "0ff79609e3e37d4ebf8a371c32a833a4422e6649",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "MangoIV/dracuLad": {
+   "commit": "a5b47bacf454ea4cea270d48eba936626bf0d3e6",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "ManoShu/BareDev": {
+   "commit": "77129230a03a1dfbbe1a14cce566fd70199beeef",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "MarcSerraPeralta/custom-keyboards": {
+   "commit": "19b544158bc6061015fee106864875e4a16db329",
+   "ergogen": [
+    "my_keyboard/v0-3/config.yaml",
+    "examples/example_case.yaml",
+    "examples/example_pcb.yaml",
+    "my_keyboard/v0-1/my_keyboard_layout_v0-1_unfinished.yaml",
+    "my_keyboard/v0-2/my_keyboard_layout_v0-2.yaml",
+    "my_keyboard/v0-2/my_keyboard_layout_v0-2_points.yaml",
+    "my_keyboard/v0-2/my_keyboard_layout_v0-3_outlines.yaml",
+    "my_keyboard/v0-3/my_keyboard_layout_v0-3_outlines.yaml",
+    "my_keyboard/v0-3/my_keyboard_layout_v0-3_pcbs.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "MarvFPV/Adalyn": {
+   "commit": "8bb03aa3c189abe8504b5a4b204362270f7b1a32",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "MarvFPV/Friedrich": {
+   "commit": "253eab9bd24fa2411ccaf1a9611d4a164e7ff5f9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Maxr1998/Phoebe_Keyboard": {
+   "commit": "61f773c3c672484e19c3297d17f5f5be841f0a7f",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Maxr1998/Pulse_4k": {
+   "commit": "4304d81f0065e0c67c3a85573d6a56aea06dd1cb",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Meo98/charybdis-wireless-rmk": {
+   "commit": "b2c8b245529a870d162be7a2e8a90a83ed1b6163",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "MinHyeong-Lee/split91": {
+   "commit": "73df6b6bddbfc566f565d92ebe3be7ca99008b69",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "MollyShe/16-key-macropad": {
+   "commit": "6982fa4f12e11622e10badeb5833ab7096626b3e",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Musab-Hassan/aurora_keyboard": {
+   "commit": "8c0d0fea01fd20bc9c4769cf0fff24cfab21dfcc",
+   "ergogen": [
+    "left_ergogen/config.yaml",
+    "right_ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "MythosMann/tg4x": {
+   "commit": "6a9ebd315a7506a6b1ed327f472f943fb389e5b7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "NCKiser/brian-the-keyboard": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "Na-Cly/juliet": {
+   "commit": "ab564c0ff010565854d33bddcdf3389bb46eaaba",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Na-Cly/splitreus62": {
+   "commit": "4d3d3b861ce112e6da00722335aa7dc3ce1ff2b3",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Narkoleptika/josukey": {
+   "commit": "15bfa535a9876d95c239333d4debe53209aa4b46",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "NexMacro/nexmacro-macro-pad-software": {
+   "commit": "3cc0ae431898ee2ba0074276c5024521afe3e258",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Nyhxis/keyboard-resources": {
+   "commit": "ca643757e3fcf835a2a774577bab9cccef3dc0e1",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "PJE66/hummingbird": {
+   "commit": "d5c8fc6ffc22446567290d5bb5189d414ceca585",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "PandaKBLab/BAlice80-QMK": {
+   "commit": "b88fc51c46b46afc5cdec8d6a8a6d117df9f1292",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "PaulBunch/keeb-flat-proto": {
+   "commit": "67efc9ed5288311619d6c89c9dfdf5d1a65e3aee",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Pekaso/fortitude60": {
+   "commit": "497bc654e378b9f5650ad7262a246611cc706925",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "PercyJW-2/Split65": {
+   "commit": "1258d71afb481d955b1dcf0b325e14f32d53c753",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Perseus333/daedalus-keyboard": {
+   "commit": "107cf455e9965eb7ed03e330f65c512d5118c9c3",
+   "ergogen": [
+    "ergogen-config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE-FIRMWARE",
+    "LICENSE-HARDWARE"
+   ]
+  },
+  "Pimentoso/TouhouPad_v2": {
+   "commit": "55c18632aa5b7729e19be260e81e70723022462e",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Pipshag/goosekb": {
+   "commit": "ed0fef52e41dc3ddbab6c6e5f7f4706600499ad9",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "PolarityWorks/CRBN-Featherlight": {
+   "commit": "7d112875aba9aa9eb84854082415082ce9507f68",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "RGBKB/Keyboard-files": {
+   "commit": "d120c8ab2eb815afff9e604e364495708ec91080",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Rackhamn/Album": {
+   "commit": "cf055cec1c3ec96f3597f45f6cfbe41407451178",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "ReSummit/Seismos": {
+   "commit": "ff088b772181c97e3cc99544e42dc57377617024",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Retne01/Bonsai": {
+   "commit": "da48835563c752a426909260f81b45a5ccda0827",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Richiban/Sundown-keyboard": {
+   "commit": "ea193feecb5c88e41fe449c14c2afe540d632229",
+   "ergogen": [
+    "ergogen/sundown_max.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "Robostyle/stellar": {
+   "commit": "a9d58cb19719e947924738195041a01db8c96e38",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Royster0/RoySauce-60": {
+   "commit": "830075983396eea16fdb5b10ff1537faaf3c73c5",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Royster0/Roysket65": {
+   "commit": "f4ec5a7b78332ac1ac81259f828618aaad9d1504",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "RyanChomistek/lefty": {
+   "commit": "bedd86fde0d26f436abf42e7618d6c7bb5a84750",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Rzl6/galpanel": {
+   "commit": "4d16403937c5d210d59c5e5f7b372cc3f654926b",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Sadeeed/soup10": {
+   "commit": "848c0568e4361a3a1a4ac6abde4c6f7011052b34",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "SamGowland/Gowla-Macro-Board": {
+   "commit": "17dc531c48b555034a3a4badf754a3fd97236115",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "SamuraiKek/manibus-switch-plates": {
+   "commit": "65aae6ec2568fc4701bb2a2fec428f44e1a92bd7",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Scybin/chitin": {
+   "commit": "4512e1682eb93ae08146ad231c4c968414d9b6f1",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Scybin/scyboard": {
+   "commit": "1a8d81d2d7036a0547be1464a28ec183c1ece379",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "SeanGilroy/blender-dactyl-keyboard": {
+   "commit": "84d9b92b3c69fa856828c0e0a2e793c645beaa88",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE-models"
+   ]
+  },
+  "ShinoharaTa/keyboards": {
+   "commit": "de33fa4bea9993357ea3325d13514aa9d3f31ed8",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "Sho-Keebs/Vagrant-10": {
+   "commit": "b5b332f02730d18699075f67048f0e413eca8bc9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "SlightHeadache/choctopus44": {
+   "commit": "b1fae5c8dddc64109e418176a0e59ad2d7a6c939",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Snikimonkd/JCUKEN": {
+   "commit": "8436cf3de98d9f7f8dee9c75f023c6755fe0faf8",
+   "ergogen": [
+    "ver_1/ergogen/config.yaml",
+    "ver_2/ergogen/config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "SolidHal/btrfly-keyboard": {
+   "commit": "ffd352c1231df5dd64ccd41f1b3cddc41a128a04",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE-models"
+   ]
+  },
+  "SouthPawEngineer/Keyboard-Design-Files": {
+   "commit": "42c393e23a590ae8dcc728c5c1c2222e0274dc6d",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "SouthPawEngineer/qmk_firmware": {
+   "commit": "1b26ebde277df004cc4e5eb89171359dd227a57f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "license_GPLv2.md",
+    "license_GPLv3.md",
+    "license_Modified_BSD.md"
+   ]
+  },
+  "Spaceboards/SpaceboardsHardware": {
+   "commit": "dd4fe15e030dee4aa9de2783cbc442bf9e349df2",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Spurkus/MechBuilds": {
+   "commit": "2499ff639f1b400ba92d0e552a4e58f43043fe61",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Squalius-cephalus/silakka54": {
+   "commit": "75d168c5eaea4bdb635313a8fbcdd6d7009b212f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "StoutIEEE/macropad-workshop": {
+   "commit": "e647904c42422349ec847213f25efb24d406f21e",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "StuSerious/tabulator": {
+   "commit": "896ff1f1858a56ff535cc18d8ca65150bb0ed6ac",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "Styann/Anesidora": {
+   "commit": "9f27cbb603bb96cc577a9f242bc5a7b5cfc7efca",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Tasfiq-Jawaad/chocJwd": {
+   "commit": "7ce109ce06acaa58b9abc44070f937a462bf2030",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "TeXitoi/keyberon-f4": {
+   "commit": "7bc4a5c771071ac04d595cd3a333ef513b430bc5",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "TeXitoi/keyseebee": {
+   "commit": "30956f62e618ed754c15af66f8ade70269fef89a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "TechnikWeber/convertible-keyboard-pcb": {
+   "commit": "96583a7fa4d1a319368e5f8db51a8c64abb6114f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Tekbox12/Cardbrd": {
+   "commit": "0ccc58c3c71fa5fb7f416de9d7ba508cfca9429c",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "Terence-1/simple34": {
+   "commit": "4e4d7b4317895b4043c2f179d13c7720b6321784",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "That-Canadian/MiniDox_PCB": {
+   "commit": "0be1acfb0ec92b8c68c2e8a9a1bfdc96a7c2e3cd",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "TheRoyalSweatshirt/SOAP": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "TheRoyalSweatshirt/The_RoPro": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "TheRoyalSweatshirt/The_Royal_Projects": {
+   "commit": "e48198eddff431f59344683e3380fc3fba2142f2",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Thunderbird2086/ergogen-footprint-generator": {
+   "commit": "cffec81219a5c85f1122a261f22e20fb6c4159d7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Thunderbird2086/uniKeyPCB": {
+   "commit": "b196458dcab7c4b6aa29dcb5336fdb7960b36da2",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Thunderbird2086/void": {
+   "commit": "89663f79cc862aab4c84c68b0a47d4e9e57135ea",
+   "ergogen": [
+    "ergogen/void-chocolate.yaml",
+    "ergogen/void-hybrid.yaml",
+    "ergogen/void-mx.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "TokageItLab/Varanidae": {
+   "commit": "10e5e87ee4d05d2d98d9ba7bb96ed55ffa15170e",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "TrojanPinata/Model-B": {
+   "commit": "abbf4926414173dc31477867cebb53458306b5c3",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "TweetyDaBird/Lotus-58-BLE": {
+   "commit": "0a0382862d69cc845c72d6686f8a6dbac259d71a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "TweetyDaBird/Lotus58": {
+   "commit": "4bccf7cfc53df4062a4a85b6a4380de483f01072",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "TweetyDaBird/RefleXion-65": {
+   "commit": "f75816acc599b244f95f2965207fa344de7308d1",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "Tygo-van-den-Hurk/Snowflake-Hardware": {
+   "commit": "37857c6038c6b6458fe841afc7305b4effdf57b3",
+   "ergogen": [
+    "hardware/src/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "TyraelWasTaken/Equanimity": {
+   "commit": "f52e1d5eb258df13cd4117171ec4eef0ecabea56",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "VPavliashvili/Ergo-V-1": {
+   "commit": "e641a36bc211687f0fb4faccf3cffb7965995831",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Vaarai/Cornia": {
+   "commit": "cebf5092c1abbb086de4c0d513f8d00791d92467",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Vodalarii/AA20": {
+   "commit": "618ad6a2d1322ca30ea276a2c1320f0bc98cde1e",
+   "ergogen": [
+    "ergogen.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Vodalarii/BirdieBoards": {
+   "commit": "59008a9d395992d64e117737503b64c75fe2d575",
+   "ergogen": [
+    "Birdie6/ergogen.yaml",
+    "birdie17/ergo gen.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "WeActStudio/WeActStudio.MiniSTM32F4x1": {
+   "commit": "6a7f7d434a9d6361f91590d4cdd16b4a70ce7513",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "WernerVdM97/KLORista": {
+   "commit": "34d9ca3ad54cb90f130ce141b8c97994aaa690c3",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "WibblyGhost/southerly-split-keeb": {
+   "commit": "c8bf7f883a94113783672b88b8adae0414605e5b",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "WillACosta/wlfkbd": {
+   "commit": "f19c8e5e476f9d257cbc9955102402eb535279f7",
+   "ergogen": [
+    "keyboard/ergogen/config.yml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "WolfIcefang/dactyl-chimera-keyboard": {
+   "commit": "f803152d518feb711c7922fdf34a7b9418f99827",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Woovie/arke": {
+   "commit": "7dfd6619ba40f53a0e37e5bc83f82005a46acd3d",
+   "ergogen": [
+    "ergogen.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "Woovie/ibm-model-f-at-cutouts": {
+   "commit": "1912b81bac1304c27e9255f0e44dbdc79ca40e93",
+   "ergogen": [
+    "ergogen.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "Woovie/seven-five": {
+   "commit": "ddebe16822de5be7609eeb0027ddab38d7397dc1",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "Woovie/useful-ergogen-components": {
+   "commit": "db8c39ab8c08b7a87ef12c60f4cc72219640dbb5",
+   "ergogen": [
+    "plate-tabs.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "Woovie/viktus-sinne-plate": {
+   "commit": "2762a558d99501a10d790e31e61f416786057ae9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "XinyiC222/Achroma": {
+   "commit": "8c44ac2974f0a01a6777bf4bc08657da78f7936b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "Xuyuanp/korne": {
+   "commit": "491e53f30f831a9dbb4d03c86ebc61c6057b838b",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": [
+    "license.md"
+   ]
+  },
+  "Y5U/Aether": {
+   "commit": "faf3060a10bdadab59621a5486e88e0663a764aa",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "YangPiCui/ErgonomicVerticalKeyboard": {
+   "commit": "19cb05a7781a82efa7171963286940ff99fd0223",
+   "ergogen": [],
+   "lizenzdateien": [
+    "License.txt"
+   ]
+  },
+  "abraini-Nascent/battleship_gamepad": {
+   "commit": "41a018680610e120b0a2de5272cc1cfcd226dbfc",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "achamian/qapla": {
+   "commit": "9d672897f55d03d98aa49b9bd71c2d8edb269cb7",
+   "ergogen": [
+    "v1/ergogen/config_base.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENCE"
+   ]
+  },
+  "adereth/dactyl-keyboard": {
+   "commit": "e0416e329032b3648a86e53656906702603dbeb0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE-models"
+   ]
+  },
+  "adonutartist/Cute-Cat-Split-Keeb": {
+   "commit": "90baa7e94c0ff2ba5e60e2d42d973ce1f7601fb5",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "ai03-2725/Contra": {
+   "commit": "76793520d93c0eacdf1a3dd07d2df4d267a3036c",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "ai03-2725/JP60": {
+   "commit": "df6811b56c45dadb24611308190082119be607f1",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ai03-2725/Orbit": {
+   "commit": "55e28063169962e7f27420e879e57c2ab169649e",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ai03-2725/Quasar": {
+   "commit": "f9402ce428d7f68a9adc8e2a2e7010339d76ee22",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ai03-2725/Voyager60": {
+   "commit": "27b7b0c39c68f83d683fdb90c4ab3a94df50d987",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ai03-2725/soyuz": {
+   "commit": "4e4ce9ca7797eb9275a0d18be3fe0d9a665f579c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "alabahuy/RART": {
+   "commit": "80d94b6a364d1fb107e17a8fe6747425a68383b0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "albatrosspreacher/albatross": {
+   "commit": "33e44936815911e8df74e99952a9080526cf1536",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "alejandrogallo/keyboard-lab": {
+   "commit": "461ebdfb492eda8f43587b0f1b1233dbf1df3e29",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "alex-grover/swoop-case": {
+   "commit": "f725ac29d8a45dd802924a5920c56338c252bee6",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "alg0002/LetsSwamp": {
+   "commit": "cd5ed725d08200921fd8f64b548e4ee163d89808",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "alko-kbd/cantordeon": {
+   "commit": "87e7a4669dd38e1f29d911f4e67ec34386ae9fd0",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "alko-kbd/cornedeon": {
+   "commit": "f2351e40a61f16cff05ccfc637f5010911486b67",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "alvicstep/kintwin": {
+   "commit": "43049b348d784722c05a916609dd1da35f5bbb4a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "an-achronism/tetromino": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "anarion80/porcupine": {
+   "commit": "84b0c5dd3643bedda88a9d8a2d2e97965ebc206d",
+   "ergogen": [
+    "input/porcupine.yaml",
+    "input/porcupine_4thumb_keys.yaml",
+    "input/porcupine_6x3.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "andres-nav/keyboard": {
+   "commit": "0f836d49e11c0a80b43e0ba83ceaec4380d398f9",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "anhthang/keycolor-preview": {
+   "commit": "a7a518cad10aa28de1dcb83d75d7034fc84be221",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "archnode/weaver-keyboard": {
+   "commit": "f3d92e8e7449c6e04116b48ecc67b8153e24865f",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "arrowtip/monkey-typing_v1": {
+   "commit": "c9df138de2d85ab285ccbd71d9b1a5675cdcec77",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "atsuyuki/dactyl-manuform-skeleton-edition-4x5": {
+   "commit": "f81602bcc7c7b0b59795e64cdffe5460fdcffe2e",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "atulloh/oddball": {
+   "commit": "2677661add0b2363ad21babda87471faf6899400",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "autumnisacutie/karina": {
+   "commit": "cf69a83cef75129ae3a2c7c27ac268b5513785ed",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "avdyushin/franky36": {
+   "commit": "e00d8d478d28bc2396f852dd692f586807c466d1",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "axhixh/mini-kbd": {
+   "commit": "7b1c87ac77e680e7e034978bef9b59a18215b0c2",
+   "ergogen": [
+    "choc-mini/config.yaml",
+    "choc-v1/config.yaml",
+    "mini-din-4/choc-mini/config.yaml"
+   ],
+   "lizenzdateien": [
+    "license"
+   ]
+  },
+  "azhizhinov/ELCANTORHS": {
+   "commit": "4fa3fedbc1943bcc1efcfd86b50e29dcc944483e",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "azhizhinov/PIANTORUV44": {
+   "commit": "7182765731ff9664a5e414c9793f0733b6e0c602",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "azhizhinov/TOTEMX": {
+   "commit": "d82289b4204707948d8a720f3dc4d659579b125d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "azhizhinov/TOTEMYSTX": {
+   "commit": "538564941435ae4c3099bea6eba6120823fb6533",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "b-init/pling": {
+   "commit": "a8c90eb1c50c88252b4c74df290f4836f5202866",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "baalsmn/kbd-workshop": {
+   "commit": "3edf4f96533569b389a30bbab71937c78fe0d798",
+   "ergogen": [
+    "ergogen/hachigo74.yaml",
+    "ergogen/kugo82.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSES"
+   ]
+  },
+  "bangkho/sofle-rmk": {
+   "commit": "788fb98e7f35063c65ac49f0421bbc138e04ea35",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "bbrfkr/keyboards": {
+   "commit": "39c7df4573e2b0410f8b5675185ccd95b3431f5c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "beanaccle/kb58_pico": {
+   "commit": "197668d854e9766d815a617b5d92fa444737310b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "beekeeb/Allium58": {
+   "commit": "39e712fea537665412a8444895c264fd35a7e013",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "beekeeb/crkbd-glp": {
+   "commit": "a36d9c18cf5b7e01e1b992123132bb7fcc055f85",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "beekeeb/hotreus62": {
+   "commit": "e4166f0bc8df49e05c9efca7e0751ca3d53f5044",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "beekeeb/piantor": {
+   "commit": "cd847afb4f9a86e8c1c8e36f243140644013afb2",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "beezanX/RexKeys": {
+   "commit": "ae2d697e281c6ebe815309c8d77597a298e6186d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "bennytrouser/NostrumX": {
+   "commit": "aaa854d4239780175eabe40237298468a659f259",
+   "ergogen": [
+    "Files/Ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "bennytrouser/nostrum": {
+   "commit": "44bde5c23fa7e9f75ca79bc17ae0a0dc2a8d068c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "bergzand/Noria": {
+   "commit": "2508fc0ae093231599ce88d16563e46cfff976b0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "bezmi/orthrus": {
+   "commit": "0307db0dd0547d9a499947d59a45ae333085e16e",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "bigwheel/earth_rover": {
+   "commit": "ed8e3b5eaf466ddaeb983c9cd98d22dd369a9471",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "blastrock/ExtraDox": {
+   "commit": "7ec388a1da5316a9642a7b0d850175bb289ecd55",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "blazingh/keyboard-taipo_duo": {
+   "commit": "46e67f6a5d326a5e053b9fd0fc98a3a42cd7220b",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "bleroy/3d-junkyard": {
+   "commit": "692956f86131a78facf30af91908b29cd96260bb",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "blewis308/BOP-Keyboard": {
+   "commit": "156a290a0f45d8a68eabf15c61124f696cc9226b",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "blu006/vimclutch_hw": {
+   "commit": "2ca6c3e48f56ef1150465569c5f3f08a9309bb78",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "bluepylons/Boston": {
+   "commit": "b54f796b8713da1726a8257d4f4736542fbfe2cf",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "boardsource/microdox-goodies": {
+   "commit": "611949ceee7aebb5c57c75b330befc8b123a7440",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "bodemyr/danbo-keyboard": {
+   "commit": "6dcd01be1400b8cf13761b2f72bba20e52ee2692",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "braindefender/KLP-Lame-Keycaps": {
+   "commit": "8e4b89b484cafe3bcaced6b459a4e29660991a40",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "braindefender/lapka": {
+   "commit": "bb865196a94478febb96b0450cb17f282cdd49b3",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "brickbots/aball": {
+   "commit": "f1039735889440991582b53d2f41559a35296fd8",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "brickbots/chocV": {
+   "commit": "a74edd03dd93b50c62102c862c6e6fb9515f40f4",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "brockar/redox-handwired-3dp": {
+   "commit": "8292e4cd61516db5d60b6bdfe2c4a97f525c3c39",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "brow/balbuzard": {
+   "commit": "24e779f1ab633584041a0a9fbec3a91e9ac062a8",
+   "ergogen": [
+    "source/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "brow/jklp": {
+   "commit": "c4b0dffdb34966ff35af7ce9d5b97c212459143d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "brucedjones/dactyl-stabilized": {
+   "commit": "79c26de45a3a8e589ad32587f21b76baa73e686b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE-models"
+   ]
+  },
+  "bschwind/key-ripper": {
+   "commit": "c7212f1dcad33ca91587b04982b3897250711855",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE-APACHE",
+    "LICENSE-MIT",
+    "LICENSE-ZLIB"
+   ]
+  },
+  "bubbleology/CB34S": {
+   "commit": "52bec39de205bdb479e0c2ba7ce026b95768e897",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "bubbleology/UT22": {
+   "commit": "40ae664423ce529572001c6476f72c6ce1a4965e",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "bunnyspa/Corne": {
+   "commit": "accf0ea067405dca80ede8298774db73053dc495",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "cacheworks/Plank": {
+   "commit": "f7a38a5db6dc79b5e0401bec7643e0d8b4ec58da",
+   "ergogen": [
+    "ergogen/plank.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "cacheworks/Wubbo": {
+   "commit": "d89331ab889526fe699e4d7e25ce0fe9cbf19e02",
+   "ergogen": [
+    "Ergogen/Wubbo.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "cacheworks/tuck-n-roll": {
+   "commit": "21542dd8d539b683ff70089187e41a46fd1fde80",
+   "ergogen": [
+    "ergogen/tuck-n-roll.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "calligraphysystems-admin/vibe-hardware-mcp": {
+   "commit": "667a5f20bc0826b7ee6fc342b67e81e96e167daa",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "calvin-mcd/LeSTMovoz": {
+   "commit": "ffdad6a879cd29923c6a03a19798ed831c356d40",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "calvin-mcd/universal-vault": {
+   "commit": "aab5cc23d8f8aa3d28afc7d92bdb62acc4415cc1",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "camrbuss/pinci": {
+   "commit": "4956f50cf3902504b41de4bbb62cca7649930eb4",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "canbaytok/Cans12erV2": {
+   "commit": "9d0d1e8eeca9d35b0370c919c9c331e6437c21f4",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "catmunch/macrocat": {
+   "commit": "accca017b3ca2bcfb741d5e922f4764c5400710d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ceoloide/corney-island": {
+   "commit": "70630959305bbad3039477b7c97ef214603a1258",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ceoloide/ergogen-footprints": {
+   "commit": "fd8a628c7175495bdb48fc41a0f56e5ef31f7e5d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ceoloide/mr_useful": {
+   "commit": "0ef8f7e1116fddcf82976855d383b2d2f69e2352",
+   "ergogen": [
+    "ergogen/config.yaml",
+    "source/canonical.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "cfbender/keyboards": {
+   "commit": "283e661cc626aea133aedbc725d0d4aa9b4ea75f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "cgarcia2097/8-Pack": {
+   "commit": "61649995192579a32628c8eb904d064052806dee",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "chenfucn/dactyl-pivot": {
+   "commit": "b668766ac3b5b9953743bb35a699b70a654bdfec",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE-models"
+   ]
+  },
+  "chillKB/ghoulTKL": {
+   "commit": "4db8be21918db3d4218bf5c2e9398a2a1ccef55b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "chrishoage/spleeb": {
+   "commit": "01e2d9dc3d519477827383fe226794187cb9312b",
+   "ergogen": [
+    "src/spleeb.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "climent/atreyu": {
+   "commit": "d82123f9ff97f3d49c5e2ca27a13cec7495d8fc3",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "cmdremily/OpenDeck": {
+   "commit": "bae5f56997a70c72046498af3470edbc834e7fc0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "comicrocharly/Cosmicstone": {
+   "commit": "4e5f0c87cf3184fea55a9a7f116ea93dea1c3f64",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "coolsa/cloud_keyboard": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "coredump/keycap-legends": {
+   "commit": "3513e1ca0b127e03537bae48a684784a25410b1c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "coseyfannitutti/discipad": {
+   "commit": "417eed5c7aca2d9f8412c14fb5ee0a1caa4c734c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "coseyfannitutti/discipline": {
+   "commit": "f3b887110dab14ada007cea96483e4f3e65ca78c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "coseyfannitutti/mullet": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "coseyfannitutti/mulletpad": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "coseyfannitutti/mysterium": {
+   "commit": "5e5ab18d8d9608759e5f50ad9e62fc7329271551",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "coseyfannitutti/romeo": {
+   "commit": "b8e0f81193cfee84accfaebdb5e5db67f1960cab",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "covah901/KUSOboard": {
+   "commit": "38950a4bd3fc8385de0caf9807aeec748e719579",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "cozykeys/Bloomer": {
+   "commit": "8d4805bd96783677840d2bf879d06b2aedddef75",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "cozykeys/bloomer": {
+   "commit": "8d4805bd96783677840d2bf879d06b2aedddef75",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "cozykeys/speedo": {
+   "commit": "647b6388d6959ffa0f461893e838f8a3becb2fb8",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "craftsmandigital/kmk-minidox": {
+   "commit": "c41a4bac5db9a7ee52a41678b2d43ecc24c4ba1c",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "create-collective/Create-knowledge-base": {
+   "commit": "1d5e508ee1eb3742fc800b539cbb9f3e4397af4a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE-CODE"
+   ]
+  },
+  "crehmann/buzzard": {
+   "commit": "7e4610337fda2454fd762767a5662b64716571d5",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENCE.md"
+   ]
+  },
+  "ctranstrum/chuck": {
+   "commit": "e91f5fdd5d917ec2e335cbd104595bef7ff3f2d3",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "ctranstrum/lintilla": {
+   "commit": "ba196b9d64377317b85b95cabdce17bd38c5c0f6",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "curbol/temporal": {
+   "commit": "4d35d518220b0a712757711708d3797d40151d52",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "cvhariharan/h70": {
+   "commit": "f98531376c913142ec1841c1712f30199f409c5d",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "cyanophage/tranquility": {
+   "commit": "f9f72490d510b617ae32d29b6ad48ed3d3dd40c9",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "cyfdecyf/c-dux": {
+   "commit": "6d69626818756a04cf74ce2557495ee5c558f0af",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "cykedev/porta": {
+   "commit": "5308819bac6596944fba9a6e6c46ef1ea31c1b64",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "cyril279/keyboards": {
+   "commit": "f356be9d594e14ad9ba08d4566be9a2d83e71483",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "da-h/BackOnTrack-SplitKb": {
+   "commit": "e7f066e7ac1b96694432c31755af71e30d209358",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "daliusd/joyride": {
+   "commit": "e0d5e2cad1839e807abbca27e144665cb12046f5",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "dansvo/split-ergo-board": {
+   "commit": "3d69cba411c6faf5500a2c733cb74cd69c5ffb24",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "davidValades/dvn-keyboard": {
+   "commit": "63eda5bfe58294f7c6573c50b4bae1e2cc6f28a5",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "davidphilipbarr/Macropads": {
+   "commit": "8a3ff28cda50ce001ee99c272ac5654d64385759",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "davidphilipbarr/Sweep": {
+   "commit": "8ba72a256d627567660ecc0b6f51bb18fa8badb5",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "davidphilipbarr/hypergolic": {
+   "commit": "c9bcf6cc89118dfc319e78d3b527503e64a92b42",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "dayatz/mechanical-keyboards": {
+   "commit": "08d962327e29d307b3b0656278d999c7c06ca878",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "dcpedit/masonry": {
+   "commit": "a93993ac026dd6732e222f1088641ac4bcd6d4c7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "dcpedit/redherring": {
+   "commit": "b4e2b128ba1baa53419d647208e55b76b6ffd18e",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "dekonnection/atreis": {
+   "commit": "634da3c4050c344405c1f42c1ee029295890555f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "dhillon-m/custom-keyboard": {
+   "commit": "cfb6c754983d934cb114c3556e8c05ee8664c2c2",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "dholifield/split42": {
+   "commit": "e3f778ff3e4ed0c153d9d90ae46041166eb58b33",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "di0ib/Misc": {
+   "commit": "f375def0a3a3640754030073d80fbdceb2d38934",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "diegorodriguezv/szr35": {
+   "commit": "eb7a8a7cb8805031bd37b42570a80fd714ea8445",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "diepala/cantor": {
+   "commit": "13f8bc03bb8a894c7c2871ae64845d5ef927c328",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "dieseltravis/travis-ergogen-2024": {
+   "commit": "e6214a5e9c9f35f0c91235c8f27c9e673004572c",
+   "ergogen": [
+    "config.yaml",
+    "feet/config.yaml",
+    "key/config.yaml",
+    "keytest/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "dieseltravis/travis-ergogen-numpad": {
+   "commit": "e5da4a5073133ae9bf10b0864e9fb8b855166a1c",
+   "ergogen": [
+    "config.yaml",
+    "output/source/canonical.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "diimdeep/awesome-split-keyboards": {
+   "commit": "bd2c30408f26b6a0b6fa13e58b6c5ff5436beccc",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "dinofizz/fnrow-pcb": {
+   "commit": "958f606d369896eea14cfcf30d05366fac7f1aa4",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "dj505/PicoFX": {
+   "commit": "5ca6668be387f89048a0bd17031a14ca6c677c55",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "dj505/PicoLX": {
+   "commit": "607e86ae662967e074911dd6be9e506b8c71b37f",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "dkruyt/mk": {
+   "commit": "06d1ea8f679ea7d4c0f4820e0289c50eacb8e601",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "dlford/quokka": {
+   "commit": "1fcaf3aab6bf6705c79cba70a08362d7ade6a882",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "dlip/chouchou": {
+   "commit": "dfd8fa2f03cc053900e6002f2da3c0d35c8d7f57",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "dnlbauer/corax-keyboard": {
+   "commit": "7e01724621f12f1c1099f78c978bcb6aca19b795",
+   "ergogen": [
+    "corax54/ergogen/config.yaml",
+    "corax56/ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "dnlnm/cloak-xt-stm32": {
+   "commit": "5ccb345befca76ea2305974b7e9296e9737386a2",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENCE"
+   ]
+  },
+  "domvt/synthesisTKL": {
+   "commit": "c8af28ec0cac5cd14ff6f5b852be8ae4d10bad8d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "donus3/min34": {
+   "commit": "d94e1fb2cbaf197d4dfac53861ab5ae12fa4284e",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "dotdash32/Cases": {
+   "commit": "f3690db2e55a60795dc6a45b623b44b37a370547",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "dotleon/protocol_seven": {
+   "commit": "a94cd82b2ea30587d779a2ac2afbb94930a5af4a",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "dpapavas/lagrange-keyboard": {
+   "commit": "bcf607f8f3f3d79cef81fdc86c4fd7c7a37df31b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.AGPL",
+    "LICENSE.CC",
+    "LICENSE.GPL"
+   ]
+  },
+  "drabaioli/SdraKb00": {
+   "commit": "0af97f475f5928de8cb2a3543950c28bfd04ac88",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "dubnubdubnub/Giris": {
+   "commit": "d1ed513cad99032805e2e61c25f1a88601c71bb3",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "duckyb/eternal-keypad": {
+   "commit": "bf11c1d50ead127c25401d262d73834e8438f3ca",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "durken1/pierce": {
+   "commit": "be0cc69b2ffccec727a9fda5c7e9696ff51d705b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "dvorak55/chavdai40": {
+   "commit": "db119c4d2a7e8cb631e2221691ee285d288bb05a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "dylandibeneditto/null36": {
+   "commit": "66515230d843d5f6fe85ee521d17202967428eb7",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "e-sp9/omnis": {
+   "commit": "ad2a6017118707196d3744f103ec133fe3919502",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ebastler/isometria-75": {
+   "commit": "a1e89adca4d9435d7d45eac70d11a65d0561ba9c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "edulpn/compose-keyboards": {
+   "commit": "5b4fb281809998ab9c3f2fd5565b142198f2fafe",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE-CC-BY-NC-SA-4.0"
+   ]
+  },
+  "eggsworks/egg58": {
+   "commit": "8afc3df50c83257f74f8f0b91a82d1fe3fb7de40",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "egokb/zmk-config-ego62": {
+   "commit": "f25413438647a31b833b00f8de04c33070465bdd",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "eintim/zmk-behavior-battery-typer": {
+   "commit": "bd11a37ae595af051806c313bec228cc813aebca",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "eivindml/mechanical-keyboard": {
+   "commit": "5f90fb9c12d018c4087192fce4cfb4b6c05055b3",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "eliassjogreen/4by3": {
+   "commit": "3ce240c389bdbec1ebf8100016d1c160c8c53e91",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "elisesurmounted381/pt-pc": {
+   "commit": "29d3704de206b8aab9d9e1b03cdd192d6d44c8db",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "emuree/ergogen-keeb": {
+   "commit": "5cdfa6e59bd23325e1e9de2b8ca30c7dcd0993d6",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "enochchau/dropout-numpad": {
+   "commit": "a43b00cb2326270e0c797111a7fdc68a8f7d6c6b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "enqy/enmity44": {
+   "commit": "0bdc27809736eef42f1b183357e32a7c99f4c131",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "enzocoralc/Tiny20": {
+   "commit": "95e7ea9c51201944daad9ef58bb01bd473f69378",
+   "ergogen": [
+    "tiny20/choc/tiny20.yml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "enzocoralc/pico100": {
+   "commit": "ffde6fa5d816fc8d7cfb1c5b0d3cb7f6ecd50e5c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "enzocoralc/tin52": {
+   "commit": "4a9315bba8f4a270f834e7ed3ada755e0091cecc",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "enzocoralc/wide34": {
+   "commit": "43332b1427cb801a04c5acfd5830fefa15b0f540",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ergogen/ergogen": {
+   "commit": "8286e18f18ac064aa6d2ebca9c449bf2f6ba4d37",
+   "ergogen": [
+    "test/cli/atreus_kle/reference/source/canonical.yaml",
+    "test/cli/big/reference/source/canonical.yaml",
+    "test/cli/minimal/reference/source/canonical.yaml",
+    "test/cli/minimal_kle/reference/source/canonical.yaml",
+    "test/cli/minimal_yml/reference/source/canonical.yaml",
+    "test/outlines/affect_mirror.yaml",
+    "test/outlines/basic.yaml",
+    "test/outlines/binding.yaml",
+    "test/outlines/circles.yaml",
+    "test/outlines/expand.yaml",
+    "test/outlines/hull.yaml",
+    "test/outlines/outlines.yaml",
+    "test/outlines/polygons.yaml",
+    "test/outlines/rectangles.yaml",
+    "test/points/adjustments.yaml",
+    "test/points/basic_2x2.yaml",
+    "test/points/mirror_variable.yaml",
+    "test/points/mirrors.yaml",
+    "test/points/rotations.yaml",
+    "test/points/units.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ergonautkb/one": {
+   "commit": "25326f9b1342f2da982e6da6d42acf41347eb3a9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "erhickey/t-rexth": {
+   "commit": "f030287bae4f5d4b3956e357b23cc9154c6ec7f7",
+   "ergogen": [
+    "t-rexth-30/ergogen/t_rexth.yaml",
+    "t-rexth-36-wired/ergogen/config.yaml",
+    "t-rexth-36/ergogen/t_rexth.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "eric-wood/macro-pad": {
+   "commit": "061f7061f43a4ccca13d4d89710f268a00ec9d25",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "ericrlau/NumDiscipline": {
+   "commit": "928f3f80c031167611aeb7c6eb4184a9571d5227",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "erikpeyronson/erkbd": {
+   "commit": "ea447f5af3e68de77032e8fc66276e1957d073a1",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "etiennecollin/wave": {
+   "commit": "01f03285944f796ab9398a3687d6e76b5867f73c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "evyd13/gh80-series": {
+   "commit": "9f445979186a792f33b32814a751d31b405010a8",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "evyd13/gud70-pcb": {
+   "commit": "45d45bc6d1504f899f412b9a40dd2106258b38b5",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "evyd13/mx-5160": {
+   "commit": "b35be81575d86bd0f9faf49e756e01ef63b38142",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "evyd13/nt-series": {
+   "commit": "75dd6fabddfa78a29a4ad4113d94d988b518d2fa",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "evyd13/quackfire-controller": {
+   "commit": "0eb368dc0a65dcc5c9d160e1152da50f6d073522",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "evyd13/solheim68": {
+   "commit": "642c19605379b08ab32288fddd815455d5f96b6f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "exul/keyboards": {
+   "commit": "9c74e0d7dbb5e67d810ccba7650f3103152d2f60",
+   "ergogen": [
+    "prototype/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "ezxzeng/sweep_squared_rot": {
+   "commit": "8429f6934a76b31c220b228cfafe3b7fb716fd08",
+   "ergogen": [
+    "base_config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "farfalleflickan/nack": {
+   "commit": "d5751c17a4f2ddd50f1fd77056999451401e3ee7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "fearherbs1/blue-team-pad": {
+   "commit": "469f419d7fa795854a10b5ec5f03586ccbf0679a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "felix-kyun/cheebo": {
+   "commit": "43643f7a99658fee4687aa635eb2c5b751307d3c",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "fgoodwin/dactyl-manuform-5x6_6": {
+   "commit": "ac5a371bace8a942a488c8f68638061e90856f6a",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "fhtagnn/kissboard": {
+   "commit": "fb3c2d98b488ae0369a9737fc523b916d363c05b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "flinguenheld/chew": {
+   "commit": "f7e844d7d1fcccd3e4032ddd846010cdcdc539bd",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "floookay/adelheid": {
+   "commit": "5d86649f9464268f1a92555396f946b2db6ab659",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "floookay/pluckey": {
+   "commit": "08eff5dbb5be18c33d21cdc3a8a2cd3a8e8fb502",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "floookay/zwerg": {
+   "commit": "5702aa33500e4c7de124ed02a6fb0f6573198da5",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "flwrenn/hallmark": {
+   "commit": "7c8bf0f960d8a158934af3723e2583f4c7885f29",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "foostan/crkbd": {
+   "commit": "1747b2623b018a7b5acc6d1f7e316debad96a727",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE_CC",
+    "LICENSE_MIT"
+   ]
+  },
+  "freya-irl/casekong": {
+   "commit": "9306dfb59a34d692d952d3c473a53928fe59c5d9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "freya-irl/hoveraid": {
+   "commit": "675ce4810b58aa2014a02b4d65381d6e26bc7a7b",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "freya-irl/splaytoraid40": {
+   "commit": "6dfb24cb71b1919190a7919819dcfa773a574290",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "frobiac/adnw": {
+   "commit": "84e478d48f7a4ae7ac464ac96ef24fd3908bebf3",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "fujisheng/zmk-config-flkb2.0": {
+   "commit": "1c95bb7ff696a478d8d54213d7a0810c0d86e72c",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "fxkuehl/mantis": {
+   "commit": "c89ad02468c95bb6960cbd860d6abbe0f809cd01",
+   "ergogen": [
+    "ergogen/mantis.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "galile0-designs/glyphkbd": {
+   "commit": "a68b8c2293dee22afa7463a85e6d05c4f30e8cb7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "geigeigeist/klor": {
+   "commit": "e2f9c2cde5200189e57c4f89eeff90686cc359fe",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "geoffder/dometyl-keyboard": {
+   "commit": "74671ba6ce1c03f679e8351e3c33ef6008171c63",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE-models.md",
+    "LICENSE.md"
+   ]
+  },
+  "gerolori/gerodactyl": {
+   "commit": "7522d4311fdcc772ba32e4bc701b5d0c73c1c2f1",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "gkeyboard/GPAD8-2R": {
+   "commit": "ee682163bb9efc7e09bc7b57fd9ac67c1dc89771",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "gkeyboard/GreatPad": {
+   "commit": "760ba82ec2634c407d2d64b0cd770b32ff6edd6f",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "goobertony/Tonyverse-keyboard": {
+   "commit": "6e514be55a869d9fa660c706bbcb25b55604bad0",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "grant-park/13990d95307ea56e2c5f95a35234efcb": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "grassfedreeve/akohekohe": {
+   "commit": "cf07ef0b0224fe6214d7d609ec0e96afb28414d0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "grassfedreeve/pueo": {
+   "commit": "a400b0728e66b277f1346cb3ad158d3a64f2230a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "gregandcin/teaqueen": {
+   "commit": "90c35687ea09cb4bdc13904c1b0545739723f520",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "grezeh/vial-qmk": {
+   "commit": "26e62e2da8d440e9c23c7b5a870061a2ba09fd10",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "license_GPLv2.md",
+    "license_GPLv3.md",
+    "license_Modified_BSD.md"
+   ]
+  },
+  "gtips/reviung": {
+   "commit": "110154f56a292466c993ccd726df4a8772b5e0cf",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "guidoism/andean-condor": {
+   "commit": "0374ea67c37f87b226ec3c875d5965f7de586c80",
+   "ergogen": [
+    "andean-condor.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "guidoism/madjax_macropad": {
+   "commit": "c382f070d81dad86c0aec7ebd6d57b2cd975efba",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "gumorr/GummyKey": {
+   "commit": "de2a8cfd5e1d6575efc1355e97a02ad645c0dd43",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "gzowski/somei70": {
+   "commit": "38dbe45edd16d42e5ea77953a72bc0a60323a56d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "hafu/rmk-handwired-crkbd": {
+   "commit": "1cb7ecd212ced815f75eb2725cb3a1e4762eb1d3",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "haierwangwei2005/10BLE-OLED-HUB": {
+   "commit": "6f94e8a01059c03927f22a510c617a81e7a13514",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "hamano/musashi60": {
+   "commit": "4d96cac56be087a6ab8b4009aaa960057fd72c71",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "hanachi-ap/willow64-doc": {
+   "commit": "8174915c0dcade52f43588195999a3a9e404e3d5",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "harshitgoel96/pteron36-split-keyboard": {
+   "commit": "709e670b03001d6f65dc2973f243f8d943e1c8a6",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "hazels-garage/bad-wings": {
+   "commit": "0bef3c6a269ef9f698b50f4ada64d727b34f327a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "hazels-garage/kurp": {
+   "commit": "1275cc936193223951090b697a88a80bd7622a5d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "hazels-garage/satpad": {
+   "commit": "bf767cb934942a3d20623c89e3d86db712b19439",
+   "ergogen": [
+    "satpad.yml"
+   ],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "help-14/mechanical-keyboard": {
+   "commit": "5464323f5d4a7f1d53537e7c92a58bdf648de5d8",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "henrikosorensen/keyboard_pcbs": {
+   "commit": "2a57363d62145e58bcb16aee293f544181a2a445",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "hermatician/datum": {
+   "commit": "acd9e47350d6e9f7762774cce6efee9c190fbf1a",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "herpiko/unk": {
+   "commit": "577dd63b437353e04b03e51dfaff2981861235f9",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "hexxdgrl/swallowtailkb": {
+   "commit": "4224a80dcfc13a4ded10bf6e7d4e8bd61c4e13c7",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "hibiyasleep/cornelike": {
+   "commit": "fd9c1add4aed725dcb458d42632651b507fa806e",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "hris-2/Crown_Keyboard": {
+   "commit": "229b4a792db97958069dd81c421fae767444bd68",
+   "ergogen": [
+    "Ergogen/Inputs/config.yaml",
+    "Ergogen/Outputs/canonical.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "hsgw/ergoinu": {
+   "commit": "4030106aa1e58aa7fd97900df17505ba90c2d578",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "hsgw/plaid": {
+   "commit": "758419c3b764cdfe03876532f1e13fd3e8c5c03c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "hsgw/tartan": {
+   "commit": "f863f6ba577b16b6db320c451c7414c973a532b2",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "huseyz/ergogen-web": {
+   "commit": "ac8bb6bb032b9e7e2af7723af7ba8dfb1aec8c7b",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "huytbt/h50-keyboard": {
+   "commit": "4eef3245dec14edfa2ad35e4986fe838983ebdb7",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "hza2002/owl": {
+   "commit": "45ba0ea3e039cac2d3b54fd85837d82c1aba4c93",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ianklug/grooveboard": {
+   "commit": "532f7bc87360351d53ddd2c7882c716a6f23377c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ianliu/tdphsk": {
+   "commit": "acde268ea208404042133e3df59f25f3451c003e",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ibnteo/catboard": {
+   "commit": "c5d3a23318c539881ef0f1c1c8457db6eb2992f8",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "ibnuda/Slepet": {
+   "commit": "dd6cae2eda81f5bdefed4610d60420f53211983c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ibnuda/Squiggle": {
+   "commit": "d95c8d5f083ac97c36689b82e8650ebd98a0ba83",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ibnuda/alicia-cook": {
+   "commit": "95bb545c63834e67169723a4b318695c2169dd0c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ibnuda/gurindam": {
+   "commit": "5f499d2b6d7122a7fb7f3195e0982227d1d5ea85",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE-CERN-OHL"
+   ]
+  },
+  "ibnuda/squiggle": {
+   "commit": "d95c8d5f083ac97c36689b82e8650ebd98a0ba83",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "idank/keyboards": {
+   "commit": "f149b9b84515ff7f8c9e50f1673a0d941eba4377",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "idank/spankbd": {
+   "commit": "63762237b38f16915506b82955393f0220b04694",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "illness072/elephant42": {
+   "commit": "0f884820cd54727fde69bc3a9249233ffd5fde0f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "imchipwood/dumbpad": {
+   "commit": "6960351c3e9f74059a59c25cd0ddd309a0c939c0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "incptr/zenboard": {
+   "commit": "f2a577165946e7a59e721af7ec084208d908ffae",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "infused-kim/kb_think_corney": {
+   "commit": "315b7b3cf77a8d32a3237629dd3f7fc7af14a562",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "isavcic/palac": {
+   "commit": "6565cb0db34b9130377d083c261d3613b3caab9d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ishandutta2007/Awesome-Ergonomic-Keyboard-Peripheral": {
+   "commit": "aa05e88a7a174aadd0631c0c0a1d6fbf53286c2f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "itsnoteasy/misc": {
+   "commit": "4729ed5093ac85b13d451064ca077644fa08d5d7",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "ivndbt/late-9": {
+   "commit": "1dfab9a195d33e1283d3d36acd8341d75e797bf1",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "ivndbt/neopad": {
+   "commit": "ce43743309a1bab05c14718b112c0f29c041844e",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "ivndbt/obiwanstenobit": {
+   "commit": "bb01a7d5e2c87a486cdaa52144a96c5e8eb3ca60",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "j4ger/hourglass-twins": {
+   "commit": "76f01ea5fed27d49c2de128357aa38d8d893e84b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "jacob-w-gable/alpha_centauri": {
+   "commit": "fcdad7f07f574eddf468d91bbcb368a8f82a8d04",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "jamessa/Angel": {
+   "commit": "5c5799bcfe78e8a6ed0c7655052a2fffd627aff3",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "jamessa/Pragmatic": {
+   "commit": "2184ea84f654f7674a2835903a2462a0cf3cab64",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "jasepellerin/Unit-01": {
+   "commit": "359f006b9e2b0096a9f256c235a725ddb8c2cfcc",
+   "ergogen": [
+    "ergogen/test/cases/001_cube.yaml",
+    "ergogen/test/cli/big/reference/source/canonical.yaml",
+    "ergogen/test/cli/minimal/reference/source/canonical.yaml",
+    "ergogen/test/outlines/affect_mirror.yaml",
+    "ergogen/test/outlines/basic.yaml",
+    "ergogen/test/outlines/circles.yaml",
+    "ergogen/test/outlines/fillet.yaml",
+    "ergogen/test/outlines/gluing.yaml",
+    "ergogen/test/outlines/polygons.yaml",
+    "ergogen/test/outlines/rectangles.yaml",
+    "ergogen/test/pcbs/mock_footprints.yaml",
+    "ergogen/test/points/adjustments.yaml",
+    "ergogen/test/points/basic_2x2.yaml",
+    "ergogen/test/points/default.yaml",
+    "ergogen/test/points/overrides.yaml",
+    "ergogen/test/points/units.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "jchendy/dactyl-manuform": {
+   "commit": "a24787da05bbd0d2c789b68e7d8659ea79a13ea6",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE-models"
+   ]
+  },
+  "jcmkk3/trochilidae": {
+   "commit": "3fa001216fef68a350a117c9c20a4c45e3eeb190",
+   "ergogen": [
+    "workshop/alpha.yml",
+    "workshop/cantor-ish.yaml",
+    "workshop/simple_reviung41.yml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "jcontrerasf/Teclado_Dactyl_Manuform": {
+   "commit": "2c53ed578a7c32e2f323584c9fe112b4e94cef76",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "jeffgran/ManuForm": {
+   "commit": "fa16d3872f03a8fa84e758416b2e6cc4e6d8ec69",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "jimmerricks/bugs": {
+   "commit": "b7523af2a10d2c6054e7aaba1ee52f7c13fb3587",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "jimmerricks/swoop": {
+   "commit": "4a01903c8923c435f40d3bbf69a7e49008c9e103",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "jmdaly/CO60": {
+   "commit": "9fa608737be44789c5f27ea2f8f1a3a85d90a499",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "joedinkle/eyeohdesigns": {
+   "commit": "85f33895f06d4ddd6c38f7599e82113af41fb764",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "joelproko/keyboard_layout_jopr": {
+   "commit": "f62894b06a0cfb35d3bbe73f8e39348149950977",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "johnlamb/LambBT": {
+   "commit": "c127665660b2f8adc8632cb89790d27262cc3549",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "johnplanow/avlokbd": {
+   "commit": "7190d50cd9fa5e2209a438479cca51319cbfcc27",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "jonbobcar/tenkey_plusplus": {
+   "commit": "d91979cca4a4817b58aaadcdca15e26a4055fe72",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "jonwin1/andromeda-keyboard": {
+   "commit": "132a20f4b1c29e9187256173550dc89ed8e71103",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "joric/jorne": {
+   "commit": "1ef5c6189df897f15d05fa6d319a1b55f9c0792d",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "joric/mitosis-hardware": {
+   "commit": "77f1333096a0d9f477d85742ab13a75ec55b854f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "joric/nrfmicro": {
+   "commit": "5ac390d9d133e781a46a9c9fe43880f4826422e0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "josefadamcik/SofleKeyboard": {
+   "commit": "fb294f7c58d0f91c379a9ef339159d4d056643e9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "josh-l-wang/Bruce-the-Keyboard-the-Resources": {
+   "commit": "104f77786f58f7a1a7d3441cfb525be6ac21c87b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "josh-l-wang/deskcheck": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "josh-l-wang/isobae": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "josh-l-wang/vault35-katana": {
+   "commit": "52b138244d94d9c011bd0687f22b0ee68cb070ee",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "josh-l-wang/vault35_wkl": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "joshajohnson/hub20": {
+   "commit": "f781e843167f94afac979929ccd29d1ee586b9fa",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "joshreve/dactyl-keyboard": {
+   "commit": "961dc469989b66d042b0d7cd5595b93b4509a020",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE-models"
+   ]
+  },
+  "jpconstantineau/BlueMicro_BLE": {
+   "commit": "2fedd92a6778418bd65974244574fc6de230eadb",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "jpconstantineau/ErgoTravel": {
+   "commit": "e9be40f69359cc593c21303f7be7bc1916a83468",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "jpconstantineau/VColChoc44": {
+   "commit": "51bde2837a4f3b4a6bff0081275963e5ddbc8c7b",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "jpskenn/Jones": {
+   "commit": "d76a5830ca9f103e446f72d9cd7cc408e279b6f2",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "jpskenn/Unison": {
+   "commit": "4248e9ad89e397262cdff9cc6bf117cedd9f66e9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "jpuerto96/v4n4g0rth0n": {
+   "commit": "28d5c3952a4ebf91575ccbcd99a2f0df3744f145",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "jsbursik/Janus-Keyboard": {
+   "commit": "f53d827ae1b21acba3c05b741c0a5375a159c6d1",
+   "ergogen": [
+    "config.yaml",
+    "output/source/canonical.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "jurassic73/split89": {
+   "commit": "d7eab0f25225784783e14238eb1fa89d82a60e6f",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "jusdisgi/rollasplay": {
+   "commit": "f43fb2c88294c65559126ad4f5d5cc45d88d003e",
+   "ergogen": [
+    "ergogen_rollasplay.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "jyap808/pando": {
+   "commit": "af7ec71d6baf6b3e96b4c5f51ccd715673cb70dc",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "jyap808/pando58": {
+   "commit": "1f3fe398ada128f732cd3a7be834340227992f57",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "k3peta/tiny18": {
+   "commit": "1fdff265549684038622880e6024409f5360ca52",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "k3peta/zmk-config-tiny18": {
+   "commit": "2485a1ad483a3ab42dc397561b42c9e356c571f9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "karhunen-loeve/martlet": {
+   "commit": "ce46018c316d075cd321c67e3991631d0f37bfe0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "karhunen-loeve/martlet-zmk": {
+   "commit": "d29d2c9c44a3d26389cd3403ed9ef5255d805cb0",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "karnadii/qsplit": {
+   "commit": "3d8e5006f6bb89d2e34c902640598c4a39953cea",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kata0510/Lily58": {
+   "commit": "58c649797c185b7b32b9928d4546665153cfacfd",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kaylynb/MechLlama-G35": {
+   "commit": "9c79e331c53bfa1cb39919ec03d82d122075a2e0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kb-elmo/aek2_usb": {
+   "commit": "b53cacfab2ebaf2475e34f6f0a835130f5b60bc7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kb-elmo/bm42": {
+   "commit": "99969d138c6ed400c87203cae383dd21e7d0dddd",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kb-elmo/dizzy40": {
+   "commit": "0b068f742d6bdd5b005d1b1ea39119a4e0182118",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "kb-elmo/eliza": {
+   "commit": "60db2d27737de4f3d43debcf410fe6ff6d2e6d2c",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "kb-elmo/gamehand": {
+   "commit": "2d3f2c7c9e4f0dc0662309d50eeb94edb49078ac",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kb-elmo/m0110a_usb": {
+   "commit": "2c118273a847dcd990bdf95efddacc176d37e47d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kb-elmo/m0116_usb": {
+   "commit": "9077816c4445ae9158dbe1f4902767dcdcb7315d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kb-elmo/noah_avr": {
+   "commit": "5fff3109d6bc0bb32e9022596c55a8b898464ade",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kb-elmo/numpad": {
+   "commit": "9f8efe7c92c97686ccb7f375bb955641916ae659",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kb-elmo/sesame": {
+   "commit": "bf3d25d8f22d68f087ccdb9b84723c920eefd612",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kb-elmo/twelvekey": {
+   "commit": "d0dc6c98fbc4e84047151f62d4db5aaede3809a1",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kbjunky/IIICC": {
+   "commit": "89c06ae8af018d2c17801c2f5bf74093e3e51382",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kbranch/snowflake_keyboard": {
+   "commit": "78f8f031b143f51cfa4f71d8876fd6b17d3f64ff",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "keawade/keaboard": {
+   "commit": "92121d15114b1b9515237f5bcde8a1a0f0a9df5d",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "keebio/fourier": {
+   "commit": "5d2563d0cb9264b33b32f69a1d2e2a1fcda009bb",
+   "ergogen": [],
+   "lizenzdateien": [
+    "License"
+   ]
+  },
+  "keebio/iris-case": {
+   "commit": "bc6efd51c8a0d76d114c5f0736851e7e1d831fc3",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "keebio/kbo-5000-case": {
+   "commit": "2995ffce25b946933dda647ffc757caecc9faf5d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "keebio/nyquist-case": {
+   "commit": "c0f2d919f55e21b71fb57ae814940dae72bb4d2d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "license.txt"
+   ]
+  },
+  "keebio/quefrency-case": {
+   "commit": "83783501d2c75c18d459b1bfa697465c8fb4b076",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "keebio/quefrency-rev1-pcb": {
+   "commit": "562d328790c90b49216403fe39fa0054fbbfe8ba",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "keebio/sinc-case": {
+   "commit": "64e8e218c30dc7da148478f828704832e4c422c7",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "keebio/viterbi-case": {
+   "commit": "6331fa8e01507485d6a8a109e821aae8baf16f96",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "keloGuo/magicKey63FW": {
+   "commit": "0431239901999f2b68fd2148ace640bfe30745e7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kelvinhall05/southpaw75": {
+   "commit": "3b442d702ddfeaea83801524733d1a3aa8b8b671",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "keotl/11squares": {
+   "commit": "047348fc587f8d0dfb7600a996d4779fdfcdaf7b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "keyboardio/Model01-Firmware": {
+   "commit": "9cc38674c04287abb94771a923f96a23eda4bcc0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "keyzog/kapl": {
+   "commit": "3635c4fcb3f1a1865659c9e87bb95f8a7c3f55bb",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kiibohd/case": {
+   "commit": "797b7ccd049a0fdaec4530134a6911260776962d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kiibohd/pcb": {
+   "commit": "10eb6fdc5e34fd3d460b53206e3e947dc987a240",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kip93/qmk-crkbd": {
+   "commit": "52e7455ba6450aae0744bc674f4fe5379adc889a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kissetfall/Lily58-Pro-RE": {
+   "commit": "f570e3b85a713eebcabd3f4d60115c55984eef95",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kjeller/orbiter_keyboard": {
+   "commit": "56fc71d876f98af1ad21b2117f6485c421ff7981",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kkatano/bakeneko-60-pcb": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "kkatano/bakeneko-65": {
+   "commit": "20026dd162b3b182dfc86a2d304f4b71ce807f4f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kkatano/bakeneko-80-pcb": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "kkatano/wallaby": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "kkatano/yurei": {
+   "commit": "714c7e13b35d06951c25c04c07d0c2b0ca5b07f9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kkckrnz/treble": {
+   "commit": "8331d464c5ed022c7c6651ce4ac48201cc1715ac",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "klausweiss/bolek": {
+   "commit": "87f607731c600991a878669381743d422e6b389f",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "knaruo/barracuda": {
+   "commit": "d657aeb501909c10f49cbab3ec6aba9de3d38594",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "knaruo/pisces": {
+   "commit": "54fe47d9dd43400b92e7964c08959c712e7b6bcc",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kobababa/Acrylic_3D_KB": {
+   "commit": "0c92d1b8e5644d1746f69e1d17af6f7e9671bb1e",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "kobababa/Splay46": {
+   "commit": "be3af43de471f85c17a55f97959363b2f61c4b93",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "konstantindenerz/k0d3ball35": {
+   "commit": "c54717ea70e96d43ea57f7fc7e5737210f2b85d0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE-HARDWARE"
+   ]
+  },
+  "kraken-jokes/pteron-pcb": {
+   "commit": "c4a04e6aef60032f1b01922f8750529dd2ad96b0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kulmajaba/tunks-keyboard": {
+   "commit": "5439c2c5e56f1b53552e64f8a940101f1814e7cc",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kumaokobo/pico-keyboard": {
+   "commit": "16e447d9b7da6aae68d2edac6e3698e6a16d00ce",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "kunsteak/bloq": {
+   "commit": "1cf6d4da1c90db8975bb3aa6f245d09599593f32",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "kunsteak/obelisk": {
+   "commit": "e8f8f099742e0cd75c57326eb495cd09b86bec55",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "kuriatsu/TSUBASA": {
+   "commit": "c415f86a33de5e63f6469074ce408873c5e38357",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "kvietcong/the-abyss": {
+   "commit": "bb6aca588c59db8e5ae802232df3f179fbfaceac",
+   "ergogen": [
+    "the_abyss.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "kyleterry/spacetime-keyboard": {
+   "commit": "8900ae9f186801a9b519970675ba5a605e39f681",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "lapidot/2BKeyboard": {
+   "commit": "62e39ae49a5673f9ff5d04793ed89b95cdf17304",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "lapidot/ADuck": {
+   "commit": "4c7db149747bcb0d114170cd0102bd9ac46e32d7",
+   "ergogen": [
+    "ADuck.yaml",
+    "NS/DuckNS w bind.yaml",
+    "aduck with reset switch.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "larssont/capistry": {
+   "commit": "5390eaead56edd0a0fd6e3d6d5c989590810b726",
+   "ergogen": [
+    "examples/ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "larssont/ergogen-footprints": {
+   "commit": "708940922192a481cd40c6cef9ae80de49a9e104",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "larssont/ergogen-utils": {
+   "commit": "88bc05db200d81fd253669fe7d3d575c722562c7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "latincompass/2-RotaryEncoder-pad": {
+   "commit": "e31b0d28aa050c4b603174c042d5a49e9963e70a",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "lendunistus/rpneko65": {
+   "commit": "59988169021ca9aaf0227e8f8b2ea3a98b632dff",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "lental/keyboard-firmware": {
+   "commit": "4e9666c1204d4235de6043e3db5f39e9560133a0",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "levib0534-dot/project-vertex": {
+   "commit": "856199badacbe57e61e551ecc62b67eb4bfc3885",
+   "ergogen": [
+    "hardware/ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "levitatingpineapple/atreus": {
+   "commit": "0f80c73bc17f4c90fff71f04a63097bb76ab108e",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "li-fo/geulpan42tp": {
+   "commit": "75d5f3b6f3abf06f087e197fe53e2b33c60b9b9d",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "lighteningAB/45keyboard_v1": {
+   "commit": "8fea6257f1b10ea84fb22bb6bbd3bb5d5117c1dd",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "longnald/corin": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "luarrana/tlalocohyla_smithii": {
+   "commit": "192efce4946381a795cf748b98a1953670be45f3",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "luimmich/K01": {
+   "commit": "23513dc60526b5225498fcf8f8313fec247f4655",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "lyso1/LCK75": {
+   "commit": "e02836f627dce0b037fe33338e35658c4aab757a",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "m-althaf/ergo-keeb": {
+   "commit": "37d8ed3749b33b2d70c6558957c639049d298247",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "macroxue/keyboard-diy": {
+   "commit": "c6a657837d04cc6441fdbc6ec5760f705b76ebf0",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "makenova/omega": {
+   "commit": "db594eac16c070595ba5e3adb1c3fc0ac57a7dbf",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "makkomise/slothie60": {
+   "commit": "145aff5f231dd140cef9a97420a300f14d59ee69",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "manna-harbour/xmk": {
+   "commit": "4a7950b06c30327b66150c1447317ff8e31076dc",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "mao-syseng/braet": {
+   "commit": "105d9cbf6b8f35f2f1549d5699f1f3024377d519",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "marksard/Keyboards": {
+   "commit": "efaa13f7cc1a66d289930b84c2402fa7a5800ed4",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "martisak/skoldpad": {
+   "commit": "407bf0d374dafcae880fa8ecb0efa9d7aaf62d9a",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE-HARDWARE"
+   ]
+  },
+  "masterchief117k/ErogGenDesign": {
+   "commit": "de7458d4849d9d2444faa2d06cf913fa834abdcf",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "mattdibi/redox-keyboard": {
+   "commit": "55979e1f78d61375171b2c716a6c1ceb64a486ea",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "matthewdias/m3n3van": {
+   "commit": "b11f3e4465bac5ec6898479c981dde757604f366",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "matthewdias/minim": {
+   "commit": "c633c26c0db111210a5d2c9440bba58818613dec",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "mattyspangler/iris-rev8-reverie": {
+   "commit": "e96f177fc81b739bde85b711fe0f65fb86e57389",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "mawaeg/sharkropad": {
+   "commit": "27a81ce411b77155386759480f403ee459cda228",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "mbtech-nl/majestouch-stm32": {
+   "commit": "f16fce645b6f43236a25b98c4e60fb24f26c35f8",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "mgsg/KHEops70": {
+   "commit": "4fa2b3ee4002a10c22e72c765be44a6c0d7d85e6",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "michaelsippel/combwriter": {
+   "commit": "e30d7e74d9f5a8994110296452a1b6d460f7852a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "COPYING"
+   ]
+  },
+  "michelepagot/opensuse.hackweek.2024": {
+   "commit": "d7d1a579f940ceb9e162e8e63d1fae2110e7768d",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "milosz77665/tile-keyboard": {
+   "commit": "fe600068cd1b2a190539aabf32c55b5bd7eff7ce",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "minibois/elixivy": {
+   "commit": "d83ea49913de3dfbf52f01e3dace4d89f5ecb730",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "minibois/ten-key-plus": {
+   "commit": "2f5816f8f88d69c6b9e4b05a277912cccd2a5a88",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "misonoworks/chocolate-bar": {
+   "commit": "77152919a4c32f2ce057f62340f96bdced3aa016",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "mizma/slimdash": {
+   "commit": "9bae17fe498e8cefb45dd736512f0072e58b59d0",
+   "ergogen": [
+    "hardware-rev1/ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "mjohns/dactyl-cc": {
+   "commit": "e0fc7e4869e76912645abb367f4e4231fa07cf86",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "mjohns/tracer": {
+   "commit": "409720167ab970af13be30dc0a4228185caec8f5",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "mkdl/Unix60": {
+   "commit": "59bab204801bef8bdce9cb8150c38f9f526d7022",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "mmccoyd/hillside": {
+   "commit": "cc26a0834de775f7245ec1d3d2c298f0c68fb24e",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "mohitg11/TS65AVR": {
+   "commit": "a9f63faab62bbfe781afc10294689f1c57ef81ed",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "mohoyt/lagom": {
+   "commit": "e14a0dea1bf4b24ddb4d38dad2a0685f66a33465",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "mohoyt/litl": {
+   "commit": "e14aa8be671a962053af8778ca3e3b5e8e50627c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "monksoffunk/zinc": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "mornepousse/KaSe_PCB": {
+   "commit": "b79c52fc496278eb7ad80fe5e14e02810b667cc3",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "mornepousse/Niphargus": {
+   "commit": "1275f0356724110f9db8f108706f8c8932f3cdb8",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "morningstar1/pttbutton": {
+   "commit": "3ad0b7c188a47118bf734a23194de5e789663035",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "mrninhvn/meow65-pcb": {
+   "commit": "d5fcf7c49e76f704157116531b14a34b2ff4e77a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "mrzealot/absolem": {
+   "commit": "5f25251cb5a6779091e2a10b2a081946ad0228a9",
+   "ergogen": [
+    "absolem.yaml",
+    "mk3.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "mymakercorner/Phoenix_Project_No1": {
+   "commit": "460fa6d9854d6f606f14ef15bc7d8075d4b210f7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENCE.md"
+   ]
+  },
+  "naaeell/Mist65": {
+   "commit": "ee4b98f1f9560ec403749c60f6358f0eeba700d5",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "narinari/xenon-keyboard": {
+   "commit": "396a4eefbc0a5fe24401a6820e92bbf931eba310",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "nazzacode/thesis--reimagining-computer-input": {
+   "commit": "14701b4b93362f29108363090959efd2a87d3d44",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ncwhale/Keyboard_Design": {
+   "commit": "3ecc8dd12789d1571515ba52ad9edae1bfec0b49",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "nevimmu/Limule": {
+   "commit": "31263459fa5c9dda454a6676c6375f797a739172",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "nglgzz/42": {
+   "commit": "b36fe78fdbe28f593c04577b6fc79f0e36f4adaa",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ngrigoriev/dactyl-manuform-5x7_2_6": {
+   "commit": "1a6ea124ad23c50af53211f1e68c2bff3055cbab",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "nicinabox/lets-split-guide": {
+   "commit": "adab7307f9d3ecf6701774b7d6e346b50329f227",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "nickcoutsos/dactyl-deskmount": {
+   "commit": "93e90b5549631dd4989b2a28cc1dcdd6d2b3234c",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "nickcoutsos/dactyl-flatpacked": {
+   "commit": "e5b90be885d718fb8bfad05a38e39c1d7b921244",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "nicolai86/ganymede": {
+   "commit": "f295f9f667645c5c93a302dfa5893b4d5cdb3c04",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "nietaki/revolt-keyboard": {
+   "commit": "a8a197ca9532131680fe34ac6f5eb985a3e92570",
+   "ergogen": [
+    "ergogen/revolt_v1.yml"
+   ],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "niltea/Palette1202": {
+   "commit": "60e81a29f1db1d211ee2c76fe8a9077e2204ca63",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "nmunnich/apiaster": {
+   "commit": "51d86113a7b3402d80078d39f50f60271df3ec45",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "nomis/keyboard-pcb-rpi-pico-25x1": {
+   "commit": "a55ca0f05507c1bd29185db994c75d521521e529",
+   "ergogen": [],
+   "lizenzdateien": [
+    "COPYING"
+   ]
+  },
+  "nrtkbb/Keyboards": {
+   "commit": "b9ef08c9e58f07732771c90e4a64a5b7e3958718",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "nuess0r/ctrl-m": {
+   "commit": "d774669970dce1ade62211a5784581e3dbd27b6b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "null-ll/basketweave": {
+   "commit": "f4630f36ab7235c60fbded41264ef9e2099ca90c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "nuroctane/nur-modkeys": {
+   "commit": "47db648f30383125e77002c3da5a0db28fd58e86",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "nut1414/np12": {
+   "commit": "a9ff4302c70408e8a10fdbc8365297c2f6ae6ffc",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "nwhirschfeld/TechnicPad": {
+   "commit": "0c00ab9d0a3424394f0c5ac305d703db4639cdd0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "nxtk/ergogen-template": {
+   "commit": "98d97dd7e454e753b2b7337873f21cf3f4d4d1b4",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "oSnwy/Karve-Split-Keyboard": {
+   "commit": "b4dd6158b14a3968ef0a1330d9cdf4c4c982ff2d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "obiwanblee/nocfree-zmk": {
+   "commit": "d387ad2f4b3dc9a52e6638aac4559ab1c4a6ffe8",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "object1037/L4": {
+   "commit": "5c42684833a6d8088c67733466cf2bd9e9ee41ac",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "object1037/Vespa": {
+   "commit": "99e63071eee2fb662f12bba8e13f0bc2e989cf9b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE_CC",
+    "LICENSE_MIT"
+   ]
+  },
+  "obosob/arch-36-case": {
+   "commit": "65a69eeb9e5a60588e2a42333e661984843cc074",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "obosob/steal_this_keyboard": {
+   "commit": "22d8d7d59936218bc73f38bc75bec7fd141dd01b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "okke-formsma/dactyl-manuform-tight": {
+   "commit": "ea609a421ad01f908ef8a243d6e656a1ce5f41e5",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE-models"
+   ]
+  },
+  "omkbd/ErgoDash": {
+   "commit": "4502790c81e6ea4f32031a5e6f63331e0a2b896e",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ora233-fantaea/selfcustom-macro-numpad": {
+   "commit": "a9cf82403ed2234be6d4e2a3abd7f05b877dfba1",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "orihikarna/Hermit": {
+   "commit": "056ff37882b753920b62d3755b9be96450d432f4",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "osenchenko/jiaex": {
+   "commit": "3145e4bd20077662ede49e6e881968d63291bddb",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ozkan/Yakamoz": {
+   "commit": "d7b147b5f016a7d2b8941b158a13eaf7a35d6ff6",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "pablojimenezmateo/classic48": {
+   "commit": "3670f700ee3a1276c1ee4680f7abd248f33740d4",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "paidmediamountain/nostromo-keyboard-qmk": {
+   "commit": "3420fef06ef530631fe99a23682ec6fdde9ef75e",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "park-csu/Lyra": {
+   "commit": "19056f7f125217fcc261f4f8383b8d35ccdbadfa",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "pashutk/chocofi": {
+   "commit": "273676d11b06785fb5a1a94860a39fc36c38baba",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "pcewing/speedo": {
+   "commit": "647b6388d6959ffa0f461893e838f8a3becb2fb8",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "peej/for-science-keyboard": {
+   "commit": "f30ab1072f86780eb4f4e537e78107cea54455a7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "peej/lumberjack-keyboard": {
+   "commit": "2c5571acc0c71dc44d8b64ee8c73e462ba35e85e",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "peej/rosaline-keyboard": {
+   "commit": "a40d60e95ee69630db0ea53d97c59b9e5db4851f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "peej/tripel-keyboard": {
+   "commit": "fc7233b8af882557ff00bd814eca5c4d80c2d355",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "phloamy/osprey": {
+   "commit": "c352b9473b35a5506fdc472d1145b3dc5756a618",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "pierrechevalier83/ferris": {
+   "commit": "abc96ada2dafc403ef8a3b5031748954140980b5",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "piit79/basketweave-s": {
+   "commit": "f200eb65bfe8d73f7a49f4e77e1df7a0b6e2b9cd",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "pohjolaworks/sotka": {
+   "commit": "17ceba44c1703f2514f074e36ac6c31888c34a1c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "powerlemming/KBDClack": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "pseudoku/Apoptosis": {
+   "commit": "745a95b5ab994d2f02c3403c47d1b8e19453e9e6",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "psuieee/pluto12": {
+   "commit": "133e338081e5190a17a4e63f6953ffdc49f120b7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "purdeaandrei/overnumpad_controller_1xb": {
+   "commit": "be68b284cadba573611b77363a99c7606c80e3bc",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "pwlsp/oreganokb": {
+   "commit": "1dbb4490b747c63f67672f51ca1f567db6039004",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "r4dr3fr4d/pyergo60": {
+   "commit": "0a2561aa9c9e83bd38cfbb9ba3c59845fa74c857",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "raeedcho/temper": {
+   "commit": "08b23b021fcec6c2ae355cade7e0e473530afb85",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "rafaelromao/prisma": {
+   "commit": "06fc937a2519534e15a3eb2f095c1e41697d83ad",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "ramonimbao/Alice-like_Handwired": {
+   "commit": "95f5c8e7967354499d8143c5c08e71b87b3db0cd",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "rarepotato8de/3x3macropad": {
+   "commit": "19aa83a684ed09668870ef1e8754b716e093ebe6",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "rawrex/krylo": {
+   "commit": "d8ecf4475315ca48f2b112d4d949a72f192ed837",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "raychengy/fifi_split_keeb": {
+   "commit": "78949c55a755086eb26a072015a974c94d2de8ac",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "reversebias/mitosis": {
+   "commit": "f2bb956f8565762212d361a42f830390ef5c6845",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "reversebias/mitosis-hardware": {
+   "commit": "77f1333096a0d9f477d85742ab13a75ec55b854f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "rianadon/Cosmos-Keyboards": {
+   "commit": "21f233377fa5451fd398c2a5a473329dc6f49e08",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ripxorip/pinkytyl_v2": {
+   "commit": "dccc6589e0b65f40d7647dead0c7787f0c570069",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "riyaz942/zmk-dactyl": {
+   "commit": "94b0f4ad9b6bde2a15552e69930795d033f6e6c9",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "robcmills/karn-keyboard": {
+   "commit": "72289368108fe89b02cfb42cc98823a63a0108b7",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "robot-o/wolpertinger": {
+   "commit": "a8632fa2def97278a9ec07f1ef4c15452029dd07",
+   "ergogen": [
+    "wolpertinger.ergogen.yml"
+   ],
+   "lizenzdateien": []
+  },
+  "robotmaxtron/ergodox-case": {
+   "commit": "2c582db5668514635404ad96de6ae1fa84eab945",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "rompgadgets/keyboards": {
+   "commit": "2e3b76e8801f928e0c960d1b554d74911d080e89",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "rothgar/ergodox-ez-tent-kit": {
+   "commit": "8025100693b463536dfba8503591648009b20642",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "rowanclarke/hummingbird": {
+   "commit": "39535bb5de8139f4dd4842019a60866e8621ff9a",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "rschenk/re-gret": {
+   "commit": "7bc7908e7579d462b8eebd255a90dd71fe2e64b8",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "rschenk/tern": {
+   "commit": "02445d5ecc4fb8d357fbc5e9103daed2c0a2df6a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "rtitmuss/torn": {
+   "commit": "792336b2ae7b4a04c52391f7fc98bb688039218f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "rwalkr/eskarp": {
+   "commit": "d0d32b01d4a3259e5836377b3615694e524b9dd6",
+   "ergogen": [
+    "case/eskarp.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "ryanstevensmith/atlas-65": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "s1vax/3D-Models": {
+   "commit": "d6f1ac4052e60032328a8bdb4db8d9a780e38907",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "sadekbaroudi/barobord": {
+   "commit": "ffc53e9a0e3875c39b565bb353507d7672a09299",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "sadekbaroudi/enigma36": {
+   "commit": "937cd2fcd29c30e7e4ecf89b0b2cd6d674ff67e9",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "sadekbaroudi/euclid36": {
+   "commit": "fc2d0b99dd73ec1a22c48569931d93e4ea2f9569",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "sakurachari/yosino58": {
+   "commit": "a7056c8c87e97d9fb768c6f106ec903091364cee",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "sanderboer/chonkybois": {
+   "commit": "7f2e0cb4b513c8329b8c487a945ba459a4f5e0b9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "sanfeps/mithril_kb": {
+   "commit": "7e9b19a7419ac2e439e9802a8a81680f65b68f52",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "sapristi/single_col_pcb": {
+   "commit": "faa5a6dac4c486d4f87c9b2a316b074b9af3aff9",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "sasalele-alt/skKey": {
+   "commit": "26cd8565c26e9331250b57d6602294cbcf6c1896",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "satorusaka/15k-macropad": {
+   "commit": "26fd68713ce03c7c7d893bbd7f6a914cceff4867",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "satt99/caravelle-build-guide": {
+   "commit": "fd40386e0185c5cf655e3a355af502f9e57be48b",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "satt99/caravelle-pcb": {
+   "commit": "51ef87664c783fd1a02d10f2a8c67fe98b157008",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "satt99/comet46-firmware": {
+   "commit": "ed4a522c0ff2958265c0d269a4a63ba296dfdd07",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "satt99/comet46-hardware": {
+   "commit": "75f237a718db80c326d38aeb6cecaeae7fbcf2d5",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "sboysel/atma": {
+   "commit": "6e02c72ac39af86aba9cff2513d4d1c7b663c46b",
+   "ergogen": [
+    "atma.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "sboysel/giraffe36": {
+   "commit": "67c9e8092da867bf2ce4165160cdf3c90b8e6e7c",
+   "ergogen": [
+    "giraffe36.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "scaarix/flow-keyboard": {
+   "commit": "771c42bebb4f73447b2324cf1e1f16536e825a98",
+   "ergogen": [
+    "Ergogen/ergogen v4.yaml",
+    "Ergogen/flow.yaml",
+    "Ergogen/flow_keyboard.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "sch3fr/Kaiju75": {
+   "commit": "f2a3d82733de948a09edece20d5667fea5bca0dd",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "schodet/splitty": {
+   "commit": "55548a01488e1ba1b1eae59e255ea0a83ed79004",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "schuay/cirrus40": {
+   "commit": "44e9091b9ebfd7732c01963cc1043c6a9a128c3b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "schwarzer-geiger/Edinburgh41": {
+   "commit": "b8efe1919db2a793de6630cfe0b2e23195eeba96",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "seityaya/Kepler-33": {
+   "commit": "HEAD",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "sekigon-gonnoc/GRS-70EC-doc": {
+   "commit": "7a7d1d13870749adfbda4b360746a87dc963bcb5",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "sendyyeah/bevi": {
+   "commit": "b6731b5602a8129d21c184e8d68d72e653665117",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "sendz/pix": {
+   "commit": "b6e084de634feedf9b8bebc91b91773fd59c9b6b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "sevkin/peacedukeeb": {
+   "commit": "7d0ee668d874be6d70dd1a067932b849650fd75c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "COPYING"
+   ]
+  },
+  "sevmeyer/chrumm-keyboard": {
+   "commit": "0677d499e7c4dadd9a2d08126818694470a20291",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "shizakken/hyperboard": {
+   "commit": "d1a31f8a4ac3de95dcb47f7df589ea8643af817c",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "shlyapp/reviung33-config": {
+   "commit": "7e449d914ea7032bd7c1f559cc4c8d953bfece9d",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "shoenot/merope": {
+   "commit": "fd6813a05bba7236dd6bca641a80e77445bc4d8a",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "shuguet/split89": {
+   "commit": "6bf7571a6a03eac0753d32e5fac7fd01d35d2bfc",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "sini6a/bratski-keyboard": {
+   "commit": "8b3fa90205038d9d1cede521f48b0ade4260fa34",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "sithlord121/slz40": {
+   "commit": "b3641a65f6976122cc1201902a63154ff91dbc2f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "sje-mse/yacobo": {
+   "commit": "2b9f342cc3fa8fb6a8ba53407eea0216859e14e4",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "skarrmann/cata": {
+   "commit": "8fb436607312dbf1c1ca020b248e4d9a29030977",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "skarrmann/horizon": {
+   "commit": "80b319cd03beab5e4e4f083784ff7fabfe21f922",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "skarrmann/janus": {
+   "commit": "44d1dd5a51db4e98e5bb150d818249102aaf7ec8",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "skarrmann/morizon": {
+   "commit": "e3165b7ccee07fe40b63a034132b045c6c0fd5ec",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "skarrmann/sha": {
+   "commit": "51be3f4b9faf89cffa77f35d66ac41d4bc4deb31",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "skeletonkbd/SkeletonNumPad": {
+   "commit": "b87d3ee71c2ac7a488ea922639e21407f4e1e6dd",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "skksn1230/raft21": {
+   "commit": "8cfa74f7ff05c1a19aebd9ac2b12642dbdef7602",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "smallwat3r/smallcat": {
+   "commit": "bcec68101a834ad894fba65f8ff88103b7ca48cb",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "smores56/clog": {
+   "commit": "7db3b317646ce06354783abc00ee97025080acb7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "smores56/osprette": {
+   "commit": "cf4aea204d92591672511a335de0b58e9eb0d055",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "smssmssms/pos78": {
+   "commit": "c297f344cf533fa1b2b2a25b0e06ce6559c336f8",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "snsten/Klein": {
+   "commit": "4caaa8cbf05d28c989beb217e564f0de96ad0fb5",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "softplus/3keyecosystem": {
+   "commit": "86e6660bf15133f033d58185a9fdc2d0845a5899",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "sol/chord-zero": {
+   "commit": "500fb4d85d519680c73b92204bae51d4284d07c7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "sommerper/framework16-keyboard-v1": {
+   "commit": "0367c605819d629a1eedcd6792cfe532f3803712",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "sotoba/contender": {
+   "commit": "e2507f8006455eece15fb1e94d742fa4d6d76cc2",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "sotoba/craftwalk": {
+   "commit": "69ecf9df20cc164c27e22da280d073f27f483db3",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "soundmonster/samoklava": {
+   "commit": "a23bf7180eb31e970980c9d20f7c0d886c5032da",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "spellmux/blackstaff": {
+   "commit": "1311f35f62d883f0c854f8192e6f8a8135c24c84",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "splitkb/kyria": {
+   "commit": "85dd60422754d8fe9e387ac2c212cf26d3997de6",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "strayer/taira-keyboard": {
+   "commit": "3ed4d2978658386cf189df129f36f1a53dfa545d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "strobo5/T61_PiPico_Scanner": {
+   "commit": "3383a290bdc08cba3300eafba0a8c1960fac4e9b",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "subrezon/la_nc": {
+   "commit": "d1341f9309621da691f95ee5a8fbdc41261a4c40",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "subrezon/lancer": {
+   "commit": "3134a8712e6a6ec7bd08f07343ce318dbd74ab24",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "suheyb143/Iskra-handwire-numpad": {
+   "commit": "c222b9beba3c5fcac2f055123b71fd4e692a4cb8",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "suikagiken/suika15tone": {
+   "commit": "8301fa9f10d1a28d43a8aa044e7c01012bb36df8",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "suikagiken/suika27melo": {
+   "commit": "b58504643f0995e247348a53561afec54414ddc6",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "suikagiken/suika83opti": {
+   "commit": "53455df43f226422ef50353722026b8595146064",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "suikagiken/suika85ergo": {
+   "commit": "4560c188aa58221cf4517d4178063928f90aa6ad",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "swanmatch/colosseum60": {
+   "commit": "bc413f84e3b604b5b43f0a17762d8586f0499083",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "swiftrax/UnSplit": {
+   "commit": "8ae7e088f74649b037cac2ab093cb1c905284cdb",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "syenasweta/syenakeyboards": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "tadfisher/nyx-kb": {
+   "commit": "967b4f6d8e4358105dbbf5e3809feac18877207b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.gpl",
+    "LICENSE.mit"
+   ]
+  },
+  "tahnok/harkonnen": {
+   "commit": "042f5834570835abfa4740c094e7857c917e864a",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "takagi/plum47_buildguide": {
+   "commit": "9c13fd2b529caffb21c8d80153e947fb9312667d",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "takashicompany/compacx": {
+   "commit": "52379de035e8e6d6380ef84bb1689c7b75312d6b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "takashicompany/dogtag": {
+   "commit": "c5b14c2ca69ac17e26f4e9bb4504d413b2eb7bc7",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "takashicompany/endzone34": {
+   "commit": "47fee309ff4c76b47d2ab9cf3539cdd44a84c63a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "takashicompany/goat51": {
+   "commit": "c3f55030bbcb55f20e16e0f041511b64e59e9d6d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "takashicompany/minizone": {
+   "commit": "a9966d6c9abe28339f7b1b72621b74fa3dc68352",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "takashicompany/palmbrain": {
+   "commit": "658b5305b34dad3a33e4ebfe612441053f661dde",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "takashicompany/qoolee": {
+   "commit": "05dc044a03797ab54a8f6af2fc141fdb45e8e106",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "takashicompany/radialex": {
+   "commit": "0ec5c217ec184411e265141886bebf7cbd160084",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "takashicompany/rookey": {
+   "commit": "1de7bdf646ca683dba92c0ecdfd5851f228eea33",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "takashicompany/spreadwriter": {
+   "commit": "5f22737c63a8e411f695797e49d45aea9d12e058",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "takayoshiotake/five-octave-61-key-keyboard": {
+   "commit": "2ad67145d63fe27e92b590ccef701c773e589050",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "takayoshiotake/harmony-42-keyboard": {
+   "commit": "3f4929a09a960f9a31b4dcbf396215de9773eef4",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "takayoshiotake/three-octave-sharp-38-key-keyboard": {
+   "commit": "713efe2a8b17e88135d8f005732865e4dda0b4ef",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "takishim/mikeneko65": {
+   "commit": "5b5a945a35410dcb6867f16556243ac25a348fc1",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "tamanishi/Pinky2": {
+   "commit": "948a0a46e4a4e29a0ccfe67dc919131a88a470d6",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "tamanishi/Pinky3": {
+   "commit": "00424901e04ff360ae9df9d8aa92dffd95c6d2ea",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "tamanishi/Pinky4": {
+   "commit": "618844c28bdf1ce413bd5db7045ca4560f846d31",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "tapioki/cephalopoda": {
+   "commit": "99edfc77033b527f430f8fdb3a7f4530b2e5931f",
+   "ergogen": [
+    "Architeuthis dux/architeuthis_dux.yml",
+    "Broken - Do not use/Dosidicus gigas/alu/dosidicus_gigas_alu.yml",
+    "Broken - Do not use/Metasepia pfefferi/alu/metasepia_pfefferi_alu.yml",
+    "Dosidicus gigas/dosidicus_gigas.yml",
+    "Idiosepius thailandicus/choc/idiosepius_thailandicus_choc.yml",
+    "Idiosepius thailandicus/chocmini/idiosepius_thailandicus.yml",
+    "Metasepia pfefferi/v1/metasepia_pfefferi.yml",
+    "Sepia officinalis/sepia_officinalis.yml",
+    "Todarodes pacificus/todarodes_pacificus.yml",
+    "Todarodes sagittatus/todarodes_sagittatus.yml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "tapioki/sepia": {
+   "commit": "99edfc77033b527f430f8fdb3a7f4530b2e5931f",
+   "ergogen": [
+    "Architeuthis dux/architeuthis_dux.yml",
+    "Broken - Do not use/Dosidicus gigas/alu/dosidicus_gigas_alu.yml",
+    "Broken - Do not use/Metasepia pfefferi/alu/metasepia_pfefferi_alu.yml",
+    "Dosidicus gigas/dosidicus_gigas.yml",
+    "Idiosepius thailandicus/choc/idiosepius_thailandicus_choc.yml",
+    "Idiosepius thailandicus/chocmini/idiosepius_thailandicus.yml",
+    "Metasepia pfefferi/v1/metasepia_pfefferi.yml",
+    "Sepia officinalis/sepia_officinalis.yml",
+    "Todarodes pacificus/todarodes_pacificus.yml",
+    "Todarodes sagittatus/todarodes_sagittatus.yml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "tarneaux/supersplit": {
+   "commit": "170a573c7868ee35e052f444991751a329916488",
+   "ergogen": [
+    "clavis.yaml",
+    "ergogen/test/cases/001_cube.yaml",
+    "ergogen/test/cli/big/reference/source/canonical.yaml",
+    "ergogen/test/cli/minimal/reference/source/canonical.yaml",
+    "ergogen/test/outlines/affect_mirror.yaml",
+    "ergogen/test/outlines/basic.yaml",
+    "ergogen/test/outlines/circles.yaml",
+    "ergogen/test/outlines/fillet.yaml",
+    "ergogen/test/outlines/gluing.yaml",
+    "ergogen/test/outlines/polygons.yaml",
+    "ergogen/test/outlines/rectangles.yaml",
+    "ergogen/test/pcbs/002_skip_footprints.yaml",
+    "ergogen/test/pcbs/mock_footprints.yaml",
+    "ergogen/test/points/adjustments.yaml",
+    "ergogen/test/points/basic_2x2.yaml",
+    "ergogen/test/points/default.yaml",
+    "ergogen/test/points/overrides.yaml",
+    "ergogen/test/points/units.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "tarneaux/triboard": {
+   "commit": "63a965b43039c1c417f396441497baf8a3edaf3d",
+   "ergogen": [
+    "config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "technomancy/atreus": {
+   "fehler": "fatal: could not read Username for 'https://github.com': No such device or address"
+  },
+  "telzo2000/cool836A": {
+   "commit": "f340b865086c4a399eb601bff6b3ecb534499acc",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "tenstad/keyboard": {
+   "commit": "81d987c855962b986be9b5ee94afe414f0621c5a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "tewtham/dactyl-typesafe": {
+   "commit": "84445f4f7b8a327614476027c559e614833cb647",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "thatfellarobin/axon": {
+   "commit": "a9ad2da23a32b72975e58bbabdd60c5cbb0ade3b",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "thecapt/custom-numpad": {
+   "commit": "0da42acbdfc0fcbc371a04e8dc2ecf7c16db70cc",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "thedalles77/USB_Laptop_Keyboard_Controller": {
+   "commit": "cb6f789c7c9a1491a903c934ba36d163637869a9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "themaxbang/MRIYA": {
+   "commit": "fb5dfa7a9343bdb2b1d0a9f101047b47beb0ef57",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "themissingcow/themissingkeyboard": {
+   "commit": "dedf6a256a38d095239a2cc721ded799c33da09a",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "thrly/tempest": {
+   "commit": "8d1ced109a41dfb5647e67cf5924c7ce4c70b38a",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "tmek1244/IsThisLoss": {
+   "commit": "139b737e4f6efea167fcfb5a19d4be9c1c2ec0e2",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "tmshader/artsey-ergo": {
+   "commit": "319ad6f81187608335644965a3137c4d1a0dc4c6",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "tompi/cheapino": {
+   "commit": "e4bc9a9757a9d196e0dc6d3e3f453ae633bf1b60",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "tomsaleeba/ergoslab": {
+   "commit": "6d5b66af99c80647d147ec6248144f4d4af02a3d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "trentrand/ergonomic-keyboard": {
+   "commit": "552f38114c7ce802dcec0aa3d8ea3319e848ab1f",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "trishume/PolyType": {
+   "commit": "77adab4faf44a19eb85279ee0037f1edb982da8f",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "tsiuch-acp/planck-siooh": {
+   "commit": "b2c9eed68bf87b6f6419a2aa03ab9efbf31f2999",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "tsteffek/Ergogen-V4-Migration-Guide": {
+   "commit": "5282c024b8310fc1a82ad84ac28e547c68ca5ddc",
+   "ergogen": [
+    "complete_v3_example.yaml",
+    "complete_v4_example.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "tszaboo/Ortho4Exent": {
+   "commit": "a415c14cb9bd1ce93b61a18a830eff4638638867",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "tuantran39/bateer-kbd": {
+   "commit": "f7bbebd3325e104548ed164b395bc3bb4097bcc7",
+   "ergogen": [
+    "the_one/rev1/1_layout/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE_CC",
+    "LICENSE_MIT"
+   ]
+  },
+  "typewatch/driver40": {
+   "commit": "829896ebcc9efc4b269ea7ef2b7a1da7f3111d59",
+   "ergogen": [
+    "ergogen/driver40.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "tzarc/djinn": {
+   "commit": "21dd586153f70b0247c3c38f8a8070891e49041d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "tzarc/ghoul": {
+   "commit": "895c4d3bcf7e9b969828ce3d9fdd27389a92d861",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "tzarc/keyboards": {
+   "commit": "21dd586153f70b0247c3c38f8a8070891e49041d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "unspecworks/delta-omega": {
+   "commit": "ddba6161acde747d4e0e8d017133ca390d595d0f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "unspecworks/gamma-omega": {
+   "commit": "840f3c9c7454f699907d58289f54927d6d18ca69",
+   "ergogen": [
+    "hesse/ergogen/config.yaml",
+    "original/ergogen/config.yaml",
+    "tc36k/ergogen/config.yaml"
+   ],
+   "lizenzdateien": [
+    "LICENSE.md"
+   ]
+  },
+  "v3lmx/cornifi": {
+   "commit": "88bfb9756ca475200583016d99423a9ac0d24b6d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "vattern/grandiceps": {
+   "commit": "4ae39176e146ac8c76944726d8e4e68a239c26d0",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "vattern/stoutgat": {
+   "commit": "6e26e8c0e288f96fc3a9287ad3081d162b307dd2",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "vattern/stoutgatv2": {
+   "commit": "f73a64ba7f29a90e79c9f58e6d881e10cb0859c8",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "veikman/dactyl-keyboard": {
+   "commit": "32ff487ae219982fbe457081bbe18e619c2d3eb2",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE-models"
+   ]
+  },
+  "violet-fish/lucifer-keyboard": {
+   "commit": "2435dc07f79dad35501954235bbc8534dc2caac6",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "vladantrhlik/VT-40": {
+   "commit": "25ef3f08f5f2cd02b2158a3df234c429bb7c2a14",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "vlkv/avalanche": {
+   "commit": "8c4e5292092d5f4148f993dfc2c4bd20aaf650b1",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "vlkv/chocofly": {
+   "commit": "de7fd445482fc20d44fd791aad408015ba52f9a3",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "vmorganp/swirl": {
+   "commit": "5dc68a2a4c7fcf353c6e3d74103add92d971c74a",
+   "ergogen": [
+    "v0/swirl.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "volard/dactyl-manuform-volard-layout": {
+   "commit": "e4876dd067dbd2c3e10d906df42c04de0048e542",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "vuhopkep/PCB": {
+   "commit": "ef93c8e5c5e67f9e4c639462b17d4867a7b753bd",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "vvhg1/clp-keycaps": {
+   "commit": "8c99af4292ebd7544b70d9d0c4c2ec4f6929170f",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "w0rxbend/worxboard-ergo": {
+   "commit": "f080bac185b65768ca0963799bd29c36c0053973",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "walterhanley/wren-keyboard": {
+   "commit": "7249eb72981c4e5a703d904d5f9fb24c3dd891c6",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "westfoxtrot/Cypher_PCB": {
+   "commit": "1de753d6f1fded02ed760952cf3e740d9dde2064",
+   "ergogen": [],
+   "lizenzdateien": [
+    "license.md"
+   ]
+  },
+  "weteor/3W6": {
+   "commit": "d96c6d28f34786edfa21aa34bdae9c4aa643d8b9",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "wez/SpockKeyboard": {
+   "commit": "634afc9ebe4d3521960f310ccee0844ded738ad6",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE-MIT"
+   ]
+  },
+  "willpuckett/sessile": {
+   "commit": "0ced52cc5df0b1afea0b74d296655e60eb6df413",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "willpuckett/studyofhands": {
+   "commit": "605828a05e35aff743f21fa848be4293945a752a",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "winiar93/zmk-battery": {
+   "commit": "b8556bcd3b7662b945d25fc9c498e2de89525179",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "wolffjj/Atreus_54percent": {
+   "commit": "4b59cacd4d458664ef18c41697bc88615adaf119",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "wolfwood/handwire-helper": {
+   "commit": "45dc8bf90bd0bd96d669b17c9219a830e1686b15",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "wolfwood/printed-keycap-mods": {
+   "commit": "491c668675b75a4e78621d74032abfb4f744541c",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "wolfwood/tryadactyl": {
+   "commit": "2bd21622a05cec3a7406be75c23ed1dbea7496d1",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "wongjingping/k34": {
+   "commit": "3759e7c370dbc5ecbada4ee7f763994b21fe6e9d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "wozeparrot/MushyCloud": {
+   "commit": "840f5a488020c824de3050d071a05eef4f550096",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "wyager/micromechboard": {
+   "commit": "b6dfc2852aaa567549549dc24524d753f1c8cfd0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "yanfali/fruity60": {
+   "commit": "1e3e5c89c5cf6a7ec1909ce858fbb390200a8989",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "yanghu/unicorne": {
+   "commit": "8307cef101dc7da9c653263e5bc0b94b3f1122e3",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "yfuku/claw44": {
+   "commit": "ec77c1873979dcb8c395f3cbbf1af05966d22a08",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "yohcop/climber_keyboard": {
+   "commit": "47d7d46a7b3e62714a818c79159304d82f12e79f",
+   "ergogen": [
+    "climber.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "yoichiro/lunakey": {
+   "commit": "d3a36e247d0b636a438df8572790985da2494160",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "yossiyossy/maJIStic": {
+   "commit": "9a2494335ab7a029a3b7a2b47c1a36583aeac69c",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "yuburoll/ANSIC": {
+   "commit": "809aef1ad7d64e36a5564556fc4255aacc2e7bc0",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE.txt"
+   ]
+  },
+  "yuburoll/Boardloaf": {
+   "commit": "ebfa1bc89f855a33a7af7eb07c7c623594b03606",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE.txt"
+   ]
+  },
+  "yuburoll/KeeNoard": {
+   "commit": "f6ad433d05ceba9456d13dec4d9603ef2275c9a6",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE.txt"
+   ]
+  },
+  "yuburoll/PISIC": {
+   "commit": "23cf542cedad10be01a9eb09ba59556c92079a80",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE.txt"
+   ]
+  },
+  "yuburoll/ilwol": {
+   "commit": "492a4db220ff685c65d27250f6f00a7179d1ea44",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "yuburoll/modubu": {
+   "commit": "37c653e295c6caf6e5e9cdcb5843314b78d35cd6",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE.txt"
+   ]
+  },
+  "yuburoll/phalwol": {
+   "commit": "e6a7d5dcaee37aa78b592e54d4c590aa96fb2401",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "yuburoll/printyl": {
+   "commit": "71dfd265a470f277afe4a6621023e07431719582",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE.txt"
+   ]
+  },
+  "yuburoll/yuwol": {
+   "commit": "bca612094a7da7baab89f64db2fa271dc86a844e",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE",
+    "LICENSE.txt"
+   ]
+  },
+  "yunjieshi/ya36": {
+   "commit": "6d11fdd1ac0c789b4f892fa633086da8e6361404",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "zackfreedman/mirage": {
+   "commit": "cc430548fb67ec51b5d891c8380d30a40647165c",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "zhiayang/mikoto": {
+   "commit": "86318f6c69495b8308354b6393d85229177b26ae",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "zicojiao/allium58-wireless-split-keyboard-tutorial": {
+   "commit": "e862ba2389473e0d526ae1156677f3e4b84ddeca",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "zigotica/mechanical-keyboards": {
+   "commit": "e9e74ecf04e24bcb2a197b0b2cb11f903ae716fe",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "zing-rsa/zing-corne": {
+   "commit": "d93cfee25103ea777a3dcc389f13eaab77cc62e0",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "zing-rsa/zing-corne-v2": {
+   "commit": "ddf6d101018dc54e821d30310a67a8c0dadae7eb",
+   "ergogen": [],
+   "lizenzdateien": []
+  },
+  "zk-phi/1x2x3-keyboard": {
+   "commit": "f64f05c34061350dc26a0ca38b805827042d7ec4",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "zmkfirmware/zmk-uno": {
+   "commit": "c5223271477a21e9e19e09406a1e8f29034e1e86",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "zoriya/abyss": {
+   "commit": "94b149d45dab559e1c11a8ba1eb4b78c51c591a5",
+   "ergogen": [
+    "ergogen/config.yaml"
+   ],
+   "lizenzdateien": []
+  },
+  "zykrah/fuyu": {
+   "commit": "997f0768bff63d0b871483abd2ba60bc07b47d1d",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "zykrah/slime88": {
+   "commit": "151167c6e0944e65f95da85f55eb8f4dcd9e31e2",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "zzeneg/pica40": {
+   "commit": "41b4a86d5ad0cbd54cf16cac60e43055cc2cca84",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  },
+  "zzeneg/stront": {
+   "commit": "af3aa184322a7269d9bcb19c1c83c41cc2f3a553",
+   "ergogen": [],
+   "lizenzdateien": [
+    "LICENSE"
+   ]
+  }
+ }
+}

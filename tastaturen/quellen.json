@@ -5,43 +5,142 @@
       "art": "git",
       "url": "https://github.com/qmk/qmk_firmware",
       "commit": "8252b6309752f0be6882c387e15989ba51323d8f",
-      "sparse": ["/keyboards/**/keyboard.json", "/keyboards/**/info.json", "/keyboards/**/readme.md", "/LICENSE*"],
-      "lizenz": "GPL-2.0-or-later"
+      "sparse": [
+        "/keyboards/**/keyboard.json",
+        "/keyboards/**/info.json",
+        "/keyboards/**/readme.md",
+        "/LICENSE*"
+      ],
+      "lizenz": "GPL-2.0-or-later",
+      "name": "QMK Firmware",
+      "lizenz_datei": "LICENSE",
+      "nutzung": "Fakten aus den Tastatur-Definitionen (Name, Hersteller, URL, Tastenpositionen, Funktionen); keine Code-Übernahme",
+      "nennung": "QMK Firmware contributors, https://github.com/qmk/qmk_firmware (Commit siehe stand)"
     },
     "vial": {
       "art": "git",
       "url": "https://github.com/vial-kb/vial-qmk",
       "commit": "dd43959ae5c08d8a28d38a1acf7b04e86b14a344",
-      "sparse": ["/keyboards/**/keyboard.json", "/keyboards/**/info.json", "/LICENSE*"],
-      "lizenz": "GPL-2.0-or-later"
+      "sparse": [
+        "/keyboards/**/keyboard.json",
+        "/keyboards/**/info.json",
+        "/LICENSE*"
+      ],
+      "lizenz": "GPL-2.0-or-later",
+      "name": "Vial (vial-qmk)",
+      "lizenz_datei": "LICENSE",
+      "nutzung": "wie QMK, nur Tastaturen ohne QMK-Gegenstück",
+      "nennung": "Vial contributors, https://github.com/vial-kb/vial-qmk"
     },
     "zmk": {
       "art": "git",
       "url": "https://github.com/zmkfirmware/zmk",
       "commit": "4de313367288aad5aeaa1243890e40dc813f7008",
-      "sparse": ["/app/boards/**", "/app/dts/layouts/**", "/LICENSE"],
-      "lizenz": "MIT"
+      "sparse": [
+        "/app/boards/**",
+        "/app/dts/layouts/**",
+        "/LICENSE"
+      ],
+      "lizenz": "MIT",
+      "name": "ZMK Firmware",
+      "lizenz_datei": "LICENSE",
+      "nutzung": "Fakten aus Board- und Shield-Metadaten und physischen Layouts",
+      "nennung": "The ZMK Contributors, https://github.com/zmkfirmware/zmk"
     },
     "splitkbcompare": {
       "art": "git",
       "url": "https://github.com/jhelvy/splitKbCompare",
       "commit": "03382445fc54d248b9c252c45a4af65275945b74",
-      "sparse": ["/keyboards.csv", "/LICENSE.md", "/README.md"],
-      "lizenz": "MIT"
+      "sparse": [
+        "/keyboards.csv",
+        "/LICENSE.md",
+        "/README.md"
+      ],
+      "lizenz": "MIT",
+      "name": "splitKbCompare",
+      "lizenz_datei": "LICENSE.md",
+      "nutzung": "Zeilen der Tabelle keyboards.csv",
+      "nennung": "John Paul Helveston, splitKbCompare, https://github.com/jhelvy/splitKbCompare"
     },
     "keymapdb": {
       "art": "git",
       "url": "https://github.com/precondition/keymapdb",
       "commit": "914e4837cabdcae5eb3e39467a7fb0236880b69a",
-      "sparse": ["/src/posts/keymaps/*", "/db_fields_reference.md", "/LICENSE"],
-      "lizenz": "GPL-3.0"
+      "sparse": [
+        "/src/posts/keymaps/*",
+        "/db_fields_reference.md",
+        "/LICENSE"
+      ],
+      "lizenz": "GPL-3.0-only",
+      "name": "KeymapDB",
+      "lizenz_datei": "LICENSE",
+      "nutzung": "Fakten aus den Keymap-Einträgen (Tastatur, genutzte Tastenzahl, Merkmale) und Links",
+      "nennung": "precondition and contributors, KeymapDB, https://keymapdb.com/"
     },
     "golem": {
       "art": "web",
       "url": "https://golem.hu/boards/",
       "abgerufen": "2026-11-17",
       "hinweis": "Übersichtsseite plus je Tastatur eine Detailseite (board/<name>-<id>.html), höchstens eine Anfrage je Sekunde. Die Sammlung wächst seit etwa 2021 kaum noch; neuere Tastaturen erscheinen auf kbd.news.",
-      "lizenz": "keine Angabe; übernommen werden nur Fakten und Links"
+      "lizenz": "unbekannt (keine Angabe auf der Seite)",
+      "name": "golem.hu Split keyboard database",
+      "lizenz_url": null,
+      "nutzung": "nur Fakten (Tastenzahl, Bauart, Tags, Jahr) und Links; keine Texte, keine Bilder",
+      "nennung": "dovenyi, golem.hu – Split keyboard database, https://golem.hu/boards/"
+    },
+    "kbdnews": {
+      "art": "kbdnews",
+      "url": "https://kbd.news/",
+      "abgerufen": "2026-11-17",
+      "hinweis": "Keyboard Builders' Digest (dovenyi). Alle Artikel über ihre Nummer (https://kbd.news/x-<id>.html), höchstens eine Anfrage je Sekunde. Übernommen werden Titel, Datum, Rubrik, Tags, Specs-Fakten und Links, keine Texte oder Bilder.",
+      "lizenz": "unbekannt (keine Angabe; Rechte beim Betreiber)",
+      "name": "KBD.news – Keyboard Builders' Digest",
+      "lizenz_url": null,
+      "nutzung": "nur Fakten (Tastenzahl, Bauart, Tags, Specs) und Links; keine Texte, keine Bilder",
+      "nennung": "dovenyi, KBD.news – Keyboard Builders' Digest, https://kbd.news/"
+    },
+    "manuell": {
+      "art": "datei",
+      "url": "tastaturen/manuell.json",
+      "name": "Eigene Recherche",
+      "lizenz": "CC-BY-4.0",
+      "nutzung": "eigene Zusammenstellung belegter Fakten; jede Angabe mit Beleg-URL der Herstellerseite",
+      "nennung": "Projekt keyboard-layout und Mitwirkende (Nennung vor Veröffentlichung festlegen)"
+    },
+    "github": {
+      "art": "github",
+      "url": "https://api.github.com/search/repositories",
+      "name": "GitHub-Suche nach Topics",
+      "topics": [
+        "ergogen",
+        "split-keyboard",
+        "ergonomic-keyboard",
+        "custom-keyboard",
+        "keyboard-pcb",
+        "qmk-keyboard",
+        "zmk-keyboard",
+        "ortholinear-keyboard",
+        "column-staggered"
+      ],
+      "lizenz": "je Repository (SPDX laut GitHub-API); Metadaten der Suche ohne eigene Lizenz",
+      "nutzung": "Repository-Metadaten (Name, Beschreibung, Topics, Lizenz, Homepage, Datum) als Fakten; keine Dateien außer Ergogen-Konfigurationen",
+      "nennung": "GitHub-Repository des jeweiligen Projekts"
+    },
+    "yal": {
+      "art": "git",
+      "url": "https://github.com/YAL-Tools/ergo-keyboards",
+      "commit": "1020b3b77455e2d41794bd4aa5948b2b6d91a00d",
+      "sparse": [
+        "/docs/keyboards.js",
+        "/docs/rowstag.js",
+        "/README.md",
+        "/Links.md"
+      ],
+      "name": "YAL's ergo keyboard list",
+      "lizenz": "CC-BY-4.0",
+      "lizenz_url": "https://github.com/YAL-Tools/ergo-keyboards/blob/1020b3b77455e2d41794bd4aa5948b2b6d91a00d/README.md#license",
+      "nutzung": "Einträge aus docs/keyboards.js und docs/rowstag.js (Fakten und Links, keine Bilder, keine Notizen)",
+      "nennung": "YellowAfterlife and contributors, YAL's ergo keyboard list, https://yal-tools.github.io/ergo-keyboards/ (CC BY 4.0)"
     }
   }
 }

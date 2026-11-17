@@ -65,13 +65,65 @@ def lade_golem(name, q):
     print(f"{name}: {len(links)} Detailseiten, {neu} neu geladen")
 
 
+def lade_kbdnews(name, q):
+    """Alle Artikel über ihre Nummer (https://kbd.news/x-<id>.html; der Namensteil ist beliebig). Die höchste Nummer
+    stammt aus der neuesten Ausgabe. Seiten ohne Artikel (Titel "Keyboard Builders' Digest") werden als leer gemerkt.
+    Vorhandene Dateien bleiben; höchstens eine Anfrage je Sekunde."""
+    ordner = ZIEL / name / "artikel"
+    ordner.mkdir(parents=True, exist_ok=True)
+    start = hole("https://kbd.news/").decode("utf-8", "replace")
+    hoechste = max(int(n) for n in re.findall(r'-(\d+)\.html"', start))
+    neu = leer = 0
+    for nr in range(1, hoechste + 1):
+        datei, leer_marke = ordner / f"{nr}.html", ordner / f"{nr}.leer"
+        if (datei.exists() and datei.stat().st_size > 1000) or leer_marke.exists():
+            continue
+        for versuch in range(3):
+            try:
+                inhalt = hole(f"https://kbd.news/x-{nr}.html")
+                if b"<title>Keyboard Builders' Digest" in inhalt[:5000] or b"<article" not in inhalt:
+                    leer_marke.touch()
+                    leer += 1
+                else:
+                    datei.write_bytes(inhalt)
+                    neu += 1
+                break
+            except OSError:
+                time.sleep(5)
+        time.sleep(1)
+    print(f"{name}: Artikel 1..{hoechste}, {neu} neu geladen, {leer} ohne Artikel")
+
+
+def lade_github(name, q):
+    """GitHub-Suche nach Topics (ohne Anmeldung: höchstens 10 Anfragen je Minute, je Anfrage 100 Treffer, höchstens
+    1000 Treffer je Topic). Ergebnis je Topic als JSON."""
+    ordner = ZIEL / name
+    ordner.mkdir(parents=True, exist_ok=True)
+    for thema in q["topics"]:
+        treffer, seite = [], 1
+        while True:
+            url = (f"https://api.github.com/search/repositories?q=topic:{thema}&per_page=100&page={seite}"
+                   "&sort=updated")
+            daten = json.loads(hole(url))
+            treffer += daten.get("items", [])
+            time.sleep(7)
+            if len(daten.get("items", [])) < 100 or seite >= 10:
+                break
+            seite += 1
+        (ordner / f"{thema}.json").write_text(json.dumps({"topic": thema, "abgerufen": time.strftime("%Y-%m-%d"),
+                                                          "anzahl": daten.get("total_count"), "items": treffer},
+                                                         ensure_ascii=False), encoding="utf-8")
+        print(f"{name}: topic {thema}: {len(treffer)} Repositories")
+
+
 def main():
     quellen = json.loads((REPO / "tastaturen" / "quellen.json").read_text(encoding="utf-8"))["quellen"]
     auswahl = sys.argv[1:] or list(quellen)
     ZIEL.mkdir(parents=True, exist_ok=True)
     for name in auswahl:
         q = quellen[name]
-        {"git": lade_git, "web": lade_golem}[q["art"]](name, q)
+        {"git": lade_git, "web": lade_golem, "kbdnews": lade_kbdnews, "github": lade_github,
+         "datei": lambda *a: None}[q["art"]](name, q)
 
 
 if __name__ == "__main__":
