@@ -1,0 +1,400 @@
+# Aus Herstellerseiten extrahiert, die Sören am 17.11.2026 als HTML gespeichert hat (/home/decaswift/manuell-html/).
+# Nur Angaben, die auf den Seiten stehen; Beleg = URL der gespeicherten Seite. Format: tastaturen/recherche-vorlage.md
+name: Keyboardio Model 100
+hersteller: Keyboardio
+url: https://shop.keyboard.io/products/model-100
+belege: [https://shop.keyboard.io/products/model-100]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: zusammensteckbar
+  tasten: [64]
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  firmware: [kaleidoscope]
+  drahtlos: nein
+  energie: [kabel]
+  zelt: optional
+  verfuegbarkeit: [fertig]
+  profil: normal
+hinweise: {geteilt: "„Interconnect bars to hold your keyboard halves together“ im Lieferumfang", zelt: "optionales Octo-Feet-Kit für Neigung und Tenting"}
+---
+name: Keyboardio Atreus
+hersteller: Keyboardio
+url: https://shop.keyboard.io/products/keyboardio-atreus
+belege: [https://shop.keyboard.io/products/keyboardio-atreus]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  tasten: [44]
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  firmware: [kaleidoscope, qmk]
+  drahtlos: nein
+  energie: [kabel]
+  verfuegbarkeit: [fertig]
+  profil: normal
+  preis: "156 EUR"
+hinweise: {schalter: "44 Kailh MX-Style-Schalter, 44 Kailh-Hotswap-Sockel", masse: "24,3 x 10 x 2,8 cm, 310 g"}
+---
+name: Svalboard Lightly
+hersteller: Svalboard
+url: https://svalboard.com/products/lightly
+belege: [https://svalboard.com/products/lightly]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  tasten: [50]
+  schalter: [magnetisch, optisch]
+  maus: optional
+  maus_art: [trackball, trackpad, trackpoint]
+  firmware: [qmk, vial]
+  energie: [kabel]
+  verfuegbarkeit: [fertig]
+  preis: "976.95 EUR"
+hinweise: {schalter: "20-gf-„magneto-optical“-Tasten im DataHand-Prinzip", maus: "rechts und links wählbar: Trackball, Touchpad, Trackpoint oder keine"}
+---
+name: Dygma Raise 2
+hersteller: Dygma Lab S.L.
+url: https://dygma.com/pages/dygma-raise-2
+belege: [https://dygma.com/pages/dygma-raise-2]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: zusammensteckbar
+  tasten: [68, 69]
+  daumentasten: 4
+  schalter: [mx, choc-v1]
+  schalter_montage: [hotswap]
+  drahtlos: optional
+  drahtlos_technik: [bluetooth, funk-2-4]
+  energie: [kabel, akku-fest]
+  zelt: ja
+  verfuegbarkeit: [fertig]
+  preis: "ab 369 EUR"
+hinweise: {geteilt: "„You can start using it attached like a normal 60% keyboard, and then gradually set it apart“", tasten: "64 MX (ANSI) bzw. 65 (ISO) plus 4 Low-Profile-Schalter", energie: "Wireless-Version: 2370 mAh je Hälfte", zelt: "integriert bis 60°"}
+---
+name: UHK 80
+hersteller: Ultimate Gadget Laboratories Kft.
+url: https://uhk.io/uhk80
+belege: [https://uhk.io/uhk80, https://uhk.io/manuals/uhk80, https://uhk.io/product/uhk80]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: zusammensteckbar
+  daumentasten: 4
+  schalter: [mx, choc-v2]
+  schalter_montage: [hotswap]
+  drahtlos: ja
+  drahtlos_technik: [bluetooth, funk-2-4]
+  energie: [kabel, akku-fest]
+  maus: optional
+  maus_art: [trackball, trackpoint, trackpad]
+  display: ja
+  zelt: optional
+  firmware: [uhk]
+  verfuegbarkeit: [fertig]
+  preis: "458.05 EUR"
+hinweise: {geteilt: "Handbuch: „split the halves by pulling them apart“", energie: "LiPo 3500 mAh links, 5000 mAh rechts", maus: "Module: Trackball, Trackpoint, Touchpad", zelt: "Riser für 10–60°", layout: "80 % Tenkeyless mit F-Reihe; 8 Daumentasten, die unteren 4 mit Kailh Choc v2"}
+---
+name: UHK 60 v2
+hersteller: Ultimate Gadget Laboratories Kft.
+url: https://uhk.io/product/uhk60v2
+belege: [https://uhk.io/product/uhk60v2, https://uhk.io/manuals/uhk60v2]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: zusammensteckbar
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  energie: [kabel]
+  zelt: ja
+  firmware: [uhk]
+  verfuegbarkeit: [fertig]
+  preis: "377.17 EUR"
+hinweise: {geteilt: "Handbuch: „The bridge cable is not needed when the halves are merged“", zelt: "9° links, 7° rechts; mehr mit Riser 60"}
+---
+name: Cyboard Imprint
+hersteller: Cyboard
+url: https://cyboard.digital/products/imprint-standard
+belege: [https://cyboard.digital/products/imprint-standard]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  tasten: [82]
+  daumentasten: 6
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  maus: ja
+  maus_art: [trackball]
+  drahtlos: optional
+  firmware: [zmk, qmk, vial]
+  zelt: ja
+  verfuegbarkeit: [fertig]
+  preis: "699 USD"
+hinweise: {layout: "82 Tasten: 12 Funktionsreihe, 10 untere Reihe, 12 Daumentasten", maus: "34-mm-Trackball in jeder Hälfte", firmware: "Wireless mit ZMK oder nur kabelgebunden mit QMK-Vial", zelt: "stufenlos bis etwa 45°"}
+---
+name: Ergohaven K:03 v4
+hersteller: Ergohaven
+url: https://eh.industries/shop/tproduct/767895441-248313066323-k03-v4
+belege: [https://eh.industries/shop/tproduct/767895441-248313066323-k03-v4]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  tasten: [60]
+  daumentasten: 5
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  drehgeber: optional
+  display: ja
+  energie: [kabel]
+  verfuegbarkeit: [fertig]
+hinweise: {drehgeber: "bis zu 3 steckbare Drehregler je Hälfte"}
+---
+name: Ergohaven K:03 v4 Wireless Metal Edition
+hersteller: Ergohaven
+url: https://eh.industries/shop/tproduct/767895441-862791882113-k03-v4-wireless-metal-edition
+belege: [https://eh.industries/shop/tproduct/767895441-862791882113-k03-v4-wireless-metal-edition]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  tasten: [60]
+  daumentasten: 5
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  drehgeber: optional
+  drahtlos: ja
+  drahtlos_technik: [bluetooth]
+  energie: [kabel, akku-fest]
+  verfuegbarkeit: [fertig]
+hinweise: {energie: "150 mAh LiPo, mindestens 3 Wochen"}
+---
+name: Ergohaven K:04
+hersteller: Ergohaven
+url: https://eh.industries/shop/tproduct/767895441-847074777793-k04
+belege: [https://eh.industries/shop/tproduct/767895441-847074777793-k04]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  tasten: [58]
+  schalter: [gateron-lp, mx]
+  schalter_montage: [hotswap]
+  profil: flach
+  drahtlos: ja
+  drahtlos_technik: [bluetooth]
+  energie: [kabel, akku-fest]
+  maus: optional
+  maus_art: [trackball, trackpad]
+  drehgeber: optional
+  verfuegbarkeit: [fertig]
+hinweise: {schalter: "für Gateron LP 3.0, zusätzliche Platte für MX liegt bei", energie: "200 mAh LiPo", maus: "steckbare Module je Hälfte: Trackball, Touchpad oder Drehregler"}
+---
+name: Ergohaven K:04 Mini
+hersteller: Ergohaven
+url: https://eh.industries/shop/tproduct/767895441-921976659883-k04-mini
+belege: [https://eh.industries/shop/tproduct/767895441-921976659883-k04-mini]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  tasten: [46]
+  schalter: [gateron-lp, mx]
+  schalter_montage: [hotswap]
+  profil: flach
+  drahtlos: ja
+  drahtlos_technik: [bluetooth]
+  energie: [kabel, akku-fest]
+  maus: optional
+  maus_art: [trackball, trackpad]
+  drehgeber: optional
+  verfuegbarkeit: [fertig]
+---
+name: Ergohaven K:04 Micro
+hersteller: Ergohaven
+url: https://eh.industries/shop/tproduct/767895441-396283406723-k04-micro
+belege: [https://eh.industries/shop/tproduct/767895441-396283406723-k04-micro]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  tasten: [36]
+  schalter: [gateron-lp, mx]
+  schalter_montage: [hotswap]
+  profil: flach
+  drahtlos: ja
+  drahtlos_technik: [bluetooth]
+  energie: [kabel, akku-fest]
+  maus: optional
+  maus_art: [trackball, trackpad]
+  drehgeber: optional
+  verfuegbarkeit: [fertig]
+---
+name: Ergohaven Omega Point 36
+hersteller: Ergohaven
+url: https://eh.industries/shop/tproduct/767895441-959341231173-omega-point-36
+belege: [https://eh.industries/shop/tproduct/767895441-959341231173-omega-point-36]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  tasten: [36]
+  tasten_je_haelfte: 18
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  drahtlos: ja
+  drahtlos_technik: [bluetooth]
+  energie: [kabel, akku-fest]
+  firmware: [rmk]
+  verfuegbarkeit: [fertig]
+hinweise: {energie: "120 mAh LiPo"}
+---
+name: Ergohaven Phenom
+hersteller: Ergohaven
+url: https://eh.industries/shop/tproduct/767895441-877046509012-phenom
+belege: [https://eh.industries/shop/tproduct/767895441-877046509012-phenom, https://projects.eh.industries/phenom/]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  tasten: [58]
+  versatz: [mulde]
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  maus: optional
+  maus_art: [trackball, trackpad]
+  drehgeber: optional
+  energie: [kabel]
+  verfuegbarkeit: [fertig]
+hinweise: {versatz: "gewölbtes 3D-Gehäuse, jede Reihe und Spalte mit eigener Höhe und Neigung"}
+---
+name: Ergohaven Phenom Mini
+hersteller: Ergohaven
+url: https://eh.industries/shop/tproduct/767895441-795571358602-phenom-mini
+belege: [https://eh.industries/shop/tproduct/767895441-795571358602-phenom-mini]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  tasten: [46]
+  versatz: [mulde]
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  maus: optional
+  maus_art: [trackball, trackpad]
+  drehgeber: optional
+  energie: [kabel]
+  verfuegbarkeit: [fertig]
+---
+name: Ergohaven Phenom Micro
+hersteller: Ergohaven
+url: https://eh.industries/shop/tproduct/767895441-586488374072-phenom-micro
+belege: [https://eh.industries/shop/tproduct/767895441-586488374072-phenom-micro]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  tasten: [40]
+  versatz: [mulde]
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  maus: optional
+  maus_art: [trackball, trackpad]
+  drehgeber: optional
+  energie: [kabel]
+  verfuegbarkeit: [fertig]
+---
+name: Cornix LP
+hersteller: Jezail Funder Studio
+url: https://www.ozokeyboards.com/products/cornix-split-low-profile-split-ergonomic-keyboard
+belege: [https://www.ozokeyboards.com/products/cornix-split-low-profile-split-ergonomic-keyboard]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  tasten: [48]
+  raster: 3x6
+  daumentasten: 3
+  versatz: [ortho]
+  schalter: [choc-v1, choc-v2]
+  schalter_montage: [hotswap]
+  profil: flach
+  drahtlos: ja
+  drahtlos_technik: [bluetooth]
+  energie: [kabel, akku-fest]
+  firmware: [via, vial]
+  zelt: ja
+  verfuegbarkeit: [fertig]
+  preis: "171.95 EUR"
+hinweise: {versatz: "Händler nennt es ortholinear; Layout ist Corne-basiert (Corne ist spaltenversetzt)", energie: "650 mAh je Hälfte", zelt: "werkzeuglos 6°/12°/18°/24°"}
+---
+name: CharaChorder Two
+hersteller: CharaChorder
+url: https://www.charachorder.com/en-de/products/cc2
+belege: [https://www.charachorder.com/en-de/products/cc2, "https://docs.charachorder.com/CharaChorder%20Two.html"]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  tasten: [18]
+  tasten_je_haelfte: 9
+  drahtlos: nein
+  schalter: [proprietaer]
+  firmware: [proprietaer]
+  energie: [kabel]
+  verfuegbarkeit: [fertig]
+  preis: "250 EUR"
+hinweise: {art: "Akkord-Eingabegerät: zwei Hälften mit je neun 3D-Schaltern (mehrere Richtungen je Schalter), „held together by a machined aluminum center bar“; über 250 belegbare Plätze"}
+---
+name: CharaChorder Lite
+hersteller: CharaChorder
+url: https://www.charachorder.com/en-de/products/charachorder-lite
+belege: [https://www.charachorder.com/en-de/products/charachorder-lite, https://docs.charachorder.com/CharaChorder_Lite.html]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: nein
+  tasten: [67]
+  drahtlos: nein
+  energie: [kabel]
+  schalter_montage: [hotswap]
+  firmware: [proprietaer]
+  verfuegbarkeit: [fertig]
+  preis: "125 EUR"
+hinweise: {art: "60%-Tastatur mit 67 Tasten (inklusive 4 Pfeiltasten) und Akkord-Eingabe"}
+---
+name: Kinesis Advantage2
+hersteller: Kinesis
+url: https://kinesis-ergo.com/shop/advantage2/
+belege: [https://kinesis-ergo.com/shop/advantage2/]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  versatz: [spalten, mulde]
+  schalter: [mx]
+  schalter_montage: [fest]
+  zelt: ja
+  drahtlos: nein
+  energie: [kabel]
+  firmware: [proprietaer]
+  verfuegbarkeit: [fertig, eingestellt]
+hinweise: {schalter: "Cherry MX Brown oder Quiet Red; Funktionstasten Cherry ML", zelt: "Mulden fest 20° geneigt"}
+---
+name: Kinesis Advantage360
+hersteller: Kinesis
+url: https://kinesis-ergo.com/shop/adv360/
+belege: [https://kinesis-ergo.com/shop/adv360/]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: zusammensteckbar
+  versatz: [spalten, mulde]
+  schalter: [mx]
+  zelt: ja
+  energie: [kabel]
+  firmware: [proprietaer]
+  verfuegbarkeit: [fertig]
+hinweise: {geteilt: "„Bridge Connector“ im Lieferumfang", schalter: "Gateron Brown KS-9 oder Kailh Box Pink", zelt: "integriert, 3 Stufen"}
+---
+name: Epomaker Split70
+hersteller: Epomaker
+url: https://epomaker.com/products/epomaker-split70
+belege: [https://epomaker.com/products/epomaker-split70]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  tasten: [71]
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  drahtlos: ja
+  drahtlos_technik: [bluetooth, funk-2-4]
+  energie: [kabel, akku-fest]
+  drehgeber: ja
+  verfuegbarkeit: [fertig]
+  preis: "115.99 USD"
+hinweise: {energie: "3000 mAh", geteilt: "„Two independent keyboard halves“", schalter: "3- und 5-Pin-Schalter"}

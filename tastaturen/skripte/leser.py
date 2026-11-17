@@ -377,7 +377,8 @@ def lies_manuell(s):
                        daten.get("stand"))
     for t in daten["tastaturen"]:
         belege = t.get("belege") or []
-        ds = s.datensatz("manuell", t["name"], belege[0] if belege else t.get("url"), q["lizenz"], daten.get("stand"),
+        ds = s.datensatz("manuell", t["name"], belege[0] if belege else t.get("url"), q["lizenz"],
+                         str(t.get("gelesen_am") or daten.get("stand")),
                          t["name"], t.get("hersteller"), t.get("url"), belege[1:], t)
         for facette, werte in (t.get("facetten") or {}).items():
             for w in werte if isinstance(werte, list) else [werte]:

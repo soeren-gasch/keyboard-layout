@@ -2,20 +2,24 @@
  "beschreibung": "Von Hand bzw. per Abruf der Herstellerseiten recherchierte Tastaturen, die in keiner maschinenlesbaren Quelle vollständig stehen. Nur Angaben, die auf den Belegseiten stehen; null = nicht belegt.",
  "stand": "2026-11-17",
  "offen": [
-  "Keyboardio Model 100",
-  "Keyboardio Atreus",
-  "Rommana",
-  "Cyboard Imprint",
-  "Ergohaven K:03",
-  "Microsoft Sculpt Ergonomic",
-  "Microsoft Surface Ergonomic",
-  "Keychron K15 Max, Q8, Q10, Q11 Ultra 8K",
+  "Keychron Q11",
+  "Keychron Q11 Ultra 8K",
+  "Keychron K15 Max",
+  "Keychron Q8",
+  "Keychron Q10",
+  "X-Bows Nature",
+  "X-Bows Lite",
   "Matias Ergo Pro",
   "Goldtouch Go!2",
   "Cherry KC 4500 Ergo",
-  "Epomaker Split70",
+  "Perixx Periboard-512",
+  "Logitech Ergo K860",
+  "Razer Pro Type Ergo",
+  "Microsoft Sculpt Ergonomic",
+  "Microsoft Surface Ergonomic",
   "Vortex M50",
-  "Keychron Orca echo"
+  "Keychron Orca echo",
+  "Rommana"
  ],
  "tastaturen": [
   {
@@ -53,101 +57,6 @@
    "hinweise": {
     "daumentasten_gesamt": 16,
     "hinweis": "Funk als Zusatzoption; Zelt bis 60°"
-   }
-  },
-  {
-   "name": "Dygma Raise 2",
-   "hersteller": "Dygma Lab S.L.",
-   "url": "https://dygma.com/pages/dygma-raise-2",
-   "belege": [
-    "https://dygma.com/pages/dygma-raise-2"
-   ],
-   "facetten": {
-    "geteilt": "zusammensteckbar",
-    "drahtlos": "ja",
-    "tasten": [
-     68,
-     69
-    ],
-    "schalter": [
-     "choc-v1",
-     "mx"
-    ],
-    "schalter_montage": [
-     "hotswap"
-    ],
-    "verfuegbarkeit": [
-     "fertig"
-    ],
-    "preis": "369 USD"
-   },
-   "hinweise": {
-    "daumentasten_gesamt": 8,
-    "varianten": "ANSI 68, ISO 69",
-    "geteilt": "Hälften lassen sich ineinandergreifend zu einem Block zusammenstellen (Angabe Sören, 17.11.2026; Beleg auf der Herstellerseite ausstehend)"
-   }
-  },
-  {
-   "name": "UHK 80",
-   "hersteller": "Ultimate Gadget Laboratories Kft.",
-   "url": "https://uhk.io/uhk80",
-   "belege": [
-    "https://uhk.io/uhk80",
-    "https://uhk.io/product/uhk80"
-   ],
-   "facetten": {
-    "geteilt": "ja",
-    "drahtlos": "ja",
-    "schalter": [
-     "choc-v2",
-     "mx"
-    ],
-    "schalter_montage": [
-     "hotswap"
-    ],
-    "firmware": [
-     "uhk"
-    ],
-    "verfuegbarkeit": [
-     "fertig"
-    ],
-    "preis": "458.05 EUR",
-    "display": "ja",
-    "drahtlos_technik": [
-     "bluetooth",
-     "funk-2-4"
-    ]
-   },
-   "hinweise": {
-    "hinweis": "BLE und USB-Dongle, OLED, Handballenauflage"
-   }
-  },
-  {
-   "name": "UHK 60 v2",
-   "hersteller": "Ultimate Gadget Laboratories Kft.",
-   "url": "https://uhk.io/product/uhk60v2",
-   "belege": [
-    "https://uhk.io/product/uhk60v2",
-    "https://uhk.io/uhk60v2"
-   ],
-   "facetten": {
-    "geteilt": "ja",
-    "schalter": [
-     "mx"
-    ],
-    "schalter_montage": [
-     "hotswap"
-    ],
-    "firmware": [
-     "uhk"
-    ],
-    "verfuegbarkeit": [
-     "fertig"
-    ],
-    "preis": "377.17 EUR"
-   },
-   "hinweise": {
-    "groesse": "60 %, Reihenversatz"
    }
   },
   {
@@ -220,101 +129,6 @@
    },
    "hinweise": {
     "hinweis": "zwei integrierte Trackpads, Zelt in 6 Stufen"
-   }
-  },
-  {
-   "name": "Svalboard Lightly",
-   "hersteller": "Svalboard",
-   "url": "https://svalboard.com/",
-   "belege": [
-    "https://svalboard.com/"
-   ],
-   "facetten": {
-    "geteilt": "ja",
-    "versatz": [
-     "sonstige"
-    ],
-    "schalter": [
-     "magnetisch"
-    ],
-    "verfuegbarkeit": [
-     "fertig",
-     "kit",
-     "selbstbau"
-    ],
-    "preis": "800 USD"
-   },
-   "hinweise": {
-    "hinweis": "Nachfolger-Konzept der DataHand; Tastenzahl auf der gelesenen Seite nicht genannt"
-   }
-  },
-  {
-   "name": "Kinesis Advantage360",
-   "hersteller": "Kinesis",
-   "url": "https://kinesis-ergo.com/keyboards/advantage360/",
-   "belege": [
-    "https://kinesis-ergo.com/keyboards/advantage360/"
-   ],
-   "facetten": {
-    "geteilt": "ja",
-    "drahtlos": "optional",
-    "tasten": [
-     76
-    ],
-    "versatz": [
-     "spalten",
-     "ortho",
-     "mulde"
-    ],
-    "schalter": [
-     "mx"
-    ],
-    "schalter_montage": [
-     "fest"
-    ],
-    "firmware": [
-     "proprietaer",
-     "zmk"
-    ],
-    "verfuegbarkeit": [
-     "fertig"
-    ],
-    "preis": "499 USD",
-    "drahtlos_technik": [
-     "bluetooth"
-    ]
-   },
-   "hinweise": {
-    "hinweis": "Funk nur bei Professional"
-   }
-  },
-  {
-   "name": "Kinesis Advantage2",
-   "hersteller": "Kinesis",
-   "url": "https://kinesis-ergo.com/shop/advantage2/",
-   "belege": [
-    "https://kinesis-ergo.com/shop/advantage2/"
-   ],
-   "facetten": {
-    "geteilt": "einteilig-geteilt",
-    "drahtlos": "nein",
-    "versatz": [
-     "spalten",
-     "mulde"
-    ],
-    "schalter": [
-     "mx"
-    ],
-    "firmware": [
-     "proprietaer"
-    ],
-    "verfuegbarkeit": [
-     "eingestellt",
-     "fertig"
-    ],
-    "energie": [
-     "kabel"
-    ]
    }
   },
   {
@@ -430,40 +244,6 @@
    },
    "hinweise": {
     "hinweis": "Domain heute beim UHK-Hersteller; keine technischen Angaben mehr auf der Seite"
-   }
-  },
-  {
-   "name": "CharaChorder Two",
-   "hersteller": "CharaChorder",
-   "url": "https://www.charachorder.com/",
-   "belege": [
-    "https://www.charachorder.com/"
-   ],
-   "facetten": {
-    "verfuegbarkeit": [
-     "fertig"
-    ],
-    "preis": "199.99 USD"
-   },
-   "hinweise": {
-    "art": "Akkord-Eingabegerät mit Schwenktasten"
-   }
-  },
-  {
-   "name": "CharaChorder X",
-   "hersteller": "CharaChorder",
-   "url": "https://www.charachorder.com/",
-   "belege": [
-    "https://www.charachorder.com/"
-   ],
-   "facetten": {
-    "verfuegbarkeit": [
-     "fertig"
-    ],
-    "preis": "99.99 USD"
-   },
-   "hinweise": {
-    "art": "Akkord-Adapter für normale Tastaturen"
    }
   },
   {
@@ -938,39 +718,6 @@
    "hinweise": {
     "raster_je_hand": "3x5 ohne untere Taste von kleinem Finger und innerer Spalte, +2 Daumen",
     "quelle_geometrie": "ergogen/battoota_min.yml"
-   }
-  },
-  {
-   "name": "Cornix",
-   "hersteller": "Jezail Funder Studio (Vertrieb u. a. OZO Keyboards)",
-   "url": "https://kbd.news/Cornix-review-2715.html",
-   "belege": [
-    "https://kbd.news/Cornix-review-2715.html"
-   ],
-   "facetten": {
-    "geteilt": "ja",
-    "drahtlos": "ja",
-    "tasten": [
-     48
-    ],
-    "versatz": [
-     "spalten"
-    ],
-    "schalter": [
-     "choc-v2"
-    ],
-    "schalter_montage": [
-     "hotswap"
-    ],
-    "firmware": [
-     "rmk",
-     "vial"
-    ],
-    "verfuegbarkeit": [
-     "fertig"
-    ],
-    "daumentasten": 3,
-    "profil": "flach"
    }
   },
   {
