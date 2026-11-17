@@ -7,7 +7,8 @@ Eingang:  ~/keyboard/tastatur-quellen/<quelle>/ (Stand je Quelle in tastaturen/q
           tastaturen/manuell.json, tastaturen/facetten.json, tastaturen/zusammenfuehrung.json
 Ausgang:  tastaturen/tastaturen.sqlite (Schema in skripte/basis.py), tastaturen/export/
 
-Ablauf: Leser je Quelle (Datensätze, Facetten-Angaben mit Beleg, Layouts) -> Zusammenführen zu Geräten -> Export.
+Ablauf: Leser je Quelle (Datensätze, Facetten-Angaben mit Beleg, Layouts) -> Ableitungen (ableitungen.py) ->
+Zusammenführen zu Geräten -> Export.
 """
 
 import datetime
@@ -21,6 +22,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from basis import DB, QUELLEN, REPO, SCHEMA, Schreiber  # noqa: E402
 import kbdnews  # noqa: E402
 import leser  # noqa: E402
+from ableitungen import geteilt_ableiten  # noqa: E402
 from web_export import exportieren  # noqa: E402
 from zusammenfuehren import zusammenfuehren  # noqa: E402
 
@@ -46,6 +48,8 @@ def main():
         for f in fehler[:5]:
             print(f"  {name}: übersprungen {f[0]}: {f[1]}")
         print(f"{name}: {n} Datensätze, {len(fehler)} Fehler")
+    bericht["abgeleitet_geteilt"] = geteilt_ableiten(db)
+    print(f"abgeleitet: {bericht['abgeleitet_geteilt']} Angaben 'geteilt = nein'")
     bericht["geraete"] = zusammenfuehren(db)
     heute = datetime.date.today().isoformat()
     for k, v in (("erzeugt_von", "tastaturen/skripte/datenbank_bauen.py"), ("erzeugt_am", heute),

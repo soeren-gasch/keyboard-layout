@@ -425,7 +425,9 @@ def detailseite(g, voc, layouts, lay_info, n_quellen):
             continue
         kf = g["conflicts"].get(k)
         konflikt = f'<br><span class=cf>Other sources say: {e(wert_text(k, kf, voc))}</span>' if kf else ""
-        teile.append(f"<dt>{e(voc.get(k, {}).get('kurz', k))}</dt><dd>{e(v)}{konflikt}</dd>")
+        abgeleitet = (' <span class=dv title="No source states this value; it is derived from the records listed below '
+                      '(see About)">derived</span>') if k in g.get("derived", []) else ""
+        teile.append(f"<dt>{e(voc.get(k, {}).get('kurz', k))}</dt><dd>{e(v)}{abgeleitet}{konflikt}</dd>")
     teile.append("</dl>")
     if g["links"]:
         teile.append("<h2>Links</h2><ul class=links>" + "".join(
@@ -553,7 +555,11 @@ def main():
         f'<h2>How the data works</h2><ul class=links><li>Every value comes from a record that is linked on the '
         f'keyboard page, with license and retrieval date.</li><li>Records of the same keyboard are merged by firmware '
         f'family, project repository and name. If sources disagree, the page shows both.</li><li>A missing value means '
-        f'unknown, not “no”. Filters can include unknown values.</li><li>Key positions come from firmware definitions '
+        f'unknown, not “no”. Filters can include unknown values.</li><li>Values marked <span class=dv>derived</span> are '
+        f'stated by no source but follow from the records: “Split: no” for firmware definitions without a split setting whose '
+        f'key layouts have no gap between halves, no rotated keys and a row-staggered or ortholinear grid, and for '
+        f'Deskthority entries that list only standard layouts (ANSI, ISO, JIS …). A stated value always wins over a derived '
+        f'one.</li><li>Key positions come from firmware definitions '
         f'and Ergogen configurations; 1 u = 19.05 mm.</li></ul>'
         f'<h2>Status</h2><p>This is a draft. Licensing of the compiled data and permissions of some sources are '
         f'still being clarified. Built {date.today().isoformat()} from {fmt(n)} keyboards.</p>'

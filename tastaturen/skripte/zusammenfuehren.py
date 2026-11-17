@@ -133,6 +133,34 @@ def zusammenfuehren(db):
         for i in ids[1:]:
             m.vereine(ids[0], i, pruefen=False)
             regel.setdefault(i, "familie")
+    # 1b. USB-Kennung: VIA-Definition und QMK/Vial-Familie mit demselben Paar Vendor-ID:Product-ID. Nur Paare, die genau
+    # einer Familie gehören (die QMK-Standard-VID 0xFEED und Platzhalter wie 0x0000 teilen sich viele Bastelboards).
+    roh = {ds: r for ds, r in db.execute("SELECT id, roh FROM datensatz WHERE quelle IN ('qmk', 'vial', 'via')")}
+
+    def usb(d):
+        try:
+            r = json.loads(roh.get(d["id"]) or "{}")
+            vid, pid = ((r.get("usb") or {}).get("vid"), (r.get("usb") or {}).get("pid")) if d["quelle"] != "via" \
+                else (r.get("vendorId"), r.get("productId"))
+            vid, pid = int(str(vid), 16), int(str(pid), 16)
+        except (TypeError, ValueError):
+            return None
+        return None if vid in (0xFEED, 0x0000, 0xFFFF) or pid in (0x0000, 0xFFFF) else (vid, pid)
+
+    familien_je_usb, via_je_usb = defaultdict(set), defaultdict(list)
+    for d in alle:
+        if d["quelle"] in ("qmk", "vial", "via") and (k := usb(d)):
+            if d["quelle"] == "via":
+                via_je_usb[k].append(d["id"])
+            else:
+                familien_je_usb[k].add(fam_von[d["id"]])
+    for k, vias in via_je_usb.items():
+        if len(familien_je_usb.get(k, ())) == 1:
+            ziel = fam[next(iter(familien_je_usb[k]))][0]
+            for v in vias:
+                if m.vereine(ziel, v):
+                    regel.setdefault(v, f"usb {k[0]:04X}:{k[1]:04X}")
+
     # 2. Repository
     nach_repo = defaultdict(list)
     for d in alle:
@@ -204,8 +232,10 @@ def zusammenfuehren(db):
         ds.sort(key=lambda d: (VORRANG.index(d["quelle"]), d["id"]))
         # Gerätename: der häufigste Name über alle Quellen, bei Gleichstand die vertrauenswürdigste Quelle
         haeufig = Counter((d["name"] or "").strip().lower() for d in ds if d["name"])
-        name = min((d["name"] for d in ds if d["name"]),
-                   key=lambda n: (-haeufig[n.strip().lower()], 0)) if haeufig else ds[0]["name"]
+        # generische Namen (Ordnernamen wie "ansi", "rev1") nur, wenn es keinen anderen gibt
+        kandidaten = [d["name"] for d in ds if d["name"]]
+        brauchbar = [n for n in kandidaten if normname(n) not in GENERISCH | {""} and not VARIANTE.fullmatch(n.lower())]
+        name = min(brauchbar or kandidaten, key=lambda n: (-haeufig[n.strip().lower()], 0)) if haeufig else ds[0]["name"]
         hersteller = next((d["hersteller"] for d in ds if d["hersteller"]), None)
         basis = re.sub(r"[^a-z0-9]+", "-", (name or "tastatur").lower()).strip("-") or "tastatur"
         slug, k = basis, 1
@@ -213,12 +243,13 @@ def zusammenfuehren(db):
             k += 1
             slug = f"{basis}-{k}"
         slugs[slug] += 1
-        facetten, konflikte = verdichten(ds, angaben)
+        facetten, konflikte, abgeleitet = verdichten(ds, angaben)
         lids = [haupt[d["id"]] for d in ds if d["id"] in haupt]
         haupt_layout = max(lids)[1] if lids else None
-        cur = db.execute("INSERT INTO geraet (slug, name, hersteller, facetten, konflikte, haupt_layout) "
-                         "VALUES (?,?,?,?,?,?)", (slug, name, hersteller, json.dumps(facetten, ensure_ascii=False),
-                                                 json.dumps(konflikte, ensure_ascii=False), haupt_layout))
+        cur = db.execute("INSERT INTO geraet (slug, name, hersteller, facetten, konflikte, abgeleitet, haupt_layout) "
+                         "VALUES (?,?,?,?,?,?,?)", (slug, name, hersteller, json.dumps(facetten, ensure_ascii=False),
+                                                   json.dumps(konflikte, ensure_ascii=False), json.dumps(abgeleitet),
+                                                   haupt_layout))
         gid = cur.lastrowid
         db.executemany("INSERT INTO geraet_datensatz VALUES (?,?,?)",
                        [(gid, d["id"], "anker" if d["id"] == wurzel else regel.get(d["id"], "anker")) for d in ds])
@@ -231,8 +262,15 @@ def verdichten(datensaetze, angaben):
     for d in datensaetze:
         for f, w, meth in angaben[d["id"]]:
             gesammelt[f].append((rang[d["id"]], 0 if meth == "quelle" else 1, w))
-    facetten, konflikte = {}, {}
+    facetten, konflikte, abgeleitet = {}, {}, []
     for f, werte in gesammelt.items():
+        # Belegte Angaben gehen vor abgeleiteten; abgeleitete zählen nur, wenn keine Quelle etwas sagt
+        # (nur Auswahl-Facetten; Zahlen und Mehrfach-Facetten vereinigen weiterhin alles)
+        if f not in ZAHLEN and f not in MEHRFACH:
+            if any(m == 0 for _, m, _ in werte):
+                werte = [x for x in werte if x[1] == 0]
+            else:
+                abgeleitet.append(f)
         if f in ZAHLEN:
             zahlen = sorted(int(w) for _, _, w in werte)
             facetten[f] = {"min": zahlen[0], "max": zahlen[-1]} if f != "jahr" else zahlen[0]
@@ -246,4 +284,4 @@ def verdichten(datensaetze, angaben):
                 konflikte[f] = andere
     if facetten.get("maus_art") and "maus" not in facetten:
         facetten["maus"] = "ja"
-    return facetten, konflikte
+    return facetten, konflikte, sorted(abgeleitet)

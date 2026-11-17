@@ -10,9 +10,12 @@
    "shopseiten:https://www.r-go-tools.de/r-go-split-break-ergonomische-tastatur-version-2/"
   ]
  ],
- "trennen": [],
+ "trennen": [
+  "qmk:iriskeyboards"
+ ],
  "begruendung": {
   "qmk:ferris/sweep + zmk:boards/shields/cradio/cradio.zmk.yml": "Ferris Sweep heißt im ZMK-Repository cradio; beide 34 Tasten, 3x5+2",
-  "manuell:R-Go Split Break V2 + shopseiten:…/r-go-split-break-ergonomische-tastatur-version-2/": "dasselbe Modell, deutsche Herstellerseite"
+  "manuell:R-Go Split Break V2 + shopseiten:…/r-go-split-break-ergonomische-tastatur-version-2/": "dasselbe Modell, deutsche Herstellerseite",
+  "trennen qmk:iriskeyboards": "60-%-Board des Herstellers Iris Keyboards, nicht das Keebio Iris (Split); per Name fälschlich verbunden"
  }
 }

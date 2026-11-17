@@ -8,6 +8,7 @@
       "sparse": [
         "/keyboards/**/keyboard.json",
         "/keyboards/**/info.json",
+        "/keyboards/**/rules.mk",
         "/keyboards/**/readme.md",
         "/LICENSE*"
       ],
@@ -26,6 +27,7 @@
       "sparse": [
         "/keyboards/**/keyboard.json",
         "/keyboards/**/info.json",
+        "/keyboards/**/rules.mk",
         "/LICENSE*"
       ],
       "lizenz": "GPL-2.0-or-later",

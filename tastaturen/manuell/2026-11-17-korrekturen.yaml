@@ -1,0 +1,9 @@
+# Korrekturen nach Durchsicht des Testauftritts (17.11.2026), Hinweise von Sören.
+name: Contra
+hersteller: ai03
+url: https://github.com/ai03-2725/Contra
+belege: [https://github.com/ai03-2725/Contra, https://keymapdb.com/keymaps/alper/]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: nein
+hinweise: {stand: "Einteiliges 4×12-Ortho-Board (Unibody) ohne getrenntes Tastenfeld, laut Sören; Belege wie angegeben"}

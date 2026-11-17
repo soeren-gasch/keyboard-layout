@@ -68,8 +68,8 @@ def exportieren(db, erzeugt_am):
         zuordnung[gid].append((ds, regel))
 
     geraete, layout_ids, geraete_intern = [], set(), []
-    for gid, slug, name, hersteller, fac, konf, lid in db.execute(
-            "SELECT id, slug, name, hersteller, facetten, konflikte, haupt_layout FROM geraet ORDER BY slug"):
+    for gid, slug, name, hersteller, fac, konf, abg, lid in db.execute(
+            "SELECT id, slug, name, hersteller, facetten, konflikte, abgeleitet, haupt_layout FROM geraet ORDER BY slug"):
         eintraege = []
         for ds, regel in zuordnung[gid]:
             i = ds_info[ds]
@@ -80,7 +80,8 @@ def exportieren(db, erzeugt_am):
         geraete_intern.append({"id": slug, "name": name, "hersteller": hersteller, "facetten": fac,
                                "konflikte": konf, "quellen": [{"quelle": e["source"]} for e in eintraege]})
         geraete.append({"id": slug, "name": name, "maker": hersteller, "facets": facetten_en(fac),
-                        "conflicts": facetten_en(konf), "sources": eintraege, "links": links, "layout": lid})
+                        "conflicts": facetten_en(konf), "derived": [fkey.get(f, f) for f in json.loads(abg or "[]")],
+                        "sources": eintraege, "links": links, "layout": lid})
         if lid:
             layout_ids.add(lid)
 

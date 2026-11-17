@@ -117,8 +117,11 @@ Die Online-Seite zeigt standardmäßig Stufe 1 und lässt Stufe 2 über einen Fi
 Ein **Gerät** ist eine physische Tastatur samt Revisionen und Varianten, zum Beispiel Corne mit 36 und 42 Tasten. Datensätze werden nach drei Regeln verbunden; jede Zuordnung speichert ihre Regel.
 
 1. **familie:** QMK/Vial-Pfad ohne Revisions-, Controller- und Variantenteile am Ende, etwa `splitkb/kyria/rev3` → `splitkb/kyria`.
+   **usb:** VIA-Definition und QMK/Vial-Familie mit demselben Paar Vendor-ID:Product-ID, wenn das Paar genau einer Familie gehört (die QMK-Standard-VID `0xFEED` und Platzhalter zählen nicht).
 2. **repo:** dasselbe Projekt-Repository und dazu verwandter Name oder gleiche Tastenzahl. Sammel-Repos wie `gtips/reviung` werden so nicht zu einem Gerät.
 3. **name:** gleicher normalisierter Name, mit und ohne Herstellerpräfix, bei verträglicher Tastenzahl. Ein Name, der erst durch das Kürzen zur bloßen Marke wird (Keychron V1 → keychron), verbindet nichts; heißen Modell und Marke gleich (Sofle, Atreus, Maltron), verbindet er.
+
+Belegte Angaben (`methode = quelle`) gehen bei Auswahl-Facetten immer vor abgeleiteten; ein abgeleiteter Wert gilt nur, wenn keine Quelle etwas sagt, und das Gerät führt ihn unter `abgeleitet` (Export: `derived`). Die Ableitungen stehen mit Regeln und Prüfung in `skripte/ableitungen.py`; derzeit „geteilt = nein“ aus Firmware-Definitionen ohne Split-Angabe plus Geometrie sowie aus Deskthority-Standardanordnungen.
 
 Bei gleichem Repository und gleichem Namen wird die Tastenzahl nicht geprüft: Abweichungen sind dann Varianten oder Fehler einer Quelle und stehen unter `konflikte`.
 

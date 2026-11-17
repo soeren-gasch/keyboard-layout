@@ -80,7 +80,7 @@ def _qmk_baum(s, qid, ziele):
             dateien.append(f"keyboards/{rel.as_posix()}/keyboard.json")
         urls = [github_blob(q["url"], commit, d) for d in dateien]
         feat = daten.get("features") or {}
-        roh = {k: daten[k] for k in ("community_layouts", "layout_aliases", "features", "processor") if k in daten}
+        roh = {k: daten[k] for k in ("community_layouts", "layout_aliases", "features", "processor", "usb") if k in daten}
         ds = s.datensatz(qid, rel.as_posix(), urls[-1] if urls else None, q["lizenz"], datum,
                          daten.get("keyboard_name") or rel.parts[-1], daten.get("manufacturer"),
                          daten.get("url") or None, urls[:-1], roh)
@@ -89,6 +89,10 @@ def _qmk_baum(s, qid, ziele):
             s.angabe(ds, "firmware", "qmk", "abgeleitet", "Vial ist ein QMK-Fork")
         if (daten.get("split") or {}).get("enabled"):
             s.angabe(ds, "geteilt", "ja", "quelle", "split.enabled = true")
+        elif qid == "qmk":
+            r = _readme_geteilt(basis, rel)
+            if r:
+                s.angabe(ds, "geteilt", r[0], "quelle", f"readme.md: …{r[1]}…", github_blob(q["url"], commit, r[2]))
         if feat.get("pointing_device") or daten.get("pointing_device"):
             s.angabe(ds, "maus", "ja", "quelle", "features.pointing_device")
             treiber = (daten.get("pointing_device") or {}).get("driver")
@@ -113,6 +117,30 @@ def _qmk_baum(s, qid, ziele):
                 _layout_angaben(s, ds, name, tasten)
         anzahl += 1
     return anzahl, fehler
+
+
+# Readme der Tastatur (erste Absätze): "split keyboard" bzw. "unibody". Ausgenommen geteilte Leertaste/Backspace,
+# "pseudo-split", "conjoined split" und "split hand layout" (beschreiben Unibodys).
+_NICHT = r"(?!\s*-?\s*(?:space|spacebar|backspace|bar|shift|enter|bs|rs|plus|keys?\b))"
+README_UNIBODY = re.compile(r"\bunibody\b|\bmono-?block\b|\bone[- ]piece split\b|\bconjoined[- ]split\b|"
+                            r"\bpseudo[- ]split\b|\bfixed split\b|\bsplit[- ]hand layout\b", re.I)
+README_SPLIT = re.compile(r"\bsplit" + _NICHT + r"[\s,-]+(?:[\w%/()-]+[\s,]+){0,4}?(?:keyboard|keeb|board)s?\b|"
+                          r"\btwo (?:separate |independent )?halves\b|\bsplit" + _NICHT +
+                          r"(?: ergonomic| ergo| columnar| column[- ]staggered| ortholinear| wireless)", re.I)
+
+
+def _readme_geteilt(basis, rel):
+    for i in range(len(rel.parts), 0, -1):
+        p = basis.joinpath(*rel.parts[:i]) / "readme.md"
+        if p.exists():
+            t = re.sub(r"!\[[^\]]*\]\([^)]*\)|\]\([^)]*\)|https?://\S+|`[^`]*`", " ", p.read_text(errors="replace"))
+            t = " ".join(t.split())[:600]
+            for wert, muster in (("einteilig-geteilt", README_UNIBODY), ("ja", README_SPLIT)):
+                m = muster.search(t)
+                if m:
+                    return wert, t[max(0, m.start() - 40):m.end() + 30], f"keyboards/{'/'.join(rel.parts[:i])}/readme.md"
+            return None
+    return None
 
 
 def _layout_angaben(s, ds, name, tasten):

@@ -84,6 +84,7 @@ CREATE TABLE geraet (
   hersteller TEXT,
   facetten TEXT,              -- JSON: Facette -> Werte bzw. {min, max}
   konflikte TEXT,             -- JSON: Facetten mit widersprüchlichen Angaben
+  abgeleitet TEXT,            -- JSON: Auswahl-Facetten, deren Wert nur abgeleitet ist (keine Quelle nennt ihn)
   haupt_layout INTEGER REFERENCES layout(id));
 CREATE TABLE geraet_datensatz (
   geraet_id INTEGER REFERENCES geraet(id),
