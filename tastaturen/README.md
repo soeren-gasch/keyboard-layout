@@ -40,8 +40,14 @@ KeymapDB, eigene Recherche
 | Vial | 153 | wie QMK | GPL-2.0-or-later | nur Tastaturen ohne QMK-Gegenstück |
 | KeymapDB | 150 | Keymap-Seite und Datei am Commit | GPL-3.0-only | Fakten und Links |
 | ZMK Firmware | 106 | `*.zmk.yml` und Layout-Dateien am Commit | MIT | Metadaten, physische Layouts |
+| Online-Shops (Shopify-Produktlisten) | 694 | Produktseite mit Abfragezeitpunkt | keine Angabe | Fakten aus Titel, Optionen und Beschreibung, Preis, Link; keine Texte, keine Bilder |
+| Keebfolio | 204 | Markdown-Datei am Commit | keine Angabe | Name, Link, Kategorie, Tags |
+| Aposymbiont Split Keyboards Gallery | 152 | Zeile in der CSV-Datei am Commit (`#L<n>`) | keine Angabe | Name, Bauform, Merkmale, Verfügbarkeit, Tastenzahl, Website; keine Bilder, keine Notizen |
 | splitKbCompare | 71 | Zeile in `keyboards.csv` am Commit (`#L<n>`) | MIT | Tabellenzeile |
-| eigene Recherche | 36 | Herstellerseite | CC-BY-4.0 (vorgeschlagen) | eigene Zusammenstellung belegter Fakten |
+| awesome-split-keyboards | 55 | Abschnitt im README am Commit (`#L<n>`) | keine Angabe | Name und Links |
+| Shop- und Herstellerseiten (Kategorien) | 46 | Produktseite mit Abfragezeitpunkt | keine Angabe | Fakten und Link |
+| awesome-dactyl | 38 | Zeile im README am Commit (`#L<n>`) | keine Angabe | Name und Link |
+| eigene Recherche | 71 | Herstellerseite | CC-BY-4.0 (vorgeschlagen) | eigene Zusammenstellung belegter Fakten |
 
 Rohdaten der Quellen (Texte, Bilder, vollständige Dateien) liegen nur lokal unter `~/keyboard/tastatur-quellen/` und werden nicht veröffentlicht. Die Spalte `datensatz.roh` bleibt in der lokalen Datenbank und geht nicht in den Export.
 
@@ -112,13 +118,15 @@ Ein **Gerät** ist eine physische Tastatur samt Revisionen und Varianten, zum Be
 
 1. **familie:** QMK/Vial-Pfad ohne Revisions-, Controller- und Variantenteile am Ende, etwa `splitkb/kyria/rev3` → `splitkb/kyria`.
 2. **repo:** dasselbe Projekt-Repository und dazu verwandter Name oder gleiche Tastenzahl. Sammel-Repos wie `gtips/reviung` werden so nicht zu einem Gerät.
-3. **name:** gleicher normalisierter Name, mit und ohne Herstellerpräfix, bei verträglicher Tastenzahl. Ein Name, der nur noch die Marke enthält, verbindet nichts.
+3. **name:** gleicher normalisierter Name, mit und ohne Herstellerpräfix, bei verträglicher Tastenzahl. Ein Name, der erst durch das Kürzen zur bloßen Marke wird (Keychron V1 → keychron), verbindet nichts; heißen Modell und Marke gleich (Sofle, Atreus, Maltron), verbindet er.
+
+Bei gleichem Repository und gleichem Namen wird die Tastenzahl nicht geprüft: Abweichungen sind dann Varianten oder Fehler einer Quelle und stehen unter `konflikte`.
 
 Verträglichkeit wird gegen die ganze bisherige Gruppe geprüft, nicht nur gegen einen Partner. So ketten Datensätze ohne Tastenzahl keine verschiedenen Tastaturen zusammen.
 
-Beim Verdichten der Facetten gewinnt bei Auswahl-Facetten die vertrauenswürdigste Quelle in dieser Reihenfolge: eigene Recherche, YAL, splitKbCompare, golem.hu, KBD.news, ZMK, QMK, Vial, GitHub, KeymapDB. Abweichende Werte stehen unter `konflikte`. Mehrfach-Facetten werden vereinigt, Zahlen werden zu Bereichen.
+Beim Verdichten der Facetten gewinnt bei Auswahl-Facetten die vertrauenswürdigste Quelle in dieser Reihenfolge: eigene Recherche, YAL, splitKbCompare, Aposymbiont, Keebfolio, golem.hu, Deskthority, Shops, Shop- und Herstellerseiten, KBD.news, ZMK, QMK, Vial, VIA, Ergogen, GitHub, Reddit, awesome-split-keyboards, awesome-dactyl, KeymapDB. Abweichende Werte stehen unter `konflikte`. Mehrfach-Facetten werden vereinigt, Zahlen werden zu Bereichen.
 
-Stand 17.11.2026: 8.261 Geräte aus 11.684 Datensätzen; 1.917 Geräte haben Angaben aus mehreren Quellen; 4.441 Geräte haben Tastenpositionen (11.702 Layouts, 739.392 Tasten). Gerätename ist der häufigste Name über alle Quellen.
+Stand 17.11.2026: 8.782 Geräte aus 12.908 Datensätzen in 20 Quellen; 2.344 Geräte haben Angaben aus mehreren Quellen; 4.259 Geräte haben Tastenpositionen (11.702 Layouts, 739.392 Tasten). Gerätename ist der häufigste Name über alle Quellen.
 
 ## Export für die Online-Seite
 
@@ -147,7 +155,7 @@ python3 tastaturen/skripte/ergogen_berechnen.py          # Tastenpositionen bere
 | Skript | Aufgabe |
 | --- | --- |
 | `basis.py` | Schema, Geometrie (Mittelpunkte, Split, Raster, Versatz), Schreiber mit Herkunftsnachweis |
-| `leser.py` | Leser für QMK, Vial, ZMK, VIA, splitKbCompare, YAL, golem.hu, Deskthority, GitHub-Topics, Reddit, Ergogen, KeymapDB, eigene Recherche |
+| `leser.py` | Leser für QMK, Vial, ZMK, VIA, splitKbCompare, YAL, golem.hu, Deskthority, GitHub-Topics, Reddit, Ergogen, Shops, Keebfolio, Aposymbiont, awesome-Listen, KeymapDB, eigene Recherche |
 | `ergogen_berechnen.py` | Ergogen-Konfigurationen mit Ergogen 4/3 berechnen (braucht Node.js) |
 | `kbdnews.py` | Leser für KBD.news (Rubrik, Tags, Specs, Links) |
 | `zusammenfuehren.py` | Dubletten zu Geräten, Verdichten der Facetten |

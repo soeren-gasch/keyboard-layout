@@ -1026,3 +1026,123 @@ def lies_shopseiten(s):
                      "Herstellerseite" if hersteller_seite else "Produktseite mit Warenkorb")
             anzahl += 1
     return anzahl, []
+
+
+# ----------------------------------------------------------------------------- Listen: Keebfolio, Aposymbiont, awesome-*
+def lies_keebfolio(s):
+    from basis import merkmale_aus_text
+    wurzel = QUELLEN / "keebfolio"
+    commit, datum = git_stand(wurzel)
+    q = quelle_anlegen(s, "keebfolio", "Keebfolio: Open-Source-Tastaturen (Keycapsss/awesome-mechanical-keyboard)",
+                       f"{commit} {datum}", commit)
+    anzahl = 0
+    for f in sorted((wurzel / "src" / "content" / "keyboards").glob("**/*.md")):
+        m = re.match(r"---\n(.*?)\n---", f.read_text(encoding="utf-8"), re.S)
+        d = yaml.safe_load(m.group(1)) if m else None
+        if not d or not d.get("name"):
+            continue
+        rel = f.relative_to(wurzel).as_posix()
+        ds = s.datensatz("keebfolio", rel, github_blob(q["url"], commit, rel), q["lizenz"], datum, str(d["name"]),
+                         None, d.get("url"), [], {"kategorie": d.get("category"), "tags": d.get("tags")})
+        kat, tags = d.get("category") or "", str(d.get("tags") or "")
+        if kat == "split":
+            s.angabe(ds, "geteilt", "ja", "quelle", "category: split")
+        if kat == "ortholinear":
+            s.angabe(ds, "versatz", "ortho", "quelle", "category: ortholinear")
+        s.angabe(ds, "open_source_hardware", "ja", "abgeleitet", "Liste von Open-Source-Tastaturen")
+        s.angabe(ds, "verfuegbarkeit", "selbstbau", "abgeleitet", "Liste von Open-Source-Tastaturen")
+        for facette, wert, fund in merkmale_aus_text(tags):
+            s.angabe(ds, facette, wert, "quelle", f"tags: {tags[:100]}")
+        r = re.search(r"\b([2-6])x([4-8])\b", tags)
+        if r:
+            s.angabe(ds, "raster", f"{r.group(1)}x{r.group(2)}", "quelle", f"tags: {tags[:100]}")
+        anzahl += 1
+    return anzahl, []
+
+
+APO_VERSATZ = {"ergo": "spalten", "ortho": "ortho", "traditional": "reihen", "dish": "mulde"}
+APO_BEZUG = {"kit": "kit", "source": "selbstbau", "massproduced": "fertig", "unavailable": "eingestellt",
+             "prebuilt": "fertig", "gb": "gruppenbestellung"}
+
+
+def lies_aposymbiont(s):
+    wurzel = QUELLEN / "aposymbiont"
+    commit, datum = git_stand(wurzel)
+    q = quelle_anlegen(s, "aposymbiont", "Aposymbiont Split Keyboards Gallery (auf Basis von diimdeep)",
+                       f"{commit} {datum}", commit)
+    anzahl = 0
+    for datei in ("ergo.csv", "ortho.csv", "dish.csv", "traditional.csv", "other.csv"):
+        with open(wurzel / datei, encoding="utf-8") as f:
+            for zeile_nr, z in enumerate(csv.DictReader(f), start=2):
+                if not z.get("Name"):
+                    continue
+                url = github_blob(q["url"], commit, datei) + f"#L{zeile_nr}"
+                ds = s.datensatz("aposymbiont", f"{datei}#{z['Name']}", url, q["lizenz"], datum, z["Name"], None,
+                                 z.get("Website") or None, [], {k: v for k, v in z.items() if k != "Image"})
+
+                def a(f_, w, feld):
+                    s.angabe(ds, f_, w, "quelle", f"{feld}: {z.get(feld)}")
+
+                merkmale = (z.get("Features") or "").split()
+                if "split" in merkmale:
+                    a("geteilt", "ja", "Features")
+                elif "single" in merkmale and z.get("Layout") in ("ergo", "dish", "traditional"):
+                    a("geteilt", "einteilig-geteilt", "Features")
+                if "wireless" in merkmale:
+                    a("drahtlos", "ja", "Features")
+                if "track" in merkmale:
+                    a("maus", "ja", "Features")
+                if "display" in merkmale:
+                    a("display", "ja", "Features")
+                for teil in (z.get("Layout") or "").split():
+                    if teil in APO_VERSATZ:
+                        a("versatz", APO_VERSATZ[teil], "Layout")
+                for teil in (z.get("Availability") or "").split():
+                    if teil in APO_BEZUG:
+                        a("verfuegbarkeit", APO_BEZUG[teil], "Availability")
+                for feld in ("MinKeys", "MaxKeys"):
+                    if (z.get(feld) or "").isdigit() and int(z[feld]) > 1:
+                        a("tasten", int(z[feld]), feld)
+                anzahl += 1
+    return anzahl, []
+
+
+def lies_awesome_listen(s):
+    """awesome-split-keyboards (Abschnitt je Tastatur) und awesome-dactyl (Aufzählung je Projekt): nur Name und Link."""
+    anzahl = 0
+    for qid, beschreibung in (("awesome-split", "awesome-split-keyboards (diimdeep)"),
+                              ("awesome-dactyl", "awesome-dactyl (PotHix)")):
+        wurzel = QUELLEN / qid
+        if not wurzel.exists():
+            continue
+        commit, datum = git_stand(wurzel)
+        q = quelle_anlegen(s, qid, beschreibung, f"{commit} {datum}", commit)
+        zeilen = (wurzel / "README.md").read_text(encoding="utf-8").splitlines()
+        if qid == "awesome-split":
+            abschnitt = None
+            for nr, z in enumerate(zeilen, 1):
+                m = re.match(r"^## (.+)$", z)
+                if m:
+                    abschnitt = (m.group(1).strip(), nr, [])
+                    if re.search(r"build your own|diy|plates|switch|keycap|typing|contribut|license|community|ergonomics|information|more split|shopping|resources|related", abschnitt[0], re.I):
+                        abschnitt = None
+                        continue
+                    ds_url = github_blob(q["url"], commit, "README.md") + f"#L{nr}"
+                    links = []
+                    for z2 in zeilen[nr:nr + 15]:
+                        if z2.startswith("## "):
+                            break
+                        links += re.findall(r"https?://[^\s)\]\"'>]+", z2)
+                    links = [l for l in links if not re.search(r"\.(png|jpe?g|gif)$", l, re.I)]
+                    s.datensatz(qid, abschnitt[0], ds_url, q["lizenz"], datum, abschnitt[0], None,
+                                links[0] if links else None, links[1:6], {})
+                    anzahl += 1
+        else:
+            for nr, z in enumerate(zeilen, 1):
+                m = re.match(r"^\* \[([^\]:]+)(?::[^\]]*)?\]\((https?://[^)]+)\)", z)
+                if m and not re.search(r"video|tutorial|guide|build log", m.group(1), re.I):
+                    ds = s.datensatz(qid, m.group(1).strip(), github_blob(q["url"], commit, "README.md") + f"#L{nr}",
+                                     q["lizenz"], datum, m.group(1).strip(), None, m.group(2), [], {})
+                    s.angabe(ds, "versatz", "mulde", "abgeleitet", "Liste von Dactyl-ähnlichen (gewölbten) Tastaturen")
+                    anzahl += 1
+    return anzahl, []

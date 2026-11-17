@@ -19,7 +19,7 @@ from collections import Counter, defaultdict
 
 from basis import ORDNER
 
-VORRANG = ["manuell", "yal", "splitkbcompare", "golem", "deskthority", "shops", "shopseiten", "kbdnews", "zmk", "qmk", "vial", "via", "ergogen", "github", "reddit", "keymapdb"]
+VORRANG = ["manuell", "yal", "splitkbcompare", "aposymbiont", "keebfolio", "golem", "deskthority", "shops", "shopseiten", "kbdnews", "zmk", "qmk", "vial", "via", "ergogen", "github", "reddit", "awesome-split", "awesome-dactyl", "keymapdb"]
 ZAHLEN = {"tasten", "tasten_je_haelfte", "daumentasten", "tasten_genutzt", "jahr", "polling", "geraete_kopplung",
           "akku_mah", "gewicht_g"}
 MEHRFACH = {"versatz", "maus_art", "schalter", "schalter_montage", "drahtlos_technik", "energie", "firmware",
@@ -30,7 +30,7 @@ VARIANTE = re.compile(r"^(rev(\d\w*|_\w+|[a-z]?\d*)|v\d[\w.]*|r\d+|mk(\d\w*|_\w+
                       r"stm32\w*|proton_?c|blackpill|bluepill|splinky\w*|teensy\w*|ble|wireless|wired|hotswap|"
                       r"solder(ed)?|ansi|iso|jis|lp|choc|mx|f\d{3}\w*|nrf\w*|ec|left|right|\d[\d_.]*|promicro|"
                       r"pico|xiao\w*|helios|sea_picro|liatris|frood|gd32\w*|atmega\w*|at90\w*|apm32\w*|wb32\w*)$")
-GENERISCH = {"ansi", "iso", "macropad", "numpad", "keyboard", "split", "test", "prototype", "custom", "ortho",
+GENERISCH = {"keyboards", "keebs", "zmkconfig", "qmkconfig", "dotfiles", "ansi", "iso", "macropad", "numpad", "keyboard", "split", "test", "prototype", "custom", "ortho",
              "unnamed", "untitled", "planck", "60", "65", "75", "tkl", "40", "ergo", "mini", "plus", "lite", "max",
              "ultra", "wireless", "mechanical", "gaming", "keypad", "board", "keeb", "keebs", "macro", "compact"}
 FREMD_REPOS = {"yal-tools/ergo-keyboards", "qmk/qmk_firmware", "zmkfirmware/zmk", "vial-kb/vial-qmk", "jhelvy/splitkbcompare",
@@ -151,10 +151,14 @@ def zusammenfuehren(db):
             return False
         return bool(tasten[a] & tasten[b])
 
+    def gleicher_name(a, b):
+        return normname(nach_id[a]["name"]) == normname(nach_id[b]["name"]) != ""
+
     for r, ids in nach_repo.items():
         for i in ids[1:]:
             for j in ids:
-                if j < i and verwandt(i, j) and m.vereine(j, i):
+                # gleiches Repository und gleicher Name: abweichende Tastenzahlen sind dann Quellenfehler oder Varianten
+                if j < i and verwandt(i, j) and m.vereine(j, i, pruefen=not gleicher_name(i, j)):
                     regel.setdefault(i, f"repo {r}")
                     break
     # 3. Name mit verträglicher Tastenzahl
@@ -164,7 +168,9 @@ def zusammenfuehren(db):
     for d in alle:
         for n in {normname(d["name"], d["hersteller"]), normname(d["name"])}:
             # ein Name, der nach dem Normalisieren nur noch die Marke ist (Keychron V1 -> keychron), verbindet nichts
-            if len(n) >= 4 and n not in GENERISCH and n not in marken and d["id"] not in getrennt:
+            # ... es sei denn, der Name ist genau dieses Wort (Sofle, Atreus, Maltron: Modell und Marke heißen gleich)
+            nur_marke = n in marken and re.sub(r"[^a-z0-9]", "", d["name"].lower()) != n
+            if len(n) >= 4 and n not in GENERISCH and not nur_marke and d["id"] not in getrennt:
                 nach_name[n].append(d)
     for n, ds in nach_name.items():
         if len({x["quelle"] for x in ds}) < 2 and not any(x["quelle"] in ("qmk", "vial") for x in ds):

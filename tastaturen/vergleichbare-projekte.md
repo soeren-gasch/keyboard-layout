@@ -13,11 +13,11 @@ Es gibt mehrere gute, aber jeweils begrenzte Sammlungen. Keine führt viele Quel
 | [YAL's ergo keyboard list](https://yal-tools.github.io/ergo-keyboards/) | rund 420 spalten-, ortho- und reihenversetzte Ergo-Tastaturen, DIY und fertig | viele (Spalten, Daumentasten, Spreizung, Funk, Schalter, Maus …), Tabelle, Galerie | aktiv (Nov. 2026) | `docs/keyboards.js` | CC BY 4.0 | Quelle |
 | [splitKbCompare](https://jhelvy.github.io/splitKbCompare/) | rund 70 Split-Tastaturen | Tastenzahl, Zahlenreihe, Versatz, Funk; maßstabsgetreue Layouts als PDF | aktiv (Feb. 2026) | `keyboards.csv` | MIT | Quelle |
 | [golem.hu Split keyboard database](https://golem.hu/boards/) | rund 450 Split- und gewinkelte Einteiler | Tags (Bauart, Daumencluster, Funk …) | seit etwa 2021 kaum fortgeführt | HTML | keine Angabe | Quelle (Anfrage läuft) |
-| [Aposymbiont Split Keyboards Gallery](https://aposymbiont.github.io/split-keyboards/) | rund 150 Split- und Wedge-Tastaturen, auf Basis von diimdeep | Filter und Vergleichstool | Sep. 2025 | Repo [`Aposymbiont/split-keyboards`](https://github.com/Aposymbiont/split-keyboards) | keine Angabe | noch nicht |
-| [Keebfolio](https://keebfolio.netlify.app/) (Repo [`Keycapsss/awesome-mechanical-keyboard`](https://github.com/Keycapsss/awesome-mechanical-keyboard)) | rund 200 Open-Source-Tastaturen: Split, ortholinear, versetzt, sonstige | Kategorien | aktiv (Sep. 2026) | Markdown mit Frontmatter je Tastatur | keine Angabe | noch nicht |
-| [keeb-finder.com](https://keeb-finder.com/keyboards) | über 2.000 Produkte (vor allem fertige mechanische Tastaturen), Split-Filter mit rund 45 Treffern | Größe, Material, Schalter, Preis, Firmware | aktiv | Webseite (Next.js) | kommerziell, Affiliate | nicht geeignet |
-| [OCDevel: Best Ergonomic Split Keyboards](https://ocdevel.com/ergo/keyboards) | rund 40 Tastaturen | sortierbare Tabelle (Tasten, Daumen, Firmware, Funk, Preis, Wertung) | aktiv | HTML-Tabelle | keine Angabe | nicht geeignet (Meinungsseite) |
-| [Try Ortho Keys](https://www.tryorthokeys.com/split) | Split- und Ortho-Tastaturen | Kategorien | aktiv | Webseite | kommerziell | nicht geeignet |
+| [Aposymbiont Split Keyboards Gallery](https://aposymbiont.github.io/split-keyboards/) | rund 150 Split- und Wedge-Tastaturen, auf Basis von diimdeep | Filter und Vergleichstool | Sep. 2025 | Repo [`Aposymbiont/split-keyboards`](https://github.com/Aposymbiont/split-keyboards) | keine Angabe | Quelle (nur Fakten und Links) |
+| [Keebfolio](https://keebfolio.netlify.app/) (Repo [`Keycapsss/awesome-mechanical-keyboard`](https://github.com/Keycapsss/awesome-mechanical-keyboard)) | rund 200 Open-Source-Tastaturen: Split, ortholinear, versetzt, sonstige | Kategorien | aktiv (Sep. 2026) | Markdown mit Frontmatter je Tastatur | keine Angabe | Quelle (nur Fakten und Links) |
+| [keeb-finder.com](https://keeb-finder.com/keyboards) | über 2.000 Produkte (vor allem fertige mechanische Tastaturen), Split-Filter mit rund 45 Treffern | Größe, Material, Schalter, Preis, Firmware | aktiv | Webseite (Next.js) | keine Angabe; Affiliate-Seite | nicht als Quelle, nur zum Gegenprüfen (siehe unten) |
+| [OCDevel: Best Ergonomic Split Keyboards](https://ocdevel.com/ergo/keyboards) | rund 40 Tastaturen | sortierbare Tabelle (Tasten, Daumen, Firmware, Funk, Preis, Wertung) | aktiv | HTML-Tabelle | keine Angabe | nicht als Quelle, nur zum Gegenprüfen |
+| [Try Ortho Keys](https://www.tryorthokeys.com/split) | Split- und Ortho-Tastaturen | Kategorien | aktiv | Webseite | keine Angabe; Händler | nicht als Quelle, nur zum Gegenprüfen |
 | [KBD.news](https://kbd.news/) | rund 1.800 Tastatur-Artikel seit 2020 | Tags | aktiv | HTML | keine Angabe | Quelle (Anfrage läuft) |
 | [KeymapDB](https://keymapdb.com/) | rund 150 dokumentierte Keymaps | Keymap-Merkmale | aktiv | Markdown | GPL-3.0 | Quelle |
 | mechdb.net, keebweeb.us | – | – | nicht erreichbar | – | – | – |
@@ -42,17 +42,33 @@ Dazu kommen die Firmware-Repositories (QMK, ZMK, Vial, VIA) und die GitHub-Topic
 
 | Merkmal | bestehende Projekte | unser Projekt |
 | --- | --- | --- |
-| Quellen | jeweils eine eigene, handgepflegte Sammlung | 18 Quellen zusammengeführt (Firmware-Repos, Listen, Wikis, Shops, Herstellerseiten, Reddit, Ergogen) |
+| Quellen | jeweils eine eigene, handgepflegte Sammlung | 20 Quellen zusammengeführt (Firmware-Repos, Listen, Wikis, Shops, Herstellerseiten, Reddit, Ergogen) |
 | Herkunft | selten je Eintrag | Fundstelle, Methode und Lizenz je Angabe, Abfragezeitpunkt |
 | Geometrie | splitKbCompare: Layout-Bilder; sonst keine | Tastenpositionen für rund 4.400 Geräte, auch aus Ergogen berechnet; nutzbar für Layout-Optimierung |
-| Umfang | 40–450 Tastaturen | rund 8.900 Geräte, Stufenmodell für die Pflege |
+| Umfang | 40–450 Tastaturen | rund 8.800 Geräte, Stufenmodell für die Pflege |
 | Kommerziell und DIY | meist getrennt | beides, mit Shops und Herstellerseiten |
 | Sprache, Markt | englisch, US-Shops | englische Seite, auch EU- und deutsche Shops |
 | Pflege | von Hand | Skripte und Agenten, reproduzierbar aus gepinnten Quellen |
 
-## Mögliche weitere Quellen daraus
+## Übernommen am 17.11.2026
 
-- **Keebfolio:** rund 200 Open-Source-Tastaturen als Markdown mit Frontmatter; einfach einzulesen, keine Lizenz angegeben, also nur Fakten und Links.
-- **Aposymbiont-Galerie:** rund 150 Einträge mit Filterdaten; keine Lizenz angegeben.
-- **awesome-split-keyboards:** der aktuelle Stand (Juli 2024), wir haben bisher nur den Stand von 2021 geklont.
-- **awesome-dactyl:** für Mulden-Tastaturen.
+| Quelle | Commit | Datensätze | davon nur dort |
+| --- | --- | --- | --- |
+| Keebfolio | `a21e416` (07.09.2026) | 204 | 79 |
+| Aposymbiont-Galerie | `428bb0b` (20.09.2025) | 152 | 32 |
+| awesome-split-keyboards | `bd2c304` | 55 | 7 |
+| awesome-dactyl | `93f99a2` (10.04.2026) | 38 | 18 |
+
+Alle vier geben keine Lizenz an. Übernommen sind nur Fakten (Name, Bauform, Merkmale, Tastenzahl, Verfügbarkeit) und Links mit Fundstelle am Commit; keine Beschreibungen, Notizen oder Bilder.
+
+## Warum keeb-finder, OCDevel und Try Ortho Keys keine Quellen sind
+
+Am Inhalt liegt es nicht: Modellnamen und technische Angaben sind Fakten, die Wertungen würden wir ohnehin nicht übernehmen. Die Gründe:
+
+| Seite | Neue Modelle für uns | Rechtliche Lage | Technik |
+| --- | --- | --- | --- |
+| keeb-finder.com | gering: rund 45 Split-Tastaturen, sonst fertige Massenmarkt-Tastaturen (Stufe 3, bewusst ausgeschlossen) | keine Lizenz; als Sammlung mit erheblichem Aufwand vermutlich durch Datenbankherstellerrecht oder Nutzungsbedingungen geschützt | Daten per JavaScript, Abruf aufwendig |
+| OCDevel | sehr gering: rund 40 bekannte Modelle | keine Lizenz | eine HTML-Tabelle |
+| Try Ortho Keys | gering; Händlersortiment | keine Lizenz; Händlerseite | Webseite |
+
+Sinnvoll ist eine Nutzung **zum Gegenprüfen**: Modellnamen abgleichen, fehlende Modelle notieren und dann aus Hersteller- oder Projektseiten belegen. Die Vergleichsseite selbst erscheint dann nicht als Fundstelle, ihre Auswahl wird nicht übernommen.

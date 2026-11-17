@@ -35,9 +35,10 @@ def main():
     schritte = [("qmk", leser.lies_qmk), ("vial", leser.lies_vial), ("zmk", leser.lies_zmk),
                 ("splitkbcompare", leser.lies_splitkbcompare), ("golem", leser.lies_golem),
                 ("kbdnews", lambda s: kbdnews.lies_kbdnews(s, leser.quelle_anlegen)),
-                ("yal", leser.lies_yal), ("github", leser.lies_github), ("ergogen", leser.lies_ergogen), ("via", leser.lies_via), ("deskthority", leser.lies_deskthority), ("reddit", leser.lies_reddit), ("shops", leser.lies_shops), ("shopseiten", leser.lies_shopseiten), ("keymapdb", leser.lies_keymapdb), ("manuell", leser.lies_manuell)]
+                ("yal", leser.lies_yal), ("github", leser.lies_github), ("ergogen", leser.lies_ergogen), ("via", leser.lies_via), ("deskthority", leser.lies_deskthority), ("reddit", leser.lies_reddit), ("shops", leser.lies_shops), ("shopseiten", leser.lies_shopseiten), ("keebfolio", leser.lies_keebfolio),
+                ("aposymbiont", leser.lies_aposymbiont), ("awesome-listen", leser.lies_awesome_listen), ("keymapdb", leser.lies_keymapdb), ("manuell", leser.lies_manuell)]
     for name, lies in schritte:
-        if name not in ("manuell", "ergogen") and not (QUELLEN / name).exists():
+        if name not in ("manuell", "ergogen", "awesome-listen") and not (QUELLEN / name).exists():
             print(f"{name}: Quelle nicht geladen, übersprungen")
             continue
         n, fehler = lies(s)
