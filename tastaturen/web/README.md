@@ -62,3 +62,9 @@ Maßnahmen: keine Webfonts, keine Bilder, keine Bibliotheken; ein Request bis zu
 - Tastenbild auch in der Trefferliste (nur bei schneller Verbindung nachladen).
 - Hersteller vereinheitlichen (z. B. „KBDfans“ und „KBDFans“), Fantasienamen aus Ergogen-Dateien aussortieren.
 - Server-Konfiguration: `.gz` ausliefern, `Cache-Control` wie in `vorschau.py`.
+
+## Prüfseite (intern)
+
+`python3 tastaturen/skripte/bilder_sammeln.py` sammelt Bild-URLs je Datensatz nach `~/keyboard/tastatur-quellen/bilder.json`. Quellen sind QMK-Readmes, Shopify-Produktbilder, Keebfolio, Aposymbiont, YAL, golem.hu, KBD.news (og:image) und gespeicherte Herstellerseiten. Deskthority sperrt das Einbinden im Browser; dort steht nur ein Link.
+
+`python3 tastaturen/skripte/uebersicht_bauen.py` erzeugt danach `dist/review/`: alle Geräte in der Reihenfolge der Hauptseite, 200 je Seite. Jeder Eintrag zeigt Nummer, ID (Slug), bis zu zwei Fotos, den Tastenumriss, Kurzangaben, fehlende Kernangaben (split, keys, stagger, switches, wireless, availability, maker), die Quellen und Links. Die Fotos sind nur verlinkt und nicht zur Veröffentlichung gedacht; jede Seite trägt `noindex`.
