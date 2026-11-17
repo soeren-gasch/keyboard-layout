@@ -364,6 +364,8 @@ belege: [https://kinesis-ergo.com/shop/advantage2/]
 gelesen_am: 2026-11-17
 facetten:
   geteilt: einteilig-geteilt
+  tasten: [86]
+  tasten_je_haelfte: [43]
   versatz: [spalten, mulde]
   schalter: [mx]
   schalter_montage: [fest]
@@ -372,7 +374,7 @@ facetten:
   energie: [kabel]
   firmware: [proprietaer]
   verfuegbarkeit: [fertig, eingestellt]
-hinweise: {schalter: "Cherry MX Brown oder Quiet Red; Funktionstasten Cherry ML", zelt: "Mulden fest 20° geneigt"}
+hinweise: {schalter: "Cherry MX Brown oder Quiet Red; Funktionstasten Cherry ML", zelt: "Mulden fest 20° geneigt", tasten: "43 links, 43 rechts, gezählt von Sören (17.11.2026)"}
 ---
 name: Kinesis Advantage360
 hersteller: Kinesis
@@ -381,13 +383,15 @@ belege: [https://kinesis-ergo.com/shop/adv360/]
 gelesen_am: 2026-11-17
 facetten:
   geteilt: zusammensteckbar
+  tasten: [76]
+  tasten_je_haelfte: [38]
   versatz: [spalten, mulde]
   schalter: [mx]
   zelt: ja
   energie: [kabel]
   firmware: [proprietaer]
   verfuegbarkeit: [fertig]
-hinweise: {geteilt: "„Bridge Connector“ im Lieferumfang", schalter: "Gateron Brown KS-9 oder Kailh Box Pink", zelt: "integriert, 3 Stufen"}
+hinweise: {geteilt: "„Bridge Connector“ im Lieferumfang", schalter: "Gateron Brown KS-9 oder Kailh Box Pink", zelt: "integriert, 3 Stufen", tasten: "38 links, 38 rechts, gezählt von Sören (17.11.2026)"}
 ---
 name: Epomaker Split70
 hersteller: Epomaker

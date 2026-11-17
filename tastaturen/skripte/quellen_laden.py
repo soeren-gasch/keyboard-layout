@@ -237,13 +237,60 @@ def lade_shopify(name, q):
         print(f"{name}: {shop}: {len(produkte)} Produkte")
 
 
+def lade_kategorien(name, q):
+    """Kategorie- und Produktseiten von Shops ohne Schnittstelle. Folgt Kategorie-Links (Muster "folgen", höchstens
+    20 Seiten), sammelt Produkt-Links (Muster "produkt", höchstens 300), lädt jede Produktseite einmal (2 s Abstand).
+    Ablage: <ziel>/<site>/<nr>.html und index.json (URL, Datei, Abfragezeitpunkt UTC)."""
+    import hashlib
+    import urllib.parse
+    for cfg in q["seiten"]:
+        ordner = ZIEL / name / cfg["site"]
+        ordner.mkdir(parents=True, exist_ok=True)
+        index_datei = ordner / "index.json"
+        index = json.loads(index_datei.read_text(encoding="utf-8")) if index_datei.exists() else {}
+        offen, besucht, produkte = list(cfg["start"]), set(), set()
+        while offen and len(besucht) < 20:
+            url = offen.pop(0)
+            if url in besucht:
+                continue
+            besucht.add(url)
+            try:
+                text = hole(url).decode("utf-8", "replace")
+            except OSError as e:
+                print(f"{name}: {url}: {e}")
+                continue
+            time.sleep(2)
+            for link in re.findall(r'href="([^"#]+)"', text):
+                link = urllib.parse.urljoin(url, link.replace("&amp;", "&"))
+                if re.search(cfg["produkt"], link) and link not in cfg["start"]:
+                    produkte.add(link)
+                elif re.search(cfg["folgen"], link) and link not in besucht:
+                    offen.append(link)
+        neu = 0
+        for url in sorted(produkte)[:300]:
+            if url in index and "--neu" not in sys.argv:
+                continue
+            try:
+                inhalt = hole(url)
+            except OSError as e:
+                print(f"{name}: {url}: {e}")
+                continue
+            datei = hashlib.sha1(url.encode()).hexdigest()[:16] + ".html"
+            (ordner / datei).write_bytes(inhalt)
+            index[url] = {"datei": datei, "abgerufen": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
+            neu += 1
+            time.sleep(2)
+        index_datei.write_text(json.dumps(index, ensure_ascii=False, indent=1), encoding="utf-8")
+        print(f"{name}: {cfg['site']}: {len(besucht)} Kategorieseiten, {len(produkte)} Produktlinks, {neu} neu")
+
+
 def main():
     quellen = json.loads((REPO / "tastaturen" / "quellen.json").read_text(encoding="utf-8"))["quellen"]
     auswahl = [a for a in sys.argv[1:] if not a.startswith("--")] or list(quellen)
     ZIEL.mkdir(parents=True, exist_ok=True)
     for name in auswahl:
         q = quellen[name]
-        {"git": lade_git, "web": lade_golem, "kbdnews": lade_kbdnews, "github": lade_github, "mediawiki": lade_mediawiki, "arcticshift": lade_arcticshift, "shopify": lade_shopify,
+        {"git": lade_git, "web": lade_golem, "kbdnews": lade_kbdnews, "github": lade_github, "mediawiki": lade_mediawiki, "arcticshift": lade_arcticshift, "shopify": lade_shopify, "kategorien": lade_kategorien,
          "datei": lambda *a: None}[q["art"]](name, q)
 
 

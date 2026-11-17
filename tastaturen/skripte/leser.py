@@ -914,7 +914,7 @@ SHOP_EINSCHLUSS = re.compile(r"keyboard|\bkit\b|\bpcb\b|macro ?pad|numpad|\bspli
 # (Stufe 1 der Datenbank; normale Massenmarkt-Tastaturen sind Stufe 3 und werden nicht aufgenommen).
 ERGO_SHOPS = {"keeb.io", "splitkb.com", "boardsource.xyz", "typeractive.xyz", "holykeebs.com", "littlekeyboards.com",
               "lowprokb.ca", "keebmaker.com", "dygma.com", "x-bows.com", "svalboard.com", "www.charachorder.com",
-              "cyboard.digital", "shop.keyboard.io", "shop.goldtouch.com", "perixx.com", "mechboards.co.uk"}
+              "cyboard.digital", "shop.keyboard.io", "shop.goldtouch.com", "perixx.com", "mechboards.co.uk", "elimkeys.com"}
 ERGO_TEXT = re.compile(r"\bsplit\b|ergonom|\balice\b|column|ortholinear|\bortho\b|thumb cluster|tenting|corne|sofle|"
                        r"lily ?58|kyria|\biris\b|ferris|sweep|dactyl|charybdis|skeletyl|totem|piantor|cheapino|reviung|"
                        r"planck|preonic|\b40%|\b3[0-9][- ]key|\b4[0-8][- ]key|keywell|one[- ]handed|chord", re.I)
@@ -980,5 +980,49 @@ def lies_shops(s):
                 if re.search(r"layout|language", name, re.I):
                     for w in werte:
                         s.angabe(ds, "sprachlayout", w.strip().lower()[:30], "quelle", f"Variante {name}")
+            anzahl += 1
+    return anzahl, []
+
+
+# ----------------------------------------------------------------------------- Shops ohne Schnittstelle (Produktseiten)
+HERSTELLER_SEITEN = {"r-go-tools.de"}   # Herstellerseiten ohne eigenen Warenkorb
+WARENKORB = re.compile(r"in den warenkorb|add to cart|add-to-cart|addtocart|jetzt kaufen|buy now", re.I)
+TASTATUR_TITEL = re.compile(r"tastatur|keyboard|\bkeeb|split|corne|sofle|lily|piantor|kinesis|advantage|ergodox|moonlander|"
+                            r"voyager|glove80|dygma|uhk|svalboard|keyboardio|r-go|ergo\b", re.I)
+ZUBEHOER_TITEL = re.compile(r"tastenkappe|keycap|handballenauflage|palm|pads?\b|kabel|cable|adapter|ersatz|replacement|"
+                            r"\bmaus\b|mouse|fußstütze|laptopständer|tasche|case\b|hülle|schalter\b|switch(?:es)?\b|"
+                            r"tenting kit|kit für|software|treiber|driver", re.I)
+
+
+def lies_shopseiten(s):
+    import html as _html
+    from basis import merkmale_aus_text
+    q = quelle_anlegen(s, "shopseiten", "Produktseiten von Shops und Herstellern ohne Produkt-Schnittstelle", None)
+    anzahl = 0
+    for index_datei in sorted((QUELLEN / "shopseiten").glob("*/index.json")):
+        site = index_datei.parent.name
+        for url, eintrag in sorted(json.loads(index_datei.read_text(encoding="utf-8")).items()):
+            h = (index_datei.parent / eintrag["datei"]).read_text(encoding="utf-8", errors="replace")
+            titel = re.search(r'<meta[^>]+property="og:title"[^>]+content="([^"]+)"', h) or \
+                re.search(r"<h1[^>]*>(.*?)</h1>", h, re.S)
+            titel = _html.unescape(re.sub(r"<[^>]+>", " ", titel.group(1))).strip() if titel else ""
+            titel = re.sub(r"\s*[|–-]\s*(bueroleben|keebart|zenlap|r-go tools).*$", "", titel, flags=re.I).strip()
+            hersteller_seite = site in HERSTELLER_SEITEN
+            if not titel or not (hersteller_seite or WARENKORB.search(h)) or not TASTATUR_TITEL.search(titel) \
+                    or ZUBEHOER_TITEL.search(titel):
+                continue
+            inhalt = re.sub(r"(?s)<(script|style|noscript|svg|nav|header|footer|aside)[^>]*>.*?</\1>", " ", h)
+            m = re.search(r"(?s)<main[^>]*>(.*?)</main>", inhalt)
+            inhalt = m.group(1) if m else inhalt
+            text = " ".join(_html.unescape(re.sub(r"<[^>]+>", " ", inhalt)).split())
+            preis = re.search(r'(?:product:price:amount|itemprop="price")[^>]*content="([0-9.,]+)"', h)
+            ds = s.datensatz("shopseiten", url, url, q["lizenz"], eintrag["abgerufen"], titel, None, url, [],
+                             {"site": site, "preis": preis.group(1) if preis else None})
+            for facette, wert, fund in merkmale_aus_text(f"{titel} | {text[:20000]}"):
+                s.angabe(ds, facette, wert, "quelle", f"Seitentext: …{fund}…")
+            if preis:
+                s.angabe(ds, "preis", f"{preis.group(1)} EUR", "quelle", "Preisangabe der Seite")
+            s.angabe(ds, "verfuegbarkeit", "fertig", "abgeleitet",
+                     "Herstellerseite" if hersteller_seite else "Produktseite mit Warenkorb")
             anzahl += 1
     return anzahl, []

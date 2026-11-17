@@ -4,10 +4,15 @@
   [
    "qmk:ferris/sweep",
    "zmk:boards/shields/cradio/cradio.zmk.yml"
+  ],
+  [
+   "manuell:R-Go Split Break V2",
+   "shopseiten:https://www.r-go-tools.de/r-go-split-break-ergonomische-tastatur-version-2/"
   ]
  ],
  "trennen": [],
  "begruendung": {
-  "qmk:ferris/sweep + zmk:boards/shields/cradio/cradio.zmk.yml": "Ferris Sweep heißt im ZMK-Repository cradio; beide 34 Tasten, 3x5+2"
+  "qmk:ferris/sweep + zmk:boards/shields/cradio/cradio.zmk.yml": "Ferris Sweep heißt im ZMK-Repository cradio; beide 34 Tasten, 3x5+2",
+  "manuell:R-Go Split Break V2 + shopseiten:…/r-go-split-break-ergonomische-tastatur-version-2/": "dasselbe Modell, deutsche Herstellerseite"
  }
 }

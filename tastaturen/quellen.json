@@ -275,13 +275,67 @@
         "shop.keyboard.io",
         "shop.goldtouch.com",
         "keebd.com",
-        "mechanicalkeyboards.com"
+        "mechanicalkeyboards.com",
+        "elimkeys.com",
+        "inputgear.de",
+        "monacokeys.de",
+        "akkogear.de",
+        "keycaps-vibe.com",
+        "www.ragnok.com"
       ],
       "lizenz": "unknown (shop content; no license stated)",
       "nutzung": "nur Fakten aus Titel, Tags, Varianten und Beschreibung (Tastenzahl, Bauform, Schalter, Funk, Preis) und der Produktlink mit Abfragezeitpunkt; keine Texte, keine Bilder",
       "nennung": "der jeweilige Shop mit Produktlink und Abfragezeitpunkt",
       "beschreibung_en": "Public product lists of keyboard shops (Shopify)",
       "nutzung_en": "Facts only (key count, form factor, switches, wireless, price) and the product link with retrieval time; no text, no images"
+    },
+    "shopseiten": {
+      "art": "kategorien",
+      "name": "Online-Shops und Hersteller ohne Produkt-Schnittstelle (Kategorie- und Produktseiten)",
+      "seiten": [
+        {
+          "site": "bueroleben.de",
+          "start": [
+            "https://bueroleben.de/tastaturen/"
+          ],
+          "folgen": "bueroleben\\.de/tastaturen/(?:page/\\d+/|\\?)",
+          "produkt": "^https://bueroleben\\.de/[a-z0-9-]+/$",
+          "ergo": true
+        },
+        {
+          "site": "keebart.com",
+          "start": [
+            "https://www.keebart.com/de/produkte"
+          ],
+          "folgen": "keebart\\.com/de/produkte(?:\\?|$)",
+          "produkt": "keebart\\.com/de/produkte/[a-z0-9-]+$",
+          "ergo": true
+        },
+        {
+          "site": "r-go-tools.de",
+          "start": [
+            "https://www.r-go-tools.de/ergonomische-produkte/ergonomische-tastatur/"
+          ],
+          "folgen": "$^",
+          "produkt": "r-go-tools\\.de/r-go-[a-z0-9-]+/$",
+          "ergo": true
+        },
+        {
+          "site": "zenlap.de",
+          "start": [
+            "https://www.zenlap.de/ergonomische-tastatur"
+          ],
+          "folgen": "zenlap\\.de/ergonomische-tastatur(?:/[a-z0-9-]+)?$",
+          "produkt": "^https://www\\.zenlap\\.de/(?!ergonomische-|catalog|checkout|customer|contact|impressum|lieferung|sitemap|ueber-uns|kundenservice|haeufige-fragen|widerrufsformular|allgemeine-|gewaehrleistungen|pravention|private-life|laptopstander|workstation)[a-z0-9-]+$",
+          "ergo": true
+        }
+      ],
+      "lizenz": "unknown (shop content; no license stated)",
+      "nutzung": "nur Fakten aus dem Inhaltsbereich der Produktseite (ohne Menüs) und der Produktlink mit Abfragezeitpunkt; keine Texte, keine Bilder",
+      "nennung": "der jeweilige Shop bzw. Hersteller mit Produktlink und Abfragezeitpunkt",
+      "beschreibung_en": "Product pages of shops and manufacturers without a product API",
+      "nutzung_en": "Facts only from the product content area and the product link with retrieval time; no text, no images",
+      "hinweis": "gmk.net (GMK Electronic Design) nicht aufgenommen: Industrie-Bedieneinheiten, nur als Datenblatt-PDF; GMK ist im Tastatur-Bereich vor allem als Keycap-Hersteller bekannt."
     }
   }
 }

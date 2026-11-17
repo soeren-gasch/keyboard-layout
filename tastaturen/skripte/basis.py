@@ -338,6 +338,18 @@ TEXT_MUSTER = [
     ("betriebssystem", "linux", r"\blinux\b"), ("betriebssystem", "ios", r"\bios\b|ipad"), ("betriebssystem", "android", r"\bandroid\b"),
     ("firmware", "qmk", r"\bqmk\b"), ("firmware", "zmk", r"\bzmk\b"), ("firmware", "via", r"\bvia\b"), ("firmware", "vial", r"\bvial\b"),
     ("firmware", "kmk", r"\bkmk\b"), ("firmware", "rmk", r"\brmk\b"), ("ziffernblock", "ja", r"\bnumpad\b|number pad|numeric keypad"),
+    # deutsche Shop- und Herstellertexte
+    ("geteilt", "ja", r"getrennte (?:tastatur)?hälften|zweigeteilte tastatur|geteilte tastatur(?:hälften)?\b(?! mit)"),
+    ("drahtlos", "ja", r"\bkabellos|\bfunktastatur|\bfunk\b"), ("drahtlos_technik", "funk-2-4", r"2,4 ?ghz|usb-empfänger|nano-empfänger"),
+    ("anschluss", "dongle", r"usb-empfänger|nano-empfänger"), ("energie", "kabel", r"kabelgebunden"),
+    ("energie", "aaa", r"\baaa\b|micro-batterie"), ("energie", "aa", r"\baa-batterie|mignon"),
+    ("energie", "akku-fest", r"\bakku\b|wiederaufladbar"),
+    ("handballenauflage", "integriert", r"integrierte (?:handballen|handgelenk)auflage"),
+    ("handballenauflage", "beigelegt", r"abnehmbare (?:handballen|handgelenk)auflage"),
+    ("beleuchtung", "ja", r"hintergrundbeleuchtung|beleuchtete tasten"), ("schalter", "schere", r"scherenmechanik|scherentechnik"),
+    ("schalter", "membran", r"rubberdome|rubber-dome|membrantastatur"), ("ziffernblock", "ja", r"ziffernblock|nummernblock"),
+    ("ziffernblock", "separat", r"separate[rnm]? (?:ziffern|nummern)block"), ("zelt", "ja", r"zeltförmig|seitliche neigung"),
+    ("positionierung", "negativ", r"negative neigung|negativneigung"), ("sprachlayout", "de", r"\bqwertz\b|deutsches layout|layout: deutsch"),
 ]
 FORMFAKTOR = [("100", r"\b(?:100%|full[- ]size)"), ("96", r"\b(?:96%|1800)\b"), ("tkl", r"\btkl\b|tenkeyless|\b8[07]%"),
               ("75", r"\b75%"), ("65", r"\b65%"), ("60", r"\b60%"), ("40", r"\b40%"), ("makropad", r"macro ?pad"),
@@ -360,7 +372,7 @@ def merkmale_aus_text(text):
             break
     for w in keycap_profile(klein):
         erg.append(("keycap_profil", w, "Keycap-Profil im Text"))
-    for facette, muster, lo, hi in (("tasten", r"\b(\d{2,3})[- ]?keys?\b", 10, 140), ("akku_mah", r"\b(\d{3,4}) ?mah\b", 50, 20000),
+    for facette, muster, lo, hi in (("tasten", r"\b(\d{2,3})[- ]?keys?\b", 10, 140), ("tasten", r"\b(\d{2,3}) tasten\b", 10, 140), ("akku_mah", r"\b(\d{3,4}) ?mah\b", 50, 20000),
                                     ("polling", r"\b(\d{3,4})\s?hz\b", 125, 8000), ("gewicht_g", r"\b(\d{3,4}) ?g\b(?!b|hz)", 100, 5000)):
         for m in re.finditer(muster, klein):
             if lo <= int(m.group(1)) <= hi:

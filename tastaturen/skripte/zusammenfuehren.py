@@ -19,7 +19,7 @@ from collections import Counter, defaultdict
 
 from basis import ORDNER
 
-VORRANG = ["manuell", "yal", "splitkbcompare", "golem", "deskthority", "shops", "kbdnews", "zmk", "qmk", "vial", "via", "ergogen", "github", "reddit", "keymapdb"]
+VORRANG = ["manuell", "yal", "splitkbcompare", "golem", "deskthority", "shops", "shopseiten", "kbdnews", "zmk", "qmk", "vial", "via", "ergogen", "github", "reddit", "keymapdb"]
 ZAHLEN = {"tasten", "tasten_je_haelfte", "daumentasten", "tasten_genutzt", "jahr", "polling", "geraete_kopplung",
           "akku_mah", "gewicht_g"}
 MEHRFACH = {"versatz", "maus_art", "schalter", "schalter_montage", "drahtlos_technik", "energie", "firmware",
