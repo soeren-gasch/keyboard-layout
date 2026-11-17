@@ -141,7 +141,7 @@ Stand 17.11.2026: 8.782 Geräte aus 12.908 Datensätzen in 20 Quellen; 2.344 Ger
 
 Der Export ist englisch (die spätere Seite ist englisch): Schlüssel und Werte stammen aus den `key`-Feldern in `facetten.json`, Quellenbeschreibungen aus `beschreibung_en`/`nutzung_en` in `quellen.json`. Datenbank, Skripte und Doku bleiben deutsch.
 
-Die Dateien sind für eine statische Seite mit clientseitiger Facettensuche gedacht. `export/geraete.csv`, `export/datensaetze.csv` und `export/layouts.csv` sind diff-bare Übersichten für das Repository.
+Die Dateien sind für eine statische Seite mit clientseitiger Facettensuche gedacht; den Entwurf dieser Seite baut `skripte/seite_bauen.py` (siehe `web/README.md`). `export/geraete.csv`, `export/datensaetze.csv` und `export/layouts.csv` sind diff-bare Übersichten für das Repository.
 
 ## Neu aufbauen
 
@@ -169,6 +169,8 @@ python3 tastaturen/skripte/ergogen_berechnen.py          # Tastenpositionen bere
 | nvm | v0.40.8 (Git-Tag) | `~/.nvm`, eingebunden in `~/.profile` und `~/.bashrc` | mehrere Node.js-Versionen nebeneinander (`nvm install <version>`, `nvm use <version>`) |
 | Node.js | v26.13.1 (LTS, Standard) | über nvm; Prüfsumme beim Download von nvm geprüft | Ergogen und künftige Recherchen |
 | Ergogen | 4.2.1 und 3.1.2 | `~/keyboard/werkzeuge/ergogen4`, `~/keyboard/werkzeuge/ergogen3` (npm, `--ignore-scripts`) | Tastenpositionen aus Ergogen-Konfigurationen |
+| esbuild | 0.25.0 | `~/keyboard/werkzeuge/esbuild` (npm) | CSS und Skript der Seite verkleinern; ohne esbuild baut `seite_bauen.py` unverkleinert |
+| Playwright, Chromium Headless Shell | 1.52.0, Chromium 136 | `~/keyboard/werkzeuge/playwright`, `~/keyboard/werkzeuge/chromium` (fehlende Bibliotheken und Schriften per `apt-get download` lokal entpackt; Start über `chromium/pw-node <skript.js>`) | Seite testen, Bildschirmfotos, gedrosselte Verbindung messen |
 
 Installiert für den Benutzer `decaswift` auf dem Hub (17.11.2026), ohne Root-Rechte. Eine systemweite Installation für alle Benutzer gehört in das Ansible-Playbook `decaswift-hub.yml` im Repository `soeren-gasch/infrastructure`.
 

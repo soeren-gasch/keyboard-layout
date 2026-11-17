@@ -2,3 +2,4 @@ __pycache__/
 *.pyc
 tastaturen/tastaturen.sqlite
 tastaturen/export/web/
+tastaturen/web/dist/

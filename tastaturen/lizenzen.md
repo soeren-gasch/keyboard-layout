@@ -87,6 +87,6 @@ Eine Lizenz für die ganze Datenbank muss mit **jeder** Quelle verträglich sein
 ## Offene Entscheidungen
 
 1. Lizenz für Fakten und eigene Arbeit: CC BY 4.0 (Vorschlag), CC BY-SA 4.0 oder ODbL?
-2. Unter welchem Namen werden eigene Beiträge genannt?
+2. ~~Unter welchem Namen werden eigene Beiträge genannt?~~ Entschieden am 17.11.2026: Veröffentlichung unter **Sören Gasch**.
 3. Datensätze ohne erkennbare Lizenz (manche Ergogen-Repos): nur verlinken oder ganz weglassen?
 4. Anfragen an golem.hu/KBD.news und Deskthority stellen (Entwürfe unter `tastaturen/anfragen/`).
