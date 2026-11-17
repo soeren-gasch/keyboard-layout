@@ -2,10 +2,6 @@
  "beschreibung": "Von Hand bzw. per Abruf der Herstellerseiten recherchierte Tastaturen, die in keiner maschinenlesbaren Quelle vollständig stehen. Nur Angaben, die auf den Belegseiten stehen; null = nicht belegt.",
  "stand": "2026-11-17",
  "offen": [
-  "Perixx Periboard-512 (Tastenzahl)",
-  "Vortex M50",
-  "Microsoft Sculpt Ergonomic",
-  "Microsoft Surface Ergonomic",
   "Keychron Orca echo",
   "Rommana"
  ],
@@ -120,38 +116,6 @@
    }
   },
   {
-   "name": "ZSA Moonlander",
-   "hersteller": "ZSA Technology Labs",
-   "url": "https://www.zsa.io/moonlander",
-   "belege": [
-    "https://www.zsa.io/moonlander"
-   ],
-   "facetten": {
-    "geteilt": "ja",
-    "drahtlos": "nein",
-    "versatz": [
-     "spalten"
-    ],
-    "schalter": [
-     "mx"
-    ],
-    "schalter_montage": [
-     "hotswap"
-    ],
-    "firmware": [
-     "qmk"
-    ],
-    "verfuegbarkeit": [
-     "fertig"
-    ],
-    "preis": "365 USD",
-    "energie": [
-     "kabel"
-    ],
-    "profil": "normal"
-   }
-  },
-  {
    "name": "ZSA Voyager",
    "hersteller": "ZSA Technology Labs",
    "url": "https://www.zsa.io/voyager",
@@ -184,37 +148,6 @@
      "kabel"
     ],
     "profil": "flach"
-   }
-  },
-  {
-   "name": "ZSA ErgoDox EZ",
-   "hersteller": "ZSA Technology Labs",
-   "url": "https://ergodox-ez.com/",
-   "belege": [
-    "https://ergodox-ez.com/"
-   ],
-   "facetten": {
-    "geteilt": "ja",
-    "drahtlos": "nein",
-    "versatz": [
-     "spalten"
-    ],
-    "schalter": [
-     "mx"
-    ],
-    "schalter_montage": [
-     "hotswap"
-    ],
-    "firmware": [
-     "qmk"
-    ],
-    "verfuegbarkeit": [
-     "fertig"
-    ],
-    "jahr": 2015,
-    "energie": [
-     "kabel"
-    ]
    }
   },
   {
@@ -309,31 +242,6 @@
    "hinweise": {
     "hinweis": "Hälften magnetisch verbunden; QWERTZ verfügbar",
     "geteilt": "zwei Teile, durch eingebauten Magneten verbunden (Herstellerseite)"
-   }
-  },
-  {
-   "name": "Perixx Periboard-512",
-   "hersteller": "Perixx",
-   "url": "https://www.perixx.com",
-   "belege": [
-    "https://www.perixx.com"
-   ],
-   "facetten": {
-    "geteilt": "einteilig-geteilt",
-    "drahtlos": "nein",
-    "versatz": [
-     "reihen"
-    ],
-    "verfuegbarkeit": [
-     "fertig"
-    ],
-    "preis": "49.9 USD",
-    "energie": [
-     "kabel"
-    ]
-   },
-   "hinweise": {
-    "groesse": "100 %, Natural-Split-Form"
    }
   },
   {

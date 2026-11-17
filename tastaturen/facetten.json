@@ -846,6 +846,773 @@
    "en": "Keys used in keymaps (KeymapDB)",
    "typ": "ganzzahl",
    "key": "keys_used_in_keymaps"
+  },
+  {
+   "id": "nkro",
+   "key": "nkro",
+   "de": "N-Key-Rollover (NKRO)",
+   "en": "N-key rollover (NKRO)",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "ja",
+     "de": "ja",
+     "en": "yes",
+     "key": "yes"
+    },
+    {
+     "id": "nein",
+     "de": "nein",
+     "en": "no",
+     "key": "no"
+    }
+   ]
+  },
+  {
+   "id": "beleuchtung",
+   "key": "backlit",
+   "de": "Hintergrundbeleuchtung",
+   "en": "Backlit",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "ja",
+     "de": "ja",
+     "en": "yes",
+     "key": "yes"
+    },
+    {
+     "id": "nein",
+     "de": "nein",
+     "en": "no",
+     "key": "no"
+    },
+    {
+     "id": "optional",
+     "de": "optional",
+     "en": "optional",
+     "key": "optional"
+    }
+   ]
+  },
+  {
+   "id": "beleuchtung_farbe",
+   "key": "backlight_color",
+   "de": "Farbe der Beleuchtung",
+   "en": "Backlight color",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "rot",
+     "de": "rot",
+     "en": "red",
+     "key": "red"
+    },
+    {
+     "id": "gruen",
+     "de": "grün",
+     "en": "green",
+     "key": "green"
+    },
+    {
+     "id": "blau",
+     "de": "blau",
+     "en": "blue",
+     "key": "blue"
+    },
+    {
+     "id": "weiss",
+     "de": "weiß",
+     "en": "white",
+     "key": "white"
+    },
+    {
+     "id": "gelb",
+     "de": "gelb",
+     "en": "yellow",
+     "key": "yellow"
+    },
+    {
+     "id": "orange",
+     "de": "orange",
+     "en": "orange",
+     "key": "orange"
+    },
+    {
+     "id": "rgb",
+     "de": "RGB",
+     "en": "RGB",
+     "key": "rgb"
+    },
+    {
+     "id": "rgbw",
+     "de": "RGBW",
+     "en": "RGBW",
+     "key": "rgbw"
+    }
+   ]
+  },
+  {
+   "id": "beleuchtung_dimmbar",
+   "key": "backlight_dimmable",
+   "de": "Beleuchtung dimmbar",
+   "en": "Backlight dimmable",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "ja",
+     "de": "ja",
+     "en": "yes",
+     "key": "yes"
+    },
+    {
+     "id": "nein",
+     "de": "nein",
+     "en": "no",
+     "key": "no"
+    }
+   ]
+  },
+  {
+   "id": "handballenauflage",
+   "key": "wrist_rest",
+   "de": "Handballenauflage",
+   "en": "Wrist rest",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "integriert",
+     "de": "integriert",
+     "en": "built-in",
+     "key": "builtin"
+    },
+    {
+     "id": "beigelegt",
+     "de": "beigelegt, eigenes Teil",
+     "en": "included, separate part",
+     "key": "included-separate"
+    },
+    {
+     "id": "zubehoer",
+     "de": "als Zubehör",
+     "en": "optional accessory",
+     "key": "accessory"
+    },
+    {
+     "id": "nein",
+     "de": "nein",
+     "en": "no",
+     "key": "no"
+    }
+   ]
+  },
+  {
+   "id": "positionierung",
+   "key": "positioning",
+   "de": "Positionierung",
+   "en": "Positioning",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "fest",
+     "de": "fest",
+     "en": "fixed",
+     "key": "fixed"
+    },
+    {
+     "id": "fuesse",
+     "de": "Aufstellfüße",
+     "en": "legs",
+     "key": "legs"
+    },
+    {
+     "id": "neigung",
+     "de": "Neigung vorn/hinten (Tilt)",
+     "en": "tilt",
+     "key": "tilt"
+    },
+    {
+     "id": "negativ",
+     "de": "negative Neigung",
+     "en": "negative tilt",
+     "key": "negative-tilt"
+    },
+    {
+     "id": "drehung",
+     "de": "Drehung (Yaw/Spreizwinkel)",
+     "en": "yaw",
+     "key": "yaw"
+    },
+    {
+     "id": "zelt",
+     "de": "Tenting",
+     "en": "tenting",
+     "key": "tenting"
+    },
+    {
+     "id": "3d",
+     "de": "frei im Raum (Gelenk, Stativ)",
+     "en": "3D (joint, mount)",
+     "key": "3d"
+    }
+   ]
+  },
+  {
+   "id": "material",
+   "key": "material",
+   "de": "Gehäusematerial",
+   "en": "Case material",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "holz",
+     "de": "Holz",
+     "en": "wood",
+     "key": "wood"
+    },
+    {
+     "id": "abs",
+     "de": "ABS/Kunststoff",
+     "en": "ABS/plastic",
+     "key": "abs"
+    },
+    {
+     "id": "pc",
+     "de": "Polycarbonat",
+     "en": "polycarbonate",
+     "key": "polycarbonate"
+    },
+    {
+     "id": "acryl",
+     "de": "Acryl",
+     "en": "acrylic",
+     "key": "acrylic"
+    },
+    {
+     "id": "pla",
+     "de": "3D-Druck (PLA u. a.)",
+     "en": "3D print (PLA etc.)",
+     "key": "3d-print"
+    },
+    {
+     "id": "nylon",
+     "de": "Nylon",
+     "en": "nylon",
+     "key": "nylon"
+    },
+    {
+     "id": "aluminium",
+     "de": "Aluminium",
+     "en": "aluminum",
+     "key": "aluminum"
+    },
+    {
+     "id": "stahl",
+     "de": "Stahl",
+     "en": "steel",
+     "key": "steel"
+    },
+    {
+     "id": "metall",
+     "de": "Metall (sonstiges)",
+     "en": "metal (other)",
+     "key": "metal"
+    },
+    {
+     "id": "leder",
+     "de": "Leder/Alcantara (Auflage)",
+     "en": "leather/Alcantara (rest)",
+     "key": "leather"
+    }
+   ]
+  },
+  {
+   "id": "gehaeusefarbe",
+   "key": "body_color",
+   "de": "Gehäusefarbe",
+   "en": "Body color",
+   "typ": "mehrfach",
+   "werte": "offen, z. B. schwarz, weiß, grau, silber, walnuss, esche, grün, blau"
+  },
+  {
+   "id": "keycap_farbe",
+   "key": "keycap_color",
+   "de": "Keycap-Farbe",
+   "en": "Keycap color",
+   "typ": "mehrfach",
+   "werte": "offen, z. B. schwarz, weiß, grau, blau, grün, beige"
+  },
+  {
+   "id": "anschluss",
+   "key": "connection",
+   "de": "Anschluss",
+   "en": "Connection",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "ps2",
+     "de": "PS/2",
+     "en": "PS/2",
+     "key": "ps2"
+    },
+    {
+     "id": "usb-a",
+     "de": "USB-A (Kabel fest)",
+     "en": "USB-A (fixed cable)",
+     "key": "usb-a"
+    },
+    {
+     "id": "usb-c",
+     "de": "USB-C",
+     "en": "USB-C",
+     "key": "usb-c"
+    },
+    {
+     "id": "usb-mini",
+     "de": "Mini-USB",
+     "en": "mini USB",
+     "key": "usb-mini"
+    },
+    {
+     "id": "usb-micro",
+     "de": "Micro-USB",
+     "en": "micro USB",
+     "key": "usb-micro"
+    },
+    {
+     "id": "bluetooth",
+     "de": "Bluetooth",
+     "en": "Bluetooth",
+     "key": "bluetooth"
+    },
+    {
+     "id": "dongle",
+     "de": "Funk-Empfänger (Dongle)",
+     "en": "receiver (dongle)",
+     "key": "dongle"
+    },
+    {
+     "id": "adb",
+     "de": "ADB/sonstige alte",
+     "en": "ADB/other legacy",
+     "key": "legacy"
+    }
+   ]
+  },
+  {
+   "id": "formfaktor",
+   "key": "form_factor",
+   "de": "Formfaktor",
+   "en": "Form factor",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "100",
+     "de": "100 % (mit Ziffernblock)",
+     "en": "100% (full size)",
+     "key": "100"
+    },
+    {
+     "id": "96",
+     "de": "96 %/1800",
+     "en": "96%/1800",
+     "key": "96"
+    },
+    {
+     "id": "tkl",
+     "de": "TKL (80–87 %)",
+     "en": "TKL (80–87%)",
+     "key": "tkl"
+    },
+    {
+     "id": "75",
+     "de": "75 %",
+     "en": "75%",
+     "key": "75"
+    },
+    {
+     "id": "65",
+     "de": "65 %",
+     "en": "65%",
+     "key": "65"
+    },
+    {
+     "id": "60",
+     "de": "60 %",
+     "en": "60%",
+     "key": "60"
+    },
+    {
+     "id": "40",
+     "de": "40 %",
+     "en": "40%",
+     "key": "40"
+    },
+    {
+     "id": "30",
+     "de": "30 % und kleiner",
+     "en": "30% and smaller",
+     "key": "30"
+    },
+    {
+     "id": "makropad",
+     "de": "Makropad",
+     "en": "macropad",
+     "key": "macropad"
+    },
+    {
+     "id": "ziffernblock",
+     "de": "Ziffernblock",
+     "en": "numpad",
+     "key": "numpad"
+    }
+   ]
+  },
+  {
+   "id": "norm_layout",
+   "key": "layout_standard",
+   "de": "Layout-Norm",
+   "en": "Layout standard",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "ansi",
+     "de": "ANSI",
+     "en": "ANSI",
+     "key": "ansi"
+    },
+    {
+     "id": "iso",
+     "de": "ISO",
+     "en": "ISO",
+     "key": "iso"
+    },
+    {
+     "id": "jis",
+     "de": "JIS",
+     "en": "JIS",
+     "key": "jis"
+    },
+    {
+     "id": "eigen",
+     "de": "eigenes/keine",
+     "en": "custom/none",
+     "key": "custom"
+    }
+   ]
+  },
+  {
+   "id": "sprachlayout",
+   "key": "language_layout",
+   "de": "Erhältliche Sprachlayouts",
+   "en": "Available language layouts",
+   "typ": "mehrfach",
+   "werte": "offen, ISO-639-Code, z. B. de, en-us, en-gb, fr, nordic"
+  },
+  {
+   "id": "keycap_material",
+   "key": "keycap_material",
+   "de": "Keycap-Material",
+   "en": "Keycap material",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "abs",
+     "de": "ABS",
+     "en": "ABS",
+     "key": "abs"
+    },
+    {
+     "id": "pbt",
+     "de": "PBT",
+     "en": "PBT",
+     "key": "pbt"
+    },
+    {
+     "id": "pom",
+     "de": "POM",
+     "en": "POM",
+     "key": "pom"
+    },
+    {
+     "id": "pc",
+     "de": "PC (transparent)",
+     "en": "PC (translucent)",
+     "key": "pc"
+    }
+   ]
+  },
+  {
+   "id": "beschriftung",
+   "key": "legends",
+   "de": "Beschriftung",
+   "en": "Legends",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "doubleshot",
+     "de": "Double-shot",
+     "en": "double-shot",
+     "key": "double-shot"
+    },
+    {
+     "id": "dyesub",
+     "de": "Dye-sub",
+     "en": "dye-sub",
+     "key": "dye-sub"
+    },
+    {
+     "id": "laser",
+     "de": "gelasert",
+     "en": "laser-etched",
+     "key": "laser"
+    },
+    {
+     "id": "bedruckt",
+     "de": "bedruckt",
+     "en": "printed",
+     "key": "printed"
+    },
+    {
+     "id": "blank",
+     "de": "unbeschriftet",
+     "en": "blank",
+     "key": "blank"
+    },
+    {
+     "id": "shine-through",
+     "de": "durchleuchtend",
+     "en": "shine-through",
+     "key": "shine-through"
+    }
+   ]
+  },
+  {
+   "id": "montageart",
+   "key": "mounting_style",
+   "de": "Montageart (Platte/Platine)",
+   "en": "Mounting style",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "gasket",
+     "de": "Gasket",
+     "en": "gasket",
+     "key": "gasket"
+    },
+    {
+     "id": "tray",
+     "de": "Tray",
+     "en": "tray",
+     "key": "tray"
+    },
+    {
+     "id": "top",
+     "de": "Top",
+     "en": "top",
+     "key": "top"
+    },
+    {
+     "id": "plate",
+     "de": "Plate",
+     "en": "plate",
+     "key": "plate"
+    },
+    {
+     "id": "sandwich",
+     "de": "Sandwich",
+     "en": "sandwich",
+     "key": "sandwich"
+    },
+    {
+     "id": "integriert",
+     "de": "integriert",
+     "en": "integrated",
+     "key": "integrated"
+    }
+   ]
+  },
+  {
+   "id": "betriebssystem",
+   "key": "os",
+   "de": "Betriebssysteme",
+   "en": "Operating systems",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "windows",
+     "de": "Windows",
+     "en": "Windows",
+     "key": "windows"
+    },
+    {
+     "id": "macos",
+     "de": "macOS",
+     "en": "macOS",
+     "key": "macos"
+    },
+    {
+     "id": "linux",
+     "de": "Linux",
+     "en": "Linux",
+     "key": "linux"
+    },
+    {
+     "id": "ios",
+     "de": "iOS/iPadOS",
+     "en": "iOS/iPadOS",
+     "key": "ios"
+    },
+    {
+     "id": "android",
+     "de": "Android",
+     "en": "Android",
+     "key": "android"
+    },
+    {
+     "id": "chromeos",
+     "de": "ChromeOS",
+     "en": "ChromeOS",
+     "key": "chromeos"
+    }
+   ]
+  },
+  {
+   "id": "konfiguration",
+   "key": "configurator",
+   "de": "Konfigurationswerkzeug",
+   "en": "Configurator",
+   "typ": "mehrfach",
+   "werte": "offen, z. B. Oryx, Keymapp, VIA, Vial, ZMK Studio, Bazecor, Chrysalis, Agent, SmartSet, Synapse, Logi Options+, Launcher"
+  },
+  {
+   "id": "polling",
+   "key": "polling_rate_hz",
+   "de": "Abfragerate (Hz)",
+   "en": "Polling rate (Hz)",
+   "typ": "ganzzahl"
+  },
+  {
+   "id": "geraete_kopplung",
+   "key": "paired_devices",
+   "de": "Koppelbare Geräte",
+   "en": "Pairable devices",
+   "typ": "ganzzahl"
+  },
+  {
+   "id": "akku_mah",
+   "key": "battery_mah",
+   "de": "Akkukapazität (mAh)",
+   "en": "Battery capacity (mAh)",
+   "typ": "ganzzahl"
+  },
+  {
+   "id": "gewicht_g",
+   "key": "weight_g",
+   "de": "Gewicht (g)",
+   "en": "Weight (g)",
+   "typ": "ganzzahl"
+  },
+  {
+   "id": "ziffernblock",
+   "key": "numpad",
+   "de": "Ziffernblock",
+   "en": "Numpad",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "ja",
+     "de": "ja",
+     "en": "yes",
+     "key": "yes"
+    },
+    {
+     "id": "nein",
+     "de": "nein",
+     "en": "no",
+     "key": "no"
+    },
+    {
+     "id": "separat",
+     "de": "separat/ansteckbar",
+     "en": "separate/attachable",
+     "key": "separate"
+    }
+   ]
+  },
+  {
+   "id": "controller",
+   "key": "controller",
+   "de": "Mikrocontroller",
+   "en": "Microcontroller",
+   "typ": "auswahl",
+   "werte": "offen, z. B. RP2040, nRF52840, STM32F303, ATmega32U4"
+  },
+  {
+   "id": "tastenabstand",
+   "key": "key_spacing",
+   "de": "Tastenabstand",
+   "en": "Key spacing",
+   "typ": "auswahl",
+   "werte": [
+    {
+     "id": "mx",
+     "de": "MX (19,05 mm)",
+     "en": "MX (19.05 mm)",
+     "key": "mx"
+    },
+    {
+     "id": "choc",
+     "de": "Choc (18 × 17 mm)",
+     "en": "Choc (18 × 17 mm)",
+     "key": "choc"
+    },
+    {
+     "id": "sonstige",
+     "de": "sonstiger",
+     "en": "other",
+     "key": "other"
+    }
+   ]
+  },
+  {
+   "id": "verbindung_haelften",
+   "key": "half_link",
+   "de": "Verbindung der Hälften",
+   "en": "Link between halves",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "trrs",
+     "de": "TRRS-Kabel",
+     "en": "TRRS cable",
+     "key": "trrs"
+    },
+    {
+     "id": "usb-c",
+     "de": "USB-C-Kabel",
+     "en": "USB-C cable",
+     "key": "usb-c"
+    },
+    {
+     "id": "funk",
+     "de": "kabellos",
+     "en": "wireless",
+     "key": "wireless"
+    },
+    {
+     "id": "fest",
+     "de": "fest verbunden",
+     "en": "fixed",
+     "key": "fixed"
+    },
+    {
+     "id": "sonstige",
+     "de": "sonstige",
+     "en": "other",
+     "key": "other"
+    }
+   ]
   }
  ],
  "hinweis_ids": "'id' sind die internen (deutschen) IDs der Datenbank und der manuellen Recherche; 'key' sind die englischen Schlüssel des Exports für die Online-Seite."

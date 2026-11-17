@@ -300,3 +300,69 @@ def keycap_profile(text):
     """Keycap-Profile, die ein Text ausdrücklich nennt (nur Profilnamen, kein Material)."""
     t = (text or "").lower()
     return [wert for wert, muster in KEYCAP_MUSTER if re.search(muster, t)]
+
+
+# ----------------------------------------------------------------------------- Facetten aus Produkttexten
+# (Facette, Wert, Muster); ein Treffer im Text ergibt eine Angabe "quelle" mit dem Fundstück als Beleg.
+TEXT_MUSTER = [
+    ("geteilt", "ja", r"\bsplit (?:mechanical |ergonomic |wireless |low[- ]profile )*keyboard|\bsplit design|two (?:separate|independent) halves"),
+    ("drahtlos", "ja", r"\bwireless\b|\bbluetooth\b|\b2\.4 ?g(?:hz)?\b|tri-mode"),
+    ("drahtlos_technik", "bluetooth", r"\bbluetooth\b|\bble\b"), ("drahtlos_technik", "funk-2-4", r"\b2\.4 ?g(?:hz)?\b|dongle|receiver"),
+    ("anschluss", "usb-c", r"\busb[- ]?c\b|type[- ]c\b"), ("anschluss", "usb-a", r"\busb[- ]?a\b"),
+    ("anschluss", "bluetooth", r"\bbluetooth\b"), ("anschluss", "dongle", r"\bdongle\b|usb receiver|2\.4 ?ghz receiver"),
+    ("anschluss", "ps2", r"\bps/?2\b"), ("anschluss", "usb-micro", r"micro[- ]usb"), ("anschluss", "usb-mini", r"mini[- ]usb"),
+    ("schalter", "mx", r"\bmx[- ](?:style|compatible|switch|hot-?swap)|cherry mx|gateron (?:g pro|ks-?9|yellow|red|brown|black)"),
+    ("schalter", "choc-v1", r"choc v1|kailh choc(?! v?2)"), ("schalter", "choc-v2", r"choc v2"),
+    ("schalter", "gateron-lp", r"gateron (?:low[- ]profile|ks-?33|lp)"), ("schalter", "magnetisch", r"hall[- ]effect|magnetic switch"),
+    ("schalter", "optisch", r"optical switch"), ("schalter", "topre", r"\btopre\b|\bec switch"), ("schalter", "alps", r"\balps\b"),
+    ("schalter_montage", "hotswap", r"hot[- ]?swap"), ("schalter_montage", "geloetet", r"\bsolder(?:ed|ing) (?:required|version)"),
+    ("profil", "flach", r"low[- ]profile"),
+    ("beleuchtung", "ja", r"\brgb\b|backlit|backlight|\bled\b|underglow"), ("beleuchtung_farbe", "rgb", r"\brgb\b"),
+    ("beleuchtung_farbe", "rgbw", r"\brgbw\b"), ("beleuchtung_farbe", "weiss", r"white (?:led|backlight)"),
+    ("nkro", "ja", r"\bnkro\b|n-key rollover"),
+    ("display", "ja", r"\boled\b|\bdisplay\b|\bscreen\b|nice!view|e-?ink"), ("drehgeber", "ja", r"\bencoder|\bknob\b|rotary"),
+    ("maus", "ja", r"trackball|trackpad|touchpad|trackpoint"), ("maus_art", "trackball", r"trackball"),
+    ("maus_art", "trackpad", r"trackpad|touchpad"), ("maus_art", "trackpoint", r"trackpoint"),
+    ("material", "aluminium", r"alumin(?:i)?um|cnc"), ("material", "holz", r"\bwood(?:en)?\b|walnut|\bash\b|bamboo"),
+    ("material", "acryl", r"acrylic"), ("material", "pc", r"polycarbonate"), ("material", "stahl", r"\bsteel\b"),
+    ("material", "pla", r"3d[- ]print"), ("material", "abs", r"\babs (?:case|plastic|housing)"),
+    ("keycap_material", "pbt", r"\bpbt\b"), ("keycap_material", "abs", r"\babs keycaps"), ("keycap_material", "pom", r"\bpom keycaps"),
+    ("beschriftung", "doubleshot", r"double[- ]shot"), ("beschriftung", "dyesub", r"dye[- ]?sub"),
+    ("montageart", "gasket", r"gasket[- ]mount"), ("montageart", "tray", r"tray[- ]mount"), ("montageart", "top", r"top[- ]mount"),
+    ("norm_layout", "ansi", r"\bansi\b"), ("norm_layout", "iso", r"\biso\b"), ("norm_layout", "jis", r"\bjis\b"),
+    ("versatz", "spalten", r"column(?:ar|[- ]stagger)"), ("versatz", "ortho", r"ortholinear"), ("versatz", "alice", r"\balice\b"),
+    ("zelt", "ja", r"\btent(?:ing)?\b"), ("positionierung", "zelt", r"\btent(?:ing)?\b"),
+    ("positionierung", "neigung", r"\btilt"), ("positionierung", "negativ", r"negative tilt"),
+    ("handballenauflage", "integriert", r"(?:integrated|built-in) (?:palm|wrist) rest"),
+    ("betriebssystem", "windows", r"\bwindows\b"), ("betriebssystem", "macos", r"\bmac ?os\b|\bmac\b"),
+    ("betriebssystem", "linux", r"\blinux\b"), ("betriebssystem", "ios", r"\bios\b|ipad"), ("betriebssystem", "android", r"\bandroid\b"),
+    ("firmware", "qmk", r"\bqmk\b"), ("firmware", "zmk", r"\bzmk\b"), ("firmware", "via", r"\bvia\b"), ("firmware", "vial", r"\bvial\b"),
+    ("firmware", "kmk", r"\bkmk\b"), ("firmware", "rmk", r"\brmk\b"), ("ziffernblock", "ja", r"\bnumpad\b|number pad|numeric keypad"),
+]
+FORMFAKTOR = [("100", r"\b(?:100%|full[- ]size)"), ("96", r"\b(?:96%|1800)\b"), ("tkl", r"\btkl\b|tenkeyless|\b8[07]%"),
+              ("75", r"\b75%"), ("65", r"\b65%"), ("60", r"\b60%"), ("40", r"\b40%"), ("makropad", r"macro ?pad"),
+              ("ziffernblock", r"\bnumpad\b(?! keyboard)")]
+
+
+def merkmale_aus_text(text):
+    """Liefert (facette, wert, fundstueck) für alle Muster, die im Text vorkommen, dazu Zahlen (Tasten, mAh, Hz, g)."""
+    t = " ".join((text or "").split())
+    klein = t.lower()
+    erg = []
+    for facette, wert, muster in TEXT_MUSTER:
+        m = re.search(muster, klein)
+        if m:
+            erg.append((facette, wert, klein[max(0, m.start() - 40):m.end() + 40]))
+    for wert, muster in FORMFAKTOR:
+        m = re.search(muster, klein)
+        if m:
+            erg.append(("formfaktor", wert, klein[max(0, m.start() - 40):m.end() + 40]))
+            break
+    for w in keycap_profile(klein):
+        erg.append(("keycap_profil", w, "Keycap-Profil im Text"))
+    for facette, muster, lo, hi in (("tasten", r"\b(\d{2,3})[- ]?keys?\b", 10, 140), ("akku_mah", r"\b(\d{3,4}) ?mah\b", 50, 20000),
+                                    ("polling", r"\b(\d{3,4})\s?hz\b", 125, 8000), ("gewicht_g", r"\b(\d{3,4}) ?g\b(?!b|hz)", 100, 5000)):
+        for m in re.finditer(muster, klein):
+            if lo <= int(m.group(1)) <= hi:
+                erg.append((facette, int(m.group(1)), klein[max(0, m.start() - 40):m.end() + 40]))
+    return erg

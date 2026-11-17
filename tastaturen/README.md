@@ -69,6 +69,21 @@ Vokabular in `facetten.json`, Typen: Auswahl, Mehrfachauswahl, Zahl/Bereich, Jah
 | Zahlenreihe, Drehregler, Display, Tenting | ja, optional, nein |
 | Jahr, Preis, Hersteller | – |
 | In Keymaps genutzte Tasten | Zahl (KeymapDB) |
+| NKRO, Beleuchtung, Beleuchtung dimmbar | ja, nein (Beleuchtung auch optional) |
+| Farbe der Beleuchtung | rot, grün, blau, weiß, gelb, orange, RGB, RGBW |
+| Handballenauflage | integriert, beigelegt (eigenes Teil), als Zubehör, nein |
+| Positionierung | fest, Aufstellfüße, Neigung, negative Neigung, Drehung (Yaw), Tenting, frei im Raum (3D) |
+| Gehäusematerial | Holz, ABS, Polycarbonat, Acryl, 3D-Druck, Nylon, Aluminium, Stahl, Metall, Leder/Alcantara |
+| Gehäusefarbe, Keycap-Farbe | offene Werte (Mehrfachauswahl) |
+| Anschluss | PS/2, USB-A, USB-C, Mini-USB, Micro-USB, Bluetooth, Funk-Empfänger, ältere |
+| Formfaktor | 100 %, 96 %, TKL, 75 %, 65 %, 60 %, 40 %, 30 % und kleiner, Makropad, Ziffernblock |
+| Layout-Norm, Sprachlayouts | ANSI, ISO, JIS, eigenes; Sprachcodes (z. B. de) |
+| Keycap-Material, Beschriftung | ABS, PBT, POM, PC; Double-shot, Dye-sub, gelasert, bedruckt, unbeschriftet, durchleuchtend |
+| Montageart | Gasket, Tray, Top, Plate, Sandwich, integriert |
+| Betriebssysteme, Konfigurationswerkzeug | Windows, macOS, Linux, iOS, Android, ChromeOS; Oryx, VIA, Vial, ZMK Studio, … |
+| Abfragerate, koppelbare Geräte, Akkukapazität, Gewicht | Zahl |
+| Ziffernblock | ja, separat/ansteckbar, nein |
+| Mikrocontroller, Tastenabstand, Verbindung der Hälften | RP2040 …; MX, Choc; TRRS, USB-C, kabellos, fest |
 
 Jede Angabe in der Tabelle `angabe` hat:
 
@@ -76,6 +91,20 @@ Jede Angabe in der Tabelle `angabe` hat:
 - einen **Beleg**: das Feld, den Tag, die Specs-Zeile oder den Layoutnamen, aus dem sie stammt.
 
 „Nein“ wird nur gesetzt, wenn eine Quelle es sagt. Fehlt eine Angabe, ist sie unbekannt.
+
+## Umfang und Pflege
+
+Die Datenbank enthält schon heute viele normale Tastaturen: Die strukturierten Quellen (QMK, VIA, ZMK, Shops) bringen sie automatisch mit. Stand vor der Shop-Erweiterung: 8.281 Geräte, davon rund 2.650 normale Reihenversatz-Tastaturen, 2.340 ergonomische/geteilte, 830 ortholineare, 360 Makropads und Ziffernblöcke (25 % ohne genug Angaben zur Einordnung).
+
+Kosten entstehen nicht durch die Menge an sich, sondern durch **manuelle Recherche**. Deshalb drei Stufen:
+
+| Stufe | Inhalt | Pflege |
+| --- | --- | --- |
+| 1 Kern | ergonomische, geteilte, ortholineare und kleine programmierbare Tastaturen | vollständig: Lücken werden recherchiert, Konflikte geklärt |
+| 2 automatisch | alles, was strukturierte Quellen ohnehin liefern: normale Tastaturen, Makropads, Ziffernblöcke | nur automatisch (Agenten laden Quellen neu); keine Handarbeit |
+| 3 ausgeschlossen | Massenmarkt-Bürotastaturen ohne ergonomisches Merkmal und ohne strukturierte Quelle | nicht aufgenommen |
+
+Die Online-Seite zeigt standardmäßig Stufe 1 und lässt Stufe 2 über einen Filter zu.
 
 ## Zusammenführen der Dubletten
 

@@ -7,7 +7,7 @@ belege: [https://shop.keyboard.io/products/model-100]
 gelesen_am: 2026-11-17
 facetten:
   keycap_profil: [eigen]
-  geteilt: zusammensteckbar
+  geteilt: ja
   tasten: [64]
   schalter: [mx]
   schalter_montage: [hotswap]
@@ -17,7 +17,7 @@ facetten:
   zelt: optional
   verfuegbarkeit: [fertig]
   profil: normal
-hinweise: {geteilt: "„Interconnect bars to hold your keyboard halves together“ im Lieferumfang", zelt: "optionales Octo-Feet-Kit für Neigung und Tenting"}
+hinweise: {geteilt: "„Interconnect bars to hold your keyboard halves together“ im Lieferumfang; nach Sörens Entscheidung (17.11.2026) nicht zusammensteckbar", zelt: "optionales Octo-Feet-Kit für Neigung und Tenting"}
 ---
 name: Keyboardio Atreus
 hersteller: Keyboardio
@@ -81,6 +81,8 @@ belege: [https://uhk.io/uhk80, https://uhk.io/manuals/uhk80, https://uhk.io/prod
 gelesen_am: 2026-11-17
 facetten:
   geteilt: zusammensteckbar
+  tasten: [95]
+  tasten_je_haelfte: [39, 56]
   daumentasten: 4
   schalter: [mx, choc-v2]
   schalter_montage: [hotswap]
@@ -94,7 +96,7 @@ facetten:
   firmware: [uhk]
   verfuegbarkeit: [fertig]
   preis: "458.05 EUR"
-hinweise: {geteilt: "Handbuch: „split the halves by pulling them apart“", energie: "LiPo 3500 mAh links, 5000 mAh rechts", maus: "Module: Trackball, Trackpoint, Touchpad", zelt: "Riser für 10–60°", layout: "80 % Tenkeyless mit F-Reihe; 8 Daumentasten, die unteren 4 mit Kailh Choc v2"}
+hinweise: {geteilt: "Handbuch: „split the halves by pulling them apart“", energie: "LiPo 3500 mAh links, 5000 mAh rechts", maus: "Module: Trackball, Trackpoint, Touchpad", zelt: "Riser für 10–60°", tasten: "39 links, 56 rechts, gezählt von Sören am Layout (17.11.2026)", layout: "80 % Tenkeyless mit F-Reihe; 8 Daumentasten, die unteren 4 mit Kailh Choc v2"}
 ---
 name: UHK 60 v2
 hersteller: Ultimate Gadget Laboratories Kft.
@@ -103,6 +105,8 @@ belege: [https://uhk.io/product/uhk60v2, https://uhk.io/manuals/uhk60v2]
 gelesen_am: 2026-11-17
 facetten:
   geteilt: zusammensteckbar
+  tasten: [64]
+  tasten_je_haelfte: [31, 33]
   schalter: [mx]
   schalter_montage: [hotswap]
   energie: [kabel]
@@ -110,7 +114,7 @@ facetten:
   firmware: [uhk]
   verfuegbarkeit: [fertig]
   preis: "377.17 EUR"
-hinweise: {geteilt: "Handbuch: „The bridge cable is not needed when the halves are merged“", zelt: "9° links, 7° rechts; mehr mit Riser 60"}
+hinweise: {geteilt: "Handbuch: „The bridge cable is not needed when the halves are merged“", zelt: "9° links, 7° rechts; mehr mit Riser 60", tasten: "31 links, 33 rechts, gezählt von Sören am Layout (17.11.2026)"}
 ---
 name: Cyboard Imprint
 hersteller: Cyboard

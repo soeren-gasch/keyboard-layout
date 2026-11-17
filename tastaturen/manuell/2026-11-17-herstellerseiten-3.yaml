@@ -1,0 +1,205 @@
+# Dritte Rutsche (17.11.2026): Herstellerseiten, Datenblatt (PDF) und Testberichte, gespeichert von Sören.
+name: Vortex M50
+hersteller: Vortex
+url: https://vortexgear.store/products/m50
+belege: [https://vortexgear.store/products/m50]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  drahtlos: ja
+  profil: flach
+  maus: ja
+  maus_art: [trackball]
+  drehgeber: ja
+  verfuegbarkeit: [prototyp]
+hinweise: {stand: "„Vortex's first true wireless low profile split keyboard with track ball and encoder.“ – „Currently in progress“, angelegt 2026-03-23"}
+---
+name: Perixx Periboard-512
+hersteller: Perixx
+url: https://perixx.com/products/periboard-512
+belege: [https://perixx.com/products/periboard-512]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  handballenauflage: integriert
+  drahtlos: nein
+  energie: [kabel]
+  anschluss: [usb-a]
+  verfuegbarkeit: [fertig]
+  preis: "49.99 USD (regulär 59.90 USD)"
+hinweise: {extras: "7 Multimedia-Tasten, 1,8-m-Kabel"}
+---
+name: Goldtouch Elite Adjustable
+hersteller: Goldtouch
+url: https://www.goldtouch.com/elite-keyboard/
+belege: [https://www.goldtouch.com/elite-keyboard/, https://shop.goldtouch.com/products/elite-adjustable-ergonomic-keyboard-pc-mac]
+gelesen_am: 2026-11-17
+facetten:
+  beschriftung: [laser]
+  betriebssystem: [windows, macos]
+  verfuegbarkeit: [fertig]
+  preis: "115 USD"
+---
+name: Logitech Ergo K860
+hersteller: Logitech
+url: https://www.logitech.com/de-de/shop/p/k860-split-ergonomic.920-009167
+belege: ["https://www.logitech.com/de-de/shop/p/k860-split-ergonomic.920-009167#faqs", https://ergonomie-am-arbeitsplatz.de/test/logitech-ergo-k860/]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  formfaktor: "100"
+  ziffernblock: ja
+  drahtlos: ja
+  drahtlos_technik: [bluetooth, funk-2-4]
+  anschluss: [bluetooth, dongle]
+  energie: [aaa]
+  geraete_kopplung: 3
+  handballenauflage: integriert
+  beleuchtung: nein
+  positionierung: [fuesse, negativ]
+  betriebssystem: [windows, macos]
+  verfuegbarkeit: [fertig]
+  preis: "119.99 EUR"
+hinweise: {energie: "2 AAA, bis 24 Monate", drahtlos: "Bluetooth Low Energy oder Logitech-Unifying-Empfänger", positionierung: "Füße für 0°, −4°, −7°"}
+---
+name: Razer Pro Type Ergo
+hersteller: Razer
+url: https://www.razer.com/productivity/razer-pro-type-ergo
+belege: [https://www.razer.com/productivity/razer-pro-type-ergo, "https://www.razer.com/de-de/productivity/razer-pro-type-ergo?page=tech-specs"]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  profil: flach
+  keycap_profil: [eigen]
+  drahtlos: ja
+  drahtlos_technik: [funk-2-4]
+  anschluss: [usb-c, dongle]
+  energie: [kabel, akku-fest]
+  beleuchtung: ja
+  beleuchtung_farbe: [rgb]
+  handballenauflage: integriert
+  positionierung: [neigung, negativ]
+  drehgeber: ja
+  verfuegbarkeit: [fertig]
+  preis: "189.99 USD"
+hinweise: {beleuchtung: "Chroma RGB mit 19 Zonen", energie: "bis 3 Monate je Ladung, Laden per USB-C", positionierung: "4° oder 7° nach vorn oder hinten"}
+---
+name: Microsoft Sculpt Ergonomic Keyboard
+hersteller: Microsoft
+url: https://www.tastatur-ratgeber.de/hersteller/microsoft/microsoft-sculpt-ergonomic-keyboard/
+belege: [https://www.tastatur-ratgeber.de/hersteller/microsoft/microsoft-sculpt-ergonomic-keyboard/, "Produktdatenblatt L5V-00020 (PDF, cop media/CNET Content Solutions), von Sören bereitgestellt"]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  tasten: [105]
+  drahtlos: ja
+  drahtlos_technik: [funk-2-4]
+  anschluss: [dongle]
+  energie: [aaa]
+  ziffernblock: separat
+  handballenauflage: beigelegt
+  verfuegbarkeit: [fertig]
+  preis: "159.90 EUR"
+hinweise: {tasten: "105 laut Datenblatt (ungarisches Layout)", handballenauflage: "„Abnehmbare Handgelenkauflage“", ziffernblock: "separat, mit Knopfzellen", energie: "Tastatur 2 AAA"}
+---
+name: Microsoft Surface Ergonomic Keyboard
+hersteller: Microsoft
+url: "https://www.microsoft.com/en-us/d/surface-ergonomic-keyboard/90pnc9ljwpx9?activetab=pivot:techspecstab"
+belege: ["https://www.microsoft.com/en-us/d/surface-ergonomic-keyboard/90pnc9ljwpx9?activetab=pivot:techspecstab", https://ergonomie-am-arbeitsplatz.de/test/microsoft-surface-ergonomic-keyboard/]
+gelesen_am: 2026-11-17
+facetten:
+  drahtlos: ja
+  drahtlos_technik: [bluetooth]
+  anschluss: [bluetooth]
+  energie: [aaa]
+  handballenauflage: integriert
+  material: [leder]
+  gewicht_g: 1010
+  verfuegbarkeit: [fertig]
+hinweise: {material: "Handballenauflage mit Alcantara bezogen", energie: "2 AAA, bis 12 Monate"}
+---
+name: ZSA ErgoDox EZ
+hersteller: ZSA Technology Labs
+url: https://ergodox-ez.com/
+belege: [https://ergodox-ez.com/]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  schalter_montage: [hotswap]
+  firmware: [qmk]
+  konfiguration: [oryx, keymapp]
+  zelt: optional
+  positionierung: [zelt, neigung]
+  handballenauflage: zubehoer
+  beleuchtung: optional
+  beleuchtung_farbe: [rgb]
+  verfuegbarkeit: [fertig]
+hinweise: {zubehoer: "Tilt/Tent Kit, Wing Wrist Rest", beleuchtung: "Variante ErgoDox EZ Glow"}
+---
+name: ZSA Moonlander
+hersteller: ZSA Technology Labs
+url: https://www.zsa.io/moonlander
+belege: [https://www.zsa.io/moonlander]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  schalter_montage: [hotswap]
+  anschluss: [usb-c]
+  beleuchtung: ja
+  beleuchtung_farbe: [rgb]
+  keycap_material: [pbt]
+  beschriftung: [doubleshot, blank]
+  zelt: optional
+  konfiguration: [oryx, keymapp]
+  verfuegbarkeit: [fertig]
+hinweise: {zelt: "optionales Tenting-Zubehör aus Metall", extras: "je Seite 3 Status-LEDs, Summer"}
+---
+name: Fujitsu KBPC E
+hersteller: Fujitsu
+url: https://ergonomie-am-arbeitsplatz.de/test/fujitsu-kbpc-e-usb-tastatur/
+belege: [https://ergonomie-am-arbeitsplatz.de/test/fujitsu-kbpc-e-usb-tastatur/]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  schalter: [membran]
+  handballenauflage: integriert
+  zelt: ja
+  positionierung: [fuesse, neigung, zelt]
+  energie: [kabel]
+  verfuegbarkeit: [fertig]
+hinweise: {geteilt: "geteiltes Layout, einstellbar", positionierung: "Frontalneigung 6° bzw. 12° mit Füßen; laterale Neigung 10° oder 16°", schalter: "Rubberdome"}
+---
+name: ProtoArc EK01 Plus
+hersteller: ProtoArc
+url: https://ergonomie-am-arbeitsplatz.de/test/protoarc-ek01-plus/
+belege: [https://ergonomie-am-arbeitsplatz.de/test/protoarc-ek01-plus/]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  handballenauflage: integriert
+  positionierung: [fuesse, negativ]
+  drahtlos: ja
+  drahtlos_technik: [bluetooth, funk-2-4]
+  anschluss: [usb-c, bluetooth, dongle]
+  geraete_kopplung: 3
+  energie: [akku-fest]
+  beleuchtung: ja
+  beleuchtung_farbe: [weiss]
+  verfuegbarkeit: [fertig]
+  preis: "ab 69.99 EUR"
+hinweise: {energie: "Akku, etwa 1 Monat (Test)", beleuchtung: "weiße LED, abschaltbar", material: "Handballenauflage aus Kunstleder"}
+---
+name: R-Go Split
+hersteller: R-Go Tools
+url: https://ergonomie-am-arbeitsplatz.de/test/r-go-split-ergonomische-tastatur/
+belege: [https://ergonomie-am-arbeitsplatz.de/test/r-go-split-ergonomische-tastatur/]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  schalter: [schere]
+  drahtlos: optional
+  drahtlos_technik: [bluetooth]
+  ziffernblock: separat
+  profil: flach
+  verfuegbarkeit: [fertig]
+hinweise: {varianten: "kabelgebunden oder Bluetooth; passender Ziffernblock separat erhältlich"}

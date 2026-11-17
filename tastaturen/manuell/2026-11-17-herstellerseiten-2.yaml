@@ -241,15 +241,6 @@ facetten:
   preis: "109 USD"
 hinweise: {zelt: "0–30° horizontal und 0–30° Tenting verstellbar"}
 ---
-name: Goldtouch Elite Adjustable
-hersteller: Goldtouch
-url: https://shop.goldtouch.com/collections/ergonomic-keyboards/products/elite-adjustable-ergonomic-keyboard-pc-mac
-belege: [https://shop.goldtouch.com/collections/ergonomic-keyboards/products/elite-adjustable-ergonomic-keyboard-pc-mac]
-gelesen_am: 2026-11-17
-facetten:
-  verfuegbarkeit: [fertig]
-  preis: "115 USD"
----
 name: Cherry KC 4500 Ergo
 hersteller: Cherry
 url: https://www.cherry.de/de-de/produkt/kc-4500-ergo
@@ -261,30 +252,3 @@ facetten:
   energie: [kabel]
   verfuegbarkeit: [fertig]
 hinweise: {tasten: "„106 + 3“, Vollformat (100 %)", keycaps: "ABS"}
----
-name: Logitech Ergo K860
-hersteller: Logitech
-url: https://www.logitech.com/de-de/shop/p/k860-split-ergonomic.920-009167
-belege: [https://www.logitech.com/de-de/shop/p/k860-split-ergonomic.920-009167]
-gelesen_am: 2026-11-17
-facetten:
-  geteilt: einteilig-geteilt
-  drahtlos: ja
-  verfuegbarkeit: [fertig]
-  preis: "119.99 EUR"
-hinweise: {layout: "Standardgröße mit integriertem Ziffernblock"}
----
-name: Razer Pro Type Ergo
-hersteller: Razer
-url: https://www.razer.com/productivity/razer-pro-type-ergo
-belege: [https://www.razer.com/productivity/razer-pro-type-ergo]
-gelesen_am: 2026-11-17
-facetten:
-  geteilt: einteilig-geteilt
-  profil: flach
-  keycap_profil: [eigen]
-  drahtlos: ja
-  drehgeber: ja
-  verfuegbarkeit: [fertig]
-  preis: "189.99 USD"
-hinweise: {keycaps: "„Ultra low-profile fingertip-shaped keycaps“ mit sphärischer Mulde", extras: "Command Dial, 5 Makrotasten, doppelte B-Taste, 10° Neigung, Handballenauflage"}

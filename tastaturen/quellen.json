@@ -224,11 +224,12 @@
         "Template:Infobox dcustkeyboard"
       ],
       "name": "Deskthority wiki",
-      "lizenz": "unknown (no license stated)",
-      "nutzung": "nur Fakten aus der Infobox (Hersteller, Schalter, Layouts/Tastenzahlen, Schnittstelle, Jahr) und Links; keine Texte, keine Bilder",
+      "lizenz": "CC-BY-SA-4.0 for text published from 2026-08-18; earlier text without license; Deskthority reserves rights in selection and arrangement",
+      "nutzung": "nur Fakten aus der Infobox und Links; Erlaubnis für systematische Übernahme angefragt (tastaturen/anfragen/deskthority.md)",
       "nennung": "Deskthority wiki contributors, https://deskthority.net/wiki/",
       "beschreibung_en": "Deskthority wiki keyboard pages (infobox data), mostly classic and commercial keyboards",
-      "nutzung_en": "Facts from the infobox only (maker, switch, layouts/key counts, interface, year) and links; no text, no images"
+      "nutzung_en": "Facts from the infobox only (maker, switch, layouts/key counts, interface, year) and links; no text, no images",
+      "lizenz_url": "https://deskthority.net/wiki/Deskthority_wiki:Copyrights"
     },
     "reddit": {
       "art": "arcticshift",
@@ -244,6 +245,43 @@
       "nennung": "Reddit r/ErgoMechKeyboards, abgerufen über Arctic Shift (https://arctic-shift.photon-reddit.com/)",
       "beschreibung_en": "Reddit r/ErgoMechKeyboards posts (via the Arctic Shift archive) that link to keyboard hardware repositories",
       "nutzung_en": "Discovery only: facts from post titles and linked repositories plus the post link; no post text"
+    },
+    "shops": {
+      "art": "shopify",
+      "url": "https://<shop>/products.json",
+      "name": "Online-Shops (Shopify-Produktlisten)",
+      "shops": [
+        "keeb.io",
+        "splitkb.com",
+        "boardsource.xyz",
+        "typeractive.xyz",
+        "holykeebs.com",
+        "mechboards.co.uk",
+        "littlekeyboards.com",
+        "lowprokb.ca",
+        "keebmaker.com",
+        "kbdfans.com",
+        "www.keychron.com",
+        "epomaker.com",
+        "x-bows.com",
+        "dygma.com",
+        "svalboard.com",
+        "www.charachorder.com",
+        "cyboard.digital",
+        "www.ozokeyboards.com",
+        "vortexgear.store",
+        "perixx.com",
+        "candykeys.com",
+        "shop.keyboard.io",
+        "shop.goldtouch.com",
+        "keebd.com",
+        "mechanicalkeyboards.com"
+      ],
+      "lizenz": "unknown (shop content; no license stated)",
+      "nutzung": "nur Fakten aus Titel, Tags, Varianten und Beschreibung (Tastenzahl, Bauform, Schalter, Funk, Preis) und der Produktlink mit Abfragezeitpunkt; keine Texte, keine Bilder",
+      "nennung": "der jeweilige Shop mit Produktlink und Abfragezeitpunkt",
+      "beschreibung_en": "Public product lists of keyboard shops (Shopify)",
+      "nutzung_en": "Facts only (key count, form factor, switches, wireless, price) and the product link with retrieval time; no text, no images"
     }
   }
 }

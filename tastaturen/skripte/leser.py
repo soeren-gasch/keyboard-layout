@@ -900,3 +900,85 @@ def lies_reddit(s):
                     s.angabe(ds, "tasten", int(n), "quelle", f"Titel: {p['titel'][:100]}", p["url"])
         anzahl += 1
     return anzahl, []
+
+
+# ----------------------------------------------------------------------------- Online-Shops (Shopify)
+SHOP_AUSSCHLUSS = re.compile(r"keycap|\bcaps\b|switch(?:es)?\b(?![^|]*keyboard)|desk ?mat|\bmat\b|cable|stabili|lube|puller|"
+                             r"tester|sticker|gift ?card|artisan|wrist ?rest|palm|foam|o-?ring|spring|\btool|\bbag\b|sleeve|"
+                             r"\bmouse\b|\bmice\b|adapter|\bbattery\b|screws?\b|\bfeet\b|tenting|\bstand\b|\bhub\b|dock|"
+                             r"spacebar|\bmount\b|socket|diode|controller|nice!nano|\bmcu\b|plate\b|\bcase\b(?! kit)|bundle|"
+                             r"t-?shirt|hoodie|poster|charger|\bknob\b(?! keyboard)|warranty|upgrade card|reservation|"
+                             r"insurance|shipping|deposit|sample|replacement|spare|parts?\b", re.I)
+SHOP_EINSCHLUSS = re.compile(r"keyboard|\bkit\b|\bpcb\b|macro ?pad|numpad|\bsplit\b|\d{2,3}[- ]?key|\bergo", re.I)
+# Shops mit Schwerpunkt Ergo/Split/DIY: alle Tastaturen. Allgemeine Shops: nur Produkte mit ergonomischem Merkmal
+# (Stufe 1 der Datenbank; normale Massenmarkt-Tastaturen sind Stufe 3 und werden nicht aufgenommen).
+ERGO_SHOPS = {"keeb.io", "splitkb.com", "boardsource.xyz", "typeractive.xyz", "holykeebs.com", "littlekeyboards.com",
+              "lowprokb.ca", "keebmaker.com", "dygma.com", "x-bows.com", "svalboard.com", "www.charachorder.com",
+              "cyboard.digital", "shop.keyboard.io", "shop.goldtouch.com", "perixx.com", "mechboards.co.uk"}
+ERGO_TEXT = re.compile(r"\bsplit\b|ergonom|\balice\b|column|ortholinear|\bortho\b|thumb cluster|tenting|corne|sofle|"
+                       r"lily ?58|kyria|\biris\b|ferris|sweep|dactyl|charybdis|skeletyl|totem|piantor|cheapino|reviung|"
+                       r"planck|preonic|\b40%|\b3[0-9][- ]key|\b4[0-8][- ]key|keywell|one[- ]handed|chord", re.I)
+
+
+def _titel_schluessel(titel):
+    """Gleiche Produkte in Varianten (keebmaker: je Konfiguration ein Produkt) zusammenfassen."""
+    t = titel.lower()
+    t = re.sub(r"\b(custom|mystery|limited|edition|new|v\d+(\.\d+)*)\b", " ", t)
+    return re.sub(r"[^a-z0-9]+", " ", t).strip()
+
+
+def lies_shops(s):
+    import html as _html
+    from basis import merkmale_aus_text
+    q = quelle_anlegen(s, "shops", "Produktlisten von Tastatur-Shops (Shopify)", None)
+    anzahl = 0
+    for datei in sorted((QUELLEN / "shops").glob("*.json")):
+        d = json.loads(datei.read_text(encoding="utf-8"))
+        shop, zeitpunkt = d["shop"], d["abgerufen"]
+        gesehen = {}
+        for p in d["produkte"]:
+            titel = p.get("title") or ""
+            typ = p.get("product_type") or ""
+            tags = p.get("tags") or []
+            tags = tags if isinstance(tags, list) else [t.strip() for t in str(tags).split(",")]
+            kopf = f"{titel} | {typ}"
+            if SHOP_AUSSCHLUSS.search(kopf) or not SHOP_EINSCHLUSS.search(f"{kopf} | {' '.join(tags)}"):
+                continue
+            koerper = _html.unescape(re.sub(r"<[^>]+>", " ", p.get("body_html") or ""))
+            if shop not in ERGO_SHOPS and not ERGO_TEXT.search(f"{kopf} | {' '.join(tags)} | {koerper[:3000]}"):
+                continue
+            schluessel = _titel_schluessel(titel)
+            if schluessel in gesehen:
+                gesehen[schluessel] += 1
+                continue
+            gesehen[schluessel] = 1
+            optionen = {o.get("name", ""): o.get("values", []) for o in p.get("options") or []}
+            preise = [float(v["price"]) for v in p.get("variants") or [] if v.get("price") not in (None, "")]
+            url = f"https://{shop}/products/{p['handle']}"
+            ds = s.datensatz("shops", f"{shop}/{p['handle']}", url, q["lizenz"], zeitpunkt, titel, p.get("vendor"),
+                             url, [], {"shop": shop, "typ": typ, "tags": tags, "optionen": optionen,
+                                       "preis_min": min(preise) if preise else None,
+                                       "preis_max": max(preise) if preise else None,
+                                       "erstellt": p.get("created_at"), "geaendert": p.get("updated_at")})
+            text = " | ".join([titel, typ, " ".join(tags), " ".join(f"{k}: {', '.join(v)}" for k, v in optionen.items()),
+                               koerper])
+            for facette, wert, fund in merkmale_aus_text(text):
+                s.angabe(ds, facette, wert, "quelle", f"Shop-Text: …{fund}…")
+            if preise and min(preise) > 0:
+                s.angabe(ds, "preis", f"{min(preise):.2f} (Shopwährung {shop})", "quelle", "Variantenpreis")
+            if re.search(r"\bkit\b|diy|barebone", text, re.I):
+                s.angabe(ds, "verfuegbarkeit", "kit", "quelle", "Shop-Text: kit/DIY/barebone")
+            if re.search(r"pre-?built|assembled|fully built", text, re.I):
+                s.angabe(ds, "verfuegbarkeit", "fertig", "quelle", "Shop-Text: prebuilt/assembled")
+            for name, werte in optionen.items():
+                if re.search(r"case|colou?r", name, re.I) and not re.search(r"keycap|cable|switch", name, re.I):
+                    for w in werte:
+                        s.angabe(ds, "gehaeusefarbe", w.strip().lower()[:30], "quelle", f"Variante {name}")
+                if re.search(r"keycap", name, re.I):
+                    for w in werte:
+                        s.angabe(ds, "keycap_farbe", w.strip().lower()[:30], "quelle", f"Variante {name}")
+                if re.search(r"layout|language", name, re.I):
+                    for w in werte:
+                        s.angabe(ds, "sprachlayout", w.strip().lower()[:30], "quelle", f"Variante {name}")
+            anzahl += 1
+    return anzahl, []

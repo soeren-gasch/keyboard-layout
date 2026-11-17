@@ -20,7 +20,7 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[2]
 ZIEL = Path(os.environ.get("TASTATUR_QUELLEN", Path.home() / "keyboard" / "tastatur-quellen"))
-KENNUNG = {"User-Agent": "keyboard-layout research script"}
+KENNUNG = {"User-Agent": "Mozilla/5.0 (compatible; keyboard-layout research script)"}
 
 
 def git(*args, cwd=None):
@@ -205,13 +205,45 @@ def lade_arcticshift(name, q):
         print(f"{name}: r/{sub}: {len(bekannt)} Posts, {neu} neu")
 
 
+def lade_shopify(name, q):
+    """Öffentliche Produktlisten von Shopify-Shops (/products.json, 250 je Seite, eine Anfrage alle 2 Sekunden).
+    Je Shop eine Datei mit Abfragezeitpunkt (UTC, sekundengenau)."""
+    import urllib.error
+    ordner = ZIEL / name
+    ordner.mkdir(parents=True, exist_ok=True)
+    for shop in q["shops"]:
+        datei = ordner / f"{shop}.json"
+        if datei.exists() and "--neu" not in sys.argv:
+            continue
+        produkte, seite = [], 1
+        zeitpunkt = time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())
+        while True:
+            try:
+                d = json.loads(hole(f"https://{shop}/products.json?limit=250&page={seite}"))
+            except urllib.error.HTTPError as e:
+                if e.code == 429:
+                    time.sleep(60)
+                    continue
+                print(f"{name}: {shop}: HTTP {e.code}, abgebrochen")
+                break
+            teil = d.get("products") or []
+            produkte += teil
+            time.sleep(2)
+            if len(teil) < 250 or seite >= 80:
+                break
+            seite += 1
+        datei.write_text(json.dumps({"shop": shop, "abgerufen": zeitpunkt, "produkte": produkte}, ensure_ascii=False),
+                         encoding="utf-8")
+        print(f"{name}: {shop}: {len(produkte)} Produkte")
+
+
 def main():
     quellen = json.loads((REPO / "tastaturen" / "quellen.json").read_text(encoding="utf-8"))["quellen"]
     auswahl = [a for a in sys.argv[1:] if not a.startswith("--")] or list(quellen)
     ZIEL.mkdir(parents=True, exist_ok=True)
     for name in auswahl:
         q = quellen[name]
-        {"git": lade_git, "web": lade_golem, "kbdnews": lade_kbdnews, "github": lade_github, "mediawiki": lade_mediawiki, "arcticshift": lade_arcticshift,
+        {"git": lade_git, "web": lade_golem, "kbdnews": lade_kbdnews, "github": lade_github, "mediawiki": lade_mediawiki, "arcticshift": lade_arcticshift, "shopify": lade_shopify,
          "datei": lambda *a: None}[q["art"]](name, q)
 
 

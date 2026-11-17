@@ -19,16 +19,20 @@ from collections import Counter, defaultdict
 
 from basis import ORDNER
 
-VORRANG = ["manuell", "yal", "splitkbcompare", "golem", "deskthority", "kbdnews", "zmk", "qmk", "vial", "via", "ergogen", "github", "reddit", "keymapdb"]
-ZAHLEN = {"tasten", "tasten_je_haelfte", "daumentasten", "tasten_genutzt", "jahr"}
+VORRANG = ["manuell", "yal", "splitkbcompare", "golem", "deskthority", "shops", "kbdnews", "zmk", "qmk", "vial", "via", "ergogen", "github", "reddit", "keymapdb"]
+ZAHLEN = {"tasten", "tasten_je_haelfte", "daumentasten", "tasten_genutzt", "jahr", "polling", "geraete_kopplung",
+          "akku_mah", "gewicht_g"}
 MEHRFACH = {"versatz", "maus_art", "schalter", "schalter_montage", "drahtlos_technik", "energie", "firmware",
-            "verfuegbarkeit", "raster", "keycap_profil"}
+            "verfuegbarkeit", "raster", "keycap_profil", "beleuchtung_farbe", "positionierung",
+            "material", "gehaeusefarbe", "keycap_farbe", "anschluss", "norm_layout", "sprachlayout", "keycap_material",
+            "beschriftung", "betriebssystem", "konfiguration", "verbindung_haelften"}
 VARIANTE = re.compile(r"^(rev(\d\w*|_\w+|[a-z]?\d*)|v\d[\w.]*|r\d+|mk(\d\w*|_\w+)?|mark(\d\w*|_\w+)?|base|standard|mini|pro_?micro|elite_?c|rp2040|kb2040|"
                       r"stm32\w*|proton_?c|blackpill|bluepill|splinky\w*|teensy\w*|ble|wireless|wired|hotswap|"
                       r"solder(ed)?|ansi|iso|jis|lp|choc|mx|f\d{3}\w*|nrf\w*|ec|left|right|\d[\d_.]*|promicro|"
                       r"pico|xiao\w*|helios|sea_picro|liatris|frood|gd32\w*|atmega\w*|at90\w*|apm32\w*|wb32\w*)$")
 GENERISCH = {"ansi", "iso", "macropad", "numpad", "keyboard", "split", "test", "prototype", "custom", "ortho",
-             "unnamed", "untitled", "planck", "60", "65", "75", "tkl", "40"}
+             "unnamed", "untitled", "planck", "60", "65", "75", "tkl", "40", "ergo", "mini", "plus", "lite", "max",
+             "ultra", "wireless", "mechanical", "gaming", "keypad", "board", "keeb", "keebs", "macro", "compact"}
 FREMD_REPOS = {"yal-tools/ergo-keyboards", "qmk/qmk_firmware", "zmkfirmware/zmk", "vial-kb/vial-qmk", "jhelvy/splitkbcompare",
                "precondition/keymapdb"}
 
@@ -40,7 +44,8 @@ def normname(name, hersteller=None):
             if len(w) >= 3:
                 n = re.sub(rf"^\s*{re.escape(w)}\b", "", n)
     n = re.sub(r"\b(keyboard|wireless|split|ergonomic|mechanical|rev\s*\d+\w*|v\d+(\.\d+)*|mk\s*\w+|mark\s*\w+|pro|kit|"
-               r"review|build|the|ansi|iso|jis|rgb|knob|encoder|white|backlit|backlight|hot-?swap|wired)\b", " ", n)
+               r"review|build|the|ansi|iso|jis|rgb|knob|encoder|white|backlit|backlight|hot-?swap|wired|pcb|pre-?built|"
+               r"assembled|diy|lp|low[- ]profile|choc|mx|ce|set|edition|bundle|case|plate)\b", " ", n)
     return re.sub(r"[^a-z0-9]", "", n)
 
 
