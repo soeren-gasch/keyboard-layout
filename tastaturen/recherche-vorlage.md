@@ -27,6 +27,7 @@ facetten:                                             # IDs und Werte aus tastat
   schalter: [magnetisch]                              # mx | choc-v1 | choc-v2 | gateron-lp | alps | topre | magnetisch | optisch | schere | membran | knickfeder | proprietaer
   schalter_montage: [hotswap]                         # hotswap | geloetet | fest
   profil: normal                                      # flach | normal
+  keycap_profil: [xda]                                # cherry | oem | sa | dsa | xda | kat | kam | mt3 | dcs | mda | osa | asa | moa | xvx | mbk | cfx | lp-sonstige | topre | chiclet | eigen
   drahtlos: optional                                  # ja | optional | nein
   drahtlos_technik: [bluetooth]                       # bluetooth | funk-2-4 | wifi | funk-proprietaer
   energie: [kabel, akku-fest]                         # kabel | akku-fest | akku-wechselbar | aa | aaa | knopfzelle | solar

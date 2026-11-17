@@ -282,3 +282,21 @@ class Schreiber:
             [(lid, i, t["x"], t["y"], t["w"], t["h"], t["r"], t["rx"], t["ry"], round(t["cx"], 4),
               round(t["cy"], 4), t.get("mz"), t.get("ms"), t.get("label")) for i, t in enumerate(tasten)])
         return lid, a
+
+
+# ----------------------------------------------------------------------------- Keycap-Profile im Text
+KEYCAP_MUSTER = [
+    ("cherry", r"\bcherry[- ]profile|\bpbt cherry\b|\bcherry (?:keycaps?|caps)\b|\bcherry[- ]height"),
+    ("oem", r"\boem[- ]profile|\boem (?:keycaps?|caps)\b"), ("sa", r"\bsa[- ]profile|\bsa (?:keycaps?|caps)\b|\bsa wob\b"),
+    ("dsa", r"\bdsa\b"), ("xda", r"\bxda\b"), ("kat", r"\bkat\b"), ("kam", r"\bkam\b"), ("mt3", r"\bmt3\b"),
+    ("dcs", r"\bdcs\b"), ("mda", r"\bmda\b"), ("osa", r"\bosa\b"), ("ksa", r"\bksa\b"), ("asa", r"\basa\b"), ("moa", r"\bmoa\b"),
+    ("xvx", r"\bxvx\b"), ("mbk", r"\bmbk\b"), ("cfx", r"\bcfx\b"),
+    ("lp-sonstige", r"\b(?:lpx|lak|lck|ldsa|klp|nsa|lsa)\b|low[- ]profile (?:keycaps|caps)"),
+    ("topre", r"\btopre (?:keycaps?|profile)\b"), ("chiclet", r"\bchiclet"),
+    ("eigen", r"custom[- ]sculpted|sculpted (?:keycaps|caps)\b|spherical profile")]
+
+
+def keycap_profile(text):
+    """Keycap-Profile, die ein Text ausdrücklich nennt (nur Profilnamen, kein Material)."""
+    t = (text or "").lower()
+    return [wert for wert, muster in KEYCAP_MUSTER if re.search(muster, t)]

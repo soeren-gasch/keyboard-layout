@@ -1,0 +1,290 @@
+# Zweite Rutsche: Herstellerseiten, die Sören am 17.11.2026 als HTML gespeichert hat (/home/decaswift/manuell-html/).
+name: Keychron Q11
+hersteller: Keychron
+url: https://www.keychron.com/products/keychron-q11-qmk-custom-mechanical-keyboard
+belege: [https://www.keychron.com/products/keychron-q11-qmk-custom-mechanical-keyboard]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  keycap_profil: [osa]
+  drahtlos: nein
+  energie: [kabel]
+  drehgeber: ja
+  firmware: [qmk, via]
+  verfuegbarkeit: [fertig, kit]
+  preis: "204.99 USD"
+hinweise: {geteilt: "75 % geteilt; als Einteiler nutzbar, wenn die Hälften per Brückenkabel verbunden werden", verfuegbarkeit: "fertig montiert oder Barebone ohne Schalter und Keycaps"}
+---
+name: Keychron Q11 Ultra 8K
+hersteller: Keychron
+url: https://www.keychron.com/products/keychron-q11-ultra-8k-wireless-custom-mechanical-keyboard
+belege: [https://www.keychron.com/products/keychron-q11-ultra-8k-wireless-custom-mechanical-keyboard]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: zusammensteckbar
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  keycap_profil: [ksa]
+  drahtlos: ja
+  drahtlos_technik: [bluetooth, funk-2-4]
+  energie: [kabel, akku-fest]
+  drehgeber: ja
+  firmware: [zmk]
+  verfuegbarkeit: [fertig]
+  preis: "239.99 USD"
+hinweise: {geteilt: "„Whether snapped together as a standard 75% layout or spread apart“", energie: "4000 mAh, bis 160 h"}
+---
+name: Keychron K15 Max
+hersteller: Keychron
+url: https://www.keychron.com/products/keychron-k15-max-alice-layout-qmk-wireless-custom-mechanical-keyboard
+belege: [https://www.keychron.com/products/keychron-k15-max-alice-layout-qmk-wireless-custom-mechanical-keyboard]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  versatz: [alice]
+  schalter: [gateron-lp]
+  schalter_montage: [hotswap]
+  profil: flach
+  keycap_profil: [lp-sonstige]
+  drahtlos: ja
+  drahtlos_technik: [bluetooth, funk-2-4]
+  energie: [kabel, akku-fest]
+  firmware: [qmk]
+  verfuegbarkeit: [fertig]
+  preis: "99.99 USD"
+hinweise: {keycap_profil: "LSA (low profile spherical-angled)", schalter_montage: "Hotswap nur bei der RGB-Version", energie: "2000 mAh, bis 95 h"}
+---
+name: Keychron Q8
+hersteller: Keychron
+url: https://www.keychron.com/products/keychron-q8-alice-layout-qmk-custom-mechanical-keyboard
+belege: [https://www.keychron.com/products/keychron-q8-alice-layout-qmk-custom-mechanical-keyboard]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  versatz: [alice]
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  keycap_profil: [osa]
+  drahtlos: nein
+  energie: [kabel]
+  drehgeber: ja
+  firmware: [qmk, via]
+  verfuegbarkeit: [fertig, kit]
+  preis: "199.99 USD (Angebot 89.99 USD)"
+hinweise: {layout: "65 % Alice"}
+---
+name: Keychron Q10
+hersteller: Keychron
+url: https://www.keychron.com/products/keychron-q10-alice-layout-qmk-custom-mechanical-keyboard
+belege: [https://www.keychron.com/products/keychron-q10-alice-layout-qmk-custom-mechanical-keyboard]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  versatz: [alice]
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  keycap_profil: [osa]
+  drahtlos: nein
+  energie: [kabel]
+  drehgeber: ja
+  firmware: [qmk, via]
+  verfuegbarkeit: [fertig, kit]
+  preis: "214.99 USD (Angebot 99.99 USD)"
+hinweise: {layout: "75 % Alice mit Makrotasten und Drehregler links"}
+---
+name: X-Bows Nature
+hersteller: X-Bows
+url: https://x-bows.com/products/x-bows-nature-ergonomic-mechanical-keyboard
+belege: [https://x-bows.com/products/x-bows-nature-ergonomic-mechanical-keyboard, https://www.x-bows.com]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  versatz: [radial]
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  firmware: [qmk, via, vial]
+  verfuegbarkeit: [fertig]
+hinweise: {geteilt: "Startseite: „Fixed-split design“", versatz: "„anatomical radial-columnar layout“", schalter: "Gateron, 3-Pin", keycaps: "Double-shot ABS"}
+---
+name: X-Bows Crystal
+hersteller: X-Bows
+url: https://x-bows.com/products/x-bows-crystal
+belege: [https://x-bows.com/products/x-bows-crystal]
+gelesen_am: 2026-11-17
+facetten:
+  versatz: [radial]
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  drahtlos: ja
+  drahtlos_technik: [bluetooth]
+  energie: [kabel]
+  firmware: [qmk, proprietaer]
+  verfuegbarkeit: [fertig]
+hinweise: {firmware: "QMK-basiert mit eigener Oberfläche (KeyboardLab); QMK Configurator, VIA und VIAL nicht unterstützt"}
+---
+name: X-Bows Lite
+hersteller: X-Bows
+url: https://x-bows.com/products/x-bows-lite
+belege: [https://x-bows.com/products/x-bows-lite]
+gelesen_am: 2026-11-17
+facetten:
+  versatz: [radial]
+  schalter: [mx]
+  drahtlos: nein
+  energie: [kabel]
+  firmware: [proprietaer]
+  verfuegbarkeit: [fertig]
+hinweise: {schalter: "Gateron KS-9, 3-Pin", keycaps: "Double-shot ABS"}
+---
+name: X-Bows Knight
+hersteller: X-Bows
+url: https://x-bows.com/products/x-bows-knight
+belege: [https://x-bows.com/products/x-bows-knight]
+gelesen_am: 2026-11-17
+facetten:
+  versatz: [radial]
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  firmware: [qmk, via, vial]
+  verfuegbarkeit: [fertig]
+hinweise: {gehaeuse: "CNC-Aluminium-Unibody"}
+---
+name: X-Bows Knight Plus
+hersteller: X-Bows
+url: https://x-bows.com/products/x-bows-knight-plus
+belege: [https://x-bows.com/products/x-bows-knight-plus]
+gelesen_am: 2026-11-17
+facetten:
+  versatz: [radial]
+  schalter: [mx]
+  schalter_montage: [hotswap]
+  firmware: [qmk, via, vial]
+  verfuegbarkeit: [gruppenbestellung]
+hinweise: {extras: "abnehmbarer magnetischer Ziffernblock mit 21 Tasten, links oder rechts ansetzbar", verfuegbarkeit: "Vorbestellung/Gruppenbestellung, Lieferzeit 2–15 Monate"}
+---
+name: X-Bows Surfing
+hersteller: X-Bows
+url: https://x-bows.com/products/x-bows-surfing-split-ergonomic-keyboard
+belege: [https://x-bows.com/products/x-bows-surfing-split-ergonomic-keyboard]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: ja
+  tasten: [60]
+  tasten_je_haelfte: 30
+  versatz: [radial]
+  drahtlos: ja
+  energie: [akku-fest]
+  zelt: optional
+  firmware: [zmk]
+  verfuegbarkeit: [fertig]
+hinweise: {energie: "2 × 1800 mAh, eine je Hälfte", zelt: "Tenting, Neigung, Spreizung über Kamera-Kugelköpfe oder Gelenkarme"}
+---
+name: Matias Ergo Pro
+hersteller: Matias
+url: https://matias.ca/ergopro/programmable/
+belege: [https://matias.ca/ergopro/programmable/]
+gelesen_am: 2026-11-17
+facetten:
+  schalter: [alps]
+  zelt: optional
+  firmware: [proprietaer]
+  verfuegbarkeit: [fertig]
+hinweise: {schalter: "Matias Quiet Click (ALPS-inspiriert)", zelt: "ausklappbare Füße, z. B. 9° Tenting oder negative Neigung", layout: "geteilte Leertaste, Navigationsblock"}
+---
+name: Matias Sculpted Ergonomic Keyboard
+hersteller: Matias
+url: https://matias.ca/sculpted/wireless/
+belege: [https://matias.ca/sculpted/wireless/]
+gelesen_am: 2026-11-17
+facetten:
+  drahtlos: ja
+  drahtlos_technik: [funk-2-4]
+  energie: [kabel, akku-fest]
+  verfuegbarkeit: [fertig]
+  preis: "119 USD"
+hinweise: {energie: "1600 mAh, 3 Jahre Laufzeit", drahtlos: "zwei Empfänger (USB-A, USB-C); per Kabel automatisch kabelgebunden", layout: "klassisches Microsoft-Ergo-Layout"}
+---
+name: Matias 60% Keyboard
+hersteller: Matias
+url: https://matias.ca/60/pc/
+belege: [https://matias.ca/60/pc/]
+gelesen_am: 2026-11-17
+facetten:
+  schalter: [alps, mx]
+  verfuegbarkeit: [gruppenbestellung]
+hinweise: {schalter: "Platte und Platine für ALPS und Cherry; Tasten, die nicht zwingend ALPS brauchen, auch mit Cherry"}
+---
+name: Matias Half Keyboard
+hersteller: Matias
+url: https://matias.ca/halfkeyboard/
+belege: [https://matias.ca/halfkeyboard/]
+gelesen_am: 2026-11-17
+facetten:
+  energie: [kabel]
+  verfuegbarkeit: [fertig]
+  preis: "595 USD"
+hinweise: {art: "Einhand-Tastatur: halbe Standardtastatur, die andere Hälfte per gehaltener Leertaste gespiegelt", schalter: "Laptop-Tasten in voller Größe"}
+---
+name: Goldtouch Go!2
+hersteller: Goldtouch
+url: https://shop.goldtouch.com/collections/ergonomic-keyboards/products/goldtouch-go-2-foreign-language-mobile-keyboards
+belege: [https://shop.goldtouch.com/collections/ergonomic-keyboards/products/goldtouch-go-2-foreign-language-mobile-keyboards]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  schalter: [schere]
+  zelt: ja
+  energie: [kabel]
+  verfuegbarkeit: [fertig]
+  preis: "109 USD"
+hinweise: {zelt: "0–30° horizontal und 0–30° Tenting verstellbar"}
+---
+name: Goldtouch Elite Adjustable
+hersteller: Goldtouch
+url: https://shop.goldtouch.com/collections/ergonomic-keyboards/products/elite-adjustable-ergonomic-keyboard-pc-mac
+belege: [https://shop.goldtouch.com/collections/ergonomic-keyboards/products/elite-adjustable-ergonomic-keyboard-pc-mac]
+gelesen_am: 2026-11-17
+facetten:
+  verfuegbarkeit: [fertig]
+  preis: "115 USD"
+---
+name: Cherry KC 4500 Ergo
+hersteller: Cherry
+url: https://www.cherry.de/de-de/produkt/kc-4500-ergo
+belege: [https://www.cherry.de/de-de/produkt/kc-4500-ergo]
+gelesen_am: 2026-11-17
+facetten:
+  tasten: [109]
+  drahtlos: nein
+  energie: [kabel]
+  verfuegbarkeit: [fertig]
+hinweise: {tasten: "„106 + 3“, Vollformat (100 %)", keycaps: "ABS"}
+---
+name: Logitech Ergo K860
+hersteller: Logitech
+url: https://www.logitech.com/de-de/shop/p/k860-split-ergonomic.920-009167
+belege: [https://www.logitech.com/de-de/shop/p/k860-split-ergonomic.920-009167]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  drahtlos: ja
+  verfuegbarkeit: [fertig]
+  preis: "119.99 EUR"
+hinweise: {layout: "Standardgröße mit integriertem Ziffernblock"}
+---
+name: Razer Pro Type Ergo
+hersteller: Razer
+url: https://www.razer.com/productivity/razer-pro-type-ergo
+belege: [https://www.razer.com/productivity/razer-pro-type-ergo]
+gelesen_am: 2026-11-17
+facetten:
+  geteilt: einteilig-geteilt
+  profil: flach
+  keycap_profil: [eigen]
+  drahtlos: ja
+  drehgeber: ja
+  verfuegbarkeit: [fertig]
+  preis: "189.99 USD"
+hinweise: {keycaps: "„Ultra low-profile fingertip-shaped keycaps“ mit sphärischer Mulde", extras: "Command Dial, 5 Makrotasten, doppelte B-Taste, 10° Neigung, Handballenauflage"}

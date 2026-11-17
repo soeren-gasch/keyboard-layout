@@ -9,7 +9,7 @@ import re
 
 import yaml
 
-from basis import QUELLEN, ORDNER, git_stand, github_blob, json_tolerant, manifest, tief_mischen
+from basis import QUELLEN, ORDNER, git_stand, github_blob, json_tolerant, keycap_profile, manifest, tief_mischen
 
 M = manifest()
 
@@ -808,7 +808,9 @@ def lies_deskthority(s):
                          q["lizenz"], (seite.get("zeitstempel") or "")[:10] or daten["abgerufen"],
                          _wiki_text(f.get("name", "")) or titel, hersteller, url, [],
                          {k: _wiki_text(v) for k, v in f.items() if k in ("switch", "layouts", "interface",
-                                                                          "introduced", "price", "pn")})
+                                                                          "introduced", "price", "pn", "keycaps")})
+        for w in keycap_profile(_wiki_text(f.get("keycaps", ""))):
+            s.angabe(ds, "keycap_profil", w, "quelle", f"keycaps: {_wiki_text(f.get('keycaps', ''))[:80]}")
         schalter = _wiki_text(f.get("switch", "")).lower()
         for muster, wert in SCHALTER_DT:
             if re.search(muster, schalter):

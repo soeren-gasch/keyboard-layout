@@ -11,7 +11,7 @@ import datetime
 import html
 import re
 
-from basis import QUELLEN
+from basis import QUELLEN, keycap_profile
 
 RUBRIKEN = {"Projects", "Review", "Keyboard Spotting", "Market"}
 BAUFORM_TAGS = {"split", "monoblock", "unibody", "ortho", "ortholinear", "columnar", "keywell", "Alice", "macropad",
@@ -142,6 +142,9 @@ def lies_kbdnews(s, quelle_anlegen):
             if not re.search(r"\d{2,3}\s*(?:-|–|to)\s*\d{2,3}\s*keys?", z):
                 for n in re.findall(r"\b(\d{2,3})[- ]keys?\b", z):
                     s.angabe(ds, "tasten", int(n), "quelle", f"Specs: {zeile[:120]}")
+            if "keycap" in z or "profile" in z or " caps" in z:
+                for w in keycap_profile(z):
+                    s.angabe(ds, "keycap_profil", w, "quelle", f"Specs: {zeile[:120]}")
             m = re.search(r"\b([2-6])\s*x\s*([4-8])\b", z)
             if m:
                 s.angabe(ds, "raster", f"{m.group(1)}x{m.group(2)}", "quelle", f"Specs: {zeile[:120]}")

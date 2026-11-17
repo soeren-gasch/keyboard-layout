@@ -60,6 +60,7 @@ Vokabular in `facetten.json`, Typen: Auswahl, Mehrfachauswahl, Zahl/Bereich, Jah
 | Maus integriert, Art | ja, optional, nein; Trackball, Trackpad, Trackpoint, Joystick |
 | Tasten-Interface, Montage | MX, Choc v1, Choc v2, Gateron LP, Alps, Topre, magnetisch, optisch, Schere, Membran, Knickfeder, proprietär; Hotswap, gelötet, fest |
 | Bauhöhe | flach, normal |
+| Keycap-Profil | Cherry, OEM, SA, DSA, XDA, KAT, KAM, MT3, DCS, MDA, OSA, ASA, MOA, XVX, MBK, CFX, anderes Low-Profile, Topre, Chiclet, herstellereigen |
 | Wireless, Technik | ja, optional, nein; Bluetooth, 2,4 GHz, WLAN, sonstiger Funk |
 | Energieversorgung | Kabel, Akku fest, Akku wechselbar, AA, AAA, Knopfzelle, Solar |
 | Firmware | QMK, ZMK, KMK, RMK, Vial, VIA, Kaleidoscope, UHK, proprietär |

@@ -2,22 +2,10 @@
  "beschreibung": "Von Hand bzw. per Abruf der Herstellerseiten recherchierte Tastaturen, die in keiner maschinenlesbaren Quelle vollständig stehen. Nur Angaben, die auf den Belegseiten stehen; null = nicht belegt.",
  "stand": "2026-11-17",
  "offen": [
-  "Keychron Q11",
-  "Keychron Q11 Ultra 8K",
-  "Keychron K15 Max",
-  "Keychron Q8",
-  "Keychron Q10",
-  "X-Bows Nature",
-  "X-Bows Lite",
-  "Matias Ergo Pro",
-  "Goldtouch Go!2",
-  "Cherry KC 4500 Ergo",
-  "Perixx Periboard-512",
-  "Logitech Ergo K860",
-  "Razer Pro Type Ergo",
+  "Perixx Periboard-512 (Tastenzahl)",
+  "Vortex M50",
   "Microsoft Sculpt Ergonomic",
   "Microsoft Surface Ergonomic",
-  "Vortex M50",
   "Keychron Orca echo",
   "Rommana"
  ],
@@ -247,28 +235,6 @@
    }
   },
   {
-   "name": "Logitech Ergo K860",
-   "hersteller": "Logitech",
-   "url": "https://www.logitech.com/de-de/shop/p/k860-split-ergonomic.920-009167",
-   "belege": [
-    "https://www.logitech.com/de-de/shop/p/k860-split-ergonomic.920-009167"
-   ],
-   "facetten": {
-    "geteilt": "einteilig-geteilt",
-    "drahtlos": "ja",
-    "versatz": [
-     "reihen"
-    ],
-    "verfuegbarkeit": [
-     "fertig"
-    ],
-    "preis": "119.99 EUR"
-   },
-   "hinweise": {
-    "hinweis": "Einteiler mit geteiltem, gewölbtem Tastenfeld und Ziffernblock"
-   }
-  },
-  {
    "name": "Logitech Wave Keys",
    "hersteller": "Logitech",
    "url": "https://www.logitech.com/de-de/shop/p/wave-keys-ergonomic-wireless.920-012284",
@@ -288,61 +254,6 @@
    },
    "hinweise": {
     "hinweis": "Wellenform"
-   }
-  },
-  {
-   "name": "Razer Pro Type Ergo",
-   "hersteller": "Razer",
-   "url": "https://www.razer.com/productivity/razer-pro-type-ergo",
-   "belege": [
-    "https://www.razer.com/productivity/razer-pro-type-ergo"
-   ],
-   "facetten": {
-    "geteilt": "einteilig-geteilt",
-    "drahtlos": "ja",
-    "verfuegbarkeit": [
-     "fertig"
-    ],
-    "preis": "189.99 USD"
-   },
-   "hinweise": {
-    "hinweis": "geteiltes Tastenfeld; ob zwei Hälften, auf der Seite nicht eindeutig"
-   }
-  },
-  {
-   "name": "X-Bows Nature",
-   "hersteller": "X-Bows",
-   "url": "https://www.x-bows.com",
-   "belege": [
-    "https://www.x-bows.com"
-   ],
-   "facetten": {
-    "geteilt": "einteilig-geteilt",
-    "versatz": [
-     "radial"
-    ],
-    "verfuegbarkeit": [
-     "fertig"
-    ],
-    "preis": "149 USD"
-   }
-  },
-  {
-   "name": "X-Bows Lite",
-   "hersteller": "X-Bows",
-   "url": "https://www.x-bows.com",
-   "belege": [
-    "https://www.x-bows.com"
-   ],
-   "facetten": {
-    "geteilt": "einteilig-geteilt",
-    "versatz": [
-     "radial"
-    ],
-    "verfuegbarkeit": [
-     "fertig"
-    ],
-    "preis": "99 USD"
    }
   },
   {

@@ -6,6 +6,7 @@ url: https://shop.keyboard.io/products/model-100
 belege: [https://shop.keyboard.io/products/model-100]
 gelesen_am: 2026-11-17
 facetten:
+  keycap_profil: [eigen]
   geteilt: zusammensteckbar
   tasten: [64]
   schalter: [mx]
@@ -24,6 +25,7 @@ url: https://shop.keyboard.io/products/keyboardio-atreus
 belege: [https://shop.keyboard.io/products/keyboardio-atreus]
 gelesen_am: 2026-11-17
 facetten:
+  keycap_profil: [xda]
   geteilt: einteilig-geteilt
   tasten: [44]
   schalter: [mx]
@@ -116,6 +118,7 @@ url: https://cyboard.digital/products/imprint-standard
 belege: [https://cyboard.digital/products/imprint-standard]
 gelesen_am: 2026-11-17
 facetten:
+  keycap_profil: [xda]
   geteilt: ja
   tasten: [82]
   daumentasten: 6
@@ -299,6 +302,7 @@ url: https://www.ozokeyboards.com/products/cornix-split-low-profile-split-ergono
 belege: [https://www.ozokeyboards.com/products/cornix-split-low-profile-split-ergonomic-keyboard]
 gelesen_am: 2026-11-17
 facetten:
+  keycap_profil: [lp-sonstige]
   geteilt: ja
   tasten: [48]
   raster: 3x6

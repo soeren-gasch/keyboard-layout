@@ -333,6 +333,142 @@
    "key": "profile"
   },
   {
+   "id": "keycap_profil",
+   "key": "keycap_profile",
+   "de": "Keycap-Profil",
+   "en": "Keycap profile",
+   "typ": "mehrfach",
+   "werte": [
+    {
+     "id": "cherry",
+     "de": "Cherry",
+     "en": "Cherry",
+     "key": "cherry"
+    },
+    {
+     "id": "oem",
+     "de": "OEM",
+     "en": "OEM",
+     "key": "oem"
+    },
+    {
+     "id": "sa",
+     "de": "SA",
+     "en": "SA",
+     "key": "sa"
+    },
+    {
+     "id": "dsa",
+     "de": "DSA",
+     "en": "DSA",
+     "key": "dsa"
+    },
+    {
+     "id": "xda",
+     "de": "XDA",
+     "en": "XDA",
+     "key": "xda"
+    },
+    {
+     "id": "kat",
+     "de": "KAT",
+     "en": "KAT",
+     "key": "kat"
+    },
+    {
+     "id": "kam",
+     "de": "KAM",
+     "en": "KAM",
+     "key": "kam"
+    },
+    {
+     "id": "mt3",
+     "de": "MT3",
+     "en": "MT3",
+     "key": "mt3"
+    },
+    {
+     "id": "dcs",
+     "de": "DCS",
+     "en": "DCS",
+     "key": "dcs"
+    },
+    {
+     "id": "mda",
+     "de": "MDA",
+     "en": "MDA",
+     "key": "mda"
+    },
+    {
+     "id": "osa",
+     "de": "OSA",
+     "en": "OSA",
+     "key": "osa"
+    },
+    {
+     "id": "ksa",
+     "de": "KSA (Keychron)",
+     "en": "KSA (Keychron)",
+     "key": "ksa"
+    },
+    {
+     "id": "asa",
+     "de": "ASA",
+     "en": "ASA",
+     "key": "asa"
+    },
+    {
+     "id": "moa",
+     "de": "MOA",
+     "en": "MOA",
+     "key": "moa"
+    },
+    {
+     "id": "xvx",
+     "de": "XVX",
+     "en": "XVX",
+     "key": "xvx"
+    },
+    {
+     "id": "mbk",
+     "de": "MBK (Choc)",
+     "en": "MBK (Choc)",
+     "key": "mbk"
+    },
+    {
+     "id": "cfx",
+     "de": "CFX (Choc)",
+     "en": "CFX (Choc)",
+     "key": "cfx"
+    },
+    {
+     "id": "lp-sonstige",
+     "de": "anderes Low-Profile-Profil (z. B. LPX, LAK, LCK, LDSA)",
+     "en": "other low-profile (e.g. LPX, LAK, LCK, LDSA)",
+     "key": "other-low-profile"
+    },
+    {
+     "id": "topre",
+     "de": "Topre",
+     "en": "Topre",
+     "key": "topre"
+    },
+    {
+     "id": "chiclet",
+     "de": "Chiclet (Laptop-Stil)",
+     "en": "chiclet (laptop style)",
+     "key": "chiclet"
+    },
+    {
+     "id": "eigen",
+     "de": "herstellereigenes Profil (z. B. skulptiert)",
+     "en": "manufacturer-specific (e.g. custom sculpted)",
+     "key": "proprietary"
+    }
+   ],
+   "hinweis": "Profil der mitgelieferten bzw. vom Hersteller vorgesehenen Keycaps"
+  },
+  {
    "id": "drahtlos",
    "de": "Wireless",
    "en": "Wireless",

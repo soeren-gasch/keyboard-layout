@@ -4269,52 +4269,68 @@ id,quelle,quell_id,name,hersteller,quell_url,lizenz,abgerufen,geraet
 11646,keymapdb,yhaliaw,Planck,,https://keymapdb.com/keymaps/yhaliaw/,GPL-3.0-only,2026-11-04,planck-12
 11647,keymapdb,zeitlinger,Ferris,,https://keymapdb.com/keymaps/zeitlinger/,GPL-3.0-only,2026-11-04,ferris-17
 11648,keymapdb,zzkt,Corne,,https://keymapdb.com/keymaps/zzkt/,GPL-3.0-only,2026-11-04,corne
-11672,manuell,Battoota,Battoota,Alaa Saad Abdo,https://github.com/AlaaSaadAbdo/battoota,CC-BY-4.0,2026-11-17,battoota
-11669,manuell,Beekeeb Toucan,Beekeeb Toucan,beekeeb,https://beekeeb.com/toucan-keyboard/,CC-BY-4.0,2026-11-17,beekeeb-toucan
-11694,manuell,CharaChorder Lite,CharaChorder Lite,CharaChorder,https://www.charachorder.com/en-de/products/charachorder-lite,CC-BY-4.0,2026-11-17,charachorder-lite
-11693,manuell,CharaChorder Two,CharaChorder Two,CharaChorder,https://www.charachorder.com/en-de/products/cc2,CC-BY-4.0,2026-11-17,charachorder-two
-11668,manuell,Cheapino,Cheapino,tompi,https://github.com/tompi/cheapino,CC-BY-4.0,2026-11-17,cheapino
-11670,manuell,Chocofi,Chocofi,pashutk,https://github.com/pashutk/chocofi,CC-BY-4.0,2026-11-17,chocofi
-11692,manuell,Cornix LP,Cornix LP,Jezail Funder Studio,https://www.ozokeyboards.com/products/cornix-split-low-profile-split-ergonomic-keyboard,CC-BY-4.0,2026-11-17,cornix-lp
-11682,manuell,Cyboard Imprint,Cyboard Imprint,Cyboard,https://cyboard.digital/products/imprint-standard,CC-BY-4.0,2026-11-17,cyboard-imprint
+11668,manuell,Battoota,Battoota,Alaa Saad Abdo,https://github.com/AlaaSaadAbdo/battoota,CC-BY-4.0,2026-11-17,battoota
+11665,manuell,Beekeeb Toucan,Beekeeb Toucan,beekeeb,https://beekeeb.com/toucan-keyboard/,CC-BY-4.0,2026-11-17,beekeeb-toucan
+11710,manuell,CharaChorder Lite,CharaChorder Lite,CharaChorder,https://www.charachorder.com/en-de/products/charachorder-lite,CC-BY-4.0,2026-11-17,charachorder-lite
+11709,manuell,CharaChorder Two,CharaChorder Two,CharaChorder,https://www.charachorder.com/en-de/products/cc2,CC-BY-4.0,2026-11-17,charachorder-two
+11664,manuell,Cheapino,Cheapino,tompi,https://github.com/tompi/cheapino,CC-BY-4.0,2026-11-17,cheapino
+11689,manuell,Cherry KC 4500 Ergo,Cherry KC 4500 Ergo,Cherry,https://www.cherry.de/de-de/produkt/kc-4500-ergo,CC-BY-4.0,2026-11-17,cherry-kc-4500-ergo
+11666,manuell,Chocofi,Chocofi,pashutk,https://github.com/pashutk/chocofi,CC-BY-4.0,2026-11-17,chocofi
+11708,manuell,Cornix LP,Cornix LP,Jezail Funder Studio,https://www.ozokeyboards.com/products/cornix-split-low-profile-split-ergonomic-keyboard,CC-BY-4.0,2026-11-17,cornix-lp
+11698,manuell,Cyboard Imprint,Cyboard Imprint,Cyboard,https://cyboard.digital/products/imprint-standard,CC-BY-4.0,2026-11-17,cyboard-imprint
 11649,manuell,Dygma Defy,Dygma Defy,Dygma Lab S.L.,https://dygma.com/pages/defy,CC-BY-4.0,2026-11-17,dygma-defy
-11679,manuell,Dygma Raise 2,Dygma Raise 2,Dygma Lab S.L.,https://dygma.com/pages/dygma-raise-2,CC-BY-4.0,2026-11-17,dygma-raise-2
-11673,manuell,Elytra,Elytra,ElimKeys,https://kbd.news/Elytra-review-2785.html,CC-BY-4.0,2026-11-17,elytra
-11697,manuell,Epomaker Split70,Epomaker Split70,Epomaker,https://epomaker.com/products/epomaker-split70,CC-BY-4.0,2026-11-17,epomaker-split70
-11683,manuell,Ergohaven K:03 v4,Ergohaven K:03 v4,Ergohaven,https://eh.industries/shop/tproduct/767895441-248313066323-k03-v4,CC-BY-4.0,2026-11-17,ergohaven-k-03-v4
-11684,manuell,Ergohaven K:03 v4 Wireless Metal Edition,Ergohaven K:03 v4 Wireless Metal Edition,Ergohaven,https://eh.industries/shop/tproduct/767895441-862791882113-k03-v4-wireless-metal-edition,CC-BY-4.0,2026-11-17,ergohaven-k-03-v4-wireless-metal-edition
-11685,manuell,Ergohaven K:04,Ergohaven K:04,Ergohaven,https://eh.industries/shop/tproduct/767895441-847074777793-k04,CC-BY-4.0,2026-11-17,ergohaven-k-04
-11687,manuell,Ergohaven K:04 Micro,Ergohaven K:04 Micro,Ergohaven,https://eh.industries/shop/tproduct/767895441-396283406723-k04-micro,CC-BY-4.0,2026-11-17,ergohaven-k-04-micro
-11686,manuell,Ergohaven K:04 Mini,Ergohaven K:04 Mini,Ergohaven,https://eh.industries/shop/tproduct/767895441-921976659883-k04-mini,CC-BY-4.0,2026-11-17,ergohaven-k-04-mini
-11688,manuell,Ergohaven Omega Point 36,Ergohaven Omega Point 36,Ergohaven,https://eh.industries/shop/tproduct/767895441-959341231173-omega-point-36,CC-BY-4.0,2026-11-17,ergohaven-omega-point-36
-11689,manuell,Ergohaven Phenom,Ergohaven Phenom,Ergohaven,https://eh.industries/shop/tproduct/767895441-877046509012-phenom,CC-BY-4.0,2026-11-17,ergohaven-phenom
-11691,manuell,Ergohaven Phenom Micro,Ergohaven Phenom Micro,Ergohaven,https://eh.industries/shop/tproduct/767895441-586488374072-phenom-micro,CC-BY-4.0,2026-11-17,ergohaven-phenom-micro
-11690,manuell,Ergohaven Phenom Mini,Ergohaven Phenom Mini,Ergohaven,https://eh.industries/shop/tproduct/767895441-795571358602-phenom-mini,CC-BY-4.0,2026-11-17,ergohaven-phenom-mini
-11667,manuell,Hillside (Familie),Hillside (Familie),mmccoyd,https://github.com/mmccoyd/hillside,CC-BY-4.0,2026-11-17,hillside
-11677,manuell,Keyboardio Atreus,Keyboardio Atreus,Keyboardio,https://shop.keyboard.io/products/keyboardio-atreus,CC-BY-4.0,2026-11-17,keyboardio-atreus
-11676,manuell,Keyboardio Model 100,Keyboardio Model 100,Keyboardio,https://shop.keyboard.io/products/model-100,CC-BY-4.0,2026-11-17,keyboardio-model-100
-11695,manuell,Kinesis Advantage2,Kinesis Advantage2,Kinesis,https://kinesis-ergo.com/shop/advantage2/,CC-BY-4.0,2026-11-17,kinesis-advantage2
-11696,manuell,Kinesis Advantage360,Kinesis Advantage360,Kinesis,https://kinesis-ergo.com/shop/adv360/,CC-BY-4.0,2026-11-17,kinesis-advantage360
-11665,manuell,Kinesis Freestyle Edge RGB+,Kinesis Freestyle Edge RGB+,Kinesis,https://kinesis-ergo.com/keyboards/freestyle-edge-rgb/,CC-BY-4.0,2026-11-17,kinesis-freestyle-edge
-11664,manuell,Kinesis Freestyle Pro,Kinesis Freestyle Pro,Kinesis,https://kinesis-ergo.com/products/,CC-BY-4.0,2026-11-17,kinesis-freestyle-pro
-11656,manuell,Logitech Ergo K860,Logitech Ergo K860,Logitech,https://www.logitech.com/de-de/shop/p/k860-split-ergonomic.920-009167,CC-BY-4.0,2026-11-17,logitech-ergo-k860
-11657,manuell,Logitech Wave Keys,Logitech Wave Keys,Logitech,https://www.logitech.com/de-de/shop/p/wave-keys-ergonomic-wireless.920-012284,CC-BY-4.0,2026-11-17,logitech-wave-keys
-11675,manuell,Mantaray Pro Wireless,Mantaray Pro Wireless,TuxedoMakes / Tuxedo Devices,https://kbd.news/Mantaray-Pro-Wireless-2736.html,CC-BY-4.0,2026-11-17,mantaray-pro-wireless
-11661,manuell,Mistel Barocco MD770,Mistel Barocco MD770,Mistel,https://www.mistelkeyboard.com/products/d11cf7a73da49468e2a530b4cf18e76c,CC-BY-4.0,2026-11-17,mistel-barocco-md770
+11695,manuell,Dygma Raise 2,Dygma Raise 2,Dygma Lab S.L.,https://dygma.com/pages/dygma-raise-2,CC-BY-4.0,2026-11-17,dygma-raise-2
+11669,manuell,Elytra,Elytra,ElimKeys,https://kbd.news/Elytra-review-2785.html,CC-BY-4.0,2026-11-17,elytra
+11713,manuell,Epomaker Split70,Epomaker Split70,Epomaker,https://epomaker.com/products/epomaker-split70,CC-BY-4.0,2026-11-17,epomaker-split70
+11699,manuell,Ergohaven K:03 v4,Ergohaven K:03 v4,Ergohaven,https://eh.industries/shop/tproduct/767895441-248313066323-k03-v4,CC-BY-4.0,2026-11-17,ergohaven-k-03-v4
+11700,manuell,Ergohaven K:03 v4 Wireless Metal Edition,Ergohaven K:03 v4 Wireless Metal Edition,Ergohaven,https://eh.industries/shop/tproduct/767895441-862791882113-k03-v4-wireless-metal-edition,CC-BY-4.0,2026-11-17,ergohaven-k-03-v4-wireless-metal-edition
+11701,manuell,Ergohaven K:04,Ergohaven K:04,Ergohaven,https://eh.industries/shop/tproduct/767895441-847074777793-k04,CC-BY-4.0,2026-11-17,ergohaven-k-04
+11703,manuell,Ergohaven K:04 Micro,Ergohaven K:04 Micro,Ergohaven,https://eh.industries/shop/tproduct/767895441-396283406723-k04-micro,CC-BY-4.0,2026-11-17,ergohaven-k-04-micro
+11702,manuell,Ergohaven K:04 Mini,Ergohaven K:04 Mini,Ergohaven,https://eh.industries/shop/tproduct/767895441-921976659883-k04-mini,CC-BY-4.0,2026-11-17,ergohaven-k-04-mini
+11704,manuell,Ergohaven Omega Point 36,Ergohaven Omega Point 36,Ergohaven,https://eh.industries/shop/tproduct/767895441-959341231173-omega-point-36,CC-BY-4.0,2026-11-17,ergohaven-omega-point-36
+11705,manuell,Ergohaven Phenom,Ergohaven Phenom,Ergohaven,https://eh.industries/shop/tproduct/767895441-877046509012-phenom,CC-BY-4.0,2026-11-17,ergohaven-phenom
+11707,manuell,Ergohaven Phenom Micro,Ergohaven Phenom Micro,Ergohaven,https://eh.industries/shop/tproduct/767895441-586488374072-phenom-micro,CC-BY-4.0,2026-11-17,ergohaven-phenom-micro
+11706,manuell,Ergohaven Phenom Mini,Ergohaven Phenom Mini,Ergohaven,https://eh.industries/shop/tproduct/767895441-795571358602-phenom-mini,CC-BY-4.0,2026-11-17,ergohaven-phenom-mini
+11688,manuell,Goldtouch Elite Adjustable,Goldtouch Elite Adjustable,Goldtouch,https://shop.goldtouch.com/collections/ergonomic-keyboards/products/elite-adjustable-ergonomic-keyboard-pc-mac,CC-BY-4.0,2026-11-17,goldtouch-elite-adjustable
+11687,manuell,Goldtouch Go!2,Goldtouch Go!2,Goldtouch,https://shop.goldtouch.com/collections/ergonomic-keyboards/products/goldtouch-go-2-foreign-language-mobile-keyboards,CC-BY-4.0,2026-11-17,goldtouch-go-2
+11663,manuell,Hillside (Familie),Hillside (Familie),mmccoyd,https://github.com/mmccoyd/hillside,CC-BY-4.0,2026-11-17,hillside
+11693,manuell,Keyboardio Atreus,Keyboardio Atreus,Keyboardio,https://shop.keyboard.io/products/keyboardio-atreus,CC-BY-4.0,2026-11-17,keyboardio-atreus
+11692,manuell,Keyboardio Model 100,Keyboardio Model 100,Keyboardio,https://shop.keyboard.io/products/model-100,CC-BY-4.0,2026-11-17,keyboardio-model-100
+11674,manuell,Keychron K15 Max,Keychron K15 Max,Keychron,https://www.keychron.com/products/keychron-k15-max-alice-layout-qmk-wireless-custom-mechanical-keyboard,CC-BY-4.0,2026-11-17,keychron-k15-max
+11676,manuell,Keychron Q10,Keychron Q10,Keychron,https://www.keychron.com/products/keychron-q10-alice-layout-qmk-custom-mechanical-keyboard,CC-BY-4.0,2026-11-17,keychron-q10
+11672,manuell,Keychron Q11,Keychron Q11,Keychron,https://www.keychron.com/products/keychron-q11-qmk-custom-mechanical-keyboard,CC-BY-4.0,2026-11-17,keychron-q11
+11673,manuell,Keychron Q11 Ultra 8K,Keychron Q11 Ultra 8K,Keychron,https://www.keychron.com/products/keychron-q11-ultra-8k-wireless-custom-mechanical-keyboard,CC-BY-4.0,2026-11-17,keychron-q11-ultra-8k
+11675,manuell,Keychron Q8,Keychron Q8,Keychron,https://www.keychron.com/products/keychron-q8-alice-layout-qmk-custom-mechanical-keyboard,CC-BY-4.0,2026-11-17,keychron-q8
+11711,manuell,Kinesis Advantage2,Kinesis Advantage2,Kinesis,https://kinesis-ergo.com/shop/advantage2/,CC-BY-4.0,2026-11-17,kinesis-advantage2
+11712,manuell,Kinesis Advantage360,Kinesis Advantage360,Kinesis,https://kinesis-ergo.com/shop/adv360/,CC-BY-4.0,2026-11-17,kinesis-advantage360
+11661,manuell,Kinesis Freestyle Edge RGB+,Kinesis Freestyle Edge RGB+,Kinesis,https://kinesis-ergo.com/keyboards/freestyle-edge-rgb/,CC-BY-4.0,2026-11-17,kinesis-freestyle-edge
+11660,manuell,Kinesis Freestyle Pro,Kinesis Freestyle Pro,Kinesis,https://kinesis-ergo.com/products/,CC-BY-4.0,2026-11-17,kinesis-freestyle-pro
+11690,manuell,Logitech Ergo K860,Logitech Ergo K860,Logitech,https://www.logitech.com/de-de/shop/p/k860-split-ergonomic.920-009167,CC-BY-4.0,2026-11-17,logitech-ergo-k860
+11656,manuell,Logitech Wave Keys,Logitech Wave Keys,Logitech,https://www.logitech.com/de-de/shop/p/wave-keys-ergonomic-wireless.920-012284,CC-BY-4.0,2026-11-17,logitech-wave-keys
+11671,manuell,Mantaray Pro Wireless,Mantaray Pro Wireless,TuxedoMakes / Tuxedo Devices,https://kbd.news/Mantaray-Pro-Wireless-2736.html,CC-BY-4.0,2026-11-17,mantaray-pro-wireless
+11685,manuell,Matias 60% Keyboard,Matias 60% Keyboard,Matias,https://matias.ca/60/pc/,CC-BY-4.0,2026-11-17,matias-60-keyboard
+11683,manuell,Matias Ergo Pro,Matias Ergo Pro,Matias,https://matias.ca/ergopro/programmable/,CC-BY-4.0,2026-11-17,matias-ergo-pro
+11686,manuell,Matias Half Keyboard,Matias Half Keyboard,Matias,https://matias.ca/halfkeyboard/,CC-BY-4.0,2026-11-17,matias-half-keyboard
+11684,manuell,Matias Sculpted Ergonomic Keyboard,Matias Sculpted Ergonomic Keyboard,Matias,https://matias.ca/sculpted/wireless/,CC-BY-4.0,2026-11-17,matias-sculpted-ergonomic-keyboard
+11657,manuell,Mistel Barocco MD770,Mistel Barocco MD770,Mistel,https://www.mistelkeyboard.com/products/d11cf7a73da49468e2a530b4cf18e76c,CC-BY-4.0,2026-11-17,mistel-barocco-md770
 11650,manuell,MoErgo Glove80,MoErgo Glove80,MoErgo,https://www.moergo.com/pages/glove80,CC-BY-4.0,2026-11-17,glove80
 11651,manuell,MoErgo Go60,MoErgo Go60,MoErgo,https://www.moergo.com/pages/go60,CC-BY-4.0,2026-11-17,moergo-go60
 11655,manuell,Naya Create,Naya Create,Naya B.V.,https://naya.tech/,CC-BY-4.0,2026-11-17,naya-create
-11663,manuell,Perixx Periboard-512,Perixx Periboard-512,Perixx,https://www.perixx.com,CC-BY-4.0,2026-11-17,perixx-periboard-512
-11662,manuell,R-Go Split Break V2,R-Go Split Break V2,R-Go Tools,https://www.r-go-tools.com/r-go-split-break-version-2/,CC-BY-4.0,2026-11-17,r-go-split-break-v2
-11658,manuell,Razer Pro Type Ergo,Razer Pro Type Ergo,Razer,https://www.razer.com/productivity/razer-pro-type-ergo,CC-BY-4.0,2026-11-17,razer-pro-type-ergo
-11678,manuell,Svalboard Lightly,Svalboard Lightly,Svalboard,https://svalboard.com/products/lightly,CC-BY-4.0,2026-11-17,svalboard-lightly
-11666,manuell,TOTEM,TOTEM,GEIGEIGEIST,https://github.com/GEIGEIGEIST/TOTEM,CC-BY-4.0,2026-11-17,totem
-11671,manuell,Temper,Temper,raeedcho,https://github.com/raeedcho/temper,CC-BY-4.0,2026-11-17,temper
-11674,manuell,Temporal,Temporal,curbol,https://kbd.news/Temporal-2872.html,CC-BY-4.0,2026-11-17,temporal
-11681,manuell,UHK 60 v2,UHK 60 v2,Ultimate Gadget Laboratories Kft.,https://uhk.io/product/uhk60v2,CC-BY-4.0,2026-11-17,uhk-60-v2
-11680,manuell,UHK 80,UHK 80,Ultimate Gadget Laboratories Kft.,https://uhk.io/uhk80,CC-BY-4.0,2026-11-17,uhk-80
-11660,manuell,X-Bows Lite,X-Bows Lite,X-Bows,https://www.x-bows.com,CC-BY-4.0,2026-11-17,x-bows-lite
-11659,manuell,X-Bows Nature,X-Bows Nature,X-Bows,https://www.x-bows.com,CC-BY-4.0,2026-11-17,x-bows-nature
+11659,manuell,Perixx Periboard-512,Perixx Periboard-512,Perixx,https://www.perixx.com,CC-BY-4.0,2026-11-17,perixx-periboard-512
+11658,manuell,R-Go Split Break V2,R-Go Split Break V2,R-Go Tools,https://www.r-go-tools.com/r-go-split-break-version-2/,CC-BY-4.0,2026-11-17,r-go-split-break-v2
+11691,manuell,Razer Pro Type Ergo,Razer Pro Type Ergo,Razer,https://www.razer.com/productivity/razer-pro-type-ergo,CC-BY-4.0,2026-11-17,razer-pro-type-ergo
+11694,manuell,Svalboard Lightly,Svalboard Lightly,Svalboard,https://svalboard.com/products/lightly,CC-BY-4.0,2026-11-17,svalboard-lightly
+11662,manuell,TOTEM,TOTEM,GEIGEIGEIST,https://github.com/GEIGEIGEIST/TOTEM,CC-BY-4.0,2026-11-17,totem
+11667,manuell,Temper,Temper,raeedcho,https://github.com/raeedcho/temper,CC-BY-4.0,2026-11-17,temper
+11670,manuell,Temporal,Temporal,curbol,https://kbd.news/Temporal-2872.html,CC-BY-4.0,2026-11-17,temporal
+11697,manuell,UHK 60 v2,UHK 60 v2,Ultimate Gadget Laboratories Kft.,https://uhk.io/product/uhk60v2,CC-BY-4.0,2026-11-17,uhk-60-v2
+11696,manuell,UHK 80,UHK 80,Ultimate Gadget Laboratories Kft.,https://uhk.io/uhk80,CC-BY-4.0,2026-11-17,uhk-80
+11678,manuell,X-Bows Crystal,X-Bows Crystal,X-Bows,https://x-bows.com/products/x-bows-crystal,CC-BY-4.0,2026-11-17,x-bows-crystal
+11680,manuell,X-Bows Knight,X-Bows Knight,X-Bows,https://x-bows.com/products/x-bows-knight,CC-BY-4.0,2026-11-17,x-bows-knight
+11681,manuell,X-Bows Knight Plus,X-Bows Knight Plus,X-Bows,https://x-bows.com/products/x-bows-knight-plus,CC-BY-4.0,2026-11-17,x-bows-knight-plus
+11679,manuell,X-Bows Lite,X-Bows Lite,X-Bows,https://x-bows.com/products/x-bows-lite,CC-BY-4.0,2026-11-17,x-bows-lite
+11677,manuell,X-Bows Nature,X-Bows Nature,X-Bows,https://x-bows.com/products/x-bows-nature-ergonomic-mechanical-keyboard,CC-BY-4.0,2026-11-17,x-bows-nature
+11682,manuell,X-Bows Surfing,X-Bows Surfing,X-Bows,https://x-bows.com/products/x-bows-surfing-split-ergonomic-keyboard,CC-BY-4.0,2026-11-17,x-bows-surfing
 11654,manuell,ZSA ErgoDox EZ,ZSA ErgoDox EZ,ZSA Technology Labs,https://ergodox-ez.com/,CC-BY-4.0,2026-11-17,zsa-ergodox-ez
 11652,manuell,ZSA Moonlander,ZSA Moonlander,ZSA Technology Labs,https://www.zsa.io/moonlander,CC-BY-4.0,2026-11-17,moonlander
 11653,manuell,ZSA Voyager,ZSA Voyager,ZSA Technology Labs,https://www.zsa.io/voyager,CC-BY-4.0,2026-11-17,zsa-voyager
