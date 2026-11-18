@@ -2334,7 +2334,7 @@ id,quelle,quell_id,name,hersteller,quell_url,lizenz,abgerufen,geraet
 4321,golem,Lergo-ex-Kyfle-478.html,Lergo (ex-Kyfle),u/LexaAstarof,https://golem.hu/board/Lergo-ex-Kyfle-478.html,unknown (no license stated),2026-11-17,lergo-ex-kyfle
 4322,golem,Let-s-Burst-79.html,Let's Burst,AGuyFromOhio,https://golem.hu/board/Let-s-Burst-79.html,unknown (no license stated),2026-11-17,let-s-burst
 4323,golem,Let-s-Split-80.html,Let's Split,Wootpatoot,https://golem.hu/board/Let-s-Split-80.html,unknown (no license stated),2026-11-17,let-s-split
-4324,golem,Let-s-Split-Wireless-81.html,Let's Split (Wireless),SouthPawEngineer,https://golem.hu/board/Let-s-Split-Wireless-81.html,unknown (no license stated),2026-11-17,let-s-split
+4324,golem,Let-s-Split-Wireless-81.html,Let's Split (Wireless),SouthPawEngineer,https://golem.hu/board/Let-s-Split-Wireless-81.html,unknown (no license stated),2026-11-17,let-s-split-wireless
 4325,golem,Levinson-82.html,Levinson,keeb.io,https://golem.hu/board/Levinson-82.html,unknown (no license stated),2026-11-17,levinson
 4326,golem,Lexmark-M15-417.html,Lexmark M15,Lexmark,https://golem.hu/board/Lexmark-M15-417.html,unknown (no license stated),2026-11-17,lexmark-m15
 4327,golem,Lil-Chonky-Bois-392.html,Lil Chonky Bois,Sander Boer,https://golem.hu/board/Lil-Chonky-Bois-392.html,unknown (no license stated),2026-11-17,lil-chonky-bois
@@ -4757,6 +4757,7 @@ id,quelle,quell_id,name,hersteller,quell_url,lizenz,abgerufen,geraet
 12907,manuell,Kinesis Advantage360,Kinesis Advantage360,Kinesis,https://kinesis-ergo.com/shop/adv360/,CC-BY-4.0,2026-11-17,kinesis-advantage360
 12847,manuell,Kinesis Freestyle Edge RGB+,Kinesis Freestyle Edge RGB+,Kinesis,https://kinesis-ergo.com/keyboards/freestyle-edge-rgb/,CC-BY-4.0,2026-11-17,kinesis-freestyle-edge
 12846,manuell,Kinesis Freestyle Pro,Kinesis Freestyle Pro,Kinesis,https://kinesis-ergo.com/products/,CC-BY-4.0,2026-11-17,kinesis-freestyle-pro
+12911,manuell,Let's Split Wireless,Let's Split Wireless,,https://www.reddit.com/r/MechanicalKeyboards/comments/7nox6q/wireless_lets_split_build_log_with_both_mx_and/,CC-BY-4.0,2026-11-18,let-s-split-wireless
 12878,manuell,Logitech Ergo K860,Logitech Ergo K860,Logitech,https://www.logitech.com/de-de/shop/p/k860-split-ergonomic.920-009167#faqs,CC-BY-4.0,2026-11-17,logitech-ergo-k860
 12843,manuell,Logitech Wave Keys,Logitech Wave Keys,Logitech,https://www.logitech.com/de-de/shop/p/wave-keys-ergonomic-wireless.920-012284,CC-BY-4.0,2026-11-17,logitech-wave-keys
 12857,manuell,Mantaray Pro Wireless,Mantaray Pro Wireless,TuxedoMakes / Tuxedo Devices,https://kbd.news/Mantaray-Pro-Wireless-2736.html,CC-BY-4.0,2026-11-17,mantaray-pro-wireless

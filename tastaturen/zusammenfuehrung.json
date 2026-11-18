@@ -8,14 +8,22 @@
   [
    "manuell:R-Go Split Break V2",
    "shopseiten:https://www.r-go-tools.de/r-go-split-break-ergonomische-tastatur-version-2/"
+  ],
+  [
+   "manuell:Let's Split Wireless",
+   "golem:Let-s-Split-Wireless-81.html"
   ]
  ],
  "trennen": [
-  "qmk:iriskeyboards"
+  "qmk:iriskeyboards",
+  "golem:Let-s-Split-Wireless-81.html",
+  "manuell:Let's Split Wireless"
  ],
  "begruendung": {
   "qmk:ferris/sweep + zmk:boards/shields/cradio/cradio.zmk.yml": "Ferris Sweep heißt im ZMK-Repository cradio; beide 34 Tasten, 3x5+2",
   "manuell:R-Go Split Break V2 + shopseiten:…/r-go-split-break-ergonomische-tastatur-version-2/": "dasselbe Modell, deutsche Herstellerseite",
-  "trennen qmk:iriskeyboards": "60-%-Board des Herstellers Iris Keyboards, nicht das Keebio Iris (Split); per Name fälschlich verbunden"
+  "trennen qmk:iriskeyboards": "60-%-Board des Herstellers Iris Keyboards, nicht das Keebio Iris (Split); per Name fälschlich verbunden",
+  "trennen golem:Let-s-Split-Wireless-81.html": "Eigenes Projekt (Funk, Prototyp 2018); per Name fälschlich mit dem kabelgebundenen Let's Split verbunden, weil normname 'split' und 'wireless' entfernt",
+  "manuell:Let's Split Wireless + golem:Let-s-Split-Wireless-81.html": "dasselbe Projekt; golem verlinkt den Reddit-Post"
  }
 }
