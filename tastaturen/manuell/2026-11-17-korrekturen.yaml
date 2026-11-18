@@ -7,3 +7,16 @@ gelesen_am: 2026-11-17
 facetten:
   geteilt: nein
 hinweise: {stand: "Einteiliges 4×12-Ortho-Board (Unibody) ohne getrenntes Tastenfeld, laut Sören; Belege wie angegeben"}
+---
+name: For Science
+hersteller: peej
+url: https://github.com/peej/For-science-keyboard
+belege: [https://github.com/peej/For-science-keyboard/blob/f30ab1072f86780eb4f4e537e78107cea54455a7/README.md#bill-of-materials-bom]
+gelesen_am: 2026-11-18
+facetten:
+  geteilt: ja
+  tasten: [46]
+  schalter: [mx]
+  verbindung_haelften: [trrs]
+  anschluss: [usb-micro]
+hinweise: {stand: "Bill of Materials: „2 PCBs“, „46 MX compatible switches“, „2 Pro Micro controllers“, „2 PJ320D 3.5mm TRRS jacks“, „TRRS cable and micro USB cable“, „46 MX compatible key caps“ (Hinweis von Sören)"}

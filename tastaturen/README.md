@@ -121,6 +121,8 @@ Ein **Gerät** ist eine physische Tastatur samt Revisionen und Varianten, zum Be
 2. **repo:** dasselbe Projekt-Repository und dazu verwandter Name oder gleiche Tastenzahl. Sammel-Repos wie `gtips/reviung` werden so nicht zu einem Gerät.
 3. **name:** gleicher normalisierter Name, mit und ohne Herstellerpräfix, bei verträglicher Tastenzahl. Ein Name, der erst durch das Kürzen zur bloßen Marke wird (Keychron V1 → keychron), verbindet nichts; heißen Modell und Marke gleich (Sofle, Atreus, Maltron), verbindet er.
 
+Einzelne fehlerhafte Quellangaben verwirft `korrekturen.json` (mit Begründung und Prüfdatum), bevor abgeleitet und zusammengeführt wird.
+
 Belegte Angaben (`methode = quelle`) gehen bei Auswahl-Facetten immer vor abgeleiteten; ein abgeleiteter Wert gilt nur, wenn keine Quelle etwas sagt, und das Gerät führt ihn unter `abgeleitet` (Export: `derived`). Die Ableitungen stehen mit Regeln und Prüfung in `skripte/ableitungen.py`; derzeit „geteilt = nein“ aus Firmware-Definitionen ohne Split-Angabe plus Geometrie sowie aus Deskthority-Standardanordnungen.
 
 Bei gleichem Repository und gleichem Namen wird die Tastenzahl nicht geprüft: Abweichungen sind dann Varianten oder Fehler einer Quelle und stehen unter `konflikte`.

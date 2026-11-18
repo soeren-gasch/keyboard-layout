@@ -2609,7 +2609,7 @@ foldkb-rev-1,FoldKB Rev. 1,Keebio,qmk|shops|via,ja,71-72,,,ortho|reihen,,,,qmk|v
 foldkb-split-ortho-using-standard-keyset,FoldKB split ortho using standard keyset,friglesnart,kbdnews,ja,,,,ortho,,,,,,2021,
 foobar,Foobar,40percent.club,golem|qmk,ja,15-30,,,ortho,,nein,,qmk,selbstbau,2017,
 footy,Footy,CJ Pais,qmk,nein,3,,,,,,,qmk,,,
-for-science,For Science,peej,aposymbiont|awesome-split|github|golem|keebfolio|qmk|reddit,ja,6-46,4x5|5x5,3,ortho,,nein,,qmk,selbstbau,2017,
+for-science,For Science,peej,aposymbiont|awesome-split|github|golem|keebfolio|manuell|qmk|reddit,ja,46,4x5|5x5,3,ortho,mx,nein,,qmk,selbstbau,2017,
 forager,Forager,carrefinho,github|kbdnews|reddit|yal,ja,34,3x5,2,spalten,choc-v1,ja,,zmk,selbstbau,2024,
 forager-build-guide,forager-build-guide,Keycapsss,github,ja,,,,,,,,,selbstbau,2024,
 forager-travel-case,forager-travel-case,twop,reddit,,,,,,,,,,,2025,

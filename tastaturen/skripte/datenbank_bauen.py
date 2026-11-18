@@ -27,6 +27,21 @@ from web_export import exportieren  # noqa: E402
 from zusammenfuehren import zusammenfuehren  # noqa: E402
 
 
+def korrekturen_anwenden(db):
+    """Verwirft einzelne fehlerhafte Quellangaben laut tastaturen/korrekturen.json."""
+    datei = Path(__file__).resolve().parent.parent / "korrekturen.json"
+    if not datei.exists():
+        return 0
+    n = 0
+    for k in json.loads(datei.read_text(encoding="utf-8")).get("angaben_verwerfen", []):
+        quelle, _, qid = k["datensatz"].partition(":")
+        n += db.execute("DELETE FROM angabe WHERE facette = ? AND wert = ? AND datensatz_id IN "
+                        "(SELECT id FROM datensatz WHERE quelle = ? AND quell_id = ?)",
+                        (k["facette"], str(k["wert"]), quelle, qid)).rowcount
+    print(f"korrekturen.json: {n} Angaben verworfen")
+    return n
+
+
 def main():
     if DB.exists():
         DB.unlink()
@@ -48,6 +63,7 @@ def main():
         for f in fehler[:5]:
             print(f"  {name}: übersprungen {f[0]}: {f[1]}")
         print(f"{name}: {n} Datensätze, {len(fehler)} Fehler")
+    bericht["verworfen"] = korrekturen_anwenden(db)
     bericht["abgeleitet_geteilt"] = geteilt_ableiten(db)
     print(f"abgeleitet: {bericht['abgeleitet_geteilt']} Angaben 'geteilt = nein'")
     bericht["geraete"] = zusammenfuehren(db)

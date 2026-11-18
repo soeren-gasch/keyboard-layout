@@ -1,0 +1,12 @@
+{
+ "beschreibung": "Einzelne fehlerhafte Angaben aus Quellen, die beim Aufbau verworfen werden (datenbank_bauen.py, vor den Ableitungen). Datensatz als \"<quelle>:<quell_id>\" wie in export/datensaetze.csv.",
+ "angaben_verwerfen": [
+  {
+   "datensatz": "aposymbiont:ortho.csv#For Science",
+   "facette": "tasten",
+   "wert": "6",
+   "grund": "MinKeys 6 bei MaxKeys 46; laut Bill of Materials des Projekts 46 Tasten (github.com/peej/For-science-keyboard), Tippfehler in der Quelle",
+   "geprueft": "2026-11-18"
+  }
+ ]
+}
